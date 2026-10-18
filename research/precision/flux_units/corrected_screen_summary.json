@@ -1,0 +1,26 @@
+{
+  "frozen_baseline_sha256": "92ccafd605f1bcd469dc997ad946980529aa00dab8bb5bcc2551e0f93375ef28",
+  "unit_registry_sha256": "00aef84a2e81fad091c68b372fbe83fe67e7648c979f6cf4c45725f103fe9fdb",
+  "total_records": 9902,
+  "catalogue_entity_keys": 6003,
+  "SDSS_records_recomputed": 3629,
+  "non_SDSS_results_reused_or_withheld": 6273,
+  "current_status_counts": {
+    "ok": 7515,
+    "unit_unverified": 2386,
+    "error": 1
+  },
+  "current_eligible_records": 7473,
+  "legacy_eligible_records": 9023,
+  "current_strong_records": 395,
+  "current_strong_entity_keys": 308,
+  "legacy_strong_entity_keys": 337,
+  "converted_fnu_records": 149,
+  "converted_colour_shift_median_uv": 0.028902815713262996,
+  "converted_colour_shift_max_uv": 0.03419130479365198,
+  "converted_raw_duv_shift_max": 0.00495778506442008,
+  "new_strong_entity_keys_from_conversion": 0,
+  "interpretation": "Updated eligibility is a source-convention correction, not a discovery significance or uniform-quality sample. Exact Gaia keys and legacy positional assignments are retained and flagged.",
+  "unsupported_units": "Unresolved MWDD SDSS and other unverified archive formats are retained, but current physical colours are blank and excluded. Withholding does not imply that all such spectra are F_nu.",
+  "principal_yellow_update": "J1323-0129 MWDD SDSS row13 has unresolved units and no direct reference in this dataset. Its independent-SDSS corroboration is withdrawn; DESI colour estimate remains."
+}

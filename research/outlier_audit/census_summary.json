@@ -1,0 +1,31 @@
+{
+  "created_utc": "2026-10-18T16:00:04.397729+00:00",
+  "input_sha256": "92ccafd605f1bcd469dc997ad946980529aa00dab8bb5bcc2551e0f93375ef28",
+  "records": 9902,
+  "catalogue_entity_keys": 6003,
+  "entity_key_caution": "Gaia ID where supplied; existing epoch-unpropagated positional assignments retained and flagged. Not a new confirmed unique-star census.",
+  "eligible_records": 9023,
+  "strong_outlier_records": 434,
+  "strong_outlier_entities": 337,
+  "review_entities": 2344,
+  "review_records": 4901,
+  "review_status_counts": {
+    "no_current_review_trigger": 2294,
+    "gaia_only_requires_spectrum": 1861,
+    "discordant_records_require_review": 749,
+    "borderline_or_quality_review": 676,
+    "unsupported_extreme_record": 163,
+    "published_comparison_target": 109,
+    "not_colour_eligible": 83,
+    "single_instrument_colour_candidate": 41,
+    "multiple_instrument_colour_candidate": 27
+  },
+  "thresholds": {
+    "mild_distance": 0.006,
+    "strong_distance": 0.01,
+    "between_records_uv": 0.005,
+    "calibration_shift_uv": 0.003
+  },
+  "interpretation": "Exploratory triage thresholds, not p-values, confidence levels, or false discovery control.",
+  "records_outside_legacy_axes": 1
+}

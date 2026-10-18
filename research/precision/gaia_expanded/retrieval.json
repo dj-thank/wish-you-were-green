@@ -1,0 +1,152 @@
+{
+  "created_utc": "2026-10-18T16:19:16.196556+00:00",
+  "results": [
+    {
+      "source_id": "1078624858218235776",
+      "status": "downloaded",
+      "sha256": "ee4e3b966ee6fc22a887c5ea5ee68c0f894ca93ebae47cef4a91874960fa19a2"
+    },
+    {
+      "source_id": "1099452803904038272",
+      "status": "downloaded",
+      "sha256": "c459b92cd923d80bb60e682ac07f16ef42ccfa24da9349888db982746aa81cc3"
+    },
+    {
+      "source_id": "1182083542272959232",
+      "status": "downloaded",
+      "sha256": "736c76eb3afae94a3d681de28a494003c0e6f1222086132e340abdc6910150c2"
+    },
+    {
+      "source_id": "1245262790370992256",
+      "status": "downloaded",
+      "sha256": "a28404a741e8398324054df89066af7a2c048f703c9091c1c366a1ac8c2dae89"
+    },
+    {
+      "source_id": "1323443938325221376",
+      "status": "downloaded",
+      "sha256": "23fb3b2d83670dbf7c8aff36a80419c1d7289762174d410e26a6242ee4df1748"
+    },
+    {
+      "source_id": "1496016553207149952",
+      "status": "downloaded",
+      "sha256": "837a3aa565b09ce6b6e63514e7ff6a91f30d4160685167d9c310e318778c234a"
+    },
+    {
+      "source_id": "1542337839923130624",
+      "status": "downloaded",
+      "sha256": "14bc1a531c8d2bd14739adba4128bf9f251bf4e59c27c3c8013ce6b8d84ee19d"
+    },
+    {
+      "source_id": "1679189040001914880",
+      "status": "downloaded",
+      "sha256": "ecd401c95a87f0cd04dec7e7c5569ca50a0dc6c0e9839cc357edafbc43878af7"
+    },
+    {
+      "source_id": "1691957732959636608",
+      "status": "downloaded",
+      "sha256": "ff37e3ecc5476bffb7281c6411c8d3f61abe555ba526677f5cb798e727bbcefe"
+    },
+    {
+      "source_id": "2119909923600264960",
+      "status": "downloaded",
+      "sha256": "875240ebfed17116ff388fecde62ae6afdae7c6752a1236aa9682d99eb18e05e"
+    },
+    {
+      "source_id": "2453225705329412480",
+      "status": "downloaded",
+      "sha256": "6e89fb93190f2a27e5038dddb881062a8f46122c5615ed5fc29f269bd7803d98"
+    },
+    {
+      "source_id": "2482684508055379584",
+      "status": "downloaded",
+      "sha256": "f3b21339ed82799d00ba59cfa18739b3f6bcc615fa929e2fedead177f4c3c3f4"
+    },
+    {
+      "source_id": "2513256394506328832",
+      "status": "downloaded",
+      "sha256": "c3f5c143d7af869bc007115d8a5eae8ca673981bd8f9a15f595740f0fad75586"
+    },
+    {
+      "source_id": "2739231150982741760",
+      "status": "downloaded",
+      "sha256": "d9085f0ac93ff5390363aa5ec73f5a56a5aa8113728168b6d25a576ca4ccc60b"
+    },
+    {
+      "source_id": "3204436719718449280",
+      "status": "downloaded",
+      "sha256": "998a0e77ed2dbbd88dd02b28fda55ddadc37a40fdda1695f318522b9c414d546"
+    },
+    {
+      "source_id": "3638333660492606976",
+      "status": "XP_CONTINUOUS_not_available",
+      "datalink_rows": [
+        {
+          "ID": "0",
+          "linking_parameter": "SOURCE_ID",
+          "access_url": "",
+          "service_def": "",
+          "error_message": "NotFoundFault: No URL(s) found",
+          "semantics": "#this",
+          "description": "",
+          "content_type": "",
+          "content_length": ""
+        }
+      ]
+    },
+    {
+      "source_id": "3705179706854089856",
+      "status": "downloaded",
+      "sha256": "a5d0f4c6be81db5d43eb4bc90584ff936f07b41546af33d930939b3cb199b9a5"
+    },
+    {
+      "source_id": "3711047662972690688",
+      "status": "downloaded",
+      "sha256": "87a04fbbaa96088ebfa701cb22052b68eab6823d934e948260b0bfc39aa38036"
+    },
+    {
+      "source_id": "3713218786120541824",
+      "status": "downloaded",
+      "sha256": "fada3f2bc963a49a962259af3711806e484737512764583cf4fae9009194205e"
+    },
+    {
+      "source_id": "3782527364866017664",
+      "status": "downloaded",
+      "sha256": "bef7cd36d9a7e44d8fe965069db966232d327baec0a35a49807165332aaf45af"
+    },
+    {
+      "source_id": "4445170067643613312",
+      "status": "downloaded",
+      "sha256": "1aef8d03faace219ef0bdfddf5fd598e333dbb42c930185a4726613271234e63"
+    },
+    {
+      "source_id": "4545191991882663936",
+      "status": "downloaded",
+      "sha256": "2bcf7354dba4c4376dbdaa672b2192e9ab4f1d245ec97b7bb8bf7799fd99b783"
+    },
+    {
+      "source_id": "4545912820537587328",
+      "status": "downloaded",
+      "sha256": "d3fd1736d05a28c63d199c3e5cf5a634f0dfffadad74d627981f2518a9e46c05"
+    },
+    {
+      "source_id": "4555293235271174016",
+      "status": "downloaded",
+      "sha256": "27e60e199fd07b32777bd8918dd385d703ac7634f3c4bedc6406ef0e66e3995c"
+    },
+    {
+      "source_id": "761677269868775040",
+      "status": "downloaded",
+      "sha256": "3f55bc50a2eb9b6f54be39c2ca45bdf2426e72616bab19510162a1393997b2e4"
+    },
+    {
+      "source_id": "818833831355548928",
+      "status": "downloaded",
+      "sha256": "0391068af60bbf6ba38ef13619a8999807ee8a1a25d9d98698d6fa6e7acb3bd9"
+    },
+    {
+      "source_id": "913810126798863232",
+      "status": "downloaded",
+      "sha256": "39ea7167b91f969bbaefcba7ba199bf20a5bc73380fa40460320321f49121f43"
+    }
+  ]
+}

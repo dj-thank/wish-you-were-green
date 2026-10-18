@@ -167,13 +167,19 @@ def recalibrate_gri(w,f,observed,errors=None,system='sdss'):
                'raw_g_minus_r':float(raw[0]-raw[1]),'raw_r_minus_i':float(raw[1]-raw[2]),
                'photo_g_minus_r':float(obs[0]-obs[1]),'photo_r_minus_i':float(obs[1]-obs[2])}
 
-def analyze_record(rec):
+def analyze_record(rec, *, legacy_unverified_units=False):
     """Screen one spectrum; choose SDSS, then PS1 if no reliable SDSS anchor.
 
     This is a discovery *screen*. Invalid photometry is never used to force a
     colour. Unanchored spectra remain labelled and need follow-up validation.
+    MWDD SDSS exports require a raw-SHA-matched F_nu/F_lambda determination.
+    The explicit legacy option reproduces the flawed 0.1 screen for auditing;
+    its results must not be promoted into the corrected candidate selection.
     """
     row={k:rec.get(k) for k in ['wdid','source_id','spectype','teff','ra_deg','dec_deg','kind','source_url','star_page_url','parsed_path','raw_path','sha256','selection_group','spectrum_id','photometry_clean']}
+    from flux_conventions import as_flux_lambda, resolve_flux_convention, UnverifiedFluxConvention
+    row.update(resolve_flux_convention(rec))
+    row['calibrated']=False
     try:
         sp=np.load(data_path(rec['parsed_path']));w=sp['wavelength_angstrom']
         f=sp['flux_original'] if 'flux_original' in sp else sp['flux_flam']
@@ -181,6 +187,13 @@ def analyze_record(rec):
         if 'sigma' in sp:
             ss=sp['sigma'];iv=np.divide(1,ss**2,out=np.zeros_like(ss),where=np.isfinite(ss)&(ss>0))
         elif 'ivar' in sp: iv=sp['ivar']
+        if legacy_unverified_units:
+            row.update(flux_units_validated=False,flux_input_convention='legacy_assumed_flambda',
+                       flux_unit_evidence='Historical reproduction only; known mixed-unit screen',
+                       flux_conversion_applied=False)
+        else:
+            f,iv,unit_info=as_flux_lambda(w,f,iv,rec)
+            row.update(unit_info)
         m=integrate_colour(w,f,iv,mask_sky=rec['kind']!='Gaia_XP')
         row.update({'raw_'+k:v for k,v in m.items()});row.update(m);row['calibrated']=False
         p=rec.get('photometry',{})
@@ -211,6 +224,7 @@ def analyze_record(rec):
             good=np.isfinite(iv)&(iv>0)&(w>4000)&(w<7500)
             row['visible_median_pixel_snr']=float(np.median(f[good]*np.sqrt(iv[good]))) if np.any(good) else np.nan
         row['status']='ok'
+    except UnverifiedFluxConvention as e:row['status']='unit_unverified';row['error']=str(e)
     except Exception as e:row['status']='error';row['error']=str(e)
     return row
 
@@ -222,41 +236,14 @@ def inspect_mwdd_manifest():
     return load_json(ROOT/'mwdd/manifest_enriched.json')
 
 def analyze_mwdd():
-    manifest=inspect_mwdd_manifest();rows=[]
-    for rec in manifest:
-        if not rec.get('parsed_path'):continue
-        row={k:rec.get(k) for k in ['wdid','source_id','spectype','teff','ra_deg','dec_deg','kind','source_url','star_page_url','parsed_path','raw_path','sha256']}
-        try:
-            sp=np.load(data_path(rec['parsed_path']));w=sp['wavelength_angstrom'];f=sp['flux_original']
-            iv=None
-            if 'sigma' in sp:
-                ss=sp['sigma'];iv=np.divide(1,ss**2,out=np.zeros_like(ss),where=np.isfinite(ss)&(ss>0))
-            m=integrate_colour(w,f,iv,mask_sky=rec['kind']!='Gaia_XP')
-            row.update({'raw_'+k:v for k,v in m.items()}); row.update(m); row['calibrated']=False
-            p=rec.get('photometry',{})
-            def num(k):
-                try:return float(p.get(k,np.nan))
-                except (ValueError,TypeError):return np.nan
-            obs=[num('s'+b) for b in 'gri'];err=[num('Ds'+b) for b in 'gri']
-            if all(np.isfinite(obs)):
-                try:
-                    fc,cal=recalibrate_gri(w,f,obs,err)
-                    corr=10**(-.4*(cal['cal_offset_mag']+cal['cal_tilt_mag_per_1000A']*(w-6200)/1000))
-                    ivc=None if iv is None else iv/corr**2
-                    mc=integrate_colour(w,fc,ivc,mask_sky=rec['kind']!='Gaia_XP')
-                    row.update(mc);row.update(cal);row['calibrated']=True
-                    uv0=np.array([mc['u1960'],mc['v1960']]); shifts=[]
-                    for shift in [-max(2*cal['cal_tilt_error'],.03),max(2*cal['cal_tilt_error'],.03)]:
-                        fs=fc*10**(-.4*shift*(w-6200)/1000);ms=integrate_colour(w,fs)
-                        shifts.append(np.linalg.norm(np.array([ms['u1960'],ms['v1960']])-uv0))
-                    row['uv_tilt_stress_max']=float(max(shifts))
-                except Exception as e: row['calibration_error']=str(e)
-            row['status']='ok'
-        except Exception as e:row['status']='error';row['error']=str(e)
-        rows.append(row)
-    out=pd.DataFrame(rows);(ROOT/'results').mkdir(exist_ok=True)
-    out.to_csv(ROOT/'results/mwdd_screen.csv',index=False)
+    """Current unit-aware MWDD calculation; historical tables are not overwritten."""
+    rows=[analyze_record(rec) for rec in inspect_mwdd_manifest() if rec.get('parsed_path')]
+    out=pd.DataFrame(rows)
+    destination=ROOT/'results/validated_screen'
+    destination.mkdir(parents=True,exist_ok=True)
+    out.to_csv(destination/'mwdd_screen.csv',index=False)
     return out
+
 
 def save_reference_data():
     d=ROOT/'reference';d.mkdir(exist_ok=True)

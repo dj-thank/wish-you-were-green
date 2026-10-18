@@ -1,0 +1,21 @@
+{
+  "name": "ztf_lightcurve_api",
+  "endpoint": "https://irsa.ipac.caltech.edu/docs/program_interface/ztf_lightcurve_api.html",
+  "parameters": {},
+  "request_url": "https://irsa.ipac.caltech.edu/docs/program_interface/ztf_lightcurve_api.html",
+  "resolved_url": "https://irsa.ipac.caltech.edu/docs/program_interface/ztf_lightcurve_api.html",
+  "status": 200,
+  "headers": {
+    "Server": "nginx",
+    "Date": "Sun, 18 Oct 2026 15:53:38 GMT",
+    "Content-Type": "text/html",
+    "Transfer-Encoding": "chunked",
+    "Connection": "close",
+    "Accept-Ranges": "bytes"
+  },
+  "query_started_utc": "2026-10-18T15:53:37.535503+00:00",
+  "retrieved_utc": "2026-10-18T15:53:38.120370+00:00",
+  "relative_path": "raw/ztf_lightcurve_api.html",
+  "bytes": 20264,
+  "sha256": "5ccbb7068e1e86535e59d5ec4c480a5cfedd1397804823d10ea4431a23381f40"
+}

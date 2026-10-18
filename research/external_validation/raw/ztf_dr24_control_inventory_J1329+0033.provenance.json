@@ -1,0 +1,27 @@
+{
+  "name": "ztf_dr24_control_inventory_J1329+0033",
+  "endpoint": "https://irsa.ipac.caltech.edu/TAP/sync",
+  "parameters": {
+    "REQUEST": "doQuery",
+    "LANG": "ADQL",
+    "FORMAT": "csv",
+    "QUERY": "SELECT TOP 300 oid,ra,dec,fid,field,ccdid,qid,medianmag,refmag,refchi,refsharp,ngoodobsrel,nobsrel,medmagerr,magrms,chisq,astrometricrms FROM ztf_objects_dr24 WHERE CONTAINS(POINT('ICRS',ra,dec),CIRCLE('ICRS',202.42771312194,0.55963910805,0.05))=1 AND fid=2 AND field=424 AND ccdid=13 AND qid=1 AND medianmag BETWEEN 19.33419 AND 20.034190000000002 AND ngoodobsrel>=30"
+  },
+  "request_url": "https://irsa.ipac.caltech.edu/TAP/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=SELECT+TOP+300+oid%2Cra%2Cdec%2Cfid%2Cfield%2Cccdid%2Cqid%2Cmedianmag%2Crefmag%2Crefchi%2Crefsharp%2Cngoodobsrel%2Cnobsrel%2Cmedmagerr%2Cmagrms%2Cchisq%2Castrometricrms+FROM+ztf_objects_dr24+WHERE+CONTAINS%28POINT%28%27ICRS%27%2Cra%2Cdec%29%2CCIRCLE%28%27ICRS%27%2C202.42771312194%2C0.55963910805%2C0.05%29%29%3D1+AND+fid%3D2+AND+field%3D424+AND+ccdid%3D13+AND+qid%3D1+AND+medianmag+BETWEEN+19.33419+AND+20.034190000000002+AND+ngoodobsrel%3E%3D30",
+  "resolved_url": "https://irsa.ipac.caltech.edu/TAP/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=SELECT+TOP+300+oid%2Cra%2Cdec%2Cfid%2Cfield%2Cccdid%2Cqid%2Cmedianmag%2Crefmag%2Crefchi%2Crefsharp%2Cngoodobsrel%2Cnobsrel%2Cmedmagerr%2Cmagrms%2Cchisq%2Castrometricrms+FROM+ztf_objects_dr24+WHERE+CONTAINS%28POINT%28%27ICRS%27%2Cra%2Cdec%29%2CCIRCLE%28%27ICRS%27%2C202.42771312194%2C0.55963910805%2C0.05%29%29%3D1+AND+fid%3D2+AND+field%3D424+AND+ccdid%3D13+AND+qid%3D1+AND+medianmag+BETWEEN+19.33419+AND+20.034190000000002+AND+ngoodobsrel%3E%3D30",
+  "status": 200,
+  "headers": {
+    "Server": "nginx",
+    "Date": "Sun, 18 Oct 2026 16:01:06 GMT",
+    "Content-Type": "text/csv",
+    "Content-Length": "2222",
+    "Connection": "close",
+    "Server-Timing": "main;dur=13260.262, prepare_internal;dur=2.451, generate_adql;dur=0.007, query_delegate;dur=13252.450, oversee_sync;dur=13242.020, submit_sync;dur=456.918, spinoff_queued;dur=1511.995, spinoff_running;dur=11261.350, TAP_main;dur=7797.740, query_execute;dur=7662.398, database_query;dur=7661.862",
+    "Set-Cookie": "anonymous=88/84/db4e10752804f755eb1446ddd394"
+  },
+  "query_started_utc": "2026-10-18T16:00:53.022362+00:00",
+  "retrieved_utc": "2026-10-18T16:01:06.665078+00:00",
+  "relative_path": "raw/ztf_dr24_control_inventory_J1329+0033.csv",
+  "bytes": 2222,
+  "sha256": "2d88fa7ee4eb77ac4c0cda5fbfa4fe1cb4b76d3535611a53f897b4e44827ab59"
+}

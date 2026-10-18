@@ -1,0 +1,22 @@
+{
+  "requested_url": "https://raw.githubusercontent.com/jamietwilliams/PEWDD/023dba3176ac367c6cf2b5968847a80d79e3c594/PEWDD.csv",
+  "resolved_url": "https://raw.githubusercontent.com/jamietwilliams/PEWDD/023dba3176ac367c6cf2b5968847a80d79e3c594/PEWDD.csv",
+  "repository_commit": "023dba3176ac367c6cf2b5968847a80d79e3c594",
+  "repository_commit_date_utc": "2026-03-27T15:09:37Z",
+  "retrieval_date_utc": "2026-10-18",
+  "path": "sources/pewdd_023dba3.csv.gz",
+  "uncompressed_bytes": 1594728,
+  "uncompressed_sha256": "ed65260aa5b130198468ae8e482794868119f7f0e754cd53fbb5dd7d8baf83d3",
+  "compressed_sha256": "1501ec84ab235bd3e92e04d6e22289651b8483f216408807afd217c96731877e",
+  "rows": 3475,
+  "field_count": 206,
+  "paper_url": "https://www.aanda.org/articles/aa/full_html/2024/11/aa50509-24/aa50509-24.html",
+  "documentation_url": "https://pewdd-tutorial.readthedocs.io/en/latest/usage.html",
+  "cautions": [
+    "This exact repository snapshot is dated March 2026; not all subsequent abundance papers are included.",
+    "One star can have multiple rows for papers or atmosphere assumptions; retain them.",
+    "An abundance uncertainty of -1 denotes an upper limit, not a detection.",
+    "Atmospheric number ratios are not accreted-body compositions without diffusion and accretion-phase modelling.",
+    "The upstream data retain their terms; the project code licence does not relicense this snapshot."
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "event_expid": "214855443",
+  "candidate": "J1323-0129",
+  "source_id": "3638333660492606976",
+  "event_catflags": 0,
+  "event_mjd": 59902.5544329,
+  "event_native_r": 18.8030338,
+  "neighboring_native_r": [
+    19.5656013,
+    19.4798927
+  ],
+  "event_offset_from_epoch_predicted_gaia_arcsec": 1.549381771709,
+  "event_offset_from_unpropagated_gaia2016_arcsec": 0.774954699853631,
+  "images": [
+    {
+      "label": "before",
+      "expid": "214755583",
+      "mjd": 59901.5558333,
+      "r_native_mag": 19.5656013,
+      "epoch_separation_arcsec": 0.1795655553192148,
+      "shape": [
+        51,
+        50
+      ],
+      "expected_gaia_pixel": [
+        24.2835706060946,
+        25.61786966876207
+      ],
+      "detection_centroid_pixel": [
+        24.378063111168714,
+        25.468082891227596
+      ],
+      "local_background_DN": 1948.4087524414062,
+      "local_background_mad_sigma_DN": 18.668960009765623,
+      "fits_metadata": {
+        "OBSJD": 2459902.0558333,
+        "OBSMJD": 59901.5558333,
+        "SEEING": 2.212,
+        "FWHM": null,
+        "MAGZP": 26.194834,
+        "MAGZPRMS": 0.041403,
+        "CLRCOEFF": 0.131441,
+        "INFOBITS": 0,
+        "AIRMASS": 2.439,
+        "EXPTIME": 30.0
+      }
+    },
+    {
+      "label": "offset_event",
+      "expid": "214855443",
+      "mjd": 59902.5544329,
+      "r_native_mag": 18.8030338,
+      "epoch_separation_arcsec": 1.549381771709,
+      "shape": [
+        50,
+        51
+      ],
+      "expected_gaia_pixel": [
+        25.009977381225024,
+        25.085740670317477
+      ],
+      "detection_centroid_pixel": [
+        24.513923772516158,
+        23.639164979661018
+      ],
+      "local_background_DN": 1571.8231201171875,
+      "local_background_mad_sigma_DN": 15.900215368652344,
+      "fits_metadata": {
+        "OBSJD": 2459903.0544329,
+        "OBSMJD": 59902.5544329,
+        "SEEING": 4.182,
+        "FWHM": null,
+        "MAGZP": 26.184013,
+        "MAGZPRMS": 0.046842,
+        "CLRCOEFF": 0.125237,
+        "INFOBITS": 0,
+        "AIRMASS": 2.404,
+        "EXPTIME": 30.0
+      }
+    },
+    {
+      "label": "after",
+      "expid": "214955015",
+      "mjd": 59903.5501505,
+      "r_native_mag": 19.4798927,
+      "epoch_separation_arcsec": 0.3148628142271568,
+      "shape": [
+        50,
+        51
+      ],
+      "expected_gaia_pixel": [
+        25.23560241360301,
+        25.278126937206025
+      ],
+      "detection_centroid_pixel": [
+        25.438141053526248,
+        25.04285092433122
+      ],
+      "local_background_DN": 1151.907958984375,
+      "local_background_mad_sigma_DN": 14.415353100585937,
+      "fits_metadata": {
+        "OBSJD": 2459904.0501505,
+        "OBSMJD": 59903.5501505,
+        "SEEING": 2.247,
+        "FWHM": null,
+        "MAGZP": 26.170724,
+        "MAGZPRMS": 0.038753,
+        "CLRCOEFF": 0.132722,
+        "INFOBITS": 0,
+        "AIRMASS": 2.445,
+        "EXPTIME": 30.0
+      }
+    }
+  ],
+  "conclusion": "This detection is positionally inconsistent with the star at the adopted 1.5 arcsec threshold despite catflags=0. It is withheld from stellar-variability inference and retained in the epoch decision table. The science cutouts are a scene check, not a PSF/deblending or transient identification analysis; origin remains unresolved.",
+  "alternatives_to_investigate": [
+    "A nearby moving/transient source",
+    "A contaminated or biased PSF centroid",
+    "A single-exposure image or extraction artifact"
+  ],
+  "not_established": [
+    "A flare of the white dwarf",
+    "The identity or physical cause of the excess image flux",
+    "No astrophysical transient exists in the cutout"
+  ]
+}

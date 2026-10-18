@@ -1,0 +1,33 @@
+{
+  "name": "gaia_dr3_15arcsec_fields",
+  "endpoint": "https://gea.esac.esa.int/tap-server/tap/sync",
+  "parameters": {
+    "REQUEST": "doQuery",
+    "LANG": "ADQL",
+    "FORMAT": "csv",
+    "QUERY": "SELECT source_id,ra,dec,ref_epoch,ra_error,dec_error,parallax,parallax_error,pmra,pmdec,pmra_error,pmdec_error,ruwe,astrometric_params_solved,duplicated_source,ipd_frac_multi_peak,ipd_frac_odd_win,phot_bp_rp_excess_factor,phot_g_mean_mag,phot_bp_mean_mag,phot_rp_mean_mag,phot_bp_n_obs,phot_rp_n_obs,phot_bp_n_contaminated_transits,phot_bp_n_blended_transits,phot_rp_n_contaminated_transits,phot_rp_n_blended_transits,phot_variable_flag,has_epoch_photometry,has_xp_continuous,non_single_star FROM gaiadr3.gaia_source WHERE 1=CONTAINS(POINT('ICRS',ra,dec),CIRCLE('ICRS',138.4021030032363,44.56813161736343,0.004166666666666667)) OR 1=CONTAINS(POINT('ICRS',ra,dec),CIRCLE('ICRS',67.43628526183,-3.90650606101,0.004166666666666667)) OR 1=CONTAINS(POINT('ICRS',ra,dec),CIRCLE('ICRS',202.42771312194,0.55963910805,0.004166666666666667)) OR 1=CONTAINS(POINT('ICRS',ra,dec),CIRCLE('ICRS',200.80308349614,-1.4904251354,0.004166666666666667))"
+  },
+  "request_url": "https://gea.esac.esa.int/tap-server/tap/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=SELECT+source_id%2Cra%2Cdec%2Cref_epoch%2Cra_error%2Cdec_error%2Cparallax%2Cparallax_error%2Cpmra%2Cpmdec%2Cpmra_error%2Cpmdec_error%2Cruwe%2Castrometric_params_solved%2Cduplicated_source%2Cipd_frac_multi_peak%2Cipd_frac_odd_win%2Cphot_bp_rp_excess_factor%2Cphot_g_mean_mag%2Cphot_bp_mean_mag%2Cphot_rp_mean_mag%2Cphot_bp_n_obs%2Cphot_rp_n_obs%2Cphot_bp_n_contaminated_transits%2Cphot_bp_n_blended_transits%2Cphot_rp_n_contaminated_transits%2Cphot_rp_n_blended_transits%2Cphot_variable_flag%2Chas_epoch_photometry%2Chas_xp_continuous%2Cnon_single_star+FROM+gaiadr3.gaia_source+WHERE+1%3DCONTAINS%28POINT%28%27ICRS%27%2Cra%2Cdec%29%2CCIRCLE%28%27ICRS%27%2C138.4021030032363%2C44.56813161736343%2C0.004166666666666667%29%29+OR+1%3DCONTAINS%28POINT%28%27ICRS%27%2Cra%2Cdec%29%2CCIRCLE%28%27ICRS%27%2C67.43628526183%2C-3.90650606101%2C0.004166666666666667%29%29+OR+1%3DCONTAINS%28POINT%28%27ICRS%27%2Cra%2Cdec%29%2CCIRCLE%28%27ICRS%27%2C202.42771312194%2C0.55963910805%2C0.004166666666666667%29%29+OR+1%3DCONTAINS%28POINT%28%27ICRS%27%2Cra%2Cdec%29%2CCIRCLE%28%27ICRS%27%2C200.80308349614%2C-1.4904251354%2C0.004166666666666667%29%29",
+  "resolved_url": "https://gea.esac.esa.int/tap-server/tap/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=SELECT+source_id%2Cra%2Cdec%2Cref_epoch%2Cra_error%2Cdec_error%2Cparallax%2Cparallax_error%2Cpmra%2Cpmdec%2Cpmra_error%2Cpmdec_error%2Cruwe%2Castrometric_params_solved%2Cduplicated_source%2Cipd_frac_multi_peak%2Cipd_frac_odd_win%2Cphot_bp_rp_excess_factor%2Cphot_g_mean_mag%2Cphot_bp_mean_mag%2Cphot_rp_mean_mag%2Cphot_bp_n_obs%2Cphot_rp_n_obs%2Cphot_bp_n_contaminated_transits%2Cphot_bp_n_blended_transits%2Cphot_rp_n_contaminated_transits%2Cphot_rp_n_blended_transits%2Cphot_variable_flag%2Chas_epoch_photometry%2Chas_xp_continuous%2Cnon_single_star+FROM+gaiadr3.gaia_source+WHERE+1%3DCONTAINS%28POINT%28%27ICRS%27%2Cra%2Cdec%29%2CCIRCLE%28%27ICRS%27%2C138.4021030032363%2C44.56813161736343%2C0.004166666666666667%29%29+OR+1%3DCONTAINS%28POINT%28%27ICRS%27%2Cra%2Cdec%29%2CCIRCLE%28%27ICRS%27%2C67.43628526183%2C-3.90650606101%2C0.004166666666666667%29%29+OR+1%3DCONTAINS%28POINT%28%27ICRS%27%2Cra%2Cdec%29%2CCIRCLE%28%27ICRS%27%2C202.42771312194%2C0.55963910805%2C0.004166666666666667%29%29+OR+1%3DCONTAINS%28POINT%28%27ICRS%27%2Cra%2Cdec%29%2CCIRCLE%28%27ICRS%27%2C200.80308349614%2C-1.4904251354%2C0.004166666666666667%29%29",
+  "status": 200,
+  "headers": {
+    "Date": "Sun, 18 Oct 2026 15:53:36 GMT",
+    "Server": "Apache/2.4.62 (Red Hat Enterprise Linux) OpenSSL/3.5.5 mod_jk/1.2.50",
+    "Set-Cookie": "JSESSIONID=73A4FC31C852768ADE7750D60457D263; Path=/tap-server; Secure; HttpOnly",
+    "Content-Disposition": "attachment;filename=\"148eb348-cb0c-11f1-9670-bc97e148b76b-O-result.csv\"",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "0",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "SAMEORIGIN",
+    "Connection": "close",
+    "Transfer-Encoding": "chunked",
+    "Content-Type": "text/csv"
+  },
+  "query_started_utc": "2026-10-18T15:53:36.019068+00:00",
+  "retrieved_utc": "2026-10-18T15:53:38.386981+00:00",
+  "relative_path": "raw/gaia_dr3_15arcsec_fields.csv",
+  "bytes": 1870,
+  "sha256": "6ca0193f036f3c50a607cd173408d804a803fe5ee8b19222012f2e22c9a1653c"
+}

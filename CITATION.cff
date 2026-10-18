@@ -3,25 +3,29 @@ message: >-
   If you use this analysis or its reproducibility code, cite the version or
   commit used and the underlying papers and datasets relevant to your work.
   See docs/references.bib and ACKNOWLEDGMENTS.md for original-source credits.
-title: Additional white dwarf colour candidates from public spectra
+title: 'Wish You Were Green: white-dwarf chromaticity research'
 type: software
 authors:
   - family-names: Moriwaki
     given-names: Shota
-version: 0.1.0
+version: 0.2.0
 date-released: '2026-10-18'
-url: https://github.com/dj-thank/pale-yellow-green-white-dwarf-candidate
-repository-code: https://github.com/dj-thank/pale-yellow-green-white-dwarf-candidate
+url: https://github.com/dj-thank/wish-you-were-green
+repository-code: https://github.com/dj-thank/wish-you-were-green
 license: Apache-2.0
 abstract: >-
-  Reproducible public-spectrum analysis identifying two additional pale
-  yellow-green white dwarf colour candidates, with pink and unusual yellow
-  comparison candidates. The objects and their atmospheric classifications
-  are previously known; the potentially new quantity is their calculated
-  human-vision chromaticity. This is an exploratory, unreviewed research note
-  with ChatGPT-assisted analysis, not a claim of worldwide priority or new
-  atmospheric physics. The software licence is Apache-2.0; original prose is
-  CC BY 4.0, and third-party data, figures and references retain their own terms.
+  Public-spectrum analysis of white-dwarf chromaticity, with an audit of
+  spectral flux conventions, corrected candidate screening, native Gaia XP
+  covariance propagation, photometric calibration stress tests, public
+  time-series and additional-epoch observations, and source-identity checks.
+  Version 0.2 corrects mixed Fnu and Flambda interpretations in archived SDSS
+  spectra and withdraws independent SDSS colour corroboration for WD
+  J1323-0129. Historical version 0.1 numerical products remain identifiable.
+  This is exploratory, unreviewed research with ChatGPT-assisted analysis;
+  it does not establish confirmed discoveries, complete uncertainty budgets,
+  worldwide priority or new atmospheric physics. Project initiator and
+  maintainer: Shota Moriwaki. Original code is Apache-2.0, original prose is
+  CC BY 4.0, and third-party material retains its original terms.
 keywords:
   - astronomy
   - white dwarfs
@@ -36,11 +40,13 @@ preferred-citation:
   authors:
     - family-names: Moriwaki
       given-names: Shota
-  title: Additional white dwarf colour candidates from public spectra
+  title: 'Wish You Were Green: white-dwarf chromaticity research'
   year: 2026
-  url: https://github.com/dj-thank/pale-yellow-green-white-dwarf-candidate
+  url: https://github.com/dj-thank/wish-you-were-green
   notes: >-
-    Version 0.1.0. Public-data research note and reproducibility code.
+    Version 0.2.0. Corrected public-data research and reproducibility code.
+    Include the exact commit used; the preserved version 0.1 reports and
+    numerical snapshots must be identified separately when cited.
     Project initiator and maintainer: Shota Moriwaki. ChatGPT-assisted analysis;
     not peer reviewed. Cite the underlying observations, catalogues and models
     separately where used.

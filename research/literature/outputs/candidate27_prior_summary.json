@@ -1,0 +1,22 @@
+{
+  "candidate_count": 27,
+  "census_sha256": "7c2ea8569a9b149d6607e6c6d5d6a5d18e249bd025e4b3b589dbc5703c4087ca",
+  "swan_exact_id_matches": 25,
+  "kilic2026_exact_id_matches": 25,
+  "pewdd_exact_id_matches": 0,
+  "registered_exposure_rows": 42,
+  "exposures_with_some_valid_pixels_all_arms": 32,
+  "candidates_with_multiple_registered_nights": 4,
+  "candidates_with_multiple_nights_having_all_arms": 3,
+  "source_ids_absent_from_swan": [
+    "1245262790370992256",
+    "1542337839923130624"
+  ],
+  "cautions": [
+    "Absence from any one catalogue is not evidence of novelty.",
+    "Swan contamination is a neighbour/target flux-ratio model estimate, not a measured upper bound.",
+    "Swan H/He-only fitted physical parameters have deliberately not been substituted for appropriate DQ/DZ atmosphere fits.",
+    "All 27 entities remain candidates pending the joint record-level, field and calibration audit.",
+    "This inventory is a per-object literature and observation audit; it does not claim all model-fit figures were visually re-inspected for all 27 stars."
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "name": "ztf_dr24_release_notes",
+  "endpoint": "https://irsa.ipac.caltech.edu/data/ZTF/docs/releases/dr24/src/dr24.html",
+  "parameters": {},
+  "request_url": "https://irsa.ipac.caltech.edu/data/ZTF/docs/releases/dr24/src/dr24.html",
+  "attempted_utc": "2026-10-18T15:53:38.120967+00:00",
+  "error": "<HTTPError 404: 'Not Found'>"
+}

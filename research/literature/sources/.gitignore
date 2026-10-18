@@ -1,0 +1,7 @@
+# Re-download immutable large source caches with fetch_atmosphere_sources.py.
+swan_catalogue.csv.gz
+swan_external.csv.gz
+swan_exposures.csv.gz
+kilic*_source.tar
+kilic*.txt
+kilic*.tex

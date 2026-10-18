@@ -1,0 +1,2869 @@
+{
+  "created_utc": "2026-10-18T16:25:03.813831+00:00",
+  "spectra": 52,
+  "source_count": 26,
+  "results": [
+    {
+      "source_id": "1078624858218235776",
+      "reconstruction": "full",
+      "mc_seed": 20261019,
+      "mc_draws": 200000,
+      "nonpositive_xyz_draws": 0,
+      "x": 0.3595619851140991,
+      "y": 0.39120478373687273,
+      "u1960": 0.20619056478637415,
+      "v1960": 0.3365041577472682,
+      "r_linear": 1.0,
+      "g_linear": 0.9002497019066817,
+      "b_linear": 0.4631697685761873,
+      "r": 255,
+      "g": 243,
+      "b": 181,
+      "hex": "#FFF3B5",
+      "in_srgb_gamut": true,
+      "green_dominant": false,
+      "green_channel_margin": -0.09975029809331826,
+      "duv": 0.013359650251206326,
+      "distance_planck_uv": 0.013359650251206326,
+      "nearest_planck_temperature_K": 4678.253600101842,
+      "nearest_planck_u": 0.21502716306298367,
+      "nearest_planck_v": 0.3264844379042597,
+      "nearest_is_RJ_limit": false,
+      "formal_duv_p025": 0.007186323012418611,
+      "formal_duv_median": 0.013394425688145053,
+      "formal_duv_p975": 0.019583881955021525,
+      "formal_distance_above_001_fraction": 0.857015,
+      "formal_green_largest_fraction": 0.037735,
+      "xyz_native": [
+        4.6833676489984693e-17,
+        5.0955215071062586e-17,
+        3.2463132926811367e-17
+      ],
+      "xyz_covariance_native": [
+        [
+          9.941566780562635e-37,
+          5.674598454732872e-37,
+          7.059627748440433e-37
+        ],
+        [
+          5.674598454732872e-37,
+          9.728161462155553e-37,
+          -5.677269526527556e-38
+        ],
+        [
+          7.059627748440433e-37,
+          -5.677269526527556e-38,
+          3.983041906908716e-36
+        ]
+      ],
+      "caveat": "Coefficient-noise model only. Conditional on positive XYZ draws; discarded count reported. No spectral calibration, BP/RP cross-calibration covariance, contamination, truncation-bias, or selection correction."
+    },
+    {
+      "source_id": "1078624858218235776",
+      "reconstruction": "truncated",
+      "mc_seed": 20261020,
+      "mc_draws": 200000,
+      "nonpositive_xyz_draws": 0,
+      "x": 0.36254090307344455,
+      "y": 0.40280445412877836,
+      "u1960": 0.2040021097122244,
+      "v1960": 0.3399876720687081,
+      "r_linear": 1.0,
+      "g_linear": 0.9437539106314612,
+      "b_linear": 0.42399054685452947,
+      "r": 255,
+      "g": 249,
+      "b": 174,
+      "hex": "#FFF9AE",
+      "in_srgb_gamut": true,
+      "green_dominant": false,
+      "green_channel_margin": -0.05624608936853881,
+      "duv": 0.017418945706308777,
+      "distance_planck_uv": 0.017418945706308777,
+      "nearest_planck_temperature_K": 4638.027204324373,
+      "nearest_planck_u": 0.21552302632710355,
+      "nearest_planck_v": 0.3269229045670518,
+      "nearest_is_RJ_limit": false,
+      "formal_duv_p025": 0.012419779744956984,
+      "formal_duv_median": 0.017432359620878187,
+      "formal_duv_p975": 0.022450923556425535,
+      "formal_distance_above_001_fraction": 0.998135,
+      "formal_green_largest_fraction": 0.14803,
+      "xyz_native": [
+        4.596738720855203e-17,
+        5.1072494593847226e-17,
+        2.9752396858747644e-17
+      ],
+      "xyz_covariance_native": [
+        [
+          8.307654385156838e-37,
+          4.890354717754331e-37,
+          4.577091878413259e-37
+        ],
+        [
+          4.890354717754331e-37,
+          7.6187012637936e-37,
+          2.3508398349093333e-37
+        ],
+        [
+          4.577091878413259e-37,
+          2.3508398349093333e-37,
+          2.0693533176660745e-36
+        ]
+      ],
+      "caveat": "Coefficient-noise model only. Conditional on positive XYZ draws; discarded count reported. No spectral calibration, BP/RP cross-calibration covariance, contamination, truncation-bias, or selection correction."
+    },
+    {
+      "source_id": "1099452803904038272",
+      "reconstruction": "full",
+      "mc_seed": 20261021,
+      "mc_draws": 200000,
+      "nonpositive_xyz_draws": 0,
+      "x": 0.36112194768965167,
+      "y": 0.3392304352661383,
+      "u1960": 0.22753137560237346,
+      "v1960": 0.32060735193238504,
+      "r_linear": 1.0,
+      "g_linear": 0.5983718586887082,
+      "b_linear": 0.5357854616165206,
+      "r": 255,
+      "g": 203,
+      "b": 193,
+      "hex": "#FFCBC1",
+      "in_srgb_gamut": true,
+      "green_dominant": false,
+      "green_channel_margin": -0.40162814131129176,
+      "duv": -0.01253789661562172,
+      "distance_planck_uv": 0.01253789661562172,
+      "nearest_planck_temperature_K": 4328.421456220152,
+      "nearest_planck_u": 0.2197347941726621,
+      "nearest_planck_v": 0.3304263218149083,
+      "nearest_is_RJ_limit": false,
+      "formal_duv_p025": -0.016748416202132816,
+      "formal_duv_median": -0.012519889987726969,
+      "formal_duv_p975": -0.008323862713060461,
+      "formal_distance_above_001_fraction": 0.87996,
+      "formal_green_largest_fraction": 0.0,
+      "xyz_native": [
+        8.196150545554165e-17,
+        7.699293091608486e-17,
+        6.800907548332004e-17
+      ],
+      "xyz_covariance_native": [
+        [
+          1.235947242061292e-36,
+          7.073755762309221e-37,
+          8.53262289259856e-37
+        ],
+        [
+          7.073755762309221e-37,
+          1.1183770546106654e-36,
+          -6.347417708116839e-38
+        ],
+        [
+          8.53262289259856e-37,
+          -6.347417708116839e-38,
+          4.76805880739023e-36
+        ]
+      ],
+      "caveat": "Coefficient-noise model only. Conditional on positive XYZ draws; discarded count reported. No spectral calibration, BP/RP cross-calibration covariance, contamination, truncation-bias, or selection correction."
+    },
+    {
+      "source_id": "1099452803904038272",
+      "reconstruction": "truncated",
+      "mc_seed": 20261022,
+      "mc_draws": 200000,
+      "nonpositive_xyz_draws": 0,
+      "x": 0.3625677733344077,
+      "y": 0.3391367059448444,
+      "u1960": 0.2285869599846233,
+      "v1960": 0.32072167329511897,
+      "r_linear": 1.0,
+      "g_linear": 0.5886148683350967,
+      "b_linear": 0.5273121429777876,
+      "r": 255,
+      "g": 202,
+      "b": 192,
+      "hex": "#FFCAC0",
+      "in_srgb_gamut": true,
+      "green_dominant": false,
+      "green_channel_margin": -0.4113851316649033,
+      "duv": -0.01309607666352135,
+      "distance_planck_uv": 0.01309607666352135,
+      "nearest_planck_temperature_K": 4272.714140582606,
+      "nearest_planck_u": 0.22057462050124885,
+      "nearest_planck_v": 0.33108070992889854,
+      "nearest_is_RJ_limit": false,
+      "formal_duv_p025": -0.016522615594351617,
+      "formal_duv_median": -0.0130847502703609,
+      "formal_duv_p975": -0.009663311967895041,
+      "formal_distance_above_001_fraction": 0.96088,
+      "formal_green_largest_fraction": 0.0,
+      "xyz_native": [
+        8.137498200739965e-17,
+        7.611609573158807e-17,
+        6.69496695977728e-17
+      ],
+      "xyz_covariance_native": [
+        [
+          1.0775613646957323e-36,
+          6.113398303100661e-37,
+          5.140105754531442e-37
+        ],
+        [
+          6.113398303100661e-37,
+          8.617369420843602e-37,
+          1.983583513045399e-37
+        ],
+        [
+          5.140105754531442e-37,
+          1.983583513045399e-37,
+          2.3662634108078885e-36
+        ]
+      ],
+      "caveat": "Coefficient-noise model only. Conditional on positive XYZ draws; discarded count reported. No spectral calibration, BP/RP cross-calibration covariance, contamination, truncation-bias, or selection correction."
+    },
+    {
+      "source_id": "1182083542272959232",
+      "reconstruction": "full",
+      "mc_seed": 20261023,
+      "mc_draws": 200000,
+      "nonpositive_xyz_draws": 0,
+      "x": 0.36426497557863746,
+      "y": 0.39113403671336283,
+      "u1960": 0.20919504418096266,
+      "v1960": 0.336938661043187,
+      "r_linear": 1.0,
+      "g_linear": 0.854802726516019,
+      "b_linear": 0.4351784246306775,
+      "r": 255,
+      "g": 238,
+      "b": 176,
+      "hex": "#FFEEB0",
+      "in_srgb_gamut": true,
+      "green_dominant": false,
+      "green_channel_margin": -0.14519727348398104,
+      "duv": 0.011716292373453936,
+      "distance_planck_uv": 0.011716292373453936,
+      "nearest_planck_temperature_K": 4538.96798629597,
+      "nearest_planck_u": 0.2167919094445564,
+      "nearest_planck_v": 0.3280190677146177,
+      "nearest_is_RJ_limit": false,
+      "formal_duv_p025": 0.005835363391870925,
+      "formal_duv_median": 0.01173498315720297,
+      "formal_duv_p975": 0.017581278666716795,
+      "formal_distance_above_001_fraction": 0.718475,
+      "formal_green_largest_fraction": 0.00277,
+      "xyz_native": [
+        8.216012351212658e-17,
+        8.822045192546685e-17,
+        5.5169859054810467e-17
+      ],
+      "xyz_covariance_native": [
+        [
+          2.8373058657100884e-36,
+          1.7129322782110814e-36,
+          1.6985231805188874e-36
+        ],
+        [
+          1.7129322782110814e-36,
+          2.892255672932195e-36,
+          -1.5757254040575865e-37
+        ],
+        [
+          1.6985231805188874e-36,
+          -1.5757254040575865e-37,
+          9.721016177516062e-36
+        ]
+      ],
+      "caveat": "Coefficient-noise model only. Conditional on positive XYZ draws; discarded count reported. No spectral calibration, BP/RP cross-calibration covariance, contamination, truncation-bias, or selection correction."
+    },
+    {
+      "source_id": "1182083542272959232",
+      "reconstruction": "truncated",
+      "mc_seed": 20261024,
+      "mc_draws": 200000,
+      "nonpositive_xyz_draws": 0,
+      "x": 0.3716744277255443,
+      "y": 0.37289998264154056,
+      "u1960": 0.22085843378826897,
+      "v1960": 0.3323800347115853,
+      "r_linear": 1.0,
+      "g_linear": 0.6944390480901249,
+      "b_linear": 0.4257970015264198,
+      "r": 255,
+      "g": 217,
+      "b": 174,
+      "hex": "#FFD9AE",
+      "in_srgb_gamut": true,
+      "green_dominant": false,
+      "green_channel_margin": -0.3055609519098751,
+      "duv": 0.0008623399929169698,
+      "distance_planck_uv": 0.0008623399929169698,
+      "nearest_planck_temperature_K": 4223.798706958148,
+      "nearest_planck_u": 0.22133487376533906,
+      "nearest_planck_v": 0.3316612613038736,
+      "nearest_is_RJ_limit": false,
+      "formal_duv_p025": -9.841167605781583e-05,
+      "formal_duv_median": 0.0008655216825511278,
+      "formal_duv_p975": 0.001861716408712694,
+      "formal_distance_above_001_fraction": 0.0,
+      "formal_green_largest_fraction": 0.0,
+      "xyz_native": [
+        8.566611071698158e-17,
+        8.594858514968859e-17,
+        5.887226887075867e-17
+      ],
+      "xyz_covariance_native": [
+        [
+          1.694536993729839e-36,
+          1.8070869143025095e-36,
+          5.856136746107108e-37
+        ],
+        [
+          1.8070869143025095e-36,
+          1.9551201857631912e-36,
+          8.524281436900844e-37
+        ],
+        [
+          5.856136746107108e-37,
+          8.524281436900844e-37,
+          4.7705765589924835e-36
+        ]
+      ],
+      "caveat": "Coefficient-noise model only. Conditional on positive XYZ draws; discarded count reported. No spectral calibration, BP/RP cross-calibration covariance, contamination, truncation-bias, or selection correction."
+    },
+    {
+      "source_id": "1245262790370992256",
+      "reconstruction": "full",
+      "mc_seed": 20261025,
+      "mc_draws": 200000,
+      "nonpositive_xyz_draws": 0,
+      "x": 0.27830635555039857,
+      "y": 0.26643326729376493,
+      "u1960": 0.1973598708055054,
+      "v1960": 0.2834101745937158,
+      "r_linear": 0.5999651163451948,
+      "g_linear": 0.563000889965668,
+      "b_linear": 1.0,
+      "r": 203,
+      "g": 198,
+      "b": 255,
+      "hex": "#CBC6FF",
+      "in_srgb_gamut": true,
+      "green_dominant": false,
+      "green_channel_margin": -0.436999110034332,
+      "duv": -0.01045413767147104,
+      "distance_planck_uv": 0.01045413767147104,
+      "nearest_planck_temperature_K": 12148.161694164335,
+      "nearest_planck_u": 0.18771204568220284,
+      "nearest_planck_v": 0.28743614836961673,
+      "nearest_is_RJ_limit": false,
+      "formal_duv_p025": -0.012570271174458383,
+      "formal_duv_median": -0.010448328729134634,
+      "formal_duv_p975": -0.008339296239820207,
+      "formal_distance_above_001_fraction": 0.662405,
+      "formal_green_largest_fraction": 0.0,
+      "xyz_native": [
+        4.287940710971605e-16,
+        4.105008853738619e-16,
+        7.01431881222449e-16
+      ],
+      "xyz_covariance_native": [
+        [
+          1.015644421817974e-35,
+          5.582734556995647e-36,
+          7.861549377296582e-36
+        ],
+        [
+          5.582734556995647e-36,
+          8.912542583482959e-36,
+          -4.8551729888721876e-37
+        ],
+        [
+          7.861549377296582e-36,
+          -4.8551729888721876e-37,
+          4.3898538372987656e-35
+        ]
+      ],
+      "caveat": "Coefficient-noise model only. Conditional on positive XYZ draws; discarded count reported. No spectral calibration, BP/RP cross-calibration covariance, contamination, truncation-bias, or selection correction."
+    },
+    {
+      "source_id": "1245262790370992256",
+      "reconstruction": "truncated",
+      "mc_seed": 20261026,
+      "mc_draws": 200000,
+      "nonpositive_xyz_draws": 0,
+      "x": 0.27850250455719294,
+      "y": 0.2665899612659737,
+      "u1960": 0.19744688112145464,
+      "v1960": 0.2835020629739778,
+      "r_linear": 0.6017914830509858,
+      "g_linear": 0.5637046151197632,
+      "b_linear": 1.0,
+      "r": 204,
+      "g": 198,
+      "b": 255,
+      "hex": "#CCC6FF",
+      "in_srgb_gamut": true,
+      "green_dominant": false,
+      "green_channel_margin": -0.4362953848802368,
+      "duv": -0.010499023278816019,
+      "distance_planck_uv": 0.010499023278816019,
+      "nearest_planck_temperature_K": 12095.820390553628,
+      "nearest_planck_u": 0.18776092266614902,
+      "nearest_planck_v": 0.2875531984458195,
+      "nearest_is_RJ_limit": false,
+      "formal_duv_p025": -0.012601389818635537,
+      "formal_duv_median": -0.010499263246865474,
+      "formal_duv_p975": -0.00839237562580131,
+      "formal_distance_above_001_fraction": 0.678775,
+      "formal_green_largest_fraction": 0.0,
+      "xyz_native": [
+        4.288714356106635e-16,
+        4.1052707798557714e-16,
+        7.005209793812127e-16
+      ],
+      "xyz_covariance_native": [
+        [
+          9.956585424453021e-36,
+          5.5087830888266405e-36,
+          7.79789745322908e-36
+        ],
+        [
+          5.5087830888266405e-36,
+          8.878401106719531e-36,
+          -4.793318845492486e-37
+        ],
+        [
+          7.79789745322908e-36,
+          -4.793318845492486e-37,
+          4.3550945057637707e-35
+        ]
+      ],
+      "caveat": "Coefficient-noise model only. Conditional on positive XYZ draws; discarded count reported. No spectral calibration, BP/RP cross-calibration covariance, contamination, truncation-bias, or selection correction."
+    },
+    {
+      "source_id": "1323443938325221376",
+      "reconstruction": "full",
+      "mc_seed": 20261027,
+      "mc_draws": 200000,
+      "nonpositive_xyz_draws": 0,
+      "x": 0.3216627609140172,
+      "y": 0.2913798687778931,
+      "u1960": 0.21981887016408208,
+      "v1960": 0.2986860836547203,
+      "r_linear": 1.0,
+      "g_linear": 0.6249193346299232,
+      "b_linear": 0.9149717114122731,
+      "r": 255,
+      "g": 207,
+      "b": 245,
+      "hex": "#FFCFF5",
+      "in_srgb_gamut": true,
+      "green_dominant": false,
+      "green_channel_margin": -0.3750806653700768,
+      "duv": -0.022511817602033534,
+      "distance_planck_uv": 0.022511817602033534,
+      "nearest_planck_temperature_K": 6229.802939092532,
+      "nearest_planck_u": 0.20191676646096912,
+      "nearest_planck_v": 0.3123351354441384,
+      "nearest_is_RJ_limit": false,
+      "formal_duv_p025": -0.02830584305522043,
+      "formal_duv_median": -0.022486460268650726,
+      "formal_duv_p975": -0.01675002458484804,
+      "formal_distance_above_001_fraction": 0.999995,
+      "formal_green_largest_fraction": 0.0,
+      "xyz_native": [
+        4.907204585384434e-17,
+        4.4452165494463443e-17,
+        5.903322400542799e-17
+      ],
+      "xyz_covariance_native": [
+        [
+          7.526664722378039e-37,
+          4.198936983787049e-37,
+          5.911970429700276e-37
+        ],
+        [
+          4.198936983787049e-37,
+          6.899449474244859e-37,
+          -3.9142910370339107e-38
+        ],
+        [
+          5.911970429700276e-37,
+          -3.9142910370339107e-38,
+          3.291522010143373e-36
+        ]
+      ],
+      "caveat": "Coefficient-noise model only. Conditional on positive XYZ draws; discarded count reported. No spectral calibration, BP/RP cross-calibration covariance, contamination, truncation-bias, or selection correction."
+    },
+    {
+      "source_id": "1323443938325221376",
+      "reconstruction": "truncated",
+      "mc_seed": 20261028,
+      "mc_draws": 200000,
+      "nonpositive_xyz_draws": 0,
+      "x": 0.3227961505511062,
+      "y": 0.2907297993191377,
+      "u1960": 0.2209734857669378,
+      "v1960": 0.29853319376109266,
+      "r_linear": 1.0,
+      "g_linear": 0.6116141700161597,
+      "b_linear": 0.9031366989349962,
+      "r": 255,
+      "g": 205,
+      "b": 244,
+      "hex": "#FFCDF4",
+      "in_srgb_gamut": true,
+      "green_dominant": false,
+      "green_channel_margin": -0.3883858299838403,
+      "duv": -0.02352048628065352,
+      "distance_planck_uv": 0.02352048628065352,
+      "nearest_planck_temperature_K": 6149.624610295778,
+      "nearest_planck_u": 0.2023861252352138,
+      "nearest_planck_v": 0.3129458029399374,
+      "nearest_is_RJ_limit": false,
+      "formal_duv_p025": -0.029254133207029527,
+      "formal_duv_median": -0.023499500948319367,
+      "formal_duv_p975": -0.017898759701426084,
+      "formal_distance_above_001_fraction": 1.0,
+      "formal_green_largest_fraction": 0.0,
+      "xyz_native": [
+        4.896592764322209e-17,
+        4.41016855154086e-17,
+        5.862542146902244e-17
+      ],
+      "xyz_covariance_native": [
+        [
+          6.275690599998774e-37,
+          3.6411467165259324e-37,
+          3.6575535607962622e-37
+        ],
+        [
+          3.6411467165259324e-37,
+          6.625625891526264e-37,
+          -1.234762336452214e-37
+        ],
+        [
+          3.6575535607962622e-37,
+          -1.234762336452214e-37,
+          2.392576221593822e-36
+        ]
+      ],
+      "caveat": "Coefficient-noise model only. Conditional on positive XYZ draws; discarded count reported. No spectral calibration, BP/RP cross-calibration covariance, contamination, truncation-bias, or selection correction."
+    },
+    {
+      "source_id": "1496016553207149952",
+      "reconstruction": "full",
+      "mc_seed": 20261029,
+      "mc_draws": 200000,
+      "nonpositive_xyz_draws": 0,
+      "x": 0.3700763685470294,
+      "y": 0.32909602591765197,
+      "u1960": 0.23841288062032703,
+      "v1960": 0.3180184073132397,
+      "r_linear": 1.0,
+      "g_linear": 0.49905098914398066,
+      "b_linear": 0.49940957065461994,
+      "r": 255,
+      "g": 187,
+      "b": 187,
+      "hex": "#FFBBBB",
+      "in_srgb_gamut": true,
+      "green_dominant": false,
+      "green_channel_margin": -0.5009490108560193,
+      "duv": -0.021010590115553653,
+      "distance_planck_uv": 0.021010590115553653,
+      "nearest_planck_temperature_K": 3907.9499558456196,
+      "nearest_planck_u": 0.22681702362928466,
+      "nearest_planck_v": 0.33553928051200166,
+      "nearest_is_RJ_limit": false,
+      "formal_duv_p025": -0.02878053785563538,
+      "formal_duv_median": -0.02098415431065251,
+      "formal_duv_p975": -0.013263174520244008,
+      "formal_distance_above_001_fraction": 0.9974,
+      "formal_green_largest_fraction": 0.0,
+      "xyz_native": [
+        3.757733012776869e-17,
+        3.341621097882337e-17,
+        3.0545852709074794e-17
+      ],
+      "xyz_covariance_native": [
+        [
+          7.639541537540287e-37,
+          4.208415366457935e-37,
+          5.928503338664225e-37
+        ],
+        [
+          4.208415366457935e-37,
+          6.920698693392253e-37,
+          -4.2724857195983794e-38
+        ],
+        [
+          5.928503338664225e-37,
+          -4.2724857195983794e-38,
+          3.293596149952995e-36
+        ]
+      ],
+      "caveat": "Coefficient-noise model only. Conditional on positive XYZ draws; discarded count reported. No spectral calibration, BP/RP cross-calibration covariance, contamination, truncation-bias, or selection correction."
+    },
+    {
+      "source_id": "1496016553207149952",
+      "reconstruction": "truncated",
+      "mc_seed": 20261030,
+      "mc_draws": 200000,
+      "nonpositive_xyz_draws": 0,
+      "x": 0.3676700061721694,
+      "y": 0.32369830260934024,
+      "u1960": 0.2391723123969015,
+      "v1960": 0.31585254543897084,
+      "r_linear": 1.0,
+      "g_linear": 0.48835516231284476,
+      "b_linear": 0.519610424881694,
+      "r": 255,
+      "g": 186,
+      "b": 191,
+      "hex": "#FFBABF",
+      "in_srgb_gamut": true,
+      "green_dominant": false,
+      "green_channel_margin": -0.5116448376871552,
+      "duv": -0.023234378468389733,
+      "distance_planck_uv": 0.023234378468389733,
+      "nearest_planck_temperature_K": 3936.1748698052193,
+      "nearest_planck_u": 0.22628306044182325,
+      "nearest_planck_v": 0.3351839583943366,
+      "nearest_is_RJ_limit": false,
+      "formal_duv_p025": -0.0308003871972873,
+      "formal_duv_median": -0.023181173213230943,
+      "formal_duv_p975": -0.01564265175265805,
+      "formal_distance_above_001_fraction": 0.99972,
+      "formal_green_largest_fraction": 0.0,
+      "xyz_native": [
+        3.7734026261339365e-17,
+        3.32212039229878e-17,
+        3.167491540244556e-17
+      ],
+      "xyz_covariance_native": [
+        [
+          7.0528572943034395e-37,
+          4.056723582661131e-37,
+          5.19841932812285e-37
+        ],
+        [
+          4.056723582661131e-37,
+          6.8318148357483176e-37,
+          -3.421627546258517e-38
+        ],
+        [
+          5.19841932812285e-37,
+          -3.421627546258517e-38,
+          2.944942068914455e-36
+        ]
+      ],
+      "caveat": "Coefficient-noise model only. Conditional on positive XYZ draws; discarded count reported. No spectral calibration, BP/RP cross-calibration covariance, contamination, truncation-bias, or selection correction."
+    },
+    {
+      "source_id": "1542337839923130624",
+      "reconstruction": "full",
+      "mc_seed": 20261031,
+      "mc_draws": 200000,
+      "nonpositive_xyz_draws": 0,
+      "x": 0.3340789153123621,
+      "y": 0.2957666832992491,
+      "u1960": 0.2272242873646119,
+      "v1960": 0.30174924587517016,
+      "r_linear": 1.0,
+      "g_linear": 0.5557588773751346,
+      "b_linear": 0.7880678062788983,
+      "r": 255,
+      "g": 197,
+      "b": 230,
+      "hex": "#FFC5E6",
+      "in_srgb_gamut": true,
+      "green_dominant": false,
+      "green_channel_margin": -0.44424112262486537,
+      "duv": -0.02622248790918871,
+      "distance_planck_uv": 0.02622248790918871,
+      "nearest_planck_temperature_K": 5371.446585629509,
+      "nearest_planck_u": 0.20794373829090604,
+      "nearest_planck_v": 0.3195222394205459,
+      "nearest_is_RJ_limit": false,
+      "formal_duv_p025": -0.029742746726464382,
+      "formal_duv_median": -0.026203194140932237,
+      "formal_duv_p975": -0.022697896519834188,
+      "formal_distance_above_001_fraction": 1.0,
+      "formal_green_largest_fraction": 0.0,
+      "xyz_native": [
+        7.046685559004098e-17,
+        6.238570351231726e-17,
+        7.807621359242502e-17
+      ],
+      "xyz_covariance_native": [
+        [
+          5.493372505188214e-37,
+          3.1073317052846467e-37,
+          4.045277117465009e-37
+        ],
+        [
+          3.1073317052846467e-37,
+          5.134385778303219e-37,
+          -2.8984656442275566e-38
+        ],
+        [
+          4.045277117465009e-37,
+          -2.8984656442275566e-38,
+          2.252731685010836e-36
+        ]
+      ],
+      "caveat": "Coefficient-noise model only. Conditional on positive XYZ draws; discarded count reported. No spectral calibration, BP/RP cross-calibration covariance, contamination, truncation-bias, or selection correction."
+    },
+    {
+      "source_id": "1542337839923130624",
+      "reconstruction": "truncated",
+      "mc_seed": 20261032,
+      "mc_draws": 200000,
+      "nonpositive_xyz_draws": 0,
+      "x": 0.33382489902371854,
+      "y": 0.29567717225160445,
+      "u1960": 0.2270733755258139,
+      "v1960": 0.3016869641784672,
+      "r_linear": 1.0,
+      "g_linear": 0.5570439688899429,
+      "b_linear": 0.7904232429067681,
+      "r": 255,
+      "g": 197,
+      "b": 230,
+      "hex": "#FFC5E6",
+      "in_srgb_gamut": true,
+      "green_dominant": false,
+      "green_channel_margin": -0.4429560311100571,
+      "duv": -0.026153536432179866,
+      "distance_planck_uv": 0.026153536432179866,
+      "nearest_planck_temperature_K": 5386.931060493284,
+      "nearest_planck_u": 0.20781216799638383,
+      "nearest_planck_v": 0.3193791475490291,
+      "nearest_is_RJ_limit": false,
+      "formal_duv_p025": -0.029649856998901523,
+      "formal_duv_median": -0.026137473562588574,
+      "formal_duv_p975": -0.02265260641273351,
+      "formal_distance_above_001_fraction": 1.0,
+      "formal_green_largest_fraction": 0.0,
+      "xyz_native": [
+        7.035973178026409e-17,
+        6.231939736673659e-17,
+        7.808924668725657e-17
+      ],
+      "xyz_covariance_native": [
+        [
+          5.179144645264093e-37,
+          2.990074805215547e-37,
+          4.02468290401008e-37
+        ],
+        [
+          2.990074805215547e-37,
+          5.086599535322936e-37,
+          -2.7835603400180287e-38
+        ],
+        [
+          4.02468290401008e-37,
+          -2.7835603400180287e-38,
+          2.2331069333062426e-36
+        ]
+      ],
+      "caveat": "Coefficient-noise model only. Conditional on positive XYZ draws; discarded count reported. No spectral calibration, BP/RP cross-calibration covariance, contamination, truncation-bias, or selection correction."
+    },
+    {
+      "source_id": "1679189040001914880",
+      "reconstruction": "full",
+      "mc_seed": 20261033,
+      "mc_draws": 200000,
+      "nonpositive_xyz_draws": 0,
+      "x": 0.3537339157028301,
+      "y": 0.31189306559669355,
+      "u1960": 0.23444528522094635,
+      "v1960": 0.3100714497942632,
+      "r_linear": 1.0,
+      "g_linear": 0.5121304087408896,
+      "b_linear": 0.6186642585938982,
+      "r": 255,
+      "g": 190,
+      "b": 206,
+      "hex": "#FFBECE",
+      "in_srgb_gamut": true,
+      "green_dominant": false,
+      "green_channel_margin": -0.48786959125911045,
+      "duv": -0.025085840878717375,
+      "distance_planck_uv": 0.025085840878717375,
+      "nearest_planck_temperature_K": 4403.829322157995,
+      "nearest_planck_u": 0.21864011174061448,
+      "nearest_planck_v": 0.3295521043995105,
+      "nearest_is_RJ_limit": false,
+      "formal_duv_p025": -0.03118378227600276,
+      "formal_duv_median": -0.025039873218301888,
+      "formal_duv_p975": -0.019023329028722256,
+      "formal_distance_above_001_fraction": 1.0,
+      "formal_green_largest_fraction": 0.0,
+      "xyz_native": [
+        5.658572885284678e-17,
+        4.9892576474810604e-17,
+        5.348862557976554e-17
+      ],
+      "xyz_covariance_native": [
+        [
+          1.0787842783203455e-36,
+          5.990682224431623e-37,
+          8.149940068998274e-37
+        ],
+        [
+          5.990682224431623e-37,
+          9.58720236243536e-37,
+          -5.697739327633703e-38
+        ],
+        [
+          8.149940068998274e-37,
+          -5.697739327633703e-38,
+          4.513898901033163e-36
+        ]
+      ],
+      "caveat": "Coefficient-noise model only. Conditional on positive XYZ draws; discarded count reported. No spectral calibration, BP/RP cross-calibration covariance, contamination, truncation-bias, or selection correction."
+    },
+    {
+      "source_id": "1679189040001914880",
+      "reconstruction": "truncated",
+      "mc_seed": 20261034,
+      "mc_draws": 200000,
+      "nonpositive_xyz_draws": 0,
+      "x": 0.3519522234694709,
+      "y": 0.3107497262956326,
+      "u1960": 0.23365764889821072,
+      "v1960": 0.3094555692512833,
+      "r_linear": 1.0,
+      "g_linear": 0.517198720288712,
+      "b_linear": 0.632030900258513,
+      "r": 255,
+      "g": 190,
+      "b": 208,
+      "hex": "#FFBED0",
+      "in_srgb_gamut": true,
+      "green_dominant": false,
+      "green_channel_margin": -0.48280127971128795,
+      "duv": -0.025062587883405194,
+      "distance_planck_uv": 0.025062587883405194,
+      "nearest_planck_temperature_K": 4474.106712438997,
+      "nearest_planck_u": 0.21766142264197377,
+      "nearest_planck_v": 0.3287494557693668,
+      "nearest_is_RJ_limit": false,
+      "formal_duv_p025": -0.03100674323400834,
+      "formal_duv_median": -0.0250278336989357,
+      "formal_duv_p975": -0.019126701414916764,
+      "formal_distance_above_001_fraction": 1.0,
+      "formal_green_largest_fraction": 0.0,
+      "xyz_native": [
+        5.591911854184376e-17,
+        4.937275466048671e-17,
+        5.3590823973453386e-17
+      ],
+      "xyz_covariance_native": [
+        [
+          9.034931542724786e-37,
+          5.256892353894021e-37,
+          5.193330837158158e-37
+        ],
+        [
+          5.256892353894021e-37,
+          9.242527047114596e-37,
+          -1.4391469514782406e-37
+        ],
+        [
+          5.193330837158158e-37,
+          -1.4391469514782406e-37,
+          3.2774904685639396e-36
+        ]
+      ],
+      "caveat": "Coefficient-noise model only. Conditional on positive XYZ draws; discarded count reported. No spectral calibration, BP/RP cross-calibration covariance, contamination, truncation-bias, or selection correction."
+    },
+    {
+      "source_id": "1691957732959636608",
+      "reconstruction": "full",
+      "mc_seed": 20261035,
+      "mc_draws": 200000,
+      "nonpositive_xyz_draws": 0,
+      "x": 0.42958713685948874,
+      "y": 0.37052575363094553,
+      "u1960": 0.26086433745099563,
+      "v1960": 0.33749947427225613,
+      "r_linear": 1.0,
+      "g_linear": 0.39705802162407167,
+      "b_linear": 0.22072262792354916,
+      "r": 255,
+      "g": 169,
+      "b": 129,
+      "hex": "#FFA981",
+      "in_srgb_gamut": true,
+      "green_dominant": false,
+      "green_channel_margin": -0.6029419783759283,
+      "duv": -0.012958095554887968,
+      "distance_planck_uv": 0.012958095554887968,
+      "nearest_planck_temperature_K": 2835.0228888942424,
+      "nearest_planck_u": 0.2567857519447255,
+      "nearest_planck_v": 0.34979896128097526,
+      "nearest_is_RJ_limit": false,
+      "formal_duv_p025": -0.019986897131020413,
+      "formal_duv_median": -0.012914615668422566,
+      "formal_duv_p975": -0.005858717618556978,
+      "formal_distance_above_001_fraction": 0.790975,
+      "formal_green_largest_fraction": 0.0,
+      "xyz_native": [
+        4.997795704466532e-17,
+        4.3106784654417225e-17,
+        2.325476839433146e-17
+      ],
+      "xyz_covariance_native": [
+        [
+          1.39332284612462e-36,
+          7.812615014472326e-37,
+          7.80598386331311e-37
+        ],
+        [
+          7.812615014472326e-37,
+          1.1873599741565347e-36,
+          -6.888247330666117e-38
+        ],
+        [
+          7.80598386331311e-37,
+          -6.888247330666117e-38,
+          4.373026349495821e-36
+        ]
+      ],
+      "caveat": "Coefficient-noise model only. Conditional on positive XYZ draws; discarded count reported. No spectral calibration, BP/RP cross-calibration covariance, contamination, truncation-bias, or selection correction."
+    },
+    {
+      "source_id": "1691957732959636608",
+      "reconstruction": "truncated",
+      "mc_seed": 20261036,
+      "mc_draws": 200000,
+      "nonpositive_xyz_draws": 0,
+      "x": 0.4239666867293544,
+      "y": 0.36003273424192317,
+      "u1960": 0.2620127268942801,
+      "v1960": 0.33375201904772167,
+      "r_linear": 1.0,
+      "g_linear": 0.3836616673283097,
+      "b_linear": 0.25031216016873575,
+      "r": 255,
+      "g": 166,
+      "b": 137,
+      "hex": "#FFA689",
+      "in_srgb_gamut": true,
+      "green_dominant": false,
+      "green_channel_margin": -0.6163383326716902,
+      "duv": -0.016876777600023325,
+      "distance_planck_uv": 0.016876777600023325,
+      "nearest_planck_temperature_K": 2835.0228888942424,
+      "nearest_planck_u": 0.2567857519447255,
+      "nearest_planck_v": 0.34979896128097526,
+      "nearest_is_RJ_limit": false,
+      "formal_duv_p025": -0.0222449536416472,
+      "formal_duv_median": -0.016828188442456204,
+      "formal_duv_p975": -0.011378850955259484,
+      "formal_distance_above_001_fraction": 0.99295,
+      "formal_green_largest_fraction": 0.0,
+      "xyz_native": [
+        4.974897080887379e-17,
+        4.224685228034055e-17,
+        2.5345874657504644e-17
+      ],
+      "xyz_covariance_native": [
+        [
+          1.1861561416064765e-36,
+          6.473995613734056e-37,
+          5.321038463939145e-37
+        ],
+        [
+          6.473995613734056e-37,
+          8.950387752804079e-37,
+          1.7622531844638206e-37
+        ],
+        [
+          5.321038463939145e-37,
+          1.7622531844638206e-37,
+          2.3468678376353114e-36
+        ]
+      ],
+      "caveat": "Coefficient-noise model only. Conditional on positive XYZ draws; discarded count reported. No spectral calibration, BP/RP cross-calibration covariance, contamination, truncation-bias, or selection correction."
+    },
+    {
+      "source_id": "2119909923600264960",
+      "reconstruction": "full",
+      "mc_seed": 20261037,
+      "mc_draws": 200000,
+      "nonpositive_xyz_draws": 0,
+      "x": 0.36377578730247573,
+      "y": 0.33986735818404235,
+      "u1960": 0.2291191901404223,
+      "v1960": 0.3210911909767008,
+      "r_linear": 1.0,
+      "g_linear": 0.5845005292433534,
+      "b_linear": 0.5192272636196743,
+      "r": 255,
+      "g": 201,
+      "b": 191,
+      "hex": "#FFC9BF",
+      "in_srgb_gamut": true,
+      "green_dominant": false,
+      "green_channel_margin": -0.4154994707566466,
+      "duv": -0.013125993635146532,
+      "distance_planck_uv": 0.013125993635146532,
+      "nearest_planck_temperature_K": 4235.974813313281,
+      "nearest_planck_u": 0.2211435887732407,
+      "nearest_planck_v": 0.3315162325469641,
+      "nearest_is_RJ_limit": false,
+      "formal_duv_p025": -0.021667092827739723,
+      "formal_duv_median": -0.013058046652465044,
+      "formal_duv_p975": -0.004563033021828376,
+      "formal_distance_above_001_fraction": 0.760095,
+      "formal_green_largest_fraction": 0.0,
+      "xyz_native": [
+        3.5064851277144394e-17,
+        3.276028472661985e-17,
+        2.856624709834514e-17
+      ],
+      "xyz_covariance_native": [
+        [
+          8.776676002723078e-37,
+          5.0555238828399465e-37,
+          6.5276239572018e-37
+        ],
+        [
+          5.0555238828399465e-37,
+          8.213488991633588e-37,
+          -4.436069258061773e-38
+        ],
+        [
+          6.5276239572018e-37,
+          -4.436069258061773e-38,
+          3.654335293084836e-36
+        ]
+      ],
+      "caveat": "Coefficient-noise model only. Conditional on positive XYZ draws; discarded count reported. No spectral calibration, BP/RP cross-calibration covariance, contamination, truncation-bias, or selection correction."
+    },
+    {
+      "source_id": "2119909923600264960",
+      "reconstruction": "truncated",
+      "mc_seed": 20261038,
+      "mc_draws": 200000,
+      "nonpositive_xyz_draws": 0,
+      "x": 0.3615108731445433,
+      "y": 0.35774219046910805,
+      "u1960": 0.2201018121276442,
+      "v1960": 0.3267109383676032,
+      "r_linear": 1.0,
+      "g_linear": 0.6901359538715754,
+      "b_linear": 0.5062870593253025,
+      "r": 255,
+      "g": 216,
+      "b": 189,
+      "hex": "#FFD8BD",
+      "in_srgb_gamut": true,
+      "green_dominant": false,
+      "green_channel_margin": -0.30986404612842455,
+      "duv": -0.003125777976491325,
+      "distance_planck_uv": 0.003125777976491325,
+      "nearest_planck_temperature_K": 4442.024480022605,
+      "nearest_planck_u": 0.21810337192037324,
+      "nearest_planck_v": 0.3291144201537378,
+      "nearest_is_RJ_limit": false,
+      "formal_duv_p025": -0.0035727227744337016,
+      "formal_duv_median": -0.003126599443124727,
+      "formal_duv_p975": -0.0026952277670060734,
+      "formal_distance_above_001_fraction": 0.0,
+      "formal_green_largest_fraction": 0.0,
+      "xyz_native": [
+        3.4145823134505864e-17,
+        3.378985936786686e-17,
+        2.651741883174207e-17
+      ],
+      "xyz_covariance_native": [
+        [
+          3.650215159762246e-37,
+          3.790483846972974e-37,
+          3.0608008485030005e-37
+        ],
+        [
+          3.790483846972974e-37,
+          3.957846079409664e-37,
+          3.2059488341335713e-37
+        ],
+        [
+          3.0608008485030005e-37,
+          3.2059488341335713e-37,
+          2.6014799539265633e-37
+        ]
+      ],
+      "caveat": "Coefficient-noise model only. Conditional on positive XYZ draws; discarded count reported. No spectral calibration, BP/RP cross-calibration covariance, contamination, truncation-bias, or selection correction."
+    },
+    {
+      "source_id": "2453225705329412480",
+      "reconstruction": "full",
+      "mc_seed": 20261039,
+      "mc_draws": 200000,
+      "nonpositive_xyz_draws": 0,
+      "x": 0.3290163769932239,
+      "y": 0.30298683909552904,
+      "u1960": 0.2201584959619429,
+      "v1960": 0.3041115797994548,
+      "r_linear": 1.0,
+      "g_linear": 0.6350108207920292,
+      "b_linear": 0.8283398907764619,
+      "r": 255,
+      "g": 209,
+      "b": 235,
+      "hex": "#FFD1EB",
+      "in_srgb_gamut": true,
+      "green_dominant": false,
+      "green_channel_margin": -0.3649891792079708,
+      "duv": -0.019367443597229802,
+      "distance_planck_uv": 0.019367443597229802,
+      "nearest_planck_temperature_K": 5689.7657515454675,
+      "nearest_planck_u": 0.20542628012277497,
+      "nearest_planck_v": 0.3166837589248112,
+      "nearest_is_RJ_limit": false,
+      "formal_duv_p025": -0.027834601033043204,
+      "formal_duv_median": -0.019282952640750996,
+      "formal_duv_p975": -0.010942592448386367,
+      "formal_distance_above_001_fraction": 0.98569,
+      "formal_green_largest_fraction": 0.0,
+      "xyz_native": [
+        3.891125114705887e-17,
+        3.583285761651449e-17,
+        4.3521284292712846e-17
+      ],
+      "xyz_covariance_native": [
+        [
+          1.0128043796407371e-36,
+          5.549065479498181e-37,
+          8.900788706486314e-37
+        ],
+        [
+          5.549065479498181e-37,
+          9.213096313863403e-37,
+          -5.519802433265331e-38
+        ],
+        [
+          8.900788706486314e-37,
+          -5.519802433265331e-38,
+          4.9099710230611366e-36
+        ]
+      ],
+      "caveat": "Coefficient-noise model only. Conditional on positive XYZ draws; discarded count reported. No spectral calibration, BP/RP cross-calibration covariance, contamination, truncation-bias, or selection correction."
+    },
+    {
+      "source_id": "2453225705329412480",
+      "reconstruction": "truncated",
+      "mc_seed": 20261040,
+      "mc_draws": 200000,
+      "nonpositive_xyz_draws": 0,
+      "x": 0.3267701042336219,
+      "y": 0.29881177093011807,
+      "u1960": 0.22033650031875235,
+      "v1960": 0.3022268821770169,
+      "r_linear": 1.0,
+      "g_linear": 0.628211281764008,
+      "b_linear": 0.8546842815236846,
+      "r": 255,
+      "g": 208,
+      "b": 238,
+      "hex": "#FFD0EE",
+      "in_srgb_gamut": true,
+      "green_dominant": false,
+      "green_channel_margin": -0.371788718235992,
+      "duv": -0.020715760750032123,
+      "distance_planck_uv": 0.020715760750032123,
+      "nearest_planck_temperature_K": 5839.098389469236,
+      "nearest_planck_u": 0.2043688979330353,
+      "nearest_planck_v": 0.3154245493005738,
+      "nearest_is_RJ_limit": false,
+      "formal_duv_p025": -0.029077100746922335,
+      "formal_duv_median": -0.02067005631256947,
+      "formal_duv_p975": -0.012493740833538276,
+      "formal_distance_above_001_fraction": 0.99495,
+      "formal_green_largest_fraction": 0.0,
+      "xyz_native": [
+        3.8305121590598194e-17,
+        3.502774908073261e-17,
+        4.3890587332686055e-17
+      ],
+      "xyz_covariance_native": [
+        [
+          8.341125588819922e-37,
+          4.775880203674431e-37,
+          5.427951795137587e-37
+        ],
+        [
+          4.775880203674431e-37,
+          8.746457362488212e-37,
+          -1.6901611041555698e-37
+        ],
+        [
+          5.427951795137587e-37,
+          -1.6901611041555698e-37,
+          3.496645764719472e-36
+        ]
+      ],
+      "caveat": "Coefficient-noise model only. Conditional on positive XYZ draws; discarded count reported. No spectral calibration, BP/RP cross-calibration covariance, contamination, truncation-bias, or selection correction."
+    },
+    {
+      "source_id": "2482684508055379584",
+      "reconstruction": "full",
+      "mc_seed": 20261041,
+      "mc_draws": 200000,
+      "nonpositive_xyz_draws": 0,
+      "x": 0.3373042730469464,
+      "y": 0.32884584557544133,
+      "u1960": 0.21513324443438686,
+      "v1960": 0.3146076673074088,
+      "r_linear": 1.0,
+      "g_linear": 0.7215183686263426,
+      "b_linear": 0.7230883219005138,
+      "r": 255,
+      "g": 221,
+      "b": 221,
+      "hex": "#FFDDDD",
+      "in_srgb_gamut": true,
+      "green_dominant": false,
+      "green_channel_margin": -0.27848163137365745,
+      "duv": -0.008608930968733556,
+      "distance_planck_uv": 0.008608930968733556,
+      "nearest_planck_temperature_K": 5264.294385263741,
+      "nearest_planck_u": 0.20888210816298577,
+      "nearest_planck_v": 0.3205268722997024,
+      "nearest_is_RJ_limit": false,
+      "formal_duv_p025": -0.01794618668613841,
+      "formal_duv_median": -0.008537093823927453,
+      "formal_duv_p975": 0.0006922364710511453,
+      "formal_distance_above_001_fraction": 0.37941,
+      "formal_green_largest_fraction": 5e-05,
+      "xyz_native": [
+        4.0573445623790277e-17,
+        3.955600358554453e-17,
+        4.015792591722701e-17
+      ],
+      "xyz_covariance_native": [
+        [
+          1.4388440896178563e-36,
+          8.011309252277524e-37,
+          1.2303514248073216e-36
+        ],
+        [
+          8.011309252277524e-37,
+          1.336019786162498e-36,
+          -7.295350520436909e-38
+        ],
+        [
+          1.2303514248073216e-36,
+          -7.295350520436909e-38,
+          6.853818830761917e-36
+        ]
+      ],
+      "caveat": "Coefficient-noise model only. Conditional on positive XYZ draws; discarded count reported. No spectral calibration, BP/RP cross-calibration covariance, contamination, truncation-bias, or selection correction."
+    },
+    {
+      "source_id": "2482684508055379584",
+      "reconstruction": "truncated",
+      "mc_seed": 20261042,
+      "mc_draws": 200000,
+      "nonpositive_xyz_draws": 0,
+      "x": 0.3313437956162596,
+      "y": 0.33585947480072914,
+      "u1960": 0.20814274587163215,
+      "v1960": 0.31646909148552155,
+      "r_linear": 1.0,
+      "g_linear": 0.8242500111588867,
+      "b_linear": 0.7703566113805576,
+      "r": 255,
+      "g": 234,
+      "b": 227,
+      "hex": "#FFEAE3",
+      "in_srgb_gamut": true,
+      "green_dominant": false,
+      "green_channel_margin": -0.17574998884111326,
+      "duv": -0.0021928370601981928,
+      "distance_planck_uv": 0.0021928370601981928,
+      "nearest_planck_temperature_K": 5544.252236928392,
+      "nearest_planck_u": 0.20652983068088246,
+      "nearest_planck_v": 0.31795470212092625,
+      "nearest_is_RJ_limit": false,
+      "formal_duv_p025": -0.002723957093095643,
+      "formal_duv_median": -0.0021785606332926227,
+      "formal_duv_p975": -0.0015891929565310405,
+      "formal_distance_above_001_fraction": 0.0,
+      "formal_green_largest_fraction": 0.0,
+      "xyz_native": [
+        4.035492328113816e-17,
+        4.0904895513793295e-17,
+        4.053187857511545e-17
+      ],
+      "xyz_covariance_native": [
+        [
+          5.960438010581566e-37,
+          6.299672639036358e-37,
+          6.266173232850107e-37
+        ],
+        [
+          6.299672639036358e-37,
+          6.8078646523633035e-37,
+          8.21830493042282e-37
+        ],
+        [
+          6.266173232850107e-37,
+          8.21830493042282e-37,
+          2.6539649766167158e-36
+        ]
+      ],
+      "caveat": "Coefficient-noise model only. Conditional on positive XYZ draws; discarded count reported. No spectral calibration, BP/RP cross-calibration covariance, contamination, truncation-bias, or selection correction."
+    },
+    {
+      "source_id": "2513256394506328832",
+      "reconstruction": "full",
+      "mc_seed": 20261043,
+      "mc_draws": 200000,
+      "nonpositive_xyz_draws": 0,
+      "x": 0.2984859397452621,
+      "y": 0.2916439288461397,
+      "u1960": 0.20226889055083402,
+      "v1960": 0.2964486064600205,
+      "r_linear": 0.8061274791449082,
+      "g_linear": 0.7042240969421134,
+      "b_linear": 1.0,
+      "r": 232,
+      "g": 218,
+      "b": 255,
+      "hex": "#E8DAFF",
+      "in_srgb_gamut": true,
+      "green_dominant": false,
+      "green_channel_margin": -0.2957759030578866,
+      "duv": -0.009101466144313668,
+      "distance_planck_uv": 0.009101466144313668,
+      "nearest_planck_temperature_K": 8083.760753528249,
+      "nearest_planck_u": 0.19438369078250547,
+      "nearest_planck_v": 0.3009939678966545,
+      "nearest_is_RJ_limit": false,
+      "formal_duv_p025": -0.014340482424335922,
+      "formal_duv_median": -0.0090958520524943,
+      "formal_duv_p975": -0.003914265267061876,
+      "formal_distance_above_001_fraction": 0.36729,
+      "formal_green_largest_fraction": 0.0,
+      "xyz_native": [
+        9.615064278977969e-17,
+        9.394664032826763e-17,
+        1.3203059624483946e-16
+      ],
+      "xyz_covariance_native": [
+        [
+          2.8563384840058423e-36,
+          1.6435713494072397e-36,
+          2.138253696318483e-36
+        ],
+        [
+          1.6435713494072397e-36,
+          2.7230035491999317e-36,
+          -1.4800444134291837e-37
+        ],
+        [
+          2.138253696318483e-36,
+          -1.4800444134291837e-37,
+          1.1990785642164942e-35
+        ]
+      ],
+      "caveat": "Coefficient-noise model only. Conditional on positive XYZ draws; discarded count reported. No spectral calibration, BP/RP cross-calibration covariance, contamination, truncation-bias, or selection correction."
+    },
+    {
+      "source_id": "2513256394506328832",
+      "reconstruction": "truncated",
+      "mc_seed": 20261044,
+      "mc_draws": 200000,
+      "nonpositive_xyz_draws": 0,
+      "x": 0.29407499171383084,
+      "y": 0.28276109039976455,
+      "u1960": 0.2026362430887715,
+      "v1960": 0.2922603757448205,
+      "r_linear": 0.7572100770302402,
+      "g_linear": 0.6479737070709375,
+      "b_linear": 1.0,
+      "r": 226,
+      "g": 211,
+      "b": 255,
+      "hex": "#E2D3FF",
+      "in_srgb_gamut": true,
+      "green_dominant": false,
+      "green_channel_margin": -0.3520262929290625,
+      "duv": -0.011451504621995515,
+      "distance_planck_uv": 0.011451504621995515,
+      "nearest_planck_temperature_K": 8825.579226019345,
+      "nearest_planck_u": 0.19252115149474644,
+      "nearest_planck_v": 0.29762897706658653,
+      "nearest_is_RJ_limit": false,
+      "formal_duv_p025": -0.016140548501934696,
+      "formal_duv_median": -0.01145104655061192,
+      "formal_duv_p975": -0.0068034309787703634,
+      "formal_distance_above_001_fraction": 0.729065,
+      "formal_green_largest_fraction": 0.0,
+      "xyz_native": [
+        9.499065067066573e-17,
+        9.133609017511471e-17,
+        1.3668831771827006e-16
+      ],
+      "xyz_covariance_native": [
+        [
+          2.3709185790940456e-36,
+          1.391218292732961e-36,
+          1.3104052623177616e-36
+        ],
+        [
+          1.391218292732961e-36,
+          2.124416504033075e-36,
+          5.260399028583721e-37
+        ],
+        [
+          1.3104052623177616e-36,
+          5.260399028583721e-37,
+          6.219193607578495e-36
+        ]
+      ],
+      "caveat": "Coefficient-noise model only. Conditional on positive XYZ draws; discarded count reported. No spectral calibration, BP/RP cross-calibration covariance, contamination, truncation-bias, or selection correction."
+    },
+    {
+      "source_id": "2739231150982741760",
+      "reconstruction": "full",
+      "mc_seed": 20261045,
+      "mc_draws": 200000,
+      "nonpositive_xyz_draws": 0,
+      "x": 0.30027284615006483,
+      "y": 0.3308832041815719,
+      "u1960": 0.18855281584829922,
+      "v1960": 0.3116613473309047,
+      "r_linear": 0.8131392376319104,
+      "g_linear": 1.0,
+      "b_linear": 0.9826309373798295,
+      "r": 233,
+      "g": 255,
+      "b": 253,
+      "hex": "#E9FFFD",
+      "in_srgb_gamut": true,
+      "green_dominant": true,
+      "green_channel_margin": 0.01736906262017046,
+      "duv": 0.010545884899641518,
+      "distance_planck_uv": 0.010545884899641518,
+      "nearest_planck_temperature_K": 7183.846510069514,
+      "nearest_planck_u": 0.19738194965947145,
+      "nearest_planck_v": 0.30589401827310836,
+      "nearest_is_RJ_limit": false,
+      "formal_duv_p025": 0.006714153577488603,
+      "formal_duv_median": 0.010553673842620896,
+      "formal_duv_p975": 0.014351352905701447,
+      "formal_distance_above_001_fraction": 0.611585,
+      "formal_green_largest_fraction": 0.689175,
+      "xyz_native": [
+        1.6558125203422656e-16,
+        1.8246090490013987e-16,
+        2.033938258966465e-16
+      ],
+      "xyz_covariance_native": [
+        [
+          5.078941022461016e-36,
+          3.019570952851649e-36,
+          3.5342998573593084e-36
+        ],
+        [
+          3.019570952851649e-36,
+          5.348569325649454e-36,
+          -3.0412091839675835e-37
+        ],
+        [
+          3.5342998573593084e-36,
+          -3.0412091839675835e-37,
+          2.0258502360805705e-35
+        ]
+      ],
+      "caveat": "Coefficient-noise model only. Conditional on positive XYZ draws; discarded count reported. No spectral calibration, BP/RP cross-calibration covariance, contamination, truncation-bias, or selection correction."
+    },
+    {
+      "source_id": "2739231150982741760",
+      "reconstruction": "truncated",
+      "mc_seed": 20261046,
+      "mc_draws": 200000,
+      "nonpositive_xyz_draws": 0,
+      "x": 0.30018888528066595,
+      "y": 0.3310820458911703,
+      "u1960": 0.18842454627298652,
+      "v1960": 0.311723654680864,
+      "r_linear": 0.8105744691704501,
+      "g_linear": 1.0,
+      "b_linear": 0.9808698265227025,
+      "r": 232,
+      "g": 255,
+      "b": 253,
+      "hex": "#E8FFFD",
+      "in_srgb_gamut": true,
+      "green_dominant": true,
+      "green_channel_margin": 0.019130173477297507,
+      "duv": 0.010687363382745143,
+      "distance_planck_uv": 0.010687363382745143,
+      "nearest_planck_temperature_K": 7183.846510069514,
+      "nearest_planck_u": 0.19738194965947145,
+      "nearest_planck_v": 0.30589401827310836,
+      "nearest_is_RJ_limit": false,
+      "formal_duv_p025": 0.007011305803583731,
+      "formal_duv_median": 0.010702681284367792,
+      "formal_duv_p975": 0.014353985549514312,
+      "formal_distance_above_001_fraction": 0.646255,
+      "formal_green_largest_fraction": 0.720535,
+      "xyz_native": [
+        1.6616090378125477e-16,
+        1.8326092226762036e-16,
+        2.040993465485055e-16
+      ],
+      "xyz_covariance_native": [
+        [
+          4.462592705861353e-36,
+          2.6800148587661394e-36,
+          2.4106627595590996e-36
+        ],
+        [
+          2.6800148587661394e-36,
+          5.0298597117926745e-36,
+          -7.014085818905586e-37
+        ],
+        [
+          2.4106627595590996e-36,
+          -7.014085818905586e-37,
+          1.5747985861866367e-35
+        ]
+      ],
+      "caveat": "Coefficient-noise model only. Conditional on positive XYZ draws; discarded count reported. No spectral calibration, BP/RP cross-calibration covariance, contamination, truncation-bias, or selection correction."
+    },
+    {
+      "source_id": "3204436719718449280",
+      "reconstruction": "full",
+      "mc_seed": 20261047,
+      "mc_draws": 200000,
+      "nonpositive_xyz_draws": 0,
+      "x": 0.33322725401624564,
+      "y": 0.3682824511980113,
+      "u1960": 0.19738218042245012,
+      "v1960": 0.32721990332119166,
+      "r_linear": 0.9595468859056671,
+      "g_linear": 1.0,
+      "b_linear": 0.6806920634752017,
+      "r": 250,
+      "g": 255,
+      "b": 215,
+      "hex": "#FAFFD7",
+      "in_srgb_gamut": true,
+      "green_dominant": true,
+      "green_channel_margin": 0.04045311409433294,
+      "duv": 0.012993204852650934,
+      "distance_planck_uv": 0.012993204852650934,
+      "nearest_planck_temperature_K": 5480.77981790629,
+      "nearest_planck_u": 0.20703555077640776,
+      "nearest_planck_v": 0.31852301806540706,
+      "nearest_is_RJ_limit": false,
+      "formal_duv_p025": 0.008686712018021459,
+      "formal_duv_median": 0.013004953035192902,
+      "formal_duv_p975": 0.01730306175292013,
+      "formal_distance_above_001_fraction": 0.913165,
+      "formal_green_largest_fraction": 0.822515,
+      "xyz_native": [
+        9.236808863767089e-17,
+        1.0208512564911083e-16,
+        8.273926479287879e-17
+      ],
+      "xyz_covariance_native": [
+        [
+          2.0557312984967277e-36,
+          1.1906454569864022e-36,
+          1.3087629116495448e-36
+        ],
+        [
+          1.1906454569864022e-36,
+          1.9723964434494418e-36,
+          -1.088350674503823e-37
+        ],
+        [
+          1.3087629116495448e-36,
+          -1.088350674503823e-37,
+          7.435803403193162e-36
+        ]
+      ],
+      "caveat": "Coefficient-noise model only. Conditional on positive XYZ draws; discarded count reported. No spectral calibration, BP/RP cross-calibration covariance, contamination, truncation-bias, or selection correction."
+    },
+    {
+      "source_id": "3204436719718449280",
+      "reconstruction": "truncated",
+      "mc_seed": 20261048,
+      "mc_draws": 200000,
+      "nonpositive_xyz_draws": 0,
+      "x": 0.33325970738880756,
+      "y": 0.37249421271128524,
+      "u1960": 0.19593683265106307,
+      "v1960": 0.3285065728078704,
+      "r_linear": 0.9295610168809871,
+      "g_linear": 1.0,
+      "b_linear": 0.6534264636388394,
+      "r": 247,
+      "g": 255,
+      "b": 211,
+      "hex": "#F7FFD3",
+      "in_srgb_gamut": true,
+      "green_dominant": true,
+      "green_channel_margin": 0.07043898311901287,
+      "duv": 0.01492825875049118,
+      "distance_planck_uv": 0.01492825875049118,
+      "nearest_planck_temperature_K": 5480.77981790629,
+      "nearest_planck_u": 0.20703555077640776,
+      "nearest_planck_v": 0.31852301806540706,
+      "nearest_is_RJ_limit": false,
+      "formal_duv_p025": 0.011385401918651583,
+      "formal_duv_median": 0.014927287355060265,
+      "formal_duv_p975": 0.018466802347731192,
+      "formal_distance_above_001_fraction": 0.9969,
+      "formal_green_largest_fraction": 0.9643,
+      "xyz_native": [
+        9.359600357557786e-17,
+        1.0461501613254556e-16,
+        8.263902456794997e-17
+      ],
+      "xyz_covariance_native": [
+        [
+          1.739056536745592e-36,
+          1.0095681875680729e-36,
+          8.594739127948858e-37
+        ],
+        [
+          1.0095681875680729e-36,
+          1.5148097662412423e-36,
+          4.1963110159460896e-37
+        ],
+        [
+          8.594739127948858e-37,
+          4.1963110159460896e-37,
+          3.853539234441635e-36
+        ]
+      ],
+      "caveat": "Coefficient-noise model only. Conditional on positive XYZ draws; discarded count reported. No spectral calibration, BP/RP cross-calibration covariance, contamination, truncation-bias, or selection correction."
+    },
+    {
+      "source_id": "3705179706854089856",
+      "reconstruction": "full",
+      "mc_seed": 20261051,
+      "mc_draws": 200000,
+      "nonpositive_xyz_draws": 0,
+      "x": 0.30346110594302916,
+      "y": 0.29975882761487727,
+      "u1960": 0.20263893072631203,
+      "v1960": 0.30025005073494637,
+      "r_linear": 0.8659502800265182,
+      "g_linear": 0.7590650963482395,
+      "b_linear": 1.0,
+      "r": 239,
+      "g": 226,
+      "b": 255,
+      "hex": "#EFE2FF",
+      "in_srgb_gamut": true,
+      "green_dominant": false,
+      "green_channel_margin": -0.2409349036517605,
+      "duv": -0.007464933840523865,
+      "distance_planck_uv": 0.007464933840523865,
+      "nearest_planck_temperature_K": 7479.270361008304,
+      "nearest_planck_u": 0.1962883375628041,
+      "nearest_planck_v": 0.3041737229581328,
+      "nearest_is_RJ_limit": false,
+      "formal_duv_p025": -0.013103721542344285,
+      "formal_duv_median": -0.007457600889771193,
+      "formal_duv_p975": -0.0018490863105677612,
+      "formal_distance_above_001_fraction": 0.18707,
+      "formal_green_largest_fraction": 0.0,
+      "xyz_native": [
+        5.084700912807518e-17,
+        5.0226666763734245e-17,
+        6.648324699642733e-17
+      ],
+      "xyz_covariance_native": [
+        [
+          9.1837371767051e-37,
+          5.068764259765307e-37,
+          7.094632501733574e-37
+        ],
+        [
+          5.068764259765307e-37,
+          8.407216777434374e-37,
+          -4.963714802465706e-38
+        ],
+        [
+          7.094632501733574e-37,
+          -4.963714802465706e-38,
+          3.9518582881586816e-36
+        ]
+      ],
+      "caveat": "Coefficient-noise model only. Conditional on positive XYZ draws; discarded count reported. No spectral calibration, BP/RP cross-calibration covariance, contamination, truncation-bias, or selection correction."
+    },
+    {
+      "source_id": "3705179706854089856",
+      "reconstruction": "truncated",
+      "mc_seed": 20261052,
+      "mc_draws": 200000,
+      "nonpositive_xyz_draws": 0,
+      "x": 0.30086486792817496,
+      "y": 0.2933135484413869,
+      "u1960": 0.2033546455626615,
+      "v1960": 0.29737606002039496,
+      "r_linear": 0.8340647108657615,
+      "g_linear": 0.7141203890436985,
+      "b_linear": 1.0,
+      "r": 235,
+      "g": 220,
+      "b": 255,
+      "hex": "#EBDCFF",
+      "in_srgb_gamut": true,
+      "green_dominant": false,
+      "green_channel_margin": -0.28587961095630154,
+      "duv": -0.009570182887080817,
+      "distance_planck_uv": 0.009570182887080817,
+      "nearest_planck_temperature_K": 7831.802602588904,
+      "nearest_planck_u": 0.1951286750316632,
+      "nearest_planck_v": 0.3022670526921664,
+      "nearest_is_RJ_limit": false,
+      "formal_duv_p025": -0.015141838162855,
+      "formal_duv_median": -0.009544751332569502,
+      "formal_duv_p975": -0.0040628043195532985,
+      "formal_distance_above_001_fraction": 0.43565,
+      "formal_green_largest_fraction": 0.0,
+      "xyz_native": [
+        5.0806241951546094e-17,
+        4.95310709169846e-17,
+        6.853000055828988e-17
+      ],
+      "xyz_covariance_native": [
+        [
+          8.065639595320191e-37,
+          4.525426157553661e-37,
+          4.443675872248679e-37
+        ],
+        [
+          4.525426157553661e-37,
+          8.071260590467316e-37,
+          -1.4449459812077493e-37
+        ],
+        [
+          4.443675872248679e-37,
+          -1.4449459812077493e-37,
+          2.8916367166993704e-36
+        ]
+      ],
+      "caveat": "Coefficient-noise model only. Conditional on positive XYZ draws; discarded count reported. No spectral calibration, BP/RP cross-calibration covariance, contamination, truncation-bias, or selection correction."
+    },
+    {
+      "source_id": "3711047662972690688",
+      "reconstruction": "full",
+      "mc_seed": 20261053,
+      "mc_draws": 200000,
+      "nonpositive_xyz_draws": 0,
+      "x": 0.36257403508125535,
+      "y": 0.31845477158162544,
+      "u1960": 0.23789740569350215,
+      "v1960": 0.313423838967153,
+      "r_linear": 1.0,
+      "g_linear": 0.4924935584877159,
+      "b_linear": 0.5552952952558036,
+      "r": 255,
+      "g": 186,
+      "b": 197,
+      "hex": "#FFBAC5",
+      "in_srgb_gamut": true,
+      "green_dominant": false,
+      "green_channel_margin": -0.5075064415122841,
+      "duv": -0.024506203619198447,
+      "distance_planck_uv": 0.024506203619198447,
+      "nearest_planck_temperature_K": 4080.3868348465294,
+      "nearest_planck_u": 0.2236948441776148,
+      "nearest_planck_v": 0.3333948495127676,
+      "nearest_is_RJ_limit": false,
+      "formal_duv_p025": -0.03276392272923339,
+      "formal_duv_median": -0.024439787158180345,
+      "formal_duv_p975": -0.016234741334514424,
+      "formal_distance_above_001_fraction": 0.999725,
+      "formal_green_largest_fraction": 0.0,
+      "xyz_native": [
+        3.4055909924180984e-17,
+        2.9911868933137934e-17,
+        2.9960375475488774e-17
+      ],
+      "xyz_covariance_native": [
+        [
+          7.234296391484e-37,
+          3.981705381032987e-37,
+          5.413656325948868e-37
+        ],
+        [
+          3.981705381032987e-37,
+          6.3629449360884e-37,
+          -3.813611350887816e-38
+        ],
+        [
+          5.413656325948868e-37,
+          -3.813611350887816e-38,
+          2.9974381441403337e-36
+        ]
+      ],
+      "caveat": "Coefficient-noise model only. Conditional on positive XYZ draws; discarded count reported. No spectral calibration, BP/RP cross-calibration covariance, contamination, truncation-bias, or selection correction."
+    },
+    {
+      "source_id": "3711047662972690688",
+      "reconstruction": "truncated",
+      "mc_seed": 20261054,
+      "mc_draws": 200000,
+      "nonpositive_xyz_draws": 0,
+      "x": 0.3648099078959897,
+      "y": 0.3235197894620029,
+      "u1960": 0.23717378728147923,
+      "v1960": 0.3154947771419348,
+      "r_linear": 1.0,
+      "g_linear": 0.5028881120801447,
+      "b_linear": 0.5357563474116307,
+      "r": 255,
+      "g": 188,
+      "b": 193,
+      "hex": "#FFBCC1",
+      "in_srgb_gamut": true,
+      "green_dominant": false,
+      "green_channel_margin": -0.4971118879198553,
+      "duv": -0.022398010093863687,
+      "distance_planck_uv": 0.022398010093863687,
+      "nearest_planck_temperature_K": 4045.3012516835875,
+      "nearest_planck_u": 0.22430375178238776,
+      "nearest_planck_v": 0.3338259812054148,
+      "nearest_is_RJ_limit": false,
+      "formal_duv_p025": -0.030276449214394152,
+      "formal_duv_median": -0.022339955992058305,
+      "formal_duv_p975": -0.01457684587077715,
+      "formal_distance_above_001_fraction": 0.99906,
+      "formal_green_largest_fraction": 0.0,
+      "xyz_native": [
+        3.3521622960765924e-17,
+        2.972755993728001e-17,
+        2.8638735262124244e-17
+      ],
+      "xyz_covariance_native": [
+        [
+          6.202395103710061e-37,
+          3.6653858547381344e-37,
+          3.652626651470995e-37
+        ],
+        [
+          3.6653858547381344e-37,
+          6.195426313826895e-37,
+          -5.568849420542903e-38
+        ],
+        [
+          3.652626651470995e-37,
+          -5.568849420542903e-38,
+          2.2087544805054327e-36
+        ]
+      ],
+      "caveat": "Coefficient-noise model only. Conditional on positive XYZ draws; discarded count reported. No spectral calibration, BP/RP cross-calibration covariance, contamination, truncation-bias, or selection correction."
+    },
+    {
+      "source_id": "3713218786120541824",
+      "reconstruction": "full",
+      "mc_seed": 20261055,
+      "mc_draws": 200000,
+      "nonpositive_xyz_draws": 0,
+      "x": 0.3442768255998209,
+      "y": 0.3198792462860211,
+      "u1960": 0.22391998472121563,
+      "v1960": 0.31207745024460803,
+      "r_linear": 1.0,
+      "g_linear": 0.6141298860785142,
+      "b_linear": 0.6765127996820901,
+      "r": 255,
+      "g": 206,
+      "b": 215,
+      "hex": "#FFCED7",
+      "in_srgb_gamut": true,
+      "green_dominant": false,
+      "green_channel_margin": -0.38587011392148585,
+      "duv": -0.016622782495844958,
+      "distance_planck_uv": 0.016622782495844958,
+      "nearest_planck_temperature_K": 4905.816944447767,
+      "nearest_planck_u": 0.2124157758889888,
+      "nearest_planck_v": 0.32407620339019294,
+      "nearest_is_RJ_limit": false,
+      "formal_duv_p025": -0.0179220607354197,
+      "formal_duv_median": -0.016620057462793512,
+      "formal_duv_p975": -0.015321474390591701,
+      "formal_distance_above_001_fraction": 1.0,
+      "formal_green_largest_fraction": 0.0,
+      "xyz_native": [
+        3.61663217572119e-16,
+        3.3603353128630354e-16,
+        3.528044486648393e-16
+      ],
+      "xyz_covariance_native": [
+        [
+          2.3957554662537133e-36,
+          1.3908501490226675e-36,
+          1.2595627405311832e-36
+        ],
+        [
+          1.3908501490226675e-36,
+          2.131271742618601e-36,
+          -1.201440261534906e-37
+        ],
+        [
+          1.2595627405311832e-36,
+          -1.201440261534906e-37,
+          7.144568144444517e-36
+        ]
+      ],
+      "caveat": "Coefficient-noise model only. Conditional on positive XYZ draws; discarded count reported. No spectral calibration, BP/RP cross-calibration covariance, contamination, truncation-bias, or selection correction."
+    },
+    {
+      "source_id": "3713218786120541824",
+      "reconstruction": "truncated",
+      "mc_seed": 20261056,
+      "mc_draws": 200000,
+      "nonpositive_xyz_draws": 0,
+      "x": 0.34420251300831306,
+      "y": 0.3198674338554589,
+      "u1960": 0.22387140100732988,
+      "v1960": 0.31206557701154053,
+      "r_linear": 1.0,
+      "g_linear": 0.6146045217087114,
+      "b_linear": 0.6771023513369958,
+      "r": 255,
+      "g": 206,
+      "b": 215,
+      "hex": "#FFCED7",
+      "in_srgb_gamut": true,
+      "green_dominant": false,
+      "green_channel_margin": -0.3853954782912886,
+      "duv": -0.01659778578183091,
+      "distance_planck_uv": 0.01659778578183091,
+      "nearest_planck_temperature_K": 4905.816944447767,
+      "nearest_planck_u": 0.2124157758889888,
+      "nearest_planck_v": 0.32407620339019294,
+      "nearest_is_RJ_limit": false,
+      "formal_duv_p025": -0.017883851260656634,
+      "formal_duv_median": -0.01659444532127923,
+      "formal_duv_p975": -0.015305504690212907,
+      "formal_distance_above_001_fraction": 1.0,
+      "formal_green_largest_fraction": 0.0,
+      "xyz_native": [
+        3.615153499364151e-16,
+        3.359562551500794e-16,
+        3.5282679853871065e-16
+      ],
+      "xyz_covariance_native": [
+        [
+          2.28456955859626e-36,
+          1.3473646976803112e-36,
+          1.253500501692436e-36
+        ],
+        [
+          1.3473646976803112e-36,
+          2.11331316860307e-36,
+          -1.2040766786379149e-37
+        ],
+        [
+          1.253500501692436e-36,
+          -1.2040766786379149e-37,
+          7.110748442389957e-36
+        ]
+      ],
+      "caveat": "Coefficient-noise model only. Conditional on positive XYZ draws; discarded count reported. No spectral calibration, BP/RP cross-calibration covariance, contamination, truncation-bias, or selection correction."
+    },
+    {
+      "source_id": "3782527364866017664",
+      "reconstruction": "full",
+      "mc_seed": 20261057,
+      "mc_draws": 200000,
+      "nonpositive_xyz_draws": 0,
+      "x": 0.32759139291640754,
+      "y": 0.29051263848615494,
+      "u1960": 0.22472518710549116,
+      "v1960": 0.2989341682290635,
+      "r_linear": 1.0,
+      "g_linear": 0.5731118880929699,
+      "b_linear": 0.8538587854821351,
+      "r": 255,
+      "g": 199,
+      "b": 238,
+      "hex": "#FFC7EE",
+      "in_srgb_gamut": true,
+      "green_dominant": false,
+      "green_channel_margin": -0.42688811190703013,
+      "duv": -0.02619595982213363,
+      "distance_planck_uv": 0.02619595982213363,
+      "nearest_planck_temperature_K": 5805.57821855919,
+      "nearest_planck_u": 0.2045999660728239,
+      "nearest_planck_v": 0.31570330026948606,
+      "nearest_is_RJ_limit": false,
+      "formal_duv_p025": -0.03571318241834772,
+      "formal_duv_median": -0.026122408906265916,
+      "formal_duv_p975": -0.01678011931443754,
+      "formal_distance_above_001_fraction": 0.99966,
+      "formal_green_largest_fraction": 0.0,
+      "xyz_native": [
+        5.280828360381382e-17,
+        4.683112601674439e-17,
+        6.156227255333537e-17
+      ],
+      "xyz_covariance_native": [
+        [
+          2.2714362549493184e-36,
+          1.236867130249755e-36,
+          1.6452413792736802e-36
+        ],
+        [
+          1.236867130249755e-36,
+          2.013825361868985e-36,
+          -1.281034987534334e-37
+        ],
+        [
+          1.6452413792736802e-36,
+          -1.281034987534334e-37,
+          9.158157164966945e-36
+        ]
+      ],
+      "caveat": "Coefficient-noise model only. Conditional on positive XYZ draws; discarded count reported. No spectral calibration, BP/RP cross-calibration covariance, contamination, truncation-bias, or selection correction."
+    },
+    {
+      "source_id": "3782527364866017664",
+      "reconstruction": "truncated",
+      "mc_seed": 20261058,
+      "mc_draws": 200000,
+      "nonpositive_xyz_draws": 0,
+      "x": 0.3224289204012769,
+      "y": 0.2764492488111439,
+      "u1960": 0.22736150651804718,
+      "v1960": 0.29240825050956826,
+      "r_linear": 1.0,
+      "g_linear": 0.5305193165431012,
+      "b_linear": 0.9179423819767737,
+      "r": 255,
+      "g": 193,
+      "b": 246,
+      "hex": "#FFC1F6",
+      "in_srgb_gamut": true,
+      "green_dominant": false,
+      "green_channel_margin": -0.46948068345689875,
+      "duv": -0.032315069350303496,
+      "distance_planck_uv": 0.032315069350303496,
+      "nearest_planck_temperature_K": 6292.885883492724,
+      "nearest_planck_u": 0.20155873146254316,
+      "nearest_planck_v": 0.311862825975252,
+      "nearest_is_RJ_limit": false,
+      "formal_duv_p025": -0.04077317844646116,
+      "formal_duv_median": -0.03228544328140618,
+      "formal_duv_p975": -0.0238887218689959,
+      "formal_distance_above_001_fraction": 1.0,
+      "formal_green_largest_fraction": 0.0,
+      "xyz_native": [
+        5.218108248668776e-17,
+        4.473984851496603e-17,
+        6.491654443865758e-17
+      ],
+      "xyz_covariance_native": [
+        [
+          1.8487319070666172e-36,
+          1.0178228573140976e-36,
+          9.99266551669868e-37
+        ],
+        [
+          1.0178228573140976e-36,
+          1.53062545309514e-36,
+          3.462561504488252e-37
+        ],
+        [
+          9.99266551669868e-37,
+          3.462561504488252e-37,
+          4.597251941911718e-36
+        ]
+      ],
+      "caveat": "Coefficient-noise model only. Conditional on positive XYZ draws; discarded count reported. No spectral calibration, BP/RP cross-calibration covariance, contamination, truncation-bias, or selection correction."
+    },
+    {
+      "source_id": "4445170067643613312",
+      "reconstruction": "full",
+      "mc_seed": 20261059,
+      "mc_draws": 200000,
+      "nonpositive_xyz_draws": 0,
+      "x": 0.31805839581415407,
+      "y": 0.3118272817041019,
+      "u1960": 0.2083644038329554,
+      "v1960": 0.30642347367442835,
+      "r_linear": 1.0,
+      "g_linear": 0.7962237258402007,
+      "b_linear": 0.9411181249143974,
+      "r": 255,
+      "g": 231,
+      "b": 248,
+      "hex": "#FFE7F8",
+      "in_srgb_gamut": true,
+      "green_dominant": false,
+      "green_channel_margin": -0.20377627415979926,
+      "duv": -0.008708418230399834,
+      "distance_planck_uv": 0.008708418230399834,
+      "nearest_planck_temperature_K": 6320.116599556651,
+      "nearest_planck_u": 0.20140714360707235,
+      "nearest_planck_v": 0.31166113328773903,
+      "nearest_is_RJ_limit": false,
+      "formal_duv_p025": -0.013160523166987946,
+      "formal_duv_median": -0.00869083968746327,
+      "formal_duv_p975": -0.004275080430906424,
+      "formal_distance_above_001_fraction": 0.281465,
+      "formal_green_largest_fraction": 0.0,
+      "xyz_native": [
+        7.186333285713408e-17,
+        7.04554510553812e-17,
+        8.362504842425104e-17
+      ],
+      "xyz_covariance_native": [
+        [
+          1.0748822680963705e-36,
+          6.07876072118694e-37,
+          8.275193156786601e-37
+        ],
+        [
+          6.07876072118694e-37,
+          1.0144538183911195e-36,
+          -5.918845063171272e-38
+        ],
+        [
+          8.275193156786601e-37,
+          -5.918845063171272e-38,
+          4.629601066933735e-36
+        ]
+      ],
+      "caveat": "Coefficient-noise model only. Conditional on positive XYZ draws; discarded count reported. No spectral calibration, BP/RP cross-calibration covariance, contamination, truncation-bias, or selection correction."
+    },
+    {
+      "source_id": "4445170067643613312",
+      "reconstruction": "truncated",
+      "mc_seed": 20261060,
+      "mc_draws": 200000,
+      "nonpositive_xyz_draws": 0,
+      "x": 0.316124648612661,
+      "y": 0.3064150675071839,
+      "u1960": 0.20919020005442307,
+      "v1960": 0.30414757067894516,
+      "r_linear": 1.0,
+      "g_linear": 0.7779027057302593,
+      "b_linear": 0.9692495692703835,
+      "r": 255,
+      "g": 228,
+      "b": 252,
+      "hex": "#FFE4FC",
+      "in_srgb_gamut": true,
+      "green_dominant": false,
+      "green_channel_margin": -0.22209729426974067,
+      "duv": -0.010724488320945856,
+      "distance_planck_uv": 0.010724488320945856,
+      "nearest_planck_temperature_K": 6485.993320147694,
+      "nearest_planck_u": 0.20052053690745317,
+      "nearest_planck_v": 0.3104603823080195,
+      "nearest_is_RJ_limit": false,
+      "formal_duv_p025": -0.014605208393149766,
+      "formal_duv_median": -0.01070569739340111,
+      "formal_duv_p975": -0.006892349096117509,
+      "formal_distance_above_001_fraction": 0.643135,
+      "formal_green_largest_fraction": 0.0,
+      "xyz_native": [
+        7.100031420686221e-17,
+        6.881958166249625e-17,
+        8.4776049174639e-17
+      ],
+      "xyz_covariance_native": [
+        [
+          8.901449606806777e-37,
+          5.145832997690395e-37,
+          4.95596023301513e-37
+        ],
+        [
+          5.145832997690395e-37,
+          7.876986108110732e-37,
+          1.956745897912821e-37
+        ],
+        [
+          4.95596023301513e-37,
+          1.956745897912821e-37,
+          2.341686293944026e-36
+        ]
+      ],
+      "caveat": "Coefficient-noise model only. Conditional on positive XYZ draws; discarded count reported. No spectral calibration, BP/RP cross-calibration covariance, contamination, truncation-bias, or selection correction."
+    },
+    {
+      "source_id": "4545191991882663936",
+      "reconstruction": "full",
+      "mc_seed": 20261061,
+      "mc_draws": 200000,
+      "nonpositive_xyz_draws": 0,
+      "x": 0.35310330400585743,
+      "y": 0.3842824334590503,
+      "u1960": 0.20454393448677255,
+      "v1960": 0.33390783944304986,
+      "r_linear": 1.0,
+      "g_linear": 0.9217795203743778,
+      "b_linear": 0.5177109711749162,
+      "r": 255,
+      "g": 246,
+      "b": 190,
+      "hex": "#FFF6BE",
+      "in_srgb_gamut": true,
+      "green_dominant": false,
+      "green_channel_margin": -0.07822047962562217,
+      "duv": 0.012551953181246758,
+      "distance_planck_uv": 0.012551953181246758,
+      "nearest_planck_temperature_K": 4842.678477977122,
+      "nearest_planck_u": 0.2131088565854409,
+      "nearest_planck_v": 0.3247321303092579,
+      "nearest_is_RJ_limit": false,
+      "formal_duv_p025": 0.006351777771302988,
+      "formal_duv_median": 0.012605616130796492,
+      "formal_duv_p975": 0.01879318736827815,
+      "formal_distance_above_001_fraction": 0.792755,
+      "formal_green_largest_fraction": 0.086515,
+      "xyz_native": [
+        3.973908803985158e-17,
+        4.3248061635651766e-17,
+        2.955523548210586e-17
+      ],
+      "xyz_covariance_native": [
+        [
+          7.224550742057977e-37,
+          4.122850379346939e-37,
+          5.330413750723622e-37
+        ],
+        [
+          4.122850379346939e-37,
+          6.9923303375255165e-37,
+          -3.9286408630700365e-38
+        ],
+        [
+          5.330413750723622e-37,
+          -3.9286408630700365e-38,
+          2.9941922621804692e-36
+        ]
+      ],
+      "caveat": "Coefficient-noise model only. Conditional on positive XYZ draws; discarded count reported. No spectral calibration, BP/RP cross-calibration covariance, contamination, truncation-bias, or selection correction."
+    },
+    {
+      "source_id": "4545191991882663936",
+      "reconstruction": "truncated",
+      "mc_seed": 20261062,
+      "mc_draws": 200000,
+      "nonpositive_xyz_draws": 0,
+      "x": 0.3542385442136353,
+      "y": 0.39112518462567286,
+      "u1960": 0.20285598850046196,
+      "v1960": 0.33596888558864735,
+      "r_linear": 1.0,
+      "g_linear": 0.9552323263847708,
+      "b_linear": 0.4979796912030697,
+      "r": 255,
+      "g": 250,
+      "b": 187,
+      "hex": "#FFFABB",
+      "in_srgb_gamut": true,
+      "green_dominant": false,
+      "green_channel_margin": -0.04476767361522915,
+      "duv": 0.015210226324253288,
+      "distance_planck_uv": 0.015210226324253288,
+      "nearest_planck_temperature_K": 4828.75843104808,
+      "nearest_planck_u": 0.21326479695565417,
+      "nearest_planck_v": 0.32487800233355324,
+      "nearest_is_RJ_limit": false,
+      "formal_duv_p025": 0.010189966651826874,
+      "formal_duv_median": 0.015218933153004776,
+      "formal_duv_p975": 0.020265781985897083,
+      "formal_distance_above_001_fraction": 0.978915,
+      "formal_green_largest_fraction": 0.201,
+      "xyz_native": [
+        3.971287132824053e-17,
+        4.384814804598495e-17,
+        2.8546688770290724e-17
+      ],
+      "xyz_covariance_native": [
+        [
+          5.9477965174463994e-37,
+          3.4510067846771983e-37,
+          3.3027917457381835e-37
+        ],
+        [
+          3.4510067846771983e-37,
+          5.4052732569210894e-37,
+          1.3587424993689541e-37
+        ],
+        [
+          3.3027917457381835e-37,
+          1.3587424993689541e-37,
+          1.561383757619288e-36
+        ]
+      ],
+      "caveat": "Coefficient-noise model only. Conditional on positive XYZ draws; discarded count reported. No spectral calibration, BP/RP cross-calibration covariance, contamination, truncation-bias, or selection correction."
+    },
+    {
+      "source_id": "4545912820537587328",
+      "reconstruction": "full",
+      "mc_seed": 20261063,
+      "mc_draws": 200000,
+      "nonpositive_xyz_draws": 0,
+      "x": 0.3217644338626817,
+      "y": 0.317271157711084,
+      "u1960": 0.20881167317987112,
+      "v1960": 0.30884358705244347,
+      "r_linear": 1.0,
+      "g_linear": 0.795445143298579,
+      "b_linear": 0.8923379987800734,
+      "r": 255,
+      "g": 231,
+      "b": 243,
+      "hex": "#FFE7F3",
+      "in_srgb_gamut": true,
+      "green_dominant": false,
+      "green_channel_margin": -0.20455485670142104,
+      "duv": -0.007589441000016898,
+      "distance_planck_uv": 0.007589441000016898,
+      "nearest_planck_temperature_K": 6070.478186435898,
+      "nearest_planck_u": 0.20286582057595792,
+      "nearest_planck_v": 0.31356020146378516,
+      "nearest_is_RJ_limit": false,
+      "formal_duv_p025": -0.012583094957286586,
+      "formal_duv_median": -0.0075653307661961286,
+      "formal_duv_p975": -0.002638342029414913,
+      "formal_distance_above_001_fraction": 0.17023,
+      "formal_green_largest_fraction": 5e-06,
+      "xyz_native": [
+        4.6379993844631054e-17,
+        4.5732320894107665e-17,
+        5.2030383967434874e-17
+      ],
+      "xyz_covariance_native": [
+        [
+          5.667434363750097e-37,
+          3.1893221283687876e-37,
+          4.364537527246911e-37
+        ],
+        [
+          3.1893221283687876e-37,
+          5.3115546850104295e-37,
+          -3.038602833015133e-38
+        ],
+        [
+          4.364537527246911e-37,
+          -3.038602833015133e-38,
+          2.4375655250124065e-36
+        ]
+      ],
+      "caveat": "Coefficient-noise model only. Conditional on positive XYZ draws; discarded count reported. No spectral calibration, BP/RP cross-calibration covariance, contamination, truncation-bias, or selection correction."
+    },
+    {
+      "source_id": "4545912820537587328",
+      "reconstruction": "truncated",
+      "mc_seed": 20261064,
+      "mc_draws": 200000,
+      "nonpositive_xyz_draws": 0,
+      "x": 0.319561938850577,
+      "y": 0.32878510215680984,
+      "u1960": 0.2026938605695617,
+      "v1960": 0.3128159844080311,
+      "r_linear": 1.0,
+      "g_linear": 0.9065020015563032,
+      "b_linear": 0.908425057792028,
+      "r": 255,
+      "g": 244,
+      "b": 244,
+      "hex": "#FFF4F4",
+      "in_srgb_gamut": true,
+      "green_dominant": false,
+      "green_channel_margin": -0.09349799844369677,
+      "duv": -0.000322746059457136,
+      "distance_planck_uv": 0.000322746059457136,
+      "nearest_planck_temperature_K": 6140.779849322474,
+      "nearest_planck_u": 0.20243891069726258,
+      "nearest_planck_v": 0.31301388736786184,
+      "nearest_is_RJ_limit": false,
+      "formal_duv_p025": -0.0008534012978457054,
+      "formal_duv_median": -0.00031972283144040756,
+      "formal_duv_p975": 0.00023024532498512295,
+      "formal_distance_above_001_fraction": 0.0,
+      "formal_green_largest_fraction": 0.0,
+      "xyz_native": [
+        4.531505715747896e-17,
+        4.662293560476217e-17,
+        4.9865681731884686e-17
+      ],
+      "xyz_covariance_native": [
+        [
+          2.366631635965239e-37,
+          2.4406137938224853e-37,
+          2.3224561447326363e-37
+        ],
+        [
+          2.4406137938224853e-37,
+          2.607754677124009e-37,
+          3.038083698977026e-37
+        ],
+        [
+          2.3224561447326363e-37,
+          3.038083698977026e-37,
+          9.735259947052997e-37
+        ]
+      ],
+      "caveat": "Coefficient-noise model only. Conditional on positive XYZ draws; discarded count reported. No spectral calibration, BP/RP cross-calibration covariance, contamination, truncation-bias, or selection correction."
+    },
+    {
+      "source_id": "4555293235271174016",
+      "reconstruction": "full",
+      "mc_seed": 20261065,
+      "mc_draws": 200000,
+      "nonpositive_xyz_draws": 0,
+      "x": 0.3369466368634031,
+      "y": 0.3082224433855799,
+      "u1960": 0.22370732736979843,
+      "v1960": 0.3069549217958057,
+      "r_linear": 1.0,
+      "g_linear": 0.6037598525014599,
+      "b_linear": 0.7499207050203356,
+      "r": 255,
+      "g": 204,
+      "b": 225,
+      "hex": "#FFCCE1",
+      "in_srgb_gamut": true,
+      "green_dominant": false,
+      "green_channel_margin": -0.3962401474985401,
+      "duv": -0.02009580931613318,
+      "distance_planck_uv": 0.02009580931613318,
+      "nearest_planck_temperature_K": 5234.073958111315,
+      "nearest_planck_u": 0.20915587000301328,
+      "nearest_planck_v": 0.3208148150339594,
+      "nearest_is_RJ_limit": false,
+      "formal_duv_p025": -0.02488623824901164,
+      "formal_duv_median": -0.020081979412901095,
+      "formal_duv_p975": -0.015301018321079593,
+      "formal_distance_above_001_fraction": 0.999975,
+      "formal_green_largest_fraction": 0.0,
+      "xyz_native": [
+        7.624973187772024e-17,
+        6.974955703853442e-17,
+        8.029687651670558e-17
+      ],
+      "xyz_covariance_native": [
+        [
+          1.2736633405165874e-36,
+          7.36581553298996e-37,
+          9.29991405851368e-37
+        ],
+        [
+          7.36581553298996e-37,
+          1.1971238724247858e-36,
+          -6.679052611030737e-38
+        ],
+        [
+          9.29991405851368e-37,
+          -6.679052611030737e-38,
+          5.211207874379113e-36
+        ]
+      ],
+      "caveat": "Coefficient-noise model only. Conditional on positive XYZ draws; discarded count reported. No spectral calibration, BP/RP cross-calibration covariance, contamination, truncation-bias, or selection correction."
+    },
+    {
+      "source_id": "4555293235271174016",
+      "reconstruction": "truncated",
+      "mc_seed": 20261066,
+      "mc_draws": 200000,
+      "nonpositive_xyz_draws": 0,
+      "x": 0.3368888955271253,
+      "y": 0.30823125427711123,
+      "u1960": 0.22366077923293037,
+      "v1960": 0.3069524259965319,
+      "r_linear": 1.0,
+      "g_linear": 0.6042369604895894,
+      "b_linear": 0.7504093362776311,
+      "r": 255,
+      "g": 204,
+      "b": 225,
+      "hex": "#FFCCE1",
+      "in_srgb_gamut": true,
+      "green_dominant": false,
+      "green_channel_margin": -0.3957630395104106,
+      "duv": -0.02006385360774757,
+      "distance_planck_uv": 0.02006385360774757,
+      "nearest_planck_temperature_K": 5234.073958111315,
+      "nearest_planck_u": 0.20915587000301328,
+      "nearest_planck_v": 0.3208148150339594,
+      "nearest_is_RJ_limit": false,
+      "formal_duv_p025": -0.0248500398828732,
+      "formal_duv_median": -0.020035089740200573,
+      "formal_duv_p975": -0.015290732182166292,
+      "formal_distance_above_001_fraction": 0.99998,
+      "formal_green_largest_fraction": 0.0,
+      "xyz_native": [
+        7.622470500634789e-17,
+        6.974060808459529e-17,
+        8.029535034552944e-17
+      ],
+      "xyz_covariance_native": [
+        [
+          1.2357831443510786e-36,
+          7.21956958935998e-37,
+          9.300260237964028e-37
+        ],
+        [
+          7.21956958935998e-37,
+          1.1914643075561514e-36,
+          -6.677867145673662e-38
+        ],
+        [
+          9.300260237964028e-37,
+          -6.677867145673662e-38,
+          5.211299960802126e-36
+        ]
+      ],
+      "caveat": "Coefficient-noise model only. Conditional on positive XYZ draws; discarded count reported. No spectral calibration, BP/RP cross-calibration covariance, contamination, truncation-bias, or selection correction."
+    },
+    {
+      "source_id": "761677269868775040",
+      "reconstruction": "full",
+      "mc_seed": 20261067,
+      "mc_draws": 200000,
+      "nonpositive_xyz_draws": 0,
+      "x": 0.33617881239562597,
+      "y": 0.3117335257402534,
+      "u1960": 0.22159141585448194,
+      "v1960": 0.3082175502636961,
+      "r_linear": 1.0,
+      "g_linear": 0.6294129228762574,
+      "b_linear": 0.752749737687835,
+      "r": 255,
+      "g": 208,
+      "b": 225,
+      "hex": "#FFD0E1",
+      "in_srgb_gamut": true,
+      "green_dominant": false,
+      "green_channel_margin": -0.3705870771237426,
+      "duv": -0.017691790439710184,
+      "distance_planck_uv": 0.017691790439710184,
+      "nearest_planck_temperature_K": 5279.4699683742965,
+      "nearest_planck_u": 0.20874617699714582,
+      "nearest_planck_v": 0.32038304604728846,
+      "nearest_is_RJ_limit": false,
+      "formal_duv_p025": -0.02129201570089096,
+      "formal_duv_median": -0.017686781710543532,
+      "formal_duv_p975": -0.014124730584161065,
+      "formal_distance_above_001_fraction": 0.999995,
+      "formal_green_largest_fraction": 0.0,
+      "xyz_native": [
+        1.5311911737143778e-16,
+        1.419850405690083e-16,
+        1.6036510938280898e-16
+      ],
+      "xyz_covariance_native": [
+        [
+          3.294549476691505e-36,
+          1.8952576700803537e-36,
+          1.8030596611267652e-36
+        ],
+        [
+          1.8952576700803537e-36,
+          2.8646050379134867e-36,
+          -1.620029583436389e-37
+        ],
+        [
+          1.8030596611267652e-36,
+          -1.620029583436389e-37,
+          1.0205562380815031e-35
+        ]
+      ],
+      "caveat": "Coefficient-noise model only. Conditional on positive XYZ draws; discarded count reported. No spectral calibration, BP/RP cross-calibration covariance, contamination, truncation-bias, or selection correction."
+    },
+    {
+      "source_id": "761677269868775040",
+      "reconstruction": "truncated",
+      "mc_seed": 20261068,
+      "mc_draws": 200000,
+      "nonpositive_xyz_draws": 0,
+      "x": 0.33607157551116884,
+      "y": 0.3110607164997482,
+      "u1960": 0.22180799426163098,
+      "v1960": 0.3079511567533714,
+      "r_linear": 1.0,
+      "g_linear": 0.6263941371281733,
+      "b_linear": 0.7544313215726507,
+      "r": 255,
+      "g": 207,
+      "b": 225,
+      "hex": "#FFCFE1",
+      "in_srgb_gamut": true,
+      "green_dominant": false,
+      "green_channel_margin": -0.37360586287182673,
+      "duv": -0.018032052518859257,
+      "distance_planck_uv": 0.018032052518859257,
+      "nearest_planck_temperature_K": 5287.074157269153,
+      "nearest_planck_u": 0.20867844782123357,
+      "nearest_planck_v": 0.3203111700346081,
+      "nearest_is_RJ_limit": false,
+      "formal_duv_p025": -0.02159199861558596,
+      "formal_duv_median": -0.018025168284837752,
+      "formal_duv_p975": -0.014463732933697309,
+      "formal_distance_above_001_fraction": 1.0,
+      "formal_green_largest_fraction": 0.0,
+      "xyz_native": [
+        1.534255872261623e-16,
+        1.4200746677065705e-16,
+        1.610934671551114e-16
+      ],
+      "xyz_covariance_native": [
+        [
+          3.2800904944922966e-36,
+          1.8914432410317058e-36,
+          1.79112014363243e-36
+        ],
+        [
+          1.8914432410317058e-36,
+          2.8599292334791023e-36,
+          -1.5058673470020889e-37
+        ],
+        [
+          1.79112014363243e-36,
+          -1.5058673470020889e-37,
+          1.008676066594731e-35
+        ]
+      ],
+      "caveat": "Coefficient-noise model only. Conditional on positive XYZ draws; discarded count reported. No spectral calibration, BP/RP cross-calibration covariance, contamination, truncation-bias, or selection correction."
+    },
+    {
+      "source_id": "818833831355548928",
+      "reconstruction": "full",
+      "mc_seed": 20261069,
+      "mc_draws": 200000,
+      "nonpositive_xyz_draws": 0,
+      "x": 0.3453932562793584,
+      "y": 0.39285062472486015,
+      "u1960": 0.1967094138650271,
+      "v1960": 0.33560621720839573,
+      "r_linear": 0.9317821079828652,
+      "g_linear": 1.0,
+      "b_linear": 0.5222155226836324,
+      "r": 247,
+      "g": 255,
+      "b": 191,
+      "hex": "#F7FFBF",
+      "in_srgb_gamut": true,
+      "green_dominant": true,
+      "green_channel_margin": 0.0682178920171348,
+      "duv": 0.019234953156511796,
+      "distance_planck_uv": 0.019234953156511796,
+      "nearest_planck_temperature_K": 5100.214581351624,
+      "nearest_planck_u": 0.2104196088677465,
+      "nearest_planck_v": 0.3221149616730272,
+      "nearest_is_RJ_limit": false,
+      "formal_duv_p025": 0.012379087367142527,
+      "formal_duv_median": 0.01926619935312668,
+      "formal_duv_p975": 0.026138447589253995,
+      "formal_distance_above_001_fraction": 0.9957,
+      "formal_green_largest_fraction": 0.852515,
+      "xyz_native": [
+        3.50237519581701e-17,
+        3.9836049450389767e-17,
+        2.6542734169154043e-17
+      ],
+      "xyz_covariance_native": [
+        [
+          7.301165704425417e-37,
+          4.07379384827737e-37,
+          5.52627187291707e-37
+        ],
+        [
+          4.07379384827737e-37,
+          6.905898398317474e-37,
+          -4.110092685645253e-38
+        ],
+        [
+          5.52627187291707e-37,
+          -4.110092685645253e-38,
+          3.093315428975173e-36
+        ]
+      ],
+      "caveat": "Coefficient-noise model only. Conditional on positive XYZ draws; discarded count reported. No spectral calibration, BP/RP cross-calibration covariance, contamination, truncation-bias, or selection correction."
+    },
+    {
+      "source_id": "818833831355548928",
+      "reconstruction": "truncated",
+      "mc_seed": 20261070,
+      "mc_draws": 200000,
+      "nonpositive_xyz_draws": 0,
+      "x": 0.3410188127192829,
+      "y": 0.3825339437286098,
+      "u1960": 0.19745255541468926,
+      "v1960": 0.33223521066086614,
+      "r_linear": 0.9515306951895031,
+      "g_linear": 1.0,
+      "b_linear": 0.5848411121485456,
+      "r": 249,
+      "g": 255,
+      "b": 201,
+      "hex": "#F9FFC9",
+      "in_srgb_gamut": true,
+      "green_dominant": true,
+      "green_channel_margin": 0.04846930481049694,
+      "duv": 0.016351372754006648,
+      "distance_planck_uv": 0.016351372754006648,
+      "nearest_planck_temperature_K": 5219.02886365412,
+      "nearest_planck_u": 0.20929370539967013,
+      "nearest_planck_v": 0.320958927675163,
+      "nearest_is_RJ_limit": false,
+      "formal_duv_p025": 0.009955657617180662,
+      "formal_duv_median": 0.016367449654687064,
+      "formal_duv_p975": 0.0227375253653017,
+      "formal_distance_above_001_fraction": 0.974085,
+      "formal_green_largest_fraction": 0.776595,
+      "xyz_native": [
+        3.539285743691915e-17,
+        3.970153208619032e-17,
+        2.8691255481917123e-17
+      ],
+      "xyz_covariance_native": [
+        [
+          6.266008013828929e-37,
+          3.734939704840249e-37,
+          3.903315174095004e-37
+        ],
+        [
+          3.734939704840249e-37,
+          6.7112642587992525e-37,
+          -5.672216545305104e-38
+        ],
+        [
+          3.903315174095004e-37,
+          -5.672216545305104e-38,
+          2.362074164232546e-36
+        ]
+      ],
+      "caveat": "Coefficient-noise model only. Conditional on positive XYZ draws; discarded count reported. No spectral calibration, BP/RP cross-calibration covariance, contamination, truncation-bias, or selection correction."
+    },
+    {
+      "source_id": "913810126798863232",
+      "reconstruction": "full",
+      "mc_seed": 20261071,
+      "mc_draws": 200000,
+      "nonpositive_xyz_draws": 0,
+      "x": 0.3659602096548204,
+      "y": 0.3452211791390219,
+      "u1960": 0.22834216802471893,
+      "v1960": 0.3231029648018558,
+      "r_linear": 1.0,
+      "g_linear": 0.5964088243630652,
+      "b_linear": 0.49909846620250975,
+      "r": 255,
+      "g": 203,
+      "b": 187,
+      "hex": "#FFCBBB",
+      "in_srgb_gamut": true,
+      "green_dominant": false,
+      "green_channel_margin": -0.4035911756369348,
+      "duv": -0.011051861461853822,
+      "distance_planck_uv": 0.011051861461853822,
+      "nearest_planck_temperature_K": 4199.551392543616,
+      "nearest_planck_u": 0.22171990187319363,
+      "nearest_planck_v": 0.33195108509886645,
+      "nearest_is_RJ_limit": false,
+      "formal_duv_p025": -0.018620014999646713,
+      "formal_duv_median": -0.010983510616244842,
+      "formal_duv_p975": -0.0034223821459675413,
+      "formal_distance_above_001_fraction": 0.599965,
+      "formal_green_largest_fraction": 0.0,
+      "xyz_native": [
+        3.514067685337733e-17,
+        3.314924841284986e-17,
+        2.7733292357684955e-17
+      ],
+      "xyz_covariance_native": [
+        [
+          7.0970260436574485e-37,
+          3.932137672750623e-37,
+          5.203088870507884e-37
+        ],
+        [
+          3.932137672750623e-37,
+          6.391502176889039e-37,
+          -3.7621453482019506e-38
+        ],
+        [
+          5.203088870507884e-37,
+          -3.7621453482019506e-38,
+          2.899065813585165e-36
+        ]
+      ],
+      "caveat": "Coefficient-noise model only. Conditional on positive XYZ draws; discarded count reported. No spectral calibration, BP/RP cross-calibration covariance, contamination, truncation-bias, or selection correction."
+    },
+    {
+      "source_id": "913810126798863232",
+      "reconstruction": "truncated",
+      "mc_seed": 20261072,
+      "mc_draws": 200000,
+      "nonpositive_xyz_draws": 0,
+      "x": 0.363738794796702,
+      "y": 0.3572295608244598,
+      "u1960": 0.22181639044454798,
+      "v1960": 0.3267703619012949,
+      "r_linear": 1.0,
+      "g_linear": 0.6711576615374577,
+      "b_linear": 0.4939082968527915,
+      "r": 255,
+      "g": 214,
+      "b": 186,
+      "hex": "#FFD6BA",
+      "in_srgb_gamut": true,
+      "green_dominant": false,
+      "green_channel_margin": -0.3288423384625423,
+      "duv": -0.004158413782028768,
+      "distance_planck_uv": 0.004158413782028768,
+      "nearest_planck_temperature_K": 4365.962588886915,
+      "nearest_planck_u": 0.21918389697281987,
+      "nearest_planck_v": 0.3299894274961338,
+      "nearest_is_RJ_limit": false,
+      "formal_duv_p025": -0.004584782363921903,
+      "formal_duv_median": -0.004158413325801276,
+      "formal_duv_p975": -0.003742830987963219,
+      "formal_distance_above_001_fraction": 0.0,
+      "formal_green_largest_fraction": 0.0,
+      "xyz_native": [
+        3.3677638414845276e-17,
+        3.3074965202059923e-17,
+        2.5834821471111912e-17
+      ],
+      "xyz_covariance_native": [
+        [
+          2.7784956760937868e-37,
+          2.8811633358096574e-37,
+          2.324636853503307e-37
+        ],
+        [
+          2.8811633358096574e-37,
+          3.006814338811888e-37,
+          2.4348747230564965e-37
+        ],
+        [
+          2.324636853503307e-37,
+          2.4348747230564965e-37,
+          1.9757887658833228e-37
+        ]
+      ],
+      "caveat": "Coefficient-noise model only. Conditional on positive XYZ draws; discarded count reported. No spectral calibration, BP/RP cross-calibration covariance, contamination, truncation-bias, or selection correction."
+    }
+  ],
+  "formal_model_is_not_discovery_probability": true,
+  "truncation": "Full and recommended bases are alternative reconstructions of the same data, not independent observations."
+}

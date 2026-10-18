@@ -1,0 +1,32 @@
+{
+  "date_utc": "2026-10-18",
+  "objects": 4,
+  "bands_checked": 12,
+  "maximum_swan_mast_mag_difference": 0.0,
+  "maximum_swan_rounded_dr1_plus_floor_error_difference": 1.1245976441753847e-09,
+  "maximum_mwdd_dr2_native_error_difference": 4.860162723663297e-10,
+  "native_response_files": [
+    {
+      "path": "sources/ps1_mast_dr1_headline_checks.json",
+      "sha256": "6073d1d556d16372ff4135fde13cee860d4909e5bcfdf61ab2c35f2a3f688f22"
+    },
+    {
+      "path": "sources/ps1_mast_headline_checks.json",
+      "sha256": "ee67e2e6696a105ecb215dfca4a19e9db70b0177c0808f4d8de8b4b8a41f0325"
+    }
+  ],
+  "interpretation": [
+    "All checked central values are observed PS1 mean-PSF magnitudes; the DR1 and DR2 central magnitudes agree exactly in these examples.",
+    "Swan uncertainties match DR1 native errors rounded to four decimal places, plus0.01 mag added in quadrature; do not add the same floor a second time.",
+    "Existing MWDD uncertainty fields match DR2 native uncertainties and have not had that Swan floor added.",
+    "The Swan paper describes the extra uncertainty as1%; the retrieved numerical table implements0.01 mag in the checked rows, not exactly0.01 fractional flux.",
+    "These are checks on four already identified examples; they do not establish the astrometric identity or quality of every new PS1 match.",
+    "Swan Section3/Table11 defines units and selection. Reddening is a model parameter; do not deredden these observed anchors unless the spectrum is treated consistently."
+  ],
+  "sources": [
+    "https://arxiv.org/html/2609.04314v1#S3",
+    "https://arxiv.org/html/2609.04314v1#A5",
+    "https://outerspace.stsci.edu/spaces/PANSTARRS/pages/298812303/PS1+Filter+properties",
+    "https://outerspace.stsci.edu/spaces/PANSTARRS/pages/298812205/PS1+FAQ+-+Frequently+asked+questions"
+  ]
+}

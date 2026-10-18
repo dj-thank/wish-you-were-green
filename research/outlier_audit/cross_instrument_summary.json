@@ -1,0 +1,39 @@
+{
+  "colour_snapshot": "current_unit_validated",
+  "input_path": "research/precision/flux_units/corrected_record_screen.csv.gz",
+  "input_sha256": "2c894ee7af8d1c3a5f62ba19c6921265b4bef5de9f84291394d441642b984746",
+  "input_records": 9902,
+  "eligible_records": 7473,
+  "selection": "usable_screen=true, status=ok, flux_units_validated=true, finite u1960/v1960 in corrected_record_screen.csv.gz",
+  "aggregation": "One pair per entity_id and instrument pair; coordinate-wise medians of eligible records within each instrument.",
+  "pairs": [
+    {
+      "pair": "DESI minus Gaia_XP",
+      "n": 1170,
+      "median_distance": 0.0025397940102856427,
+      "p95_distance": 0.007008602145669116,
+      "discordant_above_0005": 179,
+      "median_delta_u": 0.0003517316039999968,
+      "median_delta_v": -0.0011059051990000013
+    },
+    {
+      "pair": "DESI minus SDSS",
+      "n": 437,
+      "median_distance": 0.0021469689948350693,
+      "p95_distance": 0.0057817107947739,
+      "discordant_above_0005": 40,
+      "median_delta_u": -0.00017353927499999533,
+      "median_delta_v": 0.00022035701400002772
+    },
+    {
+      "pair": "SDSS minus Gaia_XP",
+      "n": 583,
+      "median_distance": 0.0025927231230723816,
+      "p95_distance": 0.007515059324775359,
+      "discordant_above_0005": 93,
+      "median_delta_u": 0.0006767889209999822,
+      "median_delta_v": -0.0008122767329999947
+    }
+  ],
+  "interpretation": "Selected-sample descriptive differences, not instrument systematic-bias estimates. Unresolved units are excluded. Duplicate archive observations, shared photometric calibration, differing epochs, uncertain positional identities and sample selection prevent treating pairs as independent error estimates. No population false-discovery rate is estimated."
+}

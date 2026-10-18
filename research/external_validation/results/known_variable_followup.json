@@ -1,0 +1,14 @@
+{
+  "source_id": "1245262790370992256",
+  "evidence_type": "Previously published Gaia DR3 automatic variability classification; not a newly found variable",
+  "classifier_name": "nTransits:5+",
+  "best_class_name": "CV",
+  "best_class_score": 0.6277259,
+  "score_is_probability": false,
+  "n_selected_g_fov": 44,
+  "time_duration_g_fov_days": 906.78296,
+  "full_range_g_mag": 0.77929395,
+  "trimmed_range_g_mag": 0.6260151,
+  "std_dev_g_mag": 0.18368271,
+  "calibration_implication": "Do not treat noncontemporaneous mean photometry and spectra as a validated constant-SED colour measurement; investigate phase and classification."
+}

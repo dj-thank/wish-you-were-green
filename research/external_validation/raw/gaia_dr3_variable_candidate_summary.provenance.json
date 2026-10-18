@@ -1,0 +1,33 @@
+{
+  "name": "gaia_dr3_variable_candidate_summary",
+  "endpoint": "https://gea.esac.esa.int/tap-server/tap/sync",
+  "parameters": {
+    "REQUEST": "doQuery",
+    "LANG": "ADQL",
+    "FORMAT": "csv",
+    "QUERY": "SELECT * FROM gaiadr3.vari_summary WHERE source_id=1245262790370992256"
+  },
+  "request_url": "https://gea.esac.esa.int/tap-server/tap/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=SELECT+%2A+FROM+gaiadr3.vari_summary+WHERE+source_id%3D1245262790370992256",
+  "resolved_url": "https://gea.esac.esa.int/tap-server/tap/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=SELECT+%2A+FROM+gaiadr3.vari_summary+WHERE+source_id%3D1245262790370992256",
+  "status": 200,
+  "headers": {
+    "Date": "Sun, 18 Oct 2026 16:08:08 GMT",
+    "Server": "Apache/2.4.62 (Red Hat Enterprise Linux) OpenSSL/3.5.5 mod_jk/1.2.50",
+    "Set-Cookie": "JSESSIONID=5597125F1F63CF2D6BA09D1ABB7934BD; Path=/tap-server; Secure; HttpOnly",
+    "Content-Disposition": "attachment;filename=\"1c385ca6-cb0e-11f1-9670-bc97e148b76b-O-result.csv\"",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "0",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "SAMEORIGIN",
+    "Connection": "close",
+    "Transfer-Encoding": "chunked",
+    "Content-Type": "text/csv"
+  },
+  "query_started_utc": "2026-10-18T16:08:07.994487+00:00",
+  "retrieved_utc": "2026-10-18T16:08:10.329175+00:00",
+  "relative_path": "raw/gaia_dr3_variable_candidate_summary.csv",
+  "bytes": 1841,
+  "sha256": "40439629cd3dac7f32acddc9292fad81001e8f9ba42b973925f38b0e866629e0"
+}

@@ -1,0 +1,8 @@
+{
+  "input_path": "research/outlier_audit/object_audit.csv",
+  "input_sha256": "7c2ea8569a9b149d6607e6c6d5d6a5d18e249bd025e4b3b589dbc5703c4087ca",
+  "selection": "review_status == multiple_instrument_colour_candidate",
+  "selected_count": 27,
+  "frozen_utc": "2026-10-18T16:06:14.542027+00:00",
+  "snapshot_sha256": "f20b82ec80a7c18739db073506298b42c2a8f56e2b05e95daf36fe2b4dee08a8"
+}

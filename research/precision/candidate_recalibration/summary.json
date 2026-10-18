@@ -1,0 +1,15 @@
+{
+  "targets": 27,
+  "status_counts": {
+    "calibrated_conditional": 25,
+    "external_photometry_unavailable": 2
+  },
+  "newly_anchored_entities": 12,
+  "mean_outside_001": 24,
+  "conditional_interval_beyond_001": 19,
+  "input_photometry_rows_sha256": "abfc9a856deb2c1f2f60248b48cd3a082f6b604dc35501d67c85e7a6aa987ccd",
+  "pipeline_sha256": "496c06d2a03ff313cb337424bf610afc989ea150b0ce4ee8f73346edade15d09",
+  "conditional_mc_sha256": "bf7003a151b685937b459a4b161e051e664070c2ce0885a6f291655ba68a2d3a",
+  "precision_caution": "Formal conditional intervals are not total uncertainties or discovery probabilities. The shared PS1 anchors are not independent new observations.",
+  "baseline_caution": "Original 0.1 results retained. This separately attributed PS1 calibration need not equal the old screen (which preferred SDSS when available)."
+}

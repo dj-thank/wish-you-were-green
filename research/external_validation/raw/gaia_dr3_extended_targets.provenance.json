@@ -1,0 +1,33 @@
+{
+  "name": "gaia_dr3_extended_targets",
+  "endpoint": "https://gea.esac.esa.int/tap-server/tap/sync",
+  "parameters": {
+    "REQUEST": "doQuery",
+    "LANG": "ADQL",
+    "FORMAT": "csv",
+    "QUERY": "SELECT source_id,ra,dec,ref_epoch,parallax,parallax_error,pmra,pmdec,pmra_error,pmdec_error,ruwe,astrometric_params_solved,duplicated_source,ipd_frac_multi_peak,ipd_frac_odd_win,phot_bp_rp_excess_factor,phot_g_mean_mag,phot_bp_mean_mag,phot_rp_mean_mag,phot_bp_n_obs,phot_rp_n_obs,phot_bp_n_contaminated_transits,phot_bp_n_blended_transits,phot_rp_n_contaminated_transits,phot_rp_n_blended_transits,phot_variable_flag,has_epoch_photometry,has_xp_continuous,non_single_star FROM gaiadr3.gaia_source WHERE source_id IN (1078624858218235776,1099452803904038272,1182083542272959232,1245262790370992256,1323443938325221376,1496016553207149952,1542337839923130624,1679189040001914880,1691957732959636608,2119909923600264960,2453225705329412480,2482684508055379584,2513256394506328832,2739231150982741760,3204436719718449280,3638333660492606976,3705179706854089856,3711047662972690688,3713218786120541824,3782527364866017664,4445170067643613312,4545191991882663936,4545912820537587328,4555293235271174016,761677269868775040,818833831355548928,913810126798863232)"
+  },
+  "request_url": "https://gea.esac.esa.int/tap-server/tap/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=SELECT+source_id%2Cra%2Cdec%2Cref_epoch%2Cparallax%2Cparallax_error%2Cpmra%2Cpmdec%2Cpmra_error%2Cpmdec_error%2Cruwe%2Castrometric_params_solved%2Cduplicated_source%2Cipd_frac_multi_peak%2Cipd_frac_odd_win%2Cphot_bp_rp_excess_factor%2Cphot_g_mean_mag%2Cphot_bp_mean_mag%2Cphot_rp_mean_mag%2Cphot_bp_n_obs%2Cphot_rp_n_obs%2Cphot_bp_n_contaminated_transits%2Cphot_bp_n_blended_transits%2Cphot_rp_n_contaminated_transits%2Cphot_rp_n_blended_transits%2Cphot_variable_flag%2Chas_epoch_photometry%2Chas_xp_continuous%2Cnon_single_star+FROM+gaiadr3.gaia_source+WHERE+source_id+IN+%281078624858218235776%2C1099452803904038272%2C1182083542272959232%2C1245262790370992256%2C1323443938325221376%2C1496016553207149952%2C1542337839923130624%2C1679189040001914880%2C1691957732959636608%2C2119909923600264960%2C2453225705329412480%2C2482684508055379584%2C2513256394506328832%2C2739231150982741760%2C3204436719718449280%2C3638333660492606976%2C3705179706854089856%2C3711047662972690688%2C3713218786120541824%2C3782527364866017664%2C4445170067643613312%2C4545191991882663936%2C4545912820537587328%2C4555293235271174016%2C761677269868775040%2C818833831355548928%2C913810126798863232%29",
+  "resolved_url": "https://gea.esac.esa.int/tap-server/tap/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=SELECT+source_id%2Cra%2Cdec%2Cref_epoch%2Cparallax%2Cparallax_error%2Cpmra%2Cpmdec%2Cpmra_error%2Cpmdec_error%2Cruwe%2Castrometric_params_solved%2Cduplicated_source%2Cipd_frac_multi_peak%2Cipd_frac_odd_win%2Cphot_bp_rp_excess_factor%2Cphot_g_mean_mag%2Cphot_bp_mean_mag%2Cphot_rp_mean_mag%2Cphot_bp_n_obs%2Cphot_rp_n_obs%2Cphot_bp_n_contaminated_transits%2Cphot_bp_n_blended_transits%2Cphot_rp_n_contaminated_transits%2Cphot_rp_n_blended_transits%2Cphot_variable_flag%2Chas_epoch_photometry%2Chas_xp_continuous%2Cnon_single_star+FROM+gaiadr3.gaia_source+WHERE+source_id+IN+%281078624858218235776%2C1099452803904038272%2C1182083542272959232%2C1245262790370992256%2C1323443938325221376%2C1496016553207149952%2C1542337839923130624%2C1679189040001914880%2C1691957732959636608%2C2119909923600264960%2C2453225705329412480%2C2482684508055379584%2C2513256394506328832%2C2739231150982741760%2C3204436719718449280%2C3638333660492606976%2C3705179706854089856%2C3711047662972690688%2C3713218786120541824%2C3782527364866017664%2C4445170067643613312%2C4545191991882663936%2C4545912820537587328%2C4555293235271174016%2C761677269868775040%2C818833831355548928%2C913810126798863232%29",
+  "status": 200,
+  "headers": {
+    "Date": "Sun, 18 Oct 2026 16:06:15 GMT",
+    "Server": "Apache/2.4.62 (Red Hat Enterprise Linux) OpenSSL/3.5.5 mod_jk/1.2.50",
+    "Set-Cookie": "JSESSIONID=3C4B657E4287D6DF29EA43E47A622325; Path=/tap-server; Secure; HttpOnly",
+    "Content-Disposition": "attachment;filename=\"d8ee66af-cb0d-11f1-9670-bc97e148b76b-O-result.csv\"",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "0",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "SAMEORIGIN",
+    "Connection": "close",
+    "Transfer-Encoding": "chunked",
+    "Content-Type": "text/csv"
+  },
+  "query_started_utc": "2026-10-18T16:06:14.546842+00:00",
+  "retrieved_utc": "2026-10-18T16:06:17.416210+00:00",
+  "relative_path": "raw/gaia_dr3_extended_targets.csv",
+  "bytes": 7376,
+  "sha256": "889b70d3c4cb6dc129d58784742ba358e9da873e3195d5f835a6363d1978d1e1"
+}

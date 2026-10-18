@@ -1,5 +1,7 @@
 # Additional white dwarf colour candidates from public spectra
 
+> **Historical v0.1 report — retained for audit, superseded for current findings.** The text, figures and numbers below document the original analysis. Version 0.2 identifies mixed Fν/Fλ representations in MWDD SDSS exports and excludes unresolved conventions: the current screen has **7,473 eligible records and 308 strong-outlier entity keys**, replacing the historical 9,023 / 337 counts. **Independent SDSS colour corroboration for WD J1323−0129 is withdrawn**; its SDSS convention is unresolved and native Gaia XP is unavailable. Its DESI colour estimate remains a candidate. Current estimates, uncertainties and interpretation are in the [v0.2 research report](../research/README.md), [日本語報告](../research/README.ja.md) and [research-extension notebook](../research/research_extension.ipynb). The original headline numerical files are preserved, not silently replaced.
+
 **Project initiator and maintainer:** Shota Moriwaki  
 **Analysis date:** 18 October 2026  
 **Status:** Exploratory public-data research note; not peer reviewed.

@@ -1,0 +1,348 @@
+{
+  "audit_date_utc": "2026-10-18",
+  "upstream_commit": "023dba3176ac367c6cf2b5968847a80d79e3c594",
+  "scope": "Independent verification of three examples and the gross name-coordinate flag count in this immutable PEWDD snapshot; no catalogue edit or upstream issue submission.",
+  "official_raw_sha256": "ed65260aa5b130198468ae8e482794868119f7f0e754cd53fbb5dd7d8baf83d3",
+  "official_download_equals_existing_frozen_bytes": true,
+  "csv_parser": "Python csv.reader, header-position mapping; astropy SkyCoord sexagesimal parser and spherical separation independently recompute the prior flags",
+  "header_field_count": 206,
+  "row_field_count_distribution": {
+    "206": 3475
+  },
+  "data_rows": 3475,
+  "full_j_name_coordinate_flags_over_600arcsec": 236,
+  "distinct_gaia_designations_in_flagged_rows": 233,
+  "independent_flag_row_set_equals_previous_audit": true,
+  "csv_selected_field_indices_0based": {
+    "Star": 1,
+    "Paper": 2,
+    "Identifier": 3,
+    "RA": 11,
+    "Dec": 12,
+    "Gaia_designation": 13,
+    "origin": 24
+  },
+  "cases": [
+    {
+      "pewdd_data_row_1based": 620,
+      "pewdd_index_field": "619",
+      "pewdd_selected_fields": {
+        "Star": "SDSS J000106.22+250330.0",
+        "Paper": "Koester 2015",
+        "Identifier": "SDSS J000106.22+250330.0 Koester 2015",
+        "T_eff": "15194",
+        "T_eff_err": "75",
+        "logg": "8",
+        "atmosphere": "He",
+        "RA": "157.032703345525",
+        "Dec": "-1.5979708039908",
+        "Gaia_designation": "Gaia DR3 3782563919332193792",
+        "parallax": "3.03585978687935",
+        "origin": "https://ui.adsabs.harvard.edu/abs/2015A%26A...583A..86K/abstract",
+        "log(H/H(e))": "-4.73",
+        "log(H/H(e))e": "0.3",
+        "log(Ca/H(e))": "-7.37",
+        "log(Ca/H(e))e": "0.3"
+      },
+      "serialized_source_csv_record": "619,SDSS J000106.22+250330.0,Koester 2015,SDSS J000106.22+250330.0 Koester 2015,15194,75,8,0,He,,,157.032703345525,-1.5979708039908,Gaia DR3 3782563919332193792,3.03585978687935,0.29233986,,,,,,,,,https://ui.adsabs.harvard.edu/abs/2015A%26A...583A..86K/abstract,,-4.73,0.3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,-7.37,0.3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,0",
+      "name_encoded_ra_deg": 0.2759166666666666,
+      "name_encoded_dec_deg": 25.058333333333334,
+      "name_to_pewdd_coordinate_arcsec": 531172.8765355796,
+      "assigned_gaia_source": {
+        "source_id": "3782563919332193792",
+        "ra": "157.0325634288897",
+        "dec": "-1.5980805284416764",
+        "ref_epoch": "2016.0",
+        "pmra": "-31.468604342450185",
+        "pmdec": "-24.688023072032394",
+        "parallax": "3.0358597868793473",
+        "phot_g_mean_mag": "19.043697",
+        "bp_rp": "0.07576561"
+      },
+      "name_to_assigned_gaia_2016_arcsec": 531172.8356655475,
+      "pewdd_coordinates_to_assigned_gaia_2016_arcsec": 0.6399590632994623,
+      "assigned_gaia_16yr_proper_motion_displacement_arcsec": 0.6399543068622328,
+      "name_position_gaia_candidate": {
+        "source_id": "2853069985013789824",
+        "ra": "0.27588648405068616",
+        "dec": "25.058311429688725",
+        "ref_epoch": "2016.0",
+        "pmra": "-13.045635358885738",
+        "pmdec": "-12.944430908933079",
+        "parallax": "1.8887778242706763",
+        "phot_g_mean_mag": "19.605484",
+        "bp_rp": "0.05933571"
+      },
+      "name_to_candidate_gaia_2016_arcsec": 0.12612030972424826,
+      "original_paper_evidence": [
+        {
+          "source_file": "koester2015_table1.dat",
+          "source_url": "https://cdsarc.cds.unistra.fr/ftp/J/A+A/583/A86/table1.dat",
+          "source_data_row_1based": 2,
+          "raw_record": "000106.22+250330.00  15194  75  8.000 0.000  15.4  428  254  -4.73 0.30  -7.37 0.30"
+        },
+        {
+          "source_file": "koester2015_table1.dat",
+          "source_url": "https://cdsarc.cds.unistra.fr/ftp/J/A+A/583/A86/table1.dat",
+          "source_data_row_1based": 386,
+          "raw_record": "102807.83-013552.94  13617  79  8.000 0.000  19.6  305  216  -5.50 0.31  -8.49 0.35"
+        },
+        {
+          "source_file": "coutu2019_table1.dat",
+          "source_url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/885/74/table1.dat",
+          "source_data_row_1based": 505,
+          "raw_record": "J1028-0135 3782563919332193792 2QZ J102807.8-013553       DBZA  157.03270  -1.59797"
+        }
+      ],
+      "conclusion": "name_and_original_atmosphere_values_conflict_with_assigned_gaia_source",
+      "candidate_identity_scope": "Positional association only for the replacement ID; no automatic upstream correction."
+    },
+    {
+      "pewdd_data_row_1based": 624,
+      "pewdd_index_field": "623",
+      "pewdd_selected_fields": {
+        "Star": "SDSS J000215.65+320914.12",
+        "Paper": "Kepler 2016",
+        "Identifier": "SDSS J000215.65+320914.12 Kepler 2016",
+        "T_eff": "7587",
+        "T_eff_err": "110",
+        "logg": "8",
+        "atmosphere": "He",
+        "RA": "352.726158915891",
+        "Dec": "28.088213309298",
+        "Gaia_designation": "Gaia DR3 2865936671944556160",
+        "parallax": "4.61469260130585",
+        "origin": "https://ui.adsabs.harvard.edu/abs/2016MNRAS.455.3413K/abstract",
+        "log(H/H(e))": "",
+        "log(H/H(e))e": "",
+        "log(Ca/H(e))": "-8.26",
+        "log(Ca/H(e))e": ""
+      },
+      "serialized_source_csv_record": "623,SDSS J000215.65+320914.12,Kepler 2016,SDSS J000215.65+320914.12 Kepler 2016,7587,110,8,0,He,,,352.726158915891,28.088213309298,Gaia DR3 2865936671944556160,4.61469260130585,1.0212116,,,,,,,,,https://ui.adsabs.harvard.edu/abs/2016MNRAS.455.3413K/abstract,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,-8.26,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,0",
+      "name_encoded_ra_deg": 0.5652083333333333,
+      "name_encoded_dec_deg": 32.15392222222222,
+      "name_to_pewdd_coordinate_arcsec": 28448.781131421067,
+      "assigned_gaia_source": {
+        "source_id": "2865936671944556160",
+        "ra": "352.72638974169",
+        "dec": "28.088142158384564",
+        "ref_epoch": "2016.0",
+        "pmra": "45.818920351202785",
+        "pmdec": "-16.008713541899688",
+        "parallax": "4.614692601305854",
+        "phot_g_mean_mag": "20.597033",
+        "bp_rp": "0.27899933"
+      },
+      "name_to_assigned_gaia_2016_arcsec": 28448.304453354496,
+      "pewdd_coordinates_to_assigned_gaia_2016_arcsec": 0.7765637232918435,
+      "assigned_gaia_16yr_proper_motion_displacement_arcsec": 0.7765610131101198,
+      "name_position_gaia_candidate": {
+        "source_id": "2873769975034246272",
+        "ra": "0.565168419826213",
+        "dec": "32.154038488506124",
+        "ref_epoch": "2016.0",
+        "pmra": "-10.157663264791505",
+        "pmdec": "38.47361707663337",
+        "parallax": "5.4895296455483065",
+        "phot_g_mean_mag": "20.346167",
+        "bp_rp": "0.5709305"
+      },
+      "name_to_candidate_gaia_2016_arcsec": 0.4358784145098541,
+      "original_paper_evidence": [
+        {
+          "source_file": "kepler2016_table6.dat",
+          "source_url": "https://cdsarc.cds.unistra.fr/ftp/J/MNRAS/455/3413/table6.dat.gz",
+          "source_data_row_1based": 5991,
+          "raw_record": "7127-56566-0528 000215.65+320914.12  5 21.830 0.120 20.530 0.024 20.346  0.022 20.381 0.033 20.329 0.114 0.051  38.0   111.0 -29.6 DZ         7587   110 8.000 0.000                                          -log(Ca/He)=08.260"
+        },
+        {
+          "source_file": "kepler2016_table6.dat",
+          "source_url": "https://cdsarc.cds.unistra.fr/ftp/J/MNRAS/455/3413/table6.dat.gz",
+          "source_data_row_1based": 3730,
+          "raw_record": "6514-56487-0489 233054.31+280517.40  5 22.075 0.263 20.773 0.032 20.556  0.042 20.526 0.064 20.349 0.188 0.091  44.7   102.1 -31.5 DZ         7198    93 8.000 0.000                                          -log(Ca/He)=08.530"
+        },
+        {
+          "source_file": "coutu2019_table1.dat",
+          "source_url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/885/74/table1.dat",
+          "source_data_row_1based": 3,
+          "raw_record": "J0002+3209 2873769975034246272 SDSS J000215.65+320914.1   DZ      0.56522  32.15387"
+        },
+        {
+          "source_file": "coutu2019_table1.dat",
+          "source_url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/885/74/table1.dat",
+          "source_data_row_1based": 1303,
+          "raw_record": "J2330+2805 2865936671944556160 SDSS J233054.31+280517.4   DZ    352.72617  28.08821"
+        }
+      ],
+      "conclusion": "name_and_original_atmosphere_values_conflict_with_assigned_gaia_source",
+      "candidate_identity_scope": "Name/ID also independently co-occur in the Coutu 2019 original table; Gaia DR3 direct query confirms the same numeric source at that position."
+    },
+    {
+      "pewdd_data_row_1based": 645,
+      "pewdd_index_field": "644",
+      "pewdd_selected_fields": {
+        "Star": "SDSS J001557.38+183034.6",
+        "Paper": "Coutu 2019",
+        "Identifier": "SDSS J001557.38+183034.6 Coutu 2019",
+        "T_eff": "7346",
+        "T_eff_err": "417",
+        "logg": "8",
+        "atmosphere": "He",
+        "RA": "14.58912",
+        "Dec": "11.043892",
+        "Gaia_designation": "Gaia DR3 2797320927258478464",
+        "parallax": "-0.742517314428153",
+        "origin": "https://ui.adsabs.harvard.edu/abs/2019ApJ...885...74C/abstract",
+        "log(H/H(e))": "-4.07",
+        "log(H/H(e))e": "-1",
+        "log(Ca/H(e))": "-8.86",
+        "log(Ca/H(e))e": "0.3"
+      },
+      "serialized_source_csv_record": "644,SDSS J001557.38+183034.6,Coutu 2019,SDSS J001557.38+183034.6 Coutu 2019,7346,417,8,,He,,,14.58912,11.043892,Gaia DR3 2797320927258478464,-0.742517314428153,2.0369837,,,,,,,,,https://ui.adsabs.harvard.edu/abs/2019ApJ...885...74C/abstract,,-4.07,-1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,-8.86,0.3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1,0",
+      "name_encoded_ra_deg": 3.989083333333333,
+      "name_encoded_dec_deg": 18.509611111111113,
+      "name_to_pewdd_coordinate_arcsec": 45620.536045815934,
+      "assigned_gaia_source": {
+        "source_id": "2797320927258478464",
+        "ra": "3.989053625017088",
+        "dec": "18.509564561249753",
+        "ref_epoch": "2016.0",
+        "pmra": "-9.444305228010176",
+        "pmdec": "-41.49894362559257",
+        "parallax": "-0.7425173144281532",
+        "phot_g_mean_mag": "20.84053",
+        "bp_rp": "0.052490234"
+      },
+      "name_to_assigned_gaia_2016_arcsec": 0.19587851755201716,
+      "pewdd_coordinates_to_assigned_gaia_2016_arcsec": 45620.52431927919,
+      "assigned_gaia_16yr_proper_motion_displacement_arcsec": 0.6809606810673154,
+      "name_position_gaia_candidate": {
+        "source_id": "2797320927258478464",
+        "ra": "3.989053625017088",
+        "dec": "18.509564561249753",
+        "ref_epoch": "2016.0",
+        "pmra": "-9.444305228010176",
+        "pmdec": "-41.49894362559257",
+        "parallax": "-0.7425173144281532",
+        "phot_g_mean_mag": "20.84053",
+        "bp_rp": "0.052490234"
+      },
+      "name_to_candidate_gaia_2016_arcsec": 0.19587851755201716,
+      "original_paper_evidence": [
+        {
+          "source_file": "coutu2019_table1.dat",
+          "source_url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/885/74/table1.dat",
+          "source_data_row_1based": 22,
+          "raw_record": "J0015+1830 2797320927258478464 SDSS J001557.38+183034.6   DZ      3.98905  18.50957"
+        },
+        {
+          "source_file": "coutu2019_table4.dat",
+          "source_url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/885/74/table4.dat",
+          "source_data_row_1based": 15,
+          "raw_record": "J0015+1830  7346  417 8.00                           -4.07      320.0  26.3 1 1"
+        }
+      ],
+      "conclusion": "gaia_source_matches_name_and_original_table_but_coordinate_fields_conflict",
+      "candidate_identity_scope": "Name/ID also independently co-occur in the Coutu 2019 original table; Gaia DR3 direct query confirms the same numeric source at that position."
+    }
+  ],
+  "sources": [
+    {
+      "name": "official_pewdd.csv",
+      "url": "https://raw.githubusercontent.com/jamietwilliams/PEWDD/023dba3176ac367c6cf2b5968847a80d79e3c594/PEWDD.csv",
+      "resolved": "https://raw.githubusercontent.com/jamietwilliams/PEWDD/023dba3176ac367c6cf2b5968847a80d79e3c594/PEWDD.csv",
+      "bytes": 1594728,
+      "sha256": "ed65260aa5b130198468ae8e482794868119f7f0e754cd53fbb5dd7d8baf83d3"
+    },
+    {
+      "name": "official_readme.md",
+      "url": "https://raw.githubusercontent.com/jamietwilliams/PEWDD/023dba3176ac367c6cf2b5968847a80d79e3c594/README.md",
+      "resolved": "https://raw.githubusercontent.com/jamietwilliams/PEWDD/023dba3176ac367c6cf2b5968847a80d79e3c594/README.md",
+      "bytes": 93,
+      "sha256": "49bfc88ad1f458582aed55c49d8841b885401bba815318f38d7348624e3e7b8f"
+    },
+    {
+      "name": "koester2015_ReadMe.txt",
+      "url": "https://cdsarc.cds.unistra.fr/ftp/J/A+A/583/A86/ReadMe",
+      "resolved": "https://cdsarc.cds.unistra.fr/ftp/J/A+A/583/A86/ReadMe",
+      "bytes": 4023,
+      "sha256": "1010a4e923c1dd56825206775ce15bd17a613adf783cafee1cd8186ca3728ed1"
+    },
+    {
+      "name": "kepler2016_ReadMe.txt",
+      "url": "https://cdsarc.cds.unistra.fr/ftp/J/MNRAS/455/3413/ReadMe",
+      "resolved": "https://cdsarc.cds.unistra.fr/ftp/J/MNRAS/455/3413/ReadMe",
+      "bytes": 6468,
+      "sha256": "578e036083c1015ec1235db9c155e38145c94066e4c5b69c84e2c4d34e973fce"
+    },
+    {
+      "name": "coutu2019_ReadMe.txt",
+      "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/885/74/ReadMe",
+      "resolved": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/885/74/ReadMe",
+      "bytes": 9163,
+      "sha256": "1bf0c2d2195b9fdfcfab9a91c1a347826063a904adcadacff30be16aa11edffe"
+    },
+    {
+      "name": "gaia_id_and_name_cones.csv",
+      "url": "https://gea.esac.esa.int/tap-server/tap/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=SELECT+source_id%2Cra%2Cdec%2Cref_epoch%2Cpmra%2Cpmdec%2Cparallax%2Cphot_g_mean_mag%2Cbp_rp+FROM+gaiadr3.gaia_source+WHERE+source_id+IN+%283782563919332193792%2C2865936671944556160%2C2797320927258478464%29+OR+1%3DCONTAINS%28POINT%28%27ICRS%27%2Cra%2Cdec%29%2CCIRCLE%28%27ICRS%27%2C0.275916666667%2C25.058333333333%2C0.008333333333%29%29+OR+1%3DCONTAINS%28POINT%28%27ICRS%27%2Cra%2Cdec%29%2CCIRCLE%28%27ICRS%27%2C0.565208333333%2C32.153922222222%2C0.008333333333%29%29+OR+1%3DCONTAINS%28POINT%28%27ICRS%27%2Cra%2Cdec%29%2CCIRCLE%28%27ICRS%27%2C3.989083333333%2C18.509611111111%2C0.008333333333%29%29",
+      "resolved": "https://gea.esac.esa.int/tap-server/tap/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=SELECT+source_id%2Cra%2Cdec%2Cref_epoch%2Cpmra%2Cpmdec%2Cparallax%2Cphot_g_mean_mag%2Cbp_rp+FROM+gaiadr3.gaia_source+WHERE+source_id+IN+%283782563919332193792%2C2865936671944556160%2C2797320927258478464%29+OR+1%3DCONTAINS%28POINT%28%27ICRS%27%2Cra%2Cdec%29%2CCIRCLE%28%27ICRS%27%2C0.275916666667%2C25.058333333333%2C0.008333333333%29%29+OR+1%3DCONTAINS%28POINT%28%27ICRS%27%2Cra%2Cdec%29%2CCIRCLE%28%27ICRS%27%2C0.565208333333%2C32.153922222222%2C0.008333333333%29%29+OR+1%3DCONTAINS%28POINT%28%27ICRS%27%2Cra%2Cdec%29%2CCIRCLE%28%27ICRS%27%2C3.989083333333%2C18.509611111111%2C0.008333333333%29%29",
+      "bytes": 1436,
+      "sha256": "70971928c06f2b9955b2b9e5e3b2251e355c2a691d2cb720c90dfc8d73867310"
+    },
+    {
+      "name": "koester2015_table1.dat",
+      "url": "https://cdsarc.cds.unistra.fr/ftp/J/A+A/583/A86/table1.dat",
+      "resolved": "https://cdsarc.cds.unistra.fr/ftp/J/A+A/583/A86/table1.dat",
+      "bytes": 92988,
+      "sha256": "ebe99f6e3c16b0cccd11e9bb506e58e1adee00b95130d034b1e1afbc4eaa9eba"
+    },
+    {
+      "name": "kepler2016_table7.dat",
+      "url": "https://cdsarc.cds.unistra.fr/ftp/J/MNRAS/455/3413/table7.dat",
+      "resolved": "https://cdsarc.cds.unistra.fr/ftp/J/MNRAS/455/3413/table7.dat",
+      "bytes": 80784,
+      "sha256": "eefa14dab0a581f25fd542456650d6a37108a1b13ca5861b5a64f128b2e0c8cd"
+    },
+    {
+      "name": "coutu2019_table1.dat",
+      "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/885/74/table1.dat",
+      "resolved": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/885/74/table1.dat",
+      "bytes": 112560,
+      "sha256": "4868a97f682d8019dd874f28d824e625d94fe99ed7a6e34e87fba867daea09ff"
+    },
+    {
+      "name": "coutu2019_table4.dat",
+      "url": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/885/74/table4.dat",
+      "resolved": "https://cdsarc.cds.unistra.fr/ftp/J/ApJ/885/74/table4.dat",
+      "bytes": 80280,
+      "sha256": "d0d7bc85ac538509db5699b63a5f191992f3413f1b98eaaf807617d7b053add9"
+    },
+    {
+      "name": "pewdd_usage.html",
+      "url": "https://pewdd-tutorial.readthedocs.io/en/latest/usage.html",
+      "resolved": "https://pewdd-tutorial.readthedocs.io/en/latest/usage.html",
+      "bytes": 11109,
+      "sha256": "66cec78f2b4280d462157077d65b28575543f5a29189fe949dd9f03a7150f1b8"
+    },
+    {
+      "name": "kepler2016_table6.dat",
+      "url": "https://cdsarc.cds.unistra.fr/ftp/J/MNRAS/455/3413/table6.dat.gz",
+      "resolved": "https://cdsarc.cds.unistra.fr/ftp/J/MNRAS/455/3413/table6.dat.gz",
+      "compressed_bytes": 454068,
+      "compressed_sha256": "3a20e5810ea2774e80d2c4a921f8ca055f1f75e3a8edfc98ebe9f49a5020c1b9",
+      "uncompressed_bytes": 1318114,
+      "uncompressed_sha256": "c5017aa813b2a55ac4f3d3c7369de3cc27a3c54adf60d130c73fd9fdc53fbf7a"
+    }
+  ],
+  "gaia_response_saved_as": "sources/independent_gaia_identity.csv",
+  "gaia_query_adql": "SELECT source_id,ra,dec,ref_epoch,pmra,pmdec,parallax,phot_g_mean_mag,bp_rp FROM gaiadr3.gaia_source WHERE source_id IN (3782563919332193792,2865936671944556160,2797320927258478464) OR 1=CONTAINS(POINT('ICRS',ra,dec),CIRCLE('ICRS',0.275916666667,25.058333333333,0.008333333333)) OR 1=CONTAINS(POINT('ICRS',ra,dec),CIRCLE('ICRS',0.565208333333,32.153922222222,0.008333333333)) OR 1=CONTAINS(POINT('ICRS',ra,dec),CIRCLE('ICRS',3.989083333333,18.509611111111,0.008333333333))",
+  "interpretation_limits": [
+    "The 236 flags are not 236 demonstrated wrong Gaia IDs. Case 645 proves that the Gaia ID can be correct while only the tabulated coordinates disagree.",
+    "Two examples demonstrate incorrect name/measurement-to-Gaia associations in the pinned serialized source itself; the cause and affected-field coverage have not been diagnosed.",
+    "The first two cases show sub-arcsecond differences between PEWDD positions and the assigned Gaia 2016 positions consistent with 16 yr proper motion, but the names differ by degrees. Epoch propagation cannot reconcile those identities.",
+    "Only three flagged rows were followed through their original papers. No correction to the remaining flagged associations, and no global error percentage for Gaia IDs, has been established.",
+    "The full chemical measurements and their errors are not independently validated here. Original-paper table matches demonstrate identity and selected parameter correspondence.",
+    "The record concerns the stated immutable March 2026 repository snapshot; it does not claim that all later releases or the live service retain these same conflicts.",
+    "Original catalogues, ESA/Gaia and the cited authors retain data attribution and terms."
+  ]
+}

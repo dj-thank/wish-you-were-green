@@ -1,5 +1,7 @@
 # Reproducing the compact research result
 
+> **Scope: the preserved v0.1 compact result.** This guide explains the original four DESI estimates, two Gaia sources and 54 controls. The v0.2 flux-convention correction, current 7,473 eligible records / 308 strong-outlier entity keys, and withdrawal of independent SDSS colour corroboration for J1323−0129 are documented in the [current research report](../research/README.md). Current CI also runs all `test_*.py` unit/invariant tests and `scripts/verify_research_extension.py`; the compact command below is only one part of that verification. Follow the [current root commands](../README.md#reproduce-and-verify) and [research-extension notebook](../research/research_extension.ipynb) for the complete entry point. The historical numerical products described below remain preserved.
+
 The repository contains enough data to verify the four reported DESI colour estimates and the two Gaia sources with both full and truncated basis choices **without downloading any astronomical data**. It also includes the 54 selected raw SDSS control spectra. The continuous-integration job recomputes those controls in addition to the main candidates; a faster default command checks their archived result only and labels that distinction explicitly.
 
 Passing the verification means the committed source files, units, parsed arrays, calibrations, colour calculations and reported Gaia covariance products remain consistent. It does not establish novelty, remove instrumental systematics, resolve neighbouring stars, or confirm a discovery.

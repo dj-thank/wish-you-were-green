@@ -1,0 +1,119 @@
+{
+  "fixtures": [
+    {
+      "file": "sdss_fnu_identity.npz",
+      "sha256": "3563b4f700ecf7025048b88ec40a23880a2a493e6e36335a991b58946ea70b7a",
+      "evidence": {
+        "mwdd_row_index": 36,
+        "mwdd_sha256": "a4c91012de30ca8da672b1f7b13adefb85f45dd0ad8bcd88a2b5e87735add2fe",
+        "all_mwdd_row_indices": [
+          36
+        ],
+        "entity_id": "gaia:4577545533852426624",
+        "name": "SDSS J180302.57+232043.3",
+        "convention": "fnu",
+        "direct_row_index": 9538,
+        "direct_sha256": "12f5934666f937aa3cc655095a9a395125a6716ebb1850a6542269990e1897fd",
+        "reference_pairs_assessed": 1,
+        "accepted_reference_pairs": 1,
+        "reason": "At least one native sample identity; all accepted reference matches agree",
+        "mwdd_source_url": "https://www.montrealwhitedwarfdatabase.org/WDs/SDSS%20J180302.57%2B232043.3/spect.SDSS%20J180302.57%2B232043.3.sdss.txt",
+        "direct_source_url": "https://data.sdss.org/sas/dr17/sdss/spectro/redux/26/spectra/lite/2195/spec-2195-54234-0272.fits",
+        "mwdd_raw_header": "wdid:SDSS J180302.57+232043.3,resolution:1800,source:SDSS,wavelength_min:3816.8060029306343,wavelength_max:9174.87154985753",
+        "direct_fits_header": {
+          "BUNIT": "1E-17 erg/cm^2/s/Ang",
+          "PLATEID": 2195,
+          "MJD": 54234,
+          "FIBERID": 272,
+          "RUN2D": null
+        },
+        "raw_sha256_verified": true,
+        "wave_grid_match_fraction": 1.0,
+        "finite_grid_fraction": 1.0,
+        "comparison_samples": 3369,
+        "all_finite_matched_samples": 3374,
+        "wave_span_A": 4481.6999592679385,
+        "wave_max_matched_difference_A": 1.8189894035458565e-12,
+        "ratio_log_wavelength_slope": 1.9999999999999998,
+        "flambda_constant_scale": 1.0577412353169295e-11,
+        "flambda_median_fractional_shape_residual": 0.36991396706393287,
+        "flambda_p95_fractional_shape_residual": 1.009647379833395,
+        "flambda_max_fractional_shape_residual": 1.1716989510599296,
+        "flambda_max_absolute_residual_per_median_reference": 1.425463630979165,
+        "flambda_accepted": false,
+        "fnu_constant_scale": 0.9999998599030997,
+        "fnu_median_fractional_shape_residual": 1.1102230246251565e-16,
+        "fnu_p95_fractional_shape_residual": 2.220446049250313e-16,
+        "fnu_max_fractional_shape_residual": 4.440892098500626e-16,
+        "fnu_max_absolute_residual_per_median_reference": 4.533835839511273e-16,
+        "fnu_accepted": true
+      },
+      "array_definition": "Complete native arrays from both SHA-verified raw sources; no flux calibration or wavelength interpolation. MWDD values preserve their archived spectral-density convention; direct flux is native SDSS flux multiplied by 1e-17."
+    },
+    {
+      "file": "sdss_flambda_identity.npz",
+      "sha256": "05808601916729ecc8fe630fa127a21226c9050b58f32850832abc67daa324cc",
+      "evidence": {
+        "mwdd_row_index": 3,
+        "mwdd_sha256": "7a601d02ed672c7d81b6fa0433346234e85cbb2ff9e7ab91cc70bb1d8c2ba266",
+        "all_mwdd_row_indices": [
+          3
+        ],
+        "entity_id": "gaia:609898313949732608",
+        "name": "WD 0848+159",
+        "convention": "flambda",
+        "direct_row_index": 8664,
+        "direct_sha256": "5da6cc9089da948c23f805894ae29ff13f369a8888dab9722552884ca1a5c17f",
+        "reference_pairs_assessed": 1,
+        "accepted_reference_pairs": 1,
+        "reason": "At least one native sample identity; all accepted reference matches agree",
+        "mwdd_source_url": "https://www.montrealwhitedwarfdatabase.org/WDs/WD%200848%2B159/spect.WD%200848%2B159.sdss.txt",
+        "direct_source_url": "https://data.sdss.org/sas/dr17/eboss/spectro/redux/v5_13_2/spectra/lite/5292/spec-5292-55926-0402.fits",
+        "mwdd_raw_header": "wdid:WD 0848+159,resolution:nan,source:sdss,wavelength_min: 3557.13,wavelength_max: 10341.89",
+        "direct_fits_header": {
+          "BUNIT": "1E-17 erg/cm^2/s/Ang",
+          "PLATEID": 5292,
+          "MJD": 55926,
+          "FIBERID": 402,
+          "RUN2D": "v5_13_2"
+        },
+        "raw_sha256_verified": true,
+        "wave_grid_match_fraction": 1.0,
+        "finite_grid_fraction": 1.0,
+        "comparison_samples": 3555,
+        "all_finite_matched_samples": 3627,
+        "wave_span_A": 4697.700000000001,
+        "wave_max_matched_difference_A": 0.0056011389915511245,
+        "ratio_log_wavelength_slope": 1.6576496329787703e-07,
+        "flambda_constant_scale": 0.9999999759197168,
+        "flambda_median_fractional_shape_residual": 5.477767730521776e-07,
+        "flambda_p95_fractional_shape_residual": 3.820188714220851e-06,
+        "flambda_max_fractional_shape_residual": 4.9600213340994515e-06,
+        "flambda_max_absolute_residual_per_median_reference": 6.042791845334316e-06,
+        "flambda_accepted": true,
+        "fnu_constant_scale": 98677851091.65909,
+        "fnu_median_fractional_shape_residual": 0.3879305192608392,
+        "fnu_p95_fractional_shape_residual": 1.1425013017808678,
+        "fnu_max_fractional_shape_residual": 1.3431528603979062,
+        "fnu_max_absolute_residual_per_median_reference": 1.4928036132164249,
+        "fnu_accepted": false
+      },
+      "array_definition": "Complete native arrays from both SHA-verified raw sources; no flux calibration or wavelength interpolation. MWDD values preserve their archived spectral-density convention; direct flux is native SDSS flux multiplied by 1e-17."
+    }
+  ],
+  "thresholds": {
+    "comparison_window_A": [
+      3600.0,
+      8300.0
+    ],
+    "nearest_native_wavelength_tolerance_A": 0.02,
+    "minimum_wavelength_grid_match_fraction": 0.99,
+    "minimum_finite_fraction_of_grid_matches": 0.99,
+    "minimum_comparison_samples": 1000,
+    "minimum_comparison_span_A": 3500.0,
+    "relative_residual_reference_floor_fraction": 0.1,
+    "maximum_fractional_shape_residual": 0.0001,
+    "maximum_absolute_shape_residual_per_median_abs_reference": 0.0001
+  },
+  "reference_url": "https://www.sdss4.org/dr17/spectro/spectro_basics/"
+}

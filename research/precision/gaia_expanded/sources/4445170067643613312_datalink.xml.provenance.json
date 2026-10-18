@@ -1,0 +1,9 @@
+{
+  "url": "https://gea.esac.esa.int/data-server/datalink/links?ID=Gaia+DR3+4445170067643613312",
+  "final_url": "https://gea.esac.esa.int/data-server/datalink/links?ID=Gaia+DR3+4445170067643613312",
+  "http_status": 200,
+  "content_type": "application/x-votable+xml;content=datalink;charset=iso-8859-1",
+  "retrieved_utc": "2026-10-18T16:18:23.313952+00:00",
+  "bytes": 1859,
+  "sha256": "5e314b0f36b9150f849215383bafe3431c900e1ccc1a32b1a5eec6a2ab918f5d"
+}

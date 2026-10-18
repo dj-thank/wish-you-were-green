@@ -1,0 +1,18 @@
+[
+  {
+    "name": "ztf_dr24_local_objects_J0913+4434",
+    "query": "SELECT TOP 300 oid,ra,dec,field,ccdid,qid,fid,filtercode,refmag,refmagerr,refchi,refsharp,refsnr,ngoodobsrel,nobsrel,medianmag,medmagerr,magrms,chisq,astrometricrms,DISTANCE(POINT('ICRS',ra,dec),POINT('ICRS',138.4021030032363,44.56813161736343))*3600 AS distance_arcsec FROM ztf_objects_dr24 WHERE 1=CONTAINS(POINT('ICRS',ra,dec),CIRCLE('ICRS',138.4021030032363,44.56813161736343,0.05)) AND fid IN (1,2) AND medianmag BETWEEN 18 AND 21.5 ORDER BY distance_arcsec"
+  },
+  {
+    "name": "ztf_dr24_local_objects_J0429-0354",
+    "query": "SELECT TOP 300 oid,ra,dec,field,ccdid,qid,fid,filtercode,refmag,refmagerr,refchi,refsharp,refsnr,ngoodobsrel,nobsrel,medianmag,medmagerr,magrms,chisq,astrometricrms,DISTANCE(POINT('ICRS',ra,dec),POINT('ICRS',67.43628526183,-3.90650606101))*3600 AS distance_arcsec FROM ztf_objects_dr24 WHERE 1=CONTAINS(POINT('ICRS',ra,dec),CIRCLE('ICRS',67.43628526183,-3.90650606101,0.05)) AND fid IN (1,2) AND medianmag BETWEEN 18 AND 21.5 ORDER BY distance_arcsec"
+  },
+  {
+    "name": "ztf_dr24_local_objects_J1329+0033",
+    "query": "SELECT TOP 300 oid,ra,dec,field,ccdid,qid,fid,filtercode,refmag,refmagerr,refchi,refsharp,refsnr,ngoodobsrel,nobsrel,medianmag,medmagerr,magrms,chisq,astrometricrms,DISTANCE(POINT('ICRS',ra,dec),POINT('ICRS',202.42771312194,0.55963910805))*3600 AS distance_arcsec FROM ztf_objects_dr24 WHERE 1=CONTAINS(POINT('ICRS',ra,dec),CIRCLE('ICRS',202.42771312194,0.55963910805,0.05)) AND fid IN (1,2) AND medianmag BETWEEN 18 AND 21.5 ORDER BY distance_arcsec"
+  },
+  {
+    "name": "ztf_dr24_local_objects_J1323-0129",
+    "query": "SELECT TOP 300 oid,ra,dec,field,ccdid,qid,fid,filtercode,refmag,refmagerr,refchi,refsharp,refsnr,ngoodobsrel,nobsrel,medianmag,medmagerr,magrms,chisq,astrometricrms,DISTANCE(POINT('ICRS',ra,dec),POINT('ICRS',200.80308349614,-1.4904251354))*3600 AS distance_arcsec FROM ztf_objects_dr24 WHERE 1=CONTAINS(POINT('ICRS',ra,dec),CIRCLE('ICRS',200.80308349614,-1.4904251354,0.05)) AND fid IN (1,2) AND medianmag BETWEEN 18 AND 21.5 ORDER BY distance_arcsec"
+  }
+]

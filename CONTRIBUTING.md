@@ -1,6 +1,6 @@
 # Contributing
 
-Corrections, reproducibility reports and independently documented follow-up are welcome. English or Japanese issues and pull requests are both suitable. The project is maintained by Shota Moriwaki at [dj-thank/pale-yellow-green-white-dwarf-candidate](https://github.com/dj-thank/pale-yellow-green-white-dwarf-candidate).
+Corrections, reproducibility reports and independently documented follow-up are welcome. English or Japanese issues and pull requests are both suitable. The project is maintained by Shota Moriwaki at [dj-thank/wish-you-were-green](https://github.com/dj-thank/wish-you-were-green).
 
 The scientific goal is to improve a reproducible colour analysis of known stars. A successful software check does not establish an astronomical discovery, and an unusual RGB value is not sufficient evidence for an intrinsic stellar colour.
 
@@ -14,9 +14,11 @@ Use the recorded Python 3.12 core environment and the substantive verification c
 python3.12 -m venv .venv-colour
 .venv-colour/bin/python -m pip install -r requirements-core.txt
 .venv-colour/bin/python scripts/verify_reproduction.py --with-controls
+.venv-colour/bin/python -m unittest discover -s tests -p 'test_*.py' -v
+.venv-colour/bin/python scripts/verify_research_extension.py
 ```
 
-The verification uses included inputs without downloading survey data. It recalculates the four DESI representative colours and 54 raw SDSS controls and validates the retained Gaia mean/covariance products. It does not rebuild GaiaXPy products from basis functions or rerun the full survey. See [the reproduction guide](docs/reproducibility.en.md) for those boundaries and tolerances.
+The compact verification uses included inputs without downloading survey data. It recalculates the four historical DESI representative colours and 54 raw SDSS controls and validates the retained Gaia mean/covariance products. The extension verifier checks current research inputs, invariants and selected recalculations. Neither rebuilds GaiaXPy products from basis functions or reruns the full survey. See [the compact reproduction guide](docs/reproducibility.en.md) and [current research report](research/README.md) for the respective boundaries and tolerances.
 
 ## Propose a scientific correction or candidate
 

@@ -17,7 +17,7 @@ behalf of their providers.
   This covers original prose in the README files, reports, research notes and
   notebook narrative. Attribute **Shota Moriwaki, _Pale yellow-green white
   dwarf candidates_**, link to [this
-  repository](https://github.com/dj-thank/pale-yellow-green-white-dwarf-candidate),
+  repository](https://github.com/dj-thank/wish-you-were-green),
   retain source citations, and indicate changes.
 - **Excluded from the original-text grant:** quoted provider acknowledgment
   wording, licence texts, third-party publication extracts, survey/catalogue
