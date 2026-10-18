@@ -76,6 +76,7 @@ class Verification:
     def __init__(self, root):
         self.root = root
         self.checked_files = {}
+        self.checked_lossless_originals = {}
         self.groups = []
         self.shortlist = set()
 
@@ -225,6 +226,19 @@ class Verification:
         manifest = read_json(manifest_path)
         require(len(manifest) == 25 and {r["source_id"] for r in manifest} == {r["source_id"] for r in good}, "PS1 derivative manifest IDs")
         index = {r["source_id"]: r for r in manifest}
+        # Nineteen original inputs used to exist only in an ignored MWDD
+        # download cache. Always verify the committed lossless snapshots for
+        # these records, even when that historical cache is present locally.
+        bundle_base = base / "raw_sources"
+        bundle_path = self.path("manifest.json", bundle_base)
+        self.hashed(bundle_path)
+        bundle = read_json(bundle_path)
+        require(bundle["format_version"] == 1, "PS1 raw-source bundle format")
+        require(self.path(bundle["derivative_manifest_path"]) == manifest_path, "PS1 raw-source derivative manifest path")
+        self.hashed(manifest_path, bundle["derivative_manifest_sha256"])
+        snapshots = {r["original_path"]: r for r in bundle["records"]}
+        require(len(snapshots) == len(bundle["records"]) == 19, "PS1 raw-source snapshot uniqueness/count")
+        require(set(snapshots) <= {r["original_record"]["raw_path"] for r in manifest}, "PS1 unused raw-source snapshot")
         prior_path = self.root / "research/literature/sources/candidate27_prior_rows.json"
         prior = read_json(prior_path)["candidates"]
         response = filters.load_filters("panstarrs-g", "panstarrs-r", "panstarrs-i")
@@ -235,7 +249,21 @@ class Verification:
             require(prior[sid]["swan_external"] == [item["photometry_row"]], "PS1 original measurement identity")
             path = base / item["path"]
             self.hashed(path, item["sha256"])
-            self.hashed(self.path(item["original_record"]["raw_path"]), r["raw_sha256"])
+            original = item["original_record"]
+            require(original["sha256"] == r["raw_sha256"], "PS1 original raw SHA agreement")
+            if original["raw_path"] in snapshots:
+                snapshot = snapshots[original["raw_path"]]
+                require(snapshot["source_id"] == sid and snapshot["source_url"] == original["source_url"] and snapshot["retrieved_utc"] == original["retrieved_utc"], "PS1 raw-source provenance agreement")
+                snapshot_path = self.path(snapshot["snapshot_path"], bundle_base)
+                self.hashed(snapshot_path, snapshot["snapshot_sha256"])
+                require(snapshot_path.stat().st_size == snapshot["snapshot_size_bytes"], "PS1 gzip size")
+                original_bytes = gzip.decompress(snapshot_path.read_bytes())
+                original_sha = hashlib.sha256(original_bytes).hexdigest()
+                require(original_sha == snapshot["original_sha256"] == r["raw_sha256"], "PS1 decompressed original SHA differs")
+                require(len(original_bytes) == snapshot["original_size_bytes"] == original["size_bytes"], "PS1 decompressed original size differs")
+                self.checked_lossless_originals[original["raw_path"]] = original_sha
+            else:
+                self.hashed(self.path(original["raw_path"]), r["raw_sha256"])
             with np.load(path) as data:
                 w, f = data["wavelength_angstrom"], data["flux_calibrated"]
                 mags = [float(flt.get_ab_magnitude(f, w)) for flt in response]
@@ -452,6 +480,7 @@ def main():
         print("FAIL " + report["error"], file=sys.stderr)
     finally:
         report["verified_file_sha256"] = verification.checked_files
+        report["verified_lossless_original_sha256"] = verification.checked_lossless_originals
         (root / "research/verification.json").write_text(json.dumps(report, indent=2, allow_nan=False) + "\n")
     require(report["status"] == "PASS", "Research extension verification failed; see research/verification.json")
     print(f"PASS research extension: {len(verification.groups)} groups, {len(verification.checked_files)} hashed inputs; report research/verification.json")

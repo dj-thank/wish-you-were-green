@@ -45,3 +45,11 @@ repo rootで実行する。
 ```
 
 2番目は保存済み入力だけで再実行できる。各NPZを `derivative_manifest.json` のSHA256に照合し、較正時と同じ測光行であることも確認する。元の外部表、対象行、元スペクトル、派生NPZ、入力CSV、応答曲線、実行コードのハッシュを記録した。外部表は [Swan et al. 2026](https://arxiv.org/html/2609.04314v1) の [externalData_1.0](https://cygnus.astro.warwick.ac.uk/phsdaj/WhiteDwarfs/Tables/DESI_DR1_externalData_1.0.csv.gz)、圧縮ファイルSHA256は `15c3cfa5fc1fc17328620ab9ed46ea714c1ad9436f2adb5e1b4b053099c4f91a` である。データの帰属、DESIの利用条件と指定謝辞は [文献調査の記録](../../literature/README.md) と [DATA_ACKNOWLEDGMENTS.md](../../literature/DATA_ACKNOWLEDGMENTS.md) を参照する。
+
+### 元入力の保存とCIで判明した依存の修正
+
+追加検証の最初のCI実行で、25本の較正に使った元スペクトルのうち19本が未追跡のローカル取得キャッシュにしか存在しないことが判明した。この19本を `raw_sources/*.csv.gz` に可逆圧縮して保存した。[対応表](raw_sources/manifest.json) には元の `raw_path`、取得URL・日時、原文と圧縮ファイルそれぞれのSHA256・バイト数、および既存の派生manifestのSHA256を記録している。元の原文、解析値、`derivative_manifest.json` の履歴上のパスやコードハッシュは変更していない。
+
+`scripts/verify_research_extension.py` は、この19本について常に保存済みgzipを読み、圧縮SHA256と展開後の元SHA256を両方確認する。キャッシュがローカルに残っていても代用しない。他の6本は既存の追跡済み原文を照合する。検証レポートの `verified_file_sha256` は実在する保存ファイル、`verified_lossless_original_sha256` は展開後に確認した元のパスと原文SHA256を示す。
+
+修正は、Gitの追跡対象だけを別ディレクトリへ書き出した状態で検証する。ローカル取得キャッシュや仮想環境をその書き出しに含めず、書き出し先の外を作業ディレクトリとして、書き出した検証器に `--root` でその場所を渡す。これにより、元の作業フォルダにしかない入力への依存を検出する。

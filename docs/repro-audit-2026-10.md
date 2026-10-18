@@ -57,13 +57,22 @@ The complete methods, measurements and machine-readable outputs are in the
   original raw-input reproduction.
 
 The final local test run passed all **15 tests**. The complementary
-`verify_research_extension.py` run outside the checkout passed **seven
-groups and 249 hashed inputs**: the corrected screen and unit registry,
+`verify_research_extension.py` run outside a clean Git export passed **seven
+groups and 250 hashed input files**: the corrected screen and unit registry,
 native Gaia covariance, PS1 and held-out z, constrained spectral witnesses,
 the 337 individual visual-review entries and their 22 image snapshots,
 individual DESI exposures, and the retained ZTF epochs and offset event.
 See the machine-readable [extension verification](../research/verification.json).
 This does not reclassify historical unknown-unit colours as current measurements.
+
+The first extension CI run exposed a dependency on 19 original spectra that
+were present only in the ignored local download cache. The fix preserves
+those exact bytes in committed gzip snapshots and checks both the compressed
+file hashes and the decompressed original hashes. Historical input paths and
+analysis manifests remain unchanged. The clean export contains no copies of
+those 19 historical cache paths; both reproduction scripts and all 15 tests
+passed there. The report separately records the 19 verified original hashes.
+See the [snapshot provenance mapping](../research/precision/candidate_recalibration/raw_sources/manifest.json).
 
 The new projection table keeps the original zero-based `row_index`, source
 identifier and archive information, allowing every corrected geometry value
