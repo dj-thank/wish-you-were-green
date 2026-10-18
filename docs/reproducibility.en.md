@@ -75,7 +75,7 @@ The verifier cross-matches the 54 control spectrum IDs in `sdss/manifest_with_ph
 
 The default command labels this part **`ARCHIVED RESULTS ONLY`**: it checks the saved control result without integrating 54 raw spectra.
 
-With **`--with-controls`**, the verifier additionally locates all 54 exact observations in the frozen SDSS input manifest, checks their raw FITS SHA-256 values, and independently compares the FITS columns with every committed NPZ field. This includes the conversion from SDSS's native 10⁻¹⁷ erg s⁻¹ cm⁻² Å⁻¹ flux units and the corresponding squared-unit conversion for inverse variance. It reruns the normal calibration and colour calculation, checks x, y, u, v, Duv and the display colour against the frozen results, and verifies that these negative controls remain below the stated 0.01 distance threshold without green-channel dominance. Successful recomputation prints **`RECOMPUTED SDSS`** lines.
+With **`--with-controls`**, the verifier additionally locates all 54 exact observations in the frozen SDSS input manifest, checks their raw FITS SHA-256 values, and independently compares the FITS columns with every committed NPZ field. This includes the conversion from SDSS's native 10⁻¹⁷ erg s⁻¹ cm⁻² Å⁻¹ flux units and the corresponding squared-unit conversion for inverse variance. Flux, inverse variance, masks and other source columns remain exact comparisons, including the fixed flux-unit conversions. Only the derived wavelength `10**loglam` permits the two-ULP floating-point allowance explained below. It reruns the normal calibration and colour calculation, checks x, y, u, v, Duv and the display colour against the frozen results, and verifies that these negative controls remain below the stated 0.01 distance threshold without green-channel dominance. Successful recomputation prints **`RECOMPUTED SDSS`** lines.
 
 The CI workflow uses `--with-controls`. Both modes remain offline. Reacquiring the full public sample and running the complete survey screen are separate operations documented at the repository root.
 
@@ -83,8 +83,9 @@ The CI workflow uses `--with-controls`. Both modes remain offline. Reacquiring t
 
 | Check | Tolerance and reason |
 |---|---|
-| Raw file hashes and raw CSV–NPZ values | Exact identity, including any preserved NaNs in raw columns |
-| DESI x, y, u, v, Duv and green margin | Absolute difference ≤ 2×10⁻⁸; permits insignificant optimization/platform rounding while detecting meaningful result changes |
+| Raw file hashes, raw CSV–NPZ values and SDSS FITS–NPZ fields other than derived wavelength | Exact identity, including any preserved NaNs in raw columns and the fixed SDSS flux/inverse-variance unit conversions |
+| SDSS wavelength derived as float64 `10**loglam` | At most two float64 ULPs, with finite positive float64 values and identical shape required; no general absolute or relative tolerance is used |
+| DESI and recomputed SDSS x, y, u, v and Duv; DESI green margin | Absolute difference ≤ 2×10⁻⁸; permits insignificant optimization/platform rounding while detecting meaningful result changes |
 | DESI fit parameters | Absolute difference ≤ 2×10⁻⁶ mag or mag per 1000 Å, as appropriate |
 | Display hex codes | Exact match under the reported rendering convention |
 | Gaia mean chromaticity and Duv | Absolute difference ≤ 2×10⁻¹⁰ |
@@ -94,6 +95,23 @@ The CI workflow uses `--with-controls`. Both modes remain offline. Reacquiring t
 | Analytic versus archived Monte Carlo green probability | Five binomial standard errors plus 0.0005, since the saved probability has finite-sample noise |
 
 These are reproduction tolerances, not observational error bars. The verifier does not recompute the DESI 6,000-draw uncertainty simulations or every Gaia Monte Carlo percentile. The dedicated analysis scripts perform those longer calculations.
+
+### Why the SDSS wavelength comparison allows two ULPs
+
+SDSS stores `loglam`; the parser derives angstrom wavelengths using `10.0 ** np.asarray(loglam, dtype=np.float64)`. This nonlinear power operation can round differently under different scalar or vector CPU implementations even with the same pinned Python and NumPy versions. A ULP is one step between adjacent representable floating-point values. The verifier counts those steps using the ordered bit patterns of finite positive float64 numbers. Its two-ULP limit allows one rounding step from each implementation; it does not allow a changed unit scale, a lower-precision stored wavelength grid or a broad numerical discrepancy.
+
+The portability audit used Python 3.12.14 and NumPy 2.5.4 on all **236,066 pixels in the 54 controls**. The normal NumPy power implementation exactly reproduced the committed grids. Disabling its AVX-512 dispatch targets caused **13,275 samples** to differ, all by **one ULP**, with maximum absolute difference **1.8189894×10⁻¹² Å** and relative difference **2.21631×10⁻¹⁶**. Python `math.pow` and NumPy `float_power` gave the same mismatch counts; power evaluated with the host's 64-bit-significand extended precision and rounded back to float64 differed at 13,147 samples, also by at most one ULP. In the first affected observation, `5788-56255-0151`, the scalar comparison differed at 261 of 4,626 samples. This reproduces the failure of the previous bitwise comparison without changing any scientific input.
+
+On this x86_64 NumPy build, the reduced-dispatch check was:
+
+```bash
+NPY_DISABLE_CPU_FEATURES=X86_V4,AVX512_ICL,AVX512_SPR \
+  python scripts/verify_reproduction.py --with-controls
+```
+
+Both normal and reduced-dispatch verification passed all four DESI candidates, all four Gaia mean/covariance products and all 54 controls. The verifier now prints the number of differing wavelength samples and arrays, maximum ULP distance, and absolute and relative differences. Over-limit failures identify the spectrum, field, first offending index and both values. All other FITS–NPZ fields retain exact comparison and report their first mismatch; the raw FITS SHA-256 check remains exact.
+
+A separate sensitivity check recalculated the 54 controls with the scalar-power grid and with every stored wavelength shifted two float64 steps in either direction. It kept the source fluxes, inverse variances and selected photometric system fixed, and repeated the photometric fit for the 34 calibrated controls. Across these three comparisons, the largest raw-colour-coordinate difference was **7.22×10⁻¹⁶**. After refitting, the largest difference among x, y, u and v was **7.25×10⁻¹⁰**, and the largest Duv difference was **6.14×10⁻¹¹**; **no display HEX changed**. These measured effects remain below the existing 2×10⁻⁸ result-reproduction tolerance. This is a computational portability check, not an additional observational uncertainty estimate. No frozen spectrum, result, notebook or scientific calculation was changed for this fix.
 
 ## Interpreting the uncertainty
 

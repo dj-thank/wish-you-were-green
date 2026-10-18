@@ -31,6 +31,11 @@ GAIA_FILES = {
     for source in ("j0913", "j0429")
     for basis in ("full", "truncated")
 }
+# Only SDSS's derived 10**loglam wavelength uses this allowance. Independent
+# scalar/vector power implementations can round to adjacent float64 values.
+# Two ULPs allow one rounding step from each implementation, without a general
+# relative/absolute tolerance for the source columns or their unit conversions.
+SDSS_WAVELENGTH_MAX_ULP = 2
 
 
 def require(condition, message):
@@ -88,6 +93,53 @@ def close(np, actual, expected, label, *, rtol=0.0, atol=2e-8):
                                    equal_nan=False, err_msg=label)
     except AssertionError as error:
         raise AssertionError(f"{label}\n{error}") from error
+
+
+def verify_sdss_array(np, actual, expected, spectrum_id, key):
+    """Require exact columns, allowing bounded pow roundoff only for wavelength."""
+    actual, expected = np.asarray(actual), np.asarray(expected)
+    label = f"SDSS raw FITS-to-NPZ unit/data mismatch: {spectrum_id} {key}"
+    require(actual.shape == expected.shape,
+            f"{label}; NPZ shape={actual.shape}, FITS-derived shape={expected.shape}")
+    if key == "wavelength_angstrom":
+        require(actual.dtype.kind == "f" and actual.dtype.itemsize == 8,
+                f"{label}; wavelength must retain float64, got {actual.dtype}")
+        require(np.all(np.isfinite(actual) & (actual > 0)) and
+                np.all(np.isfinite(expected) & (expected > 0)),
+                f"{label}; wavelengths must be finite and positive")
+        # IEEE-754 positive float64 bit patterns preserve numerical order, so
+        # subtraction counts representable steps even across binade boundaries.
+        a = np.asarray(actual, dtype=np.float64).view(np.uint64)
+        e = np.asarray(expected, dtype=np.float64).view(np.uint64)
+        ulps = np.maximum(a, e) - np.minimum(a, e)
+        maximum = int(ulps.max(initial=0))
+        delta = np.abs(actual - expected)
+        stats = {"different": int(np.count_nonzero(ulps)), "max_ulp": maximum,
+                 "max_abs_A": float(delta.max(initial=0)),
+                 "max_relative": float((delta / expected).max(initial=0))}
+        if maximum > SDSS_WAVELENGTH_MAX_ULP:
+            index = np.unravel_index(int(np.flatnonzero(ulps > SDSS_WAVELENGTH_MAX_ULP)[0]),
+                                     actual.shape)
+            raise AssertionError(
+                f"{label}; max difference={maximum} float64 ULPs "
+                f"(allowed {SDSS_WAVELENGTH_MAX_ULP}), max absolute="
+                f"{stats['max_abs_A']:.17g} A, max relative={stats['max_relative']:.17g}; "
+                f"first over-limit index={index}, NPZ={actual[index]:.17g}, "
+                f"FITS-derived={expected[index]:.17g}")
+        return stats
+
+    if not np.array_equal(actual, expected, equal_nan=True):
+        unequal = (actual != expected) & ~(np.isnan(actual) & np.isnan(expected))
+        index = np.unravel_index(int(np.flatnonzero(unequal)[0]), actual.shape)
+        finite = np.isfinite(actual) & np.isfinite(expected)
+        delta = np.abs(actual[finite].astype(np.float64) - expected[finite].astype(np.float64))
+        raise AssertionError(
+            f"{label}; exact comparison required; differing samples="
+            f"{np.count_nonzero(unequal)}, max finite absolute difference="
+            f"{delta.max(initial=0):.17g}; first index={index}, "
+            f"NPZ={actual[index]!r} ({actual.dtype}), "
+            f"FITS-derived={expected[index]!r} ({expected.dtype})")
+    return None
 
 
 def verify_reference(root, np, pipeline):
@@ -329,6 +381,8 @@ def verify_control_spectra(root, np, pipeline, controls, frozen):
     require(set(selected) == set(controls), "Frozen SDSS inputs omit a selected control")
     results = {r["spectrum_id"]: r for r in frozen}
     counts = {group: 0 for group in set(controls.values())}
+    rounded_arrays = rounded_samples = maximum_ulp = 0
+    maximum_absolute = maximum_relative = 0.0
     for spectrum_id, record in selected.items():
         raw_path = resolve_input(root, record["raw_path"])
         parsed_path = resolve_input(root, record["parsed_path"])
@@ -354,8 +408,13 @@ def verify_control_spectra(root, np, pipeline, controls, frozen):
                 require(set(parsed.files) == set(expected),
                         f"SDSS control parsed fields changed: {spectrum_id}")
                 for key, values in expected.items():
-                    require(np.array_equal(parsed[key], values, equal_nan=True),
-                            f"SDSS raw FITS-to-NPZ unit/data mismatch: {spectrum_id} {key}")
+                    stats = verify_sdss_array(np, parsed[key], values, spectrum_id, key)
+                    if stats is not None:
+                        rounded_arrays += int(stats["different"] > 0)
+                        rounded_samples += stats["different"]
+                        maximum_ulp = max(maximum_ulp, stats["max_ulp"])
+                        maximum_absolute = max(maximum_absolute, stats["max_abs_A"])
+                        maximum_relative = max(maximum_relative, stats["max_relative"])
         calculated = pipeline.analyze_record(record)
         saved = results[spectrum_id]
         require(calculated.get("status") == "ok", f"SDSS control calculation failed: {spectrum_id}")
@@ -365,6 +424,10 @@ def verify_control_spectra(root, np, pipeline, controls, frozen):
         require(calculated["distance_planck_uv"] < 0.01 and not calculated["green_dominant"],
                 f"Recomputed negative control no longer meets the stated result: {spectrum_id}")
         counts[controls[spectrum_id]] += 1
+    print(f"PASS SDSS wavelength roundoff: {rounded_samples} samples in "
+          f"{rounded_arrays}/54 arrays differ; max={maximum_ulp} float64 ULPs "
+          f"(limit {SDSS_WAVELENGTH_MAX_ULP}), {maximum_absolute:.6g} A absolute, "
+          f"{maximum_relative:.6g} relative; all other FITS-to-NPZ fields exact")
     for group, count in sorted(counts.items()):
         require(count == 18, f"Incomplete raw control verification: {group}")
         print(f"PASS RECOMPUTED SDSS {group}: {count} raw FITS hashes, "
