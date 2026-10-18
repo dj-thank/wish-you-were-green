@@ -1,0 +1,8 @@
+{
+  "gaia_pair_separation_arcsec": 5.342050814281088,
+  "sdss_pair_separation_arcsec": 6.345502165695198,
+  "ps1_pair_separation_arcsec": 5.540001191342667,
+  "gaia_target_blended_fraction_BP": 0.08333333333333333,
+  "gaia_target_blended_fraction_RP": 0.08333333333333333,
+  "note": "CLEAN=1 and satisfactory Gaia astrometric quality do not establish absence of photometric blending. Observed neighbour is separately catalogued by SDSS, Gaia and PS1."
+}

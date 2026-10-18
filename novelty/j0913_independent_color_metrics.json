@@ -1,0 +1,90 @@
+{
+  "DESI unmodified": {
+    "xy": [
+      0.33915209130053087,
+      0.38702114329889487
+    ],
+    "uv": [
+      0.1947485203559425,
+      0.33335395949454516
+    ],
+    "rgb": [
+      0.8994926090587899,
+      1.0,
+      0.5610933917888669
+    ],
+    "hex": "#F3FFC5",
+    "distance1960": 0.019082846306025945,
+    "nearest_blackbody_k": 5290.40015988982,
+    "green_over_red": 0.10050739094121008,
+    "green_over_blue": 0.43890660821113314
+  },
+  "DESI narrow_sky_interpolated": {
+    "xy": [
+      0.3393087712380816,
+      0.38641995437299886
+    ],
+    "uv": [
+      0.19504926584027166,
+      0.33319619825094104
+    ],
+    "rgb": [
+      0.9052472358140541,
+      1.0,
+      0.564305479789517
+    ],
+    "hex": "#F4FFC6",
+    "distance1960": 0.01875572472248835,
+    "nearest_blackbody_k": 5284.4815477806205,
+    "green_over_red": 0.09475276418594591,
+    "green_over_blue": 0.43569452021048305
+  },
+  "DESI broad_depression": {
+    "mean_5750_6050_over_5450_6450_linear_continuum": 0.5865427716906011,
+    "caution": "Phenomenological flux depression only; sidebands may contain metal absorption. Not an elemental abundance or a measured Na equivalent width."
+  },
+  "Gaia XP unmodified": {
+    "xy": [
+      0.3453571211525553,
+      0.39286587962528724
+    ],
+    "uv": [
+      0.19668168392304045,
+      0.33560704859394913
+    ],
+    "rgb": [
+      0.931271234134036,
+      1.0,
+      0.5221750123709256
+    ],
+    "hex": "#F7FFBF",
+    "distance1960": 0.019255188852016943,
+    "nearest_blackbody_k": 5104.738631508762,
+    "green_over_red": 0.06872876586596399,
+    "green_over_blue": 0.47782498762907444
+  },
+  "Gaia XP narrow_sky_interpolated": {
+    "xy": [
+      0.34543314234428163,
+      0.3928459658446715
+    ],
+    "uv": [
+      0.19673593044916013,
+      0.335608720500049
+    ],
+    "rgb": [
+      0.932265139814937,
+      1.0,
+      0.5221948241626556
+    ],
+    "hex": "#F7FFBF",
+    "distance1960": 0.019217791950815993,
+    "nearest_blackbody_k": 5102.358689338039,
+    "green_over_red": 0.06773486018506303,
+    "green_over_blue": 0.4778051758373444
+  },
+  "Gaia XP broad_depression": {
+    "mean_5750_6050_over_5450_6450_linear_continuum": 0.6078504226409549,
+    "caution": "Phenomenological flux depression only; sidebands may contain metal absorption. Not an elemental abundance or a measured Na equivalent width."
+  }
+}

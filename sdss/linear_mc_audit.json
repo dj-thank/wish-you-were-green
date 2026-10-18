@@ -1,0 +1,27 @@
+{
+  "candidate": "J0913+4434",
+  "kind": "DESI",
+  "system": "sdss",
+  "draws": 80,
+  "test": "Full nonlinear calibration of noisy cleaned spectrum and perturbed nominal band magnitudes versus local linearized feedback. Same Gaussian errors as root conditional MC. Added constant 40 mag to normalized synthetic bands to satisfy the public function magnitude bounds; absolute scaling cancels in colour.",
+  "columns": [
+    "exact_minus_linear_tilt",
+    "exact_minus_linear_duv",
+    "exact_minus_linear_green_margin"
+  ],
+  "mean": [
+    1.4830542626077098e-05,
+    3.527185678664415e-07,
+    1.603309592288077e-05
+  ],
+  "max_absolute": [
+    0.00015151613915940533,
+    3.60335732360606e-06,
+    0.00016910316610618814
+  ],
+  "rms": [
+    5.118498730808828e-05,
+    1.2225462798312063e-06,
+    5.575590302298728e-05
+  ]
+}

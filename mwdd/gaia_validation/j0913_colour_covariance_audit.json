@@ -1,0 +1,389 @@
+{
+  "source_id": "818833831355548928",
+  "n_mc": 200000,
+  "seed": 20261018,
+  "integration": "CIE 1931 2 degree official 1 nm CMFs, trapezoidal integral of native F_lambda from 360 to 830 nm, no sky masking, no flux clipping, no photometric recalibration, and no illuminant adaptation.",
+  "mwdd_native_colour": {
+    "x": 0.3453571211525548,
+    "y": 0.3928658796252885,
+    "u1960": 0.1966816839230397,
+    "v1960": 0.3356070485939494,
+    "r_linear": 0.9312712341340219,
+    "g_linear": 1.0,
+    "b_linear": 0.5221750123709193,
+    "r": 247,
+    "g": 255,
+    "b": 191,
+    "hex": "#F7FFBF",
+    "in_srgb_gamut": true,
+    "green_dominant": true,
+    "green_channel_margin": 0.06872876586597809,
+    "duv": 0.01925523613944345,
+    "distance_planck_uv": 0.01925523613944345,
+    "nearest_planck_temperature_K": 5107.560582998239,
+    "nearest_planck_u": 0.2103480178793638,
+    "nearest_planck_v": 0.322042556897614,
+    "nearest_is_RJ_limit": false,
+    "wave_min_A": 3300.0,
+    "wave_max_A": 10500.0,
+    "coverage_eligible": true,
+    "cmf_min_coverage": 0.9999952935441389,
+    "n_visible_pixels": 259,
+    "visible_negative_fraction": 0.14671814671814673,
+    "largest_visible_gap_A": 26.570000000001528
+  },
+  "mwdd_reconstruction_comparison": {
+    "full": {
+      "mwdd_sha256": "752b3f17100b21ba9bc2cede245b986b2ed4fc45ecaed479481664ba9fd397be",
+      "mwdd_url": "https://www.montrealwhitedwarfdatabase.org/WDs/Gaia%20DR2%20818833831355548928/spect.Gaia%20DR2%20818833831355548928.XP.txt",
+      "flux_absolute_unit_hypothesis": "Identical raw units: W m^-2 nm^-1",
+      "max_wavelength_discrepancy_A": 0.0049909778354049195,
+      "max_flux_discrepancy_over_max_abs_flux": 5.583614022693302e-07,
+      "rms_flux_discrepancy_over_rms_flux": 6.905980615584128e-07,
+      "unfitted_scale_median_data_model": 0.9999999242425144
+    },
+    "truncated": {
+      "mwdd_sha256": "752b3f17100b21ba9bc2cede245b986b2ed4fc45ecaed479481664ba9fd397be",
+      "mwdd_url": "https://www.montrealwhitedwarfdatabase.org/WDs/Gaia%20DR2%20818833831355548928/spect.Gaia%20DR2%20818833831355548928.XP.txt",
+      "flux_absolute_unit_hypothesis": "Identical raw units: W m^-2 nm^-1",
+      "max_wavelength_discrepancy_A": 0.0049909778354049195,
+      "max_flux_discrepancy_over_max_abs_flux": 5.85696960390705,
+      "rms_flux_discrepancy_over_rms_flux": 3.8021154605820318,
+      "unfitted_scale_median_data_model": 1.002183676375788
+    }
+  },
+  "results": [
+    {
+      "spectrum": "j0913_full_1nm.npz",
+      "x": 0.3453932562793584,
+      "y": 0.3928506247248602,
+      "u1960": 0.19670941386502708,
+      "v1960": 0.33560621720839573,
+      "r_linear": 0.9317821079828646,
+      "g_linear": 1.0,
+      "b_linear": 0.522215522683632,
+      "r": 247,
+      "g": 255,
+      "b": 191,
+      "hex": "#F7FFBF",
+      "in_srgb_gamut": true,
+      "green_dominant": true,
+      "green_channel_margin": 0.06821789201713535,
+      "duv": 0.019234953156511813,
+      "distance_planck_uv": 0.019234953156511813,
+      "nearest_planck_temperature_K": 5100.214581351624,
+      "nearest_planck_u": 0.2104196088677465,
+      "nearest_planck_v": 0.3221149616730272,
+      "nearest_is_RJ_limit": false,
+      "wave_min_A": 3300.0,
+      "wave_max_A": 10500.0,
+      "coverage_eligible": true,
+      "cmf_min_coverage": 1.0,
+      "n_visible_pixels": 471,
+      "visible_negative_fraction": 0.1040339702760085,
+      "largest_visible_gap_A": 10.0,
+      "n_mc": 200000,
+      "n_nonpositive_xyz_draws": 0,
+      "xyz_native": [
+        3.50237519581701e-17,
+        3.983604945038977e-17,
+        2.6542734169154037e-17
+      ],
+      "xyz_covariance_native": [
+        [
+          7.301165704425417e-37,
+          4.07379384827737e-37,
+          5.526271872917072e-37
+        ],
+        [
+          4.07379384827737e-37,
+          6.905898398317471e-37,
+          -4.110092685645248e-38
+        ],
+        [
+          5.526271872917072e-37,
+          -4.110092685645248e-38,
+          3.093315428975173e-36
+        ]
+      ],
+      "uv_covariance_first_order": [
+        [
+          1.1599994267751442e-05,
+          -2.499177412626858e-06
+        ],
+        [
+          -2.499177412626858e-06,
+          7.987615809704355e-06
+        ]
+      ],
+      "x_stat_error": 0.005614307793237887,
+      "y_stat_error": 0.009074430797403991,
+      "u_stat_error": 0.0034163394153938318,
+      "v_stat_error": 0.0028355034724950497,
+      "duv_stat_error": 0.003514785460353957,
+      "duv_percentiles_2_5_16_50_84_97_5": [
+        0.01236156505153235,
+        0.015762899639799415,
+        0.019254956828283244,
+        0.02274866488787113,
+        0.026121980343994187
+      ],
+      "probability_duv_positive_formal_only": 1.0,
+      "probability_duv_above_0_005_formal_only": 0.99999,
+      "probability_linear_green_largest_formal_only": 0.850425,
+      "linear_green_minus_red_with_Y_normalized": 0.07173792926953343,
+      "linear_green_minus_red_stat_error": 0.06882291105607771,
+      "linear_green_minus_red_stat_z": 1.0423553460428392,
+      "uncertainty_caveat": "Published coefficient formal covariance only. Truncation discards high-order signal and does not include truncation bias. BP/RP cross-band calibration covariance and systematic spectral errors are not supplied and not invented."
+    },
+    {
+      "spectrum": "j0913_full_2nm.npz",
+      "x": 0.3453542639722927,
+      "y": 0.3928599102589951,
+      "u1960": 0.1966819026352104,
+      "v1960": 0.33560509893560914,
+      "r_linear": 0.9312785538130283,
+      "g_linear": 1.0,
+      "b_linear": 0.5222103443807765,
+      "r": 247,
+      "g": 255,
+      "b": 191,
+      "hex": "#F7FFBF",
+      "in_srgb_gamut": true,
+      "green_dominant": true,
+      "green_channel_margin": 0.06872144618697174,
+      "duv": 0.019253707497489066,
+      "distance_planck_uv": 0.019253707497489066,
+      "nearest_planck_temperature_K": 5107.560582998239,
+      "nearest_planck_u": 0.2103480178793638,
+      "nearest_planck_v": 0.322042556897614,
+      "nearest_is_RJ_limit": false,
+      "wave_min_A": 3300.0,
+      "wave_max_A": 10500.0,
+      "coverage_eligible": true,
+      "cmf_min_coverage": 0.9999983382358265,
+      "n_visible_pixels": 236,
+      "visible_negative_fraction": 0.09745762711864407,
+      "largest_visible_gap_A": 20.0,
+      "n_mc": 200000,
+      "n_nonpositive_xyz_draws": 0,
+      "xyz_native": [
+        3.5016100307507287e-17,
+        3.983278464901462e-17,
+        2.6542943552410538e-17
+      ],
+      "xyz_covariance_native": [
+        [
+          7.285369310831295e-37,
+          4.06761632349795e-37,
+          5.526144004264099e-37
+        ],
+        [
+          4.06761632349795e-37,
+          6.903269536456124e-37,
+          -4.1104400085628876e-38
+        ],
+        [
+          5.526144004264099e-37,
+          -4.1104400085628876e-38,
+          3.093294049384715e-36
+        ]
+      ],
+      "uv_covariance_first_order": [
+        [
+          1.1579171033012177e-05,
+          -2.4998588342657515e-06
+        ],
+        [
+          -2.499858834265752e-06,
+          7.988772662253149e-06
+        ]
+      ],
+      "x_stat_error": 0.005590047280832426,
+      "y_stat_error": 0.009055581087127536,
+      "u_stat_error": 0.0034060396995552354,
+      "v_stat_error": 0.0028287683447684097,
+      "duv_stat_error": 0.0035084421169932606,
+      "duv_percentiles_2_5_16_50_84_97_5": [
+        0.012354147577889288,
+        0.01579207602582004,
+        0.019281792534364146,
+        0.022759944476959126,
+        0.02612451958819565
+      ],
+      "probability_duv_positive_formal_only": 0.999995,
+      "probability_duv_above_0_005_formal_only": 0.999965,
+      "probability_linear_green_largest_formal_only": 0.85309,
+      "linear_green_minus_red_with_Y_normalized": 0.07227563271458917,
+      "linear_green_minus_red_stat_error": 0.06876777513357157,
+      "linear_green_minus_red_stat_z": 1.0510101944436052,
+      "uncertainty_caveat": "Published coefficient formal covariance only. Truncation discards high-order signal and does not include truncation bias. BP/RP cross-band calibration covariance and systematic spectral errors are not supplied and not invented."
+    },
+    {
+      "spectrum": "j0913_truncated_1nm.npz",
+      "x": 0.34101881271928297,
+      "y": 0.3825339437286098,
+      "u1960": 0.1974525554146893,
+      "v1960": 0.33223521066086614,
+      "r_linear": 0.9515306951895038,
+      "g_linear": 1.0,
+      "b_linear": 0.5848411121485455,
+      "r": 249,
+      "g": 255,
+      "b": 201,
+      "hex": "#F9FFC9",
+      "in_srgb_gamut": true,
+      "green_dominant": true,
+      "green_channel_margin": 0.04846930481049616,
+      "duv": 0.016351372754006607,
+      "distance_planck_uv": 0.016351372754006607,
+      "nearest_planck_temperature_K": 5219.02886365412,
+      "nearest_planck_u": 0.20929370539967013,
+      "nearest_planck_v": 0.320958927675163,
+      "nearest_is_RJ_limit": false,
+      "wave_min_A": 3300.0,
+      "wave_max_A": 10500.0,
+      "coverage_eligible": true,
+      "cmf_min_coverage": 1.0,
+      "n_visible_pixels": 471,
+      "visible_negative_fraction": 0.09554140127388536,
+      "largest_visible_gap_A": 10.0,
+      "n_mc": 200000,
+      "n_nonpositive_xyz_draws": 0,
+      "xyz_native": [
+        3.5392857436919154e-17,
+        3.970153208619032e-17,
+        2.869125548191712e-17
+      ],
+      "xyz_covariance_native": [
+        [
+          6.266008013828929e-37,
+          3.7349397048402506e-37,
+          3.903315174095004e-37
+        ],
+        [
+          3.7349397048402506e-37,
+          6.7112642587992525e-37,
+          -5.672216545305102e-38
+        ],
+        [
+          3.903315174095004e-37,
+          -5.672216545305102e-38,
+          2.3620741642325457e-36
+        ]
+      ],
+      "uv_covariance_first_order": [
+        [
+          1.0516071315304023e-05,
+          -2.221853231463948e-06
+        ],
+        [
+          -2.221853231463948e-06,
+          6.28372014049604e-06
+        ]
+      ],
+      "x_stat_error": 0.004986129352515382,
+      "y_stat_error": 0.007817669488647736,
+      "u_stat_error": 0.0032354162323491764,
+      "v_stat_error": 0.002506734975568026,
+      "duv_stat_error": 0.00326715055081453,
+      "duv_percentiles_2_5_16_50_84_97_5": [
+        0.00994536994873869,
+        0.013119207661605745,
+        0.016380533284379984,
+        0.019614209486206357,
+        0.022738192188601684
+      ],
+      "probability_duv_positive_formal_only": 1.0,
+      "probability_duv_above_0_005_formal_only": 0.999695,
+      "probability_linear_green_largest_formal_only": 0.777895,
+      "linear_green_minus_red_with_Y_normalized": 0.05050730659621379,
+      "linear_green_minus_red_stat_error": 0.06614441405945819,
+      "linear_green_minus_red_stat_z": 0.7635914130377212,
+      "uncertainty_caveat": "Published coefficient formal covariance only. Truncation discards high-order signal and does not include truncation bias. BP/RP cross-band calibration covariance and systematic spectral errors are not supplied and not invented."
+    },
+    {
+      "spectrum": "j0913_truncated_2nm.npz",
+      "x": 0.3410165639843233,
+      "y": 0.3825333873258222,
+      "u1960": 0.19745131566898733,
+      "v1960": 0.3322348322276957,
+      "r_linear": 0.9515080594964528,
+      "g_linear": 1.0,
+      "b_linear": 0.5848466840703511,
+      "r": 249,
+      "g": 255,
+      "b": 201,
+      "hex": "#F9FFC9",
+      "in_srgb_gamut": true,
+      "green_dominant": true,
+      "green_channel_margin": 0.048491940503547215,
+      "duv": 0.016352009601611935,
+      "distance_planck_uv": 0.016352009601611935,
+      "nearest_planck_temperature_K": 5219.02886365412,
+      "nearest_planck_u": 0.20929370539967013,
+      "nearest_planck_v": 0.320958927675163,
+      "nearest_is_RJ_limit": false,
+      "wave_min_A": 3300.0,
+      "wave_max_A": 10500.0,
+      "coverage_eligible": true,
+      "cmf_min_coverage": 0.9999983382358265,
+      "n_visible_pixels": 236,
+      "visible_negative_fraction": 0.09322033898305085,
+      "largest_visible_gap_A": 20.0,
+      "n_mc": 200000,
+      "n_nonpositive_xyz_draws": 0,
+      "xyz_native": [
+        3.539221910999986e-17,
+        3.970102009985745e-17,
+        2.8691218344019354e-17
+      ],
+      "xyz_covariance_native": [
+        [
+          6.2647672484677314e-37,
+          3.7344139055602043e-37,
+          3.9031183919596676e-37
+        ],
+        [
+          3.7344139055602043e-37,
+          6.7109093926674234e-37,
+          -5.673500784777571e-38
+        ],
+        [
+          3.9031183919596676e-37,
+          -5.673500784777571e-38,
+          2.362068004151708e-36
+        ]
+      ],
+      "uv_covariance_first_order": [
+        [
+          1.0514577596531911e-05,
+          -2.221818197143367e-06
+        ],
+        [
+          -2.2218181971433666e-06,
+          6.283854404628508e-06
+        ]
+      ],
+      "x_stat_error": 0.004995837798945438,
+      "y_stat_error": 0.007851970943623957,
+      "u_stat_error": 0.0032337355953556946,
+      "v_stat_error": 0.002518867569777807,
+      "duv_stat_error": 0.0032723765604708703,
+      "duv_percentiles_2_5_16_50_84_97_5": [
+        0.00994794641587552,
+        0.013111473055210206,
+        0.016369568405707295,
+        0.019630538312178432,
+        0.02276029963811012
+      ],
+      "probability_duv_positive_formal_only": 1.0,
+      "probability_duv_above_0_005_formal_only": 0.999715,
+      "probability_linear_green_largest_formal_only": 0.778415,
+      "linear_green_minus_red_with_Y_normalized": 0.05053112631175107,
+      "linear_green_minus_red_stat_error": 0.06614017746033843,
+      "linear_green_minus_red_stat_z": 0.7640004646502881,
+      "uncertainty_caveat": "Published coefficient formal covariance only. Truncation discards high-order signal and does not include truncation bias. BP/RP cross-band calibration covariance and systematic spectral errors are not supplied and not invented."
+    }
+  ]
+}

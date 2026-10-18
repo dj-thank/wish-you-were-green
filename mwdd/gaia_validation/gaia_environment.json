@@ -1,0 +1,9 @@
+{
+  "gaiaxpy": "2.1.5",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "pandas": "2.2.3",
+  "astropy": "8.0.2",
+  "astroquery": "0.4.11",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]"
+}

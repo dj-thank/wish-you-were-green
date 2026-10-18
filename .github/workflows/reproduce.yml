@@ -1,0 +1,44 @@
+name: Offline scientific reproduction
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: reproduction-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  reproduce:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      OPENBLAS_NUM_THREADS: "1"
+      OMP_NUM_THREADS: "1"
+      MPLBACKEND: Agg
+    steps:
+      # Official major versions verified against each action's upstream README.
+      - name: Check out the research inputs
+        uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements-core.txt
+
+      - name: Install the recorded scientific environment
+        run: python -m pip install --disable-pip-version-check -r requirements-core.txt
+
+      # Run outside the checkout so an accidental current-directory dependency
+      # does not pass CI. The verifier itself forbids socket/DNS data access.
+      - name: Verify committed spectra, colours, and covariance offline
+        working-directory: ${{ runner.temp }}
+        run: python "$GITHUB_WORKSPACE/scripts/verify_reproduction.py" --root "$GITHUB_WORKSPACE" --with-controls

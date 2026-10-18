@@ -1,0 +1,3 @@
+# Preserve exact file bytes on all platforms: raw inputs and products carry hashes.
+# This disables line-ending conversion, while normal text diff detection remains enabled.
+* -text

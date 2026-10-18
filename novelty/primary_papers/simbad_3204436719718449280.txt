@@ -1,0 +1,35 @@
+C.D.S.  -  SIMBAD4 rel 1.8  -  2026.10.18CEST03:02:08
+
+Gaia DR3 3204436719718449280
+----------------------------
+
+Object Gaia DR3 3204436719718449280  ---  WD*  ---  OID=@15871790   (@@-1,255)  ---  coobox=6239
+
+Coordinates(ICRS,ep=J2000,eq=2000): 04 29 44.7056026584  -03 54 22.007160180 (Opt ) A [0.1923 0.1380 90] 2020yCat.1350....0G
+Coordinates(FK4,ep=B1950,eq=1950): 04 27 15.2170528654  -04 00 47.247493460
+Coordinates(Gal,ep=J2000,eq=2000): 198.9088269174553  -33.0732779670802
+hierarchy counts: #parents=0, #children=0, #siblings=0
+Proper motions: 2.675 -88.416 [0.248 0.209 90] A 2020yCat.1350....0G
+Parallax: 12.0347 [0.2426] A 2020yCat.1350....0G
+Radial Velocity: ~ [~ ~ ] ~ ~                  
+Redshift: ~ [~ ~ ] ~ ~                  
+cz: ~ [~ ~ ] ~ ~                  
+Flux G : 18.890921 [0.003610] C 2020yCat.1350....0G
+Spectral type: D E 2023MNRAS.518.5106J
+Morphological type: ~ ~ ~
+Angular size:     ~     ~   ~ (~)  ~ ~
+
+Identifiers (2):
+   Gaia DR3 3204436719718449280         Gaia DR2 3204436719718449280                                            
+
+Bibcodes  1850-2026 () (8):
+  2024A&A...682A...5V  2023A&A...679A.127G  2023MNRAS.518.5106J  2021A&A...649A...6G
+  2021MNRAS.508.3877G  2019MNRAS.482.4570G  2019MNRAS.485.5573T  2018MNRAS.480.4505J
+
+Measures (distance:2  Fe_H:1  MK:2  PLX:2  PM:2  ):
+distance:2Fe_H:1MK:2PLX:2PM:2
+
+Notes (0) :
+
+================================================================================
+

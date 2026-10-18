@@ -1,0 +1,26 @@
+{
+  "source_url": "https://arxiv.org/html/2610.18966v1",
+  "source_doi": "10.1093/rasti/rzag069",
+  "downloaded_utc_date": "2026-10-18",
+  "html_sha256": "cf540f314f908930e54fa9abf004ea55514d0c175ebdafdfb22df8944534b2cd",
+  "rows_per_table": {
+    "3": 15,
+    "4": 36,
+    "5": 36,
+    "6": 151
+  },
+  "total_table_entries": 238,
+  "unique_full_designations": 236,
+  "unique_name_derived_coordinate_pairs": 236,
+  "caution": "Do not exclude only the headline green stars. Tables 3,4,5,6 all report chromaticities. Table 5 contains fitted models of actual named objects and must be excluded. Tables 1 and 2 contain generic model grids and are not object exclusions. Exact names and coordinates encode historical astrometry and must be alias/proper-motion crossmatched before any novelty claim.",
+  "shared_names": [
+    {
+      "name": "WD J101141.58+284559.07",
+      "tables": "4;6"
+    },
+    {
+      "name": "WD J153505.81+124745.20",
+      "tables": "5;6"
+    }
+  ]
+}

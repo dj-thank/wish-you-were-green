@@ -1,0 +1,12 @@
+{
+  "name": "sdss_flags",
+  "url": "https://skyserver.sdss.org/dr17/SkyServerWS/SearchTools/SqlSearch?cmd=SELECT+objID%2Cdbo.fPhotoFlagsN%28flags%29+AS+flags_named%2Cdbo.fPhotoFlagsN%28flags_u%29+AS+flags_u_named%2Cdbo.fPhotoFlagsN%28flags_g%29+AS+flags_g_named%2Cdbo.fPhotoFlagsN%28flags_r%29+AS+flags_r_named%2Cdbo.fPhotoFlagsN%28flags_i%29+AS+flags_i_named%2Cdbo.fPhotoFlagsN%28flags_z%29+AS+flags_z_named+FROM+PhotoObjAll+WHERE+objID+IN+%281237657242969702641%2C1237657242969702640%29&format=json",
+  "parameters": {
+    "cmd": "SELECT objID,dbo.fPhotoFlagsN(flags) AS flags_named,dbo.fPhotoFlagsN(flags_u) AS flags_u_named,dbo.fPhotoFlagsN(flags_g) AS flags_g_named,dbo.fPhotoFlagsN(flags_r) AS flags_r_named,dbo.fPhotoFlagsN(flags_i) AS flags_i_named,dbo.fPhotoFlagsN(flags_z) AS flags_z_named FROM PhotoObjAll WHERE objID IN (1237657242969702641,1237657242969702640)",
+    "format": "json"
+  },
+  "path": "sdss/j0913_quality/sdss_flags.json",
+  "bytes": 1831,
+  "sha256": "12e46a91bdffcaf147aab52714a6a70f56a21bfd3b1e2999350239edc384c603",
+  "retrieved_utc": "2026-10-18T00:55:52.987046+00:00"
+}

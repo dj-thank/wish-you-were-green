@@ -1,0 +1,41 @@
+C.D.S.  -  SIMBAD4 rel 1.8  -  2026.10.18CEST02:53:16
+
+Gaia DR3 3638333660492606976
+----------------------------
+
+Object SDSS J132312.76-012923.8  ---  WD?  ---  OID=@15904417   (@@-1,255)  ---  coobox=15446
+
+Coordinates(ICRS,ep=J2000,eq=2000): 13 23 12.7578625152  -01 29 23.684318160 (Opt ) A [0.3893 0.2866 90] 2020yCat.1350....0G
+Coordinates(FK4,ep=B1950,eq=1950): 13 20 38.4967828873  -01 13 39.036926889
+Coordinates(Gal,ep=J2000,eq=2000): 319.1619745663204  +60.3767105669794
+hierarchy counts: #parents=0, #children=0, #siblings=0
+Proper motions: -16.704 -115.386 [0.575 0.427 90] A 2020yCat.1350....0G
+Parallax: 12.8313 [0.4818] A 2020yCat.1350....0G
+Radial Velocity: ~ [~ ~ ] ~ ~                  
+Redshift: ~ [~ ~ ] ~ ~                  
+cz: ~ [~ ~ ] ~ ~                  
+Flux G : 19.770678 [0.004750] C 2020yCat.1350....0G
+Flux u : 26.293 [0.412] D 2015ApJS..219...12A
+Flux g : 20.931 [0.036] C 2015ApJS..219...12A
+Flux r : 19.610 [0.018] C 2015ApJS..219...12A
+Flux i : 19.357 [0.020] C 2015ApJS..219...12A
+Flux z : 19.447 [0.081] C 2015ApJS..219...12A
+Spectral type: ~ ~ ~
+Morphological type: ~ ~ ~
+Angular size:     ~     ~   ~ (~)  ~ ~
+
+Identifiers (4):
+   Gaia DR3 3638333660492606976         Gaia DR2 3638333660492606976         SDSS J132312.76-012923.8           
+   SDSS J132312.75-012923.8                                                                                     
+
+Bibcodes  1850-2026 () (5):
+  2021A&A...649A...6G  2021MNRAS.508.3877G  2020ApJ...898...84K  2019MNRAS.482.4570G
+  2019MNRAS.485.5573T                                    
+
+Measures (distance:2  PLX:2  PM:2  velocities:1  ):
+distance:2PLX:2PM:2velocities:1
+
+Notes (0) :
+
+================================================================================
+

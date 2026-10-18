@@ -1,0 +1,15 @@
+{
+  "input_mwdd_spectra": 8505,
+  "input_mwdd_identifiers": 5548,
+  "input_sdss_spectra": 1397,
+  "input_sdss_identifiers": 1383,
+  "combined_spectrum_records": 9902,
+  "combined_identifiers_after_5arcsec_match": 6004,
+  "screen_eligible_records": 9023,
+  "known_hollands_matched_records": 346,
+  "calibrated_records": 4218,
+  "screen_definition": "SDSS/DESI/GaiaXP F_lambda source convention; CMF coverage>99.5%, wavelength gap<150A; valid gri tilt if available. This is not a quality-assured discovery catalogue.",
+  "id_count_caution": "5 arcsec cross-match may leave high-proper-motion duplicates; SDSS and MWDD may contain the same SDSS observation.",
+  "not_in_hollands2026_identifiers_eligible": 5812,
+  "verified_source_format_records": 9095
+}

@@ -1,0 +1,167 @@
+{
+  "caution": "Artificial interpolation diagnostic only. This is not a physical sodium-removal atmosphere model and does not measure Na abundance. It changes one broad window while holding the rest of the observed spectrum fixed.",
+  "results": [
+    {
+      "source": "DESI",
+      "artificial_replacement_angstrom": [
+        5500,
+        6300
+      ],
+      "metrics": {
+        "xy": [
+          0.3619581833859249,
+          0.39244141855015413
+        ],
+        "uv": [
+          0.20726611832317804,
+          0.33708234773658824
+        ],
+        "rgb": [
+          1.0,
+          0.8844573285734854,
+          0.4463708483433844
+        ],
+        "hex": "#FFF2B2",
+        "distance1960": 0.013083123306679111,
+        "nearest_blackbody_k": 4611.400182476087,
+        "green_over_red": -0.11554267142651464,
+        "green_over_blue": 0.43808648023010094
+      }
+    },
+    {
+      "source": "DESI",
+      "artificial_replacement_angstrom": [
+        5450,
+        6350
+      ],
+      "metrics": {
+        "xy": [
+          0.36106695094960783,
+          0.39265289511488943
+        ],
+        "uv": [
+          0.2066279855127519,
+          0.3370555371100529
+        ],
+        "rgb": [
+          1.0,
+          0.8944421722575957,
+          0.4513545453598305
+        ],
+        "hex": "#FFF3B3",
+        "distance1960": 0.013483025496935823,
+        "nearest_blackbody_k": 4637.795188874223,
+        "green_over_red": -0.1055578277424043,
+        "green_over_blue": 0.4430876268977652
+      }
+    },
+    {
+      "source": "DESI",
+      "artificial_replacement_angstrom": [
+        5550,
+        6250
+      ],
+      "metrics": {
+        "xy": [
+          0.35871932275382434,
+          0.3910481881798261
+        ],
+        "uv": [
+          0.20571305675559134,
+          0.3363788052103897
+        ],
+        "rgb": [
+          1.0,
+          0.9077041269638741,
+          0.4687246458220188
+        ],
+        "hex": "#FFF4B6",
+        "distance1960": 0.013583983509020852,
+        "nearest_blackbody_k": 4698.793115989137,
+        "green_over_red": -0.09229587303612585,
+        "green_over_blue": 0.43897948114185537
+      }
+    },
+    {
+      "source": "Gaia XP",
+      "artificial_replacement_angstrom": [
+        5500,
+        6300
+      ],
+      "metrics": {
+        "xy": [
+          0.37073520430388235,
+          0.4016174567015248
+        ],
+        "uv": [
+          0.209515905996093,
+          0.3404528798229323
+        ],
+        "rgb": [
+          1.0,
+          0.8576007791801892,
+          0.3810151148715827
+        ],
+        "hex": "#FFEEA6",
+        "distance1960": 0.014213776795722218,
+        "nearest_blackbody_k": 4414.920076100965,
+        "green_over_red": -0.14239922081981082,
+        "green_over_blue": 0.4765856643086065
+      }
+    },
+    {
+      "source": "Gaia XP",
+      "artificial_replacement_angstrom": [
+        5450,
+        6350
+      ],
+      "metrics": {
+        "xy": [
+          0.374713040963338,
+          0.40133052736179287
+        ],
+        "uv": [
+          0.21210551579519904,
+          0.34075843060434435
+        ],
+        "rgb": [
+          1.0,
+          0.8214523067596865,
+          0.36165850691156
+        ],
+        "hex": "#FFEAA2",
+        "distance1960": 0.012838108972893577,
+        "nearest_blackbody_k": 4309.721390683769,
+        "green_over_red": -0.1785476932403135,
+        "green_over_blue": 0.4597937998481265
+      }
+    },
+    {
+      "source": "Gaia XP",
+      "artificial_replacement_angstrom": [
+        5550,
+        6250
+      ],
+      "metrics": {
+        "xy": [
+          0.36798000389488594,
+          0.400559490310113
+        ],
+        "uv": [
+          0.20817016705812236,
+          0.33990108891239434
+        ],
+        "rgb": [
+          1.0,
+          0.8765386323088318,
+          0.39748714613219555
+        ],
+        "hex": "#FFF1A9",
+        "distance1960": 0.014642937548593393,
+        "nearest_blackbody_k": 4482.819002568015,
+        "green_over_red": -0.12346136769116822,
+        "green_over_blue": 0.47905148617663623
+      }
+    }
+  ]
+}

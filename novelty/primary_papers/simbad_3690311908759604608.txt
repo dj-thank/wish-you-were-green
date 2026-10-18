@@ -1,0 +1,39 @@
+C.D.S.  -  SIMBAD4 rel 1.8  -  2026.10.18CEST03:02:08
+
+Gaia DR3 3690311908759604608
+----------------------------
+
+Object LP 616-53  ---  WD?  ---  OID=@4009360   (@@-1,255)  ---  coobox=14062
+
+Coordinates(ICRS,ep=J2000,eq=2000): 12 58 58.2490735702  +01 06 32.437639084 (Opt ) A [0.1527 0.1056 90] 2020yCat.1350....0G
+Coordinates(FK4,ep=B1950,eq=1950): 12 56 24.4601377568  +01 22 58.968761625
+Coordinates(Gal,ep=J2000,eq=2000): 307.2177551298378  +63.9180549545839
+hierarchy counts: #parents=0, #children=0, #siblings=0
+Proper motions: 117.368 -317.841 [0.206 0.191 90] A 2020yCat.1350....0G
+Parallax: 18.7008 [0.1800] A 2020yCat.1350....0G
+Radial Velocity: ~ [~ ~ ] ~ ~                  
+Redshift: ~ [~ ~ ] ~ ~                  
+cz: ~ [~ ~ ] ~ ~                  
+Flux B : 21.1 [~] D 2005AJ....129.1483L
+Flux G : 18.404011 [0.003358] C 2020yCat.1350....0G
+Flux R : 18.5 [~] D 2005AJ....129.1483L
+Spectral type: ~ ~ ~
+Morphological type: ~ ~ ~
+Angular size:     ~     ~   ~ (~)  ~ ~
+
+Identifiers (7):
+   LP 616-53                            Gaia DR3 3690311908759604608         NLTT 32489                         
+   LSPM J1258+0106S                     ** LDS 4303B                         WDS J12589+0107B                   
+   Gaia DR2 3690311908759604608                                                                                 
+
+Bibcodes  1850-2026 () (5):
+  2021A&A...649A...6G  2021MNRAS.508.3877G  2019MNRAS.482.4570G  2005AJ....129.1483L
+  1995yCat.1098....0L                                    
+
+Measures (distance:2  PLX:2  PM:3  ):
+distance:2PLX:2PM:3
+
+Notes (0) :
+
+================================================================================
+

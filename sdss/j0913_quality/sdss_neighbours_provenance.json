@@ -1,0 +1,12 @@
+{
+  "name": "sdss_neighbours",
+  "url": "https://skyserver.sdss.org/dr17/SkyServerWS/SearchTools/SqlSearch?cmd=SELECT+p.objID%2Cp.ra%2Cp.dec%2Cn.distance%2Cp.clean%2Cp.mode%2Cp.type%2Cp.nChild%2Cp.parentID%2Cp.psfMag_u%2Cp.psfMagErr_u%2Cp.psfFlux_u%2Cp.psfFluxIvar_u%2Cp.extinction_u%2Cp.flags_u%2Cp.psfMag_g%2Cp.psfMagErr_g%2Cp.psfFlux_g%2Cp.psfFluxIvar_g%2Cp.extinction_g%2Cp.flags_g%2Cp.psfMag_r%2Cp.psfMagErr_r%2Cp.psfFlux_r%2Cp.psfFluxIvar_r%2Cp.extinction_r%2Cp.flags_r%2Cp.psfMag_i%2Cp.psfMagErr_i%2Cp.psfFlux_i%2Cp.psfFluxIvar_i%2Cp.extinction_i%2Cp.flags_i%2Cp.psfMag_z%2Cp.psfMagErr_z%2Cp.psfFlux_z%2Cp.psfFluxIvar_z%2Cp.extinction_z%2Cp.flags_z+FROM+dbo.fGetNearbyObjEq%28138.4015417%2C44.5681725%2C0.166666667%29+n+JOIN+PhotoObjAll+p+ON+p.objID%3Dn.objID+ORDER+BY+n.distance&format=json",
+  "parameters": {
+    "cmd": "SELECT p.objID,p.ra,p.dec,n.distance,p.clean,p.mode,p.type,p.nChild,p.parentID,p.psfMag_u,p.psfMagErr_u,p.psfFlux_u,p.psfFluxIvar_u,p.extinction_u,p.flags_u,p.psfMag_g,p.psfMagErr_g,p.psfFlux_g,p.psfFluxIvar_g,p.extinction_g,p.flags_g,p.psfMag_r,p.psfMagErr_r,p.psfFlux_r,p.psfFluxIvar_r,p.extinction_r,p.flags_r,p.psfMag_i,p.psfMagErr_i,p.psfFlux_i,p.psfFluxIvar_i,p.extinction_i,p.flags_i,p.psfMag_z,p.psfMagErr_z,p.psfFlux_z,p.psfFluxIvar_z,p.extinction_z,p.flags_z FROM dbo.fGetNearbyObjEq(138.4015417,44.5681725,0.166666667) n JOIN PhotoObjAll p ON p.objID=n.objID ORDER BY n.distance",
+    "format": "json"
+  },
+  "path": "sdss/j0913_quality/sdss_neighbours.json",
+  "bytes": 3395,
+  "sha256": "c97455e3e3d1b7bb83407556e36e17a959ee2ba2cc427aec6eaf9e71e251f9a6",
+  "retrieved_utc": "2026-10-18T00:54:19.643012+00:00"
+}

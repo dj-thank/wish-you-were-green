@@ -1,0 +1,12 @@
+{
+  "primary_alias": "LP 616-54",
+  "primary_gaia_source_id": "3690311908760279808",
+  "candidate_alias": "LP 616-53",
+  "candidate_gaia_source_id": "3690311908759604608",
+  "epoch": "J2000",
+  "separation_arcsec": 2.3400337506906097,
+  "primary_G_mag": 17.252741,
+  "candidate_G_mag": 18.404011,
+  "primary_over_candidate_G_flux": 2.887406966700922,
+  "inference": "Close brighter neighbour requires deblending and contamination checks. Similar parallax/proper motion support physical association, but no orbital analysis done."
+}

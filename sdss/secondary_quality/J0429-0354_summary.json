@@ -1,0 +1,53 @@
+{
+  "candidate": "J0429-0354",
+  "target_objid": "103310674362622776",
+  "target_ra": 67.4362830967062,
+  "target_dec": -3.906441505736343,
+  "target_n_detections": 77,
+  "neighbour_count_with_nDetections_gt1_within10arcsec": 1,
+  "neighbour_separation_arcsec": 9.736021305244199,
+  "neighbour_objid": "103310674360995966",
+  "neighbour_i_mag": 21.283100128173828,
+  "neighbour_i_error": 0.1499180048704147,
+  "neighbour_n_detections": 2,
+  "g": {
+    "psf_mag": 19.22470092773437,
+    "error_mag": 0.0144360000267624,
+    "scatter_mag": 0.0558089986443519,
+    "n_points": 11,
+    "flags": 115000
+  },
+  "r": {
+    "psf_mag": 18.80220031738281,
+    "error_mag": 0.0047749998047947,
+    "scatter_mag": 0.0190660003572702,
+    "n_points": 16,
+    "flags": 115000
+  },
+  "i": {
+    "psf_mag": 18.786300659179688,
+    "error_mag": 0.0050050001591444,
+    "scatter_mag": 0.0275749992579221,
+    "n_points": 17,
+    "flags": 115000
+  },
+  "z": {
+    "psf_mag": 18.8439998626709,
+    "error_mag": 0.0102040003985166,
+    "scatter_mag": 0.0543089993298053,
+    "n_points": 9,
+    "flags": 115000
+  },
+  "y": {
+    "psf_mag": 18.815000534057617,
+    "error_mag": 0.0325779989361763,
+    "scatter_mag": 0.1253190040588379,
+    "n_points": 13,
+    "flags": 115000
+  },
+  "direct_minus_MWDD_gri_mag": {
+    "g": -2.265629461817298e-09,
+    "r": -2.6171917966166802e-09,
+    "i": -8.203109302939993e-10
+  }
+}

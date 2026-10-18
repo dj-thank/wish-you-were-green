@@ -1,0 +1,16 @@
+{
+  "label": "J0429-0354",
+  "service": "ps1",
+  "url": "https://catalogs.mast.stsci.edu/api/v0.1/panstarrs/dr2/mean.csv?ra=67.436292&dec=-3.906506&radius=0.002777777777777778&columns=%5BobjID%2CraMean%2CdecMean%2CnDetections%2Cng%2Cnr%2Cni%2Cnz%2Cny%2CgMeanPSFMag%2CgMeanPSFMagErr%2CgMeanPSFMagStd%2CgMeanPSFMagNpt%2CgFlags%2CrMeanPSFMag%2CrMeanPSFMagErr%2CrMeanPSFMagStd%2CrMeanPSFMagNpt%2CrFlags%2CiMeanPSFMag%2CiMeanPSFMagErr%2CiMeanPSFMagStd%2CiMeanPSFMagNpt%2CiFlags%2CzMeanPSFMag%2CzMeanPSFMagErr%2CzMeanPSFMagStd%2CzMeanPSFMagNpt%2CzFlags%2CyMeanPSFMag%2CyMeanPSFMagErr%2CyMeanPSFMagStd%2CyMeanPSFMagNpt%2CyFlags%5D&nDetections.gt=1",
+  "parameters": {
+    "ra": 67.436292,
+    "dec": -3.906506,
+    "radius": 0.002777777777777778,
+    "columns": "[objID,raMean,decMean,nDetections,ng,nr,ni,nz,ny,gMeanPSFMag,gMeanPSFMagErr,gMeanPSFMagStd,gMeanPSFMagNpt,gFlags,rMeanPSFMag,rMeanPSFMagErr,rMeanPSFMagStd,rMeanPSFMagNpt,rFlags,iMeanPSFMag,iMeanPSFMagErr,iMeanPSFMagStd,iMeanPSFMagNpt,iFlags,zMeanPSFMag,zMeanPSFMagErr,zMeanPSFMagStd,zMeanPSFMagNpt,zFlags,yMeanPSFMag,yMeanPSFMagErr,yMeanPSFMagStd,yMeanPSFMagNpt,yFlags]",
+    "nDetections.gt": 1
+  },
+  "path": "sdss/secondary_quality/J0429-0354_ps1.csv",
+  "bytes": 1009,
+  "sha256": "b7df439297f19cec0a1a631473ce13e5b948cb58859deb50ca7c1974479bc553",
+  "retrieved_utc": "2026-10-18T01:08:51.919503+00:00"
+}

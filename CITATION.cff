@@ -1,0 +1,46 @@
+cff-version: 1.2.0
+message: >-
+  If you use this analysis or its reproducibility code, cite the version or
+  commit used and the underlying papers and datasets relevant to your work.
+  See docs/references.bib and ACKNOWLEDGMENTS.md for original-source credits.
+title: Additional white dwarf colour candidates from public spectra
+type: software
+authors:
+  - family-names: Moriwaki
+    given-names: Shota
+version: 0.1.0
+date-released: '2026-10-18'
+url: https://github.com/dj-thank/pale-yellow-green-white-dwarf-candidate
+repository-code: https://github.com/dj-thank/pale-yellow-green-white-dwarf-candidate
+license: Apache-2.0
+abstract: >-
+  Reproducible public-spectrum analysis identifying two additional pale
+  yellow-green white dwarf colour candidates, with pink and unusual yellow
+  comparison candidates. The objects and their atmospheric classifications
+  are previously known; the potentially new quantity is their calculated
+  human-vision chromaticity. This is an exploratory, unreviewed research note
+  with ChatGPT-assisted analysis, not a claim of worldwide priority or new
+  atmospheric physics. The software licence is Apache-2.0; original prose is
+  CC BY 4.0, and third-party data, figures and references retain their own terms.
+keywords:
+  - astronomy
+  - white dwarfs
+  - public spectra
+  - chromaticity
+  - CIE 1931
+  - Gaia
+  - DESI
+  - reproducible research
+preferred-citation:
+  type: report
+  authors:
+    - family-names: Moriwaki
+      given-names: Shota
+  title: Additional white dwarf colour candidates from public spectra
+  year: 2026
+  url: https://github.com/dj-thank/pale-yellow-green-white-dwarf-candidate
+  notes: >-
+    Version 0.1.0. Public-data research note and reproducibility code.
+    Project initiator and maintainer: Shota Moriwaki. ChatGPT-assisted analysis;
+    not peer reviewed. Cite the underlying observations, catalogues and models
+    separately where used.

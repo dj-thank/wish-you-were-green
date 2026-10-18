@@ -1,0 +1,189 @@
+[
+  {
+    "label": "J1323-0129_SDSS_sdss",
+    "path": "results/candidates/J1323-0129_SDSS_sdss.npz",
+    "candidate": "J1323-0129",
+    "source_id": "3638333660492606976",
+    "wdid": "Gaia DR2 3638333660492606976",
+    "kind": "SDSS",
+    "source_url": "https://www.montrealwhitedwarfdatabase.org/WDs/Gaia%20DR2%203638333660492606976/spect.Gaia%20DR2%203638333660492606976.sdss.txt",
+    "raw_sha256": "438152e144c9297cb7d723c4fe59e7ddd16f489e8a8b0412ec90f27d59982901",
+    "parsed_path": "mwdd/parsed/f399c679784df76df96d38e1.npz"
+  },
+  {
+    "label": "J1323-0129_SDSS_panstarrs",
+    "path": "results/candidates/J1323-0129_SDSS_panstarrs.npz",
+    "candidate": "J1323-0129",
+    "source_id": "3638333660492606976",
+    "wdid": "Gaia DR2 3638333660492606976",
+    "kind": "SDSS",
+    "source_url": "https://www.montrealwhitedwarfdatabase.org/WDs/Gaia%20DR2%203638333660492606976/spect.Gaia%20DR2%203638333660492606976.sdss.txt",
+    "raw_sha256": "438152e144c9297cb7d723c4fe59e7ddd16f489e8a8b0412ec90f27d59982901",
+    "parsed_path": "mwdd/parsed/f399c679784df76df96d38e1.npz"
+  },
+  {
+    "label": "J1323-0129_DESI_sdss",
+    "path": "results/candidates/J1323-0129_DESI_sdss.npz",
+    "candidate": "J1323-0129",
+    "source_id": "3638333660492606976",
+    "wdid": "Gaia DR2 3638333660492606976",
+    "kind": "DESI",
+    "source_url": "https://www.montrealwhitedwarfdatabase.org/WDs/Gaia%20DR2%203638333660492606976/spect.Gaia%20DR2%203638333660492606976.DESI_2021-06-05_033745.txt",
+    "raw_sha256": "664326da25fc723a46f4589e0f542259ecdf02a284331e3c6433bc03fd7361e7",
+    "parsed_path": "mwdd/parsed/dd60f12cfabc4f7100cf4710.npz"
+  },
+  {
+    "label": "J1323-0129_DESI_panstarrs",
+    "path": "results/candidates/J1323-0129_DESI_panstarrs.npz",
+    "candidate": "J1323-0129",
+    "source_id": "3638333660492606976",
+    "wdid": "Gaia DR2 3638333660492606976",
+    "kind": "DESI",
+    "source_url": "https://www.montrealwhitedwarfdatabase.org/WDs/Gaia%20DR2%203638333660492606976/spect.Gaia%20DR2%203638333660492606976.DESI_2021-06-05_033745.txt",
+    "raw_sha256": "664326da25fc723a46f4589e0f542259ecdf02a284331e3c6433bc03fd7361e7",
+    "parsed_path": "mwdd/parsed/dd60f12cfabc4f7100cf4710.npz"
+  },
+  {
+    "label": "J0913+4434_Gaia_XP_sdss",
+    "path": "results/candidates/J0913+4434_Gaia_XP_sdss.npz",
+    "candidate": "J0913+4434",
+    "source_id": "818833831355548928",
+    "wdid": "Gaia DR2 818833831355548928",
+    "kind": "Gaia_XP",
+    "source_url": "https://www.montrealwhitedwarfdatabase.org/WDs/Gaia%20DR2%20818833831355548928/spect.Gaia%20DR2%20818833831355548928.XP.txt",
+    "raw_sha256": "752b3f17100b21ba9bc2cede245b986b2ed4fc45ecaed479481664ba9fd397be",
+    "parsed_path": "mwdd/parsed/7820a93754d6f6ddb733216e.npz"
+  },
+  {
+    "label": "J0913+4434_Gaia_XP_panstarrs",
+    "path": "results/candidates/J0913+4434_Gaia_XP_panstarrs.npz",
+    "candidate": "J0913+4434",
+    "source_id": "818833831355548928",
+    "wdid": "Gaia DR2 818833831355548928",
+    "kind": "Gaia_XP",
+    "source_url": "https://www.montrealwhitedwarfdatabase.org/WDs/Gaia%20DR2%20818833831355548928/spect.Gaia%20DR2%20818833831355548928.XP.txt",
+    "raw_sha256": "752b3f17100b21ba9bc2cede245b986b2ed4fc45ecaed479481664ba9fd397be",
+    "parsed_path": "mwdd/parsed/7820a93754d6f6ddb733216e.npz"
+  },
+  {
+    "label": "J0913+4434_DESI_sdss",
+    "path": "results/candidates/J0913+4434_DESI_sdss.npz",
+    "candidate": "J0913+4434",
+    "source_id": "818833831355548928",
+    "wdid": "Gaia DR2 818833831355548928",
+    "kind": "DESI",
+    "source_url": "https://www.montrealwhitedwarfdatabase.org/WDs/Gaia%20DR2%20818833831355548928/spect.Gaia%20DR2%20818833831355548928.DESI_2021-11-01_124231.txt",
+    "raw_sha256": "ad1fece9a566d7156fbc3e285002654ea8d4c6a297944fe3ce143542fb2fecd1",
+    "parsed_path": "mwdd/parsed/191c0043f1e3020902d0ec3e.npz"
+  },
+  {
+    "label": "J0913+4434_DESI_panstarrs",
+    "path": "results/candidates/J0913+4434_DESI_panstarrs.npz",
+    "candidate": "J0913+4434",
+    "source_id": "818833831355548928",
+    "wdid": "Gaia DR2 818833831355548928",
+    "kind": "DESI",
+    "source_url": "https://www.montrealwhitedwarfdatabase.org/WDs/Gaia%20DR2%20818833831355548928/spect.Gaia%20DR2%20818833831355548928.DESI_2021-11-01_124231.txt",
+    "raw_sha256": "ad1fece9a566d7156fbc3e285002654ea8d4c6a297944fe3ce143542fb2fecd1",
+    "parsed_path": "mwdd/parsed/191c0043f1e3020902d0ec3e.npz"
+  },
+  {
+    "label": "J0429-0354_Gaia_XP_panstarrs",
+    "path": "results/candidates/J0429-0354_Gaia_XP_panstarrs.npz",
+    "candidate": "J0429-0354",
+    "source_id": "3204436719718449280",
+    "wdid": "Gaia DR2 3204436719718449280",
+    "kind": "Gaia_XP",
+    "source_url": "https://www.montrealwhitedwarfdatabase.org/WDs/Gaia%20DR2%203204436719718449280/spect.Gaia%20DR2%203204436719718449280.XP.txt",
+    "raw_sha256": "2eed3f86d3ce77bf49a76a81030da03e174e22b3828a620f6465e8fa52f204b0",
+    "parsed_path": "mwdd/parsed/e5c6aed15a6f30fd54c0e802.npz"
+  },
+  {
+    "label": "J0429-0354_DESI_panstarrs",
+    "path": "results/candidates/J0429-0354_DESI_panstarrs.npz",
+    "candidate": "J0429-0354",
+    "source_id": "3204436719718449280",
+    "wdid": "Gaia DR2 3204436719718449280",
+    "kind": "DESI",
+    "source_url": "https://www.montrealwhitedwarfdatabase.org/WDs/Gaia%20DR2%203204436719718449280/spect.Gaia%20DR2%203204436719718449280.DESI_2022-02-19_022934.txt",
+    "raw_sha256": "623d0bafb7aa178b9ea858f5539e375a58d9e26339e840293e130dc42abf1cb1",
+    "parsed_path": "mwdd/parsed/85e353921275b86b7c06ded6.npz"
+  },
+  {
+    "label": "J1258+0106_DESI_sdss",
+    "path": "results/candidates/J1258+0106_DESI_sdss.npz",
+    "candidate": "J1258+0106",
+    "source_id": "3690311908759604608",
+    "wdid": "Gaia DR2 3690311908759604608",
+    "kind": "DESI",
+    "source_url": "https://www.montrealwhitedwarfdatabase.org/WDs/Gaia%20DR2%203690311908759604608/spect.Gaia%20DR2%203690311908759604608.DESI_2022-03-14_083551.txt",
+    "raw_sha256": "d854bfb9f21d915382bc2af901e8b37b4760e8071a7994493c3c2333d425ab2e",
+    "parsed_path": "mwdd/parsed/0e6986746f1f44c0ca830805.npz"
+  },
+  {
+    "label": "J1329+0033_Gaia_XP_panstarrs",
+    "path": "results/candidates/J1329+0033_Gaia_XP_panstarrs.npz",
+    "candidate": "J1329+0033",
+    "source_id": "3711047662972690688",
+    "wdid": "Gaia DR2 3711047662972690688",
+    "kind": "Gaia_XP",
+    "source_url": "https://www.montrealwhitedwarfdatabase.org/WDs/Gaia%20DR2%203711047662972690688/spect.Gaia%20DR2%203711047662972690688.XP.txt",
+    "raw_sha256": "fffb1e01ce6de8162f4675566690bb1ba008e392dfdc524721af07354eb16ae0",
+    "parsed_path": "mwdd/parsed/6dfd3bd892b74517cb4b929a.npz"
+  },
+  {
+    "label": "J1329+0033_DESI_panstarrs",
+    "path": "results/candidates/J1329+0033_DESI_panstarrs.npz",
+    "candidate": "J1329+0033",
+    "source_id": "3711047662972690688",
+    "wdid": "Gaia DR2 3711047662972690688",
+    "kind": "DESI",
+    "source_url": "https://www.montrealwhitedwarfdatabase.org/WDs/Gaia%20DR2%203711047662972690688/spect.Gaia%20DR2%203711047662972690688.DESI_2022-01-28_121455.txt",
+    "raw_sha256": "73121a77e0ee43e68a053145c540ee92fd93aa2ab26dadaf4d6b1335c75c0ce4",
+    "parsed_path": "mwdd/parsed/7288178c202f5c388a0a7979.npz"
+  },
+  {
+    "label": "J1255+6712_Gaia_XP_sdss",
+    "path": "results/candidates/J1255+6712_Gaia_XP_sdss.npz",
+    "candidate": "J1255+6712",
+    "source_id": "1679189040001914880",
+    "wdid": "Gaia DR2 1679189040001914880",
+    "kind": "Gaia_XP",
+    "source_url": "https://www.montrealwhitedwarfdatabase.org/WDs/Gaia%20DR2%201679189040001914880/spect.Gaia%20DR2%201679189040001914880.XP.txt",
+    "raw_sha256": "66c1fda52de8075bd9cf6f7d1b5a29cb0b763372188e61c76b5d0a201b87c50b",
+    "parsed_path": "mwdd/parsed/42e740163bb79547678249fb.npz"
+  },
+  {
+    "label": "J1255+6712_DESI_sdss",
+    "path": "results/candidates/J1255+6712_DESI_sdss.npz",
+    "candidate": "J1255+6712",
+    "source_id": "1679189040001914880",
+    "wdid": "Gaia DR2 1679189040001914880",
+    "kind": "DESI",
+    "source_url": "https://www.montrealwhitedwarfdatabase.org/WDs/Gaia%20DR2%201679189040001914880/spect.Gaia%20DR2%201679189040001914880.DESI_2022-01-21_115017.txt",
+    "raw_sha256": "ea5389ffc12859c17de24a48e6d280ee3c4c8e16e68dda8f430fb685aceacde2",
+    "parsed_path": "mwdd/parsed/35eef998b0129a7b173c0d4c.npz"
+  },
+  {
+    "label": "J1225+4706_Gaia_XP_sdss",
+    "path": "results/candidates/J1225+4706_Gaia_XP_sdss.npz",
+    "candidate": "J1225+4706",
+    "source_id": "1542337839923130624",
+    "wdid": "PSO J186.4406+47.1036",
+    "kind": "Gaia_XP",
+    "source_url": "https://www.montrealwhitedwarfdatabase.org/WDs/PSO%20J186.4406%2B47.1036/spect.PSO%20J186.4406%2B47.1036.XP.txt",
+    "raw_sha256": "6405b070181674788dfcf959515dddc9d2532c233d3f9ff099a4f288e1d4c6aa",
+    "parsed_path": "mwdd/parsed/0afe77bce90d712d0fb290a8.npz"
+  },
+  {
+    "label": "J1225+4706_Gaia_XP_panstarrs",
+    "path": "results/candidates/J1225+4706_Gaia_XP_panstarrs.npz",
+    "candidate": "J1225+4706",
+    "source_id": "1542337839923130624",
+    "wdid": "PSO J186.4406+47.1036",
+    "kind": "Gaia_XP",
+    "source_url": "https://www.montrealwhitedwarfdatabase.org/WDs/PSO%20J186.4406%2B47.1036/spect.PSO%20J186.4406%2B47.1036.XP.txt",
+    "raw_sha256": "6405b070181674788dfcf959515dddc9d2532c233d3f9ff099a4f288e1d4c6aa",
+    "parsed_path": "mwdd/parsed/0afe77bce90d712d0fb290a8.npz"
+  }
+]

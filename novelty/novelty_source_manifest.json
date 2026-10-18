@@ -1,0 +1,277 @@
+[
+  {
+    "path": "candidate_1314632142902900864.html",
+    "bytes": 12287,
+    "sha256": "01cd3b0df8e27e3c68f999e6451930c00453b309c871ff1a75c3b02bad7a2d50"
+  },
+  {
+    "path": "candidate_3204436719718449280.html",
+    "bytes": 17480,
+    "sha256": "83192679c22b2d24034245a5cc63fdfd753933c0b5cbe59516d93a93af100e07"
+  },
+  {
+    "path": "candidate_3638333660492606976.html",
+    "bytes": 18752,
+    "sha256": "fc9c0f8372bd5823f875f3443c6527d2649a4b7b99abccb469607f394679373e"
+  },
+  {
+    "path": "candidate_3690311908759604608.html",
+    "bytes": 14584,
+    "sha256": "a6526640d6418b3cccd3e2c922bb9b5e07748840cf78d30b33d714dea4427f92"
+  },
+  {
+    "path": "candidate_818833831355548928.html",
+    "bytes": 17917,
+    "sha256": "e89aa628a87629a2d6bed488eaff166b238527c55e3a8b695e6178418be7b3e4"
+  },
+  {
+    "path": "hollands2026.html",
+    "bytes": 599893,
+    "sha256": "cf540f314f908930e54fa9abf004ea55514d0c175ebdafdfb22df8944534b2cd"
+  },
+  {
+    "path": "hollands2026_exclusions_unique.csv",
+    "bytes": 79203,
+    "sha256": "c425a014034e935722a9bb546a52e29800253cf719c1f164ce0077eac2a14985"
+  },
+  {
+    "path": "primary_papers/DESI_DR1_catalogue_1.0.csv.gz",
+    "bytes": 13550444,
+    "sha256": "b86d315dcee214d0fd49ecf1012f46e52306144a64da8baf079390b87403eaa5"
+  },
+  {
+    "path": "primary_papers/DESI_DR1_exposures_1.0.csv.gz",
+    "bytes": 13091324,
+    "sha256": "ff17d529c98498568899ff37665f3c7962b25fedfa052fa2772d938a0a6e98ca"
+  },
+  {
+    "path": "primary_papers/DESI_DR1_externalData_1.0.csv.gz",
+    "bytes": 12563293,
+    "sha256": "15c3cfa5fc1fc17328620ab9ed46ea714c1ad9436f2adb5e1b4b053099c4f91a"
+  },
+  {
+    "path": "primary_papers/gaia10arcsec_j0429.tsv",
+    "bytes": 34839,
+    "sha256": "f4d951ffc543ef37854794f0abceb04d67d53e3fdd3c88b1673551ef36db06d9"
+  },
+  {
+    "path": "primary_papers/gaia10arcsec_j0913.tsv",
+    "bytes": 36654,
+    "sha256": "f93157dacbb11b40e5a92846c27a707d69437940037e06adbf9af92dbec08921"
+  },
+  {
+    "path": "primary_papers/gaia10arcsec_j1258.tsv",
+    "bytes": 38468,
+    "sha256": "255a9b0e85405efa49065f7f1cd5b78aa6e581c25616a704572f253afdb44d38"
+  },
+  {
+    "path": "primary_papers/gaia10arcsec_j1323.tsv",
+    "bytes": 34835,
+    "sha256": "dd2ba964b9fdc631547eb216989b9e5fb7338fab2d1cc5d574aa5514b3d3c5eb"
+  },
+  {
+    "path": "primary_papers/gaia10arcsec_j1329.tsv",
+    "bytes": 34827,
+    "sha256": "21b3349c53ce616fc0381f1b01d2168a1c0344283130696b7dbcef60d50eefc7"
+  },
+  {
+    "path": "primary_papers/hollands2017_ReadMe",
+    "bytes": 7259,
+    "sha256": "435ad68cf9971855230fc2301b6e082ab3a47a427e450d096b3e27e248d2c4b3"
+  },
+  {
+    "path": "primary_papers/hollands2017_table3.dat",
+    "bytes": 26103,
+    "sha256": "03475d96e67d3c275fe6461616d3fa60cef4969197c3ffdb2aa9421ddc764277"
+  },
+  {
+    "path": "primary_papers/hollands2017_table6.dat",
+    "bytes": 11160,
+    "sha256": "fc075649856cabb76996b918bd5155f889b1004604b100ced29478732a66872a"
+  },
+  {
+    "path": "primary_papers/kilic2020_ms.tex",
+    "bytes": 102272,
+    "sha256": "0ec510be31f3c7c3fe46a1b3a996eb81d7b5ce9942b8124a4c0b3088c5d7179a"
+  },
+  {
+    "path": "primary_papers/kilic2025_Table2_ALL.txt",
+    "bytes": 294828,
+    "sha256": "43c100503db5d726b66874e776e2c54233c5a5ce8fbe0e3ce107c6250cf43f09"
+  },
+  {
+    "path": "primary_papers/kilic2025_ms.tex",
+    "bytes": 102484,
+    "sha256": "f40e42bd637210be570c5c6f6a5a410095476ab3ae44b5d1d830c47e86ec7e4b"
+  },
+  {
+    "path": "primary_papers/kilic2026_allfitsDQ.pdf",
+    "bytes": 38364325,
+    "sha256": "a23b31bee1ff30a514220facc090fce87202c41f4dbadf9a22b7c1ab4cae1874"
+  },
+  {
+    "path": "primary_papers/kilic2026_allfitsDZ.pdf",
+    "bytes": 54818445,
+    "sha256": "54009f44017ba7a9e2d633f9ae8459d095cc965fc19d8f59f43c270462afc4ad"
+  },
+  {
+    "path": "primary_papers/kilic2026_allfitsDZ.txt",
+    "bytes": 1002,
+    "sha256": "e7548c1f01ad1400baff9b7f48e38064bb20997955b6f3ddbffe212b157290bb"
+  },
+  {
+    "path": "primary_papers/kilic2026_crossref.json",
+    "bytes": 33068,
+    "sha256": "453c793bd9ce278738929e7f6609664868fb0653da43fbc44fdff581dd43f613"
+  },
+  {
+    "path": "primary_papers/kilic2026_ms.tex",
+    "bytes": 106379,
+    "sha256": "5db817f042fc1f03ed60cea9af51b0ecdcd4abf2aeee75dab9acf5cd67276a38"
+  },
+  {
+    "path": "primary_papers/kilic2026_table1.txt",
+    "bytes": 2616810,
+    "sha256": "e42a5250b063f60b01a2732af68f086246de12980f51742ae1cc39be04db60d0"
+  },
+  {
+    "path": "primary_papers/simbad_3204436719718449280.txt",
+    "bytes": 1447,
+    "sha256": "6a9d88719642b1b624d20933f6787307995baf70e26a4c27a537fbf272f2e702"
+  },
+  {
+    "path": "primary_papers/simbad_3690311908759604608.txt",
+    "bytes": 1668,
+    "sha256": "c8bafd63063fe80eae20b3b627b7221669eb401e8f0f63eaf557bcdc6317a449"
+  },
+  {
+    "path": "primary_papers/simbad_j0913.txt",
+    "bytes": 1771,
+    "sha256": "ae2a385e0f5ddde4e6a02267c1ffa8418ebe53496c5350ba6224da74ba1d6c40"
+  },
+  {
+    "path": "primary_papers/simbad_j1323.txt",
+    "bytes": 1747,
+    "sha256": "9b05b6ed85a77d578a22f453fa033633177176d4aacba8cd29ad49958e7c3c9f"
+  },
+  {
+    "path": "primary_papers/simbad_lds4303a.txt",
+    "bytes": 1891,
+    "sha256": "0c6e1f39a579ae013c341ab865138230c6caf6e63d88debd9d157775aafbb3e4"
+  },
+  {
+    "path": "primary_papers/simbad_pink1496.txt",
+    "bytes": 1355,
+    "sha256": "e8485ca5d0efc8cd7685efc470294c7ea7eeab314f4e7256f8c3c8b686f941a7"
+  },
+  {
+    "path": "primary_papers/simbad_pink3711.txt",
+    "bytes": 1426,
+    "sha256": "360f30fdb6f8f2659adef8ffa0ec0daeecabf4eb260aa578c641b98effa8fd7e"
+  },
+  {
+    "path": "primary_papers/swan2026.html",
+    "bytes": 1290466,
+    "sha256": "34f956b1b3f2f077d8d85615b88f256dbcacb1ab97fd457b810f7ee552a38ab5"
+  },
+  {
+    "path": "primary_papers/swan2026_contamination.txt",
+    "bytes": 4848,
+    "sha256": "c5c389d56b283a6071d49214047ebffdbc48421979ef23e2ec5f3e108ded2a10"
+  },
+  {
+    "path": "primary_papers/swan2026_links.json",
+    "bytes": 138323,
+    "sha256": "c67bddb30233467a5fcf09fae30dd6f3a4ad114e3364ca7c0221c2d0724faae8"
+  },
+  {
+    "path": "primary_papers/swan2026_sodium.txt",
+    "bytes": 1414,
+    "sha256": "61866bbdb2fbb9eeb3f8592fbf1d9cda41a52ca829db3c839a2729ef2f3ac2c7"
+  },
+  {
+    "path": "primary_papers/swan2026_supplement.txt",
+    "bytes": 7243,
+    "sha256": "f4376504702415a89b2867a6fe601120adafdafe7405ef1c6551c17d44e1e29b"
+  },
+  {
+    "path": "primary_papers/swan2026_text.txt",
+    "bytes": 372897,
+    "sha256": "25ebd6d40a6214df74cd2c3aa622cc50a8e4aeb0f5afea02256785f15a503d61"
+  },
+  {
+    "path": "primary_papers/swan2026_zenodo20642254.json",
+    "bytes": 4357,
+    "sha256": "028a8f1d126e0f2e02d259d2f94915b1ef5af78b37078b5238f4c06ec2f1a243"
+  },
+  {
+    "path": "primary_papers/vincent2023_ms.tex",
+    "bytes": 65857,
+    "sha256": "e605d98653ebfcf63a4a6758aafa54f186aa9f02b99bbdd661349f608a79ca4e"
+  },
+  {
+    "path": "primary_papers/vincent2023_tables_catalog_cnd.tex",
+    "bytes": 619,
+    "sha256": "c552f0a81009471b412f49c66cf92ac294dcfc2cac878aeb52eff7487113a303"
+  },
+  {
+    "path": "primary_papers/vincent2023_tables_catalog_sdss.tex",
+    "bytes": 817,
+    "sha256": "9a6f23e96f74742f7ab68373c43d377006da1bfc059a8fe0f0aab9d5e056032b"
+  },
+  {
+    "path": "primary_papers/vincent2023_tables_lowsnr.tex",
+    "bytes": 766,
+    "sha256": "3a5cded9df24c0fec33137260fb5e4ed576b83d5c8d27230e00954f447b81165"
+  },
+  {
+    "path": "primary_papers/vincent2023_tables_nn_main_spec.tex",
+    "bytes": 2401,
+    "sha256": "42c9493e81303fc3ab0a6dcdce3b2efd08b648719f03f306e0143efbef2adcf4"
+  },
+  {
+    "path": "primary_papers/vincent2023_tables_specs.tex",
+    "bytes": 823,
+    "sha256": "73e1b031942a378c817cded1b97730654c88cce3a74578b5f033abde60bb3b91"
+  },
+  {
+    "path": "primary_papers/vincent2023_tables_subs.tex",
+    "bytes": 713,
+    "sha256": "3c36f100300aaa03938cb667e3970097c039238cc574e3f7cac80ae76b91c0bc"
+  },
+  {
+    "path": "primary_papers/vincent2024_GSPC-WD.tex",
+    "bytes": 565,
+    "sha256": "8e19c27117c16f363dc0f6969774d341aab07dac8daaa4c0c958059f8e0b1acd"
+  },
+  {
+    "path": "primary_papers/vincent2024_aanda.tex",
+    "bytes": 92232,
+    "sha256": "3b70353d63904181bb41e495684483d41e37157d380ec73441436b5ceea8857d"
+  },
+  {
+    "path": "primary_papers/vincent2024_aanda_templates.txt",
+    "bytes": 29932,
+    "sha256": "6ce7103662361b8e29f4bf1480eeaf266ff0395aaeedb34597ec49d755b3c232"
+  },
+  {
+    "path": "primary_papers/vincent2024_catalogue.tex",
+    "bytes": 1929,
+    "sha256": "cc0161a62cead3a71dde895e3d8472bb596d7e0776e38e92abe830972262cdb0"
+  },
+  {
+    "path": "primary_papers/vincent2024_classifier2.tex",
+    "bytes": 609,
+    "sha256": "c45c17ebce87bd468ed7981b94989368de6d1ba403a126f1c94f73edba4bea13"
+  },
+  {
+    "path": "primary_papers/vincent2024_readme.txt",
+    "bytes": 4468,
+    "sha256": "485f2a651d6ff707d131ba41651f115cf8a3d502b5edf41f5203e050ce9a002e"
+  },
+  {
+    "path": "primary_papers/zenodo20775938.json",
+    "bytes": 14081,
+    "sha256": "68209d06ec247539a210cc57bd7fdc2b0bbf1aae916658573e21f38f34b998b9"
+  }
+]

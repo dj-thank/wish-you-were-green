@@ -1,0 +1,12 @@
+{
+  "spectra_checked": 8505,
+  "nonfinite_flux_spectra": 13,
+  "nonfinite_wavelength_spectra": 0,
+  "nonincreasing_wavelength_spectra": 1,
+  "covers_3800_7800_spectra": 7166,
+  "covers_3600_8300_spectra": 6644,
+  "sigma_supplied_spectra": 1996,
+  "flag_supplied_spectra": 1999,
+  "nonzero_visible_flag_spectra": 1967,
+  "interpretation": "These are numerical input diagnostics, not final science selection or independence tests."
+}

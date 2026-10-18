@@ -1,0 +1,31 @@
+{
+  "catalogue_objects": 163279,
+  "selected_stars": 5548,
+  "downloaded_spectra": 8505,
+  "downloaded_stars": 5548,
+  "status_counts": {
+    "skipped_request_only": 2,
+    "downloaded": 8505,
+    "error": 10
+  },
+  "kind_counts": {
+    "SPY": 117,
+    "SDSS": 2232,
+    "DESI": 1967,
+    "other_ground_or_archive": 690,
+    "Gaia_XP": 3499
+  },
+  "finished_utc": "2026-10-18T00:52:29.994211+00:00",
+  "selection": "All catalogue objects with Q or Z in spectral type and nbOpt>0, plus five known colour baselines and GD229; cold objects prioritised first.",
+  "catalogue_url": "https://www.montrealwhitedwarfdatabase.org/table.json",
+  "catalogue_sha256": "52746f74f4faaddbf0088abde3569e88fd470afe96f2285b7c9f3db3e7f7a0ea",
+  "normalization_applied": false,
+  "max_concurrent_requests": 4,
+  "cold_Q_DZ_selected": 1943,
+  "original_cold_plus_baselines": 1944,
+  "default_selection_including_GD229": 1945,
+  "errors_represent": "Two listed links returned HTTP404; seven listed SDSS files were empty; one GMOS CSV has an inconsistent number of columns and is quarantined as an error.",
+  "raw_source_bytes": 1676766563,
+  "duplicate_numeric_spectra": 3,
+  "numeric_unique_spectra": 8502
+}

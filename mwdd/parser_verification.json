@@ -1,0 +1,5 @@
+{
+  "compared_old_new_parser": 244,
+  "numeric_differences": [],
+  "method": "SHA-256 of exact little-endian float64 wavelength-flux arrays; np.genfromtxt vs np.loadtxt"
+}

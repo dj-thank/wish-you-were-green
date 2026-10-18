@@ -1,0 +1,33 @@
+[
+  {
+    "TableName": "Table1",
+    "Rows": [
+      {
+        "objID": 1237657242969702640,
+        "flags_named": "MAYBE_CR DEBLEND_NOPEAK DEBLENDED_AT_EDGE STATIONARY BAD_MOVING_FIT BINNED1 INTERP COSMIC_RAY MANYPETRO NOPETRO NODEBLEND CHILD BLENDED ",
+        "flags_u_named": "MAYBE_CR AMOMENT_FAINT BRIGHTEST_GALAXY_CHILD DEBLEND_NOPEAK BINNED1 ELLIPFAINT NOPETRO_BIG NOPETRO CHILD BLENDED CANONICAL_CENTER ",
+        "flags_g_named": "MEDIAN_CENTER BINNED1 CHILD BLENDED ",
+        "flags_r_named": "CANONICAL_BAND MEDIAN_CENTER BINNED1 INTERP COSMIC_RAY CHILD BLENDED ",
+        "flags_i_named": "BINNED1 CHILD BLENDED ",
+        "flags_z_named": "MEDIAN_CENTER BINNED1 ELLIPFAINT BAD_RADIAL MANYPETRO CHILD BLENDED "
+      },
+      {
+        "objID": 1237657242969702641,
+        "flags_named": "DEBLEND_NOPEAK DEBLENDED_AT_EDGE STATIONARY BINNED1 DEBLENDED_AS_PSF INTERP COSMIC_RAY MANYPETRO CHILD ",
+        "flags_u_named": "DEBLEND_NOPEAK BINNED1 DEBLENDED_AS_PSF PETROFAINT CHILD CANONICAL_CENTER ",
+        "flags_g_named": "MEDIAN_CENTER BINNED1 DEBLENDED_AS_PSF BAD_RADIAL CHILD ",
+        "flags_r_named": "CANONICAL_BAND BINNED1 DEBLENDED_AS_PSF INTERP COSMIC_RAY CHILD ",
+        "flags_i_named": "BINNED1 DEBLENDED_AS_PSF CHILD ",
+        "flags_z_named": "MEDIAN_CENTER BINNED1 ELLIPFAINT DEBLENDED_AS_PSF MANYPETRO CHILD "
+      }
+    ]
+  },
+  {
+    "TableName": "SqlQuery",
+    "Rows": [
+      {
+        "query": "SELECT objID,dbo.fPhotoFlagsN(flags) AS flags_named,dbo.fPhotoFlagsN(flags_u) AS flags_u_named,dbo.fPhotoFlagsN(flags_g) AS flags_g_named,dbo.fPhotoFlagsN(flags_r) AS flags_r_named,dbo.fPhotoFlagsN(flags_i) AS flags_i_named,dbo.fPhotoFlagsN(flags_z) AS flags_z_named FROM PhotoObjAll WHERE objID IN (1237657242969702641,1237657242969702640)"
+      }
+    ]
+  }
+]

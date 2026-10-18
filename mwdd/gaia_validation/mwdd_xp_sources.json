@@ -1,0 +1,16 @@
+{
+  "j0913": {
+    "source_id": "818833831355548928",
+    "wdid": "Gaia DR2 818833831355548928",
+    "raw_path": "../spectra/7820a93754d6f6ddb733216e.csv",
+    "source_url": "https://www.montrealwhitedwarfdatabase.org/WDs/Gaia%20DR2%20818833831355548928/spect.Gaia%20DR2%20818833831355548928.XP.txt",
+    "sha256": "752b3f17100b21ba9bc2cede245b986b2ed4fc45ecaed479481664ba9fd397be"
+  },
+  "j0429": {
+    "source_id": "3204436719718449280",
+    "wdid": "Gaia DR2 3204436719718449280",
+    "raw_path": "../spectra/e5c6aed15a6f30fd54c0e802.csv",
+    "source_url": "https://www.montrealwhitedwarfdatabase.org/WDs/Gaia%20DR2%203204436719718449280/spect.Gaia%20DR2%203204436719718449280.XP.txt",
+    "sha256": "2eed3f86d3ce77bf49a76a81030da03e174e22b3828a620f6465e8fa52f204b0"
+  }
+}

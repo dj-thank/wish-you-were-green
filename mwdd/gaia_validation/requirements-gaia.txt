@@ -1,0 +1,6 @@
+gaiaxpy==2.1.5
+numpy==2.3.5
+scipy==1.17.0
+pandas==2.2.3
+astropy==8.0.2
+astroquery==0.4.11

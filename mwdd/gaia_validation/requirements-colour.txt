@@ -1,0 +1,6 @@
+numpy==2.5.4
+scipy==1.18.1
+pandas==2.2.3
+astropy==8.0.2
+colour-science==0.4.7
+speclite==1.0.0

@@ -1,0 +1,16 @@
+{
+  "check": "Two sources rerun from a relocated minimal project with relative spectra paths, original code and CIE reference, and no full catalogue/manifest. No original absolute spectrum paths available to the audit script. Exact JSON equality checked.",
+  "results": [
+    {
+      "source": "j0913",
+      "relocated_audit_exit_code": 0,
+      "exact_json_match": true
+    },
+    {
+      "source": "j0429",
+      "relocated_audit_exit_code": 0,
+      "exact_json_match": true
+    }
+  ],
+  "script_sha256": "fac2036a006c819dcd49410ec9935b1820982459902a13d816ed2f868f44615b"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "gaia_neighbours",
+  "url": "https://gea.esac.esa.int/tap-server/tap/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=SELECT+source_id%2Cra%2Cdec%2Cref_epoch%2Cparallax%2Cparallax_error%2Cpmra%2Cpmdec%2Cruwe%2Cduplicated_source%2Cipd_frac_multi_peak%2Cphot_bp_rp_excess_factor%2Cphot_g_mean_mag%2Cphot_bp_mean_mag%2Cphot_rp_mean_mag%2Cphot_bp_n_obs%2Cphot_rp_n_obs%2Cphot_bp_n_contaminated_transits%2Cphot_bp_n_blended_transits%2Cphot_rp_n_contaminated_transits%2Cphot_rp_n_blended_transits%2Cphot_variable_flag%2Chas_xp_continuous%2Chas_xp_sampled%2CDISTANCE%28POINT%28%27ICRS%27%2Cra%2Cdec%29%2CPOINT%28%27ICRS%27%2C138.4015417%2C44.5681725%29%29%2A3600+AS+separation_arcsec+FROM+gaiadr3.gaia_source+WHERE+1%3DCONTAINS%28POINT%28%27ICRS%27%2Cra%2Cdec%29%2CCIRCLE%28%27ICRS%27%2C138.4015417%2C44.5681725%2C0.00277777778%29%29+ORDER+BY+separation_arcsec",
+  "parameters": {
+    "REQUEST": "doQuery",
+    "LANG": "ADQL",
+    "FORMAT": "csv",
+    "QUERY": "SELECT source_id,ra,dec,ref_epoch,parallax,parallax_error,pmra,pmdec,ruwe,duplicated_source,ipd_frac_multi_peak,phot_bp_rp_excess_factor,phot_g_mean_mag,phot_bp_mean_mag,phot_rp_mean_mag,phot_bp_n_obs,phot_rp_n_obs,phot_bp_n_contaminated_transits,phot_bp_n_blended_transits,phot_rp_n_contaminated_transits,phot_rp_n_blended_transits,phot_variable_flag,has_xp_continuous,has_xp_sampled,DISTANCE(POINT('ICRS',ra,dec),POINT('ICRS',138.4015417,44.5681725))*3600 AS separation_arcsec FROM gaiadr3.gaia_source WHERE 1=CONTAINS(POINT('ICRS',ra,dec),CIRCLE('ICRS',138.4015417,44.5681725,0.00277777778)) ORDER BY separation_arcsec"
+  },
+  "path": "sdss/j0913_quality/gaia_neighbours.csv",
+  "bytes": 886,
+  "sha256": "4500a8710193d545950f6d8da48597204212ca1cdee246be41afc234fd3e2465",
+  "retrieved_utc": "2026-10-18T00:54:20.979449+00:00"
+}

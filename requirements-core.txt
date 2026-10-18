@@ -1,0 +1,15 @@
+# Tested with Python 3.12. Separate GaiaXPy environment described in mwdd/gaia_validation/README.md.
+numpy==2.5.4
+scipy==1.18.1
+pandas==2.2.3
+astropy==8.0.2
+colour-science==0.4.7
+speclite==1.0.0
+matplotlib>=3.10
+requests>=2.31
+nbformat>=5.10
+nbclient>=0.10
+ipykernel>=6.29
+nbconvert>=7.16
+beautifulsoup4>=4.12
+lxml>=5

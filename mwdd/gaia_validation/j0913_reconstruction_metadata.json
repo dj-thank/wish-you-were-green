@@ -1,0 +1,166 @@
+{
+  "gaiaxpy_version": "2.1.5",
+  "input_sha256": "0391068af60bbf6ba38ef13619a8999807ee8a1a25d9d98698d6fa6e7acb3bd9",
+  "input_scalar_fields": [
+    {
+      "source_id": "818833831355548928",
+      "solution_id": "4545469030156206081",
+      "bp_basis_function_id": 56,
+      "bp_degrees_of_freedom": 2241,
+      "bp_n_parameters": 55,
+      "bp_n_measurements": 2296,
+      "bp_n_rejected_measurements": 18,
+      "bp_standard_deviation": 1.0207076,
+      "bp_chi_squared": 2334.7725,
+      "bp_n_relevant_bases": 10,
+      "bp_relative_shrinking": 0.9931582,
+      "rp_basis_function_id": 57,
+      "rp_degrees_of_freedom": 2866,
+      "rp_n_parameters": 55,
+      "rp_n_measurements": 2921,
+      "rp_n_rejected_measurements": 27,
+      "rp_standard_deviation": 1.0644038,
+      "rp_chi_squared": 3247.0505,
+      "rp_n_relevant_bases": 2,
+      "rp_relative_shrinking": 0.99647754
+    }
+  ],
+  "flux_unit": "W m^-2 nm^-1",
+  "wavelength_unit": "nm",
+  "normalisation": null,
+  "covariance_method": "Independent exact linear propagation of published coefficient covariance through the same GaiaXPy calibration design matrices and both BP/RP merge weights. BP and RP coefficient errors are treated as independent across bands, as in GaiaXPy. Published formal errors already include band standard deviation. No added systematic calibration covariance.",
+  "calibrations": [
+    {
+      "tag": "full_2nm",
+      "truncation": false,
+      "step_nm": 2.0,
+      "sampling_length": 361,
+      "result_columns": [
+        "source_id",
+        "flux",
+        "flux_error",
+        "correlation"
+      ],
+      "path": "j0913_full_2nm.npz",
+      "sha256": "1f43c14e7ab74d1424d3eff68017e845108853523732242a8a307f5e0377e329",
+      "visible_negative_fraction": 0.09745762711864407,
+      "visible_median_snr": 3.4274775740965673,
+      "independent_flux_max_relative_discrepancy": 5.755398108425101e-18,
+      "independent_error_max_relative_discrepancy": 4.144511308143281e-17,
+      "gaiaxpy_correlation_max_difference": 0.2720268755937191,
+      "gaiaxpy_correlation_eigenvalue_min": -4.635140687950671e-15,
+      "propagated_correlation_eigenvalue_min": -5.653576568064861e-15,
+      "correlation_max_asymmetry": 2.220446049250313e-16
+    },
+    {
+      "tag": "truncated_2nm",
+      "truncation": true,
+      "step_nm": 2.0,
+      "sampling_length": 361,
+      "result_columns": [
+        "source_id",
+        "flux",
+        "flux_error",
+        "correlation"
+      ],
+      "path": "j0913_truncated_2nm.npz",
+      "sha256": "8415a7130e54a4d89a98773b0ff7280ba8eac4a489436da9214e6fb6cebe303f",
+      "visible_negative_fraction": 0.09322033898305085,
+      "visible_median_snr": 15.917570157827555,
+      "independent_flux_max_relative_discrepancy": 2.795380927933299e-17,
+      "independent_error_max_relative_discrepancy": 6.289100699859101e-17,
+      "gaiaxpy_correlation_max_difference": 1.2005222448959232,
+      "gaiaxpy_correlation_eigenvalue_min": -2.3275382644724463,
+      "propagated_correlation_eigenvalue_min": -3.056588944202358e-14,
+      "correlation_max_asymmetry": 2.220446049250313e-16
+    },
+    {
+      "tag": "full_1nm",
+      "truncation": false,
+      "step_nm": 1.0,
+      "sampling_length": 721,
+      "result_columns": [
+        "source_id",
+        "flux",
+        "flux_error",
+        "correlation"
+      ],
+      "path": "j0913_full_1nm.npz",
+      "sha256": "f4ef0952d1da20ccc7655b79129d26ba4627c7c7bde34968d26b4d74342a70bd",
+      "visible_negative_fraction": 0.1040339702760085,
+      "visible_median_snr": 3.4367144434371606,
+      "independent_flux_max_relative_discrepancy": 5.755398108425101e-18,
+      "independent_error_max_relative_discrepancy": 1.6578045232573123e-16,
+      "gaiaxpy_correlation_max_difference": 0.2720268755937191,
+      "gaiaxpy_correlation_eigenvalue_min": -1.024453819025367e-14,
+      "propagated_correlation_eigenvalue_min": -2.3286067693969656e-14,
+      "correlation_max_asymmetry": 2.220446049250313e-16
+    },
+    {
+      "tag": "truncated_1nm",
+      "truncation": true,
+      "step_nm": 1.0,
+      "sampling_length": 721,
+      "result_columns": [
+        "source_id",
+        "flux",
+        "flux_error",
+        "correlation"
+      ],
+      "path": "j0913_truncated_1nm.npz",
+      "sha256": "85ae75bc3ff0fd9cdaf01eabcc0f5db8e9e22867caeef1b877c5337293757a85",
+      "visible_negative_fraction": 0.09554140127388536,
+      "visible_median_snr": 15.891805547285168,
+      "independent_flux_max_relative_discrepancy": 2.795380927933299e-17,
+      "independent_error_max_relative_discrepancy": 6.289100699859101e-17,
+      "gaiaxpy_correlation_max_difference": 1.2005222448959232,
+      "gaiaxpy_correlation_eigenvalue_min": -3.614256813724634,
+      "propagated_correlation_eigenvalue_min": -8.486341043087951e-14,
+      "correlation_max_asymmetry": 2.220446049250313e-16
+    },
+    {
+      "tag": "full_mwdd_grid",
+      "truncation": false,
+      "step_nm": null,
+      "sampling_length": 361,
+      "result_columns": [
+        "source_id",
+        "flux",
+        "flux_error",
+        "correlation"
+      ],
+      "path": "j0913_full_mwdd_grid.npz",
+      "sha256": "7c73318e38a0a14da1f77a0f19268abf81908390e25a04109fe5538d83c8ccf2",
+      "visible_negative_fraction": 0.14671814671814673,
+      "visible_median_snr": 3.3188588954936025,
+      "independent_flux_max_relative_discrepancy": 5.755398108425101e-18,
+      "independent_error_max_relative_discrepancy": 4.144511308143281e-17,
+      "gaiaxpy_correlation_max_difference": 0.27432222629691805,
+      "gaiaxpy_correlation_eigenvalue_min": -4.5481219981104784e-15,
+      "propagated_correlation_eigenvalue_min": -5.021558454183199e-15,
+      "correlation_max_asymmetry": 2.220446049250313e-16
+    },
+    {
+      "tag": "truncated_mwdd_grid",
+      "truncation": true,
+      "step_nm": null,
+      "sampling_length": 361,
+      "result_columns": [
+        "source_id",
+        "flux",
+        "flux_error",
+        "correlation"
+      ],
+      "path": "j0913_truncated_mwdd_grid.npz",
+      "sha256": "0a5c9741ab4404e09c45fdc90603c49f7a8262d21f88ac2c100983b4aee960de",
+      "visible_negative_fraction": 0.13127413127413126,
+      "visible_median_snr": 14.946613129195088,
+      "independent_flux_max_relative_discrepancy": 1.3976904639666495e-17,
+      "independent_error_max_relative_discrepancy": 6.289100699859101e-17,
+      "gaiaxpy_correlation_max_difference": 1.2173777593130932,
+      "gaiaxpy_correlation_eigenvalue_min": -2.422565942779223,
+      "propagated_correlation_eigenvalue_min": -2.7379993939137024e-14,
+      "correlation_max_asymmetry": 2.220446049250313e-16
+    }
+  ]
+}

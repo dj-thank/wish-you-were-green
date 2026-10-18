@@ -1,0 +1,5 @@
+candidate,wdid,kind,published_hex,computed_hex,computed_duv,calibration,qualification
+J0851+1543,WD 0848+159,Gaia_XP,#F1FFF8,#F1FFF7,0.00900170886771,sdss,Observed spectrum closely reproduced
+J1011+2845,LP 315-42,SDSS,#FF8775,#FF8775,-0.0242462792983,panstarrs,Observed spectrum closely reproduced
+J1351+2645,SDSS J135123.86+264546.5,SDSS,#F3FFD2,#F9FFCA,0.0162878186355,panstarrs,Model versus observed spectrum
+J1330+6435,WD 1328+648,SDSS,#DDFFB8,#EDFFA0,0.0290511729602,sdss,Low-S/N observation versus model

@@ -1,0 +1,277 @@
+{
+  "spectra": 1397,
+  "successful_spectra": 1397,
+  "raw_bytes": 279757440,
+  "exact_unique_catalogue_names": 1394,
+  "with_authoritative_photometry": 1390,
+  "photometry_clean_counts": {
+    "0": 46,
+    "1": 1344
+  },
+  "photometry_source_counts": {
+    "SDSS_DR17_FITS_HDU2": 787,
+    "SDSS_DR17_SkyServer_PhotoObjAll": 603
+  },
+  "catalogue_psf_differences_over_0p05mag": 84,
+  "largest_catalogue_psf_differences": [
+    {
+      "spectrum_id": "4651-56008-0936",
+      "name": "SDSS J112518.86+405016.62",
+      "band": "g",
+      "catalogue_mag": 20.143,
+      "sdss_psf_mag": 21.2349796295166,
+      "delta_mag": -1.0919796295166009
+    },
+    {
+      "spectrum_id": "2087-53415-0166",
+      "name": "SDSS J091621.36+254028.42",
+      "band": "g",
+      "catalogue_mag": 17.472,
+      "sdss_psf_mag": 18.35355,
+      "delta_mag": -0.8815499999999972
+    },
+    {
+      "spectrum_id": "6633-56369-0508",
+      "name": "SDSS J121300.58+421932.45",
+      "band": "g",
+      "catalogue_mag": 19.666,
+      "sdss_psf_mag": 20.53114128112793,
+      "delta_mag": -0.8651412811279293
+    },
+    {
+      "spectrum_id": "4602-55644-0366",
+      "name": "SDSS J085217.60+340211.36",
+      "band": "g",
+      "catalogue_mag": 20.44,
+      "sdss_psf_mag": 21.248136520385742,
+      "delta_mag": -0.8081365203857409
+    },
+    {
+      "spectrum_id": "3684-55246-0924",
+      "name": "SDSS J080740.69+493059.72",
+      "band": "g",
+      "catalogue_mag": 20.523,
+      "sdss_psf_mag": 21.305334091186523,
+      "delta_mag": -0.7823340911865238
+    },
+    {
+      "spectrum_id": "4492-55565-0292",
+      "name": "SDSS J074456.22+164041.84",
+      "band": "g",
+      "catalogue_mag": 20.192,
+      "sdss_psf_mag": 20.87993049621582,
+      "delta_mag": -0.6879304962158201
+    },
+    {
+      "spectrum_id": "2957-54807-0040",
+      "name": "SDSS J094454.66+320652.63",
+      "band": "g",
+      "catalogue_mag": 20.109,
+      "sdss_psf_mag": 20.77717,
+      "delta_mag": -0.6681699999999999
+    },
+    {
+      "spectrum_id": "3225-54853-0139",
+      "name": "SDSS J073821.64+422741.58",
+      "band": "g",
+      "catalogue_mag": 20.784,
+      "sdss_psf_mag": 20.13755,
+      "delta_mag": 0.646449999999998
+    },
+    {
+      "spectrum_id": "2065-53678-0516",
+      "name": "SDSS J020137.70+002535.08",
+      "band": "g",
+      "catalogue_mag": 19.539,
+      "sdss_psf_mag": 20.11213,
+      "delta_mag": -0.573129999999999
+    },
+    {
+      "spectrum_id": "1608-53138-0515",
+      "name": "SDSS J114441.93+121829.23",
+      "band": "g",
+      "catalogue_mag": 17.848,
+      "sdss_psf_mag": 18.42073,
+      "delta_mag": -0.57273
+    },
+    {
+      "spectrum_id": "1774-53759-0176",
+      "name": "SDSS J132441.14+135330.70",
+      "band": "g",
+      "catalogue_mag": 18.114,
+      "sdss_psf_mag": 17.55921,
+      "delta_mag": 0.5547900000000006
+    },
+    {
+      "spectrum_id": "5976-56356-0818",
+      "name": "SDSS J122437.07+283852.98",
+      "band": "g",
+      "catalogue_mag": 19.218,
+      "sdss_psf_mag": 19.770586013793945,
+      "delta_mag": -0.5525860137939453
+    },
+    {
+      "spectrum_id": "1701-53142-0440",
+      "name": "SDSS J134520.99+115357.66",
+      "band": "g",
+      "catalogue_mag": 19.382,
+      "sdss_psf_mag": 19.92453,
+      "delta_mag": -0.5425299999999993
+    },
+    {
+      "spectrum_id": "6428-56279-0282",
+      "name": "SDSS J110406.69+203528.61",
+      "band": "g",
+      "catalogue_mag": 17.713,
+      "sdss_psf_mag": 17.212142944335938,
+      "delta_mag": 0.5008570556640635
+    },
+    {
+      "spectrum_id": "2815-54414-0091",
+      "name": "SDSS J205237.99+013325.20",
+      "band": "g",
+      "catalogue_mag": 17.732,
+      "sdss_psf_mag": 18.21747,
+      "delta_mag": -0.4854699999999994
+    },
+    {
+      "spectrum_id": "6584-56568-0212",
+      "name": "SDSS J231333.94+284411.26",
+      "band": "g",
+      "catalogue_mag": 19.636,
+      "sdss_psf_mag": 20.113370895385742,
+      "delta_mag": -0.47737089538574295
+    },
+    {
+      "spectrum_id": "2754-54240-0570",
+      "name": "SDSS J153505.75+124744.20",
+      "band": "g",
+      "catalogue_mag": 15.503,
+      "sdss_psf_mag": 15.98021,
+      "delta_mag": -0.47720999999999947
+    },
+    {
+      "spectrum_id": "5867-56034-0712",
+      "name": "SDSS J131612.87+191806.59",
+      "band": "g",
+      "catalogue_mag": 20.545,
+      "sdss_psf_mag": 21.01154327392578,
+      "delta_mag": -0.46654327392577954
+    },
+    {
+      "spectrum_id": "0901-52641-0584",
+      "name": "SDSS J093944.59+501917.69",
+      "band": "g",
+      "catalogue_mag": 19.477,
+      "sdss_psf_mag": 19.9402,
+      "delta_mag": -0.4632000000000005
+    },
+    {
+      "spectrum_id": "6032-56067-0238",
+      "name": "SDSS J154448.26+455039.12",
+      "band": "g",
+      "catalogue_mag": 17.687,
+      "sdss_psf_mag": 17.23152732849121,
+      "delta_mag": 0.45547267150879023
+    },
+    {
+      "spectrum_id": "4049-55591-0081",
+      "name": "SDSS J132527.98-025922.78",
+      "band": "g",
+      "catalogue_mag": 20.045,
+      "sdss_psf_mag": 20.48535919189453,
+      "delta_mag": -0.44035919189452954
+    },
+    {
+      "spectrum_id": "0919-52409-0358",
+      "name": "SDSS J143007.15-015129.56",
+      "band": "g",
+      "catalogue_mag": 19.048,
+      "sdss_psf_mag": 19.48342,
+      "delta_mag": -0.4354200000000006
+    },
+    {
+      "spectrum_id": "6032-56067-0716",
+      "name": "SDSS J154201.76+465020.29",
+      "band": "g",
+      "catalogue_mag": 20.427,
+      "sdss_psf_mag": 20.853334426879883,
+      "delta_mag": -0.4263344268798832
+    },
+    {
+      "spectrum_id": "2110-53467-0148",
+      "name": "SDSS J133059.26+302953.23",
+      "band": "g",
+      "catalogue_mag": 15.88,
+      "sdss_psf_mag": 16.30118,
+      "delta_mag": -0.4211799999999979
+    },
+    {
+      "spectrum_id": "2079-53379-0577",
+      "name": "SDSS J074059.70+221809.79",
+      "band": "g",
+      "catalogue_mag": 18.162,
+      "sdss_psf_mag": 18.58199,
+      "delta_mag": -0.4199900000000021
+    },
+    {
+      "spectrum_id": "0700-52199-0627",
+      "name": "SDSS J015748.15+003315.08",
+      "band": "g",
+      "catalogue_mag": 19.194,
+      "sdss_psf_mag": 19.5925,
+      "delta_mag": -0.3985000000000021
+    },
+    {
+      "spectrum_id": "2649-54212-0229",
+      "name": "SDSS J125242.68+215333.94",
+      "band": "g",
+      "catalogue_mag": 18.726,
+      "sdss_psf_mag": 19.10865,
+      "delta_mag": -0.3826500000000017
+    },
+    {
+      "spectrum_id": "4402-55514-0422",
+      "name": "SDSS J015748.87+055806.10",
+      "band": "g",
+      "catalogue_mag": 19.162,
+      "sdss_psf_mag": 19.53462791442871,
+      "delta_mag": -0.3726279144287119
+    },
+    {
+      "spectrum_id": "4443-55539-0251",
+      "name": "SDSS J074153.46+314620.46",
+      "band": "g",
+      "catalogue_mag": 20.131,
+      "sdss_psf_mag": 20.501140594482422,
+      "delta_mag": -0.37014059448242165
+    },
+    {
+      "spectrum_id": "8197-57064-0660",
+      "name": "SDSS J085824.95+590012.92",
+      "band": "g",
+      "catalogue_mag": 19.285,
+      "sdss_psf_mag": 18.918893814086914,
+      "delta_mag": 0.3661061859130861
+    }
+  ],
+  "max_name_to_fits_coordinate_difference_arcsec": 2.1948089168198495,
+  "notes": [
+    "Canonical u/g/r/i/z and *_err are retained from Kepler et al. 2019 Table 2; use *_psf_flux_nanomaggies, *_psf_flux_ivar or *_psf_mag and *_psf_mag_err for independently recovered photometry.",
+    "PSF fluxes are in nanomaggies; their inverse variances are in inverse square nanomaggies. No extinction correction has been applied by these scripts.",
+    "FITS coadd flux is in units 1e-17 erg/s/cm2/Angstrom at vacuum wavelengths. NPZ flux_flam is in erg/s/cm2/Angstrom and ivar is in inverse squared physical flux units; raw SDSS-unit arrays are also retained.",
+    "Some published spectral types are explicitly uncertain or composite (colon, slash, +M etc.). Selection does not establish purity or novel colour.",
+    "1397 spectra are observations, not necessarily distinct stars. Exact-name deduplication alone is insufficient when astrometry or rounding differs.",
+    "Full FITS and NPZ arrays retain pixel masks and inverse variance. The parent analysis should assess valid visible-wavelength coverage and bad-pixel handling.",
+    "Colour calculations and literature-novelty exclusion are performed by the parent workflow, not this acquisition script."
+  ],
+  "sources": [
+    "https://doi.org/10.1093/mnras/stz960",
+    "https://cdsarc.cds.unistra.fr/ftp/J/MNRAS/486/2169/ReadMe",
+    "https://www.sdss4.org/dr17/data_access/bulk/",
+    "https://www.sdss4.org/dr17/spectro/spectro_basics/",
+    "https://data.sdss.org/datamodel/files/SPECTRO_REDUX/specObj.html",
+    "https://skyserver.sdss.org/dr17/Support/Api",
+    "https://www.sdss4.org/dr17/algorithms/magnitudes/"
+  ]
+}

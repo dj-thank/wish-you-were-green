@@ -1,0 +1,836 @@
+{
+  "audit_date": "2026-10-18",
+  "comparison_named_unique_objects": 236,
+  "comparison_parent_dz_objects": 231,
+  "conclusion": "New reproducible colour analysis of known stars, with candidates absent from all named comparison-paper tables. Global scientific priority remains provisional.",
+  "coordinate_note": "Candidate positions independently resolved by SIMBAD to J2000 ICRS; no epoch is invented for coordinate-encoded exclusion names.",
+  "sodium_followup_caution": "Section 7.8.7 reports broad Na-D-like DESI absorption confirmed by X-Shooter in WDJ034301.05-011401.58 but not in WDJ220022.42-061430.97. The latter feature occurred in consecutive DESI exposures; its origin remained unresolved. Repeat spectra from the same instrumental setup are therefore insufficient by themselves to prove intrinsic photospheric absorption.",
+  "candidates": [
+    {
+      "label": "J0913+4434",
+      "gaia": "818833831355548928",
+      "simbad": "j0913",
+      "aliases": [
+        "WDJ091336.37+443405.41",
+        "WDJ091336.37+443405.40",
+        "SDSS J091336.38+443405.4",
+        "SDSS J091336.38+443405.3"
+      ],
+      "panel_pdf": "kilic2026_allfitsDZ.pdf",
+      "panel_page": 321,
+      "panel_png": "kilic2026_j0913_page321.png",
+      "interpretation": "Pale yellow-green candidate; broad depression around Na D and blue-flux suppression are reproduced qualitatively by an existing metal-polluted atmosphere model.",
+      "simbad_url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=Gaia+DR3+818833831355548928&output.format=ASCII",
+      "ra_deg": 138.40154180682,
+      "dec_deg": 44.56817263253,
+      "coordinate_frame": "ICRS",
+      "coordinate_epoch": "J2000",
+      "simbad_bibcodes": [
+        "2024A&A...682A...5V",
+        "2023A&A...679A.127G",
+        "2021A&A...649A...6G",
+        "2021MNRAS.508.3877G",
+        "2020ApJ...898...84K",
+        "2019MNRAS.482.4570G",
+        "2019MNRAS.485.5573T"
+      ],
+      "nearest_hollands2026": {
+        "name": "WD J085626.95+451337.01",
+        "separation_arcsec": 11190.823221882694
+      },
+      "nearest_hollands2017": {
+        "name": "SDSS J092450.03+430136.4",
+        "separation_arcsec": 9163.591906938407
+      },
+      "kilic2026_table_rows": [
+        {
+          "line": 7443,
+          "row": "WDJ091336.37+443405.41 818833831355548928 DZ [logCa/He=-9.12]+[logH/He=-2.0] 4662 32 8.010 0.041 0.575 0.035 0 0.000 0.000"
+        }
+      ],
+      "kilic2025_table_rows": [],
+      "known_star": true,
+      "potentially_new_quantity": "CIE human-vision chromaticity and robustness analysis of these public spectra",
+      "global_priority_verified": false,
+      "gaia_neighbour_audit": {
+        "label": "j0913",
+        "gaia_source_id": "818833831355548928",
+        "source_url": "https://vizier.cds.unistra.fr/viz-bin/asu-tsv?-source=I%2F355%2Fgaiadr3&-c=138.4020833333+44.5681305556&-c.rs=10&-out.all=1&-out.max=100",
+        "source_file": "primary_papers/gaia10arcsec_j0913.tsv",
+        "catalogue": "Gaia DR3 I/355/gaiadr3",
+        "astrometric_epoch": 2016.0,
+        "query_radius_arcsec": 10,
+        "rows": [
+          {
+            "Source": "818833831355548800",
+            "RA_ICRS": "138.40377620251",
+            "DE_ICRS": "+44.56724784850",
+            "Gmag": "19.740602",
+            "BPmag": "21.244612",
+            "RPmag": "18.455389",
+            "Plx": "2.0129",
+            "RUWE": "1.073",
+            "IPDfmp": "0",
+            "IPDfow": "0",
+            "Dup": "0",
+            "o_BPmag": "36",
+            "NBPcont": "0",
+            "NBPblend": "1",
+            "o_RPmag": "49",
+            "NRPcont": "0",
+            "NRPblend": "1",
+            "separation_from_target_arcsec": 5.342050795768511,
+            "G_flux_relative_to_target": 0.8947011591426918
+          },
+          {
+            "Source": "818833831355548928",
+            "RA_ICRS": "138.40210300324",
+            "DE_ICRS": "+44.56813161736",
+            "Gmag": "19.619797",
+            "BPmag": "20.179922",
+            "RPmag": "18.969118",
+            "Plx": "12.7362",
+            "RUWE": "0.992",
+            "IPDfmp": "0",
+            "IPDfow": "0",
+            "Dup": "0",
+            "o_BPmag": "48",
+            "NBPcont": "0",
+            "NBPblend": "4",
+            "o_RPmag": "48",
+            "NRPcont": "0",
+            "NRPblend": "4",
+            "separation_from_target_arcsec": 0.0,
+            "G_flux_relative_to_target": 1.0
+          }
+        ],
+        "neighbour_count": 1,
+        "limitation": "Only catalogued Gaia DR3 sources in this cone are covered. No absence of unresolved companions, galaxies or fainter sources is inferred. Blended-transit counts are quality flags, not a measured contamination fraction."
+      },
+      "swan2026_audit": {
+        "label": "J0913+4434",
+        "gaia_source_id": "818833831355548928",
+        "WDJname": "WDJ091336.37+443405.41",
+        "swan_specType": "DZ",
+        "swan_specType_confidence": 0.9090909090909092,
+        "nExposures": 1,
+        "nNeighbours_DESI": 6,
+        "neighbour_to_target_flux_DESI": 3.1249436026955074e-14,
+        "neighbour_to_target_flux_PanSTARRS": 1.0522015426392375e-05,
+        "neighbour_to_target_flux_SDSS": 5.346537044726651e-06,
+        "neighbour_to_target_flux_Gaia_G": 0.0,
+        "neighbour_to_target_flux_Gaia_BPRP": 3.035589287944712e-05,
+        "exposure_seeing_arcsec": "0.8095058990275189",
+        "exposure_MJD": "59519.52952731",
+        "exposure_ids": "106892",
+        "catalogue_fractionMasked_Z": 0.001041305102395
+      }
+    },
+    {
+      "label": "J1323-0129",
+      "gaia": "3638333660492606976",
+      "simbad": "j1323",
+      "aliases": [
+        "WDJ132312.76-012923.67",
+        "SDSS J132312.76-012923.8",
+        "SDSS J132312.75-012923.8"
+      ],
+      "panel_pdf": "kilic2026_allfitsDZ.pdf",
+      "panel_page": 572,
+      "panel_png": "kilic2026_j1323_page572.png",
+      "interpretation": "Yellow candidate with tentative DZ: classification. Atmospheric parameters differ substantially between the 2025 and 2026 fits; the spectrum-derived colour does not require choosing either parameter set.",
+      "simbad_url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=Gaia+DR3+3638333660492606976&output.format=ASCII",
+      "ra_deg": 200.80315776048,
+      "dec_deg": -1.4899123106,
+      "coordinate_frame": "ICRS",
+      "coordinate_epoch": "J2000",
+      "simbad_bibcodes": [
+        "2021A&A...649A...6G",
+        "2021MNRAS.508.3877G",
+        "2020ApJ...898...84K",
+        "2019MNRAS.482.4570G",
+        "2019MNRAS.485.5573T"
+      ],
+      "nearest_hollands2026": {
+        "name": "WD J132144.04-023751.47",
+        "separation_arcsec": 4317.6959806520845
+      },
+      "nearest_hollands2017": {
+        "name": "SDSS J132144.04-023751.4",
+        "separation_arcsec": 4317.629386539723
+      },
+      "kilic2026_table_rows": [
+        {
+          "line": 13201,
+          "row": "WDJ132312.76-012923.67 3638333660492606976 DZ: [logCa/He=-11.87]+[logH/He=-1.0] 3648 16 7.381 0.061 0.268 0.030 0 0.000 0.000"
+        }
+      ],
+      "kilic2025_table_rows": [
+        {
+          "line": 1817,
+          "row": "J132312.76-012923.8 3638333660492606976 DZ: He [Ca/He=-9.94] 4262 34 0.445 0.040 7.784 0.054 23.378"
+        }
+      ],
+      "known_star": true,
+      "potentially_new_quantity": "CIE human-vision chromaticity and robustness analysis of these public spectra",
+      "global_priority_verified": false,
+      "gaia_neighbour_audit": {
+        "label": "j1323",
+        "gaia_source_id": "3638333660492606976",
+        "source_url": "https://vizier.cds.unistra.fr/viz-bin/asu-tsv?-source=I%2F355%2Fgaiadr3&-c=200.8030833333+-1.490425&-c.rs=10&-out.all=1&-out.max=100",
+        "source_file": "primary_papers/gaia10arcsec_j1323.tsv",
+        "catalogue": "Gaia DR3 I/355/gaiadr3",
+        "astrometric_epoch": 2016.0,
+        "query_radius_arcsec": 10,
+        "rows": [
+          {
+            "Source": "3638333660492606976",
+            "RA_ICRS": "200.80308349614",
+            "DE_ICRS": "-01.49042513540",
+            "Gmag": "19.772580",
+            "BPmag": "20.308210",
+            "RPmag": "19.082518",
+            "Plx": "12.8313",
+            "RUWE": "0.965",
+            "IPDfmp": "0",
+            "IPDfow": "0",
+            "Dup": "0",
+            "o_BPmag": "39",
+            "NBPcont": "0",
+            "NBPblend": "0",
+            "o_RPmag": "39",
+            "NRPcont": "0",
+            "NRPblend": "0",
+            "separation_from_target_arcsec": 0.0,
+            "G_flux_relative_to_target": 1.0
+          }
+        ],
+        "neighbour_count": 0,
+        "limitation": "Only catalogued Gaia DR3 sources in this cone are covered. No absence of unresolved companions, galaxies or fainter sources is inferred. Blended-transit counts are quality flags, not a measured contamination fraction."
+      },
+      "swan2026_audit": {
+        "label": "J1323-0129",
+        "gaia_source_id": "3638333660492606976",
+        "WDJname": "WDJ132312.76-012923.67",
+        "swan_specType": "DZ",
+        "swan_specType_confidence": 0.7657531818827245,
+        "nExposures": 1,
+        "nNeighbours_DESI": 5,
+        "neighbour_to_target_flux_DESI": 0.0,
+        "neighbour_to_target_flux_PanSTARRS": 2.470821562768092e-30,
+        "neighbour_to_target_flux_SDSS": 2.1492752558737458e-29,
+        "neighbour_to_target_flux_Gaia_G": 0.0,
+        "neighbour_to_target_flux_Gaia_BPRP": 2.105267363811396e-31,
+        "exposure_seeing_arcsec": "1.1583782464059724",
+        "exposure_MJD": "59370.15122237",
+        "exposure_ids": "91167",
+        "catalogue_fractionMasked_Z": 0.0048594238111766
+      }
+    },
+    {
+      "label": "J1329+0033",
+      "gaia": "3711047662972690688",
+      "simbad": "pink3711",
+      "aliases": [
+        "WDJ132942.69+003336.60",
+        "2QZ J132942.7+003340"
+      ],
+      "panel_pdf": "kilic2026_allfitsDQ.pdf",
+      "panel_page": 375,
+      "panel_png": "kilic2026_j1329_page375.png",
+      "interpretation": "Pink candidate with strong Swan-band pattern fitted by an existing DQ model. SIMBAD lists an older uncertain DA: XP classification; the DESI analysis classifies it DQ.",
+      "simbad_url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=Gaia+DR3+3711047662972690688&output.format=ASCII",
+      "ra_deg": 202.42786481165,
+      "dec_deg": 0.56016973668,
+      "coordinate_frame": "ICRS",
+      "coordinate_epoch": "J2000",
+      "simbad_bibcodes": [
+        "2024A&A...682A...5V",
+        "2021A&A...649A...6G",
+        "2021MNRAS.508.3877G",
+        "2019MNRAS.482.4570G",
+        "2004MNRAS.349.1397C",
+        "2001MNRAS.322L..29C"
+      ],
+      "nearest_hollands2026": {
+        "name": "WD J133359.84+001655.03",
+        "separation_arcsec": 3985.096276009317
+      },
+      "nearest_hollands2017": {
+        "name": "SDSS J132005.53+020419.0",
+        "separation_arcsec": 10223.778250022495
+      },
+      "kilic2026_table_rows": [
+        {
+          "line": 13366,
+          "row": "WDJ132942.69+003336.60 3711047662972690688 DQ [logC/He=-6.14] 5592 22 8.179 0.061 0.683 0.056 5593 8.179 0.684"
+        }
+      ],
+      "kilic2025_table_rows": [],
+      "known_star": true,
+      "potentially_new_quantity": "CIE human-vision chromaticity and robustness analysis of these public spectra",
+      "global_priority_verified": false,
+      "gaia_neighbour_audit": {
+        "label": "j1329",
+        "gaia_source_id": "3711047662972690688",
+        "source_url": "https://vizier.cds.unistra.fr/viz-bin/asu-tsv?-source=I%2F355%2Fgaiadr3&-c=202.4277+0.55964&-c.rs=10&-out.all=1&-out.max=100",
+        "source_file": "primary_papers/gaia10arcsec_j1329.tsv",
+        "catalogue": "Gaia DR3 I/355/gaiadr3",
+        "astrometric_epoch": 2016.0,
+        "query_radius_arcsec": 10,
+        "rows": [
+          {
+            "Source": "3711047662972690688",
+            "RA_ICRS": "202.42771312194",
+            "DE_ICRS": "+00.55963910805",
+            "Gmag": "19.840603",
+            "BPmag": "20.356874",
+            "RPmag": "19.241180",
+            "Plx": "9.1648",
+            "RUWE": "1.079",
+            "IPDfmp": "1",
+            "IPDfow": "0",
+            "Dup": "0",
+            "o_BPmag": "47",
+            "NBPcont": "0",
+            "NBPblend": "2",
+            "o_RPmag": "46",
+            "NRPcont": "0",
+            "NRPblend": "0",
+            "separation_from_target_arcsec": 0.0,
+            "G_flux_relative_to_target": 1.0
+          }
+        ],
+        "neighbour_count": 0,
+        "limitation": "Only catalogued Gaia DR3 sources in this cone are covered. No absence of unresolved companions, galaxies or fainter sources is inferred. Blended-transit counts are quality flags, not a measured contamination fraction."
+      },
+      "swan2026_audit": {
+        "label": "J1329+0033",
+        "gaia_source_id": "3711047662972690688",
+        "WDJname": "WDJ132942.69+003336.60",
+        "swan_specType": "DQ",
+        "swan_specType_confidence": 1.0,
+        "nExposures": 2,
+        "nNeighbours_DESI": 2,
+        "neighbour_to_target_flux_DESI": 8.292924416506698e-37,
+        "neighbour_to_target_flux_PanSTARRS": 3.658319020621624e-24,
+        "neighbour_to_target_flux_SDSS": 2.517196926955602e-22,
+        "neighbour_to_target_flux_Gaia_G": 0.0,
+        "neighbour_to_target_flux_Gaia_BPRP": 1.6342086498484415e-25,
+        "exposure_seeing_arcsec": "1.8912097789554336;0.9576157365698404",
+        "exposure_MJD": "59607.5103631;59650.41160872",
+        "exposure_ids": "120460;125840",
+        "catalogue_fractionMasked_Z": 0.503123915307185
+      }
+    },
+    {
+      "label": "J1401+3903",
+      "gaia": "1496016553207149952",
+      "simbad": "pink1496",
+      "aliases": [
+        "WDJ140155.42+390326.47"
+      ],
+      "panel_pdf": "kilic2026_allfitsDQ.pdf",
+      "panel_page": 404,
+      "panel_png": "kilic2026_j1401_page404.png",
+      "interpretation": "Pink candidate with strong Swan-band pattern fitted by an existing DQ model; DQ classification also appears in the earlier Gaia XP catalogue.",
+      "simbad_url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=Gaia+DR3+1496016553207149952&output.format=ASCII",
+      "ra_deg": 210.48092575304003,
+      "dec_deg": 39.057353155419996,
+      "coordinate_frame": "ICRS",
+      "coordinate_epoch": "J2000",
+      "simbad_bibcodes": [
+        "2024A&A...682A...5V",
+        "2021MNRAS.508.3877G",
+        "2019MNRAS.482.4570G"
+      ],
+      "nearest_hollands2026": {
+        "name": "WD J135516.62+363612.70",
+        "separation_arcsec": 10017.431357707392
+      },
+      "nearest_hollands2017": {
+        "name": "SDSS J140137.31+365909.9",
+        "separation_arcsec": 7459.641358930063
+      },
+      "kilic2026_table_rows": [
+        {
+          "line": 14207,
+          "row": "WDJ140155.42+390326.47 1496016553207149952 DQ [logC/He=-6.00] 5593 35 8.104 0.038 0.635 0.034 5594 8.105 0.635"
+        }
+      ],
+      "kilic2025_table_rows": [],
+      "known_star": true,
+      "potentially_new_quantity": "CIE human-vision chromaticity and robustness analysis of these public spectra",
+      "global_priority_verified": false,
+      "swan2026_audit": {
+        "label": "J1401+3903",
+        "gaia_source_id": "1496016553207149952",
+        "WDJname": "WDJ140155.42+390326.47",
+        "swan_specType": "DQ",
+        "swan_specType_confidence": 1.0,
+        "nExposures": 1,
+        "nNeighbours_DESI": 2,
+        "neighbour_to_target_flux_DESI": 0.0,
+        "neighbour_to_target_flux_PanSTARRS": 0.0,
+        "neighbour_to_target_flux_SDSS": 0.0,
+        "neighbour_to_target_flux_Gaia_G": 0.0,
+        "neighbour_to_target_flux_Gaia_BPRP": 0.0,
+        "exposure_seeing_arcsec": "1.0302681133179736",
+        "exposure_MJD": "59386.15304133",
+        "exposure_ids": "95393",
+        "catalogue_fractionMasked_Z": 0.003123915307185
+      }
+    },
+    {
+      "label": "J0429-0354",
+      "gaia": "3204436719718449280",
+      "simbad": "3204436719718449280",
+      "aliases": [
+        "WDJ042944.71-035422.00",
+        "WDJ042944.7-035422.00"
+      ],
+      "panel_pdf": "kilic2026_allfitsDZ.pdf",
+      "panel_page": 174,
+      "panel_png": "kilic2026_j0429_page174.png",
+      "interpretation": "Second pale-green candidate, with Gaia XP and DESI spectra and a previously published DZ atmosphere fit. No other Gaia DR3 source is catalogued within the queried10arcsec cone.",
+      "simbad_url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=Gaia+DR3+3204436719718449280&output.format=ASCII",
+      "ra_deg": 67.43627334441001,
+      "dec_deg": -3.90611310005,
+      "coordinate_frame": "ICRS",
+      "coordinate_epoch": "J2000",
+      "simbad_bibcodes": [
+        "2024A&A...682A...5V",
+        "2023A&A...679A.127G",
+        "2023MNRAS.518.5106J",
+        "2021A&A...649A...6G",
+        "2021MNRAS.508.3877G",
+        "2019MNRAS.482.4570G",
+        "2019MNRAS.485.5573T",
+        "2018MNRAS.480.4505J"
+      ],
+      "nearest_hollands2026": {
+        "name": "WD J041521.80-073929.20",
+        "separation_arcsec": 18660.614582763243
+      },
+      "nearest_hollands2017": {
+        "name": "SDSS J051212.78-050503.4",
+        "separation_arcsec": 38337.86327386973
+      },
+      "kilic2026_table_rows": [
+        {
+          "line": 4087,
+          "row": "WDJ042944.71-035422.00 3204436719718449280 DZ [logCa/He=-9.56]+[logH/He=-6.0] 5288 33 7.924 0.028 0.524 0.023 0 0.000 0.000"
+        }
+      ],
+      "kilic2025_table_rows": [],
+      "known_star": true,
+      "potentially_new_quantity": "CIE human-vision chromaticity and robustness analysis of these public spectra",
+      "global_priority_verified": false,
+      "gaia_neighbour_audit": {
+        "label": "j0429",
+        "gaia_source_id": "3204436719718449280",
+        "source_url": "https://vizier.cds.unistra.fr/viz-bin/asu-tsv?-source=I%2F355%2Fgaiadr3&-c=67.4362916667+-3.90650555556&-c.rs=10&-out.all=1&-out.max=100",
+        "source_file": "primary_papers/gaia10arcsec_j0429.tsv",
+        "catalogue": "Gaia DR3 I/355/gaiadr3",
+        "astrometric_epoch": 2016.0,
+        "query_radius_arcsec": 10,
+        "rows": [
+          {
+            "Source": "3204436719718449280",
+            "RA_ICRS": "067.43628526183",
+            "DE_ICRS": "-03.90650606101",
+            "Gmag": "18.890920",
+            "BPmag": "19.233967",
+            "RPmag": "18.441416",
+            "Plx": "12.0347",
+            "RUWE": "0.998",
+            "IPDfmp": "0",
+            "IPDfow": "0",
+            "Dup": "0",
+            "o_BPmag": "30",
+            "NBPcont": "0",
+            "NBPblend": "1",
+            "o_RPmag": "30",
+            "NRPcont": "0",
+            "NRPblend": "1",
+            "separation_from_target_arcsec": 0.0,
+            "G_flux_relative_to_target": 1.0
+          }
+        ],
+        "neighbour_count": 0,
+        "limitation": "Only catalogued Gaia DR3 sources in this cone are covered. No absence of unresolved companions, galaxies or fainter sources is inferred. Blended-transit counts are quality flags, not a measured contamination fraction."
+      },
+      "swan2026_audit": {
+        "label": "J0429-0354",
+        "gaia_source_id": "3204436719718449280",
+        "WDJname": "WDJ042944.71-035422.00",
+        "swan_specType": "DZ",
+        "swan_specType_confidence": 0.85,
+        "nExposures": 1,
+        "nNeighbours_DESI": 5,
+        "neighbour_to_target_flux_DESI": 0.0,
+        "neighbour_to_target_flux_PanSTARRS": 1.006227530083581e-27,
+        "neighbour_to_target_flux_SDSS": 6.993563195695968e-26,
+        "neighbour_to_target_flux_Gaia_G": 0.0,
+        "neighbour_to_target_flux_Gaia_BPRP": 3.079972496130789e-29,
+        "exposure_seeing_arcsec": "1.1572496861048602",
+        "exposure_MJD": "59629.10387012",
+        "exposure_ids": "122747",
+        "catalogue_fractionMasked_Z": 0.005206525511975
+      }
+    },
+    {
+      "label": "J1258+0106 / LP616-53",
+      "gaia": "3690311908759604608",
+      "simbad": "3690311908759604608",
+      "aliases": [
+        "WDJ125858.25+010632.45",
+        "LP 616-53",
+        "NLTT 32489",
+        "LSPM J1258+0106S",
+        "WDS J12589+0107B",
+        "LDS 4303B"
+      ],
+      "panel_pdf": "kilic2026_allfitsDZ.pdf",
+      "panel_page": 551,
+      "panel_png": "kilic2026_j1258_page551.png",
+      "interpretation": "Downgraded because of blending risk: bright visual companion LP616-54 only2.34arcsec away atJ2000, plus another Gaia entry about1.29arcsec away. This is not a clean headline green-white-dwarf result.",
+      "simbad_url": "https://simbad.cds.unistra.fr/simbad/sim-id?Ident=Gaia+DR3+3690311908759604608&output.format=ASCII",
+      "ra_deg": 194.74270447320916,
+      "dec_deg": 1.1090104553011113,
+      "coordinate_frame": "ICRS",
+      "coordinate_epoch": "J2000",
+      "simbad_bibcodes": [
+        "2021A&A...649A...6G",
+        "2021MNRAS.508.3877G",
+        "2019MNRAS.482.4570G",
+        "2005AJ....129.1483L",
+        "1995yCat.1098....0L"
+      ],
+      "nearest_hollands2026": {
+        "name": "WD J130009.06+032841.06",
+        "separation_arcsec": 8594.394883965226
+      },
+      "nearest_hollands2017": {
+        "name": "SDSS J130830.03+025844.5",
+        "separation_arcsec": 10898.648759099171
+      },
+      "kilic2026_table_rows": [
+        {
+          "line": 12580,
+          "row": "WDJ125858.25+010632.45 3690311908759604608 DZ [logCa/He=-9.23]+[logH/He=-30.0] 5347 92 8.325 0.051 0.781 0.047 0 0.000 0.000"
+        }
+      ],
+      "kilic2025_table_rows": [],
+      "known_star": true,
+      "potentially_new_quantity": "CIE human-vision chromaticity and robustness analysis of these public spectra",
+      "global_priority_verified": false,
+      "gaia_neighbour_audit": {
+        "label": "j1258",
+        "gaia_source_id": "3690311908759604608",
+        "source_url": "https://vizier.cds.unistra.fr/viz-bin/asu-tsv?-source=I%2F355%2Fgaiadr3&-c=194.743208333+1.10759722222&-c.rs=10&-out.all=1&-out.max=100",
+        "source_file": "primary_papers/gaia10arcsec_j1258.tsv",
+        "catalogue": "Gaia DR3 I/355/gaiadr3",
+        "astrometric_epoch": 2016.0,
+        "query_radius_arcsec": 10,
+        "rows": [
+          {
+            "Source": "3690311908759604480",
+            "RA_ICRS": "194.74350541176",
+            "DE_ICRS": "+01.10782098995",
+            "Gmag": "19.404352",
+            "BPmag": "",
+            "RPmag": "",
+            "Plx": "",
+            "RUWE": "",
+            "IPDfmp": "0",
+            "IPDfow": "4",
+            "Dup": "0",
+            "o_BPmag": "0",
+            "NBPcont": "",
+            "NBPblend": "",
+            "o_RPmag": "0",
+            "NRPcont": "",
+            "NRPblend": "",
+            "separation_from_target_arcsec": 1.2866098816798728,
+            "G_flux_relative_to_target": 0.39798178907466825
+          },
+          {
+            "Source": "3690311908759604608",
+            "RA_ICRS": "194.74322620438",
+            "DE_ICRS": "+01.10759782823",
+            "Gmag": "18.404010",
+            "BPmag": "18.707895",
+            "RPmag": "17.681790",
+            "Plx": "18.7008",
+            "RUWE": "0.970",
+            "IPDfmp": "0",
+            "IPDfow": "0",
+            "Dup": "0",
+            "o_BPmag": "7",
+            "NBPcont": "0",
+            "NBPblend": "5",
+            "o_RPmag": "6",
+            "NRPcont": "0",
+            "NRPblend": "5",
+            "separation_from_target_arcsec": 0.0,
+            "G_flux_relative_to_target": 1.0
+          },
+          {
+            "Source": "3690311908760279808",
+            "RA_ICRS": "194.74377179907",
+            "DE_ICRS": "+01.10793122913",
+            "Gmag": "17.252740",
+            "BPmag": "19.008140",
+            "RPmag": "15.784513",
+            "Plx": "18.8667",
+            "RUWE": "1.585",
+            "IPDfmp": "1",
+            "IPDfow": "0",
+            "Dup": "0",
+            "o_BPmag": "33",
+            "NBPcont": "0",
+            "NBPblend": "33",
+            "o_RPmag": "31",
+            "NRPcont": "0",
+            "NRPblend": "31",
+            "separation_from_target_arcsec": 2.301519352219022,
+            "G_flux_relative_to_target": 2.887406966700922
+          }
+        ],
+        "neighbour_count": 2,
+        "limitation": "Only catalogued Gaia DR3 sources in this cone are covered. No absence of unresolved companions, galaxies or fainter sources is inferred. Blended-transit counts are quality flags, not a measured contamination fraction."
+      },
+      "swan2026_audit": {
+        "label": "J1258+0106 / LP616-53",
+        "gaia_source_id": "3690311908759604608",
+        "WDJname": "WDJ125858.25+010632.45",
+        "swan_specType": "WD+MS",
+        "swan_specType_confidence": 0.6113736519739955,
+        "nExposures": 1,
+        "nNeighbours_DESI": 9,
+        "neighbour_to_target_flux_DESI": 0.0307208415454045,
+        "neighbour_to_target_flux_PanSTARRS": 0.7652780342274895,
+        "neighbour_to_target_flux_SDSS": 0.7063885771493613,
+        "neighbour_to_target_flux_Gaia_G": 0.0,
+        "neighbour_to_target_flux_Gaia_BPRP": 0.8599886082217859,
+        "exposure_seeing_arcsec": "1.5454575735315532",
+        "exposure_MJD": "59652.35823236",
+        "exposure_ids": "126067",
+        "catalogue_fractionMasked_Z": 0.0055536272127733
+      }
+    }
+  ],
+  "full_text_checks": {
+    "kilic2020_ms.tex": {
+      "word_counts": {
+        "CIE": 0,
+        "chromaticity": 0,
+        "chromaticities": 0,
+        "sRGB": 0,
+        "perceived": 0,
+        "pink": 0,
+        "green": 4,
+        "naked eye": 0,
+        "human eye": 0
+      },
+      "green_contexts": [
+        {
+          "line": 82,
+          "text": "298 DA white dwarfs with $T_{\\rm eff}\\geq 13,000$ K in the magnitude limited Palomar-Green Survey \\citep{green86},"
+        },
+        {
+          "line": 726,
+          "text": "being the Balmer jump visible in the $u-g$ color for DA white dwarfs. On the other hand, the majority of the DQ (green)"
+        },
+        {
+          "line": 738,
+          "text": "\\caption{A color-color diagram of the DA (blue), DB (black), DC (red), DQ (green), and DZ (magenta) white dwarfs in"
+        },
+        {
+          "line": 874,
+          "text": "\\citet{liebert05} interpreted the excess of massive white dwarfs in the Palomar-Green Survey of DA white dwarfs as"
+        }
+      ],
+      "interpretation": "Whole-word matching avoids counting CIE inside words such as efficiency. Green occurrences were checked and are author/survey names or plotting colours, not perceived stellar-colour measurements."
+    },
+    "kilic2025_ms.tex": {
+      "word_counts": {
+        "CIE": 0,
+        "chromaticity": 0,
+        "chromaticities": 0,
+        "sRGB": 0,
+        "perceived": 0,
+        "pink": 0,
+        "green": 3,
+        "naked eye": 0,
+        "human eye": 0
+      },
+      "green_contexts": [
+        {
+          "line": 448,
+          "text": "\\caption{Color-magnitude diagrams of the DB/DC (orange), DQ (green stars), DZ (red squares), along with the evolutionary sequences"
+        },
+        {
+          "line": 532,
+          "text": "K (green), and $T_{\\rm eff}\\geq5000$ K (red histogram) based on 2108 stars best-fit with pure H atmosphere models. The figure also includes the results from fitting two"
+        },
+        {
+          "line": 541,
+          "text": "\\caption{DA white dwarf mass distribution for $T_{\\rm eff}\\geq10,000$ K (blue), $T_{\\rm eff}\\geq6000$ K (green), and $T_{\\rm eff}\\geq5000$ K (red).}"
+        }
+      ],
+      "interpretation": "Whole-word matching avoids counting CIE inside words such as efficiency. Green occurrences were checked and are author/survey names or plotting colours, not perceived stellar-colour measurements."
+    },
+    "kilic2026_ms.tex": {
+      "word_counts": {
+        "CIE": 0,
+        "chromaticity": 0,
+        "chromaticities": 0,
+        "sRGB": 0,
+        "perceived": 0,
+        "pink": 0,
+        "green": 3,
+        "naked eye": 0,
+        "human eye": 0
+      },
+      "green_contexts": [
+        {
+          "line": 28,
+          "text": "\\author[0000-0002-0948-4801]{Matthew J. Green}"
+        },
+        {
+          "line": 30,
+          "text": "\\email{matthew.j.green-2@ou.edu}"
+        },
+        {
+          "line": 664,
+          "text": "\\caption{Spectroscopic parameters of our DA white dwarf sample in the ELM region. Stars mark the previously known ELM white dwarf binaries, and green dots mark the 29 ELM white dwarf candidates that are prime targets for follow-up radial velocity observations.}"
+        }
+      ],
+      "interpretation": "Whole-word matching avoids counting CIE inside words such as efficiency. Green occurrences were checked and are author/survey names or plotting colours, not perceived stellar-colour measurements."
+    },
+    "vincent2023_ms.tex": {
+      "word_counts": {
+        "CIE": 0,
+        "chromaticity": 0,
+        "chromaticities": 0,
+        "sRGB": 0,
+        "perceived": 0,
+        "pink": 0,
+        "green": 0,
+        "naked eye": 0,
+        "human eye": 0
+      },
+      "green_contexts": [],
+      "interpretation": "Whole-word matching avoids counting CIE inside words such as efficiency. Green occurrences were checked and are author/survey names or plotting colours, not perceived stellar-colour measurements."
+    },
+    "vincent2024_aanda.tex": {
+      "word_counts": {
+        "CIE": 0,
+        "chromaticity": 0,
+        "chromaticities": 0,
+        "sRGB": 0,
+        "perceived": 0,
+        "pink": 0,
+        "green": 0,
+        "naked eye": 0,
+        "human eye": 0
+      },
+      "green_contexts": [],
+      "interpretation": "Whole-word matching avoids counting CIE inside words such as efficiency. Green occurrences were checked and are author/survey names or plotting colours, not perceived stellar-colour measurements."
+    },
+    "swan2026_text.txt": {
+      "word_counts": {
+        "CIE": 0,
+        "chromaticity": 0,
+        "chromaticities": 0,
+        "sRGB": 0,
+        "perceived": 0,
+        "pink": 0,
+        "green": 22,
+        "naked eye": 0,
+        "human eye": 0
+      },
+      "green_contexts": [
+        {
+          "line": 2660,
+          "text": "Left panel: target and field stars as seen by the DESI Legacy Imaging Survey, with the fibre aperture (radius 0.7 arcsec) shown at the target position. The g, r and z band data are assigned to the blue, green and red channels, respectively, and rendered with an asinh stretch (softening factor 7). The inset shows the g-band data in a 5 ″square around the target, shown with a logarithmic stretch to emphasise the contamination from the neighbouring star, which is over 20 times brighter."
+        },
+        {
+          "line": 3694,
+          "text": "Software used: Astroquery (Ginsburg et al., 2019), Astropy (Astropy Collaboration et al., 2013; Astropy Collaboration et al., 2018; Astropy Collaboration et al., 2022), ChainConsumer (Hinton, 2016), cmasher (van der Velden, 2020), dustmaps (Green, 2018),"
+        },
+        {
+          "line": 4375,
+          "text": "A. J. Brown, S. G. Parsons, J. van Roestel, A. Rebassa-Mansergas, E. Breedt, V. S. Dhillon, M. J. Dyer, M. J. Green, P. Kerry, S. P. Littlefair, T. R. Marsh, J. Munday, I. Pelisoli, D. I. Sahman, and J. F. Wild"
+        },
+        {
+          "line": 4612,
+          "text": "D. Collaboration, A. G. Adame, J. Aguilar, S. Ahlen, S. Alam, G. Aldering, D. M. Alexander, R. Alfarsy, C. A. Prieto, M. Alvarez, O. Alves, A. Anand, F. Andrade-Oliveira, E. Armengaud, J. Asorey, S. Avila, A. Aviles, S. Bailey, A. Balaguera-Antolínez, O. Ballester, C. Baltay, A. Bault, J. Bautista, J. Behera, S. F. Beltran, S. BenZvi, L. B. e. Silva, J. R. Bermejo-Climent, A. Berti, R. Besuner, F. Beutler, D. Bianchi, C. Blake, R. Blum, A. S. Bolton, S. Brieden, A. Brodzeller, D. Brooks, Z. Brown, E. Buckley-Geer, E. Burtin, L. Cabayol-Garcia, Z. Cai, R. Canning, L. Cardiel-Sas, A. C. Rosell, F. J. Castander, J. L. Cervantes-Cota, S. Chabanier, E. Chaussidon, J. Chaves-Montero, S. Chen, X. Chen, C. Chuang, T. Claybaugh, S. Cole, A. P. Cooper, A. Cuceu, T. M. Davis, K. Dawson, R. de Belsunce, R. de la Cruz, A. de la Macorra, A. de Mattia, R. Demina, U. Demirbozan, J. DeRose, A. Dey, B. Dey, G. Dhungana, J. Ding, Z. Ding, P. Doel, R. Doshi, K. Douglass, A. Edge, S. Eftekharzadeh, D. J. Eisenstein, A. Elliott, S. Escoffier, P. Fagrelius, X. Fan, K. Fanning, V. A. Fawcett, S. Ferraro, J. Ereza, B. Flaugher, A. Font-Ribera, D. Forero-Sánchez, J. E. Forero-Romero, C. S. Frenk, B. T. Gänsicke, L. Á. García, J. García-Bellido, C. Garcia-Quintero, L. H. Garrison, H. Gil-Marín, J. Golden-Marx, S. G. A. Gontcho, A. X. Gonzalez-Morales, V. Gonzalez-Perez, C. Gordon, O. Graur, D. Green, D. Gruen, J. Guy, B. Hadzhiyska, C. Hahn, J. J. Han, M. M. S. Hanif, H. K. Herrera-Alcantar, K. Honscheid, J. Hou, C. Howlett, D. Huterer, V. Iršič, M. Ishak, A. Jana, L. Jiang, J. Jimenez, Y. P. Jing, S. Joudaki, E. Jullo, R. Joyce, S. Juneau, N. Kizhuprakkat, N. G. Karaçaylı, T. Karim, R. Kehoe, S. Kent, A. Khederlarian, S. Kim, D. Kirkby, T. Kisner, F. Kitaura, J. Kneib, S. E. Koposov, A. Kovács, A. Kremin, A. Krolewski, B. L’Huillier, O. Lahav, A. Lambert, C. Lamman, T.-W. Lan, M. Landriau, D. Lang, J. U. Lange, J. Lasker, L. L. Guillou, A. Leauthaud, M. E. Levi, T. S. Li, E. Linder, A. Lyons, C. Magneville, M. Manera, C. J. Manser, D. Margala, P. Martini, P. McDonald, G. E. Medina, L. Medina-Varela, A. Meisner, J. Mena-Fernández, J. Meneses-Rizo, M. Mezcua, R. Miquel, P. Montero-Camacho, J. Moon, S. Moore, J. Moustakas, E. Mueller, J. Mundet, A. Muñoz-Gutiérrez, A. D. Myers, S. Nadathur, L. Napolitano, R. Neveux, J. A. Newman, J. Nie, G. Niz, P. Norberg, H. E. Noriega, E. Paillas, N. Palanque-Delabrouille, A. Palmese, P. Zhiwei, D. Parkinson, S. Penmetsa, W. J. Percival, A. Pérez-Fernández, I. Pérez-Ràfols, M. Pieri, C. Poppett, A. Porredon, F. Prada, R. Pucha, A. Raichoor, C. Ramírez-Pérez, S. Ramirez-Solano, M. Rashkovetskyi, C. Ravoux, A. Rocher, C. Rockosi, A. J. Ross, G. Rossi, R. Ruggeri, V. Ruhlmann-Kleider, C. G. Sabiu, K. Said, A. Saintonge, L. Samushia, E. Sanchez, C. Saulder, E. Schaan, E. F. Schlafly, D. Schlegel, D. Scholte, M. Schubnell, H. Seo, A. Shafieloo, R. Sharples, W. Sheu, J. Silber, F. Sinigaglia, M. Siudek, Z. Slepian, A. Smith, D. Sprayberry, L. Stephey, J. Suárez-Pérez, Z. Sun, T. Tan, G. Tarlé, R. Tojeiro, L. A. Ureña-López, R. Vaisakh, D. Valcin, F. Valdes, M. Valluri, M. Vargas-Magaña, A. Variu, L. Verde, M. Walther, B. Wang, M. S. Wang, B. A. Weaver, N. Weaverdyck, R. H. Wechsler, M. White, Y. Xie, J. Yang, C. Yèche, J. Yu, S. Yuan, H. Zhang, Z. Zhang, C. Zhao, Z. Zheng, R. Zhou, Z. Zhou, H. Zou, S. Zou, and Y. Zu"
+        },
+        {
+          "line": 4754,
+          "text": "DESI Collaboration, B. Abareshi, J. Aguilar, S. Ahlen, S. Alam, D. M. Alexander, R. Alfarsy, L. Allen, C. A. Prieto, O. Alves, J. Ameel, E. Armengaud, J. Asorey, A. Aviles, S. Bailey, A. Balaguera-Antolínez, O. Ballester, C. Baltay, A. Bault, S. F. Beltran, B. Benavides, S. BenZvi, A. Berti, R. Besuner, F. Beutler, D. Bianchi, C. Blake, P. Blanc, R. Blum, A. Bolton, S. Bose, D. Bramall, S. Brieden, A. Brodzeller, D. Brooks, C. Brownewell, E. Buckley-Geer, R. N. Cahn, Z. Cai, R. Canning, R. Capasso, A. C. Rosell, P. Carton, R. Casas, F. J. Castander, J. L. Cervantes-Cota, S. Chabanier, E. Chaussidon, C. Chuang, C. Circosta, S. Cole, A. P. Cooper, L. da Costa, M.-C. Cousinou, A. Cuceu, T. M. Davis, K. Dawson, R. de la Cruz-Noriega, A. de la Macorra, A. de Mattia, J. D. Costa, P. Demmer, M. Derwent, A. Dey, B. Dey, G. Dhungana, Z. Ding, C. Dobson, P. Doel, J. Donald-McCann, J. Donaldson, K. Douglass, Y. Duan, P. Dunlop, J. Edelstein, S. Eftekharzadeh, D. J. Eisenstein, M. Enriquez-Vargas, S. Escoffier, M. Evatt, P. Fagrelius, X. Fan, K. Fanning, V. A. Fawcett, S. Ferraro, J. Ereza, B. Flaugher, A. Font-Ribera, J. E. Forero-Romero, C. S. Frenk, S. Fromenteau, B. T. Gänsicke, C. Garcia-Quintero, L. Garrison, E. Gaztañaga, F. Gerardi, H. Gil-Marín, S. G. A. Gontcho, A. X. Gonzalez-Morales, G. Gonzalez-de-Rivera, V. Gonzalez-Perez, C. Gordon, O. Graur, D. Green, C. Grove, D. Gruen, G. Gutierrez, J. Guy, C. Hahn, S. Harris, D. Herrera, H. K. Herrera-Alcantar, K. Honscheid, C. Howlett, D. Huterer, V. Iršič, M. Ishak, P. Jelinsky, L. Jiang, J. Jimenez, Y. P. Jing, R. Joyce, E. Jullo, S. Juneau, N. G. Karaçaylı, M. Karamanis, A. Karcher, T. Karim, R. Kehoe, S. Kent, D. Kirkby, T. Kisner, F. Kitaura, S. E. Koposov, A. Kovács, A. Kremin, A. Krolewski, B. L’Huillier, O. Lahav, A. Lambert, C. Lamman, T. Lan, M. Landriau, S. Lane, D. Lang, J. U. Lange, J. Lasker, L. L. Guillou, A. Leauthaud, A. L. V. Suu, M. E. Levi, T. S. Li, C. Magneville, M. Manera, C. J. Manser, B. Marshall, P. Martini, W. McCollam, P. McDonald, A. M. Meisner, J. Mena-Fernández, J. Meneses-Rizo, M. Mezcua, T. Miller, R. Miquel, P. Montero-Camacho, J. Moon, J. Moustakas, E. Mueller, A. Muñoz-Gutiérrez, A. D. Myers, S. Nadathur, J. Najita, L. Napolitano, E. Neilsen, J. A. Newman, J. D. Nie, Y. Ning, G. Niz, P. Norberg, H. E. Noriega, T. O’Brien, A. Obuljen, N. Palanque-Delabrouille, A. Palmese, P. Zhiwei, D. Pappalardo, X. PENG, W. J. Percival, S. Perruchot, R. Pogge, C. Poppett, A. Porredon, F. Prada, J. Prochaska, R. Pucha, A. Pérez-Fernández, I. Pérez-Ràfols, D. Rabinowitz, A. Raichoor, S. Ramirez-Solano, C. Ramírez-Pérez, C. Ravoux, K. Reil, M. Rezaie, A. Rocher, C. Rockosi, N. A. Roe, A. Roodman, A. J. Ross, G. Rossi, R. Ruggeri, V. Ruhlmann-Kleider, C. G. Sabiu, S. Gaines, K. Said, A. Saintonge, J. S. Catonga, L. Samushia, E. Sanchez, C. Saulder, E. Schaan, E. Schlafly, D. Schlegel, J. Schmoll, D. Scholte, M. Schubnell, A. Secroun, H. Seo, S. Serrano, R. M. Sharples, M. J. Sholl, J. H. Silber, D. R. Silva, M. Sirk, M. Siudek, A. Smith, D. Sprayberry, R. Staten, B. Stupak, T. Tan, G. Tarlé, S. S. Tie, R. Tojeiro, L. A. Ureña-López, F. Valdes, O. Valenzuela, M. Valluri, M. Vargas-Magaña, L. Verde, M. Walther, B. Wang, M. S. Wang, B. A. Weaver, C. Weaverdyck, R. Wechsler, M. J. Wilson, J. Yang, Y. Yu, S. Yuan, C. Yèche, H. Zhang, K. Zhang, C. Zhao, R. Zhou, Z. Zhou, H. Zou, J. Zou, S. Zou, and Y. Zu"
+        },
+        {
+          "line": 4772,
+          "text": "DESI Collaboration, M. Abdul Karim, A. G. Adame, D. Aguado, J. Aguilar, S. Ahlen, S. Alam, G. Aldering, D. M. Alexander, R. Alfarsy, L. Allen, C. Allende Prieto, O. Alves, A. Anand, U. Andrade, E. Armengaud, S. Avila, A. Aviles, H. Awan, S. Bailey, A. Baleato Lizancos, O. Ballester, A. Bault, J. Bautista, R. Bean, J. Behera, S. BenZvi, L. Beraldo e Silva, J. R. Bermejo-Climent, F. Beutler, D. Bianchi, C. Blake, R. Blum, A. S. Bolton, M. Bonici, S. Brieden, A. Brodzeller, D. Brooks, E. Buckley-Geer, E. Burtin, A. Byström, R. Canning, A. Carnero Rosell, A. Carr, P. Carrilho, L. Casas, F. J. Castander, R. Cereskaite, J. L. Cervantes-Cota, E. Chaussidon, J. Chaves-Montero, S. Chen, X. Chen, C. Circosta, T. Claybaugh, S. Cole, A. P. Cooper, M.-C. Cousinou, A. Cuceu, T. M. Davis, K. S. Dawson, R. de Belsunce, R. de la Cruz, A. de la Macorra, A. de Mattia, N. Deiosso, J. Della Costa, R. Demina, U. Demirbozan, J. DeRose, A. Dey, B. Dey, J. Ding, Z. Ding, P. Doel, K. Douglass, M. Dowicz, H. Ebina, J. Edelstein, D. J. Eisenstein, W. Elbers, N. Emas, S. Escoffier, P. Fagrelius, X. Fan, K. Fanning, G. Favole, V. A. Fawcett, E. Fernández-García, S. Ferraro, N. Findlay, A. Font-Ribera, J. E. Forero-Romero, D. Forero-Sánchez, C. S. Frenk, B. T. Gänsicke, L. Galbany, J. García-Bellido, C. Garcia-Quintero, L. H. Garrison, E. Gaztañaga, H. Gil-Marín, A. Gloudemans, O. Y. Gnedin, S. Gontcho A Gontcho, D. Gonzalez, A. X. Gonzalez-Morales, V. Gonzalez-Perez, C. Gordon, O. Graur, D. Green, D. Gruen, R. Gsponer, C. Guandalin, G. Gutierrez, J. Guy, C. Hahn, J. J. Han, J. Han, S. He, H. K. Herrera-Alcantar, S. Heydenreich, K. Honscheid, J. Hou, C. Howlett, D. Huterer, V. Iršič, M. Ishak, A. Jacques, L. Jiang, J. Jimenez, Y. P. Jing, B. Joachimi, S. Joudaki, R. Joyce, E. Jullo, S. Juneau, N. G. Karaçaylı, T. Karim, R. Kehoe, S. Kent, A. Khederlarian, D. Kirkby, T. Kisner, F.-S. Kitaura, N. Kizhuprakkat, H. Kong, S. E. Koposov, A. Kremin, A. Krolewski, O. Lahav, Y. Lai, C. Lamman, T.-W. Lan, M. Landriau, D. Lang, J. U. Lange, J. Lasker, J. M. Le Goff, L. Le Guillou, A. Leauthaud, M. E. Levi, S. Li, T. S. Li, W. Liu, K. Lodha, M. Lokken, Y. Luo, C. Magneville, M. Manera, C. J. Manser, D. Margala, P. Martini, M. Maus, J. McCullough, P. McDonald, G. E. Medina, L. Medina-Varela, A. Meisner, J. Mena-Fernández, A. Menegas, J. Meneses-Rizo, M. Mezcua, R. Miquel, P. Montero-Camacho, J. Moon, J. Moustakas, A. Muñoz-Gutiérrez, D. Mu noz-Santos, A. D. Myers, J. Myles, S. Nadathur, J. Najita, L. Napolitano, J. A. Newman, F. Nikakhtar, R. Nikutta, G. Niz, H. E. Noriega, P. Nugent, N. Padmanabhan, E. Paillas, N. Palanque-Delabrouille, A. Palmese, J. Pan, Z. Pan, D. Parkinson, J. A. Peacock, M. P. Ibanez, W. J. Percival, A. Pérez-Fernández, I. Pérez-Ràfols, P. Peterson, J. Piat, M. M. Pieri, M. Pinon, C. Poppett, A. Porredon, F. Prada, R. Pucha, F. Qin, D. Rabinowitz, A. Raichoor, C. Ramírez-Pérez, S. Ramirez-Solano, M. Rashkovetskyi, C. Ravoux, B. Ried Guachalla, A. H. Riley, A. Rocher, C. Rockosi, J. Rohlf, A. J. Rosado-Marín, A. J. Ross, C. Ross, G. Rossi, R. Ruggeri, V. Ruhlmann-Kleider, C. G. Sabiu, K. Said, N. Sailer, A. Saintonge, Y. Salcedo Hernandez, L. Samushia, E. Sanchez, N. Sanders, N. Sandford, S. Satyavolu, C. Saulder, A. K. Saydjari, E. F. Schlafly, D. Schlegel, D. Scholte, M. Schubnell, A. Semenaite, H. Seo, A. Shafieloo, R. Sharples, J. Silber, F. Sinigaglia, M. Siudek, Z. Slepian, A. Smith, M. Soumagnac, D. Sprayberry, J. Suárez-Pérez, J. Swanson, T. Tan, G. Tarlé, P. Taylor, G. Thomas, R. Tojeiro, R. J. Turner, W. Turner, L. A. Ureña-López, R. Vaisakh, M. Valluri, G. Valogiannis, M. Vargas-Magaña, L. Verde, P. Vielzeuf, M. Walther, B. Wang, M. S. Wang, W. Wang, B. A. Weaver, N. Weaverdyck, R. H. Wechsler, D. H. Weinberg, M. White, A. Whitford, M. Wolfson, J. Yang, C. Yèche, S. Youles, J. Yu, S. Yuan, E. A. Zaborowski, P. Zarrouk, H. Zhang, C. Zhao, R. Zhao, Z. Zheng, C. Zhou, R. Zhou, Y. Zhou, H. Zou, S. Zou, Y. Zu, D. Collaboration, A. Karim, M., Adame, A. G., Aguado, D., Aguilar, J., Ahlen, S., Alam, S., Aldering, G., Alexander, D. M., Alfarsy, R., Allen, L., A. Prieto, C., Alves, O., Anand, A., Andrade, U., Armengaud, E., Avila, S., Aviles, A., Awan, H., Bailey, S., B. Lizancos, A., Ballester, O., Bault, A., Bautista, J., Bean, R., Behera, J., BenZvi, S., B. e. Silva, L., Bermejo-Climent, J. R., Beutler, F., Bianchi, D., Blake, C., Blum, R., Bolton, A. S., Bonici, M., Brieden, S., Brodzeller, A., Brooks, D., Buckley-Geer, E., Burtin, E., Byström, A., Canning, R., C. Rosell, A., Carr, A., Carrilho, P., Casas, L., Castander, F. J., Cereskaite, R., Cervantes-Cota, J. L., Chaussidon, E., Chaves-Montero, J., Chen, S., Chen, X., Circosta, C., Claybaugh, T., Cole, S., Cooper, A. P., Cousinou, M.-C., Cuceu, A., Davis, T. M., Dawson, K. S., D. Belsunce, R., de la Cruz, R., de la Macorra, A., D. Mattia, A., Deiosso, N., D. Costa, J., Demina, R., Demirbozan, U., DeRose, J., Dey, A., Dey, B., Ding, J., Ding, Z., Doel, P., Douglass, K., Dowicz, M., Ebina, H., Edelstein, J., Eisenstein, D. J., Elbers, W., Emas, N., Escoffier, S., Fagrelius, P., Fan, X., Fanning, K., Favole, G., Fawcett, V. A., Fernández-García, E., Ferraro, S., Findlay, N., Font-Ribera, A., Forero-Romero, J. E., Forero-Sánchez, D., Frenk, C. S., Gänsicke, B. T., Galbany, L., García-Bellido, J., Garcia-Quintero, C., Garrison, L. H., Gaztañaga, E., Gil-Marín, H., Gloudemans, A., Gnedin, O. Y., G. A. Gontcho, S., Gonzalez, D., Gonzalez-Morales, A. X., Gonzalez-Perez, V., Gordon, C., Graur, O., Green, D., Gruen, D., Gsponer, R., Guandalin, C., Gutierrez, G., Guy, J., Hahn, C., Han, J. J., Han, J., He, S., Herrera-Alcantar, H. K., Heydenreich, S., Honscheid, K., Hou, J., Howlett, C., Huterer, D., Iršič, V., Ishak, M., Jacques, A., Jiang, L., Jimenez, J., Jing, Y. P., Joachimi, B., Joudaki, S., Joyce, R., Jullo, E., Juneau, S., Karaçaylı, N. G., Karim, T., Kehoe, R., Kent, S., Khederlarian, A., Kirkby, D., Kisner, T., Kitaura, F.-S., Kizhuprakkat, N., Kong, H., Koposov, S. E., Kremin, A., Krolewski, A., Lahav, O., Lai, Y., Lamman, C., Lan, T.-W., Landriau, M., Lang, D., Lange, J. U., Lasker, J., L. Goff, J. M., L. Guillou, L., Leauthaud, A., Levi, M. E., Li, S., Li, T. S., Liu, W., Lodha, K., Lokken, M., Luo, Y., Magneville, C., Manera, M., Manser, C. J., Margala, D., Martini, P., Maus, M., McCullough, J., McDonald, P., Medina, G. E., Medina-Varela, L., Meisner, A., Mena-Fernández, J., Menegas, A., Meneses-Rizo, J., Mezcua, M., Miquel, R., Montero-Camacho, P., Moon, J., Moustakas, J., Muñoz-Gutiérrez, A., M. Noz-Santos, D., Myers, A. D., Myles, J., Nadathur, S., Najita, J., Napolitano, L., Newman, J. A., Nikakhtar, F., Nikutta, R., Niz, G., Noriega, H. E., Nugent, P., Padmanabhan, N., Paillas, E., Palanque-Delabrouille, N., Palmese, A., Pan, J., Pan, Z., Parkinson, D., Peacock, J. A., Ibanez, M. P., Percival, W. J., Pérez-Fernández, A., Pérez-Ràfols, I., Peterson, P., Piat, J., Pieri, M. M., Pinon, M., Poppett, C., Porredon, A., Prada, F., Pucha, R., Qin, F., Rabinowitz, D., Raichoor, A., Ramírez-Pérez, C., Ramirez-Solano, S., Rashkovetskyi, M., Ravoux, C., R. Guachalla, B., Riley, A. H., Rocher, A., Rockosi, C., Rohlf, J., Rosado-Marín, A. J., Ross, A. J., Ross, C., Rossi, G., Ruggeri, R., Ruhlmann-Kleider, V., Sabiu, C. G., Said, K., Sailer, N., Saintonge, A., S. Hernandez, Y., Samushia, L., Sanchez, E., Sanders, N., Sandford, N., Satyavolu, S., Saulder, C., Saydjari, A. K., Schlafly, E. F., Schlegel, D., Scholte, D., Schubnell, M., Semenaite, A., Seo, H., Shafieloo, A., Sharples, R., Silber, J., Sinigaglia, F., Siudek, M., Slepian, Z., Smith, A., Soumagnac, M., Sprayberry, D., Suárez-Pérez, J., Swanson, J., Tan, T., Tarlé, G., Taylor, P., Thomas, G., Tojeiro, R., Turner, R. J., Turner, W., Ureña-López, L. A., Vaisakh, R., Valluri, M., Valogiannis, G., Vargas-Magaña, M., Verde, L., Vielzeuf, P., Walther, M., Wang, B., Wang, M. S., Wang, W., Weaver, B. A., Weaverdyck, N., Wechsler, R. H., Weinberg, D. H., White, M., Whitford, A., Wolfson, M., Yang, J., Yèche, C., Youles, S., Yu, J., Yuan, S., Zaborowski, E. A., Zarrouk, P., Zhang, H., Zhao, C., Zhao, R., Zheng, Z., Zhou, C., Zhou, R., Zhou, Y., Zou, H., Zou, S., Zu, and Y."
+        },
+        {
+          "line": 4792,
+          "text": "DESI Collaboration, M. Abdul-Karim, J. Aguilar, S. Ahlen, C. A. Prieto, O. Alves, A. Anand, U. Andrade, E. Armengaud, A. Aviles, S. Bailey, A. Bault, J. Behera, S. BenZvi, D. Bianchi, C. Blake, A. Brodzeller, D. Brooks, E. Buckley-Geer, E. Burtin, R. Calderon, R. Canning, A. C. Rosell, P. Carrilho, L. Casas, F. J. Castander, R. Cereskaite, M. Charles, E. Chaussidon, J. Chaves-Montero, D. Chebat, T. Claybaugh, S. Cole, A. P. Cooper, A. Cuceu, K. S. Dawson, R. de Belsunce, A. de la Macorra, A. de Mattia, N. Deiosso, J. Della Costa, A. Dey, B. Dey, Z. Ding, P. Doel, J. Edelstein, D. J. Eisenstein, W. Elbers, P. Fagrelius, K. Fanning, S. Ferraro, A. Font-Ribera, J. E. Forero-Romero, C. Garcia-Quintero, L. H. Garrison, E. Gaztañaga, H. Gil-Marín, S. G. A. Gontcho, A. X. Gonzalez-Morales, C. Gordon, D. Green, G. Gutierrez, J. Guy, C. Hahn, M. Herbold, H. K. Herrera-Alcantar, M. -F. Ho, K. Honscheid, C. Howlett, D. Huterer, M. Ishak, S. Juneau, N. G. Karaçaylı, R. Kehoe, S. Kent, D. Kirkby, T. Kisner, F. -S. Kitaura, S. E. Koposov, A. Kremin, O. Lahav, C. Lamman, M. Landriau, D. Lang, J. Lasker, J. M. L. Goff, L. L. Guillou, A. Leauthaud, M. E. Levi, Q. Li, T. S. Li, K. Lodha, M. Lokken, C. Magneville, M. Manera, P. Martini, W. L. Matthewson, P. McDonald, A. Meisner, J. Mena-Fernández, R. Miquel, J. Moustakas, D. M. Santos, A. Muñoz-Gutiérrez, A. D. Myers, J. A. Newman, G. Niz, H. E. Noriega, E. Paillas, N. Palanque-Delabrouille, J. Pan, W. J. Percival, I. Pérez-Ràfols, M. M. Pieri, C. Poppett, F. Prada, D. Rabinowitz, A. Raichoor, C. Ramírez-Pérez, M. Rashkovetskyi, C. Ravoux, J. Rich, C. Rockosi, A. J. Ross, G. Rossi, V. Ruhlmann-Kleider, E. Sanchez, N. Sanders, S. Satyavolu, D. Schlegel, M. Schubnell, H. Seo, A. Shafieloo, R. Sharples, J. Silber, F. Sinigaglia, D. Sprayberry, T. Tan, G. Tarlé, P. Taylor, W. Turner, F. Valdes, M. Vargas-Magaña, M. Walther, B. A. Weaver, M. Wolfson, C. Yèche, P. Zarrouk, R. Zhou, and H. Zou"
+        },
+        {
+          "line": 4807,
+          "text": "DESI Collaboration, M. AbdulKarim, J. Aguilar, S. Ahlen, S. Alam, L. Allen, C. A. Prieto, O. Alves, A. Anand, U. Andrade, E. Armengaud, A. Aviles, S. Bailey, C. Baltay, P. Bansal, A. Bault, J. Behera, S. Benzvi, D. Bianchi, C. Blake, S. Brieden, A. Brodzeller, D. Brooks, E. Buckley-Geer, E. Burtin, R. Calderon, R. Canning, A. C. Rosell, P. Carrilho, L. Casas, F. J. Castander, M. Charles, E. Chaussidon, J. Chaves-Montero, D. Chebat, X. Chen, T. Claybaugh, S. Cole, A. P. Cooper, A. Cuceu, K. S. Dawson, A. dela Macorra, A. de Mattia, N. Deiosso, J. D. Costa, R. Demina, A. Dey, B. Dey, Z. Ding, P. Doel, J. Edelstein, D. J. Eisenstein, W. Elbers, P. Fagrelius, K. Fanning, E. Fernández-García, S. Ferraro, A. Font-Ribera, J. E. Forero-Romero, C. S. Frenk, C. Garcia-Quintero, L. H. Garrison, E. Gaztañaga, H. Gil-Marín, S. G. A. Gontcho, D. Gonzalez, A. X. Gonzalez-Morales, C. Gordon, D. Green, G. Gutierrez, J. Guy, B. Hadzhiyska, C. Hahn, S. He, M. Herbold, H. K. Herrera-Alcantar, M. F. Ho, K. Honscheid, C. Howlett, D. Huterer, M. Ishak, S. Juneau, N. V. Kamble, N. G. Karaçaylı, R. Kehoe, S. Kent, A. G. Kim, D. Kirkby, T. Kisner, S. E. Koposov, A. Kremin, A. Krolewski, O. Lahav, C. Lamman, M. Landriau, D. Lang, J. Lasker, J. M. LeGoff, L. LeGuillou, A. Leauthaud, M. E. Levi, Q. Li, T. S. Li, K. Lodha, M. Lokken, F. Lozano-Rodríguez, C. Magneville, M. Manera, P. Martini, W. L. Matthewson, A. Meisner, J. Mena-Fernández, A. Menegas, T. Mergulhão, R. Miquel, J. Moustakas, A. Muñoz-Gutiérrez, D. Muñoz-Santos, A. D. Myers, S. Nadathur, K. Naidoo, L. Napolitano, J. A. Newman, G. Niz, H. E. Noriega, E. Paillas, N. Palanque-Delabrouille, J. Pan, J. A. Peacock, M. P. Ibanez, W. J. Percival, A. Pérez-Fernández, I. Pérez-Ràfols, M. M. Pieri, C. Poppett, F. Prada, D. Rabinowitz, A. Raichoor, C. Ramírez-Pérez, M. Rashkovetskyi, C. Ravoux, J. Rich, A. Rocher, C. Rockosi, J. Rohlf, J. O. Román-Herrera, A. J. Ross, G. Rossi, R. Ruggeri, V. Ruhlmann-Kleider, L. Samushia, E. Sanchez, N. Sanders, D. Schlegel, M. Schubnell, H. Seo, A. Shafieloo, R. Sharples, J. Silber, F. Sinigaglia, D. Sprayberry, T. Tan, G. Tarlé, P. Taylor, W. Turner, L. A. Ureña-López, R. Vaisakh, F. Valdes, G. Valogiannis, M. Vargas-Magaña, L. Verde, M. Walther, B. A. Weaver, D. H. Weinberg, M. White, M. Wolfson, C. Yèche, J. Yu, E. A. Zaborowski, P. Zarrouk, Z. Zhai, H. Zhang, C. Zhao, G. B. Zhao, R. Zhou, and H. Zou"
+        },
+        {
+          "line": 4822,
+          "text": "DESI Collaboration, A. G. Adame, J. Aguilar, S. Ahlen, S. Alam, G. Aldering, D. M. Alexander, R. Alfarsy, C. A. Prieto, M. Alvarez, O. Alves, A. Anand, F. Andrade-Oliveira, E. Armengaud, J. Asorey, S. Avila, A. Aviles, S. Bailey, A. Balaguera-Antolínez, O. Ballester, C. Baltay, A. Bault, J. Bautista, J. Behera, S. F. Beltran, S. BenZvi, L. B. e. Silva, J. R. Bermejo-Climent, A. Berti, R. Besuner, F. Beutler, D. Bianchi, C. Blake, R. Blum, A. S. Bolton, S. Brieden, A. Brodzeller, D. Brooks, Z. Brown, E. Buckley-Geer, E. Burtin, L. Cabayol-Garcia, Z. Cai, R. Canning, L. Cardiel-Sas, A. C. Rosell, F. J. Castander, J. L. Cervantes-Cota, S. Chabanier, E. Chaussidon, J. Chaves-Montero, S. Chen, X. Chen, C. Chuang, T. Claybaugh, S. Cole, A. P. Cooper, A. Cuceu, T. M. Davis, K. Dawson, R. de Belsunce, R. de la Cruz, A. de la Macorra, J. D. Costa, A. de Mattia, R. Demina, U. Demirbozan, J. DeRose, A. Dey, B. Dey, G. Dhungana, J. Ding, Z. Ding, P. Doel, R. Doshi, K. Douglass, A. Edge, S. Eftekharzadeh, D. J. Eisenstein, A. Elliott, J. Ereza, S. Escoffier, P. Fagrelius, X. Fan, K. Fanning, V. A. Fawcett, S. Ferraro, B. Flaugher, A. Font-Ribera, J. E. Forero-Romero, D. Forero-Sánchez, C. S. Frenk, B. T. Gänsicke, L. Á. García, J. García-Bellido, C. Garcia-Quintero, L. H. Garrison, H. Gil-Marín, J. Golden-Marx, S. G. A. Gontcho, A. X. Gonzalez-Morales, V. Gonzalez-Perez, C. Gordon, O. Graur, D. Green, D. Gruen, J. Guy, B. Hadzhiyska, C. Hahn, J. J. Han, M. M. S. Hanif, H. K. Herrera-Alcantar, K. Honscheid, J. Hou, C. Howlett, D. Huterer, V. Iršič, M. Ishak, A. Jacques, A. Jana, L. Jiang, J. Jimenez, Y. P. Jing, S. Joudaki, R. Joyce, E. Jullo, S. Juneau, N. G. Karaçaylı, T. Karim, R. Kehoe, S. Kent, A. Khederlarian, S. Kim, D. Kirkby, T. Kisner, F. Kitaura, N. Kizhuprakkat, J. Kneib, S. E. Koposov, A. Kovács, A. Kremin, A. Krolewski, B. L’Huillier, O. Lahav, A. Lambert, C. Lamman, T.-W. Lan, M. Landriau, D. Lang, J. U. Lange, J. Lasker, A. Leauthaud, L. L. Guillou, M. E. Levi, T. S. Li, E. Linder, A. Lyons, C. Magneville, M. Manera, C. J. Manser, D. Margala, P. Martini, P. McDonald, G. E. Medina, L. Medina-Varela, A. Meisner, J. Mena-Fernández, J. Meneses-Rizo, M. Mezcua, R. Miquel, P. Montero-Camacho, J. Moon, S. Moore, J. Moustakas, E. Mueller, J. Mundet, A. Muñoz-Gutiérrez, A. D. Myers, S. Nadathur, L. Napolitano, R. Neveux, J. A. Newman, J. Nie, R. Nikutta, G. Niz, P. Norberg, H. E. Noriega, E. Paillas, N. Palanque-Delabrouille, A. Palmese, Z. Pan, D. Parkinson, S. Penmetsa, W. J. Percival, A. Pérez-Fernández, I. Pérez-Ràfols, M. Pieri, C. Poppett, A. Porredon, S. Pothier, F. Prada, R. Pucha, A. Raichoor, C. Ramírez-Pérez, S. Ramirez-Solano, M. Rashkovetskyi, C. Ravoux, A. Rocher, C. Rockosi, A. J. Ross, G. Rossi, R. Ruggeri, V. Ruhlmann-Kleider, C. G. Sabiu, K. Said, A. Saintonge, L. Samushia, E. Sanchez, C. Saulder, E. Schaan, E. F. Schlafly, D. Schlegel, D. Scholte, M. Schubnell, H. Seo, A. Shafieloo, R. Sharples, W. Sheu, J. Silber, F. Sinigaglia, M. Siudek, Z. Slepian, A. Smith, M. T. Soumagnac, D. Sprayberry, L. Stephey, J. Suárez-Pérez, Z. Sun, T. Tan, G. Tarlé, R. Tojeiro, L. A. Ureña-López, R. Vaisakh, D. Valcin, F. Valdes, M. Valluri, M. Vargas-Magaña, A. Variu, L. Verde, M. Walther, B. Wang, M. S. Wang, B. A. Weaver, N. Weaverdyck, R. H. Wechsler, M. White, Y. Xie, J. Yang, C. Yèche, J. Yu, S. Yuan, H. Zhang, Z. Zhang, C. Zhao, Z. Zheng, R. Zhou, Z. Zhou, H. Zou, S. Zou, and Y. Zu"
+        },
+        {
+          "line": 4839,
+          "text": "DESI Collaboration, A. G. Adame, J. Aguilar, S. Ahlen, S. Alam, D. M. Alexander, C. Allende Prieto, M. Alvarez, O. Alves, A. Anand, U. Andrade, E. Armengaud, S. Avila, A. Aviles, H. Awan, B. Bahr-Kalus, S. Bailey, C. Baltay, A. Bault, J. Behera, S. BenZvi, F. Beutler, D. Bianchi, C. Blake, R. Blum, M. Bonici, S. Brieden, A. Brodzeller, D. Brooks, E. Buckley-Geer, E. Burtin, R. Calderon, R. Canning, A. Carnero Rosell, R. Cereskaite, J. L. Cervantes-Cota, S. Chabanier, E. Chaussidon, J. Chaves-Montero, D. Chebat, S. Chen, X. Chen, T. Claybaugh, S. Cole, A. Cuceu, T. M. Davis, K. Dawson, A. de la Macorra, A. de Mattia, N. Deiosso, A. Dey, B. Dey, Z. Ding, P. Doel, J. Edelstein, S. Eftekharzadeh, D. J. Eisenstein, W. Elbers, A. Elliott, P. Fagrelius, K. Fanning, S. Ferraro, J. Ereza, N. Findlay, B. Flaugher, A. Font-Ribera, D. Forero-Sánchez, J. E. Forero-Romero, C. S. Frenk, C. Garcia-Quintero, L. H. Garrison, E. Gaztañaga, H. Gil-Marín, S. G. A. Gontcho, A. X. Gonzalez-Morales, V. Gonzalez-Perez, C. Gordon, D. Green, D. Gruen, R. Gsponer, G. Gutierrez, J. Guy, B. Hadzhiyska, C. Hahn, M. M.S. Hanif, H. K. Herrera-Alcantar, K. Honscheid, C. Howlett, D. Huterer, V. Iršič, M. Ishak, R. Joyce, S. Juneau, N. G. Karaçaylı, R. Kehoe, S. Kent, D. Kirkby, H. Kong, S. E. Koposov, A. Kremin, A. Krolewski, O. Lahav, Y. Lai, T. W. Lan, M. Landriau, D. Lang, J. Lasker, J. M. Le Goff, L. Le Guillou, A. Leauthaud, M. E. Levi, T. S. Li, K. Lodha, C. Magneville, M. Manera, D. Margala, P. Martini, W. Matthewson, M. Maus, P. McDonald, L. Medina-Varela, A. Meisner, J. Mena-Fernández, R. Miquel, J. Moon, S. Moore, J. Moustakas, N. Mudur, E. Mueller, A. Muñoz-Gutiérrez, A. D. Myers, S. Nadathur, L. Napolitano, R. Neveux, J. A. Newman, N. M. Nguyen, J. Nie, G. Niz, H. E. Noriega, N. Padmanabhan, E. Paillas, N. Palanque-Delabrouille, J. Pan, S. Penmetsa, W. J. Percival, M. M. Pieri, M. Pinon, C. Poppett, A. Porredon, F. Prada, A. Pérez-Fernández, I. Pérez-Ràfols, D. Rabinowitz, A. Raichoor, C. Ramírez-Pérez, S. Ramirez-Solano, M. Rashkovetskyi, C. Ravoux, M. Rezaie, J. Rich, A. Rocher, C. Rockosi, N. A. Roe, A. Rosado-Marin, A. J. Ross, G. Rossi, R. Ruggeri, V. Ruhlmann-Kleider, L. Samushia, E. Sanchez, C. Saulder, E. F. Schlafly, D. Schlegel, M. Schubnell, H. Seo, A. Shafieloo, R. Sharples, J. Silber, A. Slosar, A. Smith, D. Sprayberry, T. Tan, G. Tarlé, P. Taylor, S. Trusov, R. Vaisakh, D. Valcin, F. Valdes, G. Valogiannis, M. Vargas-Magaña, L. Verde, M. Walther, B. Wang, M. S. Wang, B. A. Weaver, N. Weaverdyck, R. H. Wechsler, D. H. Weinberg, M. White, M. J. Wilson, L. Yi, J. Yu, Y. Yu, S. Yuan, C. Yèche, E. A. Zaborowski, P. Zarrouk, H. Zhang, C. Zhao, R. Zhao, R. Zhou, T. Zhuang, and H. Zou"
+        },
+        {
+          "line": 5559,
+          "text": "Green (2018)"
+        },
+        {
+          "line": 5560,
+          "text": "G. M. Green"
+        },
+        {
+          "line": 5591,
+          "text": "J. Guy, S. Bailey, A. Kremin, S. Alam, D. M. Alexander, C. A. Prieto, S. BenZvi, A. S. Bolton, D. Brooks, E. Chaussidon, A. P. Cooper, K. Dawson, A. de la Macorra, A. Dey, B. Dey, G. Dhungana, D. J. Eisenstein, A. Font-Ribera, J. E. Forero-Romero, E. Gaztañaga, S. G. A. Gontcho, D. Green, K. Honscheid, M. Ishak, R. Kehoe, D. Kirkby, T. Kisner, S. E. Koposov, T. Lan, M. Landriau, L. L. Guillou, M. E. Levi, C. Magneville, C. J. Manser, P. Martini, A. M. Meisner, R. Miquel, J. Moustakas, A. D. Myers, J. A. Newman, J. Nie, N. Palanque-Delabrouille, W. J. Percival, C. Poppett, F. Prada, A. Raichoor, C. Ravoux, A. J. Ross, E. F. Schlafly, D. Schlegel, M. Schubnell, R. M. Sharples, G. Tarlé, B. A. Weaver, C. Yéche, R. Zhou, Z. Zhou, and H. Zou"
+        },
+        {
+          "line": 6182,
+          "text": "M. Kilic, P. Bergeron, S. Blouin, A. Moss, M. J. Green, G. Jewett, M. Barrientos, A. L. Albright, A. R. Gleason, W. R. Brown, N. Vernekar, M. R. Hayden, M. Kilic, P. Bergeron, S. Blouin, A. Moss, M. J. Green, G. Jewett, M. Barrientos, A. L. Albright, A. R. Gleason, W. R. Brown, N. Vernekar, M. R. Hayden, Kilic, Mukremin, Bergeron, Pierre, Blouin, Simon, Moss, Adam, Green, M. J., Jewett, Gracyn, Barrientos, Manuel, Albright, A. L., Gleason, A. R., Brown, W. R., Vernekar, Nagaraj, Hayden, and M. R."
+        },
+        {
+          "line": 6198,
+          "text": "M. Kilic, P. Bergeron, A. Moss, S. Blouin, M. J. Green, G. Jewett, M. Barrientos, A. L. Albright, and W. R. Brown"
+        },
+        {
+          "line": 6371,
+          "text": "J. A. Kollmeier, H. Rix, C. Aerts, J. Aird, P. Vera Alfaro, A. Almeida, S. F. Anderson, S. M. Arseneau, R. J. Assef, S. Aviram, C. Aydar, C. Badenes, A. Bandyopadhyay, K. Barger, R. H. Barkhouser, F. E. Bauer, A. Behmard, C. Bender, F. Besser, B. Bhattarai, P. Bilgi, J. Bird, D. Bizyaev, G. A. Blanc, M. R. Blanton, J. Bochanski, J. Bovy, C. Brandon, W. N. Brandt, J. R. Brownstein, J. Buchner, J. N. Burchett, J. Carlberg, A. R. Casey, L. Castaneda-Carlos, P. Chakraborty, J. Chanamé, V. Chandra, B. Cherinka, I. Chilingarian, J. Comparat, M. Cosens, K. Covey, J. D. Crane, N. R. Crumpler, I. Cruz-Gonzalez, K. Cunha, T. Cunningham, X. Dai, J. Darling, J. W. Davidson, M. C. Davis, N. De Lee, N. Deacon, J. E. Méndez Delgado, S. Demasi, M. Demianenko, M. Derwent, E. D’Onghia, F. Di Mille, B. Dias, J. Donor, P. N. Dow, N. Drory, T. Dwelly, O. Egorov, E. Egorova, K. El-Badry, M. Engelman, M. Eracleous, X. Fan, E. Farr, L. Fries, P. Frinchaboy, C. S. Froning, B. T. Gänsicke, P. García, J. Gelfand, N. P. Gentile Fusillo, S. Glover, K. Grabowski, E. K. Grebel, P. J. Green, C. Grier, P. Gupta, A. C. Gray, M. Häberle, P. B. Hall, R. P. Hammond, K. Hawkins, A. C. Harding, V. Hegedűs, T. Herbst, J. J. Hermes, P. Rodríguez Hidalgo, T. Hilder, D. W. Hogg, J. A. Holtzman, D. Horta, Y. Huang, H. Hwang, H. J. Ibarra-Medel, J. Imig, K. Inight, A. Jana, A. P. Ji, Ó. Jiménez-Arranz, P. Jofre, M. Johns, J. Johnson, J. W. Johnson, E. J. Johnston, A. M. Jones, I. Katkov, G. R. Knapp, A. M. Koekemoer, M. Kounkel, K. Kreckel, D. Krishnarao, M. Krumpe, N. Kumari, T. Kupfer, I. Lacerna, C. Laporte, S. Lepine, J. Li, X. Liu, S. Loebman, K. Long, A. Roman-Lopes, Y. Lu, S. R. Majewski, D. Maoz, K. A. McKinnon, I. Medan, A. Merloni, D. Minniti, S. Morrison, N. Myers, S. Mészáros, K. Nandra, P. K. Nayak, M. K. Ness, D. L. Nidever, T. O’Brien, M. Oeur, A. Oravetz, D. Oravetz, J. Otto, G. A. Pallathadka, P. Palunas, K. Pan, D. Pappalardo, R. Pandey, C. A. Negrete Peñaloza, M. H. Pinsonneault, R. W. Pogge, M. Taghizadeh Popp, A. M. Price-Whelan, N. Pulatova, D. Qiu, S. Ramirez, A. Rankine, C. Ricci, J. C. Runnoe, S. Sanchez, M. Salvato, S. K. Sarbadhicary, N. Sattler, A. K. Saydjari, C. Sayres, E. Schinnerer, K. C. Schlaufman, D. P. Schneider, M. R. Schreiber, A. Schwope, J. Serna, Y. Shen, C. Sifón, A. Singh, A. Sinha, S. Smee, Y. Song, D. Souto, K. G. Stassun, M. Steinmetz, A. Stone-Martinez, G. Stringfellow, A. Stutz, J. Sánchez-Gallego, J. C. Tan, J. Tayar, R. Thai, A. Thakar, Y. Ting, A. Tkachenko, G. Tovmassian, B. Trakhtenbrot, J. G. Fernández-Trincado, N. Troup, J. Trump, S. Tuttle, R. P. van der Marel, S. Villanova, J. Villaseñor, S. Wachter, Z. Way, A. Weijmans, D. Weinberg, A. Wheeler, A. I. Wiggins, J. Wilson, A. Wofford, T. Wong, Q. Wu, D. Wylezalek, R. F. G. Wyse, X. Xue, Q. Yang, J. Ybarra, N. Zakamska, E. Zari, G. Zasowski, G. Zeltyn, C. Zucker, C. G. Román-Zúñiga, and R. de J. Zermeño"
+        },
+        {
+          "line": 6559,
+          "text": "P. M. Manseau, P. Bergeron, and E. M. Green"
+        },
+        {
+          "line": 7007,
+          "text": "S. G. Parsons, B. T. Gänsicke, T. R. Marsh, R. P. Ashley, M. C.P. Bours, E. Breedt, M. R. Burleigh, C. M. Copperwheat, V. S. Dhillon, M. Green, L. K. Hardy, J. J. Hermes, P. Irawati, P. Kerry, S. P. Littlefair, M. J. McAllister, S. Rattanasoon, A. Rebassa-Mansergas, D. I. Sahman, and M. R. Schreiber"
+        },
+        {
+          "line": 7583,
+          "text": "R. A. Saffer, R. A. Wade, J. Liebert, R. F. Green, E. M. Sion, J. Bechtold, D. Foss, and K. Kidder"
+        }
+      ],
+      "interpretation": "Whole-word matching avoids counting CIE inside words such as efficiency. Green occurrences were checked and are author/survey names or plotting colours, not perceived stellar-colour measurements."
+    }
+  }
+}

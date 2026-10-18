@@ -1,0 +1,18 @@
+[
+  {
+    "url": "https://files.cie.co.at/Publications-datasets/CIE_xyz_1931_2deg.csv",
+    "path": "reference/CIE_xyz_1931_2deg.csv",
+    "bytes": 24021,
+    "sha256": "fa663e3535a7e0763a745993a1f0a192eb0275ac46ad2d1befd7626841e713c1",
+    "md5": "17cca777db64b17170f06f67ce9d3ab7",
+    "retrieved_utc": "2026-10-18T00:45:46.985628+00:00"
+  },
+  {
+    "url": "https://files.cie.co.at/Publications-datasets/CIE_xyz_1931_2deg.csv_metadata.json",
+    "path": "reference/CIE_xyz_1931_2deg.csv_metadata.json",
+    "bytes": 3787,
+    "sha256": "03abcaecf4e63d77045ef57c4514b52c8bb1a46dd18e1f93a50044a0f4f481c8",
+    "md5": "8c6455e9b8b1c80f8006473e4c6ae8a7",
+    "retrieved_utc": "2026-10-18T00:45:47.718895+00:00"
+  }
+]
