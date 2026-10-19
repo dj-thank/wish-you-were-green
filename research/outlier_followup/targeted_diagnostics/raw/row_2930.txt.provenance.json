@@ -1,0 +1,14 @@
+{
+  "request_url": "https://www.montrealwhitedwarfdatabase.org/WDs/Gaia%20DR3%202002597083798483200/spect.Gaia%20DR3%202002597083798483200.XP.txt",
+  "query_started_utc": "2026-10-19T10:12:46.212081+00:00",
+  "expected_frozen_sha256": "92e6863ba3134be99435dd613430eafb4f9168b8197320975e73e665a3fb5409",
+  "status": 200,
+  "resolved_url": "https://www.montrealwhitedwarfdatabase.org/WDs/Gaia%20DR3%202002597083798483200/spect.Gaia%20DR3%202002597083798483200.XP.txt",
+  "content_type": "text/plain; charset=UTF-8",
+  "http_date": "Mon, 19 Oct 2026 10:12:46 GMT",
+  "retrieved_utc": "2026-10-19T10:12:46.780018+00:00",
+  "bytes": 7380,
+  "sha256": "92e6863ba3134be99435dd613430eafb4f9168b8197320975e73e665a3fb5409",
+  "saved_path": "research/outlier_followup/targeted_diagnostics/raw/row_2930.txt",
+  "result": "ok"
+}

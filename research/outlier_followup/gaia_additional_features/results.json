@@ -1,0 +1,344 @@
+{
+  "created_utc": "2026-10-19T10:57:59.222585+00:00",
+  "objects": [
+    {
+      "page": 31,
+      "panel": 8,
+      "source_id": "1951666884868218112",
+      "row_index": 8303,
+      "raw_sha256": "19691a4e746bd0689c2f2e95ca3696da48289b587e440dbcf0c5cfca43398846",
+      "source_url": "https://www.montrealwhitedwarfdatabase.org/WDs/Gaia%20DR3%201951666884868218112/spect.Gaia%20DR3%201951666884868218112.XP.txt",
+      "raw_copy": "raw/row_8303.txt",
+      "prior_exact_retrieval": {
+        "row_index": 8303,
+        "row_indices": [
+          8303
+        ],
+        "origin": "mwdd",
+        "source_url": "https://www.montrealwhitedwarfdatabase.org/WDs/Gaia%20DR3%201951666884868218112/spect.Gaia%20DR3%201951666884868218112.XP.txt",
+        "sha256": "19691a4e746bd0689c2f2e95ca3696da48289b587e440dbcf0c5cfca43398846",
+        "cached_raw_verified": false,
+        "raw_path": "mwdd/spectra/0d1b32f3ef36ee9ce32e7cba.csv",
+        "status": "verified",
+        "raw_size_bytes": 7372,
+        "checked_utc": "2026-10-19T10:15:07.176999+00:00",
+        "attempts": 1
+      },
+      "contact_sheet_sha256": "cb3f5231aebfd3ccbc4e42ca607968109e4f4256d3045009403aeb2d32dede96",
+      "current_calibrated": false,
+      "current_Duv": -0.00670645981605,
+      "normalization": "median current F_lambda at 5200–5500 A; no refit",
+      "gaia_official": {
+        "source_id": "1951666884868218112",
+        "ra": "322.25632476402166",
+        "dec": "36.51786748087337",
+        "ref_epoch": "2016.0",
+        "pmra": "-37.24374690797586",
+        "pmdec": "-39.15177609510643",
+        "phot_g_mean_mag": "17.261536",
+        "bp_rp": "0.46380234",
+        "ruwe": "1.0268028",
+        "phot_variable_flag": "VARIABLE",
+        "has_xp_continuous": "true",
+        "classifier_name": "nTransits:5+",
+        "best_class_name": "CV",
+        "best_class_score": "0.7057743"
+      },
+      "descriptive_windows": [
+        {
+          "reference_A": 4861,
+          "halfwidth_A": 80,
+          "samples": 10,
+          "maximum_A": 4869.32,
+          "maximum_normalized_flux": 2.2036999625666223,
+          "minimum_A": 4791.67,
+          "minimum_normalized_flux": 1.6725678702784923
+        },
+        {
+          "reference_A": 6563,
+          "halfwidth_A": 100,
+          "samples": 9,
+          "maximum_A": 6566.39,
+          "maximum_normalized_flux": 2.356208295949471,
+          "minimum_A": 6482.48,
+          "minimum_normalized_flux": 0.7201647068610033
+        }
+      ],
+      "unit_withheld_records": 0,
+      "independent_spectrum_in_current_panel": false
+    },
+    {
+      "page": 32,
+      "panel": 11,
+      "source_id": "2096274276193099136",
+      "row_index": 8307,
+      "raw_sha256": "0f12cbbd3d31ec8caa91aea134bfe32464254d4701676a987a3ffb11656df319",
+      "source_url": "https://www.montrealwhitedwarfdatabase.org/WDs/Gaia%20DR3%202096274276193099136/spect.Gaia%20DR3%202096274276193099136.XP.txt",
+      "raw_copy": "raw/row_8307.txt",
+      "prior_exact_retrieval": {
+        "row_index": 8307,
+        "row_indices": [
+          8307
+        ],
+        "origin": "mwdd",
+        "source_url": "https://www.montrealwhitedwarfdatabase.org/WDs/Gaia%20DR3%202096274276193099136/spect.Gaia%20DR3%202096274276193099136.XP.txt",
+        "sha256": "0f12cbbd3d31ec8caa91aea134bfe32464254d4701676a987a3ffb11656df319",
+        "cached_raw_verified": false,
+        "raw_path": "mwdd/spectra/26b3ca5c89c744d0a03c5aca.csv",
+        "status": "verified",
+        "raw_size_bytes": 7372,
+        "checked_utc": "2026-10-19T10:15:03.853413+00:00",
+        "attempts": 1
+      },
+      "contact_sheet_sha256": "880a93f802b99ccfa424127b11706a79de5e161fa33e81ede6676767cdaa3c67",
+      "current_calibrated": false,
+      "current_Duv": -0.00952906742871,
+      "normalization": "median current F_lambda at 5200–5500 A; no refit",
+      "gaia_official": {
+        "source_id": "2096274276193099136",
+        "ra": "277.53678067557604",
+        "dec": "37.611592058500655",
+        "ref_epoch": "2016.0",
+        "pmra": "-1.6150705377089491",
+        "pmdec": "12.946384649455249",
+        "phot_g_mean_mag": "17.436657",
+        "bp_rp": "0.4508419",
+        "ruwe": "0.9617232",
+        "phot_variable_flag": "VARIABLE",
+        "has_xp_continuous": "true",
+        "classifier_name": "nTransits:5+",
+        "best_class_name": "CV",
+        "best_class_score": "0.8401985"
+      },
+      "descriptive_windows": [
+        {
+          "reference_A": 4861,
+          "halfwidth_A": 80,
+          "samples": 10,
+          "maximum_A": 4885.01,
+          "maximum_normalized_flux": 2.5621416977982365,
+          "minimum_A": 4791.67,
+          "minimum_normalized_flux": 1.7563872728744752
+        },
+        {
+          "reference_A": 6563,
+          "halfwidth_A": 100,
+          "samples": 9,
+          "maximum_A": 6566.39,
+          "maximum_normalized_flux": 1.9316840348056734,
+          "minimum_A": 6482.48,
+          "minimum_normalized_flux": 0.8297305528889711
+        }
+      ],
+      "unit_withheld_records": 0,
+      "independent_spectrum_in_current_panel": false
+    },
+    {
+      "page": 33,
+      "panel": 11,
+      "source_id": "2208124536065383424",
+      "row_index": 5948,
+      "raw_sha256": "2572fbe4ad47e4378809bc2e56128a1261000147017392ab313691fcf4461cd7",
+      "source_url": "https://www.montrealwhitedwarfdatabase.org/WDs/Gaia%20DR2%202208124536065383424/spect.Gaia%20DR2%202208124536065383424.XP.txt",
+      "raw_copy": "raw/row_5948.txt",
+      "prior_exact_retrieval": {
+        "row_index": 5948,
+        "row_indices": [
+          5948
+        ],
+        "origin": "mwdd",
+        "source_url": "https://www.montrealwhitedwarfdatabase.org/WDs/Gaia%20DR2%202208124536065383424/spect.Gaia%20DR2%202208124536065383424.XP.txt",
+        "sha256": "2572fbe4ad47e4378809bc2e56128a1261000147017392ab313691fcf4461cd7",
+        "cached_raw_verified": false,
+        "raw_path": "mwdd/spectra/de04dbeb8964502da13575c3.csv",
+        "status": "verified",
+        "raw_size_bytes": 7371,
+        "checked_utc": "2026-10-19T10:15:12.543477+00:00",
+        "attempts": 1
+      },
+      "contact_sheet_sha256": "1a8b3f40cbdeea6f8a781e192f28e734fb6d49e57dd2d8213a8baf8a33c9f8d6",
+      "current_calibrated": true,
+      "current_Duv": -0.00699361101555,
+      "normalization": "median current F_lambda at 5200–5500 A; no refit",
+      "gaia_official": {
+        "source_id": "2208124536065383424",
+        "ra": "342.6676993906506",
+        "dec": "63.477128303319724",
+        "ref_epoch": "2016.0",
+        "pmra": "121.18340396030428",
+        "pmdec": "-41.780831852224935",
+        "phot_g_mean_mag": "16.42019",
+        "bp_rp": "0.2641163",
+        "ruwe": "1.0411698",
+        "phot_variable_flag": "VARIABLE",
+        "has_xp_continuous": "true",
+        "classifier_name": "",
+        "best_class_name": "",
+        "best_class_score": ""
+      },
+      "descriptive_windows": [
+        {
+          "reference_A": 4861,
+          "halfwidth_A": 80,
+          "samples": 10,
+          "maximum_A": 4869.32,
+          "maximum_normalized_flux": 2.096436304109309,
+          "minimum_A": 4791.67,
+          "minimum_normalized_flux": 1.6040127198944618
+        },
+        {
+          "reference_A": 6563,
+          "halfwidth_A": 100,
+          "samples": 9,
+          "maximum_A": 6566.39,
+          "maximum_normalized_flux": 3.364938538652236,
+          "minimum_A": 6482.48,
+          "minimum_normalized_flux": 0.5280146991222685
+        }
+      ],
+      "unit_withheld_records": 2,
+      "independent_spectrum_in_current_panel": false
+    },
+    {
+      "page": 81,
+      "panel": 16,
+      "source_id": "4565045873343899136",
+      "row_index": 8370,
+      "raw_sha256": "81abb8902db83f0cf8d8c2b0d99655c842462ae1d5275c960fd8b2c8c4c2c2ba",
+      "source_url": "https://www.montrealwhitedwarfdatabase.org/WDs/Gaia%20DR3%204565045873343899136/spect.Gaia%20DR3%204565045873343899136.XP.txt",
+      "raw_copy": "raw/row_8370.txt",
+      "prior_exact_retrieval": {
+        "row_index": 8370,
+        "row_indices": [
+          8370
+        ],
+        "origin": "mwdd",
+        "source_url": "https://www.montrealwhitedwarfdatabase.org/WDs/Gaia%20DR3%204565045873343899136/spect.Gaia%20DR3%204565045873343899136.XP.txt",
+        "sha256": "81abb8902db83f0cf8d8c2b0d99655c842462ae1d5275c960fd8b2c8c4c2c2ba",
+        "cached_raw_verified": false,
+        "raw_path": "mwdd/spectra/8cb1c37bd6ffac8fcd86f61a.csv",
+        "status": "verified",
+        "raw_size_bytes": 7378,
+        "checked_utc": "2026-10-19T10:15:59.625137+00:00",
+        "attempts": 1
+      },
+      "contact_sheet_sha256": "cb3a1a978997eedd44a72c29c7450068e2556f880ba612c0890bed24147f3566",
+      "current_calibrated": true,
+      "current_Duv": -0.00539536384327,
+      "normalization": "median current F_lambda at 5200–5500 A; no refit",
+      "gaia_official": {
+        "source_id": "4565045873343899136",
+        "ra": "254.24219644161533",
+        "dec": "21.360852249192373",
+        "ref_epoch": "2016.0",
+        "pmra": "2.3182179632826445",
+        "pmdec": "-19.095665880249985",
+        "phot_g_mean_mag": "18.077215",
+        "bp_rp": "0.57642555",
+        "ruwe": "1.0131907",
+        "phot_variable_flag": "VARIABLE",
+        "has_xp_continuous": "true",
+        "classifier_name": "nTransits:5+",
+        "best_class_name": "CV",
+        "best_class_score": "0.93689567"
+      },
+      "descriptive_windows": [
+        {
+          "reference_A": 4861,
+          "halfwidth_A": 80,
+          "samples": 10,
+          "maximum_A": 4900.74,
+          "maximum_normalized_flux": 1.841194025900938,
+          "minimum_A": 4791.67,
+          "minimum_normalized_flux": 1.2276843570770914
+        },
+        {
+          "reference_A": 6563,
+          "halfwidth_A": 100,
+          "samples": 9,
+          "maximum_A": 6566.39,
+          "maximum_normalized_flux": 1.826143193479119,
+          "minimum_A": 6482.48,
+          "minimum_normalized_flux": 0.8760980009381917
+        }
+      ],
+      "unit_withheld_records": 1,
+      "independent_spectrum_in_current_panel": false
+    },
+    {
+      "page": 89,
+      "panel": 13,
+      "source_id": "5589261737965864832",
+      "row_index": 8390,
+      "raw_sha256": "d50cf52d1a3905e2a84e492335ad389d2cbe5737ab539a4e596250ca3f395d77",
+      "source_url": "https://www.montrealwhitedwarfdatabase.org/WDs/Gaia%20DR3%205589261737965864832/spect.Gaia%20DR3%205589261737965864832.XP.txt",
+      "raw_copy": "raw/row_8390.txt",
+      "prior_exact_retrieval": {
+        "row_index": 8390,
+        "row_indices": [
+          8390
+        ],
+        "origin": "mwdd",
+        "source_url": "https://www.montrealwhitedwarfdatabase.org/WDs/Gaia%20DR3%205589261737965864832/spect.Gaia%20DR3%205589261737965864832.XP.txt",
+        "sha256": "d50cf52d1a3905e2a84e492335ad389d2cbe5737ab539a4e596250ca3f395d77",
+        "cached_raw_verified": false,
+        "raw_path": "mwdd/spectra/e5f988f25b567d95beb974ed.csv",
+        "status": "verified",
+        "raw_size_bytes": 7379,
+        "checked_utc": "2026-10-19T10:16:48.743176+00:00",
+        "attempts": 1
+      },
+      "contact_sheet_sha256": "0c1839cb299d55a2033128bb211c35763f42ba44237b812a97562325661bfecf",
+      "current_calibrated": false,
+      "current_Duv": -0.00838143073369,
+      "normalization": "median current F_lambda at 5200–5500 A; no refit",
+      "gaia_official": {
+        "source_id": "5589261737965864832",
+        "ra": "109.2386330960739",
+        "dec": "-37.473776013890834",
+        "ref_epoch": "2016.0",
+        "pmra": "-4.027736092729395",
+        "pmdec": "2.1320389135273805",
+        "phot_g_mean_mag": "18.04888",
+        "bp_rp": "0.5253391",
+        "ruwe": "1.0099223",
+        "phot_variable_flag": "VARIABLE",
+        "has_xp_continuous": "true",
+        "classifier_name": "nTransits:5+",
+        "best_class_name": "S",
+        "best_class_score": "0.4871808"
+      },
+      "descriptive_windows": [
+        {
+          "reference_A": 4861,
+          "halfwidth_A": 80,
+          "samples": 10,
+          "maximum_A": 4885.01,
+          "maximum_normalized_flux": 2.273356814938238,
+          "minimum_A": 4791.67,
+          "minimum_normalized_flux": 1.691800420419154
+        },
+        {
+          "reference_A": 6563,
+          "halfwidth_A": 100,
+          "samples": 9,
+          "maximum_A": 6587.53,
+          "maximum_normalized_flux": 2.1282348722924094,
+          "minimum_A": 6482.48,
+          "minimum_normalized_flux": 0.9228059814818721
+        }
+      ],
+      "unit_withheld_records": 0,
+      "independent_spectrum_in_current_panel": false
+    }
+  ],
+  "code_sha256": "727ce45b19cf2c37d8cdd8366bc172678ee47262fbcd0ba7dd5f9e1788874e46",
+  "current_screen_sha256": "2c894ee7af8d1c3a5f62ba19c6921265b4bef5de9f84291394d441642b984746",
+  "query_response_sha256": "33e0472a0d6c28a215f8abdc995f8936f6816573db9b25359e4ce53f87f5c0cd",
+  "limitations": [
+    "Selected after visual inspection, with no completeness or population-rate interpretation.",
+    "Gaia classification scores are not posterior probabilities.",
+    "XP and Gaia variability classification share mission data; no independent photons are added.",
+    "No native coefficient covariance, independent spectroscopy, period or new line detection was measured."
+  ]
+}

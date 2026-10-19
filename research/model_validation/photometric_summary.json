@@ -1,0 +1,221 @@
+{
+  "created_utc": "2026-10-19T10:42:01.271487+00:00",
+  "script_sha256": "db04fe722d3fc48947acda7efdc4498f4411c3be425ef6bd94922652f22aa234",
+  "input_sha256": {
+    "research/literature/sources/candidate27_prior_rows.json": "abfc9a856deb2c1f2f60248b48cd3a082f6b604dc35501d67c85e7a6aa987ccd",
+    "sdss/manifest_with_photometry.json.gz": "6bc3436d3b0e4a1e22f454379ce2fcae56ec67f5cdcf9abd26f4a379b57cbdb9",
+    "research/model_validation/sources/model_sources.json": "9e88858c37186942e0cd76dd6eb9a021d0d1ec28d784736c3cf5a29f69bc94ec",
+    "research/model_validation/sources/Table_DA": "ff3cfe6882c10c5a9e64c3ca19cec9ed92d622bcc88b3dd87e1382017ddad1df",
+    "research/model_validation/sources/Table_DB": "9353da84af8a2db8812ac19ec62ae782b28cb103602282ad72134be1cdf6d409"
+  },
+  "candidate_rows": 27,
+  "candidate_available": 25,
+  "control_rows": 54,
+  "control_available": {
+    "control_DA": 14,
+    "control_DC": 17,
+    "control_DB": 16
+  },
+  "all_fits": 720,
+  "primary_fits": 144,
+  "primary_fixed_logg": 8.0,
+  "gravity_sensitivity": [
+    7.0,
+    7.5,
+    8.0,
+    8.5,
+    9.0
+  ],
+  "fitting": "Use only observed gri magnitudes. At each fixed logg, globally minimize diagonal weighted squared residual in all native log(Teff) intervals plus free additive magnitude scale. Linear interpolation in magnitude vs log(Teff), no extrapolation. z/y never enter fitting or selection.",
+  "error_handling": "Use max(reported error, 0.02 mag) in gri; do not add another Swan floor. Weights are a numerical fitting convention, not a complete covariance or significance model.",
+  "extinction": "Observed magnitudes are not dereddened; no inferred reddening or distance. SDSS full-sightline extinction is preserved as metadata but not applied as though each nearby star were behind all dust.",
+  "sdss_zero_point": "Primary SDSS controls use reported near-AB PSF magnitudes and the model's SDSS columns. DR17 documents an uncertain estimate z_AB=z_SDSS+0.02; the heldout_z_if_sdss_plus0p02_AB_mag column carries this separate sensitivity, reducing every SDSS z residual by 0.02 without changing gri fits. No zero point is fitted from controls. SDSS DR17 hypercalibration itself uses PS1, so these are separate objects/filter-system checks, not independently calibrated PS1 controls.",
+  "sdss_zero_point_source": "https://www.sdss4.org/dr17/algorithms/fluxcal/",
+  "scientific_scope": "Restricted pure-H/pure-He atmospheric null templates. No DZ/DQ abundance fitting, no native spectral model residuals, no physical-parameter inference or discovery significance. SDSS controls validate the fitting procedure in their own filter system; they are not a selection- or survey-matched population for candidate excess rates.",
+  "model_version_limit": "Both downloaded tables are dated 2021-01-13; the explanatory web page says updated 2020-08-18. They predate the H3+ partition-function correction reported by Kilic et al. 2026 section II.1 (divide by 8, reducing H3+ and H-minus opacity). These old pure-composition templates are not the updated 2026 DZ/DQ/mixed H-He models. Their prediction failures, especially for ultracool J1323-0129, cannot establish failures of current atmosphere models, an additional component or new physics.",
+  "model_version_source": "https://arxiv.org/html/2606.25377v2#S2.SS1",
+  "interpolation_precision": "Original magnitude table values have 0.001 mag decimal precision; computed digits are reproducibility digits, not physical precision.",
+  "model_ranges": {
+    "DA": {
+      "rows": 305,
+      "teff_min_K": 1500.0,
+      "teff_max_K": 150000.0
+    },
+    "DB": {
+      "rows": 360,
+      "teff_min_K": 3250.0,
+      "teff_max_K": 150000.0
+    }
+  },
+  "groups": [
+    {
+      "sample": "candidate",
+      "family": "DA",
+      "count": 25,
+      "gri_within_0p05mag": 14,
+      "temperature_boundary": 0,
+      "z": {
+        "count": 25,
+        "median_mag": -0.13805830156459464,
+        "max_abs_mag": 0.29869603656776533,
+        "abs_over_0p05mag": 23,
+        "abs_over_0p10mag": 19
+      },
+      "y": {
+        "count": 25,
+        "median_mag": -0.11158670216882882,
+        "max_abs_mag": 0.40402304969964575,
+        "abs_over_0p05mag": 24,
+        "abs_over_0p10mag": 15
+      }
+    },
+    {
+      "sample": "candidate",
+      "family": "DB",
+      "count": 25,
+      "gri_within_0p05mag": 11,
+      "temperature_boundary": 0,
+      "z": {
+        "count": 25,
+        "median_mag": -0.13735766000980476,
+        "max_abs_mag": 0.3318305542877056,
+        "abs_over_0p05mag": 23,
+        "abs_over_0p10mag": 20
+      },
+      "y": {
+        "count": 25,
+        "median_mag": -0.09685723876953034,
+        "max_abs_mag": 0.4349356767706638,
+        "abs_over_0p05mag": 19,
+        "abs_over_0p10mag": 12
+      }
+    },
+    {
+      "sample": "control_DA",
+      "family": "DA",
+      "count": 14,
+      "gri_within_0p05mag": 14,
+      "temperature_boundary": 0,
+      "z": {
+        "count": 14,
+        "median_mag": -0.00465268378460415,
+        "max_abs_mag": 0.1381166218710561,
+        "abs_over_0p05mag": 5,
+        "abs_over_0p10mag": 1
+      },
+      "y": {
+        "count": 0,
+        "median_mag": null,
+        "max_abs_mag": null,
+        "abs_over_0p05mag": 0,
+        "abs_over_0p10mag": 0
+      }
+    },
+    {
+      "sample": "control_DA",
+      "family": "DB",
+      "count": 14,
+      "gri_within_0p05mag": 14,
+      "temperature_boundary": 0,
+      "z": {
+        "count": 14,
+        "median_mag": -0.021875006627698923,
+        "max_abs_mag": 0.1657478656882745,
+        "abs_over_0p05mag": 6,
+        "abs_over_0p10mag": 2
+      },
+      "y": {
+        "count": 0,
+        "median_mag": null,
+        "max_abs_mag": null,
+        "abs_over_0p05mag": 0,
+        "abs_over_0p10mag": 0
+      }
+    },
+    {
+      "sample": "control_DB",
+      "family": "DA",
+      "count": 16,
+      "gri_within_0p05mag": 16,
+      "temperature_boundary": 0,
+      "z": {
+        "count": 16,
+        "median_mag": 0.026712870655751786,
+        "max_abs_mag": 0.091732507278671,
+        "abs_over_0p05mag": 6,
+        "abs_over_0p10mag": 0
+      },
+      "y": {
+        "count": 0,
+        "median_mag": null,
+        "max_abs_mag": null,
+        "abs_over_0p05mag": 0,
+        "abs_over_0p10mag": 0
+      }
+    },
+    {
+      "sample": "control_DB",
+      "family": "DB",
+      "count": 16,
+      "gri_within_0p05mag": 16,
+      "temperature_boundary": 0,
+      "z": {
+        "count": 16,
+        "median_mag": -0.0009606980732321801,
+        "max_abs_mag": 0.0688070806386527,
+        "abs_over_0p05mag": 3,
+        "abs_over_0p10mag": 0
+      },
+      "y": {
+        "count": 0,
+        "median_mag": null,
+        "max_abs_mag": null,
+        "abs_over_0p05mag": 0,
+        "abs_over_0p10mag": 0
+      }
+    },
+    {
+      "sample": "control_DC",
+      "family": "DA",
+      "count": 17,
+      "gri_within_0p05mag": 17,
+      "temperature_boundary": 0,
+      "z": {
+        "count": 17,
+        "median_mag": 0.004799978916725678,
+        "max_abs_mag": 0.18179056127778992,
+        "abs_over_0p05mag": 7,
+        "abs_over_0p10mag": 2
+      },
+      "y": {
+        "count": 0,
+        "median_mag": null,
+        "max_abs_mag": null,
+        "abs_over_0p05mag": 0,
+        "abs_over_0p10mag": 0
+      }
+    },
+    {
+      "sample": "control_DC",
+      "family": "DB",
+      "count": 17,
+      "gri_within_0p05mag": 17,
+      "temperature_boundary": 0,
+      "z": {
+        "count": 17,
+        "median_mag": 0.017282448413602935,
+        "max_abs_mag": 0.18521992434952494,
+        "abs_over_0p05mag": 6,
+        "abs_over_0p10mag": 3
+      },
+      "y": {
+        "count": 0,
+        "median_mag": null,
+        "max_abs_mag": null,
+        "abs_over_0p05mag": 0,
+        "abs_over_0p10mag": 0
+      }
+    }
+  ],
+  "verification": "PASS: original table hashes; explicit survey columns; fixed input coverage; all intervals searched; two known-template recovery checks."
+}

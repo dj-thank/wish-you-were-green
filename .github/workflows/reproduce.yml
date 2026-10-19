@@ -49,3 +49,7 @@ jobs:
       - name: Verify the extended research evidence offline
         working-directory: ${{ runner.temp }}
         run: python "$GITHUB_WORKSPACE/scripts/verify_research_extension.py" --root "$GITHUB_WORKSPACE"
+
+      - name: Verify every follow-up record and the new numerical experiments offline
+        working-directory: ${{ runner.temp }}
+        run: python "$GITHUB_WORKSPACE/scripts/verify_research_followup.py" --root "$GITHUB_WORKSPACE"

@@ -1,0 +1,14 @@
+{
+  "request_url": "https://gea.esac.esa.int/tap-server/tap/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=SELECT+g.source_id%2Cg.ra%2Cg.dec%2Cg.ref_epoch%2Cg.pmra%2Cg.pmdec%2Cg.phot_g_mean_mag%2Cg.bp_rp%2Cg.ruwe%2Cg.phot_variable_flag%2Cg.has_xp_continuous%2Cv.classifier_name%2Cv.best_class_name%2Cv.best_class_score+FROM+gaiadr3.gaia_source+AS+g+LEFT+OUTER+JOIN+gaiadr3.vari_classifier_result+AS+v+ON+g.source_id%3Dv.source_id+WHERE+g.source_id+IN+%281951666884868218112%2C2096274276193099136%2C2208124536065383424%2C4565045873343899136%2C5589261737965864832%29+ORDER+BY+g.source_id",
+  "query_started_utc": "2026-10-19T10:55:57.397919+00:00",
+  "code_sha256_at_acquisition": "f49a9d2096d05c32b9f802851c2a5e5ab6c5c27c0b5de62f8874df75e89fab7b",
+  "http_status": 200,
+  "resolved_url": "https://gea.esac.esa.int/tap-server/tap/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=SELECT+g.source_id%2Cg.ra%2Cg.dec%2Cg.ref_epoch%2Cg.pmra%2Cg.pmdec%2Cg.phot_g_mean_mag%2Cg.bp_rp%2Cg.ruwe%2Cg.phot_variable_flag%2Cg.has_xp_continuous%2Cv.classifier_name%2Cv.best_class_name%2Cv.best_class_score+FROM+gaiadr3.gaia_source+AS+g+LEFT+OUTER+JOIN+gaiadr3.vari_classifier_result+AS+v+ON+g.source_id%3Dv.source_id+WHERE+g.source_id+IN+%281951666884868218112%2C2096274276193099136%2C2208124536065383424%2C4565045873343899136%2C5589261737965864832%29+ORDER+BY+g.source_id",
+  "content_type": "text/csv",
+  "http_date": "Mon, 19 Oct 2026 10:55:58 GMT",
+  "result": "ok",
+  "retrieved_utc": "2026-10-19T10:55:58.676370+00:00",
+  "bytes": 994,
+  "sha256": "33e0472a0d6c28a215f8abdc995f8936f6816573db9b25359e4ce53f87f5c0cd",
+  "rows": 5
+}

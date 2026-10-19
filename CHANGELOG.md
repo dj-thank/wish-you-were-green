@@ -2,6 +2,18 @@
 
 This log records changes to the research, its interpretation and the reproducible package. A software or documentation release is not a peer-review or discovery-certification milestone.
 
+## Research follow-up — 2026-10-19
+
+- Traced two large apparent spectral differences to different calibration branches applied to proven duplicate SDSS observations. Their current Δuv values of 0.01360 and 0.01517 fall to 6.16×10⁻⁷ and 1.45×10⁻⁶ under a shared existing correction. Replayed the acceptance threshold and missing-PS1 fallback decisions, preserving unresolved photometric identities and independent-instrument residuals. Added an explicit common-processing comparison without overwriting the frozen screen.
+
+- Completed actual individual viewing records for the remaining 2,007 historical review entities across 126 sheets: 1,684 with current eligible spectra and 323 explicitly unavailable. The earlier 337 / 22 sheets remain preserved. All 4,370 records retain a disposition, including 1,305 unresolved-unit records, 23 coverage/gap exclusions and one existing error. Retrieved and checked all 3,041 needed original hashes and reproduced their current colours.
+- Added full-range/zoom pairs for 30 display-compressed entities, three native-grid peak checks with nine explicit interpolation sensitivities, four original-SDSS-fibre/Gaia epoch comparisons, and source-backed feature/classification checks. Corrected two imprecise visual wavelength estimates using original samples; retained production masks and historical results. Five newly queried XP feature cases are all already catalogued Gaia variables, not new variability discoveries.
+- Executed 450 observed-photometry configurations and 1,800 linear programmes for all 25 available initial candidates. Directly re-integrated all 1,772 feasible witnesses, retained 28 bounded infeasibilities, and checked 3,450 nested constraints. Constructed strict opposite green/red channel-order witnesses for J0429 inside the same observed griz boxes with about 4.25% maximum shape changes. Fourteen of 25 fail a 2% griz budget under the specified 800 Å / one-quoted-error model. These are conditional feasibility results, not measured calibration errors or confidence limits.
+- Retrieved the 2021-header Montréal pure-H/He photometric tables and executed 720 control-template fits using 25 candidates and 47 quality-selected controls, reserving z/y for prediction. Matched all 25 published DZ/DQ fit pages by Gaia ID and diagnosed their coarse vector-curve residuals. Retained limits from old model versions, fitted observations, relative-Fnu plotted curves, incomplete wavelength coverage and absent native composition-specific models.
+- Added dated Japanese/English reports and an offline follow-up verifier to CI. The verifier uses committed compact evidence, independently checks numerical predictions, and validates image/individual-record provenance; it cannot repeat a visual inspection or certify a physical discovery.
+
+**日本語:** 残り2007対象の個別確認を完了し、原画素・誤差・位置・既知変光まで追確認しました。実測測光を拘束した色判定の限界と公開モデルによる予測を実計算し、[10月19日追加報告](research/FOLLOWUP_2026-10-19.ja.md)にまとめました。確認不可323対象と単位保留を残し、新しい元素量や固有変光を確定したとはしていません。
+
 ## 0.2.0 — 2026-10-18
 
 ### Corrected flux interpretation and research status

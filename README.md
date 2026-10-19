@@ -10,11 +10,19 @@ These are known stars. The research investigates their calculated human-vision c
 
 **Project initiator and maintainer:** Shota Moriwaki
 
-**Research revision:** 0.2.0 · **Updated:** 18 October 2026 UTC
+**Research revision:** 0.2.0 plus 19 October follow-up · **Updated:** 19 October 2026 UTC
 
 **Repository:** [dj-thank/wish-you-were-green](https://github.com/dj-thank/wish-you-were-green)
 
 **Start with the [current research report](research/README.md) or [日本語の研究報告](research/README.ja.md).** They distinguish completed analyses, proposed hypotheses and unresolved scientific work.
+
+### New: completed individual review and model-based follow-up
+
+**A concrete source of misleading graph offsets was identified:** two proven duplicates of the same SDSS observations followed different calibration branches. Their apparent Δuv differences of 0.01360 and 0.01517 shrink by more than 99.99% under the same existing correction. [Original-pixel evidence and corrected comparison](research/outlier_followup/representation_calibration/README.md)
+
+The [19 October follow-up](research/FOLLOWUP_2026-10-19.en.md) ([日本語](research/FOLLOWUP_2026-10-19.ja.md)) adds actual individual notes for the remaining **2,007 review entities**, including 1,684 with accepted spectra and 323 explicit unavailable panels. Together with the earlier 337, every entity in the historical 2,344-object review queue has a viewing record; this is not visual inspection of all 6,003 inventory entities or confirmation of physical anomalies.
+
+New computations cover **450 measured-photometry scenarios / 1,800 linear programmes**, **720 pure-H/He control-template fits**, and 25 published composition-specific model plots. For **J0429−0354, two explicitly constructed spectra fit the same observed PS1 griz error boxes while having opposite green/red channel ordering, both within about 4.25% maximum shape change**. Under the fixed 800 Å spline model and one quoted error per band, 14/25 candidates cannot fit griz within a 2% shape budget. These are conditional identifiability tests, not inferred calibration-error distributions or new atmosphere measurements. [Calibration experiment](research/calibration_followup/README.md) · [Published model tests](research/model_validation/README.md)
 
 ## Current results and historical records
 
@@ -26,6 +34,8 @@ These are known stars. The research investigates their calculated human-vision c
 | MWDD SDSS representation checks | **149 Fν / 504 Fλ / 1,579 unresolved** |
 | SDSS records recalculated with the revised interpretation | 3,629 |
 | Historical strong-outlier objects actually inspected | 337 objects across 22 contact sheets |
+| Remaining review entities now individually inspected | 2,007 across 126 sheets: 1,684 with spectra / 323 unavailable |
+| Current spectra in the additional visual review | 3,041 original-file hashes checked and colours reproduced |
 | Review inputs recovered with their recorded raw SHA256 | 4,355; 4,353 old calculations reproduced, two existing failures retained |
 
 The historical v0.1 figures of **9,023 eligible records and 337 strong-outlier entities** describe the earlier screen. Their input tables and numerical outputs are retained for traceability. The [current record table](research/precision/flux_units/corrected_record_screen.csv.gz) and [current object table](research/precision/flux_units/corrected_object_screen.csv) contain the revised eligibility and colour results. Entity keys include legacy positional associations and must not be counted automatically as verified distinct stars. These are exploratory selection counts, not discovery significance. [Audit definitions](research/README.md)
@@ -64,6 +74,8 @@ The proposed next experiments compare free Na/Ca and Mg/Ca against fixed metal r
 | Resource | Status and contents |
 |---|---|
 | [Current English report](research/README.md) · [日本語報告](research/README.ja.md) | v0.2 findings, limitations and next scientific tests |
+| [19 October follow-up](research/FOLLOWUP_2026-10-19.en.md) · [日本語](research/FOLLOWUP_2026-10-19.ja.md) | Completed review queue, measured-band feasibility, actual model comparisons and targeted diagnostics |
+| [All 2,007 additional review records](research/outlier_followup/individual_review.csv) | Individual observations, unavailable cases and fixed image links |
 | [Research-extension notebook](research/research_extension.ipynb) | Current extension: verification, corrected counts and follow-up figures |
 | [Initial27 follow-up CSV](research/candidate27_followup.csv) · [JSON](research/candidate27_followup.json) | Every candidate, conditional intervals, provenance and next checks |
 | [Candidate uncertainty comparison](research/candidate27_uncertainty_comparison.png) | All 27 objects; full/truncated Gaia are not independent |
@@ -87,6 +99,7 @@ python3.12 -m venv .venv-colour
 .venv-colour/bin/python scripts/verify_reproduction.py --with-controls
 .venv-colour/bin/python -m unittest discover -s tests -p 'test_*.py' -v
 .venv-colour/bin/python scripts/verify_research_extension.py
+.venv-colour/bin/python scripts/verify_research_followup.py
 ```
 
 On Windows, use the environment interpreter at `.venv-colour\Scripts\python.exe`.

@@ -1,0 +1,14 @@
+{
+  "request_url": "https://gea.esac.esa.int/tap-server/tap/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=SELECT+g.source_id%2Cg.ra%2Cg.dec%2Cg.ref_epoch%2Cg.pmra%2Cg.pmdec%2Cg.phot_g_mean_mag%2Cg.bp_rp%2Cg.ruwe%2Cg.phot_variable_flag%2Cg.has_xp_continuous%2Cv.classifier_name%2Cv.best_class_name%2Cv.best_class_score+FROM+gaiadr3.gaia_source+AS+g+LEFT+OUTER+JOIN+gaiadr3.vari_classifier_result+AS+v+ON+g.source_id%3Dv.source_id+WHERE+g.source_id+IN+%281060188315963488640%2C3688869246424920448%2C2629980411471669632%2C2802900781266410112%2C4573582236809330432%2C2163612727665972096%2C2002597083798483200%2C5078976609103251456%2C1245262790370992256%29+ORDER+BY+g.source_id",
+  "query_started_utc": "2026-10-19T10:12:46.964459+00:00",
+  "expected_frozen_sha256": null,
+  "status": 200,
+  "resolved_url": "https://gea.esac.esa.int/tap-server/tap/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=SELECT+g.source_id%2Cg.ra%2Cg.dec%2Cg.ref_epoch%2Cg.pmra%2Cg.pmdec%2Cg.phot_g_mean_mag%2Cg.bp_rp%2Cg.ruwe%2Cg.phot_variable_flag%2Cg.has_xp_continuous%2Cv.classifier_name%2Cv.best_class_name%2Cv.best_class_score+FROM+gaiadr3.gaia_source+AS+g+LEFT+OUTER+JOIN+gaiadr3.vari_classifier_result+AS+v+ON+g.source_id%3Dv.source_id+WHERE+g.source_id+IN+%281060188315963488640%2C3688869246424920448%2C2629980411471669632%2C2802900781266410112%2C4573582236809330432%2C2163612727665972096%2C2002597083798483200%2C5078976609103251456%2C1245262790370992256%29+ORDER+BY+g.source_id",
+  "content_type": "text/csv",
+  "http_date": "Mon, 19 Oct 2026 10:12:47 GMT",
+  "retrieved_utc": "2026-10-19T10:12:48.341047+00:00",
+  "bytes": 1580,
+  "sha256": "c0381c490aaba85e1035cd99de228b0e271be60471e76deb6e6b6f5ec190ae83",
+  "saved_path": "research/outlier_followup/targeted_diagnostics/raw/gaia_feature_review.csv",
+  "result": "ok"
+}

@@ -1,0 +1,1980 @@
+{
+  "kind": "Selected vector paths extracted from already fitted, published figure panels; not native model spectra",
+  "paper_url": "https://arxiv.org/html/2606.25377v2",
+  "archive_doi": "10.5281/zenodo.20775938",
+  "archive_url": "https://zenodo.org/records/20775938",
+  "license": {
+    "id": "cc-by-4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "changes_from_original": "Selected monotone vector traces only; preserve original graphic coordinates and segments. Linear tick calibration converts coordinates to plotted wavelength and relative Fnu. Labels OCR-checked; no authors model refitting or flux-vector precision claimed.",
+  "source_figure_semantics": "Red curves are published best-fitting DZ/DQ models; black curves are authors plotted DESI observations smoothed over 5 samples (0.8 Angstrom per sample). These are the data used in the published fits, not held-out or independent observations.",
+  "pdf_sources": [
+    {
+      "file": "allfitsDQ.pdf",
+      "url": "https://zenodo.org/api/records/20775938/files/allfitsDQ.pdf/content",
+      "retrieved_utc": "2026-10-19T10:12:26.533211+00:00",
+      "sha256": "a23b31bee1ff30a514220facc090fce87202c41f4dbadf9a22b7c1ab4cae1874",
+      "size_bytes": 38364325,
+      "archive_md5": "58cc6ce7223e6ed06cc0cc1c7c1dc6e5",
+      "last_modified": null,
+      "pages": 701
+    },
+    {
+      "file": "allfitsDZ.pdf",
+      "url": "https://zenodo.org/api/records/20775938/files/allfitsDZ.pdf/content",
+      "retrieved_utc": "2026-10-19T10:12:57.903621+00:00",
+      "sha256": "54009f44017ba7a9e2d633f9ae8459d095cc965fc19d8f59f43c270462afc4ad",
+      "size_bytes": 54818445,
+      "archive_md5": "7a38af32caf5095ea6c5c4ad67322a05",
+      "last_modified": null,
+      "pages": 1002
+    }
+  ],
+  "selection_evidence": {
+    "table1_source_url": "https://arxiv.org/src/2606.25377v2",
+    "table1_source_tar_sha256": "faf9d8941192e79d37008fadbc6067cbc48db4328fa00ac9f3fe96546d2c3897",
+    "table1_text_sha256": "e42a5250b063f60b01a2732af68f086246de12980f51742ae1cc39be04db60d0",
+    "mapping": "Filter table1 rows in order: DQ substring in spectral type -> 701 DQ PDF pages; otherwise Z substring -> 1002 DZ PDF pages. Page labels independently confirm all 25 exact Gaia IDs after removal of OCR-inserted whitespace only.",
+    "candidate_input_path": "research/literature/sources/candidate27_prior_rows.json",
+    "candidate_input_sha256": "abfc9a856deb2c1f2f60248b48cd3a082f6b604dc35501d67c85e7a6aa987ccd",
+    "not_available_source_ids": [
+      "1245262790370992256",
+      "1542337839923130624"
+    ]
+  },
+  "selected_pages": [
+    {
+      "archive": "allfitsDQ.pdf",
+      "page_1based": 46,
+      "source_id": "2482684508055379584",
+      "name": "WDJ011124.78-053318.52",
+      "spectral_type": "DQ",
+      "original_parameter_row": "WDJ011124.78-053318.52 2482684508055379584 DQ [logC/He=-6.78] 5572 36 7.276 0.113 0.241 0.045 5572 7.276 0.241",
+      "label_ocr": "; wbJO1 1 124.78-053318.52 | 2482684508055379584 ;",
+      "gaia_ocr_exact_after_whitespace_removal": true,
+      "axis": {
+        "x_major_ticks_pdf_pt": [
+          113.76,
+          279.84,
+          445.92
+        ],
+        "x_major_tick_wavelength_angstrom": [
+          4000,
+          5000,
+          6000
+        ],
+        "x_tick_label_ocr": "4000 5000 6000",
+        "x_to_wavelength_polynomial": [
+          6.021194605009636,
+          3315.028901734104
+        ],
+        "x_tick_fit_max_error_angstrom": 0.0,
+        "y_major_ticks_pdf_pt": [
+          446.0,
+          504.08,
+          562.16,
+          620.24,
+          678.32,
+          736.16
+        ],
+        "y_major_tick_relative_fnu": [
+          1.0,
+          0.8,
+          0.6,
+          0.4,
+          0.2,
+          0.0
+        ],
+        "y_to_relative_fnu_polynomial": [
+          -0.003445558546816862,
+          2.536876390536257
+        ],
+        "y_tick_fit_max_error_relative_fnu": 0.000394010711556092,
+        "source_graphic_coordinate_quantum_pdf_pt": 0.24,
+        "one_graphic_quantum_angstrom": 1.4450867052023124,
+        "one_graphic_quantum_relative_fnu": 0.0008269340512360469,
+        "bottom_panel_bounds_pdf_pt": [
+          80.4,
+          431.6,
+          570.72,
+          736.16
+        ]
+      },
+      "vector_diagnostics": {
+        "observed": {
+          "vertices": 3668,
+          "path_segments": 14,
+          "min_wavelength_angstrom": 3799.1329571644924,
+          "max_wavelength_angstrom": 6751.445277807571,
+          "max_join_gap_angstrom": 0.0
+        },
+        "model": {
+          "vertices": 2676,
+          "path_segments": 13,
+          "min_wavelength_angstrom": 3799.1329571644924,
+          "max_wavelength_angstrom": 6742.774375371621,
+          "max_join_gap_angstrom": 0.0
+        }
+      },
+      "compact_path": "research/model_validation/sources/published_curves/2482684508055379584.npz",
+      "compact_sha256": "857004fc6e85b5dbaefeee519d76f9567d0b7ef0bcf874a35263ccb2f4069890"
+    },
+    {
+      "archive": "allfitsDQ.pdf",
+      "page_1based": 69,
+      "source_id": "2453225705329412480",
+      "name": "WDJ014711.92-135843.93",
+      "spectral_type": "DQ",
+      "original_parameter_row": "WDJ014711.92-135843.93 2453225705329412480 DQ [logC/He=-6.16] 5909 42 8.100 0.056 0.633 0.049 5909 8.100 0.634",
+      "label_ocr": "wbJ014711.92-135843.93 | 2453225705329412480 :",
+      "gaia_ocr_exact_after_whitespace_removal": true,
+      "axis": {
+        "x_major_ticks_pdf_pt": [
+          113.76,
+          279.84,
+          445.92
+        ],
+        "x_major_tick_wavelength_angstrom": [
+          4000,
+          5000,
+          6000
+        ],
+        "x_tick_label_ocr": "4000 5000 6000",
+        "x_to_wavelength_polynomial": [
+          6.021194605009636,
+          3315.028901734104
+        ],
+        "x_tick_fit_max_error_angstrom": 0.0,
+        "y_major_ticks_pdf_pt": [
+          446.0,
+          504.08,
+          562.16,
+          620.24,
+          678.32,
+          736.16
+        ],
+        "y_major_tick_relative_fnu": [
+          1.0,
+          0.8,
+          0.6,
+          0.4,
+          0.2,
+          0.0
+        ],
+        "y_to_relative_fnu_polynomial": [
+          -0.003445558546816862,
+          2.536876390536257
+        ],
+        "y_tick_fit_max_error_relative_fnu": 0.000394010711556092,
+        "source_graphic_coordinate_quantum_pdf_pt": 0.24,
+        "one_graphic_quantum_angstrom": 1.4450867052023124,
+        "one_graphic_quantum_relative_fnu": 0.0008269340512360469,
+        "bottom_panel_bounds_pdf_pt": [
+          80.4,
+          431.6,
+          570.72,
+          736.16
+        ]
+      },
+      "vector_diagnostics": {
+        "observed": {
+          "vertices": 3636,
+          "path_segments": 13,
+          "min_wavelength_angstrom": 3799.1329571644924,
+          "max_wavelength_angstrom": 6744.219770780648,
+          "max_join_gap_angstrom": 0.0
+        },
+        "model": {
+          "vertices": 2781,
+          "path_segments": 12,
+          "min_wavelength_angstrom": 3858.380295637715,
+          "max_wavelength_angstrom": 6751.445277807571,
+          "max_join_gap_angstrom": 0.0
+        }
+      },
+      "compact_path": "research/model_validation/sources/published_curves/2453225705329412480.npz",
+      "compact_sha256": "e160f49915d4b68e33dd50dd33da6a4d795ab7b82592ee1d9ef49d1328079f2c"
+    },
+    {
+      "archive": "allfitsDQ.pdf",
+      "page_1based": 84,
+      "source_id": "2513256394506328832",
+      "name": "WDJ021739.29+011641.13",
+      "spectral_type": "DQ",
+      "original_parameter_row": "WDJ021739.29+011641.13 2513256394506328832 DQ [logC/He=-4.23] 8088 44 8.198 0.034 0.701 0.031 8088 8.197 0.700",
+      "label_ocr": "r wDJ021739.29+01 1641.13 | 25 13256394506328832 1",
+      "gaia_ocr_exact_after_whitespace_removal": true,
+      "axis": {
+        "x_major_ticks_pdf_pt": [
+          113.76,
+          279.84,
+          445.92
+        ],
+        "x_major_tick_wavelength_angstrom": [
+          4000,
+          5000,
+          6000
+        ],
+        "x_tick_label_ocr": "4000 5000 6000",
+        "x_to_wavelength_polynomial": [
+          6.021194605009636,
+          3315.028901734104
+        ],
+        "x_tick_fit_max_error_angstrom": 0.0,
+        "y_major_ticks_pdf_pt": [
+          446.0,
+          504.08,
+          562.16,
+          620.24,
+          678.32,
+          736.16
+        ],
+        "y_major_tick_relative_fnu": [
+          1.0,
+          0.8,
+          0.6,
+          0.4,
+          0.2,
+          0.0
+        ],
+        "y_to_relative_fnu_polynomial": [
+          -0.003445558546816862,
+          2.536876390536257
+        ],
+        "y_tick_fit_max_error_relative_fnu": 0.000394010711556092,
+        "source_graphic_coordinate_quantum_pdf_pt": 0.24,
+        "one_graphic_quantum_angstrom": 1.4450867052023124,
+        "one_graphic_quantum_relative_fnu": 0.0008269340512360469,
+        "bottom_panel_bounds_pdf_pt": [
+          80.4,
+          431.6,
+          570.72,
+          736.16
+        ]
+      },
+      "vector_diagnostics": {
+        "observed": {
+          "vertices": 3652,
+          "path_segments": 13,
+          "min_wavelength_angstrom": 3810.6930425860746,
+          "max_wavelength_angstrom": 6751.445277807571,
+          "max_join_gap_angstrom": 0.0
+        },
+        "model": {
+          "vertices": 3000,
+          "path_segments": 13,
+          "min_wavelength_angstrom": 3799.1329571644924,
+          "max_wavelength_angstrom": 6747.109826589596,
+          "max_join_gap_angstrom": 0.0
+        }
+      },
+      "compact_path": "research/model_validation/sources/published_curves/2513256394506328832.npz",
+      "compact_sha256": "cb92c5f6d5c1b53d800122775002eee8b3f4a792ec4ab5abd558d1c521c2d728"
+    },
+    {
+      "archive": "allfitsDQ.pdf",
+      "page_1based": 128,
+      "source_id": "1099452803904038272",
+      "name": "WDJ071637.37+621710.78",
+      "spectral_type": "DQ",
+      "original_parameter_row": "WDJ071637.37+621710.78 1099452803904038272 DQ [logC/He=-7.86] 4837 14 7.062 0.021 0.200 0.000 4838 7.062 0.200",
+      "label_ocr": ": WDJO71637.37+621710.78 | 1099452803904038272 :",
+      "gaia_ocr_exact_after_whitespace_removal": true,
+      "axis": {
+        "x_major_ticks_pdf_pt": [
+          113.76,
+          279.84,
+          445.92
+        ],
+        "x_major_tick_wavelength_angstrom": [
+          4000,
+          5000,
+          6000
+        ],
+        "x_tick_label_ocr": "4000 5000 6000",
+        "x_to_wavelength_polynomial": [
+          6.021194605009636,
+          3315.028901734104
+        ],
+        "x_tick_fit_max_error_angstrom": 0.0,
+        "y_major_ticks_pdf_pt": [
+          446.0,
+          504.08,
+          562.16,
+          620.24,
+          678.32,
+          736.16
+        ],
+        "y_major_tick_relative_fnu": [
+          1.0,
+          0.8,
+          0.6,
+          0.4,
+          0.2,
+          0.0
+        ],
+        "y_to_relative_fnu_polynomial": [
+          -0.003445558546816862,
+          2.536876390536257
+        ],
+        "y_tick_fit_max_error_relative_fnu": 0.000394010711556092,
+        "source_graphic_coordinate_quantum_pdf_pt": 0.24,
+        "one_graphic_quantum_angstrom": 1.4450867052023124,
+        "one_graphic_quantum_relative_fnu": 0.0008269340512360469,
+        "bottom_panel_bounds_pdf_pt": [
+          80.4,
+          431.6,
+          570.72,
+          736.16
+        ]
+      },
+      "vector_diagnostics": {
+        "observed": {
+          "vertices": 3649,
+          "path_segments": 14,
+          "min_wavelength_angstrom": 3799.1329571644924,
+          "max_wavelength_angstrom": 6751.445277807571,
+          "max_join_gap_angstrom": 0.0
+        },
+        "model": {
+          "vertices": 2663,
+          "path_segments": 13,
+          "min_wavelength_angstrom": 3799.1329571644924,
+          "max_wavelength_angstrom": 6736.994263753726,
+          "max_join_gap_angstrom": 0.0
+        }
+      },
+      "compact_path": "research/model_validation/sources/published_curves/1099452803904038272.npz",
+      "compact_sha256": "77de49ae1d76c2124494f4ed7929b2e5ec50ddb0cc38d49ca900d65dce87629e"
+    },
+    {
+      "archive": "allfitsDQ.pdf",
+      "page_1based": 191,
+      "source_id": "913810126798863232",
+      "name": "WDJ085113.75+424502.91",
+      "spectral_type": "DQ",
+      "original_parameter_row": "WDJ085113.75+424502.91 913810126798863232 DQ [logC/He=-7.42] 4928 38 7.360 0.073 0.264 0.034 4929 7.360 0.264",
+      "label_ocr": "c WDJO85113.75+424502.91 | 913810126798863232 1",
+      "gaia_ocr_exact_after_whitespace_removal": true,
+      "axis": {
+        "x_major_ticks_pdf_pt": [
+          113.76,
+          279.84,
+          445.92
+        ],
+        "x_major_tick_wavelength_angstrom": [
+          4000,
+          5000,
+          6000
+        ],
+        "x_tick_label_ocr": "4000 5000 6000",
+        "x_to_wavelength_polynomial": [
+          6.021194605009636,
+          3315.028901734104
+        ],
+        "x_tick_fit_max_error_angstrom": 0.0,
+        "y_major_ticks_pdf_pt": [
+          446.0,
+          504.08,
+          562.16,
+          620.24,
+          678.32,
+          736.16
+        ],
+        "y_major_tick_relative_fnu": [
+          1.0,
+          0.8,
+          0.6,
+          0.4,
+          0.2,
+          0.0
+        ],
+        "y_to_relative_fnu_polynomial": [
+          -0.003445558546816862,
+          2.536876390536257
+        ],
+        "y_tick_fit_max_error_relative_fnu": 0.000394010711556092,
+        "source_graphic_coordinate_quantum_pdf_pt": 0.24,
+        "one_graphic_quantum_angstrom": 1.4450867052023124,
+        "one_graphic_quantum_relative_fnu": 0.0008269340512360469,
+        "bottom_panel_bounds_pdf_pt": [
+          80.4,
+          431.6,
+          570.72,
+          736.16
+        ]
+      },
+      "vector_diagnostics": {
+        "observed": {
+          "vertices": 3599,
+          "path_segments": 13,
+          "min_wavelength_angstrom": 3799.1329571644924,
+          "max_wavelength_angstrom": 6751.445277807571,
+          "max_join_gap_angstrom": 0.0
+        },
+        "model": {
+          "vertices": 2632,
+          "path_segments": 13,
+          "min_wavelength_angstrom": 3799.1329571644924,
+          "max_wavelength_angstrom": 6726.878700917857,
+          "max_join_gap_angstrom": 0.0
+        }
+      },
+      "compact_path": "research/model_validation/sources/published_curves/913810126798863232.npz",
+      "compact_sha256": "aeb993e6e36a43ce5819d2315c36e732a3ea1b803e038af6b711f50c4838cb86"
+    },
+    {
+      "archive": "allfitsDQ.pdf",
+      "page_1based": 265,
+      "source_id": "3782527364866017664",
+      "name": "WDJ103113.86-013925.39",
+      "spectral_type": "DQ",
+      "original_parameter_row": "WDJ103113.86-013925.39 3782527364866017664 DQ [logC/He=-5.60] 6486 28 7.986 0.084 0.565 0.069 6487 7.986 0.565",
+      "label_ocr": "L wbJ1031 13.86-013925.39 | 3782527364866017664 1",
+      "gaia_ocr_exact_after_whitespace_removal": true,
+      "axis": {
+        "x_major_ticks_pdf_pt": [
+          113.76,
+          279.84,
+          445.92
+        ],
+        "x_major_tick_wavelength_angstrom": [
+          4000,
+          5000,
+          6000
+        ],
+        "x_tick_label_ocr": "4000 5000 6000",
+        "x_to_wavelength_polynomial": [
+          6.021194605009636,
+          3315.028901734104
+        ],
+        "x_tick_fit_max_error_angstrom": 0.0,
+        "y_major_ticks_pdf_pt": [
+          446.0,
+          504.08,
+          562.16,
+          620.24,
+          678.32,
+          736.16
+        ],
+        "y_major_tick_relative_fnu": [
+          1.0,
+          0.8,
+          0.6,
+          0.4,
+          0.2,
+          0.0
+        ],
+        "y_to_relative_fnu_polynomial": [
+          -0.003445558546816862,
+          2.536876390536257
+        ],
+        "y_tick_fit_max_error_relative_fnu": 0.000394010711556092,
+        "source_graphic_coordinate_quantum_pdf_pt": 0.24,
+        "one_graphic_quantum_angstrom": 1.4450867052023124,
+        "one_graphic_quantum_relative_fnu": 0.0008269340512360469,
+        "bottom_panel_bounds_pdf_pt": [
+          80.4,
+          431.6,
+          570.72,
+          736.16
+        ]
+      },
+      "vector_diagnostics": {
+        "observed": {
+          "vertices": 3678,
+          "path_segments": 13,
+          "min_wavelength_angstrom": 3799.1329571644924,
+          "max_wavelength_angstrom": 6751.445277807571,
+          "max_join_gap_angstrom": 0.0
+        },
+        "model": {
+          "vertices": 2768,
+          "path_segments": 13,
+          "min_wavelength_angstrom": 3848.267121581443,
+          "max_wavelength_angstrom": 6751.445277807571,
+          "max_join_gap_angstrom": 0.0
+        }
+      },
+      "compact_path": "research/model_validation/sources/published_curves/3782527364866017664.npz",
+      "compact_sha256": "39217b9b99ce836cda45b26aeb209b064976a2d79fdc1d6b7b3492b74216efa4"
+    },
+    {
+      "archive": "allfitsDQ.pdf",
+      "page_1based": 287,
+      "source_id": "761677269868775040",
+      "name": "WDJ110848.77+342536.63",
+      "spectral_type": "DQ",
+      "original_parameter_row": "WDJ110848.77+342536.63 761677269868775040 DQ [logC/He=-5.67] 6092 20 7.911 0.016 0.520 0.013 6092 7.912 0.520",
+      "label_ocr": "WDJ110848.77+342536.63 | 761677269868775040 :",
+      "gaia_ocr_exact_after_whitespace_removal": true,
+      "axis": {
+        "x_major_ticks_pdf_pt": [
+          113.76,
+          279.84,
+          445.92
+        ],
+        "x_major_tick_wavelength_angstrom": [
+          4000,
+          5000,
+          6000
+        ],
+        "x_tick_label_ocr": "4000 5000 6000",
+        "x_to_wavelength_polynomial": [
+          6.021194605009636,
+          3315.028901734104
+        ],
+        "x_tick_fit_max_error_angstrom": 0.0,
+        "y_major_ticks_pdf_pt": [
+          446.0,
+          504.08,
+          562.16,
+          620.24,
+          678.32,
+          736.16
+        ],
+        "y_major_tick_relative_fnu": [
+          1.0,
+          0.8,
+          0.6,
+          0.4,
+          0.2,
+          0.0
+        ],
+        "y_to_relative_fnu_polynomial": [
+          -0.003445558546816862,
+          2.536876390536257
+        ],
+        "y_tick_fit_max_error_relative_fnu": 0.000394010711556092,
+        "source_graphic_coordinate_quantum_pdf_pt": 0.24,
+        "one_graphic_quantum_angstrom": 1.4450867052023124,
+        "one_graphic_quantum_relative_fnu": 0.0008269340512360469,
+        "bottom_panel_bounds_pdf_pt": [
+          80.4,
+          431.6,
+          570.72,
+          736.16
+        ]
+      },
+      "vector_diagnostics": {
+        "observed": {
+          "vertices": 3670,
+          "path_segments": 13,
+          "min_wavelength_angstrom": 3799.1329571644924,
+          "max_wavelength_angstrom": 6751.445277807571,
+          "max_join_gap_angstrom": 0.0
+        },
+        "model": {
+          "vertices": 2995,
+          "path_segments": 13,
+          "min_wavelength_angstrom": 3799.1329571644924,
+          "max_wavelength_angstrom": 6744.219770780648,
+          "max_join_gap_angstrom": 0.0
+        }
+      },
+      "compact_path": "research/model_validation/sources/published_curves/761677269868775040.npz",
+      "compact_sha256": "a92adf5be4b4b3ec4c7303a5e7d12e1b4e72a93601b1f98deab22de2fdffa8af"
+    },
+    {
+      "archive": "allfitsDQ.pdf",
+      "page_1based": 342,
+      "source_id": "1691957732959636608",
+      "name": "WDJ125207.43+745756.93",
+      "spectral_type": "DQ",
+      "original_parameter_row": "WDJ125207.43+745756.93 1691957732959636608 DQ [logC/He=-7.16] 4590 18 8.033 0.021 0.588 0.018 4590 8.035 0.590",
+      "label_ocr": "WDJ125207.43+745756.93 | 1691957732959636608 |",
+      "gaia_ocr_exact_after_whitespace_removal": true,
+      "axis": {
+        "x_major_ticks_pdf_pt": [
+          113.76,
+          279.84,
+          445.92
+        ],
+        "x_major_tick_wavelength_angstrom": [
+          4000,
+          5000,
+          6000
+        ],
+        "x_tick_label_ocr": "4000 5000 6000",
+        "x_to_wavelength_polynomial": [
+          6.021194605009636,
+          3315.028901734104
+        ],
+        "x_tick_fit_max_error_angstrom": 0.0,
+        "y_major_ticks_pdf_pt": [
+          446.0,
+          504.08,
+          562.16,
+          620.24,
+          678.32,
+          736.16
+        ],
+        "y_major_tick_relative_fnu": [
+          1.0,
+          0.8,
+          0.6,
+          0.4,
+          0.2,
+          0.0
+        ],
+        "y_to_relative_fnu_polynomial": [
+          -0.003445558546816862,
+          2.536876390536257
+        ],
+        "y_tick_fit_max_error_relative_fnu": 0.000394010711556092,
+        "source_graphic_coordinate_quantum_pdf_pt": 0.24,
+        "one_graphic_quantum_angstrom": 1.4450867052023124,
+        "one_graphic_quantum_relative_fnu": 0.0008269340512360469,
+        "bottom_panel_bounds_pdf_pt": [
+          80.4,
+          431.6,
+          570.72,
+          736.16
+        ]
+      },
+      "vector_diagnostics": {
+        "observed": {
+          "vertices": 3627,
+          "path_segments": 13,
+          "min_wavelength_angstrom": 3799.1329571644924,
+          "max_wavelength_angstrom": 6751.445277807571,
+          "max_join_gap_angstrom": 0.0
+        },
+        "model": {
+          "vertices": 2735,
+          "path_segments": 13,
+          "min_wavelength_angstrom": 3799.1329571644924,
+          "max_wavelength_angstrom": 6712.427686864012,
+          "max_join_gap_angstrom": 0.0
+        }
+      },
+      "compact_path": "research/model_validation/sources/published_curves/1691957732959636608.npz",
+      "compact_sha256": "3e586ee5e533d0b984719116cd44f43111d3b966e2823e69b8d56a7e1499da23"
+    },
+    {
+      "archive": "allfitsDQ.pdf",
+      "page_1based": 346,
+      "source_id": "1679189040001914880",
+      "name": "WDJ125552.90+671244.24",
+      "spectral_type": "DQH",
+      "original_parameter_row": "WDJ125552.90+671244.24 1679189040001914880 DQH [logC/He=-5.82] 6012 26 8.541 0.021 0.927 0.018 6012 8.541 0.927",
+      "label_ocr": "t WDJ125552.90+671244.24 | 1679189040001914880 1",
+      "gaia_ocr_exact_after_whitespace_removal": true,
+      "axis": {
+        "x_major_ticks_pdf_pt": [
+          113.76,
+          279.84,
+          445.92
+        ],
+        "x_major_tick_wavelength_angstrom": [
+          4000,
+          5000,
+          6000
+        ],
+        "x_tick_label_ocr": "4000 5000 6000",
+        "x_to_wavelength_polynomial": [
+          6.021194605009636,
+          3315.028901734104
+        ],
+        "x_tick_fit_max_error_angstrom": 0.0,
+        "y_major_ticks_pdf_pt": [
+          446.0,
+          504.08,
+          562.16,
+          620.24,
+          678.32,
+          736.16
+        ],
+        "y_major_tick_relative_fnu": [
+          1.0,
+          0.8,
+          0.6,
+          0.4,
+          0.2,
+          0.0
+        ],
+        "y_to_relative_fnu_polynomial": [
+          -0.003445558546816862,
+          2.536876390536257
+        ],
+        "y_tick_fit_max_error_relative_fnu": 0.000394010711556092,
+        "source_graphic_coordinate_quantum_pdf_pt": 0.24,
+        "one_graphic_quantum_angstrom": 1.4450867052023124,
+        "one_graphic_quantum_relative_fnu": 0.0008269340512360469,
+        "bottom_panel_bounds_pdf_pt": [
+          80.4,
+          431.6,
+          570.72,
+          736.16
+        ]
+      },
+      "vector_diagnostics": {
+        "observed": {
+          "vertices": 3661,
+          "path_segments": 13,
+          "min_wavelength_angstrom": 3799.1329571644924,
+          "max_wavelength_angstrom": 6751.445277807571,
+          "max_join_gap_angstrom": 0.0
+        },
+        "model": {
+          "vertices": 2867,
+          "path_segments": 13,
+          "min_wavelength_angstrom": 3848.267121581443,
+          "max_wavelength_angstrom": 6751.445277807571,
+          "max_join_gap_angstrom": 0.0
+        }
+      },
+      "compact_path": "research/model_validation/sources/published_curves/1679189040001914880.npz",
+      "compact_sha256": "f8738b380f128881a2c01f37f6556be174761c36fcb940faf4642d053d425bd7"
+    },
+    {
+      "archive": "allfitsDQ.pdf",
+      "page_1based": 351,
+      "source_id": "3705179706854089856",
+      "name": "WDJ125802.76+050040.26",
+      "spectral_type": "DQ",
+      "original_parameter_row": "WDJ125802.76+050040.26 3705179706854089856 DQ [logC/He=-5.39] 6735 44 8.179 0.048 0.686 0.042 6736 8.179 0.686",
+      "label_ocr": "r WDJ125802.76+050040.26 | 3705179706854089856 1",
+      "gaia_ocr_exact_after_whitespace_removal": true,
+      "axis": {
+        "x_major_ticks_pdf_pt": [
+          113.76,
+          279.84,
+          445.92
+        ],
+        "x_major_tick_wavelength_angstrom": [
+          4000,
+          5000,
+          6000
+        ],
+        "x_tick_label_ocr": "4000 5000 6000",
+        "x_to_wavelength_polynomial": [
+          6.021194605009636,
+          3315.028901734104
+        ],
+        "x_tick_fit_max_error_angstrom": 0.0,
+        "y_major_ticks_pdf_pt": [
+          446.0,
+          504.08,
+          562.16,
+          620.24,
+          678.32,
+          736.16
+        ],
+        "y_major_tick_relative_fnu": [
+          1.0,
+          0.8,
+          0.6,
+          0.4,
+          0.2,
+          0.0
+        ],
+        "y_to_relative_fnu_polynomial": [
+          -0.003445558546816862,
+          2.536876390536257
+        ],
+        "y_tick_fit_max_error_relative_fnu": 0.000394010711556092,
+        "source_graphic_coordinate_quantum_pdf_pt": 0.24,
+        "one_graphic_quantum_angstrom": 1.4450867052023124,
+        "one_graphic_quantum_relative_fnu": 0.0008269340512360469,
+        "bottom_panel_bounds_pdf_pt": [
+          80.4,
+          431.6,
+          570.72,
+          736.16
+        ]
+      },
+      "vector_diagnostics": {
+        "observed": {
+          "vertices": 3687,
+          "path_segments": 13,
+          "min_wavelength_angstrom": 3799.1329571644924,
+          "max_wavelength_angstrom": 6751.445277807571,
+          "max_join_gap_angstrom": 0.0
+        },
+        "model": {
+          "vertices": 2820,
+          "path_segments": 13,
+          "min_wavelength_angstrom": 3799.1329571644924,
+          "max_wavelength_angstrom": 6747.109826589596,
+          "max_join_gap_angstrom": 0.0
+        }
+      },
+      "compact_path": "research/model_validation/sources/published_curves/3705179706854089856.npz",
+      "compact_sha256": "dcfbff6769d78d0fd6dacdc114ec648c8ce11bd0a42f3bc2cb645d65c892551f"
+    },
+    {
+      "archive": "allfitsDQ.pdf",
+      "page_1based": 375,
+      "source_id": "3711047662972690688",
+      "name": "WDJ132942.69+003336.60",
+      "spectral_type": "DQ",
+      "original_parameter_row": "WDJ132942.69+003336.60 3711047662972690688 DQ [logC/He=-6.14] 5592 22 8.179 0.061 0.683 0.056 5593 8.179 0.684",
+      "label_ocr": "L WDJ132942.69+003336.60 | 371 1047662972690688 ]",
+      "gaia_ocr_exact_after_whitespace_removal": true,
+      "axis": {
+        "x_major_ticks_pdf_pt": [
+          113.76,
+          279.84,
+          445.92
+        ],
+        "x_major_tick_wavelength_angstrom": [
+          4000,
+          5000,
+          6000
+        ],
+        "x_tick_label_ocr": "4000 5000 6000",
+        "x_to_wavelength_polynomial": [
+          6.021194605009636,
+          3315.028901734104
+        ],
+        "x_tick_fit_max_error_angstrom": 0.0,
+        "y_major_ticks_pdf_pt": [
+          446.0,
+          504.08,
+          562.16,
+          620.24,
+          678.32,
+          736.16
+        ],
+        "y_major_tick_relative_fnu": [
+          1.0,
+          0.8,
+          0.6,
+          0.4,
+          0.2,
+          0.0
+        ],
+        "y_to_relative_fnu_polynomial": [
+          -0.003445558546816862,
+          2.536876390536257
+        ],
+        "y_tick_fit_max_error_relative_fnu": 0.000394010711556092,
+        "source_graphic_coordinate_quantum_pdf_pt": 0.24,
+        "one_graphic_quantum_angstrom": 1.4450867052023124,
+        "one_graphic_quantum_relative_fnu": 0.0008269340512360469,
+        "bottom_panel_bounds_pdf_pt": [
+          80.4,
+          431.6,
+          570.72,
+          736.16
+        ]
+      },
+      "vector_diagnostics": {
+        "observed": {
+          "vertices": 3614,
+          "path_segments": 13,
+          "min_wavelength_angstrom": 3799.1329571644924,
+          "max_wavelength_angstrom": 6751.445277807571,
+          "max_join_gap_angstrom": 0.0
+        },
+        "model": {
+          "vertices": 2593,
+          "path_segments": 13,
+          "min_wavelength_angstrom": 3799.1329571644924,
+          "max_wavelength_angstrom": 6748.55485449407,
+          "max_join_gap_angstrom": 0.0
+        }
+      },
+      "compact_path": "research/model_validation/sources/published_curves/3711047662972690688.npz",
+      "compact_sha256": "1d45bd121e9e63f6982c004c1f9aa05260180a94d66864bea77929a9ed34ef5c"
+    },
+    {
+      "archive": "allfitsDQ.pdf",
+      "page_1based": 386,
+      "source_id": "3713218786120541824",
+      "name": "WDJ134118.69+022737.01",
+      "spectral_type": "DQ",
+      "original_parameter_row": "WDJ134118.69+022737.01 3713218786120541824 DQ [logC/He=-5.97] 5869 9 8.121 0.006 0.647 0.006 5870 8.121 0.647",
+      "label_ocr": "WDJ134118.69+022737.01 | 3713218786 120541824 |",
+      "gaia_ocr_exact_after_whitespace_removal": true,
+      "axis": {
+        "x_major_ticks_pdf_pt": [
+          113.76,
+          279.84,
+          445.92
+        ],
+        "x_major_tick_wavelength_angstrom": [
+          4000,
+          5000,
+          6000
+        ],
+        "x_tick_label_ocr": "4000 5000 6000",
+        "x_to_wavelength_polynomial": [
+          6.021194605009636,
+          3315.028901734104
+        ],
+        "x_tick_fit_max_error_angstrom": 0.0,
+        "y_major_ticks_pdf_pt": [
+          446.0,
+          504.08,
+          562.16,
+          620.24,
+          678.32,
+          736.16
+        ],
+        "y_major_tick_relative_fnu": [
+          1.0,
+          0.8,
+          0.6,
+          0.4,
+          0.2,
+          0.0
+        ],
+        "y_to_relative_fnu_polynomial": [
+          -0.003445558546816862,
+          2.536876390536257
+        ],
+        "y_tick_fit_max_error_relative_fnu": 0.000394010711556092,
+        "source_graphic_coordinate_quantum_pdf_pt": 0.24,
+        "one_graphic_quantum_angstrom": 1.4450867052023124,
+        "one_graphic_quantum_relative_fnu": 0.0008269340512360469,
+        "bottom_panel_bounds_pdf_pt": [
+          80.4,
+          431.6,
+          570.72,
+          736.16
+        ]
+      },
+      "vector_diagnostics": {
+        "observed": {
+          "vertices": 3612,
+          "path_segments": 13,
+          "min_wavelength_angstrom": 3799.1329571644924,
+          "max_wavelength_angstrom": 6738.4392916582,
+          "max_join_gap_angstrom": 0.0
+        },
+        "model": {
+          "vertices": 2869,
+          "path_segments": 13,
+          "min_wavelength_angstrom": 3799.1329571644924,
+          "max_wavelength_angstrom": 6749.999882398544,
+          "max_join_gap_angstrom": 0.0
+        }
+      },
+      "compact_path": "research/model_validation/sources/published_curves/3713218786120541824.npz",
+      "compact_sha256": "22a7f377c1ee3c6e35560e422659a8650419eccec1933e7565b1867b1a293fe7"
+    },
+    {
+      "archive": "allfitsDQ.pdf",
+      "page_1based": 404,
+      "source_id": "1496016553207149952",
+      "name": "WDJ140155.42+390326.47",
+      "spectral_type": "DQ",
+      "original_parameter_row": "WDJ140155.42+390326.47 1496016553207149952 DQ [logC/He=-6.00] 5593 35 8.104 0.038 0.635 0.034 5594 8.105 0.635",
+      "label_ocr": "WDJ140155.42+390326.47 | 1496016553207149952 |",
+      "gaia_ocr_exact_after_whitespace_removal": true,
+      "axis": {
+        "x_major_ticks_pdf_pt": [
+          113.76,
+          279.84,
+          445.92
+        ],
+        "x_major_tick_wavelength_angstrom": [
+          4000,
+          5000,
+          6000
+        ],
+        "x_tick_label_ocr": "4000 5000 6000",
+        "x_to_wavelength_polynomial": [
+          6.021194605009636,
+          3315.028901734104
+        ],
+        "x_tick_fit_max_error_angstrom": 0.0,
+        "y_major_ticks_pdf_pt": [
+          446.0,
+          504.08,
+          562.16,
+          620.24,
+          678.32,
+          736.16
+        ],
+        "y_major_tick_relative_fnu": [
+          1.0,
+          0.8,
+          0.6,
+          0.4,
+          0.2,
+          0.0
+        ],
+        "y_to_relative_fnu_polynomial": [
+          -0.003445558546816862,
+          2.536876390536257
+        ],
+        "y_tick_fit_max_error_relative_fnu": 0.000394010711556092,
+        "source_graphic_coordinate_quantum_pdf_pt": 0.24,
+        "one_graphic_quantum_angstrom": 1.4450867052023124,
+        "one_graphic_quantum_relative_fnu": 0.0008269340512360469,
+        "bottom_panel_bounds_pdf_pt": [
+          80.4,
+          431.6,
+          570.72,
+          736.16
+        ]
+      },
+      "vector_diagnostics": {
+        "observed": {
+          "vertices": 3561,
+          "path_segments": 13,
+          "min_wavelength_angstrom": 3799.1329571644924,
+          "max_wavelength_angstrom": 6751.445277807571,
+          "max_join_gap_angstrom": 0.0
+        },
+        "model": {
+          "vertices": 2836,
+          "path_segments": 13,
+          "min_wavelength_angstrom": 3799.1329571644924,
+          "max_wavelength_angstrom": 6747.109826589596,
+          "max_join_gap_angstrom": 0.0
+        }
+      },
+      "compact_path": "research/model_validation/sources/published_curves/1496016553207149952.npz",
+      "compact_sha256": "03a56664c505cff5a9d75b7ccc789369e776e3f8614f6e15914f31c136902130"
+    },
+    {
+      "archive": "allfitsDQ.pdf",
+      "page_1based": 510,
+      "source_id": "1323443938325221376",
+      "name": "WDJ155929.64+332431.72",
+      "spectral_type": "DQ",
+      "original_parameter_row": "WDJ155929.64+332431.72 1323443938325221376 DQ [logC/He=-5.66] 6164 31 8.042 0.032 0.598 0.028 6165 8.042 0.598",
+      "label_ocr": "L WDJ155929.644+332431.72 | 1323443938325221376 |",
+      "gaia_ocr_exact_after_whitespace_removal": true,
+      "axis": {
+        "x_major_ticks_pdf_pt": [
+          113.76,
+          279.84,
+          445.92
+        ],
+        "x_major_tick_wavelength_angstrom": [
+          4000,
+          5000,
+          6000
+        ],
+        "x_tick_label_ocr": "4000 5000 6000",
+        "x_to_wavelength_polynomial": [
+          6.021194605009636,
+          3315.028901734104
+        ],
+        "x_tick_fit_max_error_angstrom": 0.0,
+        "y_major_ticks_pdf_pt": [
+          446.0,
+          504.08,
+          562.16,
+          620.24,
+          678.32,
+          736.16
+        ],
+        "y_major_tick_relative_fnu": [
+          1.0,
+          0.8,
+          0.6,
+          0.4,
+          0.2,
+          0.0
+        ],
+        "y_to_relative_fnu_polynomial": [
+          -0.003445558546816862,
+          2.536876390536257
+        ],
+        "y_tick_fit_max_error_relative_fnu": 0.000394010711556092,
+        "source_graphic_coordinate_quantum_pdf_pt": 0.24,
+        "one_graphic_quantum_angstrom": 1.4450867052023124,
+        "one_graphic_quantum_relative_fnu": 0.0008269340512360469,
+        "bottom_panel_bounds_pdf_pt": [
+          80.4,
+          431.6,
+          570.72,
+          736.16
+        ]
+      },
+      "vector_diagnostics": {
+        "observed": {
+          "vertices": 3659,
+          "path_segments": 13,
+          "min_wavelength_angstrom": 3799.1329571644924,
+          "max_wavelength_angstrom": 6751.445277807571,
+          "max_join_gap_angstrom": 0.0
+        },
+        "model": {
+          "vertices": 2863,
+          "path_segments": 13,
+          "min_wavelength_angstrom": 3803.4675814972215,
+          "max_wavelength_angstrom": 6751.445277807571,
+          "max_join_gap_angstrom": 0.0
+        }
+      },
+      "compact_path": "research/model_validation/sources/published_curves/1323443938325221376.npz",
+      "compact_sha256": "47380b4bcd5774d1e10ca66cb9d741970980589a2cae1fc37816659369488eb3"
+    },
+    {
+      "archive": "allfitsDQ.pdf",
+      "page_1based": 552,
+      "source_id": "4445170067643613312",
+      "name": "WDJ164234.26+080436.90",
+      "spectral_type": "DQ",
+      "original_parameter_row": "WDJ164234.26+080436.90 4445170067643613312 DQ [logC/He=-5.97] 6406 30 7.330 0.045 0.263 0.020 6407 7.330 0.263",
+      "label_ocr": "WDJ164234.26+080436.90 | 4445170067643613312 |",
+      "gaia_ocr_exact_after_whitespace_removal": true,
+      "axis": {
+        "x_major_ticks_pdf_pt": [
+          113.76,
+          279.84,
+          445.92
+        ],
+        "x_major_tick_wavelength_angstrom": [
+          4000,
+          5000,
+          6000
+        ],
+        "x_tick_label_ocr": "4000 5000 6000",
+        "x_to_wavelength_polynomial": [
+          6.021194605009636,
+          3315.028901734104
+        ],
+        "x_tick_fit_max_error_angstrom": 0.0,
+        "y_major_ticks_pdf_pt": [
+          446.0,
+          504.08,
+          562.16,
+          620.24,
+          678.32,
+          736.16
+        ],
+        "y_major_tick_relative_fnu": [
+          1.0,
+          0.8,
+          0.6,
+          0.4,
+          0.2,
+          0.0
+        ],
+        "y_to_relative_fnu_polynomial": [
+          -0.003445558546816862,
+          2.536876390536257
+        ],
+        "y_tick_fit_max_error_relative_fnu": 0.000394010711556092,
+        "source_graphic_coordinate_quantum_pdf_pt": 0.24,
+        "one_graphic_quantum_angstrom": 1.4450867052023124,
+        "one_graphic_quantum_relative_fnu": 0.0008269340512360469,
+        "bottom_panel_bounds_pdf_pt": [
+          80.4,
+          431.6,
+          570.72,
+          736.16
+        ]
+      },
+      "vector_diagnostics": {
+        "observed": {
+          "vertices": 3671,
+          "path_segments": 13,
+          "min_wavelength_angstrom": 3799.1329571644924,
+          "max_wavelength_angstrom": 6751.445277807571,
+          "max_join_gap_angstrom": 0.0
+        },
+        "model": {
+          "vertices": 2659,
+          "path_segments": 13,
+          "min_wavelength_angstrom": 3799.1329571644924,
+          "max_wavelength_angstrom": 6747.109826589596,
+          "max_join_gap_angstrom": 0.0
+        }
+      },
+      "compact_path": "research/model_validation/sources/published_curves/4445170067643613312.npz",
+      "compact_sha256": "6e21ed5f39f6fbfaa5d99d62e196d51bd7cfa61d83efcc505624ae131450c34c"
+    },
+    {
+      "archive": "allfitsDQ.pdf",
+      "page_1based": 569,
+      "source_id": "4545912820537587328",
+      "name": "WDJ170205.24+150734.88",
+      "spectral_type": "DQ",
+      "original_parameter_row": "WDJ170205.24+150734.88 4545912820537587328 DQ [logC/He=-5.86] 6372 36 8.071 0.062 0.616 0.054 6372 8.071 0.616",
+      "label_ocr": "L WDJ170205.24+ 150734.88 | 4545912820537587328 |",
+      "gaia_ocr_exact_after_whitespace_removal": true,
+      "axis": {
+        "x_major_ticks_pdf_pt": [
+          113.76,
+          279.84,
+          445.92
+        ],
+        "x_major_tick_wavelength_angstrom": [
+          4000,
+          5000,
+          6000
+        ],
+        "x_tick_label_ocr": "4000 5000 6000",
+        "x_to_wavelength_polynomial": [
+          6.021194605009636,
+          3315.028901734104
+        ],
+        "x_tick_fit_max_error_angstrom": 0.0,
+        "y_major_ticks_pdf_pt": [
+          446.0,
+          504.08,
+          562.16,
+          620.24,
+          678.32,
+          736.16
+        ],
+        "y_major_tick_relative_fnu": [
+          1.0,
+          0.8,
+          0.6,
+          0.4,
+          0.2,
+          0.0
+        ],
+        "y_to_relative_fnu_polynomial": [
+          -0.003445558546816862,
+          2.536876390536257
+        ],
+        "y_tick_fit_max_error_relative_fnu": 0.000394010711556092,
+        "source_graphic_coordinate_quantum_pdf_pt": 0.24,
+        "one_graphic_quantum_angstrom": 1.4450867052023124,
+        "one_graphic_quantum_relative_fnu": 0.0008269340512360469,
+        "bottom_panel_bounds_pdf_pt": [
+          80.4,
+          431.6,
+          570.72,
+          736.16
+        ]
+      },
+      "vector_diagnostics": {
+        "observed": {
+          "vertices": 3663,
+          "path_segments": 13,
+          "min_wavelength_angstrom": 3799.1329571644924,
+          "max_wavelength_angstrom": 6751.445277807571,
+          "max_join_gap_angstrom": 0.0
+        },
+        "model": {
+          "vertices": 2584,
+          "path_segments": 13,
+          "min_wavelength_angstrom": 3799.1329571644924,
+          "max_wavelength_angstrom": 6735.549235849252,
+          "max_join_gap_angstrom": 0.0
+        }
+      },
+      "compact_path": "research/model_validation/sources/published_curves/4545912820537587328.npz",
+      "compact_sha256": "7fc8e6d6273c36385e9c4c3112de2deba80b46fe0aa5d64b6a11d1f73e2f9281"
+    },
+    {
+      "archive": "allfitsDQ.pdf",
+      "page_1based": 583,
+      "source_id": "4555293235271174016",
+      "name": "WDJ172725.31+211651.95",
+      "spectral_type": "DQ",
+      "original_parameter_row": "WDJ172725.31+211651.95 4555293235271174016 DQ [logC/He=-5.69] 6247 16 8.348 0.019 0.798 0.018 6248 8.348 0.798",
+      "label_ocr": "WDJ172725.31421 1651.95 | 4555293235271174016 |",
+      "gaia_ocr_exact_after_whitespace_removal": true,
+      "axis": {
+        "x_major_ticks_pdf_pt": [
+          113.76,
+          279.84,
+          445.92
+        ],
+        "x_major_tick_wavelength_angstrom": [
+          4000,
+          5000,
+          6000
+        ],
+        "x_tick_label_ocr": "4000 5000 6000",
+        "x_to_wavelength_polynomial": [
+          6.021194605009636,
+          3315.028901734104
+        ],
+        "x_tick_fit_max_error_angstrom": 0.0,
+        "y_major_ticks_pdf_pt": [
+          446.0,
+          504.08,
+          562.16,
+          620.24,
+          678.32,
+          736.16
+        ],
+        "y_major_tick_relative_fnu": [
+          1.0,
+          0.8,
+          0.6,
+          0.4,
+          0.2,
+          0.0
+        ],
+        "y_to_relative_fnu_polynomial": [
+          -0.003445558546816862,
+          2.536876390536257
+        ],
+        "y_tick_fit_max_error_relative_fnu": 0.000394010711556092,
+        "source_graphic_coordinate_quantum_pdf_pt": 0.24,
+        "one_graphic_quantum_angstrom": 1.4450867052023124,
+        "one_graphic_quantum_relative_fnu": 0.0008269340512360469,
+        "bottom_panel_bounds_pdf_pt": [
+          80.4,
+          431.6,
+          570.72,
+          736.16
+        ]
+      },
+      "vector_diagnostics": {
+        "observed": {
+          "vertices": 3647,
+          "path_segments": 13,
+          "min_wavelength_angstrom": 3799.1329571644924,
+          "max_wavelength_angstrom": 6751.445277807571,
+          "max_join_gap_angstrom": 0.0
+        },
+        "model": {
+          "vertices": 2553,
+          "path_segments": 13,
+          "min_wavelength_angstrom": 3835.2601247945504,
+          "max_wavelength_angstrom": 6751.445277807571,
+          "max_join_gap_angstrom": 0.0
+        }
+      },
+      "compact_path": "research/model_validation/sources/published_curves/4555293235271174016.npz",
+      "compact_sha256": "6cd8f554217a9ba03ac8714cb446687e87733a7041db592114cd4b56655a62e8"
+    },
+    {
+      "archive": "allfitsDQ.pdf",
+      "page_1based": 608,
+      "source_id": "2119909923600264960",
+      "name": "WDJ184104.75+483848.89",
+      "spectral_type": "DQ",
+      "original_parameter_row": "WDJ184104.75+483848.89 2119909923600264960 DQ [logC/He=-6.35] 5484 38 7.993 0.035 0.566 0.029 5484 7.993 0.565",
+      "label_ocr": "t WDJ184104.75+483848.89 | 21 19909923600264960 ]",
+      "gaia_ocr_exact_after_whitespace_removal": true,
+      "axis": {
+        "x_major_ticks_pdf_pt": [
+          113.76,
+          279.84,
+          445.92
+        ],
+        "x_major_tick_wavelength_angstrom": [
+          4000,
+          5000,
+          6000
+        ],
+        "x_tick_label_ocr": "4000 5000 6000",
+        "x_to_wavelength_polynomial": [
+          6.021194605009636,
+          3315.028901734104
+        ],
+        "x_tick_fit_max_error_angstrom": 0.0,
+        "y_major_ticks_pdf_pt": [
+          446.0,
+          504.08,
+          562.16,
+          620.24,
+          678.32,
+          736.16
+        ],
+        "y_major_tick_relative_fnu": [
+          1.0,
+          0.8,
+          0.6,
+          0.4,
+          0.2,
+          0.0
+        ],
+        "y_to_relative_fnu_polynomial": [
+          -0.003445558546816862,
+          2.536876390536257
+        ],
+        "y_tick_fit_max_error_relative_fnu": 0.000394010711556092,
+        "source_graphic_coordinate_quantum_pdf_pt": 0.24,
+        "one_graphic_quantum_angstrom": 1.4450867052023124,
+        "one_graphic_quantum_relative_fnu": 0.0008269340512360469,
+        "bottom_panel_bounds_pdf_pt": [
+          80.4,
+          431.6,
+          570.72,
+          736.16
+        ]
+      },
+      "vector_diagnostics": {
+        "observed": {
+          "vertices": 3608,
+          "path_segments": 13,
+          "min_wavelength_angstrom": 3799.1329571644924,
+          "max_wavelength_angstrom": 6751.445277807571,
+          "max_join_gap_angstrom": 0.0
+        },
+        "model": {
+          "vertices": 2706,
+          "path_segments": 13,
+          "min_wavelength_angstrom": 3799.1329571644924,
+          "max_wavelength_angstrom": 6748.55485449407,
+          "max_join_gap_angstrom": 0.0
+        }
+      },
+      "compact_path": "research/model_validation/sources/published_curves/2119909923600264960.npz",
+      "compact_sha256": "2c50ef2bcbfbced0b84c445c725560398f03536ed4266e71069d2bab7587a173"
+    },
+    {
+      "archive": "allfitsDZ.pdf",
+      "page_1based": 5,
+      "source_id": "2739231150982741760",
+      "name": "WDJ000602.95+025745.18",
+      "spectral_type": "DZ",
+      "original_parameter_row": "WDJ000602.95+025745.18 2739231150982741760 DZ [logCa/He=-7.96]+[logH/He=-5.0] 6877 36 8.272 0.020 0.748 0.018 0 0.000 0.000",
+      "label_ocr": "[ wpy000602.95+025745.18 | 2739231 150982741760 ]",
+      "gaia_ocr_exact_after_whitespace_removal": true,
+      "axis": {
+        "x_major_ticks_pdf_pt": [
+          108.48,
+          248.64,
+          388.56,
+          528.72
+        ],
+        "x_major_tick_wavelength_angstrom": [
+          4000,
+          5000,
+          6000,
+          7000
+        ],
+        "x_tick_label_ocr": "4000 5000 6000 7000",
+        "x_to_wavelength_polynomial": [
+          7.139592490264415,
+          3225.325832601755
+        ],
+        "x_tick_fit_max_error_angstrom": 0.5141093811034807,
+        "y_major_ticks_pdf_pt": [
+          446.0,
+          504.08,
+          562.16,
+          620.24,
+          678.32,
+          736.16
+        ],
+        "y_major_tick_relative_fnu": [
+          1.0,
+          0.8,
+          0.6,
+          0.4,
+          0.2,
+          0.0
+        ],
+        "y_to_relative_fnu_polynomial": [
+          -0.003445558546816862,
+          2.536876390536257
+        ],
+        "y_tick_fit_max_error_relative_fnu": 0.000394010711556092,
+        "source_graphic_coordinate_quantum_pdf_pt": 0.24,
+        "one_graphic_quantum_angstrom": 1.7135021976634597,
+        "one_graphic_quantum_relative_fnu": 0.0008269340512360469,
+        "bottom_panel_bounds_pdf_pt": [
+          80.4,
+          431.6,
+          570.72,
+          736.16
+        ]
+      },
+      "vector_diagnostics": {
+        "observed": {
+          "vertices": 4327,
+          "path_segments": 15,
+          "min_wavelength_angstrom": 3799.3490797131676,
+          "max_wavelength_angstrom": 7298.320417002633,
+          "max_join_gap_angstrom": 0.0
+        },
+        "model": {
+          "vertices": 3345,
+          "path_segments": 16,
+          "min_wavelength_angstrom": 3799.3490797131676,
+          "max_wavelength_angstrom": 7298.320417002633,
+          "max_join_gap_angstrom": 0.0
+        }
+      },
+      "compact_path": "research/model_validation/sources/published_curves/2739231150982741760.npz",
+      "compact_sha256": "cc68877794b88783842c71ab16ec22fe4665fc475f301e1551075b3c89fa4d45"
+    },
+    {
+      "archive": "allfitsDZ.pdf",
+      "page_1based": 174,
+      "source_id": "3204436719718449280",
+      "name": "WDJ042944.71-035422.00",
+      "spectral_type": "DZ",
+      "original_parameter_row": "WDJ042944.71-035422.00 3204436719718449280 DZ [logCa/He=-9.56]+[logH/He=-6.0] 5288 33 7.924 0.028 0.524 0.023 0 0.000 0.000",
+      "label_ocr": "| wpy042044.71-035422.00 | 32044367 19718449280 |",
+      "gaia_ocr_exact_after_whitespace_removal": true,
+      "axis": {
+        "x_major_ticks_pdf_pt": [
+          108.48,
+          248.64,
+          388.56,
+          528.72
+        ],
+        "x_major_tick_wavelength_angstrom": [
+          4000,
+          5000,
+          6000,
+          7000
+        ],
+        "x_tick_label_ocr": "4000 5000 6000 7000",
+        "x_to_wavelength_polynomial": [
+          7.139592490264415,
+          3225.325832601755
+        ],
+        "x_tick_fit_max_error_angstrom": 0.5141093811034807,
+        "y_major_ticks_pdf_pt": [
+          446.0,
+          504.08,
+          562.16,
+          620.24,
+          678.32,
+          736.16
+        ],
+        "y_major_tick_relative_fnu": [
+          1.0,
+          0.8,
+          0.6,
+          0.4,
+          0.2,
+          0.0
+        ],
+        "y_to_relative_fnu_polynomial": [
+          -0.003445558546816862,
+          2.536876390536257
+        ],
+        "y_tick_fit_max_error_relative_fnu": 0.000394010711556092,
+        "source_graphic_coordinate_quantum_pdf_pt": 0.24,
+        "one_graphic_quantum_angstrom": 1.7135021976634597,
+        "one_graphic_quantum_relative_fnu": 0.0008269340512360469,
+        "bottom_panel_bounds_pdf_pt": [
+          80.4,
+          431.6,
+          570.72,
+          736.16
+        ]
+      },
+      "vector_diagnostics": {
+        "observed": {
+          "vertices": 4237,
+          "path_segments": 15,
+          "min_wavelength_angstrom": 3799.3490797131676,
+          "max_wavelength_angstrom": 7298.320417002633,
+          "max_join_gap_angstrom": 0.0
+        },
+        "model": {
+          "vertices": 2693,
+          "path_segments": 15,
+          "min_wavelength_angstrom": 3799.3490797131676,
+          "max_wavelength_angstrom": 7298.320417002633,
+          "max_join_gap_angstrom": 0.0
+        }
+      },
+      "compact_path": "research/model_validation/sources/published_curves/3204436719718449280.npz",
+      "compact_sha256": "4fb555576cf4f10cfe562c11f1a7f1006687fa9773507a426d332d3d19a2cbbc"
+    },
+    {
+      "archive": "allfitsDZ.pdf",
+      "page_1based": 321,
+      "source_id": "818833831355548928",
+      "name": "WDJ091336.37+443405.41",
+      "spectral_type": "DZ",
+      "original_parameter_row": "WDJ091336.37+443405.41 818833831355548928 DZ [logCa/He=-9.12]+[logH/He=-2.0] 4662 32 8.010 0.041 0.575 0.035 0 0.000 0.000",
+      "label_ocr": "WDJO91336.37+443405.41 | 818833831355548928",
+      "gaia_ocr_exact_after_whitespace_removal": true,
+      "axis": {
+        "x_major_ticks_pdf_pt": [
+          108.48,
+          248.64,
+          388.56,
+          528.72
+        ],
+        "x_major_tick_wavelength_angstrom": [
+          4000,
+          5000,
+          6000,
+          7000
+        ],
+        "x_tick_label_ocr": "4000 5000 6000 7000",
+        "x_to_wavelength_polynomial": [
+          7.139592490264415,
+          3225.325832601755
+        ],
+        "x_tick_fit_max_error_angstrom": 0.5141093811034807,
+        "y_major_ticks_pdf_pt": [
+          446.0,
+          504.08,
+          562.16,
+          620.24,
+          678.32,
+          736.16
+        ],
+        "y_major_tick_relative_fnu": [
+          1.0,
+          0.8,
+          0.6,
+          0.4,
+          0.2,
+          0.0
+        ],
+        "y_to_relative_fnu_polynomial": [
+          -0.003445558546816862,
+          2.536876390536257
+        ],
+        "y_tick_fit_max_error_relative_fnu": 0.000394010711556092,
+        "source_graphic_coordinate_quantum_pdf_pt": 0.24,
+        "one_graphic_quantum_angstrom": 1.7135021976634597,
+        "one_graphic_quantum_relative_fnu": 0.0008269340512360469,
+        "bottom_panel_bounds_pdf_pt": [
+          80.4,
+          431.6,
+          570.72,
+          736.16
+        ]
+      },
+      "vector_diagnostics": {
+        "observed": {
+          "vertices": 4009,
+          "path_segments": 14,
+          "min_wavelength_angstrom": 3799.3490797131676,
+          "max_wavelength_angstrom": 7298.320417002633,
+          "max_join_gap_angstrom": 0.0
+        },
+        "model": {
+          "vertices": 2741,
+          "path_segments": 15,
+          "min_wavelength_angstrom": 3799.3490797131676,
+          "max_wavelength_angstrom": 7298.320417002633,
+          "max_join_gap_angstrom": 0.0
+        }
+      },
+      "compact_path": "research/model_validation/sources/published_curves/818833831355548928.npz",
+      "compact_sha256": "71a198f8eda8cdca7781236f8721dee7c092a7b4e05ab745db1c06fb95391904"
+    },
+    {
+      "archive": "allfitsDZ.pdf",
+      "page_1based": 436,
+      "source_id": "1078624858218235776",
+      "name": "WDJ110541.59+724751.14",
+      "spectral_type": "DZ",
+      "original_parameter_row": "WDJ110541.59+724751.14 1078624858218235776 DZ [logCa/He=-9.97]+[logH/He=-4.0] 4947 67 7.897 0.043 0.508 0.035 0 0.000 0.000",
+      "label_ocr": "f WDJ110541.59+724751.14 | 1078624858218235776 |",
+      "gaia_ocr_exact_after_whitespace_removal": true,
+      "axis": {
+        "x_major_ticks_pdf_pt": [
+          108.48,
+          248.64,
+          388.56,
+          528.72
+        ],
+        "x_major_tick_wavelength_angstrom": [
+          4000,
+          5000,
+          6000,
+          7000
+        ],
+        "x_tick_label_ocr": "4000 5000 6000 7000",
+        "x_to_wavelength_polynomial": [
+          7.139592490264415,
+          3225.325832601755
+        ],
+        "x_tick_fit_max_error_angstrom": 0.5141093811034807,
+        "y_major_ticks_pdf_pt": [
+          446.0,
+          504.08,
+          562.16,
+          620.24,
+          678.32,
+          736.16
+        ],
+        "y_major_tick_relative_fnu": [
+          1.0,
+          0.8,
+          0.6,
+          0.4,
+          0.2,
+          0.0
+        ],
+        "y_to_relative_fnu_polynomial": [
+          -0.003445558546816862,
+          2.536876390536257
+        ],
+        "y_tick_fit_max_error_relative_fnu": 0.000394010711556092,
+        "source_graphic_coordinate_quantum_pdf_pt": 0.24,
+        "one_graphic_quantum_angstrom": 1.7135021976634597,
+        "one_graphic_quantum_relative_fnu": 0.0008269340512360469,
+        "bottom_panel_bounds_pdf_pt": [
+          80.4,
+          431.6,
+          570.72,
+          736.16
+        ]
+      },
+      "vector_diagnostics": {
+        "observed": {
+          "vertices": 4133,
+          "path_segments": 15,
+          "min_wavelength_angstrom": 3799.3490797131676,
+          "max_wavelength_angstrom": 7298.320417002633,
+          "max_join_gap_angstrom": 0.0
+        },
+        "model": {
+          "vertices": 2521,
+          "path_segments": 15,
+          "min_wavelength_angstrom": 3799.3490797131676,
+          "max_wavelength_angstrom": 7298.320417002633,
+          "max_join_gap_angstrom": 0.0
+        }
+      },
+      "compact_path": "research/model_validation/sources/published_curves/1078624858218235776.npz",
+      "compact_sha256": "657273f04f1a10967bfc44ed2ed27cce75bd9a4b7237bf705f528ffaf4d36a98"
+    },
+    {
+      "archive": "allfitsDZ.pdf",
+      "page_1based": 572,
+      "source_id": "3638333660492606976",
+      "name": "WDJ132312.76-012923.67",
+      "spectral_type": "DZ:",
+      "original_parameter_row": "WDJ132312.76-012923.67 3638333660492606976 DZ: [logCa/He=-11.87]+[logH/He=-1.0] 3648 16 7.381 0.061 0.268 0.030 0 0.000 0.000",
+      "label_ocr": "F wDs132812.76-012923.67 | 3638333660492606976 1",
+      "gaia_ocr_exact_after_whitespace_removal": true,
+      "axis": {
+        "x_major_ticks_pdf_pt": [
+          108.48,
+          248.64,
+          388.56,
+          528.72
+        ],
+        "x_major_tick_wavelength_angstrom": [
+          4000,
+          5000,
+          6000,
+          7000
+        ],
+        "x_tick_label_ocr": "4000 5000 6000 7000",
+        "x_to_wavelength_polynomial": [
+          7.139592490264415,
+          3225.325832601755
+        ],
+        "x_tick_fit_max_error_angstrom": 0.5141093811034807,
+        "y_major_ticks_pdf_pt": [
+          446.0,
+          504.08,
+          562.16,
+          620.24,
+          678.32,
+          736.16
+        ],
+        "y_major_tick_relative_fnu": [
+          1.0,
+          0.8,
+          0.6,
+          0.4,
+          0.2,
+          0.0
+        ],
+        "y_to_relative_fnu_polynomial": [
+          -0.003445558546816862,
+          2.536876390536257
+        ],
+        "y_tick_fit_max_error_relative_fnu": 0.000394010711556092,
+        "source_graphic_coordinate_quantum_pdf_pt": 0.24,
+        "one_graphic_quantum_angstrom": 1.7135021976634597,
+        "one_graphic_quantum_relative_fnu": 0.0008269340512360469,
+        "bottom_panel_bounds_pdf_pt": [
+          80.4,
+          431.6,
+          570.72,
+          736.16
+        ]
+      },
+      "vector_diagnostics": {
+        "observed": {
+          "vertices": 3890,
+          "path_segments": 14,
+          "min_wavelength_angstrom": 3799.3490797131676,
+          "max_wavelength_angstrom": 7298.320417002633,
+          "max_join_gap_angstrom": 0.0
+        },
+        "model": {
+          "vertices": 2386,
+          "path_segments": 14,
+          "min_wavelength_angstrom": 3799.3490797131676,
+          "max_wavelength_angstrom": 7298.320417002633,
+          "max_join_gap_angstrom": 0.0
+        }
+      },
+      "compact_path": "research/model_validation/sources/published_curves/3638333660492606976.npz",
+      "compact_sha256": "53094191b7be4807ae5d608e4487b07bc97c4d68411c248551665ac084cb73c0"
+    },
+    {
+      "archive": "allfitsDZ.pdf",
+      "page_1based": 676,
+      "source_id": "1182083542272959232",
+      "name": "WDJ150038.15+134301.74",
+      "spectral_type": "DZ",
+      "original_parameter_row": "WDJ150038.15+134301.74 1182083542272959232 DZ [logCa/He=-9.70]+[logH/He=-6.0] 4903 22 7.972 0.030 0.551 0.026 0 0.000 0.000",
+      "label_ocr": "WDJ150038.15+134301.74 | 1182083542272959232 |",
+      "gaia_ocr_exact_after_whitespace_removal": true,
+      "axis": {
+        "x_major_ticks_pdf_pt": [
+          108.48,
+          248.64,
+          388.56,
+          528.72
+        ],
+        "x_major_tick_wavelength_angstrom": [
+          4000,
+          5000,
+          6000,
+          7000
+        ],
+        "x_tick_label_ocr": "4000 5000 6000 7000",
+        "x_to_wavelength_polynomial": [
+          7.139592490264415,
+          3225.325832601755
+        ],
+        "x_tick_fit_max_error_angstrom": 0.5141093811034807,
+        "y_major_ticks_pdf_pt": [
+          446.0,
+          504.08,
+          562.16,
+          620.24,
+          678.32,
+          736.16
+        ],
+        "y_major_tick_relative_fnu": [
+          1.0,
+          0.8,
+          0.6,
+          0.4,
+          0.2,
+          0.0
+        ],
+        "y_to_relative_fnu_polynomial": [
+          -0.003445558546816862,
+          2.536876390536257
+        ],
+        "y_tick_fit_max_error_relative_fnu": 0.000394010711556092,
+        "source_graphic_coordinate_quantum_pdf_pt": 0.24,
+        "one_graphic_quantum_angstrom": 1.7135021976634597,
+        "one_graphic_quantum_relative_fnu": 0.0008269340512360469,
+        "bottom_panel_bounds_pdf_pt": [
+          80.4,
+          431.6,
+          570.72,
+          736.16
+        ]
+      },
+      "vector_diagnostics": {
+        "observed": {
+          "vertices": 4120,
+          "path_segments": 14,
+          "min_wavelength_angstrom": 3799.3490797131676,
+          "max_wavelength_angstrom": 7293.180119577391,
+          "max_join_gap_angstrom": 0.0
+        },
+        "model": {
+          "vertices": 2666,
+          "path_segments": 14,
+          "min_wavelength_angstrom": 3799.3490797131676,
+          "max_wavelength_angstrom": 7298.320417002633,
+          "max_join_gap_angstrom": 0.0
+        }
+      },
+      "compact_path": "research/model_validation/sources/published_curves/1182083542272959232.npz",
+      "compact_sha256": "37c7a7b23a4ffd86cf2a27768613b4c00ac1f9d6eb0f348bba06a7de22ccca28"
+    },
+    {
+      "archive": "allfitsDZ.pdf",
+      "page_1based": 803,
+      "source_id": "4545191991882663936",
+      "name": "WDJ170738.96+145320.12",
+      "spectral_type": "DZ:",
+      "original_parameter_row": "WDJ170738.96+145320.12 4545191991882663936 DZ: [logCa/He=-10.17]+[logH/He=-2.0] 5105 57 8.072 0.043 0.613 0.039 0 0.000 0.000",
+      "label_ocr": "WDJ170738.96+145320.12 | 4545191991882663936",
+      "gaia_ocr_exact_after_whitespace_removal": true,
+      "axis": {
+        "x_major_ticks_pdf_pt": [
+          108.48,
+          248.64,
+          388.56,
+          528.72
+        ],
+        "x_major_tick_wavelength_angstrom": [
+          4000,
+          5000,
+          6000,
+          7000
+        ],
+        "x_tick_label_ocr": "4000 5000 6000 7000",
+        "x_to_wavelength_polynomial": [
+          7.139592490264415,
+          3225.325832601755
+        ],
+        "x_tick_fit_max_error_angstrom": 0.5141093811034807,
+        "y_major_ticks_pdf_pt": [
+          446.0,
+          504.08,
+          562.16,
+          620.24,
+          678.32,
+          736.16
+        ],
+        "y_major_tick_relative_fnu": [
+          1.0,
+          0.8,
+          0.6,
+          0.4,
+          0.2,
+          0.0
+        ],
+        "y_to_relative_fnu_polynomial": [
+          -0.003445558546816862,
+          2.536876390536257
+        ],
+        "y_tick_fit_max_error_relative_fnu": 0.000394010711556092,
+        "source_graphic_coordinate_quantum_pdf_pt": 0.24,
+        "one_graphic_quantum_angstrom": 1.7135021976634597,
+        "one_graphic_quantum_relative_fnu": 0.0008269340512360469,
+        "bottom_panel_bounds_pdf_pt": [
+          80.4,
+          431.6,
+          570.72,
+          736.16
+        ]
+      },
+      "vector_diagnostics": {
+        "observed": {
+          "vertices": 4101,
+          "path_segments": 14,
+          "min_wavelength_angstrom": 3799.3490797131676,
+          "max_wavelength_angstrom": 7298.320417002633,
+          "max_join_gap_angstrom": 0.0
+        },
+        "model": {
+          "vertices": 2402,
+          "path_segments": 15,
+          "min_wavelength_angstrom": 3801.0611504190506,
+          "max_wavelength_angstrom": 7298.320417002633,
+          "max_join_gap_angstrom": 0.0
+        }
+      },
+      "compact_path": "research/model_validation/sources/published_curves/4545191991882663936.npz",
+      "compact_sha256": "8980fdeda8dc7f80f311bd9468e6bd00f7743494ea9014b8a317a6a994f775b3"
+    }
+  ],
+  "uncertainty_limit": "Plotted line coordinates have about 0.24 PDF-point quantization; spectra shown smoothed; native uncertainties, resolution kernels and masks are not present in these paths. Residuals support wavelength targeting only, not chi-squared, abundance estimates or significance.",
+  "extraction_software": {
+    "PyMuPDF": "1.26.6",
+    "tesseract": "tesseract 5.3.4"
+  },
+  "extraction_script_sha256": "7095ab3ddb3ae1deba40a23e6d9716f0d7e9fcae6886c857ed77ad7e272e4b4b",
+  "archive_creators": [
+    {
+      "name": "Kilic, Mukremin",
+      "affiliation": "University of Oklahoma",
+      "orcid": "0000-0001-6098-2235"
+    },
+    {
+      "name": "Bergeron, Pierre",
+      "affiliation": "Universit\u00e9 de Montr\u00e9al",
+      "orcid": "0000-0003-2368-345X"
+    }
+  ]
+}

@@ -10,11 +10,19 @@
 
 **企画・管理：** Shota Moriwaki
 
-**研究改訂版：** 0.2.0 · **更新：** 2026年10月18日 UTC
+**研究改訂版：** 0.2.0＋10月19日追加解析 · **更新：** 2026年10月19日 UTC
 
 **リポジトリ：** [dj-thank/wish-you-were-green](https://github.com/dj-thank/wish-you-were-green)
 
 **詳しい内容は[現在の日本語研究報告](research/README.ja.md)と[English report](research/README.md)へ。** 実行済みの解析、次に試す仮説、残る限界を分けて記録しています。
+
+### 最新追加：個別確認の完了と、公開モデルを使った検証
+
+**グラフの大きなずれの実際の原因も2例特定しました。** 同じSDSS原観測の重複表現に、異なる較正の分岐が適用されていました。現行の見かけの差Δuv=0.01360・0.01517は、同じ既存補正で比較すると99.99%以上縮小します。[原画素の証拠と修正した比較図](research/outlier_followup/representation_calibration/README.md)
+
+[10月19日の追加研究報告](research/FOLLOWUP_2026-10-19.ja.md)（[English](research/FOLLOWUP_2026-10-19.en.md)）では、残っていた**2007対象すべて**に実際の閲覧記録を追加しました。適格な曲線を表示できた1684対象と、表示不可理由を確認した323対象を区別しています。以前の337対象と合わせ、過去の要確認集合2344対象は全件に記録が揃いました。全6003 entityの目視や、異常の物理的原因の確定を意味しません。
+
+数値実験は**実測測光450設定・1800線形計画、純H/He対照720 fits、公刊済み組成別モデル図25対象**まで進めました。**J0429−0354では、同じ観測PS1 grizの誤差範囲を満たしながら、緑優位と赤優位の両方の形状を最大約4.25%の変形で構成できました。** 節点800 Å・各公表誤差1倍の条件では、25対象中14対象が2%以下の変形ではgrizに整合しません。指定した補正空間での識別の限界であり、実測の較正誤差分布や新しい大気組成の測定ではありません。[色判定の制約実験](research/calibration_followup/README.md)・[公開モデルとの実比較](research/model_validation/README.md)
 
 ## 現行結果と過去の記録
 
@@ -26,6 +34,8 @@
 | MWDD SDSSのフラックス表現 | **Fν 149・Fλ 504・未解決1,579** |
 | 新しい解釈で再計算したSDSS | 3,629記録 |
 | 実際に全パネル目視した旧強外れ対象 | 337対象・22画像 |
+| 今回個別確認を完了した残りの要確認対象 | 2007対象・126画像：曲線あり1684／利用不可323 |
+| 今回の表示に用いた現行スペクトル | 原SHA確認・色再現3041記録 |
 | SHA256一致を確認して再取得した要確認入力 | 4,355件。旧計算4,353件再現、既存失敗2件を保持 |
 
 **v0.1の9,023適格記録・337強外れentity**は旧処理で得た値です。旧入力・旧数値ファイルは来歴を追うために残しています。現在の判定は[修正済みレコード表](research/precision/flux_units/corrected_record_screen.csv.gz)と[修正済み天体表](research/precision/flux_units/corrected_object_screen.csv)を使ってください。entity keyには過去の位置照合が残っており、同定済みの独立した星の数とは限りません。これらは探索上の選別件数であり、発見の有意性ではありません。[数え方と監査範囲](research/README.ja.md)
@@ -64,6 +74,8 @@
 | 資料 | 内容と版 |
 |---|---|
 | [現在の日本語報告](research/README.ja.md)・[English](research/README.md) | v0.2の発見事項、限界、次の科学的検証 |
+| [10月19日追加研究](research/FOLLOWUP_2026-10-19.ja.md)・[English](research/FOLLOWUP_2026-10-19.en.md) | 個別確認の完了、実測測光の制約、公開モデル比較、原データ診断 |
+| [追加2007対象の全件台帳](research/outlier_followup/individual_review.csv) | 個別の観察、利用不可例、固定した画像への対応 |
 | [追加研究ノートブック](research/research_extension.ipynb) | 今回の検証、修正済み集計、候補の比較図 |
 | [初期27追跡CSV](research/candidate27_followup.csv)・[JSON](research/candidate27_followup.json) | 全候補の区間、来歴、次に確認すること |
 | [候補の誤差比較図](research/candidate27_uncertainty_comparison.png) | 全27対象。Gaia両再構成の独立性に注意 |
@@ -87,6 +99,7 @@ python3.12 -m venv .venv-colour
 .venv-colour/bin/python scripts/verify_reproduction.py --with-controls
 .venv-colour/bin/python -m unittest discover -s tests -p 'test_*.py' -v
 .venv-colour/bin/python scripts/verify_research_extension.py
+.venv-colour/bin/python scripts/verify_research_followup.py
 ```
 
 Windowsでは対応する `.venv-colour\Scripts\python.exe` を使ってください。

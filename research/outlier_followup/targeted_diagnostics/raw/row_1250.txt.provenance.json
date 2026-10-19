@@ -1,0 +1,14 @@
+{
+  "request_url": "https://www.montrealwhitedwarfdatabase.org/WDs/SDSS%20J110644.27%2B673708.6/spect.SDSS%20J110644.27%2B673708.6.DESI_2022-05-09_031112.txt",
+  "query_started_utc": "2026-10-19T10:12:46.204525+00:00",
+  "expected_frozen_sha256": "0cc5e7bc4cbdf8c19e2b2e969e02aecf9fa0387e3298456343d4b20fa3b5f3af",
+  "status": 200,
+  "resolved_url": "https://www.montrealwhitedwarfdatabase.org/WDs/SDSS%20J110644.27%2B673708.6/spect.SDSS%20J110644.27%2B673708.6.DESI_2022-05-09_031112.txt",
+  "content_type": "text/plain; charset=UTF-8",
+  "http_date": "Mon, 19 Oct 2026 10:12:46 GMT",
+  "retrieved_utc": "2026-10-19T10:12:47.134537+00:00",
+  "bytes": 615254,
+  "sha256": "0cc5e7bc4cbdf8c19e2b2e969e02aecf9fa0387e3298456343d4b20fa3b5f3af",
+  "saved_path": "research/outlier_followup/targeted_diagnostics/raw/row_1250.txt",
+  "result": "ok"
+}

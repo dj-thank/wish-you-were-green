@@ -1,0 +1,47 @@
+{
+  "models": [
+    {
+      "file": "Table_DA",
+      "url": "https://www.astro.umontreal.ca/~bergeron/CoolingModels/Tables/Table_DA",
+      "retrieved_utc": "2026-10-19T10:11:31.747942+00:00",
+      "sha256": "ff3cfe6882c10c5a9e64c3ca19cec9ed92d622bcc88b3dd87e1382017ddad1df",
+      "size_bytes": 94635,
+      "archive_md5": null,
+      "last_modified": "Wed, 13 Jan 2021 14:19:42 GMT",
+      "kind": "absolute synthetic magnitudes; not wavelength-resolved spectra",
+      "model_composition": "pure hydrogen",
+      "model_header_date": "2021-01-13"
+    },
+    {
+      "file": "Table_DB",
+      "url": "https://www.astro.umontreal.ca/~bergeron/CoolingModels/Tables/Table_DB",
+      "retrieved_utc": "2026-10-19T10:11:31.930446+00:00",
+      "sha256": "9353da84af8a2db8812ac19ec62ae782b28cb103602282ad72134be1cdf6d409",
+      "size_bytes": 111630,
+      "archive_md5": null,
+      "last_modified": "Wed, 13 Jan 2021 14:19:42 GMT",
+      "kind": "absolute synthetic magnitudes; not wavelength-resolved spectra",
+      "model_composition": "pure helium",
+      "model_header_date": "2021-01-13"
+    }
+  ],
+  "scope": "Public Montreal 2021 synthetic-magnitude tables; these are not the updated Kilic 2026 DZ/DQ grids.",
+  "citation_page": "https://www.astro.umontreal.ca/~bergeron/CoolingModels/",
+  "photometry_method": "https://www.astro.umontreal.ca/~bergeron/CoolingModels/Synthetic_Calibration.pdf",
+  "native_column_mapping": {
+    "SDSS_griz": [
+      26,
+      27,
+      28,
+      29
+    ],
+    "PanSTARRS_grizy": [
+      30,
+      31,
+      32,
+      33,
+      34
+    ]
+  },
+  "use_conditions": "Cite the authors model website and relevant original atmosphere and calibration papers; no change to original table bytes."
+}

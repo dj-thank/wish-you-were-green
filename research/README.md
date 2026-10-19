@@ -1,6 +1,8 @@
 # From unusual white-dwarf colours to a testable research programme
 
-**Updated 18 October 2026 UTC. Project: Shota Moriwaki. This is an unreviewed research record containing ChatGPT-assisted analysis and writing.** [日本語](README.ja.md) · [Project overview](../README.md)
+**Updated 19 October 2026 UTC. Project: Shota Moriwaki. This is an unreviewed research record containing ChatGPT-assisted analysis and writing.** [日本語](README.ja.md) · [Project overview](../README.md)
+
+**Latest work: [19 October follow-up report](FOLLOWUP_2026-10-19.en.md).** The remaining 2,007 review entities now have individual viewing notes: 1,684 with current accepted spectra and 323 with explicit unavailable panels. New work also executes 450 measured-photometry scenarios, 720 public control-model fits and residual diagnostics for 25 published DZ/DQ plots. J0429 has strict opposite channel-order witnesses inside the same observed griz error boxes and a 5% shape budget. The report below retains the 18 October correction and experimental context; the new report explains what has now been executed and what remains unresolved.
 
 **Correction: independent SDSS colour support for J1323−0129 is withdrawn.** Its MWDD SDSS flux convention remains unresolved, and native Gaia XP was unavailable in this acquisition. The DESI estimate remains a single-instrument colour candidate. The historical 9,023 eligible records and 337 strong-outlier entities are superseded for current selection by **7,473 eligible records, 395 strong-outlier records and 308 entity keys**. [Corrected summary](precision/flux_units/corrected_screen_summary.json)
 
@@ -11,6 +13,8 @@ The strongest result is a demonstrated flux-representation bug, corrected throug
 All 9,902 spectrum records were catalogued, with 6,003 entity keys. Historical rules flagged 2,344 entities and 4,901 records. The review retrieved 4,355 distinct raw inputs with matching SHA256 hashes: 4,353 reproduced their frozen calculation, while two existing non-positive-XYZ failures remained failures. Maximum successful reproduction displacement was 7.01×10⁻¹³ in uv. Reproducibility and correct physical interpretation were separate tests. [Census](outlier_audit/census_summary.json) · [Retrieval](outlier_audit/retrieval_summary.json) · [Recalculation](outlier_audit/recompute_summary.json)
 
 All 337 historical strong-outlier objects were actually inspected across 22 contact-sheet images, with an individual panel record: [176 objects](outlier_audit/visual_review_01_11.md) and [161 objects](outlier_audit/visual_review_12_22.md). This was inspection of prepared spectra, not every original detector image. Display-only 40 Å binning, individual normalization and fixed ordinate limits conceal some narrow features and excursions. The full record inventory is available through the [object viewer](outlier_audit/object_audit.html). Entity keys include provisional positional assignments and cannot automatically be counted as distinct verified stars.
+
+On 19 October the remaining **2,007 entities / 4,370 records** were followed through [126 current-unit contact sheets](outlier_followup/README.md), retaining 323 unavailable panels and 1,305 unit-withheld records. All 3,041 plotted original inputs passed SHA and current-colour reproduction checks. The [final individual ledger](outlier_followup/individual_review.csv) completes the historical 2,344-entity viewing queue. Supplemental zooms, native peaks, known Gaia variables and original-fibre epoch positions have separate evidence records; preparation of a figure alone is not counted as viewing it.
 
 ## 2. The material correction: mixed Fν and Fλ
 
@@ -88,6 +92,7 @@ The [research-extension notebook](research_extension.ipynb) connects the current
 .venv-research/bin/python scripts/verify_reproduction.py --with-controls
 .venv-research/bin/python -m unittest discover -s tests -p 'test_*.py' -v
 .venv-research/bin/python scripts/verify_research_extension.py
+.venv-research/bin/python scripts/verify_research_followup.py
 .venv-research/bin/python research/precision/precision_audit.py
 .venv-research/bin/python research/precision/flux_units/build_corrected_screen.py
 .venv-research/bin/python research/candidate_followup.py

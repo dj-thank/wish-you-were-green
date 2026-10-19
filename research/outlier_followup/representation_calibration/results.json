@@ -1,0 +1,1471 @@
+{
+  "selected_entities": 4,
+  "same_observation_pairs_reverified": 3,
+  "held_without_pair": 1,
+  "pairs_with_different_current_corrections": 2,
+  "method": "Exact frozen raw SHA and original strict native-pixel identity gates; no rebinning, interpolation, or continuum tilt fit for identity. Colour uses existing retained native grids. Display only uses 20 A means and independent 5200-5500 A medians. Shared correction is the existing accepted MWDD a,b (or identity if absent).",
+  "interpretation_limits": "The reduction measures a difference between duplicate representations of the same observation. It is not independent confirmation, physical variability, the fraction of instrument error, or validation of the photometric correction. Remaining colours retain wavelength rounding, masks and support differences. Different-instrument residuals remain unresolved. No current screen, eligibility, old panel, manifest or ranking was changed.",
+  "photometric_replay_limits": "Uses only original frozen measurements and the unchanged sequential SDSS/PS1 acceptance rules. It explains existing decisions; replayed/rejected fits are not used to align spectra.",
+  "identity_thresholds": {
+    "comparison_window_A": [
+      3600.0,
+      8300.0
+    ],
+    "nearest_native_wavelength_tolerance_A": 0.02,
+    "minimum_wavelength_grid_match_fraction": 0.99,
+    "minimum_finite_fraction_of_grid_matches": 0.99,
+    "minimum_comparison_samples": 1000,
+    "minimum_comparison_span_A": 3500.0,
+    "relative_residual_reference_floor_fraction": 0.1,
+    "maximum_fractional_shape_residual": 0.0001,
+    "maximum_absolute_shape_residual_per_median_abs_reference": 0.0001
+  },
+  "input_sha256": {
+    "research/precision/flux_units/corrected_record_screen.csv.gz": "2c894ee7af8d1c3a5f62ba19c6921265b4bef5de9f84291394d441642b984746",
+    "research/precision/flux_convention_evidence.json": "00aef84a2e81fad091c68b372fbe83fe67e7648c979f6cf4c45725f103fe9fdb",
+    "research/outlier_followup/association_diagnostics/sdss_original_headers.json": "b861d216dab15bffb09c675ed6e15354338da56ed6d8f994d05de7028d3430e4",
+    "research/outlier_followup/representation_calibration.py": "7c00eb7578a85af22977308298a89daced6c2a994d1bbee21aeb9dedae1872d5",
+    "research/precision/flux_convention_audit.py": "eab1c3740e6f3179f45a2472f3c200f6bc589adc8a025db8ccb01618d6c11799",
+    "colour_pipeline.py": "f11ddec97d2437cdbb32a8080e66a1a6a58b16be3807f5b6403fca4e45aa3994",
+    "flux_conventions.py": "e5d382eb18307617f92d199fea72fa3714f61bd61cc01a8145257e7ed8be40ce",
+    "results/screen_input_mwdd.json.gz": "b37732619b1e077d978d7ddae2ee6d367ddb9485b13298afed4e43bd25e5e129",
+    "results/screen_input_sdss.json.gz": "5446325682e4d84ba4e89131aa668f64e14126126683c80f1a8d57cb037f1e64",
+    "research/outlier_followup/build_followup.py": "a21e27b6ff3860ebb1f0f0bea303b240d955147432bc2a3a34f2896287d7f94a",
+    "sdss/manifest_with_photometry.json.gz": "6bc3436d3b0e4a1e22f454379ce2fcae56ec67f5cdcf9abd26f4a379b57cbdb9",
+    "sdss/fetch_photometry.py": "a87cf6c35855cfef5d4f60d94a3cc8c4e27f754938b45b24400ebc88c8751e4d",
+    "run_full_screen.py": "b2f3623c5b4dd69bfddc4b64abbf3e56811190928810cda60c88b20e07feea3c"
+  },
+  "evidence_file_sha256": {
+    "research/outlier_followup/association_diagnostics/spec-4661-55614-0318.fits.gz": "f324a22865212210aac1b2f05075a690a34a42294f9ef8c8e14d6246d4c102e8",
+    "research/outlier_followup/association_diagnostics/spec-5201-55832-0412.fits.gz": "0ed02562ffd70b9f4d7ec7ec73208a981d542ca576fc23e19b987ae783d17cd0",
+    "research/outlier_followup/association_diagnostics/spec-7445-56720-0047.fits.gz": "dca0220984d01e9dadc624164833328dbefd91b5e4eaacacbe8f75f39286248b",
+    "research/outlier_followup/representation_calibration/comparison_summary.csv": "34e4aa4db602203c2b380c6a12c4bbda4703265786110a7290a280566a3e26d7",
+    "research/outlier_followup/representation_calibration/display_curves.csv.gz": "800c1fb78cf1f941baaabb8eb54ab2053e0cbf6f3f9761e6edf5ffb5f544f492",
+    "research/outlier_followup/representation_calibration/photometric_decisions.csv": "ca8889223d42ae91166bbb1a23f137a88e7df24a69b672b9958961f7e0ec689d",
+    "research/outlier_followup/representation_calibration/raw_row_1953.csv.gz": "99ade733dc10d24aca8cbc4fa6f14d7385fbb7819baf342a64cc0accc63b8c34",
+    "research/outlier_followup/representation_calibration/raw_row_4185.csv.gz": "b4eed062947727a246e6b5af28c3703d35cef8771564e908b157a4c4b89668e5",
+    "research/outlier_followup/representation_calibration/raw_row_978.csv.gz": "1ec9bc9ad28d582eeb6fd0c8a490246311d6bd42137e77fe2ed059c7ade06406",
+    "research/outlier_followup/representation_calibration/same_observation_comparison.png": "c546b3b9882488594084f057f7380dd486abe27092ecf41ba23e7b86dc02d790"
+  },
+  "results": [
+    {
+      "source_id": "1038076351151065088",
+      "entity_id": "gaia:1038076351151065088",
+      "current_records": [
+        {
+          "row_index": 3786,
+          "entity_id": "gaia:1038076351151065088",
+          "kind": "other_ground_or_archive",
+          "archive_origin": "MWDD",
+          "source_url": "https://www.montrealwhitedwarfdatabase.org/WDs/LHS2086/spect.LHS2086.Bergeron.txt",
+          "sha256": "275236390b1d2b1d7f93d2afbb172f3532b5b27f9930156c7dbbb465b3334298",
+          "status": "unit_unverified",
+          "usable_screen": false,
+          "flux_input_convention": "unresolved",
+          "calibrated": false,
+          "cal_system": null,
+          "cal_offset_mag": null,
+          "cal_tilt_mag_per_1000A": null,
+          "cal_max_residual_mag": null,
+          "calibration_notes": "sdss: Incomplete band coverage or nonpositive band flux; panstarrs: Incomplete band coverage or nonpositive band flux",
+          "u1960": null,
+          "v1960": null,
+          "duv": null
+        },
+        {
+          "row_index": 3787,
+          "entity_id": "gaia:1038076351151065088",
+          "kind": "Gaia_XP",
+          "archive_origin": "MWDD",
+          "source_url": "https://www.montrealwhitedwarfdatabase.org/WDs/LHS2086/spect.LHS2086.XP.txt",
+          "sha256": "4af283d0507215bdca13a6c8e69e40aa8d949aaa85412c1b1fcd162eb9d18d71",
+          "status": "ok",
+          "usable_screen": true,
+          "flux_input_convention": "flambda",
+          "calibrated": true,
+          "cal_system": "sdss",
+          "cal_offset_mag": -5.03052512576,
+          "cal_tilt_mag_per_1000A": 0.00549952114708,
+          "cal_max_residual_mag": 0.0102561376057,
+          "calibration_notes": null,
+          "u1960": 0.19409782174,
+          "v1960": 0.296307296234,
+          "duv": -0.00201176946874
+        },
+        {
+          "row_index": 9122,
+          "entity_id": "gaia:1038076351151065088",
+          "kind": "SDSS",
+          "archive_origin": "SDSS_DR17_direct",
+          "source_url": "https://data.sdss.org/sas/dr17/eboss/spectro/redux/v5_13_2/spectra/lite/5708/spec-5708-56605-0705.fits",
+          "sha256": "950917288533703a067162db7c83aca9aabb62d6f715cdea5fafb56a23d07d76",
+          "status": "ok",
+          "usable_screen": true,
+          "flux_input_convention": "flambda",
+          "calibrated": false,
+          "cal_system": null,
+          "cal_offset_mag": null,
+          "cal_tilt_mag_per_1000A": null,
+          "cal_max_residual_mag": null,
+          "calibration_notes": null,
+          "u1960": 0.203484770711,
+          "v1960": 0.315099285297,
+          "duv": 0.000477818169625
+        }
+      ],
+      "disposition": "held_no_same_observation_mwdd_direct_sdss_pair",
+      "reason": "LHS2086 has no MWDD SDSS representation; Bergeron row 3786 is a different, unit-unverified input. XP/direct differences cannot be assigned to duplicate calibration by this experiment."
+    },
+    {
+      "source_id": "1311674353544358912",
+      "entity_id": "gaia:1311674353544358912",
+      "current_records": [
+        {
+          "row_index": 4185,
+          "entity_id": "gaia:1311674353544358912",
+          "kind": "SDSS",
+          "archive_origin": "MWDD",
+          "source_url": "https://www.montrealwhitedwarfdatabase.org/WDs/SDSS%20J163546.47%2B284336.1/spect.SDSS%20J163546.47%2B284336.1.sdss.txt",
+          "sha256": "a4ba503a2a3c17bdee25ce8536c8b6007e76fa088d7086adb5c065fb7df470de",
+          "status": "ok",
+          "usable_screen": true,
+          "flux_input_convention": "flambda",
+          "calibrated": true,
+          "cal_system": "sdss",
+          "cal_offset_mag": -0.169122717811,
+          "cal_tilt_mag_per_1000A": 0.200125241419,
+          "cal_max_residual_mag": 0.133663780679,
+          "calibration_notes": null,
+          "u1960": 0.193190527369,
+          "v1960": 0.307382095722,
+          "duv": 0.00433081167122
+        },
+        {
+          "row_index": 4186,
+          "entity_id": "gaia:1311674353544358912",
+          "kind": "Gaia_XP",
+          "archive_origin": "MWDD",
+          "source_url": "https://www.montrealwhitedwarfdatabase.org/WDs/SDSS%20J163546.47%2B284336.1/spect.SDSS%20J163546.47%2B284336.1.XP.txt",
+          "sha256": "82dc05fea9faba2974c550e698410ab76888cb2357b418a5623abc62ef649f63",
+          "status": "ok",
+          "usable_screen": true,
+          "flux_input_convention": "flambda",
+          "calibrated": true,
+          "cal_system": "sdss",
+          "cal_offset_mag": -5.04690553847,
+          "cal_tilt_mag_per_1000A": 0.00715715864683,
+          "cal_max_residual_mag": 0.0888668902016,
+          "calibration_notes": null,
+          "u1960": 0.19621856923,
+          "v1960": 0.299081438628,
+          "duv": -0.00254228508683
+        },
+        {
+          "row_index": 4187,
+          "entity_id": "gaia:1311674353544358912",
+          "kind": "DESI",
+          "archive_origin": "MWDD",
+          "source_url": "https://www.montrealwhitedwarfdatabase.org/WDs/SDSS%20J163546.47%2B284336.1/spect.SDSS%20J163546.47%2B284336.1.DESI_2022-04-27_100417.txt",
+          "sha256": "265d1826084b2f05be5659045587dc0c2bbc19eaa737b768e3943f7f80a4dafb",
+          "status": "ok",
+          "usable_screen": true,
+          "flux_input_convention": "flambda",
+          "calibrated": true,
+          "cal_system": "sdss",
+          "cal_offset_mag": 42.4877364446,
+          "cal_tilt_mag_per_1000A": 0.00678177450338,
+          "cal_max_residual_mag": 0.0509307423268,
+          "calibration_notes": null,
+          "u1960": 0.196002576911,
+          "v1960": 0.296609607486,
+          "duv": -0.00355029973222
+        },
+        {
+          "row_index": 9399,
+          "entity_id": "gaia:1311674353544358912",
+          "kind": "SDSS",
+          "archive_origin": "SDSS_DR17_direct",
+          "source_url": "https://data.sdss.org/sas/dr17/eboss/spectro/redux/v5_13_2/spectra/lite/5201/spec-5201-55832-0412.fits",
+          "sha256": "77aa42e2de2ca3f084551ad063f9d936ba297e0292c4017b169811d53b1598f1",
+          "status": "ok",
+          "usable_screen": true,
+          "flux_input_convention": "flambda",
+          "calibrated": false,
+          "cal_system": null,
+          "cal_offset_mag": null,
+          "cal_tilt_mag_per_1000A": null,
+          "cal_max_residual_mag": null,
+          "calibration_notes": "sdss: Rejected calibration: residual >=0.15 mag or |tilt| >=0.25 mag/1000 A",
+          "u1960": 0.202710244956,
+          "v1960": 0.317090231764,
+          "duv": 0.00234021660224
+        }
+      ],
+      "disposition": "same_observation_identity_reverified",
+      "mwdd_row_index": 4185,
+      "direct_row_index": 9399,
+      "repeated_native_identity": {
+        "mwdd_row_index": 4185,
+        "mwdd_sha256": "a4ba503a2a3c17bdee25ce8536c8b6007e76fa088d7086adb5c065fb7df470de",
+        "direct_row_index": 9399,
+        "direct_sha256": "77aa42e2de2ca3f084551ad063f9d936ba297e0292c4017b169811d53b1598f1",
+        "entity_id": "gaia:1311674353544358912",
+        "name": "SDSS J163546.47+284336.1",
+        "mwdd_source_url": "https://www.montrealwhitedwarfdatabase.org/WDs/SDSS%20J163546.47%2B284336.1/spect.SDSS%20J163546.47%2B284336.1.sdss.txt",
+        "direct_source_url": "https://data.sdss.org/sas/dr17/eboss/spectro/redux/v5_13_2/spectra/lite/5201/spec-5201-55832-0412.fits",
+        "mwdd_raw_header": "wdid:SDSS J163546.47+284336.1,resolution:nan,source:sdss,wavelength_min: 3557.13,wavelength_max: 10346.66",
+        "direct_fits_header": {
+          "BUNIT": "1E-17 erg/cm^2/s/Ang",
+          "PLATEID": 5201,
+          "MJD": 55832,
+          "FIBERID": 412,
+          "RUN2D": "v5_13_2"
+        },
+        "raw_sha256_verified": true,
+        "convention": "flambda",
+        "wave_grid_match_fraction": 1.0,
+        "finite_grid_fraction": 1.0,
+        "comparison_samples": 3620,
+        "all_finite_matched_samples": 3627,
+        "wave_span_A": 4697.700000000001,
+        "wave_max_matched_difference_A": 0.0056011389915511245,
+        "ratio_log_wavelength_slope": 1.41194841879007e-08,
+        "flambda_constant_scale": 0.9999999896023103,
+        "flambda_median_fractional_shape_residual": 4.2027881030914926e-07,
+        "flambda_p95_fractional_shape_residual": 9.868810674162897e-07,
+        "flambda_max_fractional_shape_residual": 4.6291976880663555e-06,
+        "flambda_max_absolute_residual_per_median_reference": 7.724690916022985e-06,
+        "flambda_accepted": true,
+        "fnu_constant_scale": 100166073012.16672,
+        "fnu_median_fractional_shape_residual": 0.3941806755232775,
+        "fnu_p95_fractional_shape_residual": 1.1169412306865758,
+        "fnu_max_fractional_shape_residual": 1.3083391861981566,
+        "fnu_max_absolute_residual_per_median_reference": 2.438540510065486,
+        "fnu_accepted": false,
+        "reason": "Native sample identity under exactly one spectral-density convention"
+      },
+      "bundled_raw_paths": [
+        "research/outlier_followup/representation_calibration/raw_row_4185.csv.gz",
+        "research/outlier_followup/association_diagnostics/spec-5201-55832-0412.fits.gz"
+      ],
+      "photometric_decision_replay": {
+        "4185": [
+          {
+            "system": "sdss",
+            "observed_gri_mag": [
+              19.122,
+              19.11,
+              19.111
+            ],
+            "errors_gri_mag": [
+              0.011,
+              0.013,
+              0.019
+            ],
+            "fit": {
+              "cal_system": "sdss",
+              "cal_offset_mag": -0.1691227178105053,
+              "cal_tilt_mag_per_1000A": 0.20012524141866048,
+              "cal_tilt_error": 0.010423159693514062,
+              "cal_g_residual": 0.06414346911100921,
+              "cal_r_residual": -0.13366378067907903,
+              "cal_i_residual": 0.06952029626262046,
+              "cal_max_residual_mag": 0.13366378067907903,
+              "raw_g_minus_r": 0.491775217707044,
+              "raw_r_minus_i": 0.05683183267963088,
+              "photo_g_minus_r": 0.012000000000000455,
+              "photo_r_minus_i": -0.0010000000000012221
+            },
+            "decision": "accepted",
+            "failed_gates": []
+          }
+        ],
+        "9399": [
+          {
+            "system": "sdss",
+            "observed_gri_mag": [
+              19.146814314503196,
+              19.135160555588232,
+              19.125151371142387
+            ],
+            "errors_gri_mag": [
+              0.01617509686564138,
+              0.02896514172469922,
+              0.02464524931158266
+            ],
+            "fit": {
+              "cal_system": "sdss",
+              "cal_offset_mag": -0.16833974630068782,
+              "cal_tilt_mag_per_1000A": 0.20282968243047686,
+              "cal_tilt_error": 0.01161782658885307,
+              "cal_g_residual": 0.036184410384787924,
+              "cal_r_residual": -0.15815911438698294,
+              "cal_i_residual": 0.05955605917866791,
+              "cal_max_residual_mag": 0.15815911438698294,
+              "raw_g_minus_r": 0.4917813439602625,
+              "raw_r_minus_i": 0.05683053418665196,
+              "photo_g_minus_r": 0.011653758914963674,
+              "photo_r_minus_i": 0.01000918444584542
+            },
+            "decision": "rejected",
+            "failed_gates": [
+              "maximum_residual_ge_0.15_mag"
+            ]
+          },
+          {
+            "system": "panstarrs",
+            "observed_gri_mag": [
+              null,
+              null,
+              null
+            ],
+            "errors_gri_mag": [
+              null,
+              null,
+              null
+            ],
+            "decision": "unavailable_three_finite_magnitudes_required"
+          }
+        ]
+      },
+      "photometric_identity": {
+        "direct_objid": "1237662498937438470",
+        "direct_source": "Original same-observation FITS HDU2 BESTOBJID and PSFFLUX/PSFFLUX_IVAR; no new nearest-neighbour photometric lookup",
+        "direct_fits_hdu2_fields": {
+          "OBJID": "1237662498937438470",
+          "RA": 248.94365004990243,
+          "DEC": 28.726699817608946,
+          "CLEAN": 1,
+          "PSFFLUX": [
+            17.208086013793945,
+            21.94190216064453,
+            22.17868423461914,
+            22.384090423583984,
+            17.909963607788086
+          ],
+          "PSFFLUX_IVAR": [
+            2.705871343612671,
+            9.358501434326172,
+            2.8564443588256836,
+            3.873497724533081,
+            0.5326400399208069
+          ],
+          "PSFMAG": [
+            19.41059684753418,
+            19.14679527282715,
+            19.135128021240234,
+            19.12508201599121,
+            19.365413665771484
+          ],
+          "PSFMAGERR": [
+            0.038351353257894516,
+            0.016174552962183952,
+            0.028963444754481316,
+            0.024642061442136765,
+            0.08278181403875351
+          ]
+        },
+        "mwdd_photometric_objid_in_frozen_input": null,
+        "mwdd_frozen_row_has_photometric_objid": false,
+        "same_photometric_object_identity": "unresolved_no_mwdd_photometric_objid_or_photometric_epoch_in_frozen_input",
+        "interpretation": "The same spectral observation is established, but the two photometric anchors cannot be proved to refer to the same imaging detection from these retained inputs. Do not attribute the difference to a wrong nearest match or to intrinsic variability.",
+        "gri_comparison": [
+          {
+            "band": "g",
+            "mwdd_frozen_mag": 19.122,
+            "mwdd_frozen_error_mag": 0.011,
+            "direct_frozen_flux_derived_mag": 19.146814314503196,
+            "direct_frozen_error_mag": 0.01617509686564138,
+            "direct_minus_mwdd_mag": 0.024814314503196044,
+            "direct_hdu2_psfmag": 19.14679527282715,
+            "direct_flux_mag_minus_hdu2_psfmag": 1.9041676047493183e-05
+          },
+          {
+            "band": "r",
+            "mwdd_frozen_mag": 19.11,
+            "mwdd_frozen_error_mag": 0.013,
+            "direct_frozen_flux_derived_mag": 19.135160555588232,
+            "direct_frozen_error_mag": 0.02896514172469922,
+            "direct_minus_mwdd_mag": 0.025160555588232825,
+            "direct_hdu2_psfmag": 19.135128021240234,
+            "direct_flux_mag_minus_hdu2_psfmag": 3.253434799788124e-05
+          },
+          {
+            "band": "i",
+            "mwdd_frozen_mag": 19.111,
+            "mwdd_frozen_error_mag": 0.019,
+            "direct_frozen_flux_derived_mag": 19.125151371142387,
+            "direct_frozen_error_mag": 0.02464524931158266,
+            "direct_minus_mwdd_mag": 0.014151371142386182,
+            "direct_hdu2_psfmag": 19.12508201599121,
+            "direct_flux_mag_minus_hdu2_psfmag": 6.93551511758983e-05
+          }
+        ]
+      },
+      "modes": {
+        "raw_both": {
+          "delta_uv": 5.468501842562897e-07,
+          "mwdd": {
+            "u1960": 0.20271025810142518,
+            "v1960": 0.3170896850715238,
+            "duv": 0.002339850098193882,
+            "distance_planck_uv": 0.002339850098193882,
+            "n_visible_pixels": 3580,
+            "largest_visible_gap_A": 18.999999999999773,
+            "normalizer_flam_5200_5500_A": 7.19743e-17,
+            "normalized_mean_4000_4500_A": 0.856372150858244,
+            "normalized_mean_6500_7500_A": 0.7113636425980552
+          },
+          "direct": {
+            "u1960": 0.2027102449564078,
+            "v1960": 0.3170902317636973,
+            "duv": 0.0023402166022388426,
+            "distance_planck_uv": 0.0023402166022388426,
+            "n_visible_pixels": 3580,
+            "largest_visible_gap_A": 18.99511514619462,
+            "normalizer_flam_5200_5500_A": 7.197432518005372e-17,
+            "normalized_mean_4000_4500_A": 0.8563942142273622,
+            "normalized_mean_6500_7500_A": 0.7113633895778048
+          },
+          "applied_offset_and_tilt": {
+            "mwdd": [
+              0.0,
+              0.0
+            ],
+            "direct": [
+              0.0,
+              0.0
+            ]
+          },
+          "native_clean_matched_samples": 3580,
+          "normalized_fractional_residual_samples": 3573,
+          "relative_reference_floor": 0.08444076199259182,
+          "median_abs_normalized_fractional_residual": 4.563503401833202e-07,
+          "p95_abs_normalized_fractional_residual": 1.1965955406090241e-06,
+          "max_abs_normalized_fractional_residual": 4.549921782892596e-06
+        },
+        "current_individual": {
+          "delta_uv": 0.013596798459497742,
+          "mwdd": {
+            "u1960": 0.19319052736907966,
+            "v1960": 0.3073820957219169,
+            "duv": 0.004330811671221195,
+            "distance_planck_uv": 0.004330811671221195,
+            "n_visible_pixels": 3580,
+            "largest_visible_gap_A": 18.999999999999773,
+            "normalizer_flam_5200_5500_A": 9.815487533988985e-17,
+            "normalized_mean_4000_4500_A": 1.0493282453906114,
+            "normalized_mean_6500_7500_A": 0.5289698666527104,
+            "reproduced_current_delta_uv": 1.1511350522660389e-13
+          },
+          "direct": {
+            "u1960": 0.2027102449564078,
+            "v1960": 0.3170902317636973,
+            "duv": 0.0023402166022388426,
+            "distance_planck_uv": 0.0023402166022388426,
+            "n_visible_pixels": 3580,
+            "largest_visible_gap_A": 18.99511514619462,
+            "normalizer_flam_5200_5500_A": 7.197432518005372e-17,
+            "normalized_mean_4000_4500_A": 0.8563942142273622,
+            "normalized_mean_6500_7500_A": 0.7113633895778048,
+            "reproduced_current_delta_uv": 5.078555164146928e-13
+          },
+          "applied_offset_and_tilt": {
+            "mwdd": [
+              -0.169122717811,
+              0.200125241419
+            ],
+            "direct": [
+              0.0,
+              0.0
+            ]
+          },
+          "native_clean_matched_samples": 3580,
+          "normalized_fractional_residual_samples": 3573,
+          "relative_reference_floor": 0.08444076199259182,
+          "median_abs_normalized_fractional_residual": 0.2070564734340189,
+          "p95_abs_normalized_fractional_residual": 0.3821941728645555,
+          "max_abs_normalized_fractional_residual": 0.41799110586613974
+        },
+        "common_existing_mwdd": {
+          "delta_uv": 6.159534317705323e-07,
+          "mwdd": {
+            "u1960": 0.19319052736907966,
+            "v1960": 0.3073820957219169,
+            "duv": 0.004330811671221195,
+            "distance_planck_uv": 0.004330811671221195,
+            "n_visible_pixels": 3580,
+            "largest_visible_gap_A": 18.999999999999773,
+            "normalizer_flam_5200_5500_A": 9.815487533988985e-17,
+            "normalized_mean_4000_4500_A": 1.0493282453906114,
+            "normalized_mean_6500_7500_A": 0.5289698666527104
+          },
+          "direct": {
+            "u1960": 0.19319052537686815,
+            "v1960": 0.3073827116721269,
+            "duv": 0.004331148197380982,
+            "distance_planck_uv": 0.004331148197380982,
+            "n_visible_pixels": 3580,
+            "largest_visible_gap_A": 18.99511514619462,
+            "normalizer_flam_5200_5500_A": 9.815481224347996e-17,
+            "normalized_mean_4000_4500_A": 1.0493497034222583,
+            "normalized_mean_6500_7500_A": 0.5289702229746461
+          },
+          "applied_offset_and_tilt": {
+            "mwdd": [
+              -0.169122717811,
+              0.200125241419
+            ],
+            "direct": [
+              -0.169122717811,
+              0.200125241419
+            ]
+          },
+          "native_clean_matched_samples": 3580,
+          "normalized_fractional_residual_samples": 3575,
+          "relative_reference_floor": 0.08698121614572003,
+          "median_abs_normalized_fractional_residual": 7.145649493223161e-07,
+          "p95_abs_normalized_fractional_residual": 1.93900348864906e-06,
+          "max_abs_normalized_fractional_residual": 5.916642331516009e-06
+        }
+      },
+      "different_existing_corrections": true,
+      "paired_delta_uv_reduction_fraction": 0.9999546986422131,
+      "existing_mwdd_correction_ratio_4200_over_7000_A": 1.675483943999664,
+      "current_other_instrument_distances": [
+        {
+          "other_row_index": 4186,
+          "other_kind": "Gaia_XP",
+          "delta_uv_from_common_existing_mwdd_state": 0.00883571987459303,
+          "interpretation": "Descriptive comparison to frozen current values from a different instrument; no correction was fitted to this instrument."
+        },
+        {
+          "other_row_index": 4187,
+          "other_kind": "DESI",
+          "delta_uv_from_common_existing_mwdd_state": 0.011133468705627269,
+          "interpretation": "Descriptive comparison to frozen current values from a different instrument; no correction was fitted to this instrument."
+        }
+      ]
+    },
+    {
+      "source_id": "2586182156053386240",
+      "entity_id": "gaia:2586182156053386240",
+      "current_records": [
+        {
+          "row_index": 978,
+          "entity_id": "gaia:2586182156053386240",
+          "kind": "SDSS",
+          "archive_origin": "MWDD",
+          "source_url": "https://www.montrealwhitedwarfdatabase.org/WDs/WD%200132%2B127/spect.WD%200132%2B127.sdss.txt",
+          "sha256": "629f4fa374e759ec553a4cb457ef79cc1c4a37b2fbca78fdae59c774123a6c04",
+          "status": "ok",
+          "usable_screen": true,
+          "flux_input_convention": "flambda",
+          "calibrated": false,
+          "cal_system": null,
+          "cal_offset_mag": null,
+          "cal_tilt_mag_per_1000A": null,
+          "cal_max_residual_mag": null,
+          "calibration_notes": "sdss: Rejected calibration: residual >=0.15 mag or |tilt| >=0.25 mag/1000 A; panstarrs: Rejected calibration: residual >=0.15 mag or |tilt| >=0.25 mag/1000 A",
+          "u1960": 0.2185207954,
+          "v1960": 0.337483716338,
+          "duv": 0.00634859862076
+        },
+        {
+          "row_index": 979,
+          "entity_id": "gaia:2586182156053386240",
+          "kind": "other_ground_or_archive",
+          "archive_origin": "MWDD",
+          "source_url": "https://www.montrealwhitedwarfdatabase.org/WDs/WD%200132%2B127/spect.WD_0132%2B127.Hollands.blu.txt",
+          "sha256": "ab790e5ed76ab07ab3a6b8b5eb3dbcbc392af5ec9f1b603de5ffb0358f4b5a19",
+          "status": "unit_unverified",
+          "usable_screen": false,
+          "flux_input_convention": "unresolved",
+          "calibrated": false,
+          "cal_system": null,
+          "cal_offset_mag": null,
+          "cal_tilt_mag_per_1000A": null,
+          "cal_max_residual_mag": null,
+          "calibration_notes": "sdss: Incomplete band coverage or nonpositive band flux; panstarrs: Incomplete band coverage or nonpositive band flux",
+          "u1960": null,
+          "v1960": null,
+          "duv": null
+        },
+        {
+          "row_index": 980,
+          "entity_id": "gaia:2586182156053386240",
+          "kind": "Gaia_XP",
+          "archive_origin": "MWDD",
+          "source_url": "https://www.montrealwhitedwarfdatabase.org/WDs/WD%200132%2B127/spect.WD%200132%2B127.XP.txt",
+          "sha256": "dab86215a40d2c19d7f46173e6e66056c5ebf71059d044c982fdceca775b6480",
+          "status": "ok",
+          "usable_screen": true,
+          "flux_input_convention": "flambda",
+          "calibrated": true,
+          "cal_system": "sdss",
+          "cal_offset_mag": -5.05823408791,
+          "cal_tilt_mag_per_1000A": -0.0312027370237,
+          "cal_max_residual_mag": 0.0127674643706,
+          "calibration_notes": null,
+          "u1960": 0.19469857809,
+          "v1960": 0.313145940113,
+          "duv": 0.00629527848248
+        },
+        {
+          "row_index": 981,
+          "entity_id": "gaia:2586182156053386240",
+          "kind": "DESI",
+          "archive_origin": "MWDD",
+          "source_url": "https://www.montrealwhitedwarfdatabase.org/WDs/WD%200132%2B127/spect.WD%200132%2B127.DESI_2021-11-02_071653.txt",
+          "sha256": "1c1e2b7347a9d89115287ecd35acf17d8b3794e8ceccac0b997687fa95de9f5d",
+          "status": "ok",
+          "usable_screen": true,
+          "flux_input_convention": "flambda",
+          "calibrated": true,
+          "cal_system": "sdss",
+          "cal_offset_mag": 42.5909070732,
+          "cal_tilt_mag_per_1000A": -0.0161549137421,
+          "cal_max_residual_mag": 0.0171576199985,
+          "calibration_notes": null,
+          "u1960": 0.196803626597,
+          "v1960": 0.311316029467,
+          "duv": 0.00351975204208
+        },
+        {
+          "row_index": 8781,
+          "entity_id": "gaia:2586182156053386240",
+          "kind": "SDSS",
+          "archive_origin": "SDSS_DR17_direct",
+          "source_url": "https://data.sdss.org/sas/dr17/eboss/spectro/redux/v5_13_2/spectra/lite/4661/spec-4661-55614-0318.fits",
+          "sha256": "d1853867e15fe54aac27a457251b9be3bc577c31616361ff598b7079ff7ae657",
+          "status": "ok",
+          "usable_screen": true,
+          "flux_input_convention": "flambda",
+          "calibrated": false,
+          "cal_system": null,
+          "cal_offset_mag": null,
+          "cal_tilt_mag_per_1000A": null,
+          "cal_max_residual_mag": null,
+          "calibration_notes": "sdss: Rejected calibration: residual >=0.15 mag or |tilt| >=0.25 mag/1000 A",
+          "u1960": 0.218520521931,
+          "v1960": 0.337483327465,
+          "duv": 0.00634844928274
+        }
+      ],
+      "disposition": "same_observation_identity_reverified",
+      "mwdd_row_index": 978,
+      "direct_row_index": 8781,
+      "repeated_native_identity": {
+        "mwdd_row_index": 978,
+        "mwdd_sha256": "629f4fa374e759ec553a4cb457ef79cc1c4a37b2fbca78fdae59c774123a6c04",
+        "direct_row_index": 8781,
+        "direct_sha256": "d1853867e15fe54aac27a457251b9be3bc577c31616361ff598b7079ff7ae657",
+        "entity_id": "gaia:2586182156053386240",
+        "name": "WD 0132+127",
+        "mwdd_source_url": "https://www.montrealwhitedwarfdatabase.org/WDs/WD%200132%2B127/spect.WD%200132%2B127.sdss.txt",
+        "direct_source_url": "https://data.sdss.org/sas/dr17/eboss/spectro/redux/v5_13_2/spectra/lite/4661/spec-4661-55614-0318.fits",
+        "mwdd_raw_header": "wdid:WD 0132+127,resolution:nan,source:sdss,wavelength_min: 3550.58,wavelength_max: 10320.48",
+        "direct_fits_header": {
+          "BUNIT": "1E-17 erg/cm^2/s/Ang",
+          "PLATEID": 4661,
+          "MJD": 55614,
+          "FIBERID": 318,
+          "RUN2D": "v5_13_2"
+        },
+        "raw_sha256_verified": true,
+        "convention": "flambda",
+        "wave_grid_match_fraction": 1.0,
+        "finite_grid_fraction": 1.0,
+        "comparison_samples": 3469,
+        "all_finite_matched_samples": 3627,
+        "wave_span_A": 4697.700000000001,
+        "wave_max_matched_difference_A": 0.0056011389915511245,
+        "ratio_log_wavelength_slope": 6.086411744389987e-08,
+        "flambda_constant_scale": 1.0000000028896272,
+        "flambda_median_fractional_shape_residual": 4.5748721699823136e-07,
+        "flambda_p95_fractional_shape_residual": 1.6404489292076714e-06,
+        "flambda_max_fractional_shape_residual": 4.580083478589181e-06,
+        "flambda_max_absolute_residual_per_median_reference": 1.2720678920546163e-06,
+        "flambda_accepted": true,
+        "fnu_constant_scale": 96743164761.50427,
+        "fnu_median_fractional_shape_residual": 0.37941671693457346,
+        "fnu_p95_fractional_shape_residual": 1.1573448814040623,
+        "fnu_max_fractional_shape_residual": 1.3900115097191783,
+        "fnu_max_absolute_residual_per_median_reference": 1.5166668831076107,
+        "fnu_accepted": false,
+        "reason": "Native sample identity under exactly one spectral-density convention"
+      },
+      "bundled_raw_paths": [
+        "research/outlier_followup/representation_calibration/raw_row_978.csv.gz",
+        "research/outlier_followup/association_diagnostics/spec-4661-55614-0318.fits.gz"
+      ],
+      "photometric_decision_replay": {
+        "978": [
+          {
+            "system": "sdss",
+            "observed_gri_mag": [
+              19.30966,
+              18.9836,
+              18.92635
+            ],
+            "errors_gri_mag": [
+              0.01201318,
+              0.01201091,
+              0.01501255
+            ],
+            "fit": {
+              "cal_system": "sdss",
+              "cal_offset_mag": -0.18453501582127207,
+              "cal_tilt_mag_per_1000A": 0.4076597893739956,
+              "cal_tilt_error": 0.010715012731340755,
+              "cal_g_residual": 0.06102337445897987,
+              "cal_r_residual": -0.12468064861387873,
+              "cal_i_residual": 0.06365727415489886,
+              "cal_max_residual_mag": 0.12468064861387873,
+              "raw_g_minus_r": 1.061219111748077,
+              "raw_r_minus_i": 0.39741915420136564,
+              "photo_g_minus_r": 0.3260600000000018,
+              "photo_r_minus_i": 0.0572499999999998
+            },
+            "decision": "rejected",
+            "failed_gates": [
+              "absolute_tilt_ge_0.25_mag_per_1000A"
+            ]
+          },
+          {
+            "system": "panstarrs",
+            "observed_gri_mag": [
+              19.21269989,
+              18.98480034,
+              18.96419907
+            ],
+            "errors_gri_mag": [
+              0.024114,
+              0.010333,
+              0.009818
+            ],
+            "fit": {
+              "cal_system": "panstarrs",
+              "cal_offset_mag": -0.1570360375926065,
+              "cal_tilt_mag_per_1000A": 0.3971391886474376,
+              "cal_tilt_error": 0.012201232439878282,
+              "cal_g_residual": 0.07295449520966812,
+              "cal_r_residual": -0.09746428483949643,
+              "cal_i_residual": 0.0472793183554181,
+              "cal_max_residual_mag": 0.09746428483949643,
+              "raw_g_minus_r": 0.890874797909877,
+              "raw_r_minus_i": 0.3946616473681672,
+              "photo_g_minus_r": 0.22789955000000006,
+              "photo_r_minus_i": 0.020601270000000227
+            },
+            "decision": "rejected",
+            "failed_gates": [
+              "absolute_tilt_ge_0.25_mag_per_1000A"
+            ]
+          }
+        ],
+        "8781": [
+          {
+            "system": "sdss",
+            "observed_gri_mag": [
+              19.309636348699925,
+              18.99573200382087,
+              18.93062488436852
+            ],
+            "errors_gri_mag": [
+              0.022231051214769173,
+              0.018902553780194134,
+              0.018833872740473944
+            ],
+            "fit": {
+              "cal_system": "sdss",
+              "cal_offset_mag": -0.17440482055522447,
+              "cal_tilt_mag_per_1000A": 0.40377210862528995,
+              "cal_tilt_error": 0.011314487532722708,
+              "cal_g_residual": 0.07653508113546792,
+              "cal_r_residual": -0.12655786549207804,
+              "cal_i_residual": 0.0646136957638852,
+              "cal_max_residual_mag": 0.12655786549207804,
+              "raw_g_minus_r": 1.0612132579915539,
+              "raw_r_minus_i": 0.3974199724318197,
+              "photo_g_minus_r": 0.31390434487905594,
+              "photo_r_minus_i": 0.0651071194523496
+            },
+            "decision": "rejected",
+            "failed_gates": [
+              "absolute_tilt_ge_0.25_mag_per_1000A"
+            ]
+          },
+          {
+            "system": "panstarrs",
+            "observed_gri_mag": [
+              null,
+              null,
+              null
+            ],
+            "errors_gri_mag": [
+              null,
+              null,
+              null
+            ],
+            "decision": "unavailable_three_finite_magnitudes_required"
+          }
+        ]
+      },
+      "photometric_identity": {
+        "direct_objid": "1237649918432641103",
+        "direct_source": "Original same-observation FITS HDU2 BESTOBJID and PSFFLUX/PSFFLUX_IVAR; no new nearest-neighbour photometric lookup",
+        "direct_fits_hdu2_fields": {
+          "OBJID": "1237649918432641103",
+          "RA": 23.767144593783314,
+          "DEC": 13.044563826216462,
+          "CLEAN": 1,
+          "PSFFLUX": [
+            4.603428363800049,
+            18.88623809814453,
+            25.21780014038086,
+            26.776268005371094,
+            25.311450958251953
+          ],
+          "PSFFLUX_IVAR": [
+            10.450579643249512,
+            6.687098503112793,
+            5.187920093536377,
+            4.635208606719971,
+            0.6280269622802734
+          ],
+          "PSFMAG": [
+            20.841293334960938,
+            19.309612274169922,
+            18.99570655822754,
+            18.93057632446289,
+            18.990779876708984
+          ],
+          "PSFMAGERR": [
+            0.07282338291406631,
+            0.02223004214465618,
+            0.018901698291301727,
+            0.018832171335816383,
+            0.05403522774577141
+          ]
+        },
+        "mwdd_photometric_objid_in_frozen_input": null,
+        "mwdd_frozen_row_has_photometric_objid": false,
+        "same_photometric_object_identity": "unresolved_no_mwdd_photometric_objid_or_photometric_epoch_in_frozen_input",
+        "interpretation": "The same spectral observation is established, but the two photometric anchors cannot be proved to refer to the same imaging detection from these retained inputs. Do not attribute the difference to a wrong nearest match or to intrinsic variability.",
+        "gri_comparison": [
+          {
+            "band": "g",
+            "mwdd_frozen_mag": 19.30966,
+            "mwdd_frozen_error_mag": 0.01201318,
+            "direct_frozen_flux_derived_mag": 19.309636348699925,
+            "direct_frozen_error_mag": 0.022231051214769173,
+            "direct_minus_mwdd_mag": -2.3651300075755444e-05,
+            "direct_hdu2_psfmag": 19.309612274169922,
+            "direct_flux_mag_minus_hdu2_psfmag": 2.4074530003304062e-05
+          },
+          {
+            "band": "r",
+            "mwdd_frozen_mag": 18.9836,
+            "mwdd_frozen_error_mag": 0.01201091,
+            "direct_frozen_flux_derived_mag": 18.99573200382087,
+            "direct_frozen_error_mag": 0.018902553780194134,
+            "direct_minus_mwdd_mag": 0.012132003820870096,
+            "direct_hdu2_psfmag": 18.99570655822754,
+            "direct_flux_mag_minus_hdu2_psfmag": 2.5445593330175598e-05
+          },
+          {
+            "band": "i",
+            "mwdd_frozen_mag": 18.92635,
+            "mwdd_frozen_error_mag": 0.01501255,
+            "direct_frozen_flux_derived_mag": 18.93062488436852,
+            "direct_frozen_error_mag": 0.018833872740473944,
+            "direct_minus_mwdd_mag": 0.004274884368520304,
+            "direct_hdu2_psfmag": 18.93057632446289,
+            "direct_flux_mag_minus_hdu2_psfmag": 4.8559905629019795e-05
+          }
+        ]
+      },
+      "modes": {
+        "raw_both": {
+          "delta_uv": 4.754023661961771e-07,
+          "mwdd": {
+            "u1960": 0.2185207954004182,
+            "v1960": 0.3374837163379399,
+            "duv": 0.006348598620763444,
+            "distance_planck_uv": 0.006348598620763444,
+            "n_visible_pixels": 3580,
+            "largest_visible_gap_A": 18.999999999999773,
+            "normalizer_flam_5200_5500_A": 6.30415e-17,
+            "normalized_mean_4000_4500_A": 0.4108832423741267,
+            "normalized_mean_6500_7500_A": 1.1020280736714754
+          },
+          "direct": {
+            "u1960": 0.21852052193145172,
+            "v1960": 0.33748332746503756,
+            "duv": 0.006348449282742167,
+            "distance_planck_uv": 0.006348449282742167,
+            "n_visible_pixels": 3580,
+            "largest_visible_gap_A": 18.99511514619462,
+            "normalizer_flam_5200_5500_A": 6.304145812988282e-17,
+            "normalized_mean_4000_4500_A": 0.41077701680248935,
+            "normalized_mean_6500_7500_A": 1.1020287961462119
+          },
+          "applied_offset_and_tilt": {
+            "mwdd": [
+              0.0,
+              0.0
+            ],
+            "direct": [
+              0.0,
+              0.0
+            ]
+          },
+          "native_clean_matched_samples": 3580,
+          "normalized_fractional_residual_samples": 3423,
+          "relative_reference_floor": 0.09667133155511881,
+          "median_abs_normalized_fractional_residual": 7.223140752188328e-07,
+          "p95_abs_normalized_fractional_residual": 1.940024235724809e-06,
+          "max_abs_normalized_fractional_residual": 5.2413583520039e-06
+        },
+        "current_individual": {
+          "delta_uv": 4.754023661961771e-07,
+          "mwdd": {
+            "u1960": 0.2185207954004182,
+            "v1960": 0.3374837163379399,
+            "duv": 0.006348598620763444,
+            "distance_planck_uv": 0.006348598620763444,
+            "n_visible_pixels": 3580,
+            "largest_visible_gap_A": 18.999999999999773,
+            "normalizer_flam_5200_5500_A": 6.30415e-17,
+            "normalized_mean_4000_4500_A": 0.4108832423741267,
+            "normalized_mean_6500_7500_A": 1.1020280736714754,
+            "reproduced_current_delta_uv": 4.2249241903780305e-13
+          },
+          "direct": {
+            "u1960": 0.21852052193145172,
+            "v1960": 0.33748332746503756,
+            "duv": 0.006348449282742167,
+            "distance_planck_uv": 0.006348449282742167,
+            "n_visible_pixels": 3580,
+            "largest_visible_gap_A": 18.99511514619462,
+            "normalizer_flam_5200_5500_A": 6.304145812988282e-17,
+            "normalized_mean_4000_4500_A": 0.41077701680248935,
+            "normalized_mean_6500_7500_A": 1.1020287961462119,
+            "reproduced_current_delta_uv": 4.532825767256926e-13
+          },
+          "applied_offset_and_tilt": {
+            "mwdd": [
+              0.0,
+              0.0
+            ],
+            "direct": [
+              0.0,
+              0.0
+            ]
+          },
+          "native_clean_matched_samples": 3580,
+          "normalized_fractional_residual_samples": 3423,
+          "relative_reference_floor": 0.09667133155511881,
+          "median_abs_normalized_fractional_residual": 7.223140752188328e-07,
+          "p95_abs_normalized_fractional_residual": 1.940024235724809e-06,
+          "max_abs_normalized_fractional_residual": 5.2413583520039e-06
+        },
+        "common_existing_mwdd": {
+          "delta_uv": 4.754023661961771e-07,
+          "mwdd": {
+            "u1960": 0.2185207954004182,
+            "v1960": 0.3374837163379399,
+            "duv": 0.006348598620763444,
+            "distance_planck_uv": 0.006348598620763444,
+            "n_visible_pixels": 3580,
+            "largest_visible_gap_A": 18.999999999999773,
+            "normalizer_flam_5200_5500_A": 6.30415e-17,
+            "normalized_mean_4000_4500_A": 0.4108832423741267,
+            "normalized_mean_6500_7500_A": 1.1020280736714754
+          },
+          "direct": {
+            "u1960": 0.21852052193145172,
+            "v1960": 0.33748332746503756,
+            "duv": 0.006348449282742167,
+            "distance_planck_uv": 0.006348449282742167,
+            "n_visible_pixels": 3580,
+            "largest_visible_gap_A": 18.99511514619462,
+            "normalizer_flam_5200_5500_A": 6.304145812988282e-17,
+            "normalized_mean_4000_4500_A": 0.41077701680248935,
+            "normalized_mean_6500_7500_A": 1.1020287961462119
+          },
+          "applied_offset_and_tilt": {
+            "mwdd": [
+              0.0,
+              0.0
+            ],
+            "direct": [
+              0.0,
+              0.0
+            ]
+          },
+          "native_clean_matched_samples": 3580,
+          "normalized_fractional_residual_samples": 3423,
+          "relative_reference_floor": 0.09667133155511881,
+          "median_abs_normalized_fractional_residual": 7.223140752188328e-07,
+          "p95_abs_normalized_fractional_residual": 1.940024235724809e-06,
+          "max_abs_normalized_fractional_residual": 5.2413583520039e-06
+        }
+      },
+      "different_existing_corrections": false,
+      "paired_delta_uv_reduction_fraction": null,
+      "existing_mwdd_correction_ratio_4200_over_7000_A": 1.0,
+      "current_other_instrument_distances": [
+        {
+          "other_row_index": 980,
+          "other_kind": "Gaia_XP",
+          "delta_uv_from_common_existing_mwdd_state": 0.03405620925998719,
+          "interpretation": "Descriptive comparison to frozen current values from a different instrument; no correction was fitted to this instrument."
+        },
+        {
+          "other_row_index": 981,
+          "other_kind": "DESI",
+          "delta_uv_from_common_existing_mwdd_state": 0.03400563566545582,
+          "interpretation": "Descriptive comparison to frozen current values from a different instrument; no correction was fitted to this instrument."
+        }
+      ]
+    },
+    {
+      "source_id": "1025033665052512000",
+      "entity_id": "gaia:1025033665052512000",
+      "current_records": [
+        {
+          "row_index": 1953,
+          "entity_id": "gaia:1025033665052512000",
+          "kind": "SDSS",
+          "archive_origin": "MWDD",
+          "source_url": "https://www.montrealwhitedwarfdatabase.org/WDs/SDSS%20J093412.30%2B563232.8/spect.SDSS%20J093412.30%2B563232.8.sdss.txt",
+          "sha256": "889de1f36b3d6710fbde0d553008226b8e12c7f46c490f3a9da6b66a252d561c",
+          "status": "ok",
+          "usable_screen": true,
+          "flux_input_convention": "flambda",
+          "calibrated": true,
+          "cal_system": "panstarrs",
+          "cal_offset_mag": -1.22370995979,
+          "cal_tilt_mag_per_1000A": 0.226040235124,
+          "cal_max_residual_mag": 0.0594893890346,
+          "calibration_notes": "sdss: Rejected calibration: residual >=0.15 mag or |tilt| >=0.25 mag/1000 A",
+          "u1960": 0.196248540739,
+          "v1960": 0.313130481809,
+          "duv": 0.00502598781683
+        },
+        {
+          "row_index": 1954,
+          "entity_id": "gaia:1025033665052512000",
+          "kind": "Gaia_XP",
+          "archive_origin": "MWDD",
+          "source_url": "https://www.montrealwhitedwarfdatabase.org/WDs/SDSS%20J093412.30%2B563232.8/spect.SDSS%20J093412.30%2B563232.8.XP.txt",
+          "sha256": "61ad6d889fe6f4fd9e25d00026cadffef9850fc49d93ecba1f152a973ce49fba",
+          "status": "ok",
+          "usable_screen": true,
+          "flux_input_convention": "flambda",
+          "calibrated": true,
+          "cal_system": "sdss",
+          "cal_offset_mag": -5.012908476,
+          "cal_tilt_mag_per_1000A": 0.0297691649116,
+          "cal_max_residual_mag": 0.0268512866495,
+          "calibration_notes": null,
+          "u1960": 0.192715741376,
+          "v1960": 0.302732609641,
+          "duv": 0.00231525809128
+        },
+        {
+          "row_index": 9079,
+          "entity_id": "gaia:1025033665052512000",
+          "kind": "SDSS",
+          "archive_origin": "SDSS_DR17_direct",
+          "source_url": "https://data.sdss.org/sas/dr17/eboss/spectro/redux/v5_13_2/spectra/lite/7445/spec-7445-56720-0047.fits",
+          "sha256": "dea03b50426498fa7d9a01a0135f5087b97d6ec934b48a9c8fe7832aa243780f",
+          "status": "ok",
+          "usable_screen": true,
+          "flux_input_convention": "flambda",
+          "calibrated": false,
+          "cal_system": null,
+          "cal_offset_mag": null,
+          "cal_tilt_mag_per_1000A": null,
+          "cal_max_residual_mag": null,
+          "calibration_notes": "sdss: Rejected calibration: residual >=0.15 mag or |tilt| >=0.25 mag/1000 A",
+          "u1960": 0.20764599539,
+          "v1960": 0.323143773642,
+          "duv": 0.00270239176293
+        }
+      ],
+      "disposition": "same_observation_identity_reverified",
+      "mwdd_row_index": 1953,
+      "direct_row_index": 9079,
+      "repeated_native_identity": {
+        "mwdd_row_index": 1953,
+        "mwdd_sha256": "889de1f36b3d6710fbde0d553008226b8e12c7f46c490f3a9da6b66a252d561c",
+        "direct_row_index": 9079,
+        "direct_sha256": "dea03b50426498fa7d9a01a0135f5087b97d6ec934b48a9c8fe7832aa243780f",
+        "entity_id": "gaia:1025033665052512000",
+        "name": "SDSS J093412.30+563232.8",
+        "mwdd_source_url": "https://www.montrealwhitedwarfdatabase.org/WDs/SDSS%20J093412.30%2B563232.8/spect.SDSS%20J093412.30%2B563232.8.sdss.txt",
+        "direct_source_url": "https://data.sdss.org/sas/dr17/eboss/spectro/redux/v5_13_2/spectra/lite/7445/spec-7445-56720-0047.fits",
+        "mwdd_raw_header": "wdid:SDSS J093412.30+563232.8,resolution:nan,source:sdss,wavelength_min: 3568.62,wavelength_max: 10332.38",
+        "direct_fits_header": {
+          "BUNIT": "1E-17 erg/cm^2/s/Ang",
+          "PLATEID": 7445,
+          "MJD": 56720,
+          "FIBERID": 47,
+          "RUN2D": "v5_13_2"
+        },
+        "raw_sha256_verified": true,
+        "convention": "flambda",
+        "wave_grid_match_fraction": 1.0,
+        "finite_grid_fraction": 1.0,
+        "comparison_samples": 3569,
+        "all_finite_matched_samples": 3627,
+        "wave_span_A": 4697.700000000001,
+        "wave_max_matched_difference_A": 0.0056011389915511245,
+        "ratio_log_wavelength_slope": -6.097928783214603e-09,
+        "flambda_constant_scale": 0.9999999946838573,
+        "flambda_median_fractional_shape_residual": 1.1633132139809987e-06,
+        "flambda_p95_fractional_shape_residual": 2.7740007889409667e-06,
+        "flambda_max_fractional_shape_residual": 4.862656716397851e-06,
+        "flambda_max_absolute_residual_per_median_reference": 1.0339194620448074e-05,
+        "flambda_accepted": true,
+        "fnu_constant_scale": 98996665868.42912,
+        "fnu_median_fractional_shape_residual": 0.3893134140194803,
+        "fnu_p95_fractional_shape_residual": 1.1326502038823743,
+        "fnu_max_fractional_shape_residual": 1.3356064532591607,
+        "fnu_max_absolute_residual_per_median_reference": 7.339922541079832,
+        "fnu_accepted": false,
+        "reason": "Native sample identity under exactly one spectral-density convention"
+      },
+      "bundled_raw_paths": [
+        "research/outlier_followup/representation_calibration/raw_row_1953.csv.gz",
+        "research/outlier_followup/association_diagnostics/spec-7445-56720-0047.fits.gz"
+      ],
+      "photometric_decision_replay": {
+        "1953": [
+          {
+            "system": "sdss",
+            "observed_gri_mag": [
+              19.28857,
+              19.15701,
+              19.19113
+            ],
+            "errors_gri_mag": [
+              0.01110044,
+              0.01180151,
+              0.02008696
+            ],
+            "fit": {
+              "cal_system": "sdss",
+              "cal_offset_mag": -1.1928230239296953,
+              "cal_tilt_mag_per_1000A": 0.2777978424482238,
+              "cal_tilt_error": 0.010536614426248108,
+              "cal_g_residual": 0.04825982668424089,
+              "cal_r_residual": -0.10013206052488854,
+              "cal_i_residual": 0.05232428496872643,
+              "cal_max_residual_mag": 0.10013206052488854,
+              "raw_g_minus_r": 0.6665690719413497,
+              "raw_r_minus_i": 0.1743851739447706,
+              "photo_g_minus_r": 0.13156000000000034,
+              "photo_r_minus_i": -0.03412000000000148
+            },
+            "decision": "rejected",
+            "failed_gates": [
+              "absolute_tilt_ge_0.25_mag_per_1000A"
+            ]
+          },
+          {
+            "system": "panstarrs",
+            "observed_gri_mag": [
+              19.26549912,
+              19.09219933,
+              19.12350082
+            ],
+            "errors_gri_mag": [
+              0.006407,
+              0.007379,
+              0.013058
+            ],
+            "fit": {
+              "cal_system": "panstarrs",
+              "cal_offset_mag": -1.2237099597873893,
+              "cal_tilt_mag_per_1000A": 0.22604023512419838,
+              "cal_tilt_error": 0.010908556307981909,
+              "cal_g_residual": 0.03021608820200683,
+              "cal_r_residual": -0.05948938903456025,
+              "cal_i_residual": 0.02927330083254276,
+              "cal_max_residual_mag": 0.05948938903456025,
+              "raw_g_minus_r": 0.5517775689113016,
+              "raw_r_minus_i": 0.1771089403495516,
+              "photo_g_minus_r": 0.1732997900000015,
+              "photo_r_minus_i": -0.0313014900000006
+            },
+            "decision": "accepted",
+            "failed_gates": []
+          }
+        ],
+        "9079": [
+          {
+            "system": "sdss",
+            "observed_gri_mag": [
+              19.280537328364506,
+              19.1596857886742,
+              19.199452102424992
+            ],
+            "errors_gri_mag": [
+              0.029557958683418182,
+              0.02477856046417538,
+              0.03330844339773104
+            ],
+            "fit": {
+              "cal_system": "sdss",
+              "cal_offset_mag": -1.1736720884292586,
+              "cal_tilt_mag_per_1000A": 0.2902121803465688,
+              "cal_tilt_error": 0.01646975161018146,
+              "cal_g_residual": 0.05768858718197123,
+              "cal_r_residual": -0.08413018917269,
+              "cal_i_residual": 0.07876558751607732,
+              "cal_max_residual_mag": 0.08413018917269,
+              "raw_g_minus_r": 0.6665859116174957,
+              "raw_r_minus_i": 0.17438911741388452,
+              "photo_g_minus_r": 0.12085153969030671,
+              "photo_r_minus_i": -0.03976631375079265
+            },
+            "decision": "rejected",
+            "failed_gates": [
+              "absolute_tilt_ge_0.25_mag_per_1000A"
+            ]
+          },
+          {
+            "system": "panstarrs",
+            "observed_gri_mag": [
+              null,
+              null,
+              null
+            ],
+            "errors_gri_mag": [
+              null,
+              null,
+              null
+            ],
+            "decision": "unavailable_three_finite_magnitudes_required"
+          }
+        ]
+      },
+      "photometric_identity": {
+        "direct_objid": "1237653614796996804",
+        "direct_source": "Original same-observation FITS HDU2 BESTOBJID and PSFFLUX/PSFFLUX_IVAR; no new nearest-neighbour photometric lookup",
+        "direct_fits_hdu2_fields": {
+          "OBJID": "1237653614796996804",
+          "RA": 143.55128742127852,
+          "DEC": 56.54235450830503,
+          "CLEAN": 1,
+          "PSFFLUX": [
+            8.463889122009277,
+            19.399255752563477,
+            21.68331527709961,
+            20.903507232666016,
+            24.36749839782715
+          ],
+          "PSFFLUX_IVAR": [
+            6.013083457946777,
+            3.585334062576294,
+            4.0836181640625,
+            2.4316532611846924,
+            0.5987057685852051
+          ],
+          "PSFMAG": [
+            20.18077850341797,
+            19.280513763427734,
+            19.159652709960938,
+            19.199371337890625,
+            19.031972885131836
+          ],
+          "PSFMAGERR": [
+            0.05228392779827118,
+            0.02955668605864048,
+            0.024777041748166084,
+            0.033303502947092056,
+            0.05747871845960617
+          ]
+        },
+        "mwdd_photometric_objid_in_frozen_input": null,
+        "mwdd_frozen_row_has_photometric_objid": false,
+        "same_photometric_object_identity": "unresolved_no_mwdd_photometric_objid_or_photometric_epoch_in_frozen_input",
+        "interpretation": "The same spectral observation is established, but the two photometric anchors cannot be proved to refer to the same imaging detection from these retained inputs. Do not attribute the difference to a wrong nearest match or to intrinsic variability.",
+        "gri_comparison": [
+          {
+            "band": "g",
+            "mwdd_frozen_mag": 19.28857,
+            "mwdd_frozen_error_mag": 0.01110044,
+            "direct_frozen_flux_derived_mag": 19.280537328364506,
+            "direct_frozen_error_mag": 0.029557958683418182,
+            "direct_minus_mwdd_mag": -0.008032671635493926,
+            "direct_hdu2_psfmag": 19.280513763427734,
+            "direct_flux_mag_minus_hdu2_psfmag": 2.356493677169169e-05
+          },
+          {
+            "band": "r",
+            "mwdd_frozen_mag": 19.15701,
+            "mwdd_frozen_error_mag": 0.01180151,
+            "direct_frozen_flux_derived_mag": 19.1596857886742,
+            "direct_frozen_error_mag": 0.02477856046417538,
+            "direct_minus_mwdd_mag": 0.0026757886741997083,
+            "direct_hdu2_psfmag": 19.159652709960938,
+            "direct_flux_mag_minus_hdu2_psfmag": 3.3078713261858184e-05
+          },
+          {
+            "band": "i",
+            "mwdd_frozen_mag": 19.19113,
+            "mwdd_frozen_error_mag": 0.02008696,
+            "direct_frozen_flux_derived_mag": 19.199452102424992,
+            "direct_frozen_error_mag": 0.03330844339773104,
+            "direct_minus_mwdd_mag": 0.008322102424990874,
+            "direct_hdu2_psfmag": 19.199371337890625,
+            "direct_flux_mag_minus_hdu2_psfmag": 8.076453436700604e-05
+          }
+        ]
+      },
+      "modes": {
+        "raw_both": {
+          "delta_uv": 1.3147723615381926e-06,
+          "mwdd": {
+            "u1960": 0.20764562958949076,
+            "v1960": 0.32314251078156164,
+            "duv": 0.002701766436396307,
+            "distance_planck_uv": 0.002701766436396307,
+            "n_visible_pixels": 3580,
+            "largest_visible_gap_A": 18.999999999999773,
+            "normalizer_flam_5200_5500_A": 2.35967e-17,
+            "normalized_mean_4000_4500_A": 0.7197213944138108,
+            "normalized_mean_6500_7500_A": 0.8427260261898685
+          },
+          "direct": {
+            "u1960": 0.2076459953900697,
+            "v1960": 0.3231437736419257,
+            "duv": 0.0027023917629267723,
+            "distance_planck_uv": 0.0027023917629267723,
+            "n_visible_pixels": 3580,
+            "largest_visible_gap_A": 18.99511514619462,
+            "normalizer_flam_5200_5500_A": 2.3596663475036622e-17,
+            "normalized_mean_4000_4500_A": 0.719838599953986,
+            "normalized_mean_6500_7500_A": 0.8427273309199772
+          },
+          "applied_offset_and_tilt": {
+            "mwdd": [
+              0.0,
+              0.0
+            ],
+            "direct": [
+              0.0,
+              0.0
+            ]
+          },
+          "native_clean_matched_samples": 3580,
+          "normalized_fractional_residual_samples": 3523,
+          "relative_reference_floor": 0.08506992108239558,
+          "median_abs_normalized_fractional_residual": 1.5970589276603775e-06,
+          "p95_abs_normalized_fractional_residual": 3.93185669980145e-06,
+          "max_abs_normalized_fractional_residual": 6.415849679419772e-06
+        },
+        "current_individual": {
+          "delta_uv": 0.015171288206761497,
+          "mwdd": {
+            "u1960": 0.1962485407394801,
+            "v1960": 0.31313048180854874,
+            "duv": 0.005025987816832942,
+            "distance_planck_uv": 0.005025987816832942,
+            "n_visible_pixels": 3580,
+            "largest_visible_gap_A": 18.999999999999773,
+            "normalizer_flam_5200_5500_A": 8.689486771205772e-17,
+            "normalized_mean_4000_4500_A": 0.9020940522136115,
+            "normalized_mean_6500_7500_A": 0.6009629564910675,
+            "reproduced_current_delta_uv": 6.588712832854713e-13
+          },
+          "direct": {
+            "u1960": 0.2076459953900697,
+            "v1960": 0.3231437736419257,
+            "duv": 0.0027023917629267723,
+            "distance_planck_uv": 0.0027023917629267723,
+            "n_visible_pixels": 3580,
+            "largest_visible_gap_A": 18.99511514619462,
+            "normalizer_flam_5200_5500_A": 2.3596663475036622e-17,
+            "normalized_mean_4000_4500_A": 0.719838599953986,
+            "normalized_mean_6500_7500_A": 0.8427273309199772,
+            "reproduced_current_delta_uv": 1.0185236265560682e-13
+          },
+          "applied_offset_and_tilt": {
+            "mwdd": [
+              -1.22370995979,
+              0.226040235124
+            ],
+            "direct": [
+              0.0,
+              0.0
+            ]
+          },
+          "native_clean_matched_samples": 3580,
+          "normalized_fractional_residual_samples": 3523,
+          "relative_reference_floor": 0.08506992108239558,
+          "median_abs_normalized_fractional_residual": 0.23014547787528816,
+          "p95_abs_normalized_fractional_residual": 0.42948077314900474,
+          "max_abs_normalized_fractional_residual": 0.45849493351811965
+        },
+        "common_existing_mwdd": {
+          "delta_uv": 1.446189037386078e-06,
+          "mwdd": {
+            "u1960": 0.1962485407394801,
+            "v1960": 0.31313048180854874,
+            "duv": 0.005025987816832942,
+            "distance_planck_uv": 0.005025987816832942,
+            "n_visible_pixels": 3580,
+            "largest_visible_gap_A": 18.999999999999773,
+            "normalizer_flam_5200_5500_A": 8.689486771205772e-17,
+            "normalized_mean_4000_4500_A": 0.9020940522136115,
+            "normalized_mean_6500_7500_A": 0.6009629564910675
+          },
+          "direct": {
+            "u1960": 0.19624897417902065,
+            "v1960": 0.31313186151608896,
+            "duv": 0.005026441743990068,
+            "distance_planck_uv": 0.005026441743990068,
+            "n_visible_pixels": 3580,
+            "largest_visible_gap_A": 18.99511514619462,
+            "normalizer_flam_5200_5500_A": 8.689495008356174e-17,
+            "normalized_mean_4000_4500_A": 0.9022355625648898,
+            "normalized_mean_6500_7500_A": 0.6009624142643718
+          },
+          "applied_offset_and_tilt": {
+            "mwdd": [
+              -1.22370995979,
+              0.226040235124
+            ],
+            "direct": [
+              -1.22370995979,
+              0.226040235124
+            ]
+          },
+          "native_clean_matched_samples": 3580,
+          "normalized_fractional_residual_samples": 3544,
+          "relative_reference_floor": 0.07867281244876263,
+          "median_abs_normalized_fractional_residual": 1.3493340471071313e-06,
+          "p95_abs_normalized_fractional_residual": 3.5332601079018922e-06,
+          "max_abs_normalized_fractional_residual": 5.601142250455382e-06
+        }
+      },
+      "different_existing_corrections": true,
+      "paired_delta_uv_reduction_fraction": 0.9999046759235157,
+      "existing_mwdd_correction_ratio_4200_over_7000_A": 1.7912865432175415,
+      "current_other_instrument_distances": [
+        {
+          "other_row_index": 1954,
+          "other_kind": "Gaia_XP",
+          "delta_uv_from_common_existing_mwdd_state": 0.010981639993884781,
+          "interpretation": "Descriptive comparison to frozen current values from a different instrument; no correction was fitted to this instrument."
+        }
+      ]
+    }
+  ]
+}

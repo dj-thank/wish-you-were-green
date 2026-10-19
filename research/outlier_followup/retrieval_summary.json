@@ -1,0 +1,11 @@
+{
+  "created_utc": "2026-10-19T10:19:59.496434+00:00",
+  "requested_unique_inputs": 3041,
+  "verified": 3041,
+  "failed": 0,
+  "verified_raw_bytes": 632365109,
+  "concurrency": 4,
+  "unverified_flux_units_downloaded": 0,
+  "raw_data_location": "Existing ignored survey cache; source URLs and exact SHA256 retained in retrieval_plan.json.",
+  "one_bounded_delayed_retry": true
+}

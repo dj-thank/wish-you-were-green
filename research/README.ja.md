@@ -1,6 +1,8 @@
 # 異常色の白色矮星を、検証できる研究へ
 
-**2026年10月18日 UTC 更新。プロジェクト：Shota Moriwaki。ChatGPTの支援による追加解析・執筆を含む、未査読の研究記録です。** [English](README.md) ／ [プロジェクト入口](../README.md)
+**2026年10月19日 UTC 更新。プロジェクト：Shota Moriwaki。ChatGPTの支援による追加解析・執筆を含む、未査読の研究記録です。** [English](README.md) ／ [プロジェクト入口](../README.md)
+
+**最新の実行結果は[10月19日の追加研究報告](FOLLOWUP_2026-10-19.ja.md)へ。** 残る2007対象の個別閲覧を完了し、曲線あり1684対象と利用不可323対象を記録しました。実測測光450設定・公開対照モデル720 fits・公刊DZ/DQ図25対象の残差診断も実行しています。J0429では同じ観測grizに合う緑優位／赤優位の両解を5%以内の変形で構成しました。以下は10月18日の訂正・実験の文脈を保持した報告です。翌日に実行できたことと残る課題は追加報告にまとめました。
 
 **重要な訂正：J1323−0129の「独立したSDSS分光でも色を確認した」という裏付けを撤回します。** 該当するMWDDのSDSSファイルはフラックス表現が未解決で、今回取得したnative Gaia XPもありません。DESIからの色推定は残りますが、現在は単独装置の候補です。また、旧一覧の9,023適格レコード・337強外れentityを現行の候補数として使わないでください。単位確認を反映した現行値は**7,473適格レコード、395強外れレコード、308 entity key**です。[訂正結果](precision/flux_units/corrected_screen_summary.json)
 
@@ -17,12 +19,13 @@
 | 要確認入力のSHA256で区別した原データ再取得 | 4,355件、全件ハッシュ一致 | [取得結果](outlier_audit/retrieval_summary.json) |
 | 旧処理を使った再計算 | 4,353件再現、既存の非正XYZエラー2件を保持 | [再計算結果](outlier_audit/recompute_summary.json) |
 | 旧強外れ対象の実際の目視 | 337 entity、22画像、全パネル個別記録 | [前半176件](outlier_audit/visual_review_01_11.md)・[後半161件](outlier_audit/visual_review_12_22.md) |
+| 10月19日に残りの個別閲覧を完了 | 2007 entity、126画像、曲線あり1684／不可323 | [最終全件台帳](outlier_followup/individual_review.csv) |
 | 単位判定を反映して再計算したSDSS | 3,629レコード | [現行集計](precision/flux_units/corrected_screen_summary.json) |
 | 現行の適格／強外れ | 7,473行／395行・308 entity key | 同上 |
 
 旧処理の再現に成功した4,353件の最大uv差は約7.01×10⁻¹³でした。この一致は、同じ入力から同じ結果を作れることを示します。**入力を正しい物理単位で解釈しているかは別の検証**であり、後述の修正が必要でした。エラー2件を成功扱いへ変えたり、負の画素を一律ゼロにして結果を整えたりしていません。
 
-全9,902行には数値・来歴・品質の確認記録があります。一方、全原画像を目視したわけではありません。今回実際に開いた22枚は、旧強外れ337対象の分光接触シートです。40 Åの表示用平均化、5200–5500 Åでの個別正規化、固定縦軸を使い、誤差棒は表示していません。細い特徴や軸外の値の確認には原画素へ戻る必要があります。目視記録は、個別の疑問を次の照合へ結び付ける入口です。[天体別閲覧表](outlier_audit/object_audit.html)
+全9,902行には数値・来歴・品質の確認記録があります。一方、全原画像を目視したわけではありません。10月18日までに実際に開いた22枚は、旧強外れ337対象の分光接触シートです。40 Åの表示用平均化、5200–5500 Åでの個別正規化、固定縦軸を使い、誤差棒は表示していません。10月19日には残り2007対象を現行単位の126枚で確認し、20 Å平均・元画素の最小最大・供給誤差を表示しました。別途拡大図、原格子ピーク、既知変光、原ファイバー位置を追確認しています。[追加監査の範囲](outlier_followup/README.md)・[元の天体別閲覧表](outlier_audit/object_audit.html)
 
 ## 2. 実際に修正した問題：FνとFλの混在
 
@@ -136,6 +139,7 @@ J0716、J0111などの低質量DQについて、Gaia距離で拘束した絶対S
 .venv-research/bin/python scripts/verify_reproduction.py --with-controls
 .venv-research/bin/python -m unittest discover -s tests -p 'test_*.py' -v
 .venv-research/bin/python scripts/verify_research_extension.py
+.venv-research/bin/python scripts/verify_research_followup.py
 .venv-research/bin/python research/precision/precision_audit.py
 .venv-research/bin/python research/precision/flux_units/build_corrected_screen.py
 .venv-research/bin/python research/candidate_followup.py

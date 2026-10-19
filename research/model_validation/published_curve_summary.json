@@ -1,0 +1,74 @@
+{
+  "created_utc": "2026-10-19T10:42:01.243860+00:00",
+  "script_sha256": "16b87ecf5d23884331bd6890fae0641c99d71412142191be5ec682e5b4cabf3b",
+  "input_sha256": {
+    "research/model_validation/sources/published_curve_manifest.json": "43db8a540170ee75aa95eaebf8a89037abb489976594e46110a8fff9c4e27bb1",
+    "research/literature/sources/candidate27_prior_rows.json": "abfc9a856deb2c1f2f60248b48cd3a082f6b604dc35501d67c85e7a6aa987ccd",
+    "research/model_validation/sources/published_curves/1078624858218235776.npz": "657273f04f1a10967bfc44ed2ed27cce75bd9a4b7237bf705f528ffaf4d36a98",
+    "research/model_validation/sources/published_curves/1099452803904038272.npz": "77de49ae1d76c2124494f4ed7929b2e5ec50ddb0cc38d49ca900d65dce87629e",
+    "research/model_validation/sources/published_curves/1182083542272959232.npz": "37c7a7b23a4ffd86cf2a27768613b4c00ac1f9d6eb0f348bba06a7de22ccca28",
+    "research/model_validation/sources/published_curves/1323443938325221376.npz": "47380b4bcd5774d1e10ca66cb9d741970980589a2cae1fc37816659369488eb3",
+    "research/model_validation/sources/published_curves/1496016553207149952.npz": "03a56664c505cff5a9d75b7ccc789369e776e3f8614f6e15914f31c136902130",
+    "research/model_validation/sources/published_curves/1679189040001914880.npz": "f8738b380f128881a2c01f37f6556be174761c36fcb940faf4642d053d425bd7",
+    "research/model_validation/sources/published_curves/1691957732959636608.npz": "3e586ee5e533d0b984719116cd44f43111d3b966e2823e69b8d56a7e1499da23",
+    "research/model_validation/sources/published_curves/2119909923600264960.npz": "2c50ef2bcbfbced0b84c445c725560398f03536ed4266e71069d2bab7587a173",
+    "research/model_validation/sources/published_curves/2453225705329412480.npz": "e160f49915d4b68e33dd50dd33da6a4d795ab7b82592ee1d9ef49d1328079f2c",
+    "research/model_validation/sources/published_curves/2482684508055379584.npz": "857004fc6e85b5dbaefeee519d76f9567d0b7ef0bcf874a35263ccb2f4069890",
+    "research/model_validation/sources/published_curves/2513256394506328832.npz": "cb92c5f6d5c1b53d800122775002eee8b3f4a792ec4ab5abd558d1c521c2d728",
+    "research/model_validation/sources/published_curves/2739231150982741760.npz": "cc68877794b88783842c71ab16ec22fe4665fc475f301e1551075b3c89fa4d45",
+    "research/model_validation/sources/published_curves/3204436719718449280.npz": "4fb555576cf4f10cfe562c11f1a7f1006687fa9773507a426d332d3d19a2cbbc",
+    "research/model_validation/sources/published_curves/3638333660492606976.npz": "53094191b7be4807ae5d608e4487b07bc97c4d68411c248551665ac084cb73c0",
+    "research/model_validation/sources/published_curves/3705179706854089856.npz": "dcfbff6769d78d0fd6dacdc114ec648c8ce11bd0a42f3bc2cb645d65c892551f",
+    "research/model_validation/sources/published_curves/3711047662972690688.npz": "1d45bd121e9e63f6982c004c1f9aa05260180a94d66864bea77929a9ed34ef5c",
+    "research/model_validation/sources/published_curves/3713218786120541824.npz": "22a7f377c1ee3c6e35560e422659a8650419eccec1933e7565b1867b1a293fe7",
+    "research/model_validation/sources/published_curves/3782527364866017664.npz": "39217b9b99ce836cda45b26aeb209b064976a2d79fdc1d6b7b3492b74216efa4",
+    "research/model_validation/sources/published_curves/4445170067643613312.npz": "6e21ed5f39f6fbfaa5d99d62e196d51bd7cfa61d83efcc505624ae131450c34c",
+    "research/model_validation/sources/published_curves/4545191991882663936.npz": "8980fdeda8dc7f80f311bd9468e6bd00f7743494ea9014b8a317a6a994f775b3",
+    "research/model_validation/sources/published_curves/4545912820537587328.npz": "7fc8e6d6273c36385e9c4c3112de2deba80b46fe0aa5d64b6a11d1f73e2f9281",
+    "research/model_validation/sources/published_curves/4555293235271174016.npz": "6cd8f554217a9ba03ac8714cb446687e87733a7041db592114cd4b56655a62e8",
+    "research/model_validation/sources/published_curves/761677269868775040.npz": "a92adf5be4b4b3ec4c7303a5e7d12e1b4e72a93601b1f98deab22de2fdffa8af",
+    "research/model_validation/sources/published_curves/818833831355548928.npz": "71a198f8eda8cdca7781236f8721dee7c092a7b4e05ab745db1c06fb95391904",
+    "research/model_validation/sources/published_curves/913810126798863232.npz": "aeb993e6e36a43ce5819d2315c36e732a3ea1b803e038af6b711f50c4838cb86"
+  },
+  "candidate_input_count": 27,
+  "figure_available_count": 25,
+  "retained_unavailable_count": 2,
+  "bin_width_angstrom": 50.0,
+  "all_bins": 1750,
+  "windows_angstrom": {
+    "blue_Ca_region": [
+      3850.0,
+      4350.0
+    ],
+    "C2_4700_region": [
+      4600.0,
+      4800.0
+    ],
+    "Mg_C2_5200_region": [
+      5000.0,
+      5350.0
+    ],
+    "C2_5600_region": [
+      5500.0,
+      5650.0
+    ],
+    "Na_C2_5900_region": [
+      5700.0,
+      6100.0
+    ],
+    "red_reference": [
+      6200.0,
+      6500.0
+    ]
+  },
+  "method": "Preserve authors plotted relative Fnu and common normalization. Median-resample duplicate vector x positions; interpolate drawn paths at 1 Angstrom; take medians in complete 50 Angstrom bins. Divide observed-minus-model differences by the median published model in 6200-6500 Angstrom, without refitting any scale or composition.",
+  "graphic_sensitivity": "The min/max columns cover 9 finite reconstruction stresses (relative wavelength shift and opposite vertical quantization shifts). They are not measurement uncertainty bounds, confidence intervals or a replacement for native flux/ivar/mask/resolution data.",
+  "scope": "Published in-sample fitted curves and smoothed observations only. These are not native atmospheric spectra, independent observations or held-out spectral tests. No p-values, fitted abundances, equivalent widths or complete visible-colour integration are inferred. Wavelength-window names are locations of potentially blended features, not element-specific abundance measurements.",
+  "citation": "https://arxiv.org/html/2606.25377v2",
+  "archive_doi": "10.5281/zenodo.20775938",
+  "license": {
+    "id": "cc-by-4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "verification": "PASS: all 27 IDs retained; 25 exact page IDs; input and vector hashes; axis roundoff; monotone segments; complete reference bins; all 9 reconstruction stresses evaluated."
+}

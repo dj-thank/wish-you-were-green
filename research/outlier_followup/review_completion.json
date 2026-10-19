@@ -1,0 +1,74 @@
+{
+  "created_utc": "2026-10-19T11:00:47.324793+00:00",
+  "complete": true,
+  "scope": "All 2007 entity keys in the historical 2344-object review queue outside the previously viewed 337",
+  "entity_count": 2007,
+  "record_count": 4370,
+  "reviewed_main_pages": 126,
+  "current_spectrum_panels_actually_viewed": 1684,
+  "explicit_unavailable_panels_actually_viewed": 323,
+  "plotted_records": 3041,
+  "plot_status_counts": {
+    "plotted_verified_flambda": 3041,
+    "withheld_unverified_flux_units": 1305,
+    "withheld_current_eligibility_gate": 23,
+    "withheld_processing_error": 1
+  },
+  "eligible_records_by_instrument": {
+    "Gaia_XP": 1240,
+    "SDSS": 1099,
+    "DESI": 702
+  },
+  "largest_recomputed_uv_difference": 7.00615432110667e-13,
+  "unique_original_raw_verified_at_retrieval": 3041,
+  "raw_hashes_rechecked_this_completion": 3041,
+  "raw_bytes_rechecked_this_completion": 632365109,
+  "prior_337_historical_pages_preserved": 22,
+  "baseline_commit": "211ad4593fdd5d7fb09a8fed16cde6d3d6b9d6e6",
+  "manual_review_partitions": [
+    {
+      "path": "visual_review_01_63.csv",
+      "first_page": 1,
+      "last_page": 63,
+      "entities": 1008,
+      "with_current_spectrum": 871,
+      "explicit_unavailable": 137,
+      "sha256": "e2e0d527652654887afe1c142cde139ab642ab87ff3de5b6742b6c5692bb1caf"
+    },
+    {
+      "path": "visual_review_64_126.csv",
+      "first_page": 64,
+      "last_page": 109,
+      "entities": 736,
+      "with_current_spectrum": 650,
+      "explicit_unavailable": 86,
+      "sha256": "f03e14d92ee6aa563fb52805686c0f8c0b78818a09c4b6dce7d17f1be65f0d20"
+    },
+    {
+      "path": "visual_review_110_126.csv",
+      "first_page": 110,
+      "last_page": 126,
+      "entities": 263,
+      "with_current_spectrum": 163,
+      "explicit_unavailable": 100,
+      "sha256": "305642034f891da0990a7a92ef1748d052abd794c38a3d01ddfdfb2f056aa750"
+    }
+  ],
+  "input_sha256": {
+    "research/outlier_audit/review_queue.csv": "2a8adbb7f1bfc5e9778dafcd3211cdf26f49940da1123aeedf8f15ab94ffd075",
+    "research/outlier_audit/contact_sheet_index.csv": "476b5847bb9f8cec83b88a7e2282bea35a198574b9929a314ba84a26b072e445",
+    "research/precision/flux_units/corrected_record_screen.csv.gz": "2c894ee7af8d1c3a5f62ba19c6921265b4bef5de9f84291394d441642b984746",
+    "research/outlier_followup/contact_sheet_index.csv": "fff13b5a2afcfd213dfbae5dbbe43df5c436d2628e59490c6ce10007227aa0f8",
+    "research/outlier_followup/record_review.csv.gz": "7ad47b6b9abb4b86f8335c1e654a50a33705125ae9ba390aa9d2d3008c41e8ee",
+    "research/outlier_followup/generation_manifest.json": "00c13326116927a1d6744d9d1beb83b67a3f93fb2a8d83bafa17dcb49c05c5ff",
+    "research/outlier_followup/retrieval_plan.json": "fd0af265458173737b79d73fdf368c3350e0e0f1d13b38cec30a681ac40abacd",
+    "research/outlier_followup/retrieval.jsonl": "8dde5ab2dcc334e93fc6c3232547ccfe5a956a8e9d12690753bc27b83cfb1b0f",
+    "research/outlier_followup/prior_visual_snapshot.json": "9d8acaf2db4239a2d1cc602ca70c5e720829f98fcffe2e232a5eaeefa5c85593"
+  },
+  "output_sha256": {
+    "individual_review.csv": "ee2860ad3ceb891c9b289146aeada6283ebb519b7df8f84306860ef1d455ee93",
+    "record_dispositions.csv": "74f016897709e33a651752ba87adf0af6af99abcf56fa54f648b84a7eba8860c"
+  },
+  "code_sha256": "76a9fbe2b7caa2b16130b88c723cbe7ba642b457357410db7b0b857eb1b140b8",
+  "limits": "Individual visual triage of prepared, unit-validated spectra is complete. Physical causes, observation independence, missing spectral support and unverified units are not thereby resolved. No production colours or spectra were changed. Additional zoom reviews overlap this census and add no new entities."
+}
