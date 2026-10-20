@@ -1,0 +1,26 @@
+source_id,matched_published_classification,counterpart_status,tile_id,number,rounded_catalogue_position_sep_from_gaia2016_arcsec,p_H,p_Ca,equivalent_width_J0395_angstrom,equivalent_width_error_angstrom,chi2,type_outlier,published_group,teff_H_K,teff_He_K,teff_calcium_analysis_K,fitted_dereddened_r_mag,interpretation
+1078624858218235776,False,no_exact_published_DR3_Gaia_crossmatch,,,,,,,,,,,,,,,Missing table membership is not a normal-spectrum classification.
+1099452803904038272,False,no_exact_published_DR3_Gaia_crossmatch,,,,,,,,,,,,,,,Missing table membership is not a normal-spectrum classification.
+1182083542272959232,False,no_exact_published_DR3_Gaia_crossmatch,,,,,,,,,,,,,,,Missing table membership is not a normal-spectrum classification.
+1323443938325221376,False,no_exact_published_DR3_Gaia_crossmatch,,,,,,,,,,,,,,,Missing table membership is not a normal-spectrum classification.
+1496016553207149952,False,no_exact_published_DR3_Gaia_crossmatch,,,,,,,,,,,,,,,Missing table membership is not a normal-spectrum classification.
+1679189040001914880,False,no_exact_published_DR3_Gaia_crossmatch,,,,,,,,,,,,,,,Missing table membership is not a normal-spectrum classification.
+1691957732959636608,True,exact_Gaia_to_DR3_tuple_to_CDS_row,97688,11439,0.17751436469230364,0.844,0.186,39.64,76.75,54.77,1,published_random_measurement_fluctuation_group,4003.0,4289.0,4123.0,19.34,"Published DR3 posterior/model-residual classification; not new photometry, not a new discovery."
+2119909923600264960,True,exact_Gaia_to_DR3_tuple_to_CDS_row,93348,28367,0.1376278187402516,0.48,0.168,26.43,41.48,22.15,0,not_an_outlier_in_this_published_model_test,5224.0,5170.0,5204.0,19.73,"Published DR3 posterior/model-residual classification; not new photometry, not a new discovery."
+2453225705329412480,False,no_exact_published_DR3_Gaia_crossmatch,,,,,,,,,,,,,,,Missing table membership is not a normal-spectrum classification.
+2482684508055379584,False,no_exact_published_DR3_Gaia_crossmatch,,,,,,,,,,,,,,,Missing table membership is not a normal-spectrum classification.
+2513256394506328832,False,no_exact_published_DR3_Gaia_crossmatch,,,,,,,,,,,,,,,Missing table membership is not a normal-spectrum classification.
+2739231150982741760,True,exact_Gaia_to_DR3_tuple_to_CDS_row,98793,6309,0.1667783165949391,0.0,1.0,75.02,6.43,554.12,2,published_metal_polluted_group,,5797.0,6061.0,18.41,"Published DR3 posterior/model-residual classification; not new photometry, not a new discovery."
+3204436719718449280,False,no_exact_published_DR3_Gaia_crossmatch,,,,,,,,,,,,,,,Missing table membership is not a normal-spectrum classification.
+3638333660492606976,False,no_exact_published_DR3_Gaia_crossmatch,,,,,,,,,,,,,,,Missing table membership is not a normal-spectrum classification.
+3705179706854089856,False,no_exact_published_DR3_Gaia_crossmatch,,,,,,,,,,,,,,,Missing table membership is not a normal-spectrum classification.
+3711047662972690688,False,no_exact_published_DR3_Gaia_crossmatch,,,,,,,,,,,,,,,Missing table membership is not a normal-spectrum classification.
+3713218786120541824,False,no_exact_published_DR3_Gaia_crossmatch,,,,,,,,,,,,,,,Missing table membership is not a normal-spectrum classification.
+3782527364866017664,False,no_exact_published_DR3_Gaia_crossmatch,,,,,,,,,,,,,,,Missing table membership is not a normal-spectrum classification.
+4445170067643613312,False,no_exact_published_DR3_Gaia_crossmatch,,,,,,,,,,,,,,,Missing table membership is not a normal-spectrum classification.
+4545191991882663936,False,no_exact_published_DR3_Gaia_crossmatch,,,,,,,,,,,,,,,Missing table membership is not a normal-spectrum classification.
+4545912820537587328,False,no_exact_published_DR3_Gaia_crossmatch,,,,,,,,,,,,,,,Missing table membership is not a normal-spectrum classification.
+4555293235271174016,False,no_exact_published_DR3_Gaia_crossmatch,,,,,,,,,,,,,,,Missing table membership is not a normal-spectrum classification.
+761677269868775040,False,no_exact_published_DR3_Gaia_crossmatch,,,,,,,,,,,,,,,Missing table membership is not a normal-spectrum classification.
+818833831355548928,False,no_exact_published_DR3_Gaia_crossmatch,,,,,,,,,,,,,,,Missing table membership is not a normal-spectrum classification.
+913810126798863232,False,no_exact_published_DR3_Gaia_crossmatch,,,,,,,,,,,,,,,Missing table membership is not a normal-spectrum classification.

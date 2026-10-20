@@ -1,0 +1,1 @@
+SELECT TOP 1 * FROM ext.splus_dr3

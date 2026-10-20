@@ -1,0 +1,2 @@
+source_id,ra,dec,ref_epoch,parallax,parallax_error,pmra,pmdec,phot_g_mean_mag,bp_rp,ruwe,phot_variable_flag,has_xp_continuous,duplicated_source,non_single_star,ipd_frac_multi_peak,classifier_name,best_class_name,best_class_score
+3646912496889350784,212.52390778090455,-2.5836951332888485,2016.0,7.463676166306835,0.2319681,-1.1101190161152914,-65.24847876608602,18.69085,0.26010704,0.9077943,NOT_AVAILABLE,false,false,0,0,,,

@@ -1,0 +1,7 @@
+#SELECT column_name,description,unit,datatype FROM TAP_SCHEMA.columns WHERE table_name='jplus.CalibTileImage'
+"column_name","description","unit","datatype"
+"tile_id","Identifier of the Tile image",,"int"
+"calib_procedure","Identifier of the procedure used to calculate ZP. See enumeration 'calibration_method'.",,"short"
+"zp","Zero point of the image","mag","float"
+"zp_err","Zero point error","mag","float"
+"is_reference_method","1 indicates that this is the default method to calibrate data of this tile.",,"short"

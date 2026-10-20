@@ -1,0 +1,15 @@
+{
+  "url": "https://archive.cefca.es/catalogues/vo/tap/jplus-dr4/sync",
+  "query_parameters": {
+    "REQUEST": "doQuery",
+    "LANG": "ADQL",
+    "FORMAT": "csv",
+    "QUERY": "SELECT column_name,description,unit,datatype FROM TAP_SCHEMA.columns WHERE table_name='jplus.MagABDualObj'"
+  },
+  "final_url": "https://archive.cefca.es/catalogues/vo/tap/jplus-dr4/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=SELECT+column_name%2Cdescription%2Cunit%2Cdatatype+FROM+TAP_SCHEMA.columns+WHERE+table_name%3D%27jplus.MagABDualObj%27",
+  "retrieved_utc": "2026-10-19T23:23:34.195704+00:00",
+  "http_status": 200,
+  "content_type": "text/csv; charset=UTF-8",
+  "size_bytes": 4148,
+  "sha256": "11d45091ee2a3a25e068f6a00247f4088b3fd8ea6b69bf02541082cdd09b2ab7"
+}

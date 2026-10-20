@@ -1,0 +1,346 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>SDSSDR7WD - Sloan Digital Sky Survey DR7 White Dwarf Catalog</title>
+</head>
+<body bgcolor="#cceeff">
+<div><div><div><div><div><div>
+
+<table border=0 cellpadding=10 width=100% align=center>
+  <tr>
+    <td align=left><a target="_blank" href="/xamin/?table=sdssdr7wd">Search&nbsp;in<br>Xamin</a>&nbsp;or <a target="_blank" href="/db-perl/W3Browse/w3table.pl?tablehead=name%3Dsdssdr7wd&amp;Action=More+Options">Browse</a>...</td>
+    <td align=center><h1>SDSSDR7WD - Sloan Digital Sky Survey DR7 White Dwarf Catalog</h1></td>
+    <td align=right><a href="/docs/archive.html">HEASARC<br>Archive</a></td>
+  </tr>
+</table>
+<hr>
+<h2><a name="overview">Overview</a></h2>
+This table contains a new catalog of spectroscopically confirmed
+white dwarf stars from the Sloan Digital Sky Survey (SDSS) Data Release 7 (DR7)
+spectroscopic catalog. The authors find 20,407 white dwarf spectra,
+representing 19,712 stars, and provide atmospheric model fits to 14,120 DA and
+1011 DB white dwarf spectra from 12,843 and 923 stars, respectively. These
+numbers represent more than a factor of two increase in the total number of
+white dwarf stars from the previous SDSS white dwarf catalogs based on DR4
+data. The distribution of subtypes varies from previous catalogs due to the
+authors&#39; more conservative, manual classifications of each star in our catalog,
+supplementing their automatic fits. In particular, they find a large number of
+magnetic white dwarf stars whose small Zeeman splittings mimic increased Stark
+broadening that would otherwise result in an overestimated log g if fit as a
+non-magnetic white dwarf. The authors calculate mean DA and DB masses for their
+clean, non-magnetic sample and find the DB mean mass is statistically larger
+than that for the DAs.
+<p>
+
+This table lists the 20,407 white dwarf spectra corresponding to 19,712
+distinct stars.
+
+<hr><h3><a name="catalog_bibcode">Catalog Bibcode</a></h3>
+<a href="https://ui.adsabs.harvard.edu/abs/2013ApJS%2E%2E204%2E%2E%2E%2E5K">2013ApJS..204....5K</a>
+
+<hr><h3><a name="references">References</a></h3>
+<pre>
+SDSS DR7 White Dwarf Catalog
+    Kleinman S.J., Kepler S.O., Koester D., Pelisoli I., Pecanha V., Nitta A.,
+    Costa J.E.S., Krzesinski J., Dufour P., Lachapelle F.-R., Bergeron P.,
+    Yip C.-W., Harris H.C., Eisenstein D.J., Althaus L., Corsico A.
+   &lt;Astrophys. J. Suppl., 204, article id. 5, 14 pp. (2013).&gt;
+   =<a href="https://ui.adsabs.harvard.edu/abs/2013ApJS%2E%2E204%2E%2E%2E%2E5K">2013ApJS..204....5K</a>
+</pre>
+
+<hr><h3><a name="provenance">Provenance</a></h3>
+This table was created by the HEASARC in January 2013 based on the electronic
+version of Table 2 from the reference paper which was obtained from the ApJS
+web site. One duplicate entry was removed from the table in June 2019.
+
+<hr><h3><a name="parameters">Parameters</a></h3>
+<p>
+<b><a name="name">Name</a></b><br>
+  The SDSS DR7 IAU-style name for the white dwarf, using the &#39;SDSS J&#39;
+  prefix
+  and the J2000 coordinates, viz. &#39;SDSS JHHMMSS.ssdDDMMSS.s&#39;. Because of tiny
+  astrometry shifts, it is possible that this name may differ from the name in
+  previous SDSS releases. This breaks the IAU convention that published names
+  never change. It is strongly recommended that associations be performed on the
+  positional coordinates rather than on the names.
+<p>
+<b><a name="plate_number">Plate_Number</a></b><br>
+  The SDSS spectroscopic plate number
+<p>
+<b><a name="spectrum_date">Spectrum_Date</a></b><br>
+  The date of the SDSS spectroscopic observation for the white
+  dwarf.
+<p>
+<b><a name="fiber_number">Fiber_Number</a></b><br>
+  The fiber number of the SDSS spectroscopic observation for the
+  white dwarf.
+<p>
+<b><a name="ra">RA</a></b><br>
+  The Right Ascension of the white dwarf in the selected equinox (given in
+  J2000 decimal degree coordinates and to a precision of 10<sup>-8</sup> - 10<sup>-6</sup> degrees
+  in the
+  original table). The epoch of the coordinates is given by the time of the SDSS
+  imaging observation as specified in the value of the imaging_date parameter.
+<p>
+<b><a name="dec">Dec</a></b><br>
+  The Declination of the white dwarf in the selected equinox (given in
+  J2000 decimal degree coordinates and to a precision of 10<sup>-8</sup> - 10<sup>-6</sup> degrees
+  in the
+  original table). The epoch of the coordinates is given by the time of the SDSS
+  imaging observation as specified in the value of the imaging_date parameter.
+<p>
+<b><a name="lii">LII</a></b><br>
+  The Galactic Longitude of the white dwarf.
+<p>
+<b><a name="bii">BII</a></b><br>
+  The Galactic Latitude of the white dwarf.
+<p>
+<b><a name="gmag_snr">Gmag_SNR</a></b><br>
+  The SDSS g-band signal-to-noise ratio of the white dwarf.
+<p>
+<b><a name="umag">Umag</a></b><br>
+  The SDSS u-band PSF magnitude of the white dwarf.
+<p>
+<b><a name="umag_error">Umag_Error</a></b><br>
+  The uncertainty in the SDSS u-band PSF magnitude of the white
+  dwarf.
+<p>
+<b><a name="umag_flag">Umag_Flag</a></b><br>
+  The photometrc flag value for the SDSS u-band PSF magnitude of
+  the white dwarf. The photometric flag values are processed versions of the
+  flags<sub>band</sub> parameter in the SDSS database. It has been logically ANDed with
+  the appropriate values to highlight objects that have the following quality
+  control flags set: EDGE, PEAKCENTER, NOPROFILE, BAD_COUNTS_ERROR,
+  INTERP_CENTER, DEBLEND_NOPEAK, PSF_FLUX_INTERP, SATURATED, and NOTCHECKED.
+  If the value is non-zero, then the corresponding SDSS magnitude is suspect.
+<p>
+<b><a name="gmag">Gmag</a></b><br>
+  The SDSS g-band PSF magnitude of the white dwarf.
+<p>
+<b><a name="gmag_error">Gmag_Error</a></b><br>
+  The uncertainty in the SDSS g-band PSF magnitude of the white
+  dwarf.
+<p>
+<b><a name="gmag_flag">Gmag_Flag</a></b><br>
+  The photometrc flag value for the SDSS g-band PSF magnitude of
+  the white dwarf. The photometric flag values are processed versions of the
+  flags<sub>band</sub> parameter in the SDSS database. It has been logically ANDed with
+  the appropriate values to highlight objects that have the following quality
+  control flags set: EDGE, PEAKCENTER, NOPROFILE, BAD_COUNTS_ERROR,
+  INTERP_CENTER, DEBLEND_NOPEAK, PSF_FLUX_INTERP, SATURATED, and NOTCHECKED.
+  If the value is non-zero, then the corresponding SDSS magnitude is suspect.
+<p>
+<b><a name="rmag">Rmag</a></b><br>
+  The SDSS r-band PSF magnitude of the white dwarf.
+<p>
+<b><a name="rmag_error">Rmag_Error</a></b><br>
+  The uncertainty in the SDSS r-band PSF magnitude of the white
+  dwarf.
+<p>
+<b><a name="rmag_flag">Rmag_Flag</a></b><br>
+  The photometrc flag value for the SDSS r-band PSF magnitude of
+  the white dwarf. The photometric flag values are processed versions of the
+  flags<sub>band</sub> parameter in the SDSS database. It has been logically ANDed with
+  the appropriate values to highlight objects that have the following quality
+  control flags set: EDGE, PEAKCENTER, NOPROFILE, BAD_COUNTS_ERROR,
+  INTERP_CENTER, DEBLEND_NOPEAK, PSF_FLUX_INTERP, SATURATED, and NOTCHECKED.
+  If the value is non-zero, then the corresponding SDSS magnitude is suspect.
+<p>
+<b><a name="imag">Imag</a></b><br>
+  The SDSS i-band PSF magnitude of the white dwarf.
+<p>
+<b><a name="imag_error">Imag_Error</a></b><br>
+  The uncertainty in the SDSS i-band PSF magnitude of the white
+  dwarf.
+<p>
+<b><a name="imag_flag">Imag_Flag</a></b><br>
+  The photometrc flag value for the SDSS i-band PSF magnitude of
+  the white dwarf. The photometric flag values are processed versions of the
+  flags<sub>band</sub> parameter in the SDSS database. It has been logically ANDed with
+  the appropriate values to highlight objects that have the following quality
+  control flags set: EDGE, PEAKCENTER, NOPROFILE, BAD_COUNTS_ERROR,
+  INTERP_CENTER, DEBLEND_NOPEAK, PSF_FLUX_INTERP, SATURATED, and NOTCHECKED.
+  If the value is non-zero, then the corresponding SDSS magnitude is suspect.
+<p>
+<b><a name="zmag">Zmag</a></b><br>
+  The SDSS z-band PSF magnitude of the white dwarf.
+<p>
+<b><a name="zmag_error">Zmag_Error</a></b><br>
+  The uncertainty in the SDSS z-band PSF magnitude of the white
+  dwarf.
+<p>
+<b><a name="zmag_flag">Zmag_Flag</a></b><br>
+  The photometrc flag value for the SDSS z-band PSF magnitude of
+  the white dwarf. The photometric flag values are processed versions of the
+  flags<sub>band</sub> parameter in the SDSS database. It has been logically ANDed with
+  the appropriate values to highlight objects that have the following quality
+  control flags set: EDGE, PEAKCENTER, NOPROFILE, BAD_COUNTS_ERROR,
+  INTERP_CENTER, DEBLEND_NOPEAK, PSF_FLUX_INTERP, SATURATED, and NOTCHECKED.
+  If the value is non-zero, then the corresponding SDSS magnitude is suspect.
+<p>
+<b><a name="pm_tot">PM_Tot</a></b><br>
+  The SDSS proper motion of the white dwarf, in mas/year. This was
+  converted by the HEASARC from the units of 0.01 arcsec/yr used in the original
+  version.
+<p>
+<b><a name="pm_pa">PM_PA</a></b><br>
+  The SDSS proper motion angle, in degrees (measured from N through E).
+<p>
+<b><a name="pm_match_flag">PM_Match_Flag</a></b><br>
+  The SDSS proper motion match flag, where a value of
+  1 means that there was a successful match within 1.0 arcsec.
+<p>
+<b><a name="gmag_extinction">Gmag_Extinction</a></b><br>
+  The extinction in the g band, A<sub>g</sub>, in magnitudes.
+<p>
+<b><a name="imaging_date">Imaging_Date</a></b><br>
+  The date and time of the imaging observation for the white
+  dwarf when row 0 of r measurements was read.
+<p>
+<b><a name="autofit_spect_type">Autofit_Spect_Type</a></b><br>
+  The autofit spectral type classification of the
+  white dwarf.
+<p>
+<b><a name="autofit_eff_temp">Autofit_Eff_Temp</a></b><br>
+  The autofit effective temperature of the
+  white dwarf, in Kelvin.
+<p>
+<b><a name="autofit_eff_temp_error">Autofit_Eff_Temp_Error</a></b><br>
+  The uncertainty in the autofit effective temperature
+  of the white dwarf, in Kelvin.
+<p>
+<b><a name="autofit_log_g">Autofit_Log_G</a></b><br>
+  The autofit logarithm of the surface gravity of the
+  white dwarf, in cm s<sup>-2</sup>.
+<p>
+<b><a name="autofit_log_g_error">Autofit_Log_G_Error</a></b><br>
+  The uncertainty in the autofit logarithm of the surface
+  gravity of the white dwarf, in cm s<sup>-2</sup>.
+<p>
+<b><a name="autofit_red_chisquared">Autofit_Red_Chisquared</a></b><br>
+  The autofit reduced chi<sup>2</sup> of the fit to the
+  spectrum of the white dwarf.
+<p>
+<b><a name="unique_flag">Unique_Flag</a></b><br>
+  The &#39;unique number&#39; of the spectrum for the specific white
+  dwarf. This is assigned to identify duplicate spectra of the same object. For
+  objects with only one spectrum, the value of this parameter is &#39;uniq&#39;. For
+  objects with more than one spectrum, the value will be dup-xxxx where xxxx is
+  a running number, the same for all spectra of the same object. The spectrum
+  with the highest signal-to-noise ratio for objects with duplicate spectra will
+  be identified with an a at the end of its dup-xxxx name.
+<p>
+<b><a name="mass">Mass</a></b><br>
+  The calculated mass of the white dwarf, in solar masses, given for
+  clean DAs and DBs only. This is calculated as described on Section 6.2 of the
+  reference paper.
+<p>
+<b><a name="mass_error">Mass_Error</a></b><br>
+  The uncertainty in the calculated mass of the white dwarf, in
+  solar masses.
+<p>
+<b><a name="spect_type">Spect_Type</a></b><br>
+  The &#39;human&#39; spectral type classification assigned to the
+  spectrum.
+<p>
+<b><a name="class">Class</a></b><br>
+  The HEASARC Browse object classification, based on the
+  &#39;human&#39; spectral type classification (the spect_type parameter value).
+
+<hr><h3><a name="contact_person">Contact Person</a></h3>
+Questions regarding the SDSSDR7WD database table can be addressed to the
+<a href="/cgi-bin/Feedback?selected=heasarc">HEASARC Help Desk</a>.
+
+<!--================================================================-->
+<hr>
+<em>Page Author:</em> <a href="/cgi-bin/Feedback?selected=w3browse">Browse Software Development Team</a><br>
+<em>Last Modified:</em> Monday, 16-Sep-2024 17:34:38 EDT
+<hr>
+<!-- This is portalfooter.html -->
+<!-- Because some pages don't use the header files that include the css, the styles need to be written out here. -->
+</div>
+<!-- full-width-content-item -->
+                         <div class="divClear" style="clear:both;"></div>
+                      </div><!-- id=maincontent -->
+                   </div><!-- id="content-wrapper" -->
+		</div><!-- id="content" -->
+	<div class="divClear" style="clear:both;"></div>
+<div class="navigation">
+<div id="HEASARCfooter" style="background-color:#2E2E2E;height:20px;width:952px;border-top:none;margin:0 auto;margin-top:5px;">
+<table width="100%">
+<tr><td style="text-align:center;vertical-align:middle;">
+<p style="color:#B2B2B2;font-size:11px;text-decoration:none;font-family:Arial,Helvetica,sans-serif;margin:0;">A service of the <a href="https://science.gsfc.nasa.gov/astrophysics" style="color:#B2B2B2;font-size:11px;text-decoration:none;font-family:Arial,Helvetica,sans-serif;">Astrophysics Science Division</a> at <a href="http://www.nasa.gov/" style="color:#B2B2B2;font-size:11px;text-decoration:none;font-family:Arial,Helvetica,sans-serif;">NASA/</a><a href="http://www.nasa.gov/goddard" style="color:#B2B2B2;font-size:11px;text-decoration:none;font-family:Arial,Helvetica,sans-serif;">GSFC</a>.</p>
+</td></tr>
+</table>
+</div>
+
+<div id="footer" style="background-color:#2E2E2E;height:98px;width:952px;border-top:2px solid #222222;margin:0 auto;">
+                <div>
+               		<a href="http://www.nasa.gov" class="imageLink" style="display:block;float:left;"><img class="logo" style="border:0;" src="/Images/portal_new/nasa_header_logo1.gif" alt="NASA Logo, National Aeronautics and Space Administration" width="140" height="98"></a>
+                </div><!-- class="nasaLogo" -->
+
+                <div id="footer-signature" style="padding-left:20px;padding-top:19px;float:left;">
+               		<a href="http://www.nasa.gov/goddard/" class="imageLink" style="display:block;float:left;"><img class="logo" style="border:0;" src="/Images/portal_new/goddardsignature2.png" alt="Goddard Space Flight Center Signature Logo" width="172" height="68"></a>
+                </div>
+                <div class="nasafootlinks" style="float:left;height:84px;margin-left:15px;padding-left:0px;padding-top:14px;width:295px;">
+                	<ul style="list-style:none;padding:0;margin:0;">
+                		<li style="margin-bottom:2px;color:#B2B2B2;font-size:11px;font-family:Arial,Helvetica,sans-serif;">HEASARC Director: Vacant</li>
+                		<li style="margin-bottom:2px;color:#B2B2B2;font-size:11px;font-family:Arial,Helvetica,sans-serif;">NASA Official: Ryan Smallcomb</li>
+                		<li style="margin-bottom:2px;color:#B2B2B2;font-size:11px;font-family:Arial,Helvetica,sans-serif;">Web Curator: <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#106;&#111;&#104;&#110;&#46;&#100;&#46;&#109;&#121;&#101;&#114;&#115;&#64;&#110;&#97;&#115;&#97;&#46;&#103;&#111;&#118;">J.D. Myers</a></li>
+	        		<li style="margin-bottom:2px;color:#B2B2B2;font-size:11px;font-family:Arial,Helvetica,sans-serif;">Last Modified: 16-Sep-2024</li>
+                	</ul>
+                </div><!-- nasafootlinks -->
+                <div class="nasafootlinks" id="footerRight" style="float:left;height:84px;margin-left:15px;padding-left:0px;padding-top:14px;width:295px;">
+                	<ul style="list-style:none;padding:0;margin:0;">
+                		<li style="margin-bottom:2px;padding-left:12px;background:url(/Images/portal_new/rsaquo_gray.gif) no-repeat scroll 0 1px transparent;color:#B2B2B2;font-size:11px;"><a href="http://science.nasa.gov/astrophysics/" style="color:#B2B2B2;font-size:11px;text-decoration:none;font-family:Arial,Helvetica,sans-serif;">NASA Astrophysics</a></li>
+                		<li style="margin-bottom:2px;padding-left:12px;background:url(/Images/portal_new/rsaquo_gray.gif) no-repeat scroll 0 1px transparent;color:#B2B2B2;font-size:11px;text-decoration:none;font-family:Arial,Helvetica,sans-serif;"><a href="/docs/faq.html" style="color:#B2B2B2;font-size:11px;text-decoration:none;font-family:Arial,Helvetica,sans-serif;">FAQ/Comments/Feedback</a></li>
+                		<li style="margin-bottom:2px;padding-left:12px;background:url(/Images/portal_new/rsaquo_gray.gif) no-repeat scroll 0 1px transparent;color:#B2B2B2;font-size:11px;"><a href="/docs/outreach.html" style="color:#B2B2B2;font-size:11px;text-decoration:none;font-family:Arial,Helvetica,sans-serif;">Education Resources</a></li>
+                		<li style="margin-bottom:2px;padding-left:12px;background:url(/Images/portal_new/rsaquo_gray.gif) no-repeat scroll 0 1px transparent;color:#B2B2B2;font-size:11px;"><a href="/docs/plugins.html" style="color:#B2B2B2;font-size:11px;text-decoration:none;font-family:Arial,Helvetica,sans-serif;">Find helper applications like Adobe Acrobat</a></li>
+                		<li style="margin-bottom:2px;padding-left:12px;background:url(/Images/portal_new/rsaquo_gray.gif) no-repeat scroll 0 1px transparent;color:#B2B2B2;font-size:11px;"><a target="_blank" href="http://www.nasa.gov/about/highlights/HP_Privacy.html" style="color:#B2B2B2;font-size:11px;text-decoration:none;font-family:Arial,Helvetica,sans-serif;">Privacy Policy &amp; Important Notices</a></li>
+                	</ul>
+                </div><!-- nasafootlinks -->
+</div><!-- id=footer -->
+</div><!-- class=navigation -->
+</div><!-- id=page -->
+</div><!-- id=page-wrapper -->
+
+<pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</pre>
+
+</body>
+</html>

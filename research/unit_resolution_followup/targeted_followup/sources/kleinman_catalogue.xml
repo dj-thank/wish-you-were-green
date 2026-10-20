@@ -1,0 +1,175 @@
+<?xml version="1.0"?>
+<VOTABLE xmlns="http://www.ivoa.net/xml/VOTable/v1.3" xsi:schemaLocation="http://www.ivoa.net/xml/VOTable/v1.3 http://www.ivoa.net/xml/VOTable/v1.3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.4">
+ <RESOURCE type="results">
+  <INFO name="QUERY_STATUS" value="OK">No errors detected in query preprocessing</INFO>
+  <TABLE>
+   <DESCRIPTION>Query result for:&#xA;SELECT * FROM sdssdr7wd WHERE&#xA;    (ra BETWEEN 282.66 AND 282.68 AND dec BETWEEN 20.00 AND 20.03) OR&#xA;    (ra BETWEEN 11.355 AND 11.375 AND dec BETWEEN 14.627 AND 14.648) OR&#xA;    (ra BETWEEN 83.963 AND 83.983 AND dec BETWEEN -0.678 AND -0.658)</DESCRIPTION>
+   <FIELD datatype="char" arraysize="*" name="__row"/>
+   <FIELD datatype="char" arraysize="*" ucd="meta.id;meta.main" name="name">
+    <DESCRIPTION>SDSS Object Designation</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="short" ucd="meta.id;obs.field" name="plate_number" width="4">
+    <DESCRIPTION>SDSS Plate Number</DESCRIPTION>
+    <VALUES null="-32768"/>
+   </FIELD>
+   <FIELD unit="d" datatype="int" ucd="time.start;obs" name="spectrum_date">
+    <DESCRIPTION>SDSS Spectrum Date</DESCRIPTION>
+    <VALUES null="-2147483648"/>
+   </FIELD>
+   <FIELD datatype="short" ucd="meta.id;instr.param" name="fiber_number" width="3">
+    <DESCRIPTION>SDSS Fiber Identifier</DESCRIPTION>
+    <VALUES null="-32768"/>
+   </FIELD>
+   <FIELD unit="deg" datatype="double" ucd="pos.eq.ra;meta.main" precision="F8" name="ra">
+    <DESCRIPTION>Right Ascension</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="deg" datatype="double" ucd="pos.eq.dec;meta.main" precision="F8" name="dec">
+    <DESCRIPTION>Declination</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="deg" datatype="double" ucd="pos.galactic.lon" precision="F8" name="lii">
+    <DESCRIPTION>Galactic Longitude</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="deg" datatype="double" ucd="pos.galactic.lat" precision="F8" name="bii">
+    <DESCRIPTION>Galactic Latitude</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.snr;em.opt.B" precision="F6" name="gmag_snr" width="9">
+    <DESCRIPTION>SDSS g Band Signal-to-Noise Ratio</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="mag" datatype="double" ucd="phot.mag;em.opt.U" precision="F2" name="umag" width="5">
+    <DESCRIPTION>SDSS u Band PSF Magnitude</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="mag" datatype="double" ucd="stat.error;phot.mag;em.opt.U" precision="F2" name="umag_error" width="4">
+    <DESCRIPTION>Uncertainty in SDSS u Band PSF Magnitude</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="char" arraysize="*" ucd="meta.code;phot.mag;em.opt.U" name="umag_flag">
+    <DESCRIPTION>Flag for SDSS u Band PSF Magnitude</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="mag" datatype="double" ucd="phot.mag;em.opt.B" precision="F2" name="gmag" width="5">
+    <DESCRIPTION>SDSS g Band PSF Magnitude</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="mag" datatype="double" ucd="stat.error;phot.mag;em.opt.B" precision="F2" name="gmag_error" width="5">
+    <DESCRIPTION>Uncertainty in SDSS g Band PSF Magnitude</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="char" arraysize="*" ucd="meta.code;phot.mag;em.opt.B" name="gmag_flag">
+    <DESCRIPTION>Flag for SDSS g Band PSF Magnitude</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="mag" datatype="double" ucd="phot.mag;em.opt.R" precision="F2" name="rmag" width="5">
+    <DESCRIPTION>SDSS r Band PSF Magnitude</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="mag" datatype="double" ucd="stat.error;phot.mag;em.opt.R" precision="F2" name="rmag_error" width="4">
+    <DESCRIPTION>Uncertainty in SDSS r Band PSF Magnitude</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="char" arraysize="*" ucd="meta.code;phot.mag;em.opt.R" name="rmag_flag">
+    <DESCRIPTION>Flag for SDSS r Band PSF Magnitude</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="mag" datatype="double" ucd="phot.mag;em.opt.I" precision="F2" name="imag" width="5">
+    <DESCRIPTION>SDSS i Band PSF Magnitude</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="mag" datatype="double" ucd="stat.error;phot.mag;em.opt.I" precision="F2" name="imag_error" width="6">
+    <DESCRIPTION>Uncertainty in SDSS i Band PSF Magnitude</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="char" arraysize="*" ucd="meta.code;phot.mag;em.opt.I" name="imag_flag">
+    <DESCRIPTION>Flag for SDSS i Band PSF Magnitude</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="mag" datatype="double" ucd="phot.mag;em.opt" precision="F2" name="zmag" width="5">
+    <DESCRIPTION>SDSS z Band PSF Magnitude</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="mag" datatype="double" ucd="stat.error;phot.mag;em.opt" precision="F2" name="zmag_error" width="5">
+    <DESCRIPTION>Uncertainty in SDSS z Band PSF Magnitude</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="char" arraysize="*" ucd="meta.code;phot.mag;em.opt" name="zmag_flag">
+    <DESCRIPTION>Flag for SDSS z Band PSF Magnitude</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="mas/yr" datatype="double" ucd="pos.pm" precision="F5" name="pm_tot">
+    <DESCRIPTION>SDSS Proper Motion</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="deg" datatype="double" ucd="pos.posAng;pos.pm" precision="F6" name="pm_pa" width="10">
+    <DESCRIPTION>SDSS Proper Motion Angle; N Through E</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="char" arraysize="*" ucd="meta.code" name="pm_match_flag">
+    <DESCRIPTION>SDSS Proper Motion Match</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="mag" datatype="double" ucd="phys.absorption;em.opt.B" precision="F6" name="gmag_extinction" width="8">
+    <DESCRIPTION>SDSS g Band Extinction</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="d" datatype="double" ucd="time.start;obs" precision="F7" name="imaging_date">
+    <DESCRIPTION>SDSS Imaging Date</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="char" arraysize="*" ucd="src.spType" name="autofit_spect_type">
+    <DESCRIPTION>Autofit Type Identification</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="K" datatype="int" ucd="phys.temperature.effective" name="autofit_eff_temp" width="6">
+    <DESCRIPTION>Autofit Effective Temperature</DESCRIPTION>
+    <VALUES null="-2147483648"/>
+   </FIELD>
+   <FIELD unit="K" datatype="int" ucd="stat.error;phys.temperature.effective" name="autofit_eff_temp_error" width="5">
+    <DESCRIPTION>Uncertainty in Autofit Effective Temperature</DESCRIPTION>
+    <VALUES null="-2147483648"/>
+   </FIELD>
+   <FIELD unit="log(cm/s^2)" datatype="double" ucd="phys.gravity" precision="F2" name="autofit_log_g" width="5">
+    <DESCRIPTION>Autofit Logarithm Surface Gravity</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="log(cm/s^2)" datatype="double" ucd="stat.error;phys.gravity" precision="F3" name="autofit_log_g_error" width="6">
+    <DESCRIPTION>Uncertainty in Autofit Logarithm Surface Gravity</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="double" ucd="stat.fit.chi2" precision="F3" name="autofit_red_chisquared" width="6">
+    <DESCRIPTION>Autofit Reduced Chi^2 Fit Measurement</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="char" arraysize="*" ucd="meta.code" name="unique_flag">
+    <DESCRIPTION>Unique Number</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="Solar_Mass" datatype="double" ucd="phys.mass" precision="F3" name="mass" width="5">
+    <DESCRIPTION>Calculated Mass</DESCRIPTION>
+   </FIELD>
+   <FIELD unit="Solar_Mass" datatype="double" ucd="stat.error;phys.mass" precision="F3" name="mass_error" width="5">
+    <DESCRIPTION>Uncertainty in Mass</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="char" arraysize="*" ucd="src.spType" name="spect_type">
+    <DESCRIPTION>Human Identification Assigned to Spectrum</DESCRIPTION>
+   </FIELD>
+   <FIELD datatype="short" ucd="src.class" name="class">
+    <DESCRIPTION>Browse Object Classification</DESCRIPTION>
+    <VALUES null="-32768"/>
+   </FIELD>
+   <FIELD datatype="double" name="__x_ra_dec"/>
+   <FIELD datatype="double" name="__y_ra_dec"/>
+   <FIELD datatype="double" name="__z_ra_dec"/>
+   <DATA>
+    <BINARY>
+     <STREAM encoding="base64">
+AAAABDE3MzcAAAAYU0RTUyBKMDUzNTUzLjU2LTAwNDAwMy45CBgAANC2ADxAVP5I
+NEw357/lXkYGdI5HQGmVv7unYILAMQ9pDDMUKkApiHKwIMScf/gAAAAAAAB/
++AAAAAAAAAAAAAB/+AAAAAAAAH/4AAAAAAAAAAAAAH/4AAAAAAAAf/gAAAAA
+AAAAAAAAf/gAAAAAAAB/+AAAAAAAAAAAAAB/+AAAAAAAAH/4AAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB/+AAAAAAAAAAAAAlEQjMu
+N185LjIAADUYAAABsUAicKPXCj1xP9CDEm6XjVA/8KwIMSbpeQAAAAR1bmlx
+f/gAAAAAAAB/+AAAAAAAAAAAAAZEQlpBRToQmj/v0isDnCHmP7rgcdQY9ga/
+h943QrTjxwAAAAQ3NzI4AAAAGFNEU1MgSjAwNDUyNy42OSsxNDM4MTYuMgGj
+AADKnABqQCa7EUCaJANALUaRyOq//UBeMMtP6k4SwEgauAPn7A1AN8aHGjsU
+qUAyHCj1wo9cP5R64UeuFHsAAAABMEAx0euFHrhSP5R64UeuFHsAAAABMEAx
+T1wo9cKPP5R64UeuFHsAAAABMEAxAAAAAAAAP5R64UeuFHsAAAABMEAwvXCj
+1wo9P5R64UeuFHsAAAABMEAbe+yquKXOQHKNW4Ajps4AAAABMT/WLIPsiSq3
+QOkhCkR+gAcAAAAMQ0g6REIxLjlfOC4xAABmYQAAAHtAICj1wo9cKT+WhysC
+DEm6QD5y8an7520AAAAJZHVwLTAxNDNhf/gAAAAAAAB/+AAAAAAAAAAAAAJE
+WhGUP8hn04p3OH4/7lquXxfWmz/QLF9By0qvAAAABDc3MjkAAAAYU0RTUyBK
+MDA0NTI3LjY5KzE0MzgxNi4yAaMAAMpkAGlAJrsRQJokA0AtRpHI6r/9QF4w
+y0/qThLASBq4A+fsDUA29xdY4hllQDIcKPXCj1w/lHrhR64UewAAAAEwQDHR
+64UeuFI/lHrhR64UewAAAAEwQDFPXCj1wo8/lHrhR64UewAAAAEwQDEAAAAA
+AAA/lHrhR64UewAAAAEwQDC9cKPXCj0/lHrhR64UewAAAAEwQBt77Kq4pc5A
+co1bgCOmzgAAAAExP9Ysg+yJKrdA6SEKRH6ABwAAAAxDSDpEQjIuMV83LjcA
+AF1OAAAA10Ae4UeuFHrhP6Jul41P3ztAO4n752yLRAAAAAhkdXAtMDE0M3/4
+AAAAAAAAf/gAAAAAAAAAAAACRFoRlD/IZ9OKdzh+P+5arl8X1ps/0CxfQctK
+rwAAAAQ5MzcxAAAAGFNEU1MgSjE4NTA0MC43MSsyMDAwNTYuMgsRAADVegF2
+QHGqtsN2C/ZANAP+85CF9UBJaIPsM0R7QCJHj7+mHbZALf+xW1c+q0A0pmZm
+ZmZmP7HrhR64UewAAAABMEAzAo9cKPXDP4R64UeuFHsAAAABMEAywo9cKPXD
+P4R64UeuFHsAAAABMEAyq4UeuFHsP5R64UeuFHsAAAABMEAypmZmZmZmP6R6
+4UeuFHsAAAABMAAAAAAAAAAAAAAAAAAAAAAAAAAAP/a2Rq46Oo5A6gHlomtK
+rgAAAAxDSDpEQTMuN181LjgAADWaAAAJJkAXMzMzMzMzP8o9cKPXCj0//y8a
+n752yQAAAAR1bmlxf/gAAAAAAAB/+AAAAAAAAAAAAAREQVpIEDa/7VXHcwVN
+tj/KYN9mhPLPP9Xn2iO9Etc=
+     </STREAM>
+    </BINARY>
+   </DATA>
+  </TABLE>
+ </RESOURCE>
+</VOTABLE>

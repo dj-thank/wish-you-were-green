@@ -1,0 +1,202 @@
+[
+  {
+    "source_id": "1078624858218235776",
+    "WDJname": "WDJ110541.59+724751.14",
+    "figure": "photometry_sheet_01.png",
+    "panel": 1,
+    "strict_covered_bands": 0,
+    "prepared_only_not_a_viewing_record": true
+  },
+  {
+    "source_id": "1099452803904038272",
+    "WDJname": "WDJ071637.37+621710.78",
+    "figure": "photometry_sheet_01.png",
+    "panel": 2,
+    "strict_covered_bands": 5,
+    "prepared_only_not_a_viewing_record": true
+  },
+  {
+    "source_id": "1182083542272959232",
+    "WDJname": "WDJ150038.15+134301.74",
+    "figure": "photometry_sheet_01.png",
+    "panel": 3,
+    "strict_covered_bands": 0,
+    "prepared_only_not_a_viewing_record": true
+  },
+  {
+    "source_id": "1323443938325221376",
+    "WDJname": "WDJ155929.64+332431.72",
+    "figure": "photometry_sheet_01.png",
+    "panel": 4,
+    "strict_covered_bands": 4,
+    "prepared_only_not_a_viewing_record": true
+  },
+  {
+    "source_id": "1496016553207149952",
+    "WDJname": "WDJ140155.42+390326.47",
+    "figure": "photometry_sheet_01.png",
+    "panel": 5,
+    "strict_covered_bands": 0,
+    "prepared_only_not_a_viewing_record": true
+  },
+  {
+    "source_id": "1679189040001914880",
+    "WDJname": "WDJ125552.90+671244.24",
+    "figure": "photometry_sheet_02.png",
+    "panel": 1,
+    "strict_covered_bands": 0,
+    "prepared_only_not_a_viewing_record": true
+  },
+  {
+    "source_id": "1691957732959636608",
+    "WDJname": "WDJ125207.43+745756.93",
+    "figure": "photometry_sheet_02.png",
+    "panel": 2,
+    "strict_covered_bands": 5,
+    "prepared_only_not_a_viewing_record": true
+  },
+  {
+    "source_id": "2119909923600264960",
+    "WDJname": "WDJ184104.75+483848.89",
+    "figure": "photometry_sheet_02.png",
+    "panel": 3,
+    "strict_covered_bands": 4,
+    "prepared_only_not_a_viewing_record": true
+  },
+  {
+    "source_id": "2453225705329412480",
+    "WDJname": "WDJ014711.92-135843.93",
+    "figure": "photometry_sheet_02.png",
+    "panel": 4,
+    "strict_covered_bands": 2,
+    "prepared_only_not_a_viewing_record": true
+  },
+  {
+    "source_id": "2482684508055379584",
+    "WDJname": "WDJ011124.78-053318.52",
+    "figure": "photometry_sheet_02.png",
+    "panel": 5,
+    "strict_covered_bands": 2,
+    "prepared_only_not_a_viewing_record": true
+  },
+  {
+    "source_id": "2513256394506328832",
+    "WDJname": "WDJ021739.29+011641.13",
+    "figure": "photometry_sheet_03.png",
+    "panel": 1,
+    "strict_covered_bands": 3,
+    "prepared_only_not_a_viewing_record": true
+  },
+  {
+    "source_id": "2739231150982741760",
+    "WDJname": "WDJ000602.95+025745.18",
+    "figure": "photometry_sheet_03.png",
+    "panel": 2,
+    "strict_covered_bands": 8,
+    "prepared_only_not_a_viewing_record": true
+  },
+  {
+    "source_id": "3204436719718449280",
+    "WDJname": "WDJ042944.71-035422.00",
+    "figure": "photometry_sheet_03.png",
+    "panel": 3,
+    "strict_covered_bands": 2,
+    "prepared_only_not_a_viewing_record": true
+  },
+  {
+    "source_id": "3638333660492606976",
+    "WDJname": "WDJ132312.76-012923.67",
+    "figure": "photometry_sheet_03.png",
+    "panel": 4,
+    "strict_covered_bands": 1,
+    "prepared_only_not_a_viewing_record": true
+  },
+  {
+    "source_id": "3705179706854089856",
+    "WDJname": "WDJ125802.76+050040.26",
+    "figure": "photometry_sheet_03.png",
+    "panel": 5,
+    "strict_covered_bands": 0,
+    "prepared_only_not_a_viewing_record": true
+  },
+  {
+    "source_id": "3711047662972690688",
+    "WDJname": "WDJ132942.69+003336.60",
+    "figure": "photometry_sheet_04.png",
+    "panel": 1,
+    "strict_covered_bands": 3,
+    "prepared_only_not_a_viewing_record": true
+  },
+  {
+    "source_id": "3713218786120541824",
+    "WDJname": "WDJ134118.69+022737.01",
+    "figure": "photometry_sheet_04.png",
+    "panel": 2,
+    "strict_covered_bands": 1,
+    "prepared_only_not_a_viewing_record": true
+  },
+  {
+    "source_id": "3782527364866017664",
+    "WDJname": "WDJ103113.86-013925.39",
+    "figure": "photometry_sheet_04.png",
+    "panel": 3,
+    "strict_covered_bands": 3,
+    "prepared_only_not_a_viewing_record": true
+  },
+  {
+    "source_id": "4445170067643613312",
+    "WDJname": "WDJ164234.26+080436.90",
+    "figure": "photometry_sheet_04.png",
+    "panel": 4,
+    "strict_covered_bands": 0,
+    "prepared_only_not_a_viewing_record": true
+  },
+  {
+    "source_id": "4545191991882663936",
+    "WDJname": "WDJ170738.96+145320.12",
+    "figure": "photometry_sheet_04.png",
+    "panel": 5,
+    "strict_covered_bands": 0,
+    "prepared_only_not_a_viewing_record": true
+  },
+  {
+    "source_id": "4545912820537587328",
+    "WDJname": "WDJ170205.24+150734.88",
+    "figure": "photometry_sheet_05.png",
+    "panel": 1,
+    "strict_covered_bands": 0,
+    "prepared_only_not_a_viewing_record": true
+  },
+  {
+    "source_id": "4555293235271174016",
+    "WDJname": "WDJ172725.31+211651.95",
+    "figure": "photometry_sheet_05.png",
+    "panel": 2,
+    "strict_covered_bands": 0,
+    "prepared_only_not_a_viewing_record": true
+  },
+  {
+    "source_id": "761677269868775040",
+    "WDJname": "WDJ110848.77+342536.63",
+    "figure": "photometry_sheet_05.png",
+    "panel": 3,
+    "strict_covered_bands": 0,
+    "prepared_only_not_a_viewing_record": true
+  },
+  {
+    "source_id": "818833831355548928",
+    "WDJname": "WDJ091336.37+443405.41",
+    "figure": "photometry_sheet_05.png",
+    "panel": 4,
+    "strict_covered_bands": 0,
+    "prepared_only_not_a_viewing_record": true
+  },
+  {
+    "source_id": "913810126798863232",
+    "WDJname": "WDJ085113.75+424502.91",
+    "figure": "photometry_sheet_05.png",
+    "panel": 5,
+    "strict_covered_bands": 3,
+    "prepared_only_not_a_viewing_record": true
+  }
+]

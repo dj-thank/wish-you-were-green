@@ -1,0 +1,14 @@
+{
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "packages": {
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "astropy": "8.0.2",
+    "speclite": "1.0.0",
+    "colour-science": "0.4.7",
+    "matplotlib": "3.11.2"
+  },
+  "requirements_core_sha256": "3e320fae538eb6b79fd53eeb90f49ed2b3c2adece7156c99689e067ef20f4406",
+  "recorded_for": "Repeat-shape analysis and offline replay; package versions are provenance, not physical-error estimates"
+}

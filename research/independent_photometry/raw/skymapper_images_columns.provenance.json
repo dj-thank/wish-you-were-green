@@ -1,0 +1,15 @@
+{
+  "url": "https://api.skymapper.nci.org.au/public/tap/sync",
+  "query_parameters": {
+    "REQUEST": "doQuery",
+    "LANG": "ADQL",
+    "FORMAT": "csv",
+    "QUERY": "SELECT column_name,description,unit,datatype FROM TAP_SCHEMA.columns WHERE table_name='dr4.images'"
+  },
+  "final_url": "https://api.skymapper.nci.org.au/public/tap/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=SELECT+column_name%2Cdescription%2Cunit%2Cdatatype+FROM+TAP_SCHEMA.columns+WHERE+table_name%3D%27dr4.images%27",
+  "retrieved_utc": "2026-10-19T23:22:11.024820+00:00",
+  "http_status": 200,
+  "content_type": "text/csv;header=present;charset=ISO-8859-1",
+  "size_bytes": 1673,
+  "sha256": "9100475ca2131636d87b56e43bb999c3ff7e33da95ff7b2572be6b3042919259"
+}

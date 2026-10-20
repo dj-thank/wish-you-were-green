@@ -1,0 +1,1 @@
+SELECT TOP 10000 p.*, i.date AS exposure_mjd, i.exp_time AS exposure_seconds, i.airmass, i.fwhm_mean AS image_fwhm_pixels, i.zp_rms, i.img_qual AS image_quality FROM dr4.photometry AS p JOIN dr4.images AS i ON p.image_id=i.image_id WHERE p.object_id IN (1022938730,107990965,107990969,1140070267,1140146541,1140213270,13842569,14389399,16976094,24884480,92749468)

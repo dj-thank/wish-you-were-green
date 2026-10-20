@@ -1,0 +1,7 @@
+{
+  "query": "SELECT CAST(s.specObjID AS varchar(32)) AS specobjid, s.plate,s.mjd,s.fiberID,s.run2d,s.ra,s.dec,s.sciencePrimary,CAST(s.bestObjID AS varchar(32)) AS bestobjid,n.distance FROM dbo.fGetNearbySpecObjAllEq(200.80308333333332,-1.490425,0.5) n JOIN SpecObjAll s ON s.specObjID=n.specObjID",
+  "url": "https://skyserver.sdss.org/dr17/SkyServerWS/SearchTools/SqlSearch?cmd=SELECT+CAST%28s.specObjID+AS+varchar%2832%29%29+AS+specobjid%2C+s.plate%2Cs.mjd%2Cs.fiberID%2Cs.run2d%2Cs.ra%2Cs.dec%2Cs.sciencePrimary%2CCAST%28s.bestObjID+AS+varchar%2832%29%29+AS+bestobjid%2Cn.distance+FROM+dbo.fGetNearbySpecObjAllEq%28200.80308333333332%2C-1.490425%2C0.5%29+n+JOIN+SpecObjAll+s+ON+s.specObjID%3Dn.specObjID&format=json",
+  "status_code": 200,
+  "sha256": "996b8f083f69b1727eefaf631078d5f7b5cb92d088fc5f192ddd9e2993ca36d5",
+  "retrieved_utc": "2026-10-19T23:18:34.920363+00:00"
+}

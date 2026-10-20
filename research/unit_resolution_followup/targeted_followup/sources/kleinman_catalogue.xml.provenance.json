@@ -1,0 +1,10 @@
+{
+  "url": "https://heasarc.gsfc.nasa.gov/xamin/vo/tap/sync?REQUEST=doQuery&LANG=ADQL&QUERY=SELECT+%2A+FROM+sdssdr7wd+WHERE%0A++++%28ra+BETWEEN+282.66+AND+282.68+AND+dec+BETWEEN+20.00+AND+20.03%29+OR%0A++++%28ra+BETWEEN+11.355+AND+11.375+AND+dec+BETWEEN+14.627+AND+14.648%29+OR%0A++++%28ra+BETWEEN+83.963+AND+83.983+AND+dec+BETWEEN+-0.678+AND+-0.658%29",
+  "final_url": "https://heasarc.gsfc.nasa.gov/xamin/vo/tap/sync?REQUEST=doQuery&LANG=ADQL&QUERY=SELECT+%2A+FROM+sdssdr7wd+WHERE%0A++++%28ra+BETWEEN+282.66+AND+282.68+AND+dec+BETWEEN+20.00+AND+20.03%29+OR%0A++++%28ra+BETWEEN+11.355+AND+11.375+AND+dec+BETWEEN+14.627+AND+14.648%29+OR%0A++++%28ra+BETWEEN+83.963+AND+83.983+AND+dec+BETWEEN+-0.678+AND+-0.658%29",
+  "retrieved_utc": "2026-10-20T00:18:55.727538+00:00",
+  "http_status": 200,
+  "content_type": "text/xml",
+  "bytes": 9742,
+  "sha256": "49530cff2027c0c564dbb062968cad092a3ab11f3466b9c8f933e44852e6dfbe",
+  "file": "sources/kleinman_catalogue.xml"
+}

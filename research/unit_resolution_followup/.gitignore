@@ -1,0 +1,4 @@
+raw_cache/
+__pycache__/
+# Original query files are losslessly preserved in queries_evidence.zip.
+queries/

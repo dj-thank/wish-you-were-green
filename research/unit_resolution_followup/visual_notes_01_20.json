@@ -1,0 +1,425 @@
+{
+  "reviewer": "repro_audit",
+  "page_notes": {
+    "1": {
+      "image_sha256": "72e6293335ac223923c135947477f7ef0723e1f35754be7c8e5ba762625f39ea",
+      "observations": [
+        "Pronounced broad depressions throughout the blue and green, followed by a steep rise near 600 nm and a broad red maximum. Structured continuum requires physical modelling; no feature identification is made here.",
+        "J1323: weak blue mean, steep broad rise into the green and a red plateau with a gentle decline. Native blue range crosses zero widely; use the separate IVAR/mask and fibre-position audit.",
+        "Noisy, nearly flat broad mean after a blue rise; several isolated large red native excursions and a red-edge mean depression remain. Unanchored Fnu conversion is verified but precision is limited.",
+        "Recovered spectrum has a broad maximum around the middle of the visible range and a gentle red decline. Native blue and red excursions cross zero despite the smooth mean.",
+        "Broad rise from the blue to an early green maximum, followed by a gradual decline; a narrow middle depression survives the 40 A means. Grey native range is much wider at the blue edge.",
+        "Broad, almost level central continuum with a shallow red decline and small narrow dips. Unanchored shape remains a calibration caution; no unique line cause follows from the panel.",
+        "Blue depression followed by a broad peak and a long shallower red shoulder. Mean remains positive, while the blue native range is strongly negative in places.",
+        "Broad green hump with several depressions across its red side, then a gradual red decline. This is the LHS2534 record identified in the input; visual greenness is not a novelty assessment.",
+        "A sequence of deep broad troughs dominates the blue and green, with a smoother red decline. Fnu conversion preserves this resolved structure and the native envelope is relatively narrow.",
+        "Very wide positive and negative native range at the blue edge compresses an almost flat low-amplitude mean. Reference S/N is below two; the small positive Duv requires a strong quality caution.",
+        "Several rounded troughs across the blue-to-green plateau; the red end falls smoothly. Native red excursions remain visible beyond the mean.",
+        "Alternating strong troughs and peaks in the blue and green, with a broad higher red continuum after the last central feature. No atomic or instrumental cause is inferred.",
+        "Broad rise to a green maximum and steady decline into the red. The native blue range is substantial and includes negative values; the positive Duv is a screen metric only.",
+        "Recovered curve has a noisy blue depression, a modest green hump and a declining red shoulder. Wide native excursions exceed the mean over much of the panel.",
+        "A smooth broad turnover with decreasing red flux; weak central depressions and an increasingly wide red native range. No singular large interior peak stands out.",
+        "Strong high blue continuum drops into several deep broad troughs; a red rise and maximum follow. The transition is conspicuous but the panel alone cannot assign its origin."
+      ]
+    },
+    "2": {
+      "image_sha256": "089eb7a00548e5e4406f2726df587e7af9501af868908c03c28ed5a2662b0ea6",
+      "observations": [
+        "Low blue continuum rises to a broad local maximum, then shows several middle depressions and a declining red tail. Native blue scatter is relatively wide.",
+        "Very high blue continuum falls into a deep wide blue-green depression, then rises to a modest red shoulder. Structured broad suppression survives the Fnu conversion.",
+        "Recovered mean has a small blue trough, broad plateau and gradual red decline. A narrow positive middle feature is visible near a marked sky region; no cause assigned.",
+        "Several sharp blue troughs followed by an extended central plateau and slow red decline. Negative native values are confined mainly to the blue edge.",
+        "Broad maximum shortly after the blue depression, declining toward the red. Large native blue excursions and a few negative red excursions remain despite a smooth mean.",
+        "Broad hump in the blue-green region, with a gentle red decline. An isolated high native blue spike and a broad red native envelope deserve source-level attention.",
+        "Two conspicuous broad dips bracket a blue-green local maximum and a shallower green plateau. Native blue negatives are much larger than the smoothed mean.",
+        "Alternating deep troughs and high peaks dominate the blue and green; the red continuum is smoother and elevated. The low reference S/N widens the native range around each feature.",
+        "Several extremely narrow high native peaks dominate the vertical scale, while the mean stays much lower. Reference S/N is low; individual-pixel flags are needed before interpreting peaks.",
+        "Very steep blue-to-red decline with broad negative excursions at both ends. The unanchored Fnu-corrected mean approaches zero in the red and has low S/N.",
+        "Broad early maximum with relatively flat middle continuum and gradual red decline. Native blue excursions cross zero, while the red mean is smoother.",
+        "Fairly flat broad blue-green plateau, then smooth decline toward the red. Several narrow downward excursions survive the display aggregation.",
+        "Sharp rise through multiple blue troughs into a maximum, followed by a long red decline. Structured features are distinct from the native envelope; no line identifications attempted.",
+        "Recovered blue trough and low broad continuum with a red decline. A very large native blue-edge positive excursion controls much of the vertical range.",
+        "Unanchored Fnu-corrected curve rises into a broad green hump and declines redward. Central small irregularities remain within a wide native envelope.",
+        "Recovered spectrum rises from a blue dip to a broad plateau and then declines. Native blue negatives and positive excursions dominate the edge; middle continuum is comparatively smooth."
+      ]
+    },
+    "3": {
+      "image_sha256": "76e52b88021a0dcdd843cd79df58b7dcaa471fd030a49bd7abd78bc9fc3901d5",
+      "observations": [
+        "Broad downward blue trend with repeated troughs and a flatter red shoulder. Large native red negative excursions and S/N about 2.5 limit fine-shape interpretation.",
+        "Unit is verified but the colour is explicitly unavailable/ineligible. Native flux spans large positive and negative ranges, and the mean is close to zero or negative over most of the window.",
+        "Unanchored Fnu-corrected mean has a strong broad blue-green hump and deep central trough, followed by a red decline. Native dispersion is large throughout the blue half.",
+        "Recovered curve has a small deep blue dip, a broad central maximum and a gradually descending red tail. Native scatter is broad at the short-wavelength end.",
+        "Almost monotonic decline toward the red, with shallow middle depressions. Wide native red spikes and troughs are retained; the mean is not a full noise model.",
+        "Low, nearly level broad mean beneath very wide positive and negative native flux, especially at the blue edge. S/N about two and absent photometric anchoring limit the colour interpretation.",
+        "Blue depression, short rise to a plateau and long declining red continuum. Several narrow interior deviations appear but none is identified from the binned panel.",
+        "Deep blue trough followed by a smooth broad green maximum and a strong red decline. The mean curvature is clear; positive green-channel margin is a mathematical screen quantity.",
+        "A rounded blue-green maximum is interrupted by a conspicuous central trough, then a declining red shoulder. Prior narrow-peak concern requires the newly matched original pixels/masks, not a diagnosis from this panel.",
+        "Blue trough followed by a broad modest hump and red decline. Negative native blue pixels and some isolated red extremes persist under a comparatively smooth mean.",
+        "Native excursions span roughly tens of times the normalization while the mean stays near zero; reference S/N is about 0.1. The positive Duv is not a trustworthy precision colour despite unit resolution.",
+        "Recovered spectrum rises after a blue trough to a low broad plateau and declines. Wide native red negatives and large blue-edge excursions require caution.",
+        "Recovered mean has a narrow broad-scale maximum followed by a central depression and secondary shoulder. Its broad shape is distinct, but native scatter still crosses zero at the blue edge.",
+        "Recovered spectrum shows only a small blue dip, broad flat maximum and red decline. A large blue-edge native excursion dominates the range.",
+        "Smooth monotonically descending mean after the blue edge; broad native range includes negative values at both ends. No sharp interior mean feature dominates.",
+        "Gradual redward decline with several shallow blue-middle depressions. Native envelope is narrower than in most preceding low-S/N panels, and no single extreme controls the full range."
+      ]
+    },
+    "4": {
+      "image_sha256": "6b36cb4eb7d7e27c2bd1223f0c9f138c761354f16a14c33472cb84d243b776a5",
+      "observations": [
+        "Recovered curve shows a blue trough and a modest early maximum, with a gentle red decline. The blue native extremes greatly exceed the mean.",
+        "Low broad mean rises out of the blue and declines redward. Very large native excursions at the blue edge compress the continuum; reference S/N is only about three.",
+        "Almost flat blue-green maximum followed by a red decline. Isolated high native blue spikes stand above a very broad envelope and need original-pixel quality context.",
+        "A deep blue trough is followed by a smooth broad maximum and long red decline. Central and red native ranges are much tighter than the blue-edge extremes.",
+        "Recovered broad blue-green maximum is interrupted by a middle depression, then becomes a smoother declining red shoulder. Native blue negatives remain substantial.",
+        "Unanchored mean decreases extremely steeply from the blue toward a nearly zero red tail. The large blue flux fixes the vertical scale; no physical continuum temperature is inferred.",
+        "Fairly smooth monotonic decline with shallow middle depressions. Several isolated red native excursions remain but do not dominate the mean.",
+        "Low broad Fnu-corrected plateau and red decline, with large native spikes around the middle and red end. Low S/N and red negative extremes limit precision.",
+        "Fnu-corrected unanchored continuum rises overall toward the red and contains several broad red-side troughs. Broad shape is conspicuous and requires an external calibration check.",
+        "A series of deep, relatively well-defined troughs in the blue and green, followed by a smooth red decline. Native envelope is comparatively narrow, matching the high reference S/N.",
+        "Broad rounded blue-green maximum with a deeper blue depression and steadily declining red flux. Negative native values are concentrated near the blue boundary.",
+        "Extended middle plateau and gradual red decline after a sharply depressed blue end. Several narrow interior dips persist after aggregation.",
+        "Nearly flat central continuum rises in the red through a sequence of troughs and peaks. Unanchored Fnu-corrected shape deserves physical/model and calibration comparison.",
+        "Noisy Fnu-corrected mean has repeated wide troughs across the blue and green, then a red plateau. Native scatter is large and often negative in the blue.",
+        "Fairly flat low central continuum and a modest red decline. The native blue envelope contains a high isolated excursion; fine features are weak in the mean.",
+        "Fnu-corrected mean rises steadily from a weak blue continuum to a red plateau. Native blue values are very widely spread and cross zero."
+      ]
+    },
+    "5": {
+      "image_sha256": "f747df69eca24360778908127a54e1e59e6062873aa9eecfb1ab6853bffb303f",
+      "observations": [
+        "Low-S/N Fnu-corrected hump with a conspicuous narrow middle depression; a very deep isolated native blue trough dominates the lower range. Treat the sharp features as unresolved quality questions.",
+        "Broad flat maximum through the middle, followed by a modest red decline. Native scatter is much larger at the blue end and includes isolated negative pixels.",
+        "Several blue-side troughs lead into a broad plateau and slow red decline. Narrow high native excursions in the middle exceed the smoothed curve.",
+        "Noisy blue rise into a broad central plateau, with several shallow depressions and a red decline. Negative blue pixels remain large compared with the mean.",
+        "Unanchored Fnu-corrected broad plateau then a gentle red decline. A few narrow depressions survive the means; no single large interior feature dominates.",
+        "Low, nearly level blue-green mean with a smooth declining red end. Native scatter is larger in the blue and remains substantial around small middle irregularities.",
+        "Low-S/N Fnu-corrected mean has several conspicuous blue-green troughs and an extended flatter red side. Isolated red native peaks rise far above the mean.",
+        "Recovered unanchored Fnu-corrected curve has a weak blue mean and higher red plateau. Native flux is extremely dispersed and often negative; low S/N prevents a precise shape interpretation.",
+        "Broad blue-green plateau with narrow dips and a smooth red decline. Native envelope widens strongly toward the blue boundary.",
+        "Gradually falling Fnu-corrected mean with a shallow central depression. No isolated large mean peak, but native blue excursions are substantial.",
+        "Deep narrow blue dip followed by a fairly smooth redward decrease. Native envelope widens at both ends and small red dips remain visible.",
+        "Recovered broad blue maximum transitions into a long declining red tail. Native blue extremes are larger than the smooth mean.",
+        "Blue depression followed by a modest hump, middle dip and declining red shoulder. The short-wavelength native range crosses zero substantially.",
+        "Unanchored Fnu-corrected mean declines almost monotonically through the entire window. Native blue and red excursions remain visible without one dominant interior peak.",
+        "Recovered small blue depression and broad middle maximum with a slow red decline. Broad native blue spread and isolated red extrema limit fine-structure interpretation.",
+        "Recovered deep blue trough followed by a broad maximum and decreasing red flux. Mean irregularities are largest at the red edge; source-pixel evidence is needed for any narrow feature."
+      ]
+    },
+    "6": {
+      "image_sha256": "181d0adef5142f1b7953802204b9b80a3cc2508351a09f9e02cf77b84a432b3e",
+      "observations": [
+        "High-S/N Fnu-corrected spectrum has deep, narrow-to-broad troughs and a pronounced blue-green maximum, followed by a smooth red decline. Native envelope is relatively tight over much of the central window.",
+        "Unanchored Fnu-corrected continuum is nearly level in the middle and decreases gently redward. A single very deep native blue-green excursion stands out beneath the mean.",
+        "Multiple sharp blue troughs rise into a broad maximum, with an additional middle dip and a long red decline. Central structure is clear despite edge noise.",
+        "Recovered mean is nearly featureless and slowly declining. Huge native excursions at the blue edge determine the vertical range and limit inspection of subtle central structure.",
+        "Deep blue troughs and a pronounced broad early maximum, followed by a smooth red decline. Several sharper central dips survive aggregation.",
+        "Recovered conspicuous blue dip then a low plateau and red decline. A high isolated native blue spike and broad edge ranges remain.",
+        "Fnu-corrected mean is nearly flat through the blue-green region and falls redward. Native red negatives and small central peaks exceed the smooth display line.",
+        "Unanchored broad blue maximum with several smaller depressions and a long gradual red decline. Native range is comparatively tight around the middle.",
+        "Noisy blue troughs lead into a low broad plateau and smooth red decline. Large native blue excursions include both positive and negative values.",
+        "Unanchored Fnu-corrected mean has a suspiciously straight declining segment in the red with very little displayed native spread, then an abrupt recovery. Compare original IVAR and support before using this apparent continuum.",
+        "Broad low Fnu-corrected plateau and slight red decline. Large native blue excursions and some isolated red negative values remain.",
+        "Mostly monotonic decline with irregular blue-side structure and a wide native red envelope. No unique narrow-line cause is assigned.",
+        "Recovered very flat low continuum with a gradual red decline. Native blue-edge flux has a large positive range that compresses central details.",
+        "Gradual smooth decline with weak broad undulations. The relatively narrow central native envelope widens toward both edges.",
+        "Extremely large positive and negative blue native excursions compress a low unanchored mean, which approaches zero redward. Reference S/N is below one, so the Duv is not a precision physical result.",
+        "Steadily declining continuum with a sharp blue dip and scattered smaller middle deviations. Native scatter is much larger at the edges."
+      ]
+    },
+    "7": {
+      "image_sha256": "bbd34f8e2a06974b51e54833c8a9bb0f338ac1a5dfcc2735cebfc4d116236969",
+      "observations": [
+        "Continuum declines smoothly from blue to red, with modest blue-end native spread and a shallow broad depression in the blue.",
+        "Blue-end notch followed by a steadily declining mean; native spread widens toward both endpoints, with one conspicuous blue-green excursion.",
+        "Low-S/N nearly level blue-green mean then gentle red decline; native negative excursions occur toward both ends, especially the red.",
+        "Unanchored declining mean has sizable native spread throughout; blue and red native minima cross zero.",
+        "Large positive and negative blue-end native excursions compress a comparatively quiet declining mean; the mean contains a shallow blue notch.",
+        "Fnu-converted mean has several blue undulations, a broad crest in the blue-green, then a red decline; endpoint spread is wider than the central band.",
+        "Broad blue trough and green crest precede a red decline; several blue depressions and a narrow green depression remain visible in the 40 A mean.",
+        "Unanchored Fnu-converted mean remains roughly level with a mild red decline; large native excursions and negative values persist across the band.",
+        "Fairly narrow native range accompanies a smooth falling continuum; a blue notch is visible and no isolated large excursion dominates the scale.",
+        "Deep multiple blue depressions, a broad crest around the blue-green, and another green dip are prominent in the mean; line identifications need original-grid study.",
+        "Very large blue-end native envelope contrasts with a fairly smooth declining mean; the low-S/N blue features are not precise measurements.",
+        "Fnu-converted mean has a narrow blue notch and broad blue-green crest, followed by a smooth decline; native spread is modest centrally and wider at the edges.",
+        "Steep blue endpoint and several broad blue-green depressions lead to a flatter red tail; a small localized crest near the central sky-window region needs native context.",
+        "Low-S/N mean declines gently while very large positive and negative blue-end native excursions dominate the full display range.",
+        "Multiple sharp blue depressions precede a smooth decline; native spread and negative samples are strongest at the blue edge.",
+        "Pronounced blue notch and a broad blue-green crest lead to a smooth decline; the recovered curve has a broad native envelope at the blue endpoint."
+      ]
+    },
+    "8": {
+      "image_sha256": "3344775002ae12ef6345ad631aadbce46d4b2f2103bba8a8a5115a616626a9df",
+      "observations": [
+        "Broad low-amplitude blue-green undulations sit within a wide native envelope; the redward mean declines and endpoint native samples become negative.",
+        "Blue notch followed by a broad smooth blue-green crest and steady red decline; relatively narrow native spread except at the first blue samples.",
+        "Declining mean with a small localized redward depression near the central sky-window region; large blue-end native excursion widens the full range.",
+        "Fnu-converted mean declines smoothly across the visible band with a narrow native envelope and only shallow local undulations.",
+        "Several deep blue depressions rise into a broad blue-green crest; low-S/N endpoint native spread includes large negative excursions.",
+        "Mean declines throughout; a large initial blue native excursion dominates the envelope while red native minima also become negative.",
+        "Blue notch and declining continuum are visible; native spread is strongest at the blue edge and contains a localized central excursion.",
+        "Several pronounced blue and green depressions remain in the mean around a broad crest; the red continuum declines smoothly after the final large green dip.",
+        "Steep initial blue drop transitions to a smooth declining continuum; one shallow broad blue-green depression appears within moderate native spread.",
+        "Nearly level blue-green mean turns into a red decline with a small localized redward dip; endpoints are more dispersed than the central portion.",
+        "Blue-green mean contains shallow notches and then a stronger decline toward the red; the native envelope is wide near the blue endpoint.",
+        "Unanchored S/N 1.1 curve is strongly compressed by a huge positive and negative blue-end native excursion; the small mean near zero cannot support a precise continuum-shape interpretation.",
+        "Fnu-converted mean falls steadily with several shallow blue-green depressions; native spread widens toward both ends.",
+        "Unanchored mean is nearly flat across the blue-green before declining in the red; a very broad blue native envelope reaches negative values.",
+        "Fnu-converted mean declines across the band with many small undulations; a localized green-region native excursion is visible without dominating the display.",
+        "Fnu-converted blue crest transitions to a smooth red decline; moderate native spread is wider at the blue end and around isolated central bins."
+      ]
+    },
+    "9": {
+      "image_sha256": "b0350b310df45bfdb28257178e13cb0b82d807d815c045c90ad5b26acb3976fe",
+      "observations": [
+        "Several deep blue depressions and a broad blue-green crest are clear in the mean, with another broad depression farther redward; the blue native envelope reaches negative values.",
+        "Declining mean with a shallow blue feature and a comparatively narrow central native envelope; the initial blue spread is larger.",
+        "S/N 2.8 curve has a steep blue-end decline and a flatter red tail; very large native blue excursions compress the mean in the full-range display.",
+        "Blue mean drops steeply into a broad depression before declining more gently; negative native samples and broad endpoint scatter remain visible.",
+        "Unanchored low-S/N spectrum has several blue notches and an initially high falling mean; extremely wide blue native range limits assessment of the weaker red continuum.",
+        "Prominent blue notch on a generally declining mean; central continuum is fairly smooth while native spread grows at the blue endpoint.",
+        "High-S/N declining continuum has a narrow native envelope and several shallow broad depressions in the blue-green; no single spike controls the scale.",
+        "Fnu-converted mean has shallow blue depressions and declines to the red; blue native excursions are substantially broader than the central-band spread.",
+        "Fnu-converted mean is nearly level across a broad green crest and declines gently to the red; a thin very large blue native excursion controls the vertical scale despite little corresponding mean signal.",
+        "Broad blue depression rises to a blue-green crest; the low-S/N red tail has large positive and negative native excursions and visibly noisy means.",
+        "Broad blue-green depressions punctuate a declining mean; the native envelope widens at both ends and at a few isolated central bins.",
+        "Large blue-end native range surrounds a broad blue dip followed by a relatively flat crest and gentle red decline.",
+        "Low-amplitude blue notches precede a gently declining mean; the native envelope is much broader at the blue edge than over the central continuum.",
+        "Broad depressed blue region rises to a crest before a red decline; the low-S/N blue envelope includes large negative values.",
+        "Fnu-converted curve shows several very deep blue-green depressions superposed on a declining continuum; these broad features merit original-grid and known-class context rather than an automatic new classification.",
+        "Smooth declining mean with shallow blue-green structure and modest native spread, wider near the blue endpoint."
+      ]
+    },
+    "10": {
+      "image_sha256": "2604ede51188a96495b689e30a926f20a0804d007777088ebd2df5804bb1acde",
+      "observations": [
+        "Gentle declining mean is strongly compressed by a very large initial blue native excursion; the central and red portions are comparatively quiet.",
+        "Blue notch precedes a nearly flat crest and red decline; large native spread appears at both edges in this low-S/N recovered curve.",
+        "Fnu-converted mean declines steeply from the blue and has several broad blue-green depressions; native spread is larger toward the blue.",
+        "Unanchored S/N 1.1 spectrum has enormous positive and negative blue-end native excursions and several isolated redward spikes; the near-zero mean and strong negative Duv require noise-aware follow-up.",
+        "A very deep narrow blue depression dominates the mean before a broad blue-green crest; the remainder declines smoothly, with native context required before naming the feature.",
+        "Several blue notches precede a gently declining mean; an extreme initial blue native excursion dominates the range.",
+        "Low-S/N mean declines gently while broad blue-end native excursions substantially compress the central continuum.",
+        "Unanchored declining mean contains broad blue-green depressions; red native excursions are large and intermittently cross zero.",
+        "Broad deep blue dip leads into a blue-green crest and a smooth red decline; the blue envelope contains large negative excursions.",
+        "A narrow blue dip appears on a broadly flat blue-green crest before the red decline; native spread rises markedly at the blue edge.",
+        "Blue notches and a gradually declining mean sit inside a wide native envelope; native negative values appear at both ends.",
+        "Smoothly declining mean with shallow blue-green depressions; isolated central and endpoint native excursions are visible.",
+        "Nearly flat blue-green mean with a narrow blue notch turns into a gentle red decline; the blue native range is much larger than the central range.",
+        "Two pronounced blue-green dips appear on a declining mean; large native spread and negative red samples warrant care with the apparent depressions.",
+        "Fnu-converted broad blue-green crest declines smoothly to the red; native spread narrows strongly after the blue endpoint.",
+        "Fnu-converted continuum declines with multiple shallow blue-green troughs; central native spread is moderate and the endpoints are broader."
+      ]
+    },
+    "11": {
+      "image_sha256": "a52ee0c2ae1e00eb23fe0f2dce6ce5bec0f13ff9bda2f0cef125e4e99159f0c1",
+      "observations": [
+        "Several very deep blue depressions precede a declining continuum; native spread is broadest at the blue end and includes negative values.",
+        "Fairly smooth declining continuum with small blue-green undulations and a narrow central native envelope.",
+        "A deep blue trough and smaller neighboring notch rise into a broad blue-green crest; the red continuum declines gently.",
+        "Fnu-converted declining mean contains several broad blue-green depressions and a narrower redward dip; native support is needed for precise feature descriptions.",
+        "Unanchored Fnu-converted curve declines mildly with small blue-green notches; the native spread is largest at the blue end.",
+        "Fnu-converted declining mean has two prominent blue-green troughs and shallower adjacent depressions within a wide blue native envelope.",
+        "An initial blue drop and narrow blue notch lead into a gently declining continuum; a large blue native excursion controls the upper range.",
+        "Deep broad blue depression rises to a wide crest before declining; low-S/N native spread includes substantial negative blue values.",
+        "Declining mean has a pronounced blue-green dip and smaller notches; scattered negative native excursions occur in the far red.",
+        "Extensive depressed blue structure rises sharply to a broad blue-green crest, followed by several deep green-region troughs; the broad morphology is conspicuous but requires native and prior-class validation.",
+        "A very deep blue trough and broad blue-green crest dominate the mean; the red continuum declines smoothly and the trough envelope approaches zero.",
+        "Fnu-converted mean falls steadily with shallow depressions; thin blue native excursions are much taller than the neighboring mean.",
+        "Numerous narrow blue notches and an isolated redward notch appear on a declining mean; exact feature wavelengths should be measured from the native grid.",
+        "Fnu-converted low-S/N mean has a broad green plateau with local crests and a step-like drop toward the red; broad native scatter prevents treating this as an identified line pattern.",
+        "A broad deep blue trough leads to a near-flat crest and red decline; the low-S/N far-red native envelope is wide and includes negative samples.",
+        "Several narrow depressions in blue, green and red punctuate a smooth decline; their mean visibility is stronger than most neighboring bins."
+      ]
+    },
+    "12": {
+      "image_sha256": "83464e4e155c45f0863f29c8a71e259f216a668419f3e828e94dfd4d052cd2d8",
+      "observations": [
+        "Low-S/N mean has broad blue depressions before a near-flat crest and gentle red decline; very large initial blue excursions compress the mean.",
+        "Declining mean with shallow blue notches and wide initial native spread; the central-to-red envelope narrows substantially.",
+        "Unanchored low-S/N declining mean contains several broad blue-green undulations; the blue native envelope crosses zero and is much wider than the red.",
+        "Narrow blue dip followed by a broad crest and smooth decline; blue native spread is relatively broad.",
+        "Several blue notches precede a declining mean; low-S/N native excursions include negative blue samples and scattered central spikes.",
+        "Fnu-converted continuum declines smoothly with a narrow central envelope and a wider blue-end native spread.",
+        "Large positive and negative blue-end native excursions compress a nearly flat then gently declining mean; low S/N makes the displayed continuum weak evidence.",
+        "Fnu-converted S/N 2.9 mean rises into a broad green plateau and then declines; isolated tall native spikes and negative values occur across the band.",
+        "A generally declining mean has shallow blue-green depressions; native spread broadens near the blue end and in the far red.",
+        "Multiple blue troughs rise into a broad crest before a smooth red decline; native blue values include substantial negatives.",
+        "Several small blue-green notches and a more isolated green dip punctuate a declining continuum; native support remains broadest at the blue end.",
+        "A deep blue depression and very large initial native excursion dominate the range; the central-to-red mean is comparatively smooth and gently declining.",
+        "Fine blue-green depressions sit on a shallow declining mean; very large far-red native excursions coexist with relatively quiet bin means.",
+        "Unanchored mean is broad and nearly flat in the blue-green then declines; wide native spread and a deep negative blue excursion limit precision.",
+        "Smooth declining mean with small shallow blue-green structures; the blue endpoint has much wider native spread than the central band.",
+        "Low-S/N recovered curve has a deep blue notch and very large initial blue native range; the redward mean declines gently within a smaller envelope."
+      ]
+    },
+    "13": {
+      "image_sha256": "a590039cd06d3c0097ccc93bd121c28c6ae64492fda972df3ce559546cbb8712",
+      "observations": [
+        "Several narrow blue depressions punctuate a declining continuum; native range is wider at the blue edge and narrows through the red.",
+        "A deep narrow blue trough precedes a broad crest and red decline; low-S/N blue native spread includes negative samples.",
+        "Unanchored S/N 2.1 curve has a very steep blue drop with a deep neighboring dip; extreme blue native excursions compress the central and red mean.",
+        "Declining mean with a blue notch; the broad low-S/N native envelope contains large positive and negative endpoint excursions.",
+        "Fnu-converted mean shows a sequence of deep broad blue-green troughs on a steeply declining continuum, with shallower structures farther redward.",
+        "Smooth declining mean with shallow blue-green undulations; native spread is moderate centrally and broader at the ends.",
+        "Fnu-converted falling continuum has several shallow broad depressions and a comparatively narrow native envelope.",
+        "Broad deep blue trough rises into a blue-green crest before declining; negative native values occur at both ends.",
+        "Fnu-converted mean has a narrow deep blue trough and a mild red decline; far-red native positive and negative excursions are substantially larger than the mean.",
+        "Multiple deep blue depressions precede a broad blue-green crest and smooth red decline; native blue spread remains large.",
+        "Nearly level blue-green mean with fine troughs gives way to a gentle red decline; the initial blue native excursion controls the display range.",
+        "Blue-green mean is almost level before a red decline; a large initial blue native envelope narrows rapidly after the endpoint.",
+        "Fnu-converted continuum declines smoothly with shallow blue-green features and broader native spread near the blue edge.",
+        "Fnu-converted mean has a blue-green plateau with several sharper dips before a red decline; the native envelope is wide over the blue-green section.",
+        "The frozen recipe display connects a long nearly straight redward segment with almost no native envelope, between noisy sections. Native support must be checked before interpreting that connecting line as observed continuum.",
+        "A deep blue trough leads into a broad crest and gentle red decline; the large initial blue native excursion compresses the quieter central portion."
+      ]
+    },
+    "14": {
+      "image_sha256": "92e3705ec6a30cb850d9aa64e5ac54e2575fdc6a79f4e4eb75c3a5fa842f87e6",
+      "observations": [
+        "Fnu-converted mean has a narrow deep blue dip and steady red decline; a few thin native spikes stand above the blue-green continuum.",
+        "Fnu-converted falling mean is smooth overall, with large native spread at the blue edge and scattered negative far-red excursions.",
+        "Declining mean with a noticeable blue dip; the initial blue native range is much larger than the central and red portions.",
+        "Several narrow blue-green depressions remain visible on a broad crest and declining continuum; native envelope widens again in the far red.",
+        "Unanchored Fnu-converted continuum declines smoothly with shallow blue-green structure; the central native range is narrower than the blue endpoint.",
+        "Low-S/N mean has a deep narrow blue trough followed by a modest decline; native positive and negative excursions are broad throughout, especially at the endpoints.",
+        "Extremely large positive and negative blue-end native excursions compress an otherwise gently declining mean; the native range dominates any apparent continuum precision.",
+        "Fnu-converted mean declines steadily with shallow notches; a large far-red native excursion and visually sparse final segment require native-support context.",
+        "Several deep blue depressions rise into a broad crest before a smooth red decline; blue native negative excursions are retained.",
+        "Unanchored declining continuum has several small blue-green notches; native range is greatest at the blue edge.",
+        "A deep blue notch appears on a gentle declining mean; an extreme initial blue native excursion controls the full-scale display.",
+        "Low-S/N declining mean is accompanied by a very wide blue native envelope with negative samples; redward bins are more compact.",
+        "A narrow very deep blue dip precedes a broad crest and red decline; broad native blue spread makes the exact trough depth uncertain.",
+        "Fnu-converted mean decreases smoothly with shallow blue-green undulations; the native envelope broadens strongly at the blue endpoint.",
+        "Fnu-converted falling mean has broad shallow blue-green troughs and fairly narrow central native spread.",
+        "Deep broad blue depression and smaller neighboring notches lead to a blue-green crest; the central-to-red continuum declines gently within a much smaller envelope than the blue endpoint."
+      ]
+    },
+    "15": {
+      "image_sha256": "564ae7984858f9da16c646f65ce085fc342156aa5b5956f9805da9f47c7a3cf8",
+      "observations": [
+        "A deep blue notch follows an initial drop; the low-S/N mean then declines with wide native spread and negative endpoint excursions.",
+        "A very deep narrow blue trough rises into a broad blue-green crest, followed by a smooth red decline; the blue native envelope remains broad.",
+        "Fnu-converted declining mean contains fine blue structure; very tall thin blue native excursions stand above the comparatively quiet red continuum.",
+        "Broad depressed blue structure leads into a wide crest; a huge initial native excursion compresses the central-to-red mean.",
+        "A narrow deep blue depression precedes a broad crest and smooth decline; the native range is broader over the blue-green portion.",
+        "Unanchored declining continuum has several narrow blue and green dips; the initial blue native envelope is much wider than the red.",
+        "Unanchored mean declines with several shallow blue-green structures; broad native spread persists throughout and increases at some far-red bins.",
+        "Fnu-converted mean shows multiple deep narrow blue notches and an isolated green dip; thin blue native extremes are substantial.",
+        "Several conspicuous narrow blue and green depressions appear in the Fnu-converted mean, followed by a small central step and smoother red decline.",
+        "Low-S/N mean has a deep blue trough and broadly flat crest before declining; native red excursions are large despite small bin-mean fluctuations.",
+        "Fnu-converted mean declines mildly with many shallow notches; a few thin central and far-red native excursions are larger than the neighboring mean.",
+        "Fnu-converted continuum declines smoothly with a narrow central envelope and shallow blue-green features.",
+        "Blue-green mean is almost flat and visibly notched before a red decline; native scatter is broad near the blue edge and remains material in the red.",
+        "High-S/N Fnu-converted spectrum has several very deep narrow blue/green/red depressions on a smooth continuum; the narrow continuum envelope supports the visible morphology but does not itself establish novelty.",
+        "Fnu-converted mean retains a series of deep narrow blue/green troughs and an isolated redward dip; continuum spread is comparatively narrow centrally.",
+        "Fnu-converted declining mean has shallow broad blue-green depressions; native spread is greatest at the blue edge and rises in the far red."
+      ]
+    },
+    "16": {
+      "image_sha256": "1d150ec21df7263e7dad64422ddc36e5200971236aef78354ecbcab64ee883d4",
+      "observations": [
+        "Several deep narrow blue/green depressions and a separate redward trough punctuate a declining continuum; the central native envelope is comparatively narrow.",
+        "Fnu-converted smooth decline has a narrow native envelope and shallow broad blue-green features; no large isolated excursion dominates the scale.",
+        "Fnu-converted spectrum has a sequence of deep narrow blue/green troughs and an isolated redward dip on a well-defined declining continuum.",
+        "A declining mean contains shallow broad blue-green undulations; native spread is broader at the blue endpoint and in the far red.",
+        "Mean declines steadily with small blue notches and moderate central spread; a few narrow native spikes are visible.",
+        "Steep blue decline transitions to a smooth red tail with a narrow envelope; the blue endpoint and one adjacent native bin have larger excursions.",
+        "Unanchored Fnu-converted continuum declines smoothly with shallow local structures and broader native spread at the blue edge.",
+        "Low-S/N mean has a blue notch before a gentle decline; very large positive and negative initial native excursions compress the rest of the curve.",
+        "Declining mean with shallow blue-green depressions and a relatively compact central envelope; isolated redward native excursions are visible.",
+        "A deep narrow blue trough leads into a broad crest; wide low-S/N native spread includes negative endpoint samples.",
+        "Fnu-converted mean is broadly flat in the blue-green with several notches before declining; blue native excursions include substantial negative values.",
+        "Fnu-converted curve has multiple deep narrow blue/green depressions and a small redward dip; the continuum shape is clearly defined within a moderate native envelope.",
+        "Steep declining continuum with numerous shallow blue-green undulations; native spread is large toward the blue and in some far-red bins.",
+        "Smooth steep decline with a narrow native envelope over most of the band; shallow blue-green structure is visible.",
+        "A deep narrow blue trough precedes a broad crest and red decline; native spread is wide and has scattered tall redward excursions.",
+        "Low-S/N mean declines with a small blue notch; an extreme initial native envelope controls the vertical range and limits continuum precision."
+      ]
+    },
+    "17": {
+      "image_sha256": "c32f401a9e28e3b7740c8b163661020128e78b0308d8c2c852a8edcaff4e2ad7",
+      "observations": [
+        "Fnu-converted spectrum has a broad nearly level blue-green crest with numerous deep narrow troughs and an isolated redward dip; the red tail declines only gently.",
+        "Steep, smooth declining continuum with a narrow native envelope through most of the band; only shallow blue-green structure is evident.",
+        "Fnu-converted S/N 2.9 mean has a deep blue trough and gently declining crest; wide native spread and negative endpoint excursions limit precision.",
+        "A very deep narrow blue trough is followed by a broad high crest and declining continuum; the first blue native values include negative flux.",
+        "Fnu-converted curve shows several deep narrow blue/green and red depressions on a smoothly falling, fairly narrow continuum envelope.",
+        "Declining continuum with shallow broad blue-green dips and compact central native spread; blue endpoint scatter is wider.",
+        "Fnu-converted mean falls steadily with small shallow notches; the blue native range is broader than the red.",
+        "Fnu-converted smooth decline has a narrow envelope and subtle blue-green features; no single native excursion controls the range.",
+        "Steep initial decline gradually flattens redward; small blue-green depressions are visible within moderate native spread.",
+        "Fnu-converted continuum falls steadily with shallow broad blue-green depressions; isolated far-red native excursions are larger than the mean changes.",
+        "A very deep narrow blue trough and broad blue-green crest are clearly defined in the high-S/N Fnu-converted curve; the red tail is smooth and narrow.",
+        "Broad blue-green shape changes occur along a smooth decline; the native envelope remains moderate and widens at the blue edge.",
+        "Unanchored continuum declines with shallow blue-green structure; blue native spread is larger than the central and red portions.",
+        "Low-S/N Fnu-converted mean shows a narrow blue dip followed by a gently declining plateau; wide native spread contains negative values across several regions.",
+        "Fnu-converted mean decreases smoothly with shallow broad blue-green dips and a relatively compact red envelope.",
+        "Fnu-converted continuum contains a sequence of deep narrow blue/green troughs plus a distinct redward dip; the smoother intervals have relatively narrow native spread."
+      ]
+    },
+    "18": {
+      "image_sha256": "1b3d7f2bb79f4d46dfe487b1e6b5e337efb90118d18509c24330d2cb8eae53d9",
+      "observations": [
+        "A blue notch and shallow declining mean sit inside a broad initial native envelope; the central and red range is narrower.",
+        "Fnu-converted continuum falls smoothly with shallow blue-green structure and modest native spread, widest near the blue edge.",
+        "Low-S/N Fnu-converted mean has multiple broad blue-green depressions and a small central crest; the native envelope is broad and includes negative samples.",
+        "Fnu-converted high-S/N continuum declines smoothly; central and red native envelopes are narrow, with only small broad blue-green deviations.",
+        "Unanchored S/N 3.7 mean declines steeply from the blue; several thin central native spikes and negative values are visible without a clear line interpretation.",
+        "Fnu-converted continuum declines smoothly with shallow broad blue-green troughs and a narrow native envelope over much of the range.",
+        "Fnu-converted mean has a broad nearly level blue-green crest before a decline; the large initial native envelope includes negative samples.",
+        "Fnu-converted blue notch precedes a broad crest and smooth red decline; native spread is relatively compact outside the blue endpoint.",
+        "Gentle declining mean with subtle blue structure is compressed by a very large initial native excursion; central-to-red spread is much smaller.",
+        "A narrow deep blue trough appears on a falling Fnu-converted continuum; native spread is broadest near the blue and has a few redward spikes.",
+        "A very deep narrow blue trough leads to a broad crest and smooth decline; the native envelope widens at the blue edge and in the far red.",
+        "Fnu-converted curve retains several deep narrow blue/green troughs and isolated redward depressions; the mean between features declines smoothly.",
+        "Steep declining mean has shallow blue-green undulations; native spread narrows substantially after the initial blue samples.",
+        "Unanchored low-S/N continuum declines with modest blue-green undulations; the blue native envelope is broad and includes negative values.",
+        "Steep smooth decline with shallow blue-green structures and a relatively narrow central native envelope.",
+        "Gently declining mean with small blue features is strongly compressed by a huge initial native excursion; the central and red portions are comparatively quiet."
+      ]
+    },
+    "19": {
+      "image_sha256": "6434103e90048481469928fc66daa76845015d7aedf7716695b426829a454284",
+      "observations": [
+        "Unanchored continuum declines steadily with shallow blue-green undulations; blue native spread is wider and contains a few isolated high bins.",
+        "Fnu-converted mean has several deep narrow blue/green troughs and an isolated redward depression on a declining continuum; native spread broadens in the far red.",
+        "Smoothly declining high-S/N mean contains shallow broad blue-green structure; the central native envelope is narrow.",
+        "High-S/N Fnu-converted spectrum shows a sequence of deep narrow blue/green troughs and a distinct redward dip on a well-defined declining continuum.",
+        "A complicated blue shape includes multiple deep troughs and a broad crest; another deep green trough and narrower redward dip remain visible in the mean.",
+        "Unanchored mean has a deep blue trough between an initial steep drop and a broad crest; the red continuum declines smoothly.",
+        "Declining continuum with shallow broad blue-green depressions; native spread is broad over the blue region and includes negative endpoint samples.",
+        "Unanchored Fnu-converted curve retains multiple very deep narrow blue/green depressions and an isolated redward dip; the continuum between them is comparatively smooth.",
+        "Steep blue decline transitions to a gentle red tail with a fairly narrow central native envelope.",
+        "Unanchored declining mean has small blue-green undulations; isolated tall native spikes and negative values appear in the far red.",
+        "Fnu-converted continuum falls steadily with shallow blue-green notches and modest central native spread.",
+        "Steep initial blue decline followed by a flatter red tail; small broad blue-green structures occur within moderate native spread.",
+        "Smooth declining mean with shallow blue-green structure and a compact central envelope; the initial blue native range is wider.",
+        "A deep narrow blue trough precedes a broad crest and red decline; native scatter is wide at the blue edge and around some redward bins.",
+        "A deep blue trough appears before a gently declining mean; the blue native envelope is broad and includes substantial negatives.",
+        "Fnu-converted mean declines with several shallow blue-green troughs; native spread is broader at the blue edge and grows at isolated central bins."
+      ]
+    },
+    "20": {
+      "image_sha256": "29a58ed6c14d0461393fcdda2e6f504fe53d1a1b40db9239ee735f7bd10f47e2",
+      "observations": [
+        "Steeply declining mean has shallow blue-green undulations; the native envelope is broad at the blue end and around a few far-red bins.",
+        "Smooth high-S/N continuum declines across the visible band with a narrow native envelope and only weak broad structure.",
+        "Unanchored mean has several blue/green depressions with narrow positive cores or peaks and a prominent isolated redward positive peak. The features require native-mask and known-class checks; the display alone cannot establish their origin.",
+        "A very deep narrow blue trough precedes a broad crest and smooth decline; high-S/N central and red continuum envelopes are narrow.",
+        "Unanchored Fnu-converted mean falls smoothly with broad shallow blue-green features and modest native spread.",
+        "Fnu-converted narrow blue trough precedes a crest and smooth red decline; native spread is largest at the blue endpoint.",
+        "Steep declining mean has shallow blue-green structure and a narrow central envelope; initial blue native excursions are larger.",
+        "Low-S/N declining mean has numerous shallow undulations; native positive and negative excursions persist across the band and increase toward the ends.",
+        "A very steep first blue bin transitions to a smooth decline; the broad initial native envelope is much larger than the central-to-red range.",
+        "Steep smooth decline with a narrow central native envelope; shallow blue-green structure is retained.",
+        "Smooth falling continuum has shallow broad blue-green dips and modest native spread, without one dominant isolated excursion.",
+        "Low-S/N mean contains several blue and green depressions on a gentle decline; native range is broad and includes negative endpoint samples.",
+        "Steep smooth high-S/N decline transitions to a flat red tail; native spread is narrow through most of the band.",
+        "Low-S/N mean has a broad blue trough and crest before declining; large native negative excursions at both ends limit precision.",
+        "Unanchored Fnu-converted declining mean has shallow undulations and a tall thin blue native excursion that is much larger than the corresponding mean.",
+        "A narrow deep blue trough precedes a broad crest and red decline; the low-S/N native envelope is broadest at the blue edge and reaches negative values."
+      ]
+    }
+  }
+}

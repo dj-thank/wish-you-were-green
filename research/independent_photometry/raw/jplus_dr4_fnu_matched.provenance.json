@@ -1,0 +1,16 @@
+{
+  "url": "https://archive.cefca.es/catalogues/vo/tap/jplus-dr4/sync",
+  "query_parameters": {
+    "REQUEST": "doQuery",
+    "LANG": "ADQL",
+    "FORMAT": "csv",
+    "MAXREC": "10000",
+    "QUERY": "SELECT * FROM jplus.FNuDualObj WHERE (tile_id=189546 AND number=11702) OR (tile_id=195416 AND number=23209) OR (tile_id=203756 AND number=17880) OR (tile_id=204954 AND number=27502) OR (tile_id=194779 AND number=16873) OR (tile_id=202447 AND number=19243) OR (tile_id=214636 AND number=21326)"
+  },
+  "final_url": "https://archive.cefca.es/catalogues/vo/tap/jplus-dr4/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&MAXREC=10000&QUERY=SELECT+%2A+FROM+jplus.FNuDualObj+WHERE+%28tile_id%3D189546+AND+number%3D11702%29+OR+%28tile_id%3D195416+AND+number%3D23209%29+OR+%28tile_id%3D203756+AND+number%3D17880%29+OR+%28tile_id%3D204954+AND+number%3D27502%29+OR+%28tile_id%3D194779+AND+number%3D16873%29+OR+%28tile_id%3D202447+AND+number%3D19243%29+OR+%28tile_id%3D214636+AND+number%3D21326%29",
+  "retrieved_utc": "2026-10-19T23:34:41.073907+00:00",
+  "http_status": 200,
+  "content_type": "text/csv; charset=UTF-8",
+  "size_bytes": 26536,
+  "sha256": "1e4385631935f1ea4aa1390310f148df791784f30c81c020053d0ba4b5a54ebe"
+}

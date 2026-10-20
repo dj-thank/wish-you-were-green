@@ -1,0 +1,49 @@
+{
+  "review_type": "Actual viewing of each final PNG with view_image; individual plot content and legibility checked. SVGs share the plotting code and are hashed but were not independently rendered for this review.",
+  "reviewer": "ChatGPT-assisted review; not independent astronomical peer review",
+  "recorded_utc": "2026-10-19T23:53:43.540397+00:00",
+  "figures": [
+    {
+      "stem": "desi_2482684508055379584",
+      "png_sha256": "4840388f4f065523a190325303f9508b1bffa52ed3cfe3b64f9c6c7fd0e65928",
+      "actually_viewed": true,
+      "observation": "Both spectra repeat the broad blue troughs and red decline. The signed difference is most negative at the blue endpoint; the separately anchored z difference is larger. Final labels, legend, negative differences and noise ranges are legible. Broad visual agreement alone cannot assign the cause of the residual shape."
+    },
+    {
+      "stem": "desi_1078624858218235776",
+      "png_sha256": "8e1c6e77d6cee093fc0bb69fa2bf4001aec911d8ebac440f529329d61832ad6b",
+      "actually_viewed": true,
+      "observation": "Blue flux approaches zero and a negative bin is retained. Different spline spaces diverge sharply in that region; the final plot explicitly flags nonpositive unconstrained multipliers. Shared-gri fits leave a larger z difference. The large fractional amplitudes are weakly constrained and do not establish a calibration error or intrinsic variability."
+    },
+    {
+      "stem": "desi_1691957732959636608",
+      "png_sha256": "656db347173bc07d4dcfb33db9e1118cdfc7e0c5de4a2f9ddac52ac959e0bbfe",
+      "actually_viewed": true,
+      "observation": "Redward continua overlap closely; blue structured regions show sizable signed scatter and large error bars. The blue-end smooth projection depends on knot spacing, and z disagreement increases after shared-gri fitting. The displayed supplied-pixel band is conditional and cannot settle the physical cause."
+    },
+    {
+      "stem": "desi_3711047662972690688",
+      "png_sha256": "e28e3b66196275f5776c6552f8f378d3d1f77ad0decb2776779509de0be6ef7e",
+      "actually_viewed": true,
+      "observation": "Both inputs contain repeated broad troughs, with lower second-observation blue continuum and close red agreement. The wavelength axis stops near 7570 A. Missing i/z and full colour are explicitly retained in the right panel; no continuation is plotted. The partial spectral domain limits comparisons with complete objects."
+    },
+    {
+      "stem": "sdss_3646912496889350784",
+      "png_sha256": "03aa98916dcef74fc14289d2b7a0beb1b15d6f9082ac4e5e50c71334b1814425",
+      "actually_viewed": true,
+      "observation": "A strong archive blue-to-red tilt appears between the two coadds. All three spline spaces show this broad difference; separate shared-gri fits reduce the tilt but retain curvature and z disagreement. Final title/legend explicitly say two disjoint coadd sets, five nights and 18 physical exposures. All y labels are now visible after the layout correction; the plot does not assign a physical or instrumental cause."
+    },
+    {
+      "stem": "repeat_shape_summary",
+      "png_sha256": "43bd2db466f3704965aeab97f33ec633565eb79e8a67e8b327e96e86883336d3",
+      "actually_viewed": true,
+      "observation": "All five selected pairs are present, with unavailable J1329 processing/null entries left blank and its different domain labelled. The top legend no longer covers the J1105 supplied-pixel range. RMS, synthetic-null components and limitations are readable; the figure explicitly identifies the sample as purposively selected, not a survey error population."
+    },
+    {
+      "stem": "sdss_exposure_conditions",
+      "png_sha256": "38601991923e8a6928d3309d278827970fd923e94a2e5628924137c3d6429beb",
+      "actually_viewed": true,
+      "observation": "The 18 source-header points form distinct night groups. The second coadd includes larger seeing and airmass values; SEEING50 is explicitly labelled in arcseconds. The footer identifies bounded header prefixes and states that these conditions do not quantitatively explain the spectral discrepancy."
+    }
+  ]
+}

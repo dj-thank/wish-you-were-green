@@ -1,0 +1,96 @@
+table_name,description
+dr3.master,"SkyMapper Data Release 3 - MAIN TABLE: Primary table of mean astrometric, photometric and shape measurements per object, with cross-match information to external tables."
+dr3.photometry,"SkyMapper Data Release 3 - Table of individual photometric, astrometric and shape measurements for every detection. Can be joined against the master table using the object_id column."
+dr3.images,SkyMapper Data Release 3 - Table of exposures and telescope information.
+dr3.ccds,SkyMapper Data Release 3 - Table of CCD-specific exposure information.
+dr3.mosaic,SkyMapper Data Release 3 - Table of CCD positions within the mosaic.
+ext.milliquas_v6p2b,"Milliquas catalogue, V6.2b. Extra columns give closest SkyMapper matches from each data release."
+ext.des_dr1,Dark Energy Survey (DES) Data Release 1 - Main table (NOAO Data Lab version)
+ext.atlas_dr4,VST ATLAS Data Release 4 - atlasSource table (ESO version)
+TAP_SCHEMA.columns,The required TAP metadata COLUMNS table
+TAP_SCHEMA.tables,The parameters of the TAP services tables
+TAP_SCHEMA.keys,The required TAP keys table
+TAP_SCHEMA.schemas,The names of the TAP services schemas
+TAP_SCHEMA.key_columns,The required TAP key_columns table
+ext.vhs_dr6,VISTA Hemisphere Survey (VHS) Data Release 6 - vhsSource table (VSA version)
+ext.spec_gama_dr3,Galaxy and Mass Assembly (GAMA) Survey Data Release 3 - SpecObj table
+ext.spec_ozdes_dr1,OzDES Data Release 1
+ext.viking_dr5,VISTA Kilo-degree Infrared Galaxy (VIKING) Survey Data Release 5 - vikingSource table (VSA version)
+ext.vsx_20190930,"AAVSO International Variable Star Index (Watson et al. 2006, 2017). 2019-09-30 version.  Extra columns give closest SkyMapper matches from each data release."
+ext.spec_rave_dr5,Radial Velocity Experiment (RAVE) Data Release 5
+ext.gaia_edr3,"Gaia Early Data Release 3, gaia_source table (Gaia Collaboration, et al. 2020)"
+ext.milliquas_v6p4b,"Milliquas catalogue v6.4b, 2019 update (Flesch 2015). Extra columns give closest SkyMapper match from each data release."
+ext.twomass_psc,Two Micron All Sky Survey (2MASS) Point Source Catalogue (PSC).
+ext.twomass_scn,Two Micron All Sky Survey (2MASS) Scan Table.
+ext.milliquas_v7p1,"Milliquas catalogue, V7.1. Extra columns give closest SkyMapper matches from each data release and 2 closest Gaia eDR3 matches."
+ext.spec_hesqso,"Hamburg/ESO survey for bright QSOs. III. (Wisotzki+, 2000). Extra columns give closest SkyMapper matches from each data release."
+ext.galex_bcscat_ais,BCS Catalog of Unique GALEX Sources - AIS
+ext.galex_bcscat_mis,BCS Catalog of Unique GALEX Sources - MIS
+ext.yale_bsc,"Yale Bright Star Catalogue, 5th Revised Ed."
+ext.spec_6dfgs,6 Degree Field Galaxy Survey (6dFGS). Extra columns give closest SkyMapper match from each data release.
+ext.spec_2dfgrs,2 Degree Field Galaxy Redshift Survey (2dFGRS). Extra columns give closest SkyMapper match from each data release.
+ext.ps1_dr1,"Pan-STARRS1 DR1 catalog, select columns for decMean less than +20 and nDetections greater than 1."
+ext.ucac4,Fourth U.S. Naval Observatory CCD Astrograph Catalog (UCAC4).
+ext.twomass_xsc,Two Micron All Sky Survey (2MASS) Extended Source Catalogue (XSC).
+ext.allwise,NASA Widefield Infrared Survey Explorer (WISE) AllWISE data release.
+ext.vsx,"AAVSO International Variable Star Index (Watson et al. 2006, 2017)."
+ext.spec_galah_dr2p1,GALAH DR2.1 catalogue. Extra columns give closest SkyMapper matches from each data release.
+ext.gaia_dr2,"Gaia Data Release 2, gaia_source table (Gaia Collaboration, et al. 2018)"
+ext.gaia_dr1,Gaia DR1
+ext.apass_dr9,AAVSO Photometric All Sky Survey (APASS) DR9.
+ext.milliquas_v5p7,"Milliquas catalogue, V5.7. Extra columns give closest SkyMapper matches from each data release."
+ext.spec_2dflens,"The 2-degree Field Lensing Survey (2dFLenS; Blake+, 2000). Extra columns give closest SkyMapper matches from each data release."
+ext.galex_guvcat_ais,"GALEX catalogs of unique UV sources - AIS (Bianchi+, 2017). Version fov055, with a 1.1deg diameter per field."
+ext.refcat2,"The ATLAS All-Sky Stellar Reference Catalog (Tonry+, 2018)"
+dr1.master,"SkyMapper Data Release 1 - LATEST UPDATE (DR1.1) - MAIN TABLE: Primary table of mean astrometric, photometric and shape measurements per object, with cross-match information to external tables."
+edr.ccds,SkyMapper Early Data Release - Table of CCD-specific exposure information.
+dr1.images,SkyMapper Data Release 1 - LATEST UPDATE (DR1.1) - Table of exposures and telescope information.
+edr.master,"SkyMapper Early Data Release - MAIN TABLE: Primary table of mean astrometric, photometric and shape measurements per object, with cross-match information to external tables."
+edr.images,SkyMapper Early Data Release - Table of exposures and telescope information.
+edr.fs_photometry,"SkyMapper Early Data Release - Table of individual photometric, astrometric and shape measurements for every detection. Can be joined against the master table using the object_id and in_master columns."
+dr1.mosaic,SkyMapper Data Release 1 - Table of CCD positions in the mosaic.
+dr1.dr1p0_master,"SkyMapper Data Release 1.0 - MAIN TABLE: Primary table of mean astrometric, photometric and shape measurements per object, with cross-match information to external tables."
+dr1.dr1p0_fs_photometry,"SkyMapper Data Release 1.0 - Table of individual photometric, astrometric and shape measurements for every detection. Can be joined against the master table using the object_id column."
+dr1.dr1p0_images,SkyMapper Data Release 1.0 - Table of exposures and telescope information.
+dr1.dr1p0_ccds,SkyMapper Data Release 1.0 - Table of CCD-specific exposure information.
+ext.spec_2qz6qz,2dF and 6dF QSO Redshift Surveys. Extra columns give closest SkyMapper match from each data release.
+dr1.dr1p1_master,"SkyMapper Data Release 1.1 - MAIN TABLE: Primary table of mean astrometric, photometric and shape measurements per object, with cross-match information to external tables."
+dr1.dr1p1_fs_photometry,"SkyMapper Data Release 1.1 - Table of individual photometric, astrometric and shape measurements for every detection. Can be joined against the master table using the object_id column."
+dr1.dr1p1_images,SkyMapper Data Release 1.1 - Table of exposures and telescope information.
+dr1.dr1p1_ccds,SkyMapper Data Release 1.1 - Table of CCD-specific exposure information.
+dr1.fs_photometry,"SkyMapper Data Release 1 - LATEST UPDATE (DR1.1) - Table of individual photometric, astrometric and shape measurements for every detection. Can be joined against the master table using the object_id column."
+dr1.ccds,SkyMapper Data Release 1 - LATEST UPDATE (DR1.1) - Table of CCD-specific exposure information.
+tdr.master,SkyMapper Test Data Release - MAIN TABLE: Primary table of mean astrometric and photometric measurements
+tdr.ids,SkyMapper Test Data Release - Table of individual object and image IDs combined into the master photometry table
+tdr.images,SkyMapper Test Data Release - Table of exposures and telescope information
+tdr.fs_photometry,"SkyMapper Test Data Release - Table of individual image photometric, astrometric and shape measurements"
+dr2.master,"SkyMapper Data Release 2 - MAIN TABLE: Primary table of mean astrometric, photometric and shape measurements per object, with cross-match information to external tables."
+dr2.photometry,"SkyMapper Data Release 2 - Table of individual photometric, astrometric and shape measurements for every detection. Can be joined against the master table using the object_id column."
+dr2.images,SkyMapper Data Release 2 - Table of exposures and telescope information.
+dr2.ccds,SkyMapper Data Release 2 - Table of CCD-specific exposure information.
+dr2.mosaic,SkyMapper Data Release 2 - Table of CCD positions within the mosaic.
+ext.spec_twomrs,"The 2MASS Redshift Survey (Huchra+, 2012)"
+dr3.master_sed,External multiwavelength photometry for SkyMapper Data Release 3 objects
+ext.milliquas_v7p5,Milliquas v7.5 (2022) update (Flesch 2022). Extra columns give closest SkyMapper matches from each data release.
+ext.spec_anu2p3,Catalog of spectroscopic classifications from WiFeS observations on the ANU 2.3m.
+ext.gaia_dr3,Gaia Data Release 3 gaia_source table. Extra columns give closest matches to other Gaia DR3 sources.
+ext.catwise2020,CatWISE2020 Catalog
+ext.des_dr2,Dark Energy Survey (DES) Data Release 2 - Main table (NOIRLab Astro Data Lab version)
+ext.ls_dr9,DESI Legacy Imaging Surveys (LS) Data Release 9 - Sweep Catalogs
+ext.nsc_dr2,NOIRLab Source Catalog Data Release 2 - object table
+ext.splus_dr3,Southern Photometric Local Universe (S-PLUS) Survey Data Release 3
+ext.spec_galah_dr3,GALAH DR3 catalogue. Extra columns give closest SkyMapper matches from each data release.
+ext.spec_ozdes_dr2,OzDES Data Release 2
+ext.milliquas_v7p10,The Million Quasars (Milliquas) catalog v7.10
+ext.vsx_20230626,"The AAVSO International Variable Star Index, version 2023-06-26"
+dr4.master,"SkyMapper Data Release 4 - MAIN TABLE: Primary table of mean astrometric, photometric and shape measurements per object, with cross-match information to external tables."
+dr4.photometry,"SkyMapper Data Release 4 - Table of individual photometric, astrometric and shape measurements for every detection. Can be joined against the master table using the object_id column."
+dr4.images,SkyMapper Data Release 4 - Table of exposures and telescope information.
+dr4.ccds,SkyMapper Data Release 4 - Table of CCD-specific exposure information.
+dr4.mosaic,SkyMapper Data Release 4 - Table of CCD positions within the mosaic.
+ext.milliquas_v8,The Million Quasars (Milliquas) catalog v8
+ext.spec_rave_dr6,Radial Velocity Experiment (RAVE) Data Release 6
+ext.kids_dr4p1,Kilo-Degree Survey (KiDS) DR4.1 multi-band catalogue. Extra columns give closest SkyMapper matches from each data release.
+dr4.master_sed,External multiwavelength photometry for SkyMapper Data Release 4 objects
+ext.ls_dr10p1,DESI Legacy Imaging Surveys (LS) Data Release 10.1 - Sweep Catalogs (south only; see DR9 for north)
+ext.spec_desi_dr1,"Dark Energy Spectroscopic Instrument (DESI) DR1 redshift catalog v1, zall-tilecumulative-iron table."

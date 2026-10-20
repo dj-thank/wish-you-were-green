@@ -1,0 +1,45 @@
+{
+  "cohort": "Fixed 25 candidates in the prior PS1 standardized derivative manifest",
+  "cohort_count": 25,
+  "measurement_slots": 450,
+  "catalogue_identity_rows": 33,
+  "selected_identity_count": 17,
+  "rejected_catalogue_rows": 16,
+  "matched_objects_by_survey": {
+    "JPLUS_DR4": 7,
+    "SkyMapper_DR4": 10
+  },
+  "strict_adopted_measurements": {
+    "JPLUS_DR4": 32,
+    "SkyMapper_DR4": 20
+  },
+  "strict_adopted_total": 52,
+  "sources_with_any_adopted_measurement": 14,
+  "skymapper_raw_detection_rows": 110,
+  "gaia_field_radius_arcsec": 15.0,
+  "gaia_field_unique_rows": 30,
+  "jplus_ab_from_original_fnu_max_difference_mag": 5.0291867768947895e-05,
+  "jplus_error_from_original_relative_flux_max_difference_mag": 4.962156680646951e-05,
+  "quality_policy": {
+    "match_arcsec": 1.0,
+    "max_recommended_mag_error": 0.1,
+    "common": "Exact decimal Gaia association plus proper-motion corrected position; no colour residual cut.",
+    "skymapper": "At least two good exposures, all included source flags and masked-pixel counts zero, PSF-neighbour bit clear.",
+    "jplus": "At least two exposures, source/mask/tile/known-variability flags zero, single-band detection present, relative weight >=0.8.",
+    "zeropoints": "SkyMapper: catalogue error unchanged. J-PLUS: abs_zp_offset_err added in quadrature as instructed; published offsets already applied."
+  },
+  "limitations": [
+    "Different source photons do not imply independent zero-point calibration.",
+    "Both surveys use Gaia XP calibration stars; J-PLUS also uses a WD locus and PS1 r global anchor.",
+    "Quoted/error-box constraints are not independent Gaussian confidence regions.",
+    "Survey absence and magnitude sentinel 99 are not quantitative flux upper limits.",
+    "Catalogue flags and aperture comparisons do not substitute for an image-level PSF contamination model.",
+    "Passband coverage and synthetic photometry are evaluated separately; no extrapolation is done here."
+  ],
+  "upstream_input_sha256": {
+    "research/precision/candidate_recalibration/derivative_manifest.json": "616fe0c42d9e54db5162213d49660b2274f517c13040c44e081adc364616a5d3",
+    "research/external_validation/raw/gaia_dr3_extended_targets.csv": "889b70d3c4cb6dc129d58784742ba358e9da873e3195d5f835a6363d1978d1e1"
+  },
+  "raw_response_count": 140,
+  "splus_query_failures_not_nondetections": 25
+}

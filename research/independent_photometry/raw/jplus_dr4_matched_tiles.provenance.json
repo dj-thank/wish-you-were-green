@@ -1,0 +1,16 @@
+{
+  "url": "https://archive.cefca.es/catalogues/vo/tap/jplus-dr4/sync",
+  "query_parameters": {
+    "REQUEST": "doQuery",
+    "LANG": "ADQL",
+    "FORMAT": "csv",
+    "MAXREC": "10000",
+    "QUERY": "SELECT * FROM jplus.TileImage WHERE ref_tile_id IN (189546,195416,203756,204954,194779,202447,214636) OR tile_id IN (189546,195416,203756,204954,194779,202447,214636)"
+  },
+  "final_url": "https://archive.cefca.es/catalogues/vo/tap/jplus-dr4/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&MAXREC=10000&QUERY=SELECT+%2A+FROM+jplus.TileImage+WHERE+ref_tile_id+IN+%28189546%2C195416%2C203756%2C204954%2C194779%2C202447%2C214636%29+OR+tile_id+IN+%28189546%2C195416%2C203756%2C204954%2C194779%2C202447%2C214636%29",
+  "retrieved_utc": "2026-10-19T23:32:32.695735+00:00",
+  "http_status": 200,
+  "content_type": "text/csv; charset=UTF-8",
+  "size_bytes": 32809,
+  "sha256": "33211ee76d4af1cae929d6afe88bb334ad4778fc3b059ace979a1f5619bbf477"
+}

@@ -1,0 +1,16 @@
+{
+  "url": "https://api.skymapper.nci.org.au/public/tap/sync",
+  "query_parameters": {
+    "REQUEST": "doQuery",
+    "LANG": "ADQL",
+    "FORMAT": "csv",
+    "QUERY": "SELECT TOP 10000 p.*, i.date AS exposure_mjd, i.exp_time AS exposure_seconds, i.airmass, i.fwhm_mean AS image_fwhm_pixels, i.zp_rms, i.img_qual AS image_quality FROM dr4.photometry AS p JOIN dr4.images AS i ON p.image_id=i.image_id WHERE p.object_id IN (1022938730,107990965,107990969,1140070267,1140146541,1140213270,13842569,14389399,16976094,24884480,92749468)",
+    "MAXREC": "10000"
+  },
+  "final_url": "https://api.skymapper.nci.org.au/public/tap/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=SELECT+TOP+10000+p.%2A%2C+i.date+AS+exposure_mjd%2C+i.exp_time+AS+exposure_seconds%2C+i.airmass%2C+i.fwhm_mean+AS+image_fwhm_pixels%2C+i.zp_rms%2C+i.img_qual+AS+image_quality+FROM+dr4.photometry+AS+p+JOIN+dr4.images+AS+i+ON+p.image_id%3Di.image_id+WHERE+p.object_id+IN+%281022938730%2C107990965%2C107990969%2C1140070267%2C1140146541%2C1140213270%2C13842569%2C14389399%2C16976094%2C24884480%2C92749468%29&MAXREC=10000",
+  "retrieved_utc": "2026-10-19T23:25:36.427232+00:00",
+  "http_status": 200,
+  "content_type": "text/csv;header=present;charset=ISO-8859-1",
+  "size_bytes": 76696,
+  "sha256": "7cf8308c3b3cdb2a3ba7f6a4d4977c1b5a53df4cf4296dd4cdcca84c262d37ae"
+}

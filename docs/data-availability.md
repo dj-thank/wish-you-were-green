@@ -1,6 +1,66 @@
 # Data availability, provenance and reuse / データの所在・出典・利用条件
 
-Policy and source checks: **2026-10-18**. [English](#english) · [日本語](#日本語) · [Official sources](#official-sources--公式資料)
+Original policy and source checks: **2026-10-18**; additional public-source and provenance notes: **2026-10-20**. [English](#english) · [日本語](#日本語) · [Official sources](#official-sources--公式資料)
+
+## 20 October additions / 10月20日の追加公開データ
+
+The [dated follow-up](../research/FOLLOWUP_2026-10-20.en.md) adds selected original
+public responses and compact observation evidence, with retrieval queries,
+UTC, byte counts, identifiers and SHA-256. The earlier package descriptions
+below remain dated snapshots; their approximate 80 MB size is not a statement
+about the expanded current repository. No new release asset or tag is required
+to run the current offline verifier.
+
+| Added evidence | Durable files and scope |
+|---|---|
+| SkyMapper DR4 and J-PLUS DR4 photometry | [Source manifest](../research/independent_photometry/source_manifest.json), [450-slot measurement table](../research/independent_photometry/measurements.csv), raw responses, exact queries and provenance. The fixed25 cohort yields 52 strict-quality measurements for 14 targets, with 46 passbands fully covered by the available spectra. Original SkyMapper detections, J-PLUS fluxes, exposure metadata and identity/quality exclusions remain separate from derived comparisons. |
+| Published J-PLUS DR3 classifications | [Three matched prior classifications and full cohort coverage](../research/independent_photometry/prior_classifications.csv), original selected CDS rows and ReadMe. These preserve López-Sanjuan et al. (2025)'s published inference, not a new classification. |
+| SVO total-system response curves | [Profile manifest](../research/measurement_design/profile_manifest.json) and 18 original VOTables under `research/measurement_design/sources/`. All original response samples, units, component descriptions and original-provider references are retained. Added zero endpoints and ±1/±10 Å closure sensitivity are analysis choices, not modified source downloads. Incomplete spectral coverage is withheld, not extrapolated. |
+| SDSS unit-resolution queries | [Lossless query archive](../research/unit_resolution_followup/queries_evidence.zip) and [per-member manifest](../research/unit_resolution_followup/queries_archive_manifest.json): all 474 original SQL, HTTP-response and provenance files from 79 successful and 79 failed attempts. The ZIP preserves their original byte hashes and historical paths; CI does not require an unpacked `queries/` cache. |
+| New native-spectrum evidence | [Compact manifest](../research/unit_resolution_followup/compact_manifest.json), [current scoped science summary](../research/unit_resolution_followup/science_view_summary.json), [individual viewing records](../research/unit_resolution_followup/individual_review.csv). Original-observation matches resolve 613 additional units; current supported colours are retained for 601 and withheld for 12. The other previously eligible spectra did not receive this new support audit. |
+| Repeat-observation context | [Input manifest](../research/repeat_shape_validation/inputs_manifest.json) and [SDSS context](../research/repeat_shape_validation/sdss_context.json). Two full SDSS coadds are stored losslessly; 18 original exposure-header prefixes preserve primary-header context and byte-range provenance. A header prefix is not a complete exposure spectrum. The coadds span five nights and 18 distinct physical exposures. |
+| AM CVn prior identification | [Carter et al. (2014)](https://doi.org/10.1093/mnras/stu142) is the original identification of SDSS J113732.32+405458.3, matched to the existing emission-line record. The citation and selected identification evidence do not constitute a new discovery or republication of the paper. |
+
+SkyMapper and J-PLUS provide different source observations, but their
+calibration standards can share information with Gaia and PS1. J-PLUS's
+already-applied zero-point offset is not added again; its specified additional
+error and correlated calibration limitations are documented in the
+[photometry report](../research/independent_photometry/README.md). Missing and
+sentinel values are not upper limits. Failed S-PLUS responses are retained as
+query failures rather than empty detections or observations used in a fit.
+
+Credit **Onken et al. (2024)** and SkyMapper DR4 DOI
+[10.25914/5M47-S621](https://doi.org/10.25914/5M47-S621), **Cenarro et al. (2019)**
+and the J-PLUS DR4 providers, **López-Sanjuan et al. (2025)** and CDS for the
+published classifications, and **SVO / Rodrigo et al. (2024)** plus each
+profile's original provider. The [acknowledgments](../ACKNOWLEDGMENTS.md) and
+[bibliography](references.bib) give the precise references. Selected public
+numerical records retain their original provider terms; this repository does
+not infer one blanket redistribution licence for SkyMapper, J-PLUS or SVO
+from their public accessibility or apply its code licence to those inputs.
+No newly included full article, bulk model archive or private/member data is
+required for these checks.
+
+Run `python scripts/verify_research_oct20.py` after installing the core
+requirements. The photometry rebuild and the query archive have also passed
+checks in separate exports without their original ignored caches, with
+socket connections disabled. Original observations and failures remain
+distinct from the derived numerical results and visual notes.
+
+**日本語：** [10月20日の追加報告](../research/FOLLOWUP_2026-10-20.ja.md)に対応する
+原測光・元スペクトルの証拠と、正式応答関数を上表の場所に保存しました。
+元の応答バイト列、照会、UTC、識別子、SHAを保持し、較正・照合・積分・
+品質不採用の処理を別に記録しています。SkyMapper／J-PLUSの52品質採用測定のうち、
+46測定だけがスペクトルで応答全域を覆います。新規に単位を解決した613記録は
+601色採用・12保留であり、既存の全適格記録を新条件で再監査したという意味では
+ありません。SDSS照会474原本は可逆ZIP内に元の名前とSHAで保存し、失敗応答を
+空カタログへ変換していません。反復例の2 coaddは5夜・18実露出からなり、
+保存した18露出のヘッダ断片は完全な露出分光とは区別します。
+
+SkyMapper、J-PLUS、SVOと各原提供者、既報分類の著者・CDSを引用し、原データへ
+本研究のコード用ライセンスを付け直しません。Carter et al. (2014)による
+SDSS J113732.32+405458.3のAM CVn同定は先行成果です。以下の旧約80 MBという
+記述は初期パッケージの保存記録であり、追加研究を含む現在の容量ではありません。
 
 ## English
 
@@ -31,9 +91,9 @@ The 8,505 MWDD records contain 8,502 numerically distinct wavelength/flux pairs.
 The directly downloaded SDSS FITS collection can also overlap MWDD's SDSS
 exports. A second filename is not evidence of an independent observation.
 
-### Current Git package and full source cache
+### 18 October compact package and full source cache (preserved snapshot)
 
-The current Git tree is approximately **80 MB before Git compression** and
+The initial 18 October Git package was approximately **80 MB before Git compression** and
 includes the selected inputs needed to inspect and recompute the principal
 results. These files are in the repository itself; **there is no separate
 release asset to download** for this package.
@@ -144,7 +204,7 @@ FITSを直接取得し、合計9,902スペクトル記録を走査しました�
 MWDD内の数値的に異なるスペクトルは8,502本で、SDSS直接取得分とMWDDにも
 同じ観測が含まれ得ます。詳細は上表のマニフェストと全走査結果に対応します。
 
-現在のGitツリーはGit圧縮前で約80 MBです。コード、日英の解説・ノートブック、
+10月18日の初期GitパッケージはGit圧縮前で約80 MBでした。コード、日英の解説・ノートブック、
 主要な数値結果、出典・監査記録、利用条件を明記した参照データに加え、
 MWDDの選択済み原CSV25本と解析配列25本、SDSSの対照FITS54本と配列54本を
 同梱します。MWDDの25本はDESI 10本、Gaia XP 9本、SDSS 6本です。
@@ -230,6 +290,13 @@ summary does not replace them. / 以下は確認した公式方針と原資料�
 - **M3 — MWDD acknowledgments:** <https://www.montrealwhitedwarfdatabase.org/aknowledgements.html>
 - **W1 — Warwick White Dwarf Repository:** <https://cygnus.astro.warwick.ac.uk/phsdaj/WhiteDwarfs/>
 - **W2 — Swan et al. (2026):** <https://arxiv.org/html/2609.04314v1>
+- **SM1 — SkyMapper DR4 data and quality documentation:** <https://skymapper.anu.edu.au/data-release/>
+- **SM2 — SkyMapper provider citations and acknowledgment:** <https://skymapper.anu.edu.au/how-to-cite/>; paper DOI <https://doi.org/10.1017/pasa.2024.53>; data DOI <https://doi.org/10.25914/5M47-S621>
+- **JP1 — J-PLUS DR4 archive and table definitions:** <https://archive.cefca.es/catalogues/jplus-dr4>
+- **JP2 — J-PLUS publication acknowledgment:** <https://www.j-plus.es/datareleases/acknowledgements>
+- **JP3 — Published J-PLUS DR3 outlier classifications:** <https://doi.org/10.1051/0004-6361/202555286>; selected catalogue <https://cdsarc.cds.unistra.fr/viz-bin/cat/J/A+A/701/A273>
+- **FPS1 — SVO Filter Profile Service and provider references:** <https://svo2.cab.inta-csic.es/svo/theory/fps/>; service citation <https://doi.org/10.1051/0004-6361/202449998>
+- **A1 — Carter et al. (2014), prior AM CVn identification:** <https://doi.org/10.1093/mnras/stu142>; author preprint <https://arxiv.org/abs/1312.3335>
 
 [D1]: https://data.desi.lbl.gov/doc/acknowledgments/
 [G3]: https://www.cosmos.esa.int/web/gaia-users/credits

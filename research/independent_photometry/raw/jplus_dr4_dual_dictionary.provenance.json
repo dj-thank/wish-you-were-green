@@ -1,0 +1,13 @@
+{
+  "url": "https://archive.cefca.es/catalogues/jplus-dr4/adql_help_table",
+  "query_parameters": {
+    "db": "J-PLUS-DR4",
+    "name": "jplus.MagABDualObj"
+  },
+  "final_url": "https://archive.cefca.es/catalogues/jplus-dr4/adql_help_table?db=J-PLUS-DR4&name=jplus.MagABDualObj",
+  "retrieved_utc": "2026-10-19T23:34:40.825110+00:00",
+  "http_status": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "size_bytes": 16950,
+  "sha256": "f75fa81bd0842e02680a74c03efe001476453c33c97920bb1e26a6436c76d256"
+}

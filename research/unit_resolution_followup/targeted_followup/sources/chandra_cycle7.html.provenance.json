@@ -1,0 +1,10 @@
+{
+  "url": "https://cxc.harvard.edu/target_lists/cycle7/abstracts_cycle7.html",
+  "final_url": "https://cxc.harvard.edu/target_lists/cycle7/abstracts_cycle7.html",
+  "retrieved_utc": "2026-10-20T00:18:18.105160+00:00",
+  "http_status": 200,
+  "content_type": "text/html",
+  "bytes": 200120,
+  "sha256": "10a423e9735d8713a6cea5c9dd63de762f05083bc009788c560994a2ca666e7a",
+  "file": "sources/chandra_cycle7.html"
+}

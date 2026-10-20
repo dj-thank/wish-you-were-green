@@ -1,0 +1,9 @@
+{
+  "row_index": 5827,
+  "figure": "native_row_5827.png",
+  "sha256": "dbad521a69aaa789cfff8ff738d705cc46d179542e927e82ddb660ea50f0140d",
+  "actually_viewed": true,
+  "viewed_utc": "2026-10-20T00:39:41.046580+00:00",
+  "observation": "Actually viewed the final 2210x1360 PNG at original detail. All three panels and labels are readable. The full spectrum and blue zoom show broad depressions with local positive structure. The red native zoom resolves two adjacent maxima separated by a central depression; the global maximum in the declared window is at 6550.884 Angstrom. The positive-IVAR and additional AND=0 means overlap over these structures. No negative data, native samples or features were deleted. The fixed half-excess cluster describes only the higher of the two red maxima.",
+  "evidence_limits": "Local-only source-array and mask comparison, with frozen MWDD DZ: versus generic SDSS STAR/CV recorded separately. No new literature/Gaia lookup, physical or atomic classification, proper-motion association, variability finding, line significance or population inference. SVG derives from the same figure but was not independently rendered."
+}

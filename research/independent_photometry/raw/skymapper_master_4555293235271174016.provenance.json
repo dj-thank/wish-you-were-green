@@ -1,0 +1,15 @@
+{
+  "url": "https://api.skymapper.nci.org.au/public/tap/sync",
+  "query_parameters": {
+    "REQUEST": "doQuery",
+    "LANG": "ADQL",
+    "FORMAT": "csv",
+    "QUERY": "SELECT TOP 1000 * FROM dr4.master WHERE CONTAINS(POINT('ICRS',raj2000,dej2000),CIRCLE('ICRS',261.855347331910,21.281011544261,0.004166666666667))=1"
+  },
+  "final_url": "https://api.skymapper.nci.org.au/public/tap/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=SELECT+TOP+1000+%2A+FROM+dr4.master+WHERE+CONTAINS%28POINT%28%27ICRS%27%2Craj2000%2Cdej2000%29%2CCIRCLE%28%27ICRS%27%2C261.855347331910%2C21.281011544261%2C0.004166666666667%29%29%3D1",
+  "retrieved_utc": "2026-10-19T23:23:33.659216+00:00",
+  "http_status": 200,
+  "content_type": "text/csv;header=present;charset=ISO-8859-1",
+  "size_bytes": 1172,
+  "sha256": "8b06e449b4a4b55925b0d98b9f28f09e58380c95de13b944b830ec7b0e7a87bc"
+}

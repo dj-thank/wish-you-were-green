@@ -1,0 +1,78 @@
+{
+  "source_id": "3638333660492606976",
+  "records": [
+    {
+      "key": "mwdd_13",
+      "format": "mwdd",
+      "mwdd_row_indices": [
+        13
+      ],
+      "source_url": "https://www.montrealwhitedwarfdatabase.org/WDs/Gaia%20DR2%203638333660492606976/spect.Gaia%20DR2%203638333660492606976.sdss.txt",
+      "expected_sha256": "438152e144c9297cb7d723c4fe59e7ddd16f489e8a8b0412ec90f27d59982901",
+      "raw_path": "raw_cache/mwdd_13.csv",
+      "old_raw_path": "mwdd/spectra/f399c679784df76df96d38e1.csv",
+      "status": "verified",
+      "attempts": [],
+      "sha256": "438152e144c9297cb7d723c4fe59e7ddd16f489e8a8b0412ec90f27d59982901",
+      "bytes": 93533,
+      "raw_header": "wdid:Gaia DR2 3638333660492606976,resolution:nan,source:sdss,wavelength_min: 3586.74,wavelength_max: 10401.59",
+      "cached": true,
+      "bundled_file": "mwdd_13.csv.gz",
+      "bundled_sha256": "6dbe3922dff51addd26cc9314266b272d66b21e3dd71293e84d2c24ed8fbdf66"
+    },
+    {
+      "key": "sdss_dr17_v5_13_2_4049_55591_0832",
+      "format": "sdss",
+      "source_url": "https://data.sdss.org/sas/dr17/eboss/spectro/redux/v5_13_2/spectra/lite/4049/spec-4049-55591-0832.fits",
+      "raw_path": "raw_cache/sdss_dr17_v5_13_2_4049_55591_0832.fits",
+      "mwdd_row_indices": [
+        13
+      ],
+      "catalogue_observation": {
+        "row_index": 13,
+        "specobjid": "4558997515027109888",
+        "plate": 4049,
+        "mjd": 55591,
+        "fiberID": 832,
+        "run2d": "v5_13_2",
+        "ra": 200.80318,
+        "dec": -1.4899599,
+        "sciencePrimary": 1,
+        "bestobjid": "1237655495978386088",
+        "distance": 0.0285019663425657
+      },
+      "expected_sha256": null,
+      "old_raw_path": null,
+      "status": "verified",
+      "attempts": [],
+      "sha256": "80b67ebde02a62ed818c1ea17435b3657a5e8e424b0c7c742dfeea5770dbab29",
+      "bytes": 218880,
+      "raw_header": {
+        "BUNIT": "1E-17 erg/cm^2/s/Ang",
+        "PLATEID": 4049,
+        "MJD": 55591,
+        "FIBERID": 832,
+        "RUN2D": "v5_13_2",
+        "PLUG_RA": 200.80318,
+        "PLUG_DEC": -1.4899599,
+        "VACUUM": true
+      },
+      "cached": true,
+      "bundled_file": "sdss_dr17_v5_13_2_4049_55591_0832.fits.gz",
+      "bundled_sha256": "2adabbee849847e3801c54de4c7bdf35432bff35815ed558d216250276dfed04"
+    },
+    {
+      "key": "mwdd_14",
+      "format": "mwdd",
+      "source_url": "https://www.montrealwhitedwarfdatabase.org/WDs/Gaia%20DR2%203638333660492606976/spect.Gaia%20DR2%203638333660492606976.DESI_2021-06-05_033745.txt",
+      "sha256": "664326da25fc723a46f4589e0f542259ecdf02a284331e3c6433bc03fd7361e7",
+      "raw_path": "../../mwdd/spectra/dd60f12cfabc4f7100cf4710.csv",
+      "bundled_file": "mwdd_14.csv.gz",
+      "bundled_sha256": "d90dc4ac80b08f92a2127c269e68dc7014a47c72511f50ebd03596c4619a86a9"
+    }
+  ],
+  "gaia_input_path": "research/external_validation/raw/gaia_dr3_extended_targets.csv",
+  "gaia_input_sha256": "889b70d3c4cb6dc129d58784742ba358e9da873e3195d5f835a6363d1978d1e1",
+  "frozen_input_sha256": "b37732619b1e077d978d7ddae2ee6d367ddb9485b13298afed4e43bd25e5e129",
+  "interpretation": "Lossless copies of three exact original files. No new photometry, fitting to another spectrum, or mutation of the old unit registry."
+}

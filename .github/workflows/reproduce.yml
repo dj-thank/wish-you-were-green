@@ -53,3 +53,7 @@ jobs:
       - name: Verify every follow-up record and the new numerical experiments offline
         working-directory: ${{ runner.temp }}
         run: python "$GITHUB_WORKSPACE/scripts/verify_research_followup.py" --root "$GITHUB_WORKSPACE"
+
+      - name: Verify native support, new photometry and full colour-set experiments offline
+        working-directory: ${{ runner.temp }}
+        run: python "$GITHUB_WORKSPACE/scripts/verify_research_oct20.py" --root "$GITHUB_WORKSPACE"

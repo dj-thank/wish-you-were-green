@@ -1,0 +1,50 @@
+{
+  "selection": "Three root-requested visually flagged rows, fixed before context retrieval",
+  "row_indices": [
+    7607,
+    8019,
+    7930
+  ],
+  "sources": [
+    {
+      "url": "https://www.montrealwhitedwarfdatabase.org/WDs/SDSS%20J185040.71%2B200056.2/SDSS%20J185040.71%2B200056.2.html",
+      "final_url": "https://www.montrealwhitedwarfdatabase.org/WDs/SDSS%20J185040.71%2B200056.2/SDSS%20J185040.71%2B200056.2.html",
+      "retrieved_utc": "2026-10-20T00:16:15.154862+00:00",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 12969,
+      "sha256": "7638f11c46ba957b220e6e664170689a5c4de871b4f6e07e1e67649a017809e2",
+      "file": "sources/mwdd_7607.html"
+    },
+    {
+      "url": "https://www.montrealwhitedwarfdatabase.org/WDs/%5BVV2006%5D%20J004527.7%2B143815/%5BVV2006%5D%20J004527.7%2B143815.html",
+      "final_url": "https://www.montrealwhitedwarfdatabase.org/WDs/%5BVV2006%5D%20J004527.7%2B143815/%5BVV2006%5D%20J004527.7%2B143815.html",
+      "retrieved_utc": "2026-10-20T00:16:15.155413+00:00",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 13255,
+      "sha256": "07899d2025b7e1200cc265837316a4dc3bca86401cc1a155acd29d09344ab96f",
+      "file": "sources/mwdd_8019.html"
+    },
+    {
+      "url": "https://www.montrealwhitedwarfdatabase.org/WDs/SDSS%20J053553.56-004003.9/SDSS%20J053553.56-004003.9.html",
+      "final_url": "https://www.montrealwhitedwarfdatabase.org/WDs/SDSS%20J053553.56-004003.9/SDSS%20J053553.56-004003.9.html",
+      "retrieved_utc": "2026-10-20T00:16:15.156173+00:00",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 14820,
+      "sha256": "5a683cc6ff00c43b801e4d8e702340fa84af1eca2cd9e43d0e0c6d9a8e483cb9",
+      "file": "sources/mwdd_7930.html"
+    },
+    {
+      "url": "https://gea.esac.esa.int/tap-server/tap/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=SELECT+source_id%2Cra%2Cdec%2Cref_epoch%2Cparallax%2Cparallax_error%2Cpmra%2Cpmdec%2Cruwe%2Cphot_g_mean_mag%2Cbp_rp%2Cphot_variable_flag%2Cduplicated_source%2Cnon_single_star%2Chas_xp_continuous%2Cipd_frac_multi_peak+FROM+gaiadr3.gaia_source+WHERE+source_id+IN+%284518692348609283712%2C2780975896637670528%2C3217759570831525120%29+OR+1%3DCONTAINS%28POINT%28%27ICRS%27%2Cra%2Cdec%29%2CCIRCLE%28%27ICRS%27%2C282.669583333333%2C20.015583333333%2C0.0041666666667%29%29+OR+1%3DCONTAINS%28POINT%28%27ICRS%27%2Cra%2Cdec%29%2CCIRCLE%28%27ICRS%27%2C11.365375000000%2C14.637816666667%2C0.0041666666667%29%29+OR+1%3DCONTAINS%28POINT%28%27ICRS%27%2Cra%2Cdec%29%2CCIRCLE%28%27ICRS%27%2C83.973208333333%2C-0.667861111111%2C0.0041666666667%29%29+ORDER+BY+source_id",
+      "final_url": "https://gea.esac.esa.int/tap-server/tap/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=SELECT+source_id%2Cra%2Cdec%2Cref_epoch%2Cparallax%2Cparallax_error%2Cpmra%2Cpmdec%2Cruwe%2Cphot_g_mean_mag%2Cbp_rp%2Cphot_variable_flag%2Cduplicated_source%2Cnon_single_star%2Chas_xp_continuous%2Cipd_frac_multi_peak+FROM+gaiadr3.gaia_source+WHERE+source_id+IN+%284518692348609283712%2C2780975896637670528%2C3217759570831525120%29+OR+1%3DCONTAINS%28POINT%28%27ICRS%27%2Cra%2Cdec%29%2CCIRCLE%28%27ICRS%27%2C282.669583333333%2C20.015583333333%2C0.0041666666667%29%29+OR+1%3DCONTAINS%28POINT%28%27ICRS%27%2Cra%2Cdec%29%2CCIRCLE%28%27ICRS%27%2C11.365375000000%2C14.637816666667%2C0.0041666666667%29%29+OR+1%3DCONTAINS%28POINT%28%27ICRS%27%2Cra%2Cdec%29%2CCIRCLE%28%27ICRS%27%2C83.973208333333%2C-0.667861111111%2C0.0041666666667%29%29+ORDER+BY+source_id",
+      "retrieved_utc": "2026-10-20T00:16:15.156560+00:00",
+      "http_status": 200,
+      "content_type": "text/csv",
+      "bytes": 2756,
+      "sha256": "23ddbf294b78cd20f06f2a79a2f2fb0d3dbbe6a01704552e73fd0aee99dfcdaf",
+      "file": "sources/gaia_context.csv"
+    }
+  ]
+}

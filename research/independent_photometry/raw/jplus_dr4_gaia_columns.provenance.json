@@ -1,0 +1,15 @@
+{
+  "url": "https://archive.cefca.es/catalogues/vo/tap/jplus-dr4/sync",
+  "query_parameters": {
+    "REQUEST": "doQuery",
+    "LANG": "ADQL",
+    "FORMAT": "csv",
+    "QUERY": "SELECT column_name,description,unit,datatype FROM TAP_SCHEMA.columns WHERE table_name='jplus.xmatch_gaia_dr3'"
+  },
+  "final_url": "https://archive.cefca.es/catalogues/vo/tap/jplus-dr4/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=SELECT+column_name%2Cdescription%2Cunit%2Cdatatype+FROM+TAP_SCHEMA.columns+WHERE+table_name%3D%27jplus.xmatch_gaia_dr3%27",
+  "retrieved_utc": "2026-10-19T23:23:34.461112+00:00",
+  "http_status": 200,
+  "content_type": "text/csv; charset=UTF-8",
+  "size_bytes": 2413,
+  "sha256": "2d6f0d41854bbbbf1afd4d29be8ca8e6dcfddb2606d589fd4a72586c25ec4ad6"
+}

@@ -1,0 +1,30 @@
+{
+  "reviewer": "repro_audit",
+  "recorded_utc_date": "2026-10-20",
+  "method": "Each listed image was actually opened; observations concern the displayed result, not a new image reconstruction.",
+  "images": [
+    {
+      "file": "science_colour_plane.png",
+      "sha256": "acb5076cda0c22c181bd543c59828ff25c14040c549a70ed7ac950895303da85",
+      "panels_actually_viewed": 2,
+      "observations": [
+        "All eligible records are shown with equal u/v scales, with no hidden clipping of the extreme blue and low-v records. Counts and the outside-613 audit scope are stated.",
+        "The additional 601 native-supported points are overlaid on retained prior values; 12 newly unit-resolved but colour-withheld records are excluded. Fnu/Flambda markers identify prior conventions, not physical classes."
+      ]
+    },
+    {
+      "file": "j1323/quality_colour_association.png",
+      "sha256": "96769c1589acb2e1a3af0160a51d64382b7aa260b508f5ac84fd725a1b3c4379",
+      "panels_actually_viewed": 6,
+      "observations": [
+        "Raw SDSS and DESI means show a common broad rise into the green, with a visible red continuum difference and broad signed-blue noise.",
+        "The existing shared-gri correction reduces the visible red mismatch but leaves imperfect agreement and SDSS scatter.",
+        "The separate PS1-only original-grid sensitivity also leaves visible scatter; it is not an independent validation of common photometry.",
+        "AND/OR exclusions are displayed as separate mask sensitivities. OR removes extensive support and its diagnostic integral must be withheld.",
+        "All shown physical uv conditions remain displaced above the Planck segment. Equal geometric scales avoid changing the apparent vector directions.",
+        "The proper-motion-propagated Gaia position remains slightly outside the nominal 1-arcsec fibre radius; the point is not an association posterior."
+      ]
+    }
+  ],
+  "scope_limits": "These eight supplementary panels overlap the 613 reviewed records and do not add eight new objects or independent observations. Node viewer checks are separate from actual static-image review."
+}

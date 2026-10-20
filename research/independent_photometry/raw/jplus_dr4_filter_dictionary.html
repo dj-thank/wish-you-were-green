@@ -1,0 +1,102 @@
+<div class="help">
+<h2>Table <span style="text-decoration: underline;">jplus.</span><span style="text-decoration: underline;">Filter</span></h2>
+<p>Table that contains information about the filters.</p>
+<h3 class="subtitle">Columns</h3>
+
+<table class="table table-striped table-hover table-condensed" style="margin-top: 30px;">
+	<thead>
+	    <tr>
+	    	<th>Name</th>
+	    	<th>Type</th>
+	    	<th>Units</th>
+	    	<th>UCD</th>
+	    	<th>Description</th>
+	    </tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>FILTER_ID</td>
+			<td style="font-family: 'Courier New';">short</td>
+			<td></td>
+			<td>meta.id;instr.filter</td>
+			<td style="width:55%;">Identifier of the filter</td>
+		</tr>
+  <tr>
+			<td>name</td>
+			<td style="font-family: 'Courier New';">char</td>
+			<td></td>
+			<td>meta.id;instr.filter</td>
+			<td style="width:55%;">Name of the filter</td>
+		</tr>
+  <tr>
+			<td>wavelength</td>
+			<td style="font-family: 'Courier New';">int</td>
+			<td>Angstrom</td>
+			<td>em.wl.central</td>
+			<td style="width:55%;">Central wavelength of the filter</td>
+		</tr>
+  <tr>
+			<td>width</td>
+			<td style="font-family: 'Courier New';">int</td>
+			<td>nm</td>
+			<td>instr.bandwidth</td>
+			<td style="width:55%;">Filter amplitude</td>
+		</tr>
+  <tr>
+			<td>kx</td>
+			<td style="font-family: 'Courier New';">double</td>
+			<td></td>
+			<td>phys.absorption</td>
+			<td style="width:55%;">Extinction coefficients. Estimated using the star-pair method in <a href="https://ui.adsabs.harvard.edu/abs/2013MNRAS.430.2188Y/abstract" target="_blank">Yuan et al. 2013</a>.</td>
+		</tr>
+  <tr>
+			<td>abs_zp_offset</td>
+			<td style="font-family: 'Courier New';">double</td>
+			<td>mag</td>
+			<td>phot.mag;arith.zp</td>
+			<td style="width:55%;">Zero point offsets already applied to the images and photometry of each band. They are derived from the WD stellar loci regression, following the method described in <a href="https://ui.adsabs.harvard.edu/abs/2024A%26A...683A..29L/abstract" target="_blank">López-Sanjuan et al. 2024</a> and after anchoring r-band to that of PanSTARRS PS1 as an absolute zp offset common for all the filters.</td>
+		</tr>
+  <tr>
+			<td>abs_zp_offset_err</td>
+			<td style="font-family: 'Courier New';">double</td>
+			<td>mag</td>
+			<td>stat.error;phot.mag;arith.zp</td>
+			<td style="width:55%;">Absolute zero point uncertainties to be added in quadrature to the photometric errors. They are determined from the uncertainties of the WD stellar locus regression and the global anchoring of DR4 to PS1 r-band, which is conservatively assumed to be 5mmag, as in <a href="https://ui.adsabs.harvard.edu/abs/2024A%26A...683A..29L/abstract" target="_blank">López-Sanjuan et al. 2024</a>.</td>
+		</tr>
+  <tr>
+			<td>color_representation</td>
+			<td style="font-family: 'Courier New';">char</td>
+			<td></td>
+			<td></td>
+			<td style="width:55%;">Filter HTML color representation</td>
+		</tr>
+	</tbody>
+</table>
+
+<h3 class="subtitle">Indexes</h3>
+<table class="table table-striped table-hover table-condensed" style="margin-top: 30px;">
+	<thead>
+		<tr>
+			<th></th>
+			<th>Column name</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>1</td>
+			<td>FILTER_ID</td>
+			<td style="width:70%;">Identifier of the filter</td>
+		</tr>
+	</tbody> 
+</table>
+
+
+
+
+
+
+
+
+
+</div>

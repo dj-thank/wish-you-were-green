@@ -1,10 +1,39 @@
 # From unusual white-dwarf colours to a testable research programme
 
-**Updated 19 October 2026 UTC. Project: Shota Moriwaki. This is an unreviewed research record containing ChatGPT-assisted analysis and writing.** [日本語](README.ja.md) · [Project overview](../README.md)
+**Updated 20 October 2026 UTC. Research revision 0.2.0 plus dated follow-ups. Project: Shota Moriwaki. This is an unreviewed research record containing ChatGPT-assisted analysis and writing.** [日本語](README.ja.md) · [Project overview](../README.md)
 
-**Latest work: [19 October follow-up report](FOLLOWUP_2026-10-19.en.md).** The remaining 2,007 review entities now have individual viewing notes: 1,684 with current accepted spectra and 323 with explicit unavailable panels. New work also executes 450 measured-photometry scenarios, 720 public control-model fits and residual diagnostics for 25 published DZ/DQ plots. J0429 has strict opposite channel-order witnesses inside the same observed griz error boxes and a 5% shape budget. The report below retains the 18 October correction and experimental context; the new report explains what has now been executed and what remains unresolved.
+## Current summary — 20 October 2026
 
-**Correction: independent SDSS colour support for J1323−0129 is withdrawn.** Its MWDD SDSS flux convention remains unresolved, and native Gaia XP was unavailable in this acquisition. The DESI estimate remains a single-instrument colour candidate. The historical 9,023 eligible records and 337 strong-outlier entities are superseded for current selection by **7,473 eligible records, 395 strong-outlier records and 308 entity keys**. [Corrected summary](precision/flux_units/corrected_screen_summary.json)
+The [20 October follow-up](FOLLOWUP_2026-10-20.en.md) ([日本語](FOLLOWUP_2026-10-20.ja.md)) adds original-observation unit matches, newly retrieved imaging photometry, measured and prospective band constraints, and repeated spectral-shape diagnostics. It does not change the research version to a new release or establish a physical discovery.
+
+| Current scope | Result and source |
+|---|---|
+| Unchanged inventory | 9,902 records / 6,003 entity keys |
+| Current scoped scientific screen | **8,074 eligible / 419 strong records / 324 entity keys**; [scientific summary](unit_resolution_followup/science_view_summary.json), [viewer](unit_resolution_followup/current_view.html) |
+| MWDD SDSS conventions | **327 Fν / 939 Fλ / 966 unresolved**; 613 additional conventions verified from original observations |
+| New native-support audit | **601 usable / 12 colour-withheld** among those 613; ten newly withheld after the old-gate compatibility calculation, two already ineligible |
+| Formerly unavailable review entities | Units resolved for 115; supported colour calculations recovered for 112 |
+| Additional actual viewing | All 613 records across 39 sheets, with [individual notes](unit_resolution_followup/individual_review.md) and [completion provenance](unit_resolution_followup/review_completion.json) |
+| Additional imaging photometry | Fixed25: **450 slots / 52 strict measurements / 46 fully covered / 14 targets**; [source and quality audit](independent_photometry/README.md) |
+| Actual measured-band constraints | **165 cases / 660 optimization branches**; [measurement report](measurement_design/README.md) |
+| Prospective band-separation experiment | **276 cases plus 8 endpoint-closure cases / 568 branches**; same report, explicitly separate from acquired measurements |
+| Repeated spectral shapes | Four DESI pairs; one pair of SDSS coadds comprising **5 nights / 18 physical exposures**; [repeat report](repeat_shape_validation/README.md) |
+
+**The new native-support rules were checked on 613 records, not the whole inventory.** The earlier 7,473 eligible records retain their previous calculations. The retained old-gate compatibility screen, **8,084 / 421 / 325**, precedes the new gap/support exclusions and is not the current scientific selection. The original 18 October and v0.1 tables remain dated evidence.
+
+**J1323−0129 has a revised evidence status.** Its SDSS convention is now proven Fλ against the same original observation, recovering qualitative positive-Duv support. Native S/N 2.36 and an approximately 1.138″ epoch-corrected separation from the SDSS PLUG position keep precision independent corroboration withheld; native Gaia XP is unavailable. The statement that the convention is unresolved in the historical body below describes 18 October, not the current result.
+
+For J0429, adding measured SkyMapper r/i to PS1 griz has a minimum of approximately **4.92%** shape change in the specified 800 Å family; strict green and red-order minima are approximately **5.0103% / 4.9236%**. Adding a 0.02 mag allowance to the new-survey boxes removes that narrow separation. Source photons are newly observed, but calibration standards and J-PLUS's WD-locus/PS1-r anchors can be shared. Bands used in a joint fit are no longer held-out validation of that fit. For J0429, even PS1 griz plus the ten covered J-PLUS bands (14 total) admit numerically indistinguishable opposite-order solutions at 400 Å spacing / 5% budget; this is a conditional numerical counterexample, not a general impossibility theorem.
+
+Use `python scripts/verify_research_oct20.py` from the repository root for the current offline checks. The committed raw responses, lossless query bundle, compact original arrays, numerical witnesses and audit records support computational reproduction; automated verification does not repeat actual viewing or certify physical novelty.
+
+## Preserved report — 18 October correction and 19 October additions
+
+**The methods and results below retain their original dates. References to “current” within this preserved body mean the 18–19 October snapshot.** Use the summary above and the dated 20 October report for the latest eligibility and J1323 evidence status.
+
+**19 October work: [follow-up report](FOLLOWUP_2026-10-19.en.md).** The remaining 2,007 review entities have individual viewing notes: 1,684 with then-accepted spectra and 323 with explicit unavailable panels. Work executed 450 measured-photometry scenarios, 720 public control-model fits and residual diagnostics for 25 published DZ/DQ plots. J0429 has strict opposite channel-order witnesses inside the same observed griz error boxes and a 5% shape budget.
+
+**18 October correction, preserved: independent SDSS colour support for J1323−0129 was withdrawn.** Its MWDD SDSS flux convention remained unresolved at that stage, and native Gaia XP was unavailable in that acquisition. The DESI estimate remained a single-instrument colour candidate. The historical 9,023 eligible records and 337 strong-outlier entities were superseded for that selection by **7,473 eligible records, 395 strong-outlier records and 308 entity keys**. [18 October corrected summary](precision/flux_units/corrected_screen_summary.json)
 
 The strongest result is a demonstrated flux-representation bug, corrected through original-observation comparisons. Further work connects that correction to covariance, repeated observations, held-out photometry and atmosphere-model questions. The scientific objective is to establish **which unusual chromaticities remain identifiable under measured calibration uncertainties**, then test physical explanations with independent predictions.
 

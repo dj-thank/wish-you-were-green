@@ -1,0 +1,263 @@
+{
+  "rows": [
+    {
+      "row_index": 6462,
+      "source_id": "767756877680612864",
+      "wdid": "Gaia DR3 767756877680612864",
+      "catalogue_spectype": "DQ:",
+      "star_page_url": "https://www.montrealwhitedwarfdatabase.org/WDs/Gaia%20DR3%20767756877680612864/Gaia%20DR3%20767756877680612864.html",
+      "reference_key": "sdss_dr17_v5_13_2_4655_55620_0930",
+      "reference_url": "https://data.sdss.org/sas/dr17/eboss/spectro/redux/v5_13_2/spectra/lite/4655/spec-4655-55620-0930.fits",
+      "reference_original_sha256": "1ff9c6af290424f827a699ec26d6a02ab1417bc58a437f6803c9dae108b8721c",
+      "original_automatic_classification": {
+        "CLASS": "QSO",
+        "SUBCLASS": "",
+        "Z": 0.0762559100985527,
+        "ZWARNING": 0,
+        "SN_MEDIAN_ALL": 12.307351112365723,
+        "PLATEQUALITY": "good",
+        "SPECOBJID": 5241319797095159808
+      },
+      "visible_pixels": 3627,
+      "visible_nonpositive_or_invalid_ivar": 5,
+      "visible_AND_nonzero": 39,
+      "visible_OR_nonzero": 1656,
+      "max_positive_ivar_gap_A": 7.7097281717733495,
+      "reference_median_pixel_snr": 13.207840255465737,
+      "existing_offset_mag": 0.0302662064689,
+      "existing_tilt_mag_per_1000A": 0.0705219570606,
+      "window_means_not_arm_step_fits": {
+        "5600_5750": {
+          "valid_pixels": 115,
+          "mean_raw_over_grey_anchor": 1.43200686996859,
+          "mean_after_same_existing_correction_over_raw_grey_anchor": 1.4410479397515683
+        },
+        "5800_5950": {
+          "valid_pixels": 111,
+          "mean_raw_over_grey_anchor": 1.4705605790904799,
+          "mean_after_same_existing_correction_over_raw_grey_anchor": 1.4608051678273577
+        },
+        "6000_6150": {
+          "valid_pixels": 107,
+          "mean_raw_over_grey_anchor": 1.2823889832276951,
+          "mean_after_same_existing_correction_over_raw_grey_anchor": 1.2573517714936737
+        },
+        "6200_6350": {
+          "valid_pixels": 104,
+          "mean_raw_over_grey_anchor": 1.1824315613847594,
+          "mean_after_same_existing_correction_over_raw_grey_anchor": 1.1444661490596493
+        }
+      },
+      "limits": "Same original observation; positive IVAR does not establish correct sky subtraction, fibre centring, catalogue association, line identity or atmosphere physics. Catalogue spectral types and automatic classes are reported as distinct recorded labels. Window means span real absorption structure and are not a fitted camera mismatch or a calibration uncertainty."
+    },
+    {
+      "row_index": 6652,
+      "source_id": "653532394243172736",
+      "wdid": "SDSS J080132.37+134410.9",
+      "catalogue_spectype": "DZ",
+      "star_page_url": "https://www.montrealwhitedwarfdatabase.org/WDs/SDSS%20J080132.37%2B134410.9/SDSS%20J080132.37%2B134410.9.html",
+      "reference_key": "sdss_dr17_26_2266_53679_0138",
+      "reference_url": "https://data.sdss.org/sas/dr17/sdss/spectro/redux/26/spectra/lite/2266/spec-2266-53679-0138.fits",
+      "reference_original_sha256": "184753bc640323fb50637bfb34586579b032899390c72acb71e47aa3f0b2ae9e",
+      "original_automatic_classification": {
+        "CLASS": "STAR",
+        "SUBCLASS": "T2",
+        "Z": -0.0003484291664790362,
+        "ZWARNING": 8,
+        "SN_MEDIAN_ALL": 3.9089207649230957,
+        "PLATEQUALITY": "good",
+        "SPECOBJID": "   2551327183779948544"
+      },
+      "visible_pixels": 3394,
+      "visible_nonpositive_or_invalid_ivar": 0,
+      "visible_AND_nonzero": 1305,
+      "visible_OR_nonzero": 1842,
+      "max_positive_ivar_gap_A": 1.9122960287331807,
+      "reference_median_pixel_snr": 4.041215673742789,
+      "existing_offset_mag": -0.266573761321,
+      "existing_tilt_mag_per_1000A": -0.123941800333,
+      "window_means_not_arm_step_fits": {
+        "5600_5750": {
+          "valid_pixels": 115,
+          "mean_raw_over_grey_anchor": 2.0944258941281415,
+          "mean_after_same_existing_correction_over_raw_grey_anchor": 2.5209253328432477
+        },
+        "5800_5950": {
+          "valid_pixels": 111,
+          "mean_raw_over_grey_anchor": 1.7141195253769757,
+          "mean_after_same_existing_correction_over_raw_grey_anchor": 2.1105335910513086
+        },
+        "6000_6150": {
+          "valid_pixels": 107,
+          "mean_raw_over_grey_anchor": 1.3907359471779064,
+          "mean_after_same_existing_correction_over_raw_grey_anchor": 1.7521293496298025
+        },
+        "6200_6350": {
+          "valid_pixels": 104,
+          "mean_raw_over_grey_anchor": 1.160640973270789,
+          "mean_after_same_existing_correction_over_raw_grey_anchor": 1.4958620153666102
+        }
+      },
+      "limits": "Same original observation; positive IVAR does not establish correct sky subtraction, fibre centring, catalogue association, line identity or atmosphere physics. Catalogue spectral types and automatic classes are reported as distinct recorded labels. Window means span real absorption structure and are not a fitted camera mismatch or a calibration uncertainty."
+    },
+    {
+      "row_index": 6951,
+      "source_id": "4452538307377292416",
+      "wdid": "SDSS J162710.46+091745.8",
+      "catalogue_spectype": "DAQ",
+      "star_page_url": "https://www.montrealwhitedwarfdatabase.org/WDs/SDSS%20J162710.46%2B091745.8/SDSS%20J162710.46%2B091745.8.html",
+      "reference_key": "sdss_dr17_26_2531_54572_0004",
+      "reference_url": "https://data.sdss.org/sas/dr17/sdss/spectro/redux/26/spectra/lite/2531/spec-2531-54572-0004.fits",
+      "reference_original_sha256": "ac8dc5e3b5f16e8293e834ed77adb07841b6c25ad390080dd294ab1a8020ec70",
+      "original_automatic_classification": {
+        "CLASS": "STAR",
+        "SUBCLASS": "WD",
+        "Z": -0.0015257034683600068,
+        "ZWARNING": 0,
+        "SN_MEDIAN_ALL": 3.055746555328369,
+        "PLATEQUALITY": "marginal",
+        "SPECOBJID": "   2849653840435767296"
+      },
+      "visible_pixels": 3358,
+      "visible_nonpositive_or_invalid_ivar": 0,
+      "visible_AND_nonzero": 131,
+      "visible_OR_nonzero": 592,
+      "max_positive_ivar_gap_A": 1.9122960287331807,
+      "reference_median_pixel_snr": 3.2053566180360735,
+      "existing_offset_mag": -0.11900608324,
+      "existing_tilt_mag_per_1000A": -0.0919724019584,
+      "window_means_not_arm_step_fits": {
+        "5600_5750": {
+          "valid_pixels": 115,
+          "mean_raw_over_grey_anchor": 2.6948847046796893,
+          "mean_after_same_existing_correction_over_raw_grey_anchor": 2.876121206460844
+        },
+        "5800_5950": {
+          "valid_pixels": 111,
+          "mean_raw_over_grey_anchor": 2.6558268541810754,
+          "mean_after_same_existing_correction_over_raw_grey_anchor": 2.8828463897969288
+        },
+        "6000_6150": {
+          "valid_pixels": 107,
+          "mean_raw_over_grey_anchor": 1.592067454390623,
+          "mean_after_same_existing_correction_over_raw_grey_anchor": 1.7573266781485823
+        },
+        "6200_6350": {
+          "valid_pixels": 104,
+          "mean_raw_over_grey_anchor": 1.2996354214280488,
+          "mean_after_same_existing_correction_over_raw_grey_anchor": 1.4589912274394838
+        }
+      },
+      "limits": "Same original observation; positive IVAR does not establish correct sky subtraction, fibre centring, catalogue association, line identity or atmosphere physics. Catalogue spectral types and automatic classes are reported as distinct recorded labels. Window means span real absorption structure and are not a fitted camera mismatch or a calibration uncertainty."
+    },
+    {
+      "row_index": 7993,
+      "source_id": "894726766765840768",
+      "wdid": "WD 0746+358",
+      "catalogue_spectype": "DQA",
+      "star_page_url": "https://www.montrealwhitedwarfdatabase.org/WDs/WD%200746%2B358/WD%200746%2B358.html",
+      "reference_key": "sdss_dr17_26_0542_51993_0639",
+      "reference_url": "https://data.sdss.org/sas/dr17/sdss/spectro/redux/26/spectra/lite/0542/spec-0542-51993-0639.fits",
+      "reference_original_sha256": "cbd8d9fb7196e7ef625cdd46f94edf34a16dfce20d112d868f84eeb5fb60add1",
+      "original_automatic_classification": {
+        "CLASS": "QSO",
+        "SUBCLASS": "",
+        "Z": 2.953397274017334,
+        "ZWARNING": 0,
+        "SN_MEDIAN_ALL": 8.02196979522705,
+        "PLATEQUALITY": "marginal",
+        "SPECOBJID": "    610413429928257536"
+      },
+      "visible_pixels": 3361,
+      "visible_nonpositive_or_invalid_ivar": 0,
+      "visible_AND_nonzero": 1294,
+      "visible_OR_nonzero": 2114,
+      "max_positive_ivar_gap_A": 1.9122960287331807,
+      "reference_median_pixel_snr": 8.323066641763676,
+      "existing_offset_mag": -0.203909647291,
+      "existing_tilt_mag_per_1000A": -0.0836358756492,
+      "window_means_not_arm_step_fits": {
+        "5600_5750": {
+          "valid_pixels": 115,
+          "mean_raw_over_grey_anchor": 2.276067544182439,
+          "mean_after_same_existing_correction_over_raw_grey_anchor": 2.636803284302428
+        },
+        "5800_5950": {
+          "valid_pixels": 111,
+          "mean_raw_over_grey_anchor": 1.4910175465958089,
+          "mean_after_same_existing_correction_over_raw_grey_anchor": 1.7537454308951441
+        },
+        "6000_6150": {
+          "valid_pixels": 107,
+          "mean_raw_over_grey_anchor": 1.2986139287459082,
+          "mean_after_same_existing_correction_over_raw_grey_anchor": 1.5521136580759962
+        },
+        "6200_6350": {
+          "valid_pixels": 104,
+          "mean_raw_over_grey_anchor": 1.1945312020692993,
+          "mean_after_same_existing_correction_over_raw_grey_anchor": 1.449389077927751
+        }
+      },
+      "limits": "Same original observation; positive IVAR does not establish correct sky subtraction, fibre centring, catalogue association, line identity or atmosphere physics. Catalogue spectral types and automatic classes are reported as distinct recorded labels. Window means span real absorption structure and are not a fitted camera mismatch or a calibration uncertainty."
+    },
+    {
+      "row_index": 8040,
+      "source_id": "665980107117227520",
+      "wdid": "SDSS J083802.30+221644.2",
+      "catalogue_spectype": "DAQ",
+      "star_page_url": "https://www.montrealwhitedwarfdatabase.org/WDs/SDSS%20J083802.30%2B221644.2/SDSS%20J083802.30%2B221644.2.html",
+      "reference_key": "sdss_dr17_26_2084_53360_0396",
+      "reference_url": "https://data.sdss.org/sas/dr17/sdss/spectro/redux/26/spectra/lite/2084/spec-2084-53360-0396.fits",
+      "reference_original_sha256": "e50e5732d43781b2c9f02c493007a8c8bab0ac1c83d69567c91513969bac22f4",
+      "original_automatic_classification": {
+        "CLASS": "STAR",
+        "SUBCLASS": "WD",
+        "Z": 0.0003706537536345422,
+        "ZWARNING": 4,
+        "SN_MEDIAN_ALL": 3.114258050918579,
+        "PLATEQUALITY": "marginal",
+        "SPECOBJID": "   2346484313882650624"
+      },
+      "visible_pixels": 3388,
+      "visible_nonpositive_or_invalid_ivar": 0,
+      "visible_AND_nonzero": 132,
+      "visible_OR_nonzero": 339,
+      "max_positive_ivar_gap_A": 1.9122960287331807,
+      "reference_median_pixel_snr": 3.258230751963028,
+      "existing_offset_mag": -0.0375779805265,
+      "existing_tilt_mag_per_1000A": 0.111168274103,
+      "window_means_not_arm_step_fits": {
+        "5600_5750": {
+          "valid_pixels": 115,
+          "mean_raw_over_grey_anchor": 1.4528608366630422,
+          "mean_after_same_existing_correction_over_raw_grey_anchor": 1.5875473382628627
+        },
+        "5800_5950": {
+          "valid_pixels": 111,
+          "mean_raw_over_grey_anchor": 1.0957632425568529,
+          "mean_after_same_existing_correction_over_raw_grey_anchor": 1.1702374029448745
+        },
+        "6000_6150": {
+          "valid_pixels": 107,
+          "mean_raw_over_grey_anchor": 1.6870092122148155,
+          "mean_after_same_existing_correction_over_raw_grey_anchor": 1.7690629702064646
+        },
+        "6200_6350": {
+          "valid_pixels": 104,
+          "mean_raw_over_grey_anchor": 1.4367613624664581,
+          "mean_after_same_existing_correction_over_raw_grey_anchor": 1.477310691906655
+        }
+      },
+      "limits": "Same original observation; positive IVAR does not establish correct sky subtraction, fibre centring, catalogue association, line identity or atmosphere physics. Catalogue spectral types and automatic classes are reported as distinct recorded labels. Window means span real absorption structure and are not a fitted camera mismatch or a calibration uncertainty."
+    }
+  ],
+  "input_sha256": {
+    "research/unit_resolution_followup/root_targeted.py": "dce5f0e1c40386bb7e4bd9366a35432781b8c9f374fa6709ff7d1351f56ac45f",
+    "research/unit_resolution_followup/compact_manifest.json": "7741636f106edfe7d89cbc22b35cdba5ab981fb96c071e916dfbf6fd8ce4bad4",
+    "research/unit_resolution_followup/overlay_registry.json": "c8d8f6960092d8cbe3a6f76f64bca07fbde2726680b33ea21de6a54537630865",
+    "research/unit_resolution_followup/newly_resolved_record_screen.csv.gz": "09e49dcba050cd63d08af7aa58234b7f93fa86b12085c627f5b9d06313cf77fe",
+    "research/unit_resolution_followup/root_visual_review_21_30.csv": "1ded53ca3541fac8f8e39bac8792be9a58a5d6c0bc13687ffd0c653d8008ebbb"
+  },
+  "figure": "original_pixel_context.png",
+  "figure_sha256": "5de964907b436b7b5e8a14ad25013a50dab5e2c5a9267b8008c93a0d09332d34"
+}

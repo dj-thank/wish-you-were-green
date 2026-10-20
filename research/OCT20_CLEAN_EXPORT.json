@@ -1,0 +1,482 @@
+{
+  "schema_version": 1,
+  "status": "PASS",
+  "completed_utc": "2026-10-20T00:53:13.928515+00:00",
+  "source": {
+    "source_head": "70f0d592d880ead69b5b6623e3c4ceec4affcd43",
+    "source_tree": "f98ef596d9af718ce4b3f2e8a07f172e8eb33a9c",
+    "source_tar": "/tmp/wish-green-oct20-clean-ehcz6hoz/source.tar",
+    "source_tar_sha256": "66227c98d82d27292302252777d449b55c8f6cbbc2541d1c0ab9c2846720c1f3",
+    "source_file_count": 2696,
+    "source_file_bytes": 507311108,
+    "source_largest_file": "research/unit_resolution_followup/unit_evidence_all.json",
+    "source_largest_bytes": 8183729
+  },
+  "source_staged_changed_file_count": 1558,
+  "source_staged_changed_paths_sha256": "e635b4091f253d412728aba00cff4629bb35f0d93198247cce84f54f14081078",
+  "export_root": "/tmp/wish-green-oct20-clean-ehcz6hoz/checkout",
+  "construction": "git write-tree; git archive --format=tar <source_tree>; tar extraction into a new /tmp directory. No commit or reference update.",
+  "environment": {
+    "python_version": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "python_executable": "/workspace/scratch/30369fb9ec2d/wish-you-were-green/.venv-research/bin/python",
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+    "packages": {
+      "numpy": "2.5.4",
+      "scipy": "1.18.1",
+      "pandas": "2.2.3",
+      "astropy": "8.0.2",
+      "colour-science": "0.4.7",
+      "speclite": "1.0.0",
+      "matplotlib": "3.11.2"
+    },
+    "node_version": "v24.19.0"
+  },
+  "cache_checks": {
+    "absent": {
+      ".git": true,
+      ".venv-research": true,
+      "research/unit_resolution_followup/raw_cache": true,
+      "research/unit_resolution_followup/queries": true,
+      "research/repeat_shape_validation/raw_cache": true,
+      "research/independent_photometry/raw_cache": true
+    },
+    "tracked_ignored_files": [],
+    "unexpected_cache_directories": [],
+    "source_files_above_100000000_bytes": {},
+    "symlinks": {},
+    "small_official_photometry_query_evidence_files_retained": 125,
+    "policy": "Ignored raw_cache directories and unit_resolution_followup/queries are absent. Required small independent_photometry/queries evidence is retained; directory-name matching alone does not define a cache."
+  },
+  "gates": [
+    {
+      "gate": "reproduction",
+      "command": [
+        "/workspace/scratch/30369fb9ec2d/wish-you-were-green/.venv-research/bin/python",
+        "/tmp/wish-green-oct20-clean-ehcz6hoz/checkout/scripts/verify_reproduction.py",
+        "--root",
+        "/tmp/wish-green-oct20-clean-ehcz6hoz/checkout",
+        "--with-controls"
+      ],
+      "cwd": "/tmp",
+      "environment_overrides": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "BLIS_NUM_THREADS": "1",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "PYTHONNOUSERSITE": "1",
+        "PYTHONPATH": "/tmp/wish-green-oct20-clean-ehcz6hoz/checkout",
+        "MPLBACKEND": "Agg",
+        "MPLCONFIGDIR": "/tmp/wish-green-oct20-clean-ehcz6hoz/logs/mpl-reproduction"
+      },
+      "started_utc": "2026-10-20T00:49:26.773245+00:00",
+      "finished_utc": "2026-10-20T00:49:30.874334+00:00",
+      "elapsed_seconds": 4.101,
+      "exit_code": 0,
+      "log": "/tmp/wish-green-oct20-clean-ehcz6hoz/logs/reproduction.log",
+      "log_sha256": "500d08d401ee07ad4cbebb9cc2a537b2fa0454f86b4e705127d30c5e0ba5aa69",
+      "final_log_lines": [
+        "PASS ARCHIVED RESULTS ONLY control_DA: 18 records; max distance=0.006706; raw SDSS not rerun",
+        "PASS ARCHIVED RESULTS ONLY control_DB: 18 records; max distance=0.004092; raw SDSS not rerun",
+        "PASS ARCHIVED RESULTS ONLY control_DC: 18 records; max distance=0.001981; raw SDSS not rerun",
+        "PASS SDSS wavelength roundoff: 0 samples in 0/54 arrays differ; max=0 float64 ULPs (limit 2), 0 A absolute, 0 relative; all other FITS-to-NPZ fields exact",
+        "PASS RECOMPUTED SDSS control_DA: 18 raw FITS hashes, physical-unit NPZ arrays, and calibrated colours",
+        "PASS RECOMPUTED SDSS control_DB: 18 raw FITS hashes, physical-unit NPZ arrays, and calibrated colours",
+        "PASS RECOMPUTED SDSS control_DC: 18 raw FITS hashes, physical-unit NPZ arrays, and calibrated colours",
+        "PASS offline reproduction: 4 DESI headlines, 4 Gaia mean/covariance products, and 54 recomputed raw SDSS controls. No full-survey rerun or discovery claim."
+      ],
+      "complete_log_text": "PASS CIE reference: official checksum and 471-sample table\nPASS DESI J0913+4434: raw SHA/NPZ/PS1 anchors; x=0.335479318 y=0.383550183 Duv=+0.019009802 #F1FFC9\nPASS DESI J0429-0354: raw SHA/NPZ/PS1 anchors; x=0.328445552 y=0.363530246 Duv=+0.012809294 #F8FFDC\nPASS DESI J1329+0033: raw SHA/NPZ/PS1 anchors; x=0.352451248 y=0.315209635 Duv=-0.022652196 #FFC1CF\nPASS DESI J1323-0129: raw SHA/NPZ/PS1 anchors; x=0.408296547 y=0.450137929 Duv=+0.023481853 #FFE86A\nPASS Gaia j0913_full_1nm.npz: native mean/full covariance/PSD; Duv=+0.019234953 #F7FFBF; formal Gaussian P(G largest)=0.8514\nPASS Gaia j0913_truncated_1nm.npz: native mean/full covariance/PSD; Duv=+0.016351373 #F9FFC9; formal Gaussian P(G largest)=0.7774\nPASS Gaia j0429_full_1nm.npz: native mean/full covariance/PSD; Duv=+0.012993205 #FAFFD7; formal Gaussian P(G largest)=0.8239\nPASS Gaia j0429_truncated_1nm.npz: native mean/full covariance/PSD; Duv=+0.014928259 #F7FFD3; formal Gaussian P(G largest)=0.9639\nPASS ARCHIVED RESULTS ONLY control_DA: 18 records; max distance=0.006706; raw SDSS not rerun\nPASS ARCHIVED RESULTS ONLY control_DB: 18 records; max distance=0.004092; raw SDSS not rerun\nPASS ARCHIVED RESULTS ONLY control_DC: 18 records; max distance=0.001981; raw SDSS not rerun\nPASS SDSS wavelength roundoff: 0 samples in 0/54 arrays differ; max=0 float64 ULPs (limit 2), 0 A absolute, 0 relative; all other FITS-to-NPZ fields exact\nPASS RECOMPUTED SDSS control_DA: 18 raw FITS hashes, physical-unit NPZ arrays, and calibrated colours\nPASS RECOMPUTED SDSS control_DB: 18 raw FITS hashes, physical-unit NPZ arrays, and calibrated colours\nPASS RECOMPUTED SDSS control_DC: 18 raw FITS hashes, physical-unit NPZ arrays, and calibrated colours\nPASS offline reproduction: 4 DESI headlines, 4 Gaia mean/covariance products, and 54 recomputed raw SDSS controls. No full-survey rerun or discovery claim.\n",
+      "script_or_test_source": "clean exported tree; exported root is first on PYTHONPATH and scripts explicitly insert --root before importing project modules"
+    },
+    {
+      "gate": "unittest",
+      "command": [
+        "/workspace/scratch/30369fb9ec2d/wish-you-were-green/.venv-research/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "cwd": "/tmp/wish-green-oct20-clean-ehcz6hoz/checkout",
+      "environment_overrides": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "BLIS_NUM_THREADS": "1",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "PYTHONNOUSERSITE": "1",
+        "PYTHONPATH": "/tmp/wish-green-oct20-clean-ehcz6hoz/checkout",
+        "MPLBACKEND": "Agg",
+        "MPLCONFIGDIR": "/tmp/wish-green-oct20-clean-ehcz6hoz/logs/mpl-unittest"
+      },
+      "started_utc": "2026-10-20T00:49:26.782486+00:00",
+      "finished_utc": "2026-10-20T00:49:30.063914+00:00",
+      "elapsed_seconds": 3.281,
+      "exit_code": 0,
+      "log": "/tmp/wish-green-oct20-clean-ehcz6hoz/logs/unittest.log",
+      "log_sha256": "cc346559ca06bda34282f9e79f4a80e8e2d58ee27dd1e6b661ed2c8d7a394c51",
+      "final_log_lines": [
+        "test_joint_knot_quadrature_and_mask_support (test_scientific_invariants.ScientificInvariants.test_joint_knot_quadrature_and_mask_support) ... ok",
+        "test_planck_radiance_and_continuous_projection (test_scientific_invariants.ScientificInvariants.test_planck_radiance_and_continuous_projection) ... ok",
+        "test_uv_noise_propagation_and_flux_unit_scale (test_scientific_invariants.ScientificInvariants.test_uv_noise_propagation_and_flux_unit_scale) ... ok",
+        "",
+        "----------------------------------------------------------------------",
+        "Ran 15 tests in 0.460s",
+        "",
+        "OK"
+      ],
+      "tests_passed": 15,
+      "complete_log_text": "test_catalogue_aliases_do_not_change_the_number_of_ranked_entities (test_flux_conventions.FluxConventionEvidence.test_catalogue_aliases_do_not_change_the_number_of_ranked_entities) ... ok\ntest_entire_unknown_batch_is_retained_without_candidate_metrics (test_flux_conventions.FluxConventionEvidence.test_entire_unknown_batch_is_retained_without_candidate_metrics) ... ok\ntest_frequency_to_wavelength_preserves_signed_signal_to_noise (test_flux_conventions.FluxConventionEvidence.test_frequency_to_wavelength_preserves_signed_signal_to_noise) ... ok\ntest_historical_reproduction_requires_explicit_selection_opt_in (test_flux_conventions.FluxConventionEvidence.test_historical_reproduction_requires_explicit_selection_opt_in) ... ok\ntest_real_fnu_observation_recovers_direct_sdss_colour (test_flux_conventions.FluxConventionEvidence.test_real_fnu_observation_recovers_direct_sdss_colour) ... ok\ntest_representative_does_not_prefer_the_largest_colour_anomaly (test_flux_conventions.FluxConventionEvidence.test_representative_does_not_prefer_the_largest_colour_anomaly) ... ok\ntest_stale_or_double_converted_arrays_fail_at_both_entry_points (test_flux_conventions.FluxConventionEvidence.test_stale_or_double_converted_arrays_fail_at_both_entry_points) ... ok\ntest_unknown_sha_is_rejected_even_for_familiar_sdss_archive (test_flux_conventions.FluxConventionEvidence.test_unknown_sha_is_rejected_even_for_familiar_sdss_archive) ... ok\ntest_validation_helper_accepts_direct_flambda_and_inverse_variance (test_flux_conventions.FluxConventionEvidence.test_validation_helper_accepts_direct_flambda_and_inverse_variance) ... ok\ntest_verified_flambda_is_unchanged_and_agrees_with_reference (test_flux_conventions.FluxConventionEvidence.test_verified_flambda_is_unchanged_and_agrees_with_reference) ... ok\ntest_continuous_side_uses_normal_and_flags_endpoints (test_scientific_invariants.ScientificInvariants.test_continuous_side_uses_normal_and_flags_endpoints) ... ok\ntest_flat_fnu_ab_standard_has_zero_magnitude_in_all_bands (test_scientific_invariants.ScientificInvariants.test_flat_fnu_ab_standard_has_zero_magnitude_in_all_bands) ... ok\ntest_joint_knot_quadrature_and_mask_support (test_scientific_invariants.ScientificInvariants.test_joint_knot_quadrature_and_mask_support) ... ok\ntest_planck_radiance_and_continuous_projection (test_scientific_invariants.ScientificInvariants.test_planck_radiance_and_continuous_projection) ... ok\ntest_uv_noise_propagation_and_flux_unit_scale (test_scientific_invariants.ScientificInvariants.test_uv_noise_propagation_and_flux_unit_scale) ... ok\n\n----------------------------------------------------------------------\nRan 15 tests in 0.460s\n\nOK\n",
+      "script_or_test_source": "clean exported tree; exported root is first on PYTHONPATH and scripts explicitly insert --root before importing project modules"
+    },
+    {
+      "gate": "extension",
+      "command": [
+        "/workspace/scratch/30369fb9ec2d/wish-you-were-green/.venv-research/bin/python",
+        "/tmp/wish-green-oct20-clean-ehcz6hoz/checkout/scripts/verify_research_extension.py",
+        "--root",
+        "/tmp/wish-green-oct20-clean-ehcz6hoz/checkout"
+      ],
+      "cwd": "/tmp",
+      "environment_overrides": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "BLIS_NUM_THREADS": "1",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "PYTHONNOUSERSITE": "1",
+        "PYTHONPATH": "/tmp/wish-green-oct20-clean-ehcz6hoz/checkout",
+        "MPLBACKEND": "Agg",
+        "MPLCONFIGDIR": "/tmp/wish-green-oct20-clean-ehcz6hoz/logs/mpl-extension"
+      },
+      "started_utc": "2026-10-20T00:49:26.802977+00:00",
+      "finished_utc": "2026-10-20T00:49:31.099190+00:00",
+      "elapsed_seconds": 4.296,
+      "exit_code": 0,
+      "log": "/tmp/wish-green-oct20-clean-ehcz6hoz/logs/extension.log",
+      "log_sha256": "fe39ef0cc54ffd90671caa2947079d00d7ee73e88e3b4539673b6161d6fa7e22",
+      "final_log_lines": [
+        "PASS corrected screen and unit registry: 9902 rows; 2232 unit records; 7473 eligible / 395 strong / 308 keys; unknown-unit colours withheld",
+        "PASS Gaia coefficient/covariance reconstruction: 52 spectra / 26 sources + 1 unavailable; native coefficients reproduce flux, errors and PSD XYZ covariance",
+        "PASS PS1 calibration and held-out z: 25/27 PS1 spectra; 12 new anchors; gri residuals and unused z reintegrated (10 |delta z|>0.05 mag)",
+        "PASS photometric nullspace witnesses: 12 positive continuous spline witnesses; all actual speclite gri constraints and extrema gaps pass",
+        "PASS visual review provenance: 337 individual ledger entries map to index; all 22 actually reviewed image snapshot hashes agree",
+        "PASS DESI individual exposures: 7 directly extracted B/R/Z exposures plus first-night Swan extraction hash-checked; masked J1329 Z remains unavailable",
+        "PASS ZTF native epochs and offset event: 17 target/18 control light curves; 2473 raw/2327 accepted target epochs and 4646 control epochs; rejected offset event and 3 raw cutouts retained",
+        "PASS research extension: 7 groups, 250 hashed inputs; report research/verification.json"
+      ],
+      "complete_log_text": "PASS corrected screen and unit registry: 9902 rows; 2232 unit records; 7473 eligible / 395 strong / 308 keys; unknown-unit colours withheld\nPASS Gaia coefficient/covariance reconstruction: 52 spectra / 26 sources + 1 unavailable; native coefficients reproduce flux, errors and PSD XYZ covariance\nPASS PS1 calibration and held-out z: 25/27 PS1 spectra; 12 new anchors; gri residuals and unused z reintegrated (10 |delta z|>0.05 mag)\nPASS photometric nullspace witnesses: 12 positive continuous spline witnesses; all actual speclite gri constraints and extrema gaps pass\nPASS visual review provenance: 337 individual ledger entries map to index; all 22 actually reviewed image snapshot hashes agree\nPASS DESI individual exposures: 7 directly extracted B/R/Z exposures plus first-night Swan extraction hash-checked; masked J1329 Z remains unavailable\nPASS ZTF native epochs and offset event: 17 target/18 control light curves; 2473 raw/2327 accepted target epochs and 4646 control epochs; rejected offset event and 3 raw cutouts retained\nPASS research extension: 7 groups, 250 hashed inputs; report research/verification.json\n",
+      "script_or_test_source": "clean exported tree; exported root is first on PYTHONPATH and scripts explicitly insert --root before importing project modules"
+    },
+    {
+      "gate": "followup",
+      "command": [
+        "/workspace/scratch/30369fb9ec2d/wish-you-were-green/.venv-research/bin/python",
+        "/tmp/wish-green-oct20-clean-ehcz6hoz/checkout/scripts/verify_research_followup.py",
+        "--root",
+        "/tmp/wish-green-oct20-clean-ehcz6hoz/checkout"
+      ],
+      "cwd": "/tmp",
+      "environment_overrides": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "BLIS_NUM_THREADS": "1",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "PYTHONNOUSERSITE": "1",
+        "PYTHONPATH": "/tmp/wish-green-oct20-clean-ehcz6hoz/checkout",
+        "MPLBACKEND": "Agg",
+        "MPLCONFIGDIR": "/tmp/wish-green-oct20-clean-ehcz6hoz/logs/mpl-followup"
+      },
+      "started_utc": "2026-10-20T00:49:26.798979+00:00",
+      "finished_utc": "2026-10-20T00:49:40.740358+00:00",
+      "elapsed_seconds": 13.941,
+      "exit_code": 0,
+      "log": "/tmp/wish-green-oct20-clean-ehcz6hoz/logs/followup.log",
+      "log_sha256": "4dbae8492d355f2750ffd5856d83c6ab124f4f0172ec2920e4eed921386d8cbc",
+      "final_log_lines": [
+        "PASS published model comparisons: 25/27 candidates + 47/54 controls; 720 fits / 144 logg=8 fits; 25/27 published curves / 1750 bins; all five CSVs recomputed in a curated-only temporary tree",
+        "PASS targeted catalogue and feature checks: {\"initial_export_spectra\": 5, \"initial_official_Gaia_rows\": 9, \"additional_XP_exports\": 5, \"additional_official_Gaia_rows\": 5, \"additional_previously_catalogued_variables\": 5, \"additional_classifier_counts\": {\"CV\": 3, \"S\": 1, \"no_entry\": 1}, \"withheld_historical_SDSS_spike_rows\": 5, \"offline_DESI_window_reintegration\": [{\"row_index\": 1250, \"only_5577_window_delta_uv\": 0.00022213931495733918}, {\"row_index\": 3004, \"only_5577_window_delta_uv\": 6.011797483091505e-05}], \"maximum_additional_XP_Duv_reproduction_difference\": 3.4122010772463796e-15}",
+        "/workspace/scratch/30369fb9ec2d/wish-you-were-green/.venv-research/lib/python3.12/site-packages/erfa/core.py:133: ErfaWarning: ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\"",
+        "  warn(f'ERFA function \"{func_name}\" yielded {wmsg}', ErfaWarning)",
+        "PASS epoch position associations: Four original SDSS FITS and exact Gaia IDs; fibre coordinates and epoch propagation rederived; unknown variability retained",
+        "PASS native narrow-peak sensitivity: Three original native spectra; exact peak locations, supplied errors and 9 explicit deletion sensitivities reproduced; production masks unchanged",
+        "PASS same-observation calibration branches: Recomputed all 3 same-observation SDSS pairs in 3 calibration states from 6 bundled raw originals; native-pixel identity and original sequential photometric acceptance decisions pass. Two representation differences collapse under the same existing correction; one unpaired object remains held.",
+        "PASS follow-up verification 8 groups 334 hashed files"
+      ],
+      "complete_log_text": "PASS measured photometry feasibility: 25 spectra / 450 scenarios / 1772 directly re-integrated witnesses / 28 bounded infeasibilities; 3450 nested constraints; two strict opposite-colour witnesses\nPASS supplemental display review: 1684 automatic display checks; 30 actual visual notes / 8 image hashes / 61 compact curves; original pages retained\nPASS complete individual review: All 2007 entity panels have individual image-bound notes; 4370 original records retained, 3041 verified-unit curves, 323 explicit unavailable panels; 126 current and 22 historical image hashes verified.\nPASS published model comparisons: 25/27 candidates + 47/54 controls; 720 fits / 144 logg=8 fits; 25/27 published curves / 1750 bins; all five CSVs recomputed in a curated-only temporary tree\nPASS targeted catalogue and feature checks: {\"initial_export_spectra\": 5, \"initial_official_Gaia_rows\": 9, \"additional_XP_exports\": 5, \"additional_official_Gaia_rows\": 5, \"additional_previously_catalogued_variables\": 5, \"additional_classifier_counts\": {\"CV\": 3, \"S\": 1, \"no_entry\": 1}, \"withheld_historical_SDSS_spike_rows\": 5, \"offline_DESI_window_reintegration\": [{\"row_index\": 1250, \"only_5577_window_delta_uv\": 0.00022213931495733918}, {\"row_index\": 3004, \"only_5577_window_delta_uv\": 6.011797483091505e-05}], \"maximum_additional_XP_Duv_reproduction_difference\": 3.4122010772463796e-15}\n/workspace/scratch/30369fb9ec2d/wish-you-were-green/.venv-research/lib/python3.12/site-packages/erfa/core.py:133: ErfaWarning: ERFA function \"pmsafe\" yielded 1 of \"distance overridden (Note 6)\"\n  warn(f'ERFA function \"{func_name}\" yielded {wmsg}', ErfaWarning)\nPASS epoch position associations: Four original SDSS FITS and exact Gaia IDs; fibre coordinates and epoch propagation rederived; unknown variability retained\nPASS native narrow-peak sensitivity: Three original native spectra; exact peak locations, supplied errors and 9 explicit deletion sensitivities reproduced; production masks unchanged\nPASS same-observation calibration branches: Recomputed all 3 same-observation SDSS pairs in 3 calibration states from 6 bundled raw originals; native-pixel identity and original sequential photometric acceptance decisions pass. Two representation differences collapse under the same existing correction; one unpaired object remains held.\nPASS follow-up verification 8 groups 334 hashed files\n",
+      "script_or_test_source": "clean exported tree; exported root is first on PYTHONPATH and scripts explicitly insert --root before importing project modules"
+    },
+    {
+      "gate": "oct20",
+      "command": [
+        "/workspace/scratch/30369fb9ec2d/wish-you-were-green/.venv-research/bin/python",
+        "/tmp/wish-green-oct20-clean-ehcz6hoz/checkout/scripts/verify_research_oct20.py",
+        "--root",
+        "/tmp/wish-green-oct20-clean-ehcz6hoz/checkout",
+        "--json",
+        "/tmp/wish-green-oct20-clean-ehcz6hoz/checkout/research/OCT20_VERIFICATION.json",
+        "--write-unit-report"
+      ],
+      "cwd": "/tmp",
+      "environment_overrides": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "BLIS_NUM_THREADS": "1",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "PYTHONNOUSERSITE": "1",
+        "PYTHONPATH": "/tmp/wish-green-oct20-clean-ehcz6hoz/checkout",
+        "MPLBACKEND": "Agg",
+        "MPLCONFIGDIR": "/tmp/wish-green-oct20-clean-ehcz6hoz/logs/mpl-oct20"
+      },
+      "started_utc": "2026-10-20T00:50:04.643643+00:00",
+      "finished_utc": "2026-10-20T00:52:18.707832+00:00",
+      "elapsed_seconds": 134.064,
+      "exit_code": 0,
+      "log": "/tmp/wish-green-oct20-clean-ehcz6hoz/logs/oct20.log",
+      "log_sha256": "3f7e9a884db5b63fcb35cf3659701083500adf097c668c6abd97ce683173fa38",
+      "final_log_lines": [
+        "PASS original_units_native_support_and_individual_review: {\"frozen_records\": 9902, \"frozen_entity_keys\": 6003, \"previously_unresolved_records_rechecked\": 1579, \"query_successful_batches\": 79, \"historical_failed_batches_retained\": 79, \"raw_SHA_logged_inputs\": 3719, \"lossless_numerical_inputs_replayed\": 3719, \"native_identity_pairs_recomputed\": 2175, \"new_Fnu_records\": 178, \"new_Flambda_records\": 435, \"still_unit_unresolved_records\": 966, \"new_native_support_audited_records\": 613, \"new_native_supported_colours\": 601, \"new_colour_withheld_records\": 12, \"current_eligible_records\": 8074, \"current_strong_records\": 419, \"current_strong_entity_keys\": 324, \"outside_native_audit_prior_eligible_records_retained\": 7473, \"actually_viewed_new_entities\": 613, \"actually_viewed_fixed_images\": 39, \"previously_unavailable_units_resolved\": 115, \"previously_unavailable_native_supported_colours\": 112, \"J1323_original_input_replay\": true, \"viewer_native_JavaScript\": \"PASS\", \"viewer_separate_classification_annotations_checked\": 5, \"original_raw_or_query_cache_required\": false, \"network_required\": false}",
+        "PASS actual_additional_catalogue_photometry: {\"fixed_candidates\": 25, \"slots\": 450, \"strict_measurements\": 52, \"sources_with_strict_measurements\": 14, \"catalogue_rows_checked\": 33, \"proper_motion_independent_max_difference_arcsec\": 3.1099122388411615e-07, \"skymapper_exposures_checked\": 110, \"original_input_hashes_checked\": 407, \"regenerated_products\": 11, \"published_classifications_checked\": 3, \"splus_failed_queries_distinguished_from_nondetections\": 25, \"status\": \"PASS\"}",
+        "PASS repeated_spectra_shape_and_context: {\"pairs\": 5, \"DESI_distinct_night_pairs\": 4, \"DESI_full_griz_pairs\": 3, \"DESI_partial_B_R_pairs\": 1, \"SDSS_disjoint_coadd_pairs\": 1, \"SDSS_contributing_nights\": 5, \"SDSS_nonoverlapping_physical_exposures\": 18, \"central_processing_states\": 13, \"spline_space_fits\": 39, \"native_input_products\": 10, \"source_exposure_header_prefixes\": 18, \"exact_Gaia_target_rows\": 1, \"pixel_noise_perturbations_replayed\": 1280, \"maximum_normalization_covariance_replay_error\": 2.7755575615628914e-17, \"actually_viewed_figures_with_matching_hashes\": 7, \"network_required\": false, \"large_survey_cache_required\": false, \"limits\": \"Numerical/evidence replay, not repeat visual perception, a calibration-error distribution, intrinsic-variability confirmation, or a direct bound for J0429/J0913\"}",
+        "PASS whole_colour_set_measurement_design: {\"design_cases\": 276, \"closure_sensitivity_cases\": 8, \"colour_branch_optimization_problems\": 568, \"internal_solver_calls_including_extrema_cuts_and_retries\": 1455, \"continuous_witness_spectra_reintegrated\": 338, \"infeasible_branches_replayed\": 399, \"nested_set_checks\": 1062, \"maximum_closure_distance_change\": 6.603760635288253e-08, \"numerical_residual_maxima\": {\"continuous_budget_violation\": 1.859861292752285e-09, \"primal_violation\": 1.800620139102982e-10, \"dual_stationarity\": 1.6541351188087416e-11, \"duality_gap\": 6.110966984176902e-12, \"direct_integration_error\": 8.881784197001252e-15}}",
+        "PASS actual_added_measurement_constraints: {\"candidate_count\": 25, \"prediction_slots\": 450, \"strict_covered_extra_measurements\": 46, \"candidates_with_extra_measurements\": 14, \"scenarios\": 165, \"colour_branch_optimization_problems\": 660, \"witness_spectra_reintegrated\": 595, \"bounded_infeasible_cases_replayed\": 65, \"nested_set_checks\": 1059, \"numerical_residual_maxima\": {\"supremum_gap\": 1.9893803826498413e-09, \"photometry_violation_mag\": 1.6518996188291668e-09, \"duality_gap\": 2.7478019859472624e-15, \"dual_stationarity\": 5.748605988204359e-09}}",
+        "PASS independently_rebuilt_selected_colour_sets: {\"declared_cases_replayed\": 6, \"separate_continuous_spectra_checked\": 12, \"largest_primal_residual\": 7.006225460903792e-11, \"largest_dual_stationarity\": 1.2184439004622738e-11, \"largest_absolute_duality_gap\": 2.0702333076993984e-12, \"dual_reporting_fix_checked\": true, \"numerical_zeros_suppressed_as_precision_requirements\": true}",
+        "PASS targeted_native_features_and_published_classification_context: {\"targeted_entities\": 4, \"source_backed_catalogue_followup_entities\": 3, \"additional_local_only_followup_entities\": 1, \"native_visible_samples_replayed\": 13539, \"original_SDSS_Flambda_with_native_masks\": 4, \"same_observation_Fnu_exports_identified\": 3, \"same_observation_Flambda_exports_identified\": 1, \"published_Kleinman_rows_replayed\": 4, \"exact_selected_observation_classification_rows\": 2, \"same_position_other_observation_classification_rows\": 2, \"new_Gaia_target_rows\": 3, \"existing_Gaia_AGN_classification_rows\": 1, \"actually_viewed_final_PNGs_with_matching_hashes\": 4, \"spectral_shapes_deleted\": 0, \"network_required\": false, \"full_raw_cache_required\": false, \"limits\": \"Numerical/source replay of four purposively selected visual flags. Three include newly retrieved catalogue context; the fourth uses local native arrays and existing metadata only. No new physical classification, astronomical discovery, atmospheric fit, calibrated probability, or repeated visual perception.\"}",
+        "PASS October 20 research: 8 groups; 1555 file hashes. No network."
+      ],
+      "complete_log_text": "PASS original_units_native_support_and_individual_review: {\"frozen_records\": 9902, \"frozen_entity_keys\": 6003, \"previously_unresolved_records_rechecked\": 1579, \"query_successful_batches\": 79, \"historical_failed_batches_retained\": 79, \"raw_SHA_logged_inputs\": 3719, \"lossless_numerical_inputs_replayed\": 3719, \"native_identity_pairs_recomputed\": 2175, \"new_Fnu_records\": 178, \"new_Flambda_records\": 435, \"still_unit_unresolved_records\": 966, \"new_native_support_audited_records\": 613, \"new_native_supported_colours\": 601, \"new_colour_withheld_records\": 12, \"current_eligible_records\": 8074, \"current_strong_records\": 419, \"current_strong_entity_keys\": 324, \"outside_native_audit_prior_eligible_records_retained\": 7473, \"actually_viewed_new_entities\": 613, \"actually_viewed_fixed_images\": 39, \"previously_unavailable_units_resolved\": 115, \"previously_unavailable_native_supported_colours\": 112, \"J1323_original_input_replay\": true, \"viewer_native_JavaScript\": \"PASS\", \"viewer_separate_classification_annotations_checked\": 5, \"original_raw_or_query_cache_required\": false, \"network_required\": false}\nPASS actual_additional_catalogue_photometry: {\"fixed_candidates\": 25, \"slots\": 450, \"strict_measurements\": 52, \"sources_with_strict_measurements\": 14, \"catalogue_rows_checked\": 33, \"proper_motion_independent_max_difference_arcsec\": 3.1099122388411615e-07, \"skymapper_exposures_checked\": 110, \"original_input_hashes_checked\": 407, \"regenerated_products\": 11, \"published_classifications_checked\": 3, \"splus_failed_queries_distinguished_from_nondetections\": 25, \"status\": \"PASS\"}\nPASS repeated_spectra_shape_and_context: {\"pairs\": 5, \"DESI_distinct_night_pairs\": 4, \"DESI_full_griz_pairs\": 3, \"DESI_partial_B_R_pairs\": 1, \"SDSS_disjoint_coadd_pairs\": 1, \"SDSS_contributing_nights\": 5, \"SDSS_nonoverlapping_physical_exposures\": 18, \"central_processing_states\": 13, \"spline_space_fits\": 39, \"native_input_products\": 10, \"source_exposure_header_prefixes\": 18, \"exact_Gaia_target_rows\": 1, \"pixel_noise_perturbations_replayed\": 1280, \"maximum_normalization_covariance_replay_error\": 2.7755575615628914e-17, \"actually_viewed_figures_with_matching_hashes\": 7, \"network_required\": false, \"large_survey_cache_required\": false, \"limits\": \"Numerical/evidence replay, not repeat visual perception, a calibration-error distribution, intrinsic-variability confirmation, or a direct bound for J0429/J0913\"}\nPASS whole_colour_set_measurement_design: {\"design_cases\": 276, \"closure_sensitivity_cases\": 8, \"colour_branch_optimization_problems\": 568, \"internal_solver_calls_including_extrema_cuts_and_retries\": 1455, \"continuous_witness_spectra_reintegrated\": 338, \"infeasible_branches_replayed\": 399, \"nested_set_checks\": 1062, \"maximum_closure_distance_change\": 6.603760635288253e-08, \"numerical_residual_maxima\": {\"continuous_budget_violation\": 1.859861292752285e-09, \"primal_violation\": 1.800620139102982e-10, \"dual_stationarity\": 1.6541351188087416e-11, \"duality_gap\": 6.110966984176902e-12, \"direct_integration_error\": 8.881784197001252e-15}}\nPASS actual_added_measurement_constraints: {\"candidate_count\": 25, \"prediction_slots\": 450, \"strict_covered_extra_measurements\": 46, \"candidates_with_extra_measurements\": 14, \"scenarios\": 165, \"colour_branch_optimization_problems\": 660, \"witness_spectra_reintegrated\": 595, \"bounded_infeasible_cases_replayed\": 65, \"nested_set_checks\": 1059, \"numerical_residual_maxima\": {\"supremum_gap\": 1.9893803826498413e-09, \"photometry_violation_mag\": 1.6518996188291668e-09, \"duality_gap\": 2.7478019859472624e-15, \"dual_stationarity\": 5.748605988204359e-09}}\nPASS independently_rebuilt_selected_colour_sets: {\"declared_cases_replayed\": 6, \"separate_continuous_spectra_checked\": 12, \"largest_primal_residual\": 7.006225460903792e-11, \"largest_dual_stationarity\": 1.2184439004622738e-11, \"largest_absolute_duality_gap\": 2.0702333076993984e-12, \"dual_reporting_fix_checked\": true, \"numerical_zeros_suppressed_as_precision_requirements\": true}\nPASS targeted_native_features_and_published_classification_context: {\"targeted_entities\": 4, \"source_backed_catalogue_followup_entities\": 3, \"additional_local_only_followup_entities\": 1, \"native_visible_samples_replayed\": 13539, \"original_SDSS_Flambda_with_native_masks\": 4, \"same_observation_Fnu_exports_identified\": 3, \"same_observation_Flambda_exports_identified\": 1, \"published_Kleinman_rows_replayed\": 4, \"exact_selected_observation_classification_rows\": 2, \"same_position_other_observation_classification_rows\": 2, \"new_Gaia_target_rows\": 3, \"existing_Gaia_AGN_classification_rows\": 1, \"actually_viewed_final_PNGs_with_matching_hashes\": 4, \"spectral_shapes_deleted\": 0, \"network_required\": false, \"full_raw_cache_required\": false, \"limits\": \"Numerical/source replay of four purposively selected visual flags. Three include newly retrieved catalogue context; the fourth uses local native arrays and existing metadata only. No new physical classification, astronomical discovery, atmospheric fit, calibrated probability, or repeated visual perception.\"}\nPASS October 20 research: 8 groups; 1555 file hashes. No network.\n",
+      "script_or_test_source": "clean exported tree; exported root is first on PYTHONPATH and scripts explicitly insert --root before importing project modules"
+    }
+  ],
+  "new_oct20_summary": {
+    "groups": 8,
+    "verified_file_count": 1555,
+    "group_summaries": [
+      {
+        "name": "original_units_native_support_and_individual_review",
+        "status": "PASS",
+        "summary": {
+          "frozen_records": 9902,
+          "frozen_entity_keys": 6003,
+          "previously_unresolved_records_rechecked": 1579,
+          "query_successful_batches": 79,
+          "historical_failed_batches_retained": 79,
+          "raw_SHA_logged_inputs": 3719,
+          "lossless_numerical_inputs_replayed": 3719,
+          "native_identity_pairs_recomputed": 2175,
+          "new_Fnu_records": 178,
+          "new_Flambda_records": 435,
+          "still_unit_unresolved_records": 966,
+          "new_native_support_audited_records": 613,
+          "new_native_supported_colours": 601,
+          "new_colour_withheld_records": 12,
+          "current_eligible_records": 8074,
+          "current_strong_records": 419,
+          "current_strong_entity_keys": 324,
+          "outside_native_audit_prior_eligible_records_retained": 7473,
+          "actually_viewed_new_entities": 613,
+          "actually_viewed_fixed_images": 39,
+          "previously_unavailable_units_resolved": 115,
+          "previously_unavailable_native_supported_colours": 112,
+          "J1323_original_input_replay": true,
+          "viewer_native_JavaScript": "PASS",
+          "viewer_separate_classification_annotations_checked": 5,
+          "original_raw_or_query_cache_required": false,
+          "network_required": false
+        }
+      },
+      {
+        "name": "actual_additional_catalogue_photometry",
+        "status": "PASS",
+        "summary": {
+          "fixed_candidates": 25,
+          "slots": 450,
+          "strict_measurements": 52,
+          "sources_with_strict_measurements": 14,
+          "catalogue_rows_checked": 33,
+          "proper_motion_independent_max_difference_arcsec": 3.1099122388411615e-07,
+          "skymapper_exposures_checked": 110,
+          "original_input_hashes_checked": 407,
+          "regenerated_products": 11,
+          "published_classifications_checked": 3,
+          "splus_failed_queries_distinguished_from_nondetections": 25,
+          "status": "PASS"
+        }
+      },
+      {
+        "name": "repeated_spectra_shape_and_context",
+        "status": "PASS",
+        "summary": {
+          "pairs": 5,
+          "DESI_distinct_night_pairs": 4,
+          "DESI_full_griz_pairs": 3,
+          "DESI_partial_B_R_pairs": 1,
+          "SDSS_disjoint_coadd_pairs": 1,
+          "SDSS_contributing_nights": 5,
+          "SDSS_nonoverlapping_physical_exposures": 18,
+          "central_processing_states": 13,
+          "spline_space_fits": 39,
+          "native_input_products": 10,
+          "source_exposure_header_prefixes": 18,
+          "exact_Gaia_target_rows": 1,
+          "pixel_noise_perturbations_replayed": 1280,
+          "maximum_normalization_covariance_replay_error": 2.7755575615628914e-17,
+          "actually_viewed_figures_with_matching_hashes": 7,
+          "network_required": false,
+          "large_survey_cache_required": false,
+          "limits": "Numerical/evidence replay, not repeat visual perception, a calibration-error distribution, intrinsic-variability confirmation, or a direct bound for J0429/J0913"
+        }
+      },
+      {
+        "name": "whole_colour_set_measurement_design",
+        "status": "PASS",
+        "summary": {
+          "design_cases": 276,
+          "closure_sensitivity_cases": 8,
+          "colour_branch_optimization_problems": 568,
+          "internal_solver_calls_including_extrema_cuts_and_retries": 1455,
+          "continuous_witness_spectra_reintegrated": 338,
+          "infeasible_branches_replayed": 399,
+          "nested_set_checks": 1062,
+          "maximum_closure_distance_change": 6.603760635288253e-08,
+          "numerical_residual_maxima": {
+            "continuous_budget_violation": 1.859861292752285e-09,
+            "primal_violation": 1.800620139102982e-10,
+            "dual_stationarity": 1.6541351188087416e-11,
+            "duality_gap": 6.110966984176902e-12,
+            "direct_integration_error": 8.881784197001252e-15
+          }
+        }
+      },
+      {
+        "name": "actual_added_measurement_constraints",
+        "status": "PASS",
+        "summary": {
+          "candidate_count": 25,
+          "prediction_slots": 450,
+          "strict_covered_extra_measurements": 46,
+          "candidates_with_extra_measurements": 14,
+          "scenarios": 165,
+          "colour_branch_optimization_problems": 660,
+          "witness_spectra_reintegrated": 595,
+          "bounded_infeasible_cases_replayed": 65,
+          "nested_set_checks": 1059,
+          "numerical_residual_maxima": {
+            "supremum_gap": 1.9893803826498413e-09,
+            "photometry_violation_mag": 1.6518996188291668e-09,
+            "duality_gap": 2.7478019859472624e-15,
+            "dual_stationarity": 5.748605988204359e-09
+          }
+        }
+      },
+      {
+        "name": "independently_rebuilt_selected_colour_sets",
+        "status": "PASS",
+        "summary": {
+          "declared_cases_replayed": 6,
+          "separate_continuous_spectra_checked": 12,
+          "largest_primal_residual": 7.006225460903792e-11,
+          "largest_dual_stationarity": 1.2184439004622738e-11,
+          "largest_absolute_duality_gap": 2.0702333076993984e-12,
+          "dual_reporting_fix_checked": true,
+          "numerical_zeros_suppressed_as_precision_requirements": true
+        }
+      },
+      {
+        "name": "targeted_native_features_and_published_classification_context",
+        "status": "PASS",
+        "summary": {
+          "targeted_entities": 4,
+          "source_backed_catalogue_followup_entities": 3,
+          "additional_local_only_followup_entities": 1,
+          "native_visible_samples_replayed": 13539,
+          "original_SDSS_Flambda_with_native_masks": 4,
+          "same_observation_Fnu_exports_identified": 3,
+          "same_observation_Flambda_exports_identified": 1,
+          "published_Kleinman_rows_replayed": 4,
+          "exact_selected_observation_classification_rows": 2,
+          "same_position_other_observation_classification_rows": 2,
+          "new_Gaia_target_rows": 3,
+          "existing_Gaia_AGN_classification_rows": 1,
+          "actually_viewed_final_PNGs_with_matching_hashes": 4,
+          "spectral_shapes_deleted": 0,
+          "network_required": false,
+          "full_raw_cache_required": false,
+          "limits": "Numerical/source replay of four purposively selected visual flags. Three include newly retrieved catalogue context; the fourth uses local native arrays and existing metadata only. No new physical classification, astronomical discovery, atmospheric fit, calibrated probability, or repeated visual perception."
+        }
+      },
+      {
+        "name": "actual_viewing_provenance_and_selected_original_pixels",
+        "status": "PASS",
+        "summary": {
+          "photometry_object_panels": 25,
+          "summary_figures": 4,
+          "targeted_native_records": 5,
+          "known_binary_context_position_recalculated": true
+        }
+      }
+    ]
+  },
+  "immutability_checks": {
+    "all_source_files_compared_with_git_blob_ids": 2696,
+    "scientific_code_input_documentation_and_image_blobs_unchanged": true,
+    "allowed_export_report_changes": {
+      "research/OCT20_VERIFICATION.json": {
+        "source_blob": "9d1e499be10089a72cfddf1305ff6b6f3501b719",
+        "export_blob": "b6a6553176f600270afce284b27cd0bed82f4b9f",
+        "export_sha256": "5e98b4efe00d831d80e696a31e6b35383a82130b2dbb201cc6bd71629da857cb"
+      },
+      "research/followup_verification.json": {
+        "source_blob": "8b6c59f0ce28d391788c8ccf8cd9ff1d3b0c4c5b",
+        "export_blob": "32636a6ef2dd51e6af28592455326c39e43bd126",
+        "export_sha256": "3164c5dc19db15d2e4e1c2fe6fbd463a8951904b9338e922875140257d94bece"
+      },
+      "research/unit_resolution_followup/verification_summary.json": {
+        "source_blob": "d690f178f49bc4aa5d24c2de528cb49035348313",
+        "export_blob": "23920bd04eaf45305d4891c55c3b9d04f87ffdb1",
+        "export_sha256": "d9156e5979b8403aa7f8fc53bcd2eaa22ea62838227902acd8d30a624fd62f26"
+      },
+      "research/verification.json": {
+        "source_blob": "6eb260720bc63b34f4a25a569b16cfd88e6f8cd8",
+        "export_blob": "4895b0cf51934df939b0b9154a75afbf859f659d",
+        "export_sha256": "249d4e52f4fa4ce066cadf33214895fc012dda9a27467e919159421750d1c0cc"
+      }
+    },
+    "original_source_blobs_unchanged_before_report_copy": true,
+    "extra_export_files": [],
+    "historical_original_reports_preserved": {
+      "research/verification.json": "71ccbc86cd2dc0ec9e4fe1b60e936265a94a8725048c6b2388bccae4a31430d9",
+      "research/followup_verification.json": "c15f708df1603f2e313dcded1c1829321f82823b710ed09d961982fd6ee62c4b"
+    }
+  },
+  "copied_back_new_reports": {
+    "research/OCT20_VERIFICATION.json": {
+      "export_sha256": "5e98b4efe00d831d80e696a31e6b35383a82130b2dbb201cc6bd71629da857cb",
+      "original_before_sha256": "9e48da1159d88606f30f46a00465182c20ec1c3f0ebc212bfb81c479596bfc65",
+      "copied_bytes": 234791
+    },
+    "research/unit_resolution_followup/verification_summary.json": {
+      "export_sha256": "d9156e5979b8403aa7f8fc53bcd2eaa22ea62838227902acd8d30a624fd62f26",
+      "original_before_sha256": "9c8eb6e2870c9b8489d0a02eef707b575cc2464394a95ecd6c96c9ce5120c10e",
+      "copied_bytes": 22451
+    }
+  },
+  "final_staging_scope": "Only the two newly regenerated reports listed above and this CLEAN_EXPORT record are added after verification. The final tree necessarily differs from source_tree in these report artifacts; all tested scientific/source/image blobs remain identical.",
+  "scope_limits": "Offline numerical replay and retained source/hash/viewing provenance using the recorded external Python environment. No raw survey or uncompressed query cache is copied. The new wrapper blocks socket connections and DNS. This does not repeat original downloads or actual image viewing, establish astrophysical novelty, measure independent calibration systematics, or prove floating-point results by interval arithmetic."
+}

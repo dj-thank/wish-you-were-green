@@ -4,19 +4,29 @@
 
 [English](README.md) · **日本語**
 
-**v0.2では、スペクトルのフラックス表現の取り違えを修正しました。** SDSSの原観測との照合により、MWDDの149ファイルをFν、504をFλとして確認し、1,579は未解決のまま保持しています。現行の選別結果は **7,473適格スペクトル記録・308強外れentity key** です。**J1323−0129の独立SDSS分光による色の裏付けは撤回します。** 該当SDSSの単位が未解決でnative Gaia XPも取得できていないため、現在はDESI単独装置の色候補です。[訂正の証拠](research/precision/flux_convention_evidence.json)・[現行集計と解釈](research/precision/flux_units/corrected_screen_summary.json)
+**10月20日の追加研究で、SDSSの単位をさらに613記録確定し、別の2サーベイから実際の撮像測光を取得しました。** 現在の対象範囲を限定した選別結果は **8,074適格記録、強外れ419記録・324 entity key** です。MWDD経由SDSSの2,232ファイルは **Fν 327・Fλ 939・未解決966** になりました。今回の元画素による波長支持の監査は新規確定613記録に適用し、以前の適格7,473記録は過去の値を保持しています。全記録を同じ新条件で再監査したという意味ではありません。[現行の科学集計](research/unit_resolution_followup/science_view_summary.json)・[記録を確認する画面](research/unit_resolution_followup/current_view.html)
 
 いずれも既知の星です。この研究は、人間の視覚に対応する色度を計算し、その測定がどの条件で再現するか、大気モデルの何を検証できるかを調べます。**ChatGPT支援による探索的・未査読の研究**であり、新しい星や吸収機構、世界的優先権、母集団の発見率を確定したとはしていません。
 
 **企画・管理：** Shota Moriwaki
 
-**研究改訂版：** 0.2.0＋10月19日追加解析 · **更新：** 2026年10月19日 UTC
+**研究改訂版：** 0.2.0＋10月20日追加解析 · **更新：** 2026年10月20日 UTC
 
 **リポジトリ：** [dj-thank/wish-you-were-green](https://github.com/dj-thank/wish-you-were-green)
 
-**詳しい内容は[現在の日本語研究報告](research/README.ja.md)と[English report](research/README.md)へ。** 実行済みの解析、次に試す仮説、残る限界を分けて記録しています。
+**最新結果は[10月20日の日本語追加報告](research/FOLLOWUP_2026-10-20.ja.md)と[English report](research/FOLLOWUP_2026-10-20.en.md)へ。** [研究概要](research/README.ja.md)には、以前の方法・結果を日付付きで残しています。
 
-### 最新追加：個別確認の完了と、公開モデルを使った検証
+### 10月20日の追加：別の実測値と、元画素による支持の確認
+
+**単位を追加確定した613記録は、39枚の図で全件を実際に確認しました。** 元の有効画素と波長域が色計算を支える601記録を採用し、12記録は保留しています。内訳は、今回の波長支持の検査で追加保留となった10記録と、以前の基準でも不適格だった2記録です。以前は表示不可だった115対象の単位が解決し、**112対象で色計算を回復**しました。単位の確定だけで、欠測・ノイズ・対象位置の問題まで解決したとはしていません。[現行レコード表](research/unit_resolution_followup/science_record_view.csv.gz)・[全件の個別記録](research/unit_resolution_followup/individual_review.md)
+
+固定した25候補について**450バンド枠を監査し、SkyMapper／J-PLUSから14対象・52測定を品質条件で採用しました。そのうち46測定は、スペクトルが応答関数の全域を覆います。** 別の撮像で得た光子による情報ですが、Gaia標準星、J-PLUSのWD locus・PS1 r零点を介した共通の較正誤差は残ります。近傍星との誤対応、マスク、欠測、S-PLUSの照会失敗も全件台帳に保持しました。[測光・対応星・品質の根拠](research/independent_photometry/README.md)
+
+J0429−0354では、実測PS1 grizの誤差範囲にSkyMapper r/iを加えると、節点間隔800 Åの補正族で必要な最小形状変化は**4.92%**になりました。厳密な緑優位には約**5.0103%**、赤優位には約**4.9236%**を要します。ただし追加の0.02 magの誤差箱を許すと、この区別は消えます。実測の色変化ではなく、指定した制約での解の存在範囲です。別のJ0429観測設計実験では、PS1 grizとJ-PLUSの被覆10バンド（計14）を用いても、節点400 Å・変形5%の条件で逆の色順序を数値的に区別できない解が残りました。[実測値と提案バンドによる制約](research/measurement_design/README.ja.md)
+
+**J1323−0129のSDSSは、同一原観測の画素からFλと確認できました。** 正のDuvを定性的に支持する計算は回復しましたが、native S/N 2.36と、観測epochでSDSSのPLUG位置から約1.138″離れる問題があり、高精度な独立支持は引き続き保留しています。native Gaia XPもありません。別に調べたSDSSの反復例は、**5夜・18実露出から作った2組のcoadd**であり、2夜の観測とは数えません。[反復スペクトルの形状診断](research/repeat_shape_validation/README.ja.md)・[10月20日の解釈](research/FOLLOWUP_2026-10-20.ja.md)
+
+### 保存した10月19日の成果：個別確認と公開モデル比較
 
 **グラフの大きなずれの実際の原因も2例特定しました。** 同じSDSS原観測の重複表現に、異なる較正の分岐が適用されていました。現行の見かけの差Δuv=0.01360・0.01517は、同じ既存補正で比較すると99.99%以上縮小します。[原画素の証拠と修正した比較図](research/outlier_followup/representation_calibration/README.md)
 
@@ -29,20 +39,23 @@
 | 対象・処理 | 現行値または監査実績 |
 |---|---:|
 | 元の全スペクトル台帳 | 9,902記録・6,003 catalogue entity key |
-| 単位判定を反映した適格記録 | **7,473** |
-| 現行の強外れ選別 | **395記録・308 entity key** |
-| MWDD SDSSのフラックス表現 | **Fν 149・Fλ 504・未解決1,579** |
-| 新しい解釈で再計算したSDSS | 3,629記録 |
+| 今回の対象範囲の波長支持を反映した適格記録 | **8,074** |
+| 現行の強外れ選別 | **419記録・324 entity key** |
+| MWDD SDSSのフラックス表現 | **Fν 327・Fλ 939・未解決966** |
+| 単位と元画素の支持を追加確認した記録 | **613：色の採用601・保留12** |
+| 以前表示不可の対象で単位解決／色回復 | **115／112** |
+| 固定25候補の追加撮像測光 | **450枠・品質採用52測定・全域被覆46測定・14対象** |
 | 実際に全パネル目視した旧強外れ対象 | 337対象・22画像 |
-| 今回個別確認を完了した残りの要確認対象 | 2007対象・126画像：曲線あり1684／利用不可323 |
-| 今回の表示に用いた現行スペクトル | 原SHA確認・色再現3041記録 |
+| 10月19日に個別確認を完了した要確認対象 | 2007対象・126画像：曲線あり1684／利用不可323 |
+| 10月19日の表示に用いたスペクトル | 原SHA確認・当時の色再現3041記録 |
+| 10月20日の追加個別閲覧 | 613記録・39画像、全パネル実見 |
 | SHA256一致を確認して再取得した要確認入力 | 4,355件。旧計算4,353件再現、既存失敗2件を保持 |
 
-**v0.1の9,023適格記録・337強外れentity**は旧処理で得た値です。旧入力・旧数値ファイルは来歴を追うために残しています。現在の判定は[修正済みレコード表](research/precision/flux_units/corrected_record_screen.csv.gz)と[修正済み天体表](research/precision/flux_units/corrected_object_screen.csv)を使ってください。entity keyには過去の位置照合が残っており、同定済みの独立した星の数とは限りません。これらは探索上の選別件数であり、発見の有意性ではありません。[数え方と監査範囲](research/README.ja.md)
+v0.1の**適格9,023・強外れ337 entity**、10月18日の**適格7,473・強外れ395記録／308 entity**、10月20日の旧基準互換比較**8,084／421／325**は、それぞれ保存した別時点・別条件の値です。現在の判定は[科学レコード表](research/unit_resolution_followup/science_record_view.csv.gz)と[天体表](research/unit_resolution_followup/science_object_view.csv)を使ってください。今回の元画素支持の更新は613記録に限定しています。entity keyには過去の位置照合が残り、同定済みの独立した星の数とは限りません。これらは探索上の選別件数であり、発見の有意性ではありません。[数え方と監査範囲](research/README.ja.md)
 
-![フラックス表現の訂正を反映した現行の色度分布](research/precision/flux_units/corrected_colour_plane.png)
+![10月20日の対象範囲を限定した元画素支持の更新を反映した色度分布](research/unit_resolution_followup/science_colour_plane.png)
 
-*計算したCIE色度の選別図です。原スペクトル、未解決例、旧結果は追跡可能な形で保持しています。確認済み発見の一覧ではありません。*
+*計算したCIE色度の選別図です。元画素支持の新規監査は613記録に限定し、以前の適格記録は旧値を保持しています。原スペクトル、保留例、旧結果は追跡可能です。*
 
 ## 主要4候補の現在のDESI色推定
 
@@ -53,7 +66,7 @@
 | WD J0913+4434 | 818833831355548928 | 淡い黄緑 | #F1FFC9 | +0.019058 | +0.016975 ～ +0.021233 |
 | WD J0429−0354 | 3204436719718449280 | 淡い黄緑 | #F8FFDC | +0.012809 | +0.011973 ～ +0.013651 |
 | WD J1329+0033 | 3711047662972690688 | ピンク | #FFC1CF | −0.022652 | −0.024811 ～ −0.020482 |
-| WD J1323−0129 | 3638333660492606976 | 黒体から外れた黄色・DESI単独支持 | #FFE96A | +0.023498 | +0.020943 ～ +0.025993 |
+| WD J1323−0129 | 3638333660492606976 | 黒体から外れた黄色・高精度SDSS支持は保留 | #FFE96A | +0.023498 | +0.020943 ～ +0.025993 |
 
 [丸め前の根拠表](research/precision/candidate_recalibration/standardized_colours.csv)に、測光アンカー、誤差、原データSHA256、較正係数を記録しています。[v0.1の旧代表値](results/headline_candidates.csv)も保持しています。J1323の表示色の1段階の差を含め、小さな変更は較正・誤差定義の変更による再解析であり、星の時間変化の測定ではありません。16進色の末尾を物理的な測定精度と解釈しないでください。[PS1の定義・DR1/DR2照合](research/literature/swan_photometry_definition.md)
 
@@ -73,13 +86,17 @@
 
 | 資料 | 内容と版 |
 |---|---|
-| [現在の日本語報告](research/README.ja.md)・[English](research/README.md) | v0.2の発見事項、限界、次の科学的検証 |
+| [10月20日追加報告](research/FOLLOWUP_2026-10-20.ja.md)・[English](research/FOLLOWUP_2026-10-20.en.md) | 現行の限定監査集計、追加の実測制約、反復分光と限界 |
+| [研究概要](research/README.ja.md)・[English](research/README.md) | 現行要約と、保存した10月18–19日の方法・結果 |
+| [現行記録の閲覧画面](research/unit_resolution_followup/current_view.html)・[科学集計](research/unit_resolution_followup/science_view_summary.json) | 613件の単位判定、元画素の支持による保留、現行の色 |
+| [別撮像の測光](research/independent_photometry/README.md)・[測定設計](research/measurement_design/README.ja.md) | 全25対象・450枠の採否、品質採用52／全域被覆46測定、条件付き実験 |
+| [反復スペクトルの形状](research/repeat_shape_validation/README.ja.md)・[English](research/repeat_shape_validation/README.md) | DESIの4組とSDSSの2 coadd、共有アンカー・元の観測条件 |
 | [10月19日追加研究](research/FOLLOWUP_2026-10-19.ja.md)・[English](research/FOLLOWUP_2026-10-19.en.md) | 個別確認の完了、実測測光の制約、公開モデル比較、原データ診断 |
 | [追加2007対象の全件台帳](research/outlier_followup/individual_review.csv) | 個別の観察、利用不可例、固定した画像への対応 |
-| [追加研究ノートブック](research/research_extension.ipynb) | 今回の検証、修正済み集計、候補の比較図 |
+| [追加研究ノートブック](research/research_extension.ipynb) | v0.2追加解析の保存版。実施時の検証、集計、比較図 |
 | [初期27追跡CSV](research/candidate27_followup.csv)・[JSON](research/candidate27_followup.json) | 全候補の区間、来歴、次に確認すること |
 | [候補の誤差比較図](research/candidate27_uncertainty_comparison.png) | 全27対象。Gaia両再構成の独立性に注意 |
-| [天体別監査HTML](research/outlier_audit/object_audit.html) | 全9,902記録について、修正後の判定・旧値・原データ・保留理由を比較 |
+| [10月18日の天体別監査HTML](research/outlier_audit/object_audit.html) | 全9,902記録の保存した履歴。10月20日の採否は現行閲覧画面を参照 |
 | [目視記録01–11](research/outlier_audit/visual_review_01_11.md)・[12–22](research/outlier_audit/visual_review_12_22.md) | 旧強外れ対象の全パネルを実見した個別記録 |
 | [v0.1日本語報告](docs/report.ja.md)・[English](docs/report.en.md) | 冒頭に訂正を明記した旧報告。旧数値を保持 |
 | [v0.1日本語ノート](white_dwarf_colour_research.ja.ipynb)・[English](white_dwarf_colour_research.ipynb) | 旧実行結果を保持し、冒頭に訂正を追加 |
@@ -100,11 +117,12 @@ python3.12 -m venv .venv-colour
 .venv-colour/bin/python -m unittest discover -s tests -p 'test_*.py' -v
 .venv-colour/bin/python scripts/verify_research_extension.py
 .venv-colour/bin/python scripts/verify_research_followup.py
+.venv-colour/bin/python scripts/verify_research_oct20.py
 ```
 
 Windowsでは対応する `.venv-colour\Scripts\python.exe` を使ってください。
 
-コンパクト検証は、保存したv0.1の主要DESI/Gaia計算とSDSS対照54観測をオフラインで再計算します。追加研究の検証は、保存入力、意味のある不変量、選択した再計算を確認します。全サーベイ取得、全画像の目視、全乱数試行、GaiaXPyの導入を繰り返す処理ではありません。検証成功は指定した計算の整合性を示し、天体物理の新規性や系統誤差の不存在を証明しません。
+コンパクト検証は、保存したv0.1の主要DESI/Gaia計算とSDSS対照54観測をオフラインで再計算します。日付付きの追加研究検証器は各時点の保存入力と計算を確認します。10月20日の検証器は、保存したコンパクト入力から単位・画素支持、測光の再構築、実測／提案の制約、反復形状の診断を追加検証します。全サーベイ取得、実際の目視、全乱数試行、GaiaXPyの導入を繰り返す処理ではありません。検証成功は指定した計算の整合性を示し、天体物理の新規性や系統誤差の不存在を証明しません。
 
 より広い再計算は[研究報告の再現説明](research/README.ja.md)を参照してください。native XP再構成は[依存を固定した別のGaiaXPy環境](mwdd/gaia_validation/requirements-gaia.txt)を使います。全原スペクトルやカメラFITSの復元には公開アーカイブへの接続とmanifestのSHA256確認が必要です。過去の入力を現在の別応答へ黙って置き換えません。
 
@@ -112,7 +130,7 @@ Windowsでは対応する `.venv-colour\Scripts\python.exe` を使ってくだ�
 
 **Shota Moriwaki** が企画・管理しています。取得、コード、解析、検算、文章作成には **OpenAI ChatGPTの支援**を使用しました。ChatGPTは使用したツールとして開示し、科学論文の著者とはしていません。本研究は未査読で、引用した研究者や観測チームの所属・支持を表すものではありません。
 
-観測・較正はDESI、ESA/Gaia/DPAC、SDSS、Pan-STARRSの各チームに帰属します。MWDD、PEWDD、CDS、元論文の分類・大気モデルもそれぞれの著者の成果です。Hollandsらの色計算と既知の異常色白色矮星は先行研究として扱います。[謝辞](ACKNOWLEDGMENTS.md)・[追加データの指定謝辞](research/literature/DATA_ACKNOWLEDGMENTS.md)・[文献](docs/references.bib)
+観測・較正はDESI、ESA/Gaia/DPAC、SDSS、Pan-STARRS、SkyMapper、J-PLUSの各チームに帰属します。MWDD、PEWDD、CDS、SVO Filter Profile Service、元論文の分類・大気モデル・応答関数もそれぞれの提供者の成果です。Hollandsらの色計算と既知の異常色白色矮星は先行研究として扱います。[謝辞](ACKNOWLEDGMENTS.md)・[追加データの指定謝辞](research/literature/DATA_ACKNOWLEDGMENTS.md)・[文献](docs/references.bib)
 
 利用した版またはcommitを特定し、使った原論文・データも引用してください。[CITATION.cff](CITATION.cff)に機械可読の引用情報を置いています。
 

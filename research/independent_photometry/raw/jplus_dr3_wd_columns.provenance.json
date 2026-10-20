@@ -1,0 +1,16 @@
+{
+  "url": "https://archive.cefca.es/catalogues/vo/tap/jplus-dr3/sync",
+  "query_parameters": {
+    "REQUEST": "doQuery",
+    "LANG": "ADQL",
+    "FORMAT": "csv",
+    "MAXREC": "10000",
+    "QUERY": "SELECT column_name,description,unit,datatype FROM TAP_SCHEMA.columns WHERE table_name='jplus.WhiteDwarf'"
+  },
+  "final_url": "https://archive.cefca.es/catalogues/vo/tap/jplus-dr3/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&MAXREC=10000&QUERY=SELECT+column_name%2Cdescription%2Cunit%2Cdatatype+FROM+TAP_SCHEMA.columns+WHERE+table_name%3D%27jplus.WhiteDwarf%27",
+  "retrieved_utc": "2026-10-19T23:41:44.901311+00:00",
+  "http_status": 200,
+  "content_type": "text/csv; charset=UTF-8",
+  "size_bytes": 152,
+  "sha256": "bdeace9d27dc712288c798f0ee4f698ade2994bfb4016bd781e36714eacfb32a"
+}

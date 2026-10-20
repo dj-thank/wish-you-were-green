@@ -268,3 +268,98 @@
   note = {10-arcsec cone queries provided catalogue neighbours, astrometry and photometry-quality flags. Exact URLs, raw catalogue fields and separation calculations are retained in novelty/gaia_neighbour_audit.json.},
   urldate = {2026-10-18}
 }
+
+% Public sources added in the 20 October 2026 research follow-up.
+
+@article{Onken2024SkyMapperDR4,
+  author = {Onken, Christopher A. and Wolf, Christian and Bessell, Michael S. and others},
+  title = {{SkyMapper} Southern Survey: Data Release 4},
+  journal = {Publications of the Astronomical Society of Australia},
+  year = {2024},
+  volume = {41},
+  eid = {e061},
+  doi = {10.1017/pasa.2024.53},
+  eprint = {2402.02015},
+  archivePrefix = {arXiv},
+  url = {https://doi.org/10.1017/pasa.2024.53},
+  note = {DR4 PSF catalogue means and original per-image detection/quality/epoch records were used. Source queries and byte hashes are retained in research/independent_photometry/source_manifest.json.}
+}
+
+@misc{SkyMapperDR4Data,
+  author = {{SkyMapper Team} and {Australian National University}},
+  title = {{SkyMapper Southern Survey Data Release 4}: public catalogue and imaging data},
+  doi = {10.25914/5M47-S621},
+  url = {https://skymapper.anu.edu.au/data-release/},
+  note = {Public DR4 TAP access through NCI/ASVO. The source provider asks users to cite this release DOI and Onken et al. (2024); acknowledgment instructions are at https://skymapper.anu.edu.au/how-to-cite/. No publication year is inferred from the access date.},
+  urldate = {2026-10-20}
+}
+
+@article{Cenarro2019JPLUS,
+  author = {Cenarro, A. J. and Moles, M. and Crist{\'o}bal-Hornillos, D. and others},
+  title = {{J-PLUS}: The Javalambre Photometric Local Universe Survey},
+  journal = {Astronomy and Astrophysics},
+  year = {2019},
+  volume = {622},
+  eid = {A176},
+  doi = {10.1051/0004-6361/201833036},
+  url = {https://doi.org/10.1051/0004-6361/201833036}
+}
+
+@misc{JPLUSDR4PublicTables,
+  author = {{J-PLUS Collaboration} and {Centro de Estudios de F{\'i}sica del Cosmos de Arag{\'o}n}},
+  title = {{J-PLUS DR4}: public dual-mode photometry, exposure metadata and calibration definitions},
+  url = {https://archive.cefca.es/catalogues/jplus-dr4},
+  note = {Selected original MagABDualObj, FNuDualObj, Gaia-match, Filter, TileImage and calibration rows are retained with queries and hashes. The 3-arcsec aperture-corrected AB magnitudes already include the published zero-point offsets; their specified offset errors are added in quadrature. Gaia/BEST, white-dwarf-locus and PS1-r calibration information can be shared with comparison data.},
+  urldate = {2026-10-20}
+}
+
+@article{LopezSanjuan2025JPLUSOutliers,
+  author = {L{\'o}pez-Sanjuan, C. and others},
+  title = {{J-PLUS}: Understanding outlier white dwarfs in the third data release via dimensionality reduction},
+  journal = {Astronomy and Astrophysics},
+  year = {2025},
+  volume = {701},
+  eid = {A273},
+  doi = {10.1051/0004-6361/202555286},
+  eprint = {2509.21304},
+  archivePrefix = {arXiv},
+  url = {https://arxiv.org/abs/2509.21304},
+  note = {Public CDS catalogue J/A+A/701/A273 was joined by exact Gaia-to-DR3 tile/object identity for three fixed candidates. Published outlier and pCa classifications retain the original authors' model assumptions; their re-identification is not a new discovery.}
+}
+
+@misc{SVOFilterProfileService,
+  author = {{Spanish Virtual Observatory}},
+  title = {{SVO Filter Profile Service Carlos Rodrigo}: filter-response profiles and provenance},
+  url = {https://svo2.cab.inta-csic.es/svo/theory/fps/},
+  note = {The original VOTable responses for six SkyMapper and twelve J-PLUS total-system profiles are preserved with provider parameters, response samples, original profile references, retrieval UTC and SHA256 in research/measurement_design/profile_manifest.json. Synthetic endpoint closures are separate documented analysis operations; no missing spectral range is extrapolated.},
+  urldate = {2026-10-20}
+}
+
+@article{Rodrigo2024SVOPhotometry,
+  author = {Rodrigo, C. and Cruz, P. and Aguilar, J. F. and others},
+  title = {Photometric segregation of dwarf and giant {FGK} stars using the {SVO Filter Profile Service} and photometric tools},
+  journal = {Astronomy and Astrophysics},
+  year = {2024},
+  volume = {689},
+  eid = {A93},
+  doi = {10.1051/0004-6361/202449998},
+  eprint = {2406.03310},
+  archivePrefix = {arXiv},
+  url = {https://doi.org/10.1051/0004-6361/202449998},
+  note = {Service citation requested by the SVO Filter Profile Service; the specific passband providers remain separately attributed in the downloaded profile metadata.}
+}
+
+@article{Carter2014AMCVn,
+  author = {Carter, P. J. and G{\"a}nsicke, B. T. and Steeghs, D. and Marsh, T. R. and Breedt, E. and Kupfer, T. and Gentile Fusillo, N. P. and Groot, P. J. and Nelemans, G.},
+  title = {Two new {AM Canum Venaticorum} binaries from the {Sloan Digital Sky Survey III}},
+  journal = {Monthly Notices of the Royal Astronomical Society},
+  year = {2014},
+  volume = {439},
+  number = {3},
+  pages = {2848--2853},
+  doi = {10.1093/mnras/stu142},
+  eprint = {1312.3335},
+  archivePrefix = {arXiv},
+  url = {https://doi.org/10.1093/mnras/stu142},
+  note = {Original published AM CVn identification of SDSS J113732.32+405458.3. The matching unusual-emission-line record in this repository is not a new DQ, quasar or AM CVn discovery.}
+}

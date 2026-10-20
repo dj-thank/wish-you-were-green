@@ -1,0 +1,1 @@
+SELECT * FROM jplus.TileImage WHERE ref_tile_id IN (190232)

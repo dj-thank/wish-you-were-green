@@ -1,0 +1,38 @@
+{
+  "input_records": 9902,
+  "entity_keys": 6003,
+  "newly_resolved_records": 613,
+  "newly_resolved_entities": 613,
+  "newly_eligible_records": 611,
+  "newly_resolved_eligible_previous_unavailable_entities": 115,
+  "current_eligible_records": 8084,
+  "prior_eligible_records": 7473,
+  "current_strong_records": 421,
+  "current_strong_entities": 325,
+  "newly_resolved_strong_records": 26,
+  "newly_resolved_green_records": 9,
+  "remaining_MWDD_SDSS_unresolved_records": 966,
+  "new_reference_quality": {
+    "median_pixel_snr_below_5_records": 209,
+    "native_and_flag_fraction_visible_above_0p1_records": 43
+  },
+  "definitions": {
+    "eligible": "Existing rank_candidates.annotate usable_screen rules; no additional source-quality claims.",
+    "strong": "Eligible record distance_planck_uv >= 0.01; exploratory threshold, no false-discovery probability.",
+    "representative": "Calibration, instrument preference, S/N and source URL; no selection by anomaly magnitude.",
+    "calibration": "Existing full-original-grid SDSS gri then PS1 gri fallback. Floor 0.02 mag; reject residual >=0.15 mag or absolute tilt >=0.25 mag/1000 A. Sky masking follows the fit for colour integration.",
+    "new_units": "Strict native-pixel comparison; astrophysical association, native quality and calibration have separate fields."
+  },
+  "input_sha256": {
+    "research/precision/flux_units/corrected_record_screen.csv.gz": "2c894ee7af8d1c3a5f62ba19c6921265b4bef5de9f84291394d441642b984746",
+    "research/unit_resolution_followup/overlay_registry.json": "c8d8f6960092d8cbe3a6f76f64bca07fbde2726680b33ea21de6a54537630865",
+    "research/unit_resolution_followup/compact_manifest.json": "7741636f106edfe7d89cbc22b35cdba5ab981fb96c071e916dfbf6fd8ce4bad4",
+    "results/screen_input_mwdd.json.gz": "b37732619b1e077d978d7ddae2ee6d367ddb9485b13298afed4e43bd25e5e129"
+  },
+  "output_sha256": {
+    "current_record_screen.csv.gz": "97f561c79b4d1279bd13cfbb759c87fc8f5720b61c9a807eb08ec66d5427f043",
+    "newly_resolved_record_screen.csv.gz": "09e49dcba050cd63d08af7aa58234b7f93fa86b12085c627f5b9d06313cf77fe",
+    "current_object_screen.csv": "7e56394fc71f507ac679aa9aa3c311f37badd85294d759deb0c2b32e78474899"
+  },
+  "frozen_artifacts_modified": false
+}

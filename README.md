@@ -4,19 +4,29 @@
 
 **English** · [日本語](README.ja.md)
 
-**v0.2 corrects a spectral-density interpretation error.** Comparisons with original SDSS observations verified 149 MWDD exports as Fν-shaped and 504 as Fλ-shaped; 1,579 remain unresolved. The current screen contains **7,473 eligible spectrum records and 308 strong-outlier entity keys**. **Independent SDSS colour corroboration for J1323−0129 is withdrawn:** its SDSS convention is unresolved and native Gaia XP is unavailable. The DESI estimate remains a single-instrument candidate. [Correction evidence](research/precision/flux_convention_evidence.json) · [Current counts and interpretation](research/precision/flux_units/corrected_screen_summary.json)
+**The 20 October follow-up resolves 613 more SDSS flux conventions and adds observed photometry from two other surveys.** The current scoped screen contains **8,074 eligible spectrum records and 419 strong-outlier records / 324 entity keys**. Of 2,232 MWDD SDSS exports, **327 are verified as Fν-shaped, 939 as Fλ-shaped, and 966 remain unresolved**. The new native-pixel support audit applies to the 613 newly resolved records; the earlier 7,473 eligible values are retained without claiming a new support audit of them. [Current scientific summary](research/unit_resolution_followup/science_view_summary.json) · [Interactive record view](research/unit_resolution_followup/current_view.html)
 
 These are known stars. The research investigates their calculated human-vision chromaticities, measurement robustness and possible atmosphere-model tests. It remains **exploratory, ChatGPT-assisted and unreviewed**; it does not establish new stars, new absorption physics, worldwide priority or a population discovery rate.
 
 **Project initiator and maintainer:** Shota Moriwaki
 
-**Research revision:** 0.2.0 plus 19 October follow-up · **Updated:** 19 October 2026 UTC
+**Research revision:** 0.2.0 plus 20 October follow-up · **Updated:** 20 October 2026 UTC
 
 **Repository:** [dj-thank/wish-you-were-green](https://github.com/dj-thank/wish-you-were-green)
 
-**Start with the [current research report](research/README.md) or [日本語の研究報告](research/README.ja.md).** They distinguish completed analyses, proposed hypotheses and unresolved scientific work.
+**Start with the [20 October research report](research/FOLLOWUP_2026-10-20.en.md) or [日本語の追加報告](research/FOLLOWUP_2026-10-20.ja.md).** The [research overview](research/README.md) preserves the dated earlier methods and results alongside current updates.
 
-### New: completed individual review and model-based follow-up
+### New on 20 October: actual additional measurements and stricter support checks
+
+The original pixels establish conventions for **613 further records**, all individually viewed across 39 contact sheets. Of these, **601 have sufficient native support for a current colour; 12 remain withheld**, including ten newly rejected by the support check and two already rejected by the earlier gate. Units were resolved for 115 previously unavailable review entities; **112 now have a supported colour calculation**. Resolving units alone does not validate spectral coverage, noise or target centring. [Current record table](research/unit_resolution_followup/science_record_view.csv.gz) · [Individual notes](research/unit_resolution_followup/individual_review.md)
+
+For the fixed 25-candidate cohort, **450 band slots were audited; 14 targets supplied 52 quality-selected SkyMapper/J-PLUS measurements, of which 46 have complete spectral passband coverage**. Their source photons come from different observations, while Gaia-based calibration and J-PLUS's WD-locus/PS1-r zero points can share systematic errors. Misassociated neighbours, masks, missing values and failed S-PLUS queries remain explicit. [Photometry and identity evidence](research/independent_photometry/README.md)
+
+Adding SkyMapper r/i to the observed PS1 griz boxes raises J0429−0354's minimum required shape change to **4.92%** in the specified 800 Å spline family. Strict green and red-order solutions require approximately **5.0103% and 4.9236%**, respectively. An additional 0.02 mag box allowance removes that distinction; these are conditional feasibility bounds, not evidence of a measured colour change. A separate J0429 experiment finds that even PS1 griz plus the ten covered J-PLUS bands (14 total) can admit numerically indistinguishable opposite-colour spectra at 400 Å spacing and a 5% shape budget. [Measured and prospective constraints](research/measurement_design/README.md)
+
+**J1323−0129's SDSS convention is now verified as Fλ by the same original observation.** Qualitative positive-Duv support is recovered, but low native S/N (2.36) and an approximately 1.138″ epoch-corrected separation from the SDSS PLUG position keep precision independent corroboration withheld. Native Gaia XP remains unavailable. Separately, a discrepant SDSS pair comprises **two coadds from five nights and 18 physical exposures**, not two individual nights. [Repeated-shape analysis](research/repeat_shape_validation/README.md) · [Full 20 October interpretation](research/FOLLOWUP_2026-10-20.en.md)
+
+### Preserved 19 October work: individual review and model comparisons
 
 **A concrete source of misleading graph offsets was identified:** two proven duplicates of the same SDSS observations followed different calibration branches. Their apparent Δuv differences of 0.01360 and 0.01517 shrink by more than 99.99% under the same existing correction. [Original-pixel evidence and corrected comparison](research/outlier_followup/representation_calibration/README.md)
 
@@ -29,20 +39,23 @@ New computations cover **450 measured-photometry scenarios / 1,800 linear progra
 | Scope | Current or recorded result |
 |---|---:|
 | Original spectrum inventory | 9,902 records; 6,003 catalogue entity keys |
-| Current eligible records, after convention review | **7,473** |
-| Current strong-outlier screen | **395 records / 308 entity keys** |
-| MWDD SDSS representation checks | **149 Fν / 504 Fλ / 1,579 unresolved** |
-| SDSS records recalculated with the revised interpretation | 3,629 |
+| Current eligible records, with the scoped native-support update | **8,074** |
+| Current strong-outlier screen | **419 records / 324 entity keys** |
+| MWDD SDSS representation checks | **327 Fν / 939 Fλ / 966 unresolved** |
+| Newly resolved records with individual native-support review | **613: 601 usable / 12 colour-withheld** |
+| Previously unavailable entities with newly resolved units / supported colours | **115 / 112** |
+| Additional photometry, fixed 25-candidate cohort | **450 slots / 52 selected measurements / 46 fully covered / 14 targets** |
 | Historical strong-outlier objects actually inspected | 337 objects across 22 contact sheets |
-| Remaining review entities now individually inspected | 2,007 across 126 sheets: 1,684 with spectra / 323 unavailable |
-| Current spectra in the additional visual review | 3,041 original-file hashes checked and colours reproduced |
+| Review entities inspected on 19 October | 2,007 across 126 sheets: then 1,684 with spectra / 323 unavailable |
+| Original spectra checked in the 19 October visual review | 3,041 original-file hashes checked and snapshot colours reproduced |
+| New 20 October individual viewing records | 613 records across 39 sheets; all panels actually viewed |
 | Review inputs recovered with their recorded raw SHA256 | 4,355; 4,353 old calculations reproduced, two existing failures retained |
 
-The historical v0.1 figures of **9,023 eligible records and 337 strong-outlier entities** describe the earlier screen. Their input tables and numerical outputs are retained for traceability. The [current record table](research/precision/flux_units/corrected_record_screen.csv.gz) and [current object table](research/precision/flux_units/corrected_object_screen.csv) contain the revised eligibility and colour results. Entity keys include legacy positional associations and must not be counted automatically as verified distinct stars. These are exploratory selection counts, not discovery significance. [Audit definitions](research/README.md)
+The historical v0.1 **9,023 eligible / 337 strong-outlier entities**, 18 October **7,473 / 395 records / 308 entity keys**, and 20 October old-gate compatibility **8,084 / 421 / 325** describe different retained snapshots. The current [record table](research/unit_resolution_followup/science_record_view.csv.gz) and [object table](research/unit_resolution_followup/science_object_view.csv) apply the additional native-support review to its declared 613-record scope. Entity keys include legacy positional associations and must not be counted automatically as verified distinct stars. These are exploratory selection counts, not discovery significance. [Audit definitions](research/README.md)
 
-![Current chromaticity screen after the spectral-density convention correction](research/precision/flux_units/corrected_colour_plane.png)
+![Current chromaticity screen with the scoped 20 October native-support update](research/unit_resolution_followup/science_colour_plane.png)
 
-*The diagram is a calculated CIE chromaticity screen. The raw spectra, unresolved cases and historical values remain traceable; it is not a catalogue of confirmed discoveries.*
+*The diagram is a calculated CIE chromaticity screen. The new native-support audit covers 613 records; previously eligible records retain their earlier values. Raw spectra, withheld cases and historical outputs remain traceable.*
 
 ## Four principal DESI colour estimates
 
@@ -53,7 +66,7 @@ The current values below come from **DESI spectra recalibrated against the obser
 | WD J0913+4434 | 818833831355548928 | Pale yellow-green | #F1FFC9 | +0.019058 | +0.016975 to +0.021233 |
 | WD J0429−0354 | 3204436719718449280 | Pale yellow-green | #F8FFDC | +0.012809 | +0.011973 to +0.013651 |
 | WD J1329+0033 | 3711047662972690688 | Pink | #FFC1CF | −0.022652 | −0.024811 to −0.020482 |
-| WD J1323−0129 | 3638333660492606976 | Unusual yellow; DESI-only support | #FFE96A | +0.023498 | +0.020943 to +0.025993 |
+| WD J1323−0129 | 3638333660492606976 | Unusual yellow; precision SDSS corroboration withheld | #FFE96A | +0.023498 | +0.020943 to +0.025993 |
 
 The [full-precision source table](research/precision/candidate_recalibration/standardized_colours.csv) records anchors, uncertainties, raw hashes and calibration parameters. The old [v0.1 headline table](results/headline_candidates.csv) is preserved. Small changes, including J1323's one-channel display difference, reflect calibration/error definitions rather than measured stellar variability. Hexadecimal digits are display values, not physical measurement precision. [PS1 definitions and DR1/DR2 comparison](research/literature/swan_photometry_definition.md)
 
@@ -73,13 +86,17 @@ The proposed next experiments compare free Na/Ca and Mg/Ca against fixed metal r
 
 | Resource | Status and contents |
 |---|---|
-| [Current English report](research/README.md) · [日本語報告](research/README.ja.md) | v0.2 findings, limitations and next scientific tests |
+| [20 October report](research/FOLLOWUP_2026-10-20.en.md) · [日本語](research/FOLLOWUP_2026-10-20.ja.md) | Current scoped census, additional measured constraints, repeat spectra and limitations |
+| [Research overview](research/README.md) · [日本語報告](research/README.ja.md) | Current summary with preserved 18–19 October methods and results |
+| [Current record viewer](research/unit_resolution_followup/current_view.html) · [Scientific summary](research/unit_resolution_followup/science_view_summary.json) | 613 new unit decisions, native-support exclusions and current colours |
+| [Independent-observation photometry](research/independent_photometry/README.md) · [Measurement-design report](research/measurement_design/README.md) | All 25 targets, 450 availability decisions, 52 selected / 46 covered measurements and conditional experiments |
+| [Repeated spectral shapes](research/repeat_shape_validation/README.md) · [日本語](research/repeat_shape_validation/README.ja.md) | Four DESI pairs and two disjoint SDSS coadds; shared anchors and observing conditions |
 | [19 October follow-up](research/FOLLOWUP_2026-10-19.en.md) · [日本語](research/FOLLOWUP_2026-10-19.ja.md) | Completed review queue, measured-band feasibility, actual model comparisons and targeted diagnostics |
 | [All 2,007 additional review records](research/outlier_followup/individual_review.csv) | Individual observations, unavailable cases and fixed image links |
-| [Research-extension notebook](research/research_extension.ipynb) | Current extension: verification, corrected counts and follow-up figures |
+| [Research-extension notebook](research/research_extension.ipynb) | Preserved v0.2 extension: dated verification, corrected counts and figures |
 | [Initial27 follow-up CSV](research/candidate27_followup.csv) · [JSON](research/candidate27_followup.json) | Every candidate, conditional intervals, provenance and next checks |
 | [Candidate uncertainty comparison](research/candidate27_uncertainty_comparison.png) | All 27 objects; full/truncated Gaia are not independent |
-| [Object-by-object audit HTML](research/outlier_audit/object_audit.html) | All 9,902 record histories, with current eligibility, historical values, source evidence and withholding reasons |
+| [18 October object audit HTML](research/outlier_audit/object_audit.html) | Preserved histories for all 9,902 records; consult the current record viewer for 20 October eligibility |
 | [Visual review pages 01–11](research/outlier_audit/visual_review_01_11.md) · [12–22](research/outlier_audit/visual_review_12_22.md) | Actual inspection notes for every historical strong-outlier panel |
 | [v0.1 English report](docs/report.en.md) · [日本語](docs/report.ja.md) | Historical report, with a correction banner; old numbers retained |
 | [v0.1 English notebook](white_dwarf_colour_research.ipynb) · [日本語](white_dwarf_colour_research.ja.ipynb) | Historical executed outputs; introductory correction banner |
@@ -100,11 +117,12 @@ python3.12 -m venv .venv-colour
 .venv-colour/bin/python -m unittest discover -s tests -p 'test_*.py' -v
 .venv-colour/bin/python scripts/verify_research_extension.py
 .venv-colour/bin/python scripts/verify_research_followup.py
+.venv-colour/bin/python scripts/verify_research_oct20.py
 ```
 
 On Windows, use the environment interpreter at `.venv-colour\Scripts\python.exe`.
 
-The compact verifier reproduces the preserved v0.1 principal DESI/Gaia calculation and all 54 raw SDSS controls offline. The extension verifier checks preserved research inputs, invariants and selected recalculations; it does not repeat survey downloads, image inspection, all Monte Carlo draws or a GaiaXPy installation. A passing check establishes specified computational consistency, not astrophysical novelty or absence of systematics.
+The compact verifier reproduces the preserved v0.1 principal DESI/Gaia calculation and all 54 raw SDSS controls offline. The dated extension/follow-up verifiers check their preserved inputs and calculations. The 20 October verifier adds unit-resolution/support evidence, the photometry reconstruction, measured/prospective constraints and repeated-shape diagnostics from committed compact inputs. Verification does not repeat survey downloads, actual image inspection, all Monte Carlo draws or a GaiaXPy installation. A passing check establishes specified computational consistency, not astrophysical novelty or absence of systematics.
 
 The [research report](research/README.md#9-observation-and-reproduction-priorities) explains deeper recalculation. Native XP reconstruction uses a [separate pinned GaiaXPy environment](mwdd/gaia_validation/requirements-gaia.txt). Full raw-spectrum or camera-FITS recovery requires archive access and the documented SHA256 manifests. Historical inputs are not silently replaced with newer archive responses.
 
@@ -112,7 +130,7 @@ The [research report](research/README.md#9-observation-and-reproduction-prioriti
 
 **Shota Moriwaki** initiated and maintains the project. Code, acquisition, analysis, checks and drafting used **OpenAI ChatGPT assistance**. ChatGPT is a disclosed tool, not a scientific author. This work is unreviewed and implies no affiliation with or endorsement by the cited surveys or authors.
 
-Observations and reductions belong to DESI, ESA/Gaia/DPAC, SDSS and Pan-STARRS; catalogue and model contributions remain credited to MWDD, PEWDD, CDS and the original paper authors. The colour framework and previous unusual-colour measurements, including those of Hollands and coauthors, are prior work. [Acknowledgments](ACKNOWLEDGMENTS.md) · [Extension data acknowledgments](research/literature/DATA_ACKNOWLEDGMENTS.md) · [Bibliography](docs/references.bib)
+Observations and reductions are credited to DESI, ESA/Gaia/DPAC, SDSS, Pan-STARRS, SkyMapper and J-PLUS; catalogue, model and passband contributions remain credited to MWDD, PEWDD, CDS, the SVO Filter Profile Service and the original authors. The colour framework and previous unusual-colour measurements, including those of Hollands and coauthors, are prior work. [Acknowledgments](ACKNOWLEDGMENTS.md) · [Extension data acknowledgments](research/literature/DATA_ACKNOWLEDGMENTS.md) · [Bibliography](docs/references.bib)
 
 Cite the version or commit actually used and the underlying data/papers. [CITATION.cff](CITATION.cff) contains machine-readable metadata:
 

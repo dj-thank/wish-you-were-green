@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Tamara Civera (CEFCA)">
+<meta name="copyright" content="Centro de Estudios de Física del Cosmos de Aragón (CEFCA)">
+        <!-- Page Title -->
+        <title>Javalambre Photometric Local Universe Survey</title>        
+        		    <!-- Google tag (gtag.js Google Analytics 4) -->
+		    <script async type="text/plain" data-cookiecategory="analytics" src="https://www.googletagmanager.com/gtag/js?id=G-EKNQ87LQZ7"></script>
+		    <script type="text/plain" data-cookiecategory="analytics">
+		         window.dataLayer = window.dataLayer || [];
+		         function gtag(){dataLayer.push(arguments);}
+		         gtag('js', new Date());
+		
+		         gtag('config', 'G-EKNQ87LQZ7');
+		     </script>
+	      
+        
+        <!-- Le styles -->
+        <link href="/css/bootstrap.min.css" media="screen" rel="stylesheet" type="text/css">
+<link href="/css/bootstrap-theme.min.css" media="screen" rel="stylesheet" type="text/css">
+<link href="/css/style.min.css" media="screen" rel="stylesheet" type="text/css">
+<link href="/components/cookieconsent/v2.9.2/css/cookieconsent.min.css" media="screen" rel="stylesheet" type="text/css">
+<link href="/css/jplus.style.min.css?v=2_1" media="screen" rel="stylesheet" type="text/css">
+<link href="/plugins/fancybox/source/jquery.fancybox.css?v=2.1.5" media="screen" rel="stylesheet" type="text/css">
+<link href="/css/generalWebpage.min.css" media="screen" rel="stylesheet" type="text/css">
+<link href="/img/top_menu_header/j-plus_favicon.ico" rel="shortcut icon" type="image/x-icon">        <!-- Scripts -->
+        <!--[if lt IE 9]><script type="text/javascript" src="/js/html5shiv.js"></script><![endif]-->
+<!--[if lt IE 9]><script type="text/javascript" src="/js/respond.min.js"></script><![endif]-->
+<script type="text/javascript" src="/js/custom-components.js"></script>
+<script type="text/javascript" src="/js/jquery.min.js"></script>
+<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/plugins/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>		<style type="text/css" media="print">
+		@media print {
+			#principalNavbar {display:none;}
+			#adminNavbar {display:none;}
+			#header {display:none;}
+			#leftCol {display:none;}
+			#funding_agencies {display:none;}
+			#cc_div {display:none;}
+		}
+		</style>       
+
+    </head>
+    <body>
+	    <script type="text/javascript">
+	        var COOKIES_URL = "";
+	        var GOOGLE_ANALYTICS = false;	
+			var SITE_URL = "https://www.j-plus.es";	
+			SITE_URL = SITE_URL.replace("http://", "").replace("https://", "");
+	        var CLOSE = "Close message";
+	    	$(document).ready(function() {
+	    		$('#sidebar').affix({ offset: { top: 170}});
+	    		var navHeight = $('#principalNavbar').outerHeight(true) + 10;	
+	    		if ($('#adminNavbar').length){
+	    			navHeight = navHeight + $('#adminNavbar').outerHeight(true) + 10;
+	    		}
+	    		var $body = $(document.body); 	
+	    		$body.scrollspy({ target: '#leftCol', offset: navHeight});
+	    	});	    	
+		</script>
+		    			<nav id="principalNavbar" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+            	<!-- Main top fixed item -->
+                             				<a class="navbar-brand" href="/"> J-PLUS</a>
+                		                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>                    
+                </div>                
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">   
+                    	<!-- Secondary top fixed menus -->
+                                   	
+                        			<li><a href="https://www.cefca.es/home" target="_blank">CEFCA</a></li>
+               			 		          	
+                        			<li><a href="https://oajweb.cefca.es/home" target="_blank">OAJ</a></li>
+               			 		          	
+                        			<li><a href="https://www.j-pas.org/" target="_blank">J-PAS</a></li>
+               			 		                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                    	<li class="nav-icon-img">   
+                    		<a title="Contact" href="/contact" class="simple icon">
+                    			<i class="glyphicon glyphicon-envelope"></i>
+                    			<span>Contact</span>
+                    		</a>
+                    	</li>
+                    	                    	                        		<li class="nav-icon-img">                    		
+	                    		<a title="Login" href="/user/login" class="simple icon">
+	                    			<i class="glyphicon glyphicon-log-in"></i>
+	                    			<span>Login</span>
+	                    		</a>
+	                    	</li>	                    	
+                    	                    </ul>                    
+                </div><!--/.nav-collapse -->       
+            </div>
+        </nav>
+        
+               
+    	<style>
+	html, body {
+	    overflow-x: hidden;
+	}
+</style>
+
+<header id="header" class="page-header">
+    <div id="titleBackground">
+	   	        <img src="/img/top_menu_header/j-plus_head_background.jpg"></img>
+	   	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-10">
+		    							<h1>
+						    							<a href="/" title="J-PLUS Home"><img alt="J-PLUS" class="logo" src="/img/top_menu_header/logo4.png"></img></a>
+						</h1>
+			       			</div>
+			<div class="col-xs-2 text-center languagesList">
+				<ul class="list-inline">
+															<li>
+																																		<span>EN</span>
+																					</li>
+																				<li>
+																																			<a href="/publicaciondatos/data_release_dr4">ES</a>
+																						</li>
+														</ul>
+			</div>
+		</div>
+	</div>	
+</header>
+		
+		<div class="container" id="mainContainer">
+		  	<div class="row custom-row">
+		  	  <script type="text/javascript">
+	$(document).ready(function() {
+		//Scroll the menu, when window scroll or resize
+ 		$(window).on('scroll resize', function() {
+ 			var $win = $(window);
+			var p = $( ".row");
+			var position = p.position();
+    		$('#sidebar').css('left',  position.left - 16 - $win.scrollLeft());
+ 		});
+	});
+</script>
+
+   
+ <!-- Vertical sidebar. SidebarType 1 -->
+          
+            <nav id="leftCol" class="nav-list-vertical-sections col-sm-3 hidden-print">
+		      	  <div id="sidebar">
+			          <ul id="sections" class="sections nav nav-list">
+			          				          					          	
+			          		<li class="nav-header "><a href="/news">News</a></li>
+			          				          					          	
+			          		<li class="nav-header "><a href="/survey">Survey</a></li>
+			          				          					          	
+			          		<li class="nav-header active"><a href="/datareleases">Data Releases</a></li>
+			          				          					          	
+			          		<li class="nav-header "><a href="/ancillarydata">Ancillary Data</a></li>
+			          				          					          	
+			          		<li class="nav-header "><a href="/jplus_meetings">Meetings</a></li>
+			          				          					          	
+			          		<li class="nav-header "><a href="/collaboration">Collaboration</a></li>
+			          				          					          </ul>
+			          <ul id="subsections" class="subsections nav nav-list">
+			          				          	 				          		<li class="nav-header "><a href="/news">News</a></li>
+			          					          	  			          	 				          		<li class="nav-header "><a href="/survey">Survey</a></li>
+			          					          	  			          	 				          		<li class="nav-header active"><a href="/datareleases">Data Releases</a></li>
+			          					          							          				<li class="item "><a href="/datareleases/releases">Data Releases</a></li>
+			          		    			          							          				<li class="item active"><a href="/datareleases/data_release_dr4">Data Release DR4</a></li>
+			          		    			          							          				<li class="item "><a href="/datareleases/data_release_dr3">Data Release DR3</a></li>
+			          		    			          							          				<li class="item "><a href="/datareleases/data_release_dr2">Data Release DR2</a></li>
+			          		    			          							          				<li class="item "><a href="/datareleases/data_release_dr1">Data Release DR1</a></li>
+			          		    			          							          				<li class="item "><a href="/datareleases/early_data_release">Early Data Release</a></li>
+			          		    			          	  			          	 				          		<li class="nav-header "><a href="/ancillarydata">Ancillary Data</a></li>
+			          					          	  			          	 				          		<li class="nav-header "><a href="/jplus_meetings">Meetings</a></li>
+			          					          	  			          	 				          		<li class="nav-header "><a href="/collaboration">Collaboration</a></li>
+			          					          	  			          	 				          </ul>   
+		          </div>
+		      </nav>
+
+		<!-- Accordion sidebar. SidebarType 2 -->
+		 <!-- End sidebarType -->
+		      
+		      <section class="col-sm-9" id="infoContainer">
+		      					<div id="content">
+					 <!-- CSS  -->
+   
+ <!-- JS  -->
+      
+                        
+<div class="generalwebpage" style="margin-top: 20px;">
+	<div class="row">
+		<div class="col-sm-12">			    	
+			<div class="row dateCategories">
+				<div class="col-sm-12">    					    			
+    				    				  
+  		    		    	<span class="category"><a href="/datareleases/releases">releases</a></span>
+			    	 	     				    	<span class="category selected">data_release_dr4</span>
+    				  	      				  
+  		    		    	<span class="category"><a href="/datareleases/data_release_dr3">data_release_dr3</a></span>
+			    	 	     				  
+  		    		    	<span class="category"><a href="/datareleases/data_release_dr2">data_release_dr2</a></span>
+			    	 	     				  
+  		    		    	<span class="category"><a href="/datareleases/data_release_dr1">data_release_dr1</a></span>
+			    	 	     				  
+  		    		    	<span class="category"><a href="/datareleases/early_data_release">early_data_release</a></span>
+			    	 	 		
+	    		</div>
+	    	</div>
+	    </div>
+	</div>
+	<div class="row title">
+		<div class="col-sm-12">			    	
+	    	<h2>J-PLUS Data Release DR4</h2>
+	    </div>
+	</div>	
+	<div class="row">
+		<div class="col-sm-12">		
+		   						
+				<div class="body">
+											<p><style>
+.well > p > b {
+    display: inline-block;
+    min-width: 235px;
+}
+
+/*.generalwebpage > .row:nth-child(2) { 
+   display:none;
+}*/
+</style>
+<div>
+  <p>The J-PLUS DR4 Data Release (November 2025) (J-PLUS-DR4) comprises 2563 J-PLUS fields observed in twelve optical bands amounting to ~5000 deg<sup>2</sup>. J-PLUS DR4 is based on images collected from November 2015 to February 2025 by the JAST80 telescope.</p>
+ 
+  <p>For quick access to the archive and the User's Manual, you can use the following links.</p>
+  
+  <div style="margin-top:40px; margin-bottom: 40px;" class="well">
+	<p><b>DATA ACCESS:</b> <a href="https://archive.cefca.es/catalogues/jplus-dr4" target="_blank" title="Go to Data Access" >https://archive.cefca.es/catalogues/jplus-dr4</a>  </p>
+	<p style="margin: 40px 0;"><b>DATA ACCESS MANUAL:</b> <a href="https://archive.cefca.es/doc/manuals/catalogues_portal_users_manual.pdf" target="_blank" title="Download data access manual" >Download manual here</a></p>
+      <p style="margin: 40px 0;"><b>PDF DECOM. LEPHARE:</b> <a href="https://www.j-plus.es/software/jplus_dr4/lephare_coldpress_pdf_decompression_sw_v1_1.tar.gz" target="_blank" title="Download PDF decompression software">Download software here (v1.1)</a></p>
+      <p style="margin: 40px 0;"><b>PDF DECOM. LEMONNADE:</b> <a href="https://www.j-plus.es/software/jplus_dr4/lemonnade_coldpress_pdf_decompression_sw_v1_0.tar.gz" target="_blank" title="Download PDF decompression software">Download software here (v1.0)</a></p>
+      <p><b>GLOBAL MASKS:</b> <a href="https://archive.cefca.es/catalogues/vo/siap/jplus-dr4/get_global_masks" target="_blank" title="Download global masks" >https://archive.cefca.es/catalogues/vo/siap/jplus-dr4/get_global_masks</a> <span style="font-size:0.7em;;display:none;">(only registered users)</span></p>
+  </div>
+
+<p class="subtitle">Scope</p>
+<table class="table table-hover table-condensed" style="margin: 30px 0;text-indent: 0;">
+  <tbody>
+     <tr>
+       <td>Total area covered</td>
+       <td>4950.66 deg<sup>2</sup> (4437.49 deg<sup>2</sup> after masking)</td>
+     </tr>
+     <tr>
+       <td>Image size</td>
+       <td>11730x11730 pixels</td>
+     </tr>
+     <tr>
+       <td>Image pixel scale</td>
+       <td>0.45 arcsec</td>
+     </tr>
+     <tr>
+       <td>Total number of fields</td>
+       <td>2563</td>
+     </tr>
+     <tr>
+       <td>Number of objects in dual catalogue</td>
+       <td>~96.9 million (~47.3 million with MAG_AUTO(rSDSS)&le;21)</td>
+     </tr>
+     <tr>
+       <td>Number of objects with estimations of photo-z (with their full PDFs)</td>
+       <td>~79.2 million</td>
+     </tr>
+     <tr>
+       <td>Number of detections in single catalogue</td>
+       <td>~786.5 million</td>
+     </tr>  
+<tr>
+       <td>Size of the database</td>
+       <td>~730 GB</td>
+     </tr>      
+    <tr>
+       <td>Number of Single Frames</td>
+       <td>96182</td>
+     </tr>
+      <tr>
+       <td>Tile Images Total Size (compressed)</td>
+       <td>~2.05 TB</td>
+     </tr>
+     <tr>
+       <td>Single Frames Total Size (compressed)</td>
+       <td>~9.06 TB</td>
+     </tr>
+  </tbody>
+</table>
+
+<div class="pn-image wp-caption" style="width:100%; margin-top: 30px;margin-bottom:30px;">
+	<a id="image" class="fancybox" title="DR4 Footprint" href="/img/general_page/general_00063/bg_general_00063_1.jpeg">
+		<img style="width:80%;margin:0 10%;display:inline-block;" alt="DR3 Footprint" title="DR4 Footprint" src="/img/general_page/general_00063/bg_general_00063_1.jpeg">							
+	</a>
+	<p class="wp-caption-text">Figure 1. Footprint of the pointings observed in this J-PLUS DR4.</p>
+</div>
+
+</p>
+										
+				</div>
+		</div>		
+	</div>
+	</div>
+
+<script>
+$(document).ready(function() {
+	$(".fancybox").fancybox({
+		helpers: {
+            title : {
+                type : 'float'
+            }
+        }
+	});
+});
+</script>
+				</div>
+							<footer id="funding_agencies" class="no_same_height">
+				<p class='title'>Funding Agencies</p>
+															<div class="row">
+								<div class="col-xs-2"></div>
+												<div class="col-xs-2">
+																			<img src="/img/funding_members/fite_logo.png" alt="Fondo de inversiones de Teruel" title="Fondo de inversiones de Teruel"/>
+																	</div>
+												<div class="col-xs-2">
+																		<a href="http://www.aragon.es/">
+																			<img src="/img/funding_members/aragon_gi_logo.png" alt="Gobierno de Aragón" title="Gobierno de Aragón"/>
+																		</a>
+																	</div>
+												<div class="col-xs-2">
+																			<img src="/img/funding_members/feder_aragon_logo.png" alt="Gobierno de Aragón - FEDER" title="Gobierno de Aragón - FEDER"/>
+																	</div>
+												<div class="col-xs-2">
+																		<a href="http://www.ciencia.gob.es/">
+																			<img src="/img/funding_members/logo_mciu.png" alt="Ministerio de Ciencia, Innovación y Universidades" title="Ministerio de Ciencia, Innovación y Universidades"/>
+																		</a>
+																	</div>
+												<div class="col-xs-2"></div>
+							</div>
+											<div class="row">
+								<div class="col-xs-2"></div>
+												<div class="col-xs-2">
+																		<a href="http://www.mctic.gov.br">
+																			<img src="/img/funding_members/mcti_logo.png" alt="Ministério da Ciência, Tecnologia e Inovações" title="Ministério da Ciência, Tecnologia e Inovações"/>
+																		</a>
+																	</div>
+												<div class="col-xs-2">
+																		<a href="http://www.fapesp.br/">
+																			<img src="/img/funding_members/fapesp_logo_.png" alt="FAPESP" title="FAPESP"/>
+																		</a>
+																	</div>
+												<div class="col-xs-2">
+																		<a href="http://www.finep.gov.br/">
+																			<img src="/img/funding_members/finep_logo_.png" alt="FINEP" title="FINEP"/>
+																		</a>
+																	</div>
+												<div class="col-xs-2">
+																		<a href="http://www.faperj.br/">
+																			<img src="/img/funding_members/faperj_logo_.png" alt="FAPERJ" title="FAPERJ"/>
+																		</a>
+																	</div>
+												<div class="col-xs-2"></div>
+							</div>
+				
+			                               <div class="copyright">
+                               <p>Copyright © 2015-2026 Javalambre Photometric Local Universe Survey. All Rights Reserved.</p>
+                               <p></p>
+                             </div>
+                          			</footer>
+							
+			  </section>	      
+		    </div>
+		</div>
+		
+					<script type="text/javascript">
+				GOOGLE_ANALYTICS = true;
+			</script>
+				<script defer src="/components/cookieconsent/v2.9.2/js/cookieconsent.min.js"></script>
+		<script defer src="/components/cookieconsent/owncookieconsent.min.js"></script>
+		<script defer type="text/javascript">
+    		window.addEventListener('load', function () {
+    			createCookieConsent(SITE_URL, COOKIES_URL, GOOGLE_ANALYTICS, false, true, false, 'document', true, 'cloud');
+        	});
+		</script>
+    </body>
+</html>

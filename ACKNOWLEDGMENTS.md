@@ -5,6 +5,10 @@ catalogue authors, archive teams and software developers deserve credit for
 the measurements, processing and tools on which it depends. Provider wording
 was checked against the linked official instructions on **2026-10-18**.
 
+The **20 October 2026 follow-up** adds the SkyMapper, J-PLUS and SVO credits
+below and an explicit citation for a previously identified AM CVn system.
+Earlier provider blocks retain their recorded source-check date.
+
 The block quotations below reproduce the providers' requested acknowledgment
 text. They are **third-party credit notices**, excluded from this project's
 original-text licence grant. A survey's funding acknowledgment is not a claim
@@ -122,6 +126,64 @@ motivated the search and supplied the published colour comparisons and
 exclusion list. The current note does not claim that study's authors
 participated in or endorsed this reanalysis.
 
+## SkyMapper DR4 — added 20 October 2026
+
+The additional imaging photometry and individual detection records are from
+the SkyMapper Southern Survey, provided by the SkyMapper Team and the
+Australian National University through the NCI/ASVO public service. We cite
+**Onken et al. (2024)**, DOI
+[10.1017/pasa.2024.53](https://doi.org/10.1017/pasa.2024.53), and the DR4 dataset
+DOI [10.25914/5M47-S621](https://doi.org/10.25914/5M47-S621), as requested by the
+[official citation instructions](https://skymapper.anu.edu.au/how-to-cite/).
+The downloaded provider acknowledgment wording is retained in
+[the original citation page](research/independent_photometry/raw/skymapper_citation.html)
+for use in subsequent publications. Catalogue matching, stricter quality
+selection and passband comparison are this project's documented operations.
+
+## J-PLUS / CEFCA — added 20 October 2026
+
+The J-PLUS measurements were obtained with JAST80/T80Cam at the Observatorio
+Astrofísico de Javalambre in Teruel, operated by the Centro de Estudios de
+Física del Cosmos de Aragón (CEFCA). We credit the J-PLUS collaboration,
+**Cenarro et al. (2019)**, DOI
+[10.1051/0004-6361/201833036](https://doi.org/10.1051/0004-6361/201833036), and
+the [DR4 public archive](https://archive.cefca.es/catalogues/jplus-dr4).
+Use the [provider's publication acknowledgments](https://www.j-plus.es/datareleases/acknowledgements)
+when publishing from these observations.
+
+The independent source photons do not imply fully independent calibration:
+Gaia/BEST standards, white-dwarf-locus adjustments and PS1 r contribute shared
+information. The original DR3 outlier classifications for three matched
+candidates remain credited to **López-Sanjuan et al. (2025)**, DOI
+[10.1051/0004-6361/202555286](https://doi.org/10.1051/0004-6361/202555286), and
+[their CDS catalogue](https://cdsarc.cds.unistra.fr/viz-bin/cat/J/A+A/701/A273).
+
+## SVO passband profiles — added 20 October 2026
+
+We used the [SVO Filter Profile Service “Carlos Rodrigo”](https://svo2.cab.inta-csic.es/svo/theory/fps/)
+and credit **Rodrigo, Cruz, Aguilar et al. (2024)**, DOI
+[10.1051/0004-6361/202449998](https://doi.org/10.1051/0004-6361/202449998).
+The service acknowledges MCIN/AEI support, identifier
+10.13039/501100011033, through grant PID2023-146210NB-I00. This is service
+funding, not a funding claim for this project.
+
+The [profile manifest](research/measurement_design/profile_manifest.json)
+retains each original filter provider/reference, response samples, components,
+URL and hash. The saved SkyMapper/J-PLUS profiles include the instrument and
+atmosphere, not only the filters. Added mathematical zero endpoints and their
+sensitivity comparisons are identified as project transformations. We do not
+claim authorship of the original transmission curves.
+
+## Prior AM CVn identification — added 20 October 2026
+
+**Carter et al. (2014)**, DOI
+[10.1093/mnras/stu142](https://doi.org/10.1093/mnras/stu142), previously
+identified SDSS J113732.32+405458.3 as an AM CVn binary. The repository's
+unusual emission-line record for this object (row 6462) is a re-identification
+of that known system. Its spectrum is not a new DQ, quasar or AM CVn discovery.
+The original authors retain credit; no participation in this reanalysis is
+implied.
+
 ## Software and project contribution
 
 The computations use the public Python ecosystem, including NumPy, SciPy,
@@ -145,6 +207,13 @@ and the remaining measurement limitations.
 開発者に謝意を表します。上の引用部分は、各提供元の指定する第三者の謝辞です。
 原サーベイの資金提供先・所属機関を記載しても、本プロジェクトが同じ支援や
 承認を受けたことを意味しません。
+
+10月20日の追加研究では、SkyMapper Team／ANU／NCI・ASVO、J-PLUS／CEFCA、
+SVO Filter Profile Serviceと元の応答関数の提供者にも謝意を表します。
+SkyMapper DR4論文とデータDOI、J-PLUSの原カタログと既報外れ分類、SVOの
+サービス論文・元フィルター出典を上に記載しました。SDSS J113732.32+405458.3は
+Carter et al. (2014)が公刊した既知AM CVnです。本解析による再同定を新発見と
+しておらず、原著者の成果として引用します。
 
 公開データの取得・計算・調査・原稿作成は、Shota Moriwakiの指示のもとで
 ChatGPTが実施しました。内部での計算検証と外部の専門家査読は区別し、

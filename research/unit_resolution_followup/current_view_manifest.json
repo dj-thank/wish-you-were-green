@@ -1,0 +1,31 @@
+{
+  "records": 9902,
+  "entities": 6003,
+  "full_record_fields": 253,
+  "html_sha256": "80bf06d304b5ca87c24239737594cab4258402c0f50d48bf2598d9d4cee64762",
+  "html_bytes": 6393109,
+  "decoded_json_sha256": "1905cbf64618a7ca9f7c7ac0924a3f2e83c02b7c47229a14e14f77ad6a0ac055",
+  "decoded_json_bytes": 16471920,
+  "gzip_bytes": 4782709,
+  "codec": "gzip + base64, native DecompressionStream; clear CSV fallback",
+  "lossless_gzip_roundtrip_verified": true,
+  "finite_numeric_values_rounded": false,
+  "input_sha256": {
+    "research/unit_resolution_followup/science_record_view.csv.gz": "55c76c649a915e22e75819291cf39099f08f0494e25e9878b801695f16f55f7a",
+    "research/unit_resolution_followup/science_object_view.csv": "be57b0fdd9f77240870a30fd1f34f7cfc3c392dc95524c86b9acd802522e76ed",
+    "research/unit_resolution_followup/contact_sheet_index.csv": "8083741224c89738d8a5a607a71e4d3c64619b07a2406c24e11bb383b17b82b8",
+    "research/unit_resolution_followup/science_view_summary.json": "48b8437554c31945dc96d928b91e95a24e3dd4d93f30969a6e47647f5e9fcabf",
+    "research/unit_resolution_followup/root_targeted/classification_context.json": "667e6c03af494d81824eb9cd581a88018f06ad405c9da3f30e6d74eb792e4353",
+    "research/unit_resolution_followup/targeted_followup/results.json": "e93fa409388a97f3989283a5817376cffb38db00e58034e242f34bb99f01d981",
+    "research/unit_resolution_followup/targeted_followup/local_row_5827.json": "db9be51fb6069f2826796e81c748c02ee07f597ed6cf7c8ae47baaa21878332f"
+  },
+  "classification_annotation_rows": [
+    6462,
+    7607,
+    8019,
+    7930,
+    5827
+  ],
+  "science_colour_plane_sha256": "acb5076cda0c22c181bd543c59828ff25c14040c549a70ed7ac950895303da85",
+  "complete_column_codec_equality_verified": true
+}

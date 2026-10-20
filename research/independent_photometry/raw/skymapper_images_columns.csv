@@ -1,0 +1,24 @@
+column_name,description,unit,datatype
+airmass,Airmass of the exposure centre taken from the telescope,,REAL
+background,Average background counts for the exposure,counts,REAL
+zpapprox,Approximate photometric zeropoint for the exposure (appropriate for centre of mosaic),ABmag,REAL
+zp_fitstars,Number of stars in photometric zeropoint for the exposure,,INTEGER
+zp_gradient_x,Gradient in photometric zeropoint in x_mosaic coordinate,ABmag/pixel,REAL
+zp_gradient_y,Gradient in photometric zeropoint in y_mosaic coordinate,ABmag/pixel,REAL
+wcs_fitstars,Number of stars in WCS solution for mosaic,,REAL
+wcs_rms,RMS in WCS solution for mosaic,arcsec,REAL
+date,Modified Julian Date at the start of the exposure,d,DOUBLE
+decl,Declination of the exposure centre taken from the telescope,deg,DOUBLE
+elong_mean,Average elongation (A/B) for the exposure,,REAL
+exp_time,Exposure time,s,REAL
+field_id,SkyMapper field ID,,INTEGER
+filter,SkyMapper photometric filter (uvgriz),,CHAR
+fwhm_mean,Average full width at half maximum for the exposure,arcsec,REAL
+image_id,Unique image ID as used by the Science Data Pipeline,,BIGINT
+image_type,Image type: ms=Main Survey - fs=Shallow Survey - std=Standard Field - 3ps=Non-survey Image - bad=Bad-seeing Image,,CHAR
+img_qual,Quality level of this image from 1=best to 3=worst,,SMALLINT
+night_mjd,Truncated Modified Julian Date at the start of night,,INTEGER
+object,Survey/field/image_type identifier (not unique),,CHAR
+ra,Right Ascension of the exposure centre taken from the telescope,deg,DOUBLE
+rotator_pos,Angular position of the instrument rotator,deg,REAL
+zp_rms,RMS in photometric zeropoint for the exposure,ABmag,REAL

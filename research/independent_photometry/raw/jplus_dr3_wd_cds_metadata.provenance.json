@@ -1,0 +1,16 @@
+{
+  "url": "https://tapvizier.cds.unistra.fr/TAPVizieR/tap/sync",
+  "query_parameters": {
+    "REQUEST": "doQuery",
+    "LANG": "ADQL",
+    "FORMAT": "csv",
+    "MAXREC": "10000",
+    "QUERY": "SELECT TOP 1 * FROM \"J/A+A/701/A273/catalog\""
+  },
+  "final_url": "https://tapvizier.cds.unistra.fr/TAPVizieR/tap/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&MAXREC=10000&QUERY=SELECT+TOP+1+%2A+FROM+%22J%2FA%2BA%2F701%2FA273%2Fcatalog%22",
+  "retrieved_utc": "2026-10-19T23:46:00.263300+00:00",
+  "http_status": 200,
+  "content_type": "text/csv;charset=UTF-8",
+  "size_bytes": 514,
+  "sha256": "43fab0d48ba31afd625d53dab1be68f6faff7c1d04b017c13b08475560c56be5"
+}

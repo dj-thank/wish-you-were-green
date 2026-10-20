@@ -1,0 +1,663 @@
+
+
+<!DOCTYPE html>
+
+<head>
+	<meta charset='utf-8'>
+	<title>SkyMapper Southern Sky Survey</title>
+
+	
+	
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" type="text/css" href='/static/sm_asvo/fonts.css' />
+	<link rel='stylesheet' type='text/css' href='/static/sm_asvo/master.css' />
+
+	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<!-- Custom page scripts -->
+	<script type='text/javascript' src='/static/sm_asvo/master.js'></script>
+	<script type='text/javascript' src="https://cdn.rawgit.com/leafo/sticky-kit/v1.1.2/jquery.sticky-kit.min.js"></script>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+	<link rel="icon" type="image/ico" href='/static/sm_asvo/img/favicon.ico' />
+
+	<!-- Add OG properties (required for FB login) -->
+	<meta property="og:title" content="SkyMapper Southern Sky Survey" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://skymapper.anu.edu.au/data-release/" />
+	<meta property="og:image" content="https://skymapper.anu.edu.au/static/sm_asvo/img/skymapper_logo1-200x198_3.jpg" />
+	<meta property="og:description" content="Access to and information about the SkyMapper Southern Sky Survey" />
+	<meta property="fb:app_id" content="968590116638493" />
+
+	
+<link rel='stylesheet' type='text/css' href='/static/sm_asvo/css/data_issue_status.css' />
+
+<!-- Script for allowing table sort -->
+<script type='text/javascript' src='/static/sm_asvo/js/jquery.tablesorter.min.js'></script>
+<script type='text/javascript'>
+    $(document).ready(function () {
+        $("table.dataissues").tablesorter();
+    });
+</script>
+
+
+	<!-- GOOGLE FONTS -->
+	<!--<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">-->
+	<!--<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css' />-->
+	<!--<link href='https://fonts.googleapis.com/css?family=Carrois+Gothic' rel='stylesheet' type='text/css'>-->
+
+	
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-100583569-1', 'auto');
+	  ga('send', 'pageview');
+
+	  $( document ).ready(function () {
+		$('#linkbar').stick_in_parent();
+	  })
+
+	</script>
+	
+
+	
+
+</head>
+
+<body>
+	<div id='wrapper'>
+		<div id="userwarn"><a href="/accounts/login/?next=/data-release/">Log-in</a> to SkyMapper</div>
+		<div id='banner'>
+			<!--<div class="trans-black">-->
+			<h1><a href='/'><strong>SkyMapper</strong> | Southern Sky Survey</a></h1>
+			<span class='vahelper'></span><a href='https://www.anu.edu.au/'><img src='/static/sm_asvo/img/2x_anu_logo_small_over.png' id='anu' /></a>
+			<!--</div>-->
+		</div>
+		<!-- <div class='bg-college' style='width: 100%; height: 7px; border: 0; margin: 0; padding: 0;'></div> -->
+		<ul id='linkbar'>
+				<li class='menuitem mi-icon'><a href='/'><i class="material-icons md-light">&#xE88A;&nbsp;</i>Home</a></li>
+				<li class='menuitem mi-icon'><a href='/about-skymapper/'><i class="material-icons md-light">&#xE838;&nbsp;</i>About SkyMapper</a></li>
+				<li class='menuitem mi-icon'><a href='/purchase-time/' style="background-color: darkred;"><i class="material-icons md-light">shopping_cart&nbsp;</i>Purchase Time</a></li>
+				<li class='menuitem mi-icon'><a href='/how-to-cite/'><i class="material-icons md-light">book&nbsp;</i>Cite &amp; Acknowledge</a></li>
+				<li class='menuitem mi-icon'><a href='/news/'><i class="material-icons md-light">keyboard&nbsp;</i>Latest News</a></li>
+				<li class='menuitem mi-icon-inactive'><a><i class="material-icons md-light">&#xE88F;&nbsp;</i>Survey Information<span style='float:right;padding-right:5px;'>&mdash;&mdash;&mdash;&mdash;</span></a></li>
+				<li class='menuitem'><a href="/data-release/">Data Releases</a></li>
+				<li class='menuitem'><a href='/surveys/'>Survey Progress</a></li>
+				<li class='menuitem'><a href='/publications/'>View Publications</a></li>
+				<li class='menuitem'><a href='/publications/statistics/'>Publication Statistics</a></li>
+			<li class='menuitem mi-icon-inactive'><a><i class="material-icons md-light">&#xE8B6;&nbsp;</i>Data Access<span style='float:right;padding-right:5px;'>&mdash;&mdash;&mdash;&mdash;</span></a></li>
+				<li class='menuitem'><a href='/how-to-access/'>How To Access</a></li>
+				<li class='menuitem'><a href='/object-viewer/'>Object Viewer</a></li>
+				<li class='menuitem'><a href='/cone-search/'>Cone Search</a></li>
+				<li class='menuitem'><a href='/image-cutout/'>Image Cutouts</a></li>
+				<li class='menuitem'><a href='/tap/'>Full Catalogue Search</a></li>
+				<li class='menuitem'><a href='/table-browser/'>Table Metadata</a></li>
+				<li class='menuitem mi-icon'><a href='/sky-viewer/'><i class="material-icons md-light">&#xE30B;</i> Sky Viewer</span></a></li>
+<!--				<li class='menuitem mi-icon-inactive'><a><i class="material-icons md-light">&#xE02F;&nbsp;</i>Publications</a></li>-->
+<!--				<li class='menuitem mi-icon'><a href='/science-projects/'><i class="material-icons md-light">error_outline&nbsp;</i>Protected Science</a></li>-->
+				<li class='menuitem mi-icon'><a href='/skymapper-board/'><i class="material-icons md-light">work&nbsp;</i>SkyMapper Board</a></li>
+				<li class='menuitem mi-icon'><a href='/media-gallery/'><i class="material-icons md-light">&#xE251;&nbsp;</i>Media Gallery</a></li>
+				<li class='menuitem mi-icon'><a href='/forum/'><i class="material-icons md-light">&#xE0BF;&nbsp;</i>User Forum</a></li>
+			</ul>
+			<ul id='linkmenu'>
+				<li id='menubutton'><a href='#'>&#8694; Menu</a></li>
+				<li class='menuitem'><i class="material-icons"></i><a href='/'>Home</a></li>
+				<li class='menuitem'><i class="material-icons"></i><a href='/about-skymapper/'>About SkyMapper</a></li>
+				<li class='menuitem'><i class="material-icons"></i><a href='/purchase-time/' style="background-color: darkred;">Purchase Time</a></li>
+				<li class='menuitem'><a href='/how-to-cite/'>Cite &amp; Acknowledge</a></li>
+				<li class='menuitem'><a href='/news/'>Latest News</a></li>
+				<li class='menuitem'><a href='/data-release/'>Data Releases</a></li>
+				<li class='menuitem'><a href='/surveys/'>Survey Progress</a></li>
+				<li class='menuitem'><a href='/publications/'>View Publications</a></li>
+				<li class='menuitem'><a href='/publications/statistics/'>Publication Statistics</a></li>
+				<li class='menuitem'><a href='/how-to-access/'>How to Access</a></li>
+				<li class='menuitem'><a href='/object-viewer/'>Object Viewer</a></li>
+				<li class='menuitem'><a href='/cone-search/'>Cone Search</a></li>
+				<li class='menuitem'><a href='/image-cutout/'>Image Cutouts</a></li>
+				<li class='menuitem'><a href='/tap/'>Full Catalogue Search</a></li>
+				<li class='menuitem'><a href='/table-browser/'>Table Metadata</a></li>
+				<li class='menuitem'><a href='/sky-viewer/'>Sky Viewer</a></li>
+				<!-- <li class='menuitem'><a href='/science-projects/'>Protected Science</a></li> -->
+				<li class='menuitem'><a href='/skymapper-board/'>SkyMapper Board</a></li>
+				<li class='menuitem'><a href='/media-gallery/'>Media Gallery</a></li>
+				<li class='menuitem'><a href='/forum/'>User Forum</a></li>
+			</ul>
+		<!-- </div> -->
+
+		<div id='content'>
+		<p></p>
+		
+
+<p>
+    
+    DR4
+    
+     | <a href='/data-release/dr2/'>DR2</a>
+    
+     | <a href='/data-release/dr1/'>DR1.1</a>
+    
+     | <a href='/data-release/edr/'>EDR</a>
+    
+</p>
+
+
+<h1>Data Release
+    DR4
+    <span class='one-em hint'> |
+        5 Feb 2024
+        </span></h1>
+<p>DOI: <a href="https://dx.doi.org/10.25914/5M47-S621">10.25914/5M47-S621</a></p>
+<p>
+     <a href="/table-browser/dr4/">Browse table metadata</a> | 
+    <a href="#documentation">Documentation</a> |
+    
+    <a href='#issues'>Known issues with this release</a>
+</p>
+
+
+<p><a href="https://skymapper.anu.edu.au/_data/DR4/">&#128190; Download the full DR4 catalogue</a></p>
+
+
+<p class="psuccess"><strong>Accessibility:</strong>
+World-wide accessible
+
+</p>
+
+
+
+<a name="documentation"></a>
+<h1>Release documentation</h1>
+
+<h2>DR4&nbsp;Documentation</h2>
+
+<hr />
+<p>Please read and cite <a href="https://ui.adsabs.harvard.edu/abs/2024PASA...41...61O"><span style="background-color:null">the DR4&nbsp;paper</span></a>.</p>
+
+<hr />
+<ul>
+	<li><a href="#Introduction">Introduction</a></li>
+	<li><a href="#Type">What type of data is provided?</a></li>
+	<li><a href="#Coverage">Sky Coverage and Data Quality</a></li>
+	<li><a href="#Access">Data Access</a></li>
+	<li><a href="#Caveats">Caveats and Known Issues</a></li>
+	<li><a href="#Detectors">SkyMapper Detectors</a></li>
+	<li><a href="#Filters">SkyMapper Filters</a></li>
+	<li><a href="#WCS">World Coordinate System</a></li>
+	<li><a href="#Astrometric">Astrometric Quality</a></li>
+	<li><a href="#Photometric">Photometric Quality</a></li>
+</ul>
+
+<h2><a id="Introduction" name="Introduction">Introduction</a><a class="back-to-top" href="#">^ Back to top</a></h2>
+
+<p>This&nbsp;Fourth Data Release further enhances SkyMapper&#39;s deep coverage of the Southern sky and improves the photometric homogeneity for the <em>u</em> and <em>v</em> filters. DR4&nbsp;more than doubles the image dataset compared to DR3. The data processing includes several enhancements over previous DRs.&nbsp;Included in DR4 are images taken between March 2014 and September 2021, with a number of quality cuts applied. Measurements are included&nbsp;from over 15&nbsp;billion detections covering more than half the sky (field centres up to Declinations of +28&deg;). They correspond to over <span style="color:null"><span style="background-color:null">700</span></span>&nbsp;million unique astrophysical objects from magnitude 9<span style="background-color:null">&nbsp;to 22</span>. (All magnitudes reported on this site are AB mags.) The object identifiers&nbsp;from DR2/DR3 have been retained where appropriate, to facilitate quick checks for revised photometry.&nbsp;</p>
+
+<p>Please address all feedback, suggestions, and bug reports in the first instance to <a href="mailto:skymapper@anu.edu.au">skymapper@anu.edu.au</a>.</p>
+
+<p>&nbsp;</p>
+
+<h2><a id="Type" name="Type">What type of data is provided?</a><a class="back-to-top" href="#">^ Back to top</a></h2>
+
+<p>DR4 contains <a href="http://skymapper.anu.edu.au/image-cutout/">reduced images</a> with overscan, bias, flatfield correction and a World Coordinate System (<a href="https://fits.gsfc.nasa.gov/registry/tpvwcs.html">TPV projection</a>) applied, as well as photometric catalogues (both raw detections and object-merged) for objects in each image. Full access to the DR4 database tables is provided through <a href="http://skymapper.anu.edu.au/how-to-access/#tap">this website</a> and the Virtual Observatory <a href="http://skymapper.anu.edu.au/how-to-access/#tap">Table Access Protocol (TAP)</a>.</p>
+
+<p>Five SkyMapper-specific database tables have been exposed in this data release:</p>
+
+<ul>
+	<li>
+	<p>dr4.master &mdash; mean object astrometry, photometry and shape information from all good detections. This table should be used for most photometric queries and is also exposed through the <a href="http://skymapper.anu.edu.au/cone-search">Cone Search service</a></p>
+	</li>
+	<li>
+	<p>dr4.photometry &mdash; per image object detections and corresponding photometric and shape information. This table is also available to the <a href="http://skymapper.anu.edu.au/cone-search">Cone Search service</a></p>
+	</li>
+	<li>
+	<p>dr4.images &mdash; a listing of image coordinates and exposure information</p>
+	</li>
+</ul>
+
+<ul>
+	<li>
+	<p>dr4.ccds &mdash; a listing of CCD details used by the <a href="http://skymapper.anu.edu.au/image-cutout/">Image Cutout service</a></p>
+	</li>
+	<li>
+	<p>dr4.mosaic &mdash; a listing of the CCD positions within the SkyMapper mosaic</p>
+	</li>
+</ul>
+
+<p>The dr4.master table has been pre-matched to several other large catalogues:</p>
+
+<ul>
+	<li>
+	<p>ext.allwise &mdash; the NASA <em>Widefield Infrared Survey Explorer (WISE)</em> AllWISE data release</p>
+	</li>
+	<li>
+	<p>ext.catwise2020 <em>(<span style="color:#f1c40f">NEW!</span>)&nbsp;</em>&mdash; the NASA <em>Widefield Infrared Survey Explorer (WISE)</em> CatWISE2020&nbsp;data release</p>
+	</li>
+	<li>
+	<p>ext.des_dr2&nbsp;<em>(<span style="color:#f1c40f">NEW!</span>)&nbsp;</em>&mdash; the Dark Energy Survey (DES) DR2</p>
+	</li>
+	<li>
+	<p>ext.refcat2 &mdash; The ATLAS All-Sky Stellar Reference Catalog (Tonry et al. 2018)</p>
+	</li>
+	<li>
+	<p>ext.gaia_dr3&nbsp;&mdash; the <em>Gaia Mission</em> Catalogue DR3</p>
+	</li>
+	<li>
+	<p>ext.galex_guvcat_ais &mdash; the All-sky Imaging Survey from the <em>GALEX</em> catalogs of unique UV sources (GUVcat;&nbsp;Bianchi et al. 2017)</p>
+	</li>
+	<li>
+	<p>ext.ls_dr9&nbsp;<em>(<span style="color:#f1c40f">NEW!</span>)&nbsp;</em>&mdash; the DESI Legacy Imaging Surveys (LS) DR9, Sweep Catalogs</p>
+	</li>
+	<li>
+	<p>ext.nsc_dr2&nbsp;<em>(<span style="color:#f1c40f">NEW!</span>)&nbsp;</em>&mdash; the NOIRLab Source Catalog (NSC) DR2</p>
+	</li>
+	<li>
+	<p>ext.ps1_dr1 &mdash; the Pan-STARRS1 (PS1) DR1 Catalog, selected columns, restricted to <span style="background-color:null">decMean&lt;30deg</span> and nDetections&gt;1</p>
+	</li>
+	<li>
+	<p>ext.splus_dr3 <em>(<span style="color:#f1c40f">NEW!</span>)</em>&nbsp;&mdash; the Southern Photometric Local Universe Survey (S-PLUS) Catalog DR3</p>
+	</li>
+	<li>
+	<p>ext.twomass_psc &mdash; the Two Micron All Sky Survey (2MASS) Point Source Catalog (PSC)</p>
+	</li>
+	<li>
+	<p>ext.vhs_dr6&nbsp;&mdash; the VISTA Hemisphere Survey (VHS) DR6</p>
+	</li>
+</ul>
+
+<p>Matching to the external tables was attempted with a 15&quot; search radius around each SkyMapper source and the ID and distance of the nearest source from the those catalogues are noted in&nbsp;sets of columns in dr4.master. As in DR2 and DR3, only the 2MASS PSC was queried (instead of both the PSC and XSC), while for Gaia DR3, the <em>two</em> nearest matches from the catalogue are listed. The distance to the 2nd-nearest match may indicate the presence of a close neighbour affecting the photometry of the primary source (also see the <span style="font-family:Courier New,Courier,monospace">self_id1, self_id2,&nbsp;</span>and<span style="font-family:Courier New,Courier,monospace"> self_id3</span>&nbsp;columns in dr4.master for the three closest DR4&nbsp;sources to each DR4&nbsp;object). The <em>ext</em> schema also contains additional photometric catalogues that have not been cross-matched with DR4&nbsp;(see table&nbsp;metadata <a href="http://skymapper.anu.edu.au/table-browser/">here</a>).</p>
+
+<p>We also provide local copies of several spectroscopic and other catalogues, which we have pre-matched to the SkyMapper master table with a 15&quot; search radius, noting the nearest SkyMapper source in the dr4_id and dr4_dist columns of those tables:</p>
+
+<ul>
+	<li>
+	<p>ext.spec_2dfgrs &mdash; the 2 Degree Field Galaxy Redshift Survey (2dFGRS)</p>
+	</li>
+	<li>
+	<p>ext.spec_2dflens &mdash; the 2dF Gravitational Lens Survey (2dFLenS)</p>
+	</li>
+	<li>
+	<p>ext.spec_2qz6qz &mdash; the 2dF and 6dF QSO Redshift Surveys (2QZ/6QZ)</p>
+	</li>
+	<li>
+	<p>ext.spec_6dfgs &mdash; the 6 Degree Field Galaxy Survey (6dFGS)</p>
+	</li>
+	<li>
+	<p>ext.spec_galah_dr3&nbsp;<em>(<span style="color:#f1c40f">NEW!</span>)</em>&mdash; the GALAH+ DR3&nbsp;catalogue</p>
+	</li>
+	<li>
+	<p>ext.spec_gama_dr3<em>&nbsp;</em>&mdash; the Galaxy Mass and Assembly (GAMA) Survey DR3</p>
+	</li>
+	<li>
+	<p>ext.spec_hesqso &mdash; the Hamburg/ESO survey for bright QSOs</p>
+	</li>
+	<li>
+	<p>ext.spec_ozdes_dr2&nbsp;<em>(<span style="color:#f1c40f">NEW!</span>)</em>&nbsp;&mdash; the Australian Dark Energy Survey (OzDES) DR2</p>
+	</li>
+	<li>
+	<p>ext.spec_rave_dr6 <em>(<span style="color:#f1c40f">NEW!</span>)</em>&nbsp;&mdash; the Radial Velocity Experiment (RAVE) DR6</p>
+	</li>
+	<li>
+	<p>ext.spec_twomrs &mdash; the 2MASS Redshift Survey (2MRS)</p>
+	</li>
+	<li>
+	<p>ext.kids_dr4p1 <em>(<span style="color:#f1c40f">NEW!</span>)</em>&nbsp;&mdash; the&nbsp;Kilo-Degree Survey (KiDS), v4.1</p>
+	</li>
+	<li>
+	<p>ext.milliquas_v8&nbsp;<em>(<span style="color:#f1c40f">NEW!</span>)</em>&nbsp;&mdash; the Million Quasar catalog, v8</p>
+	</li>
+	<li>
+	<p>ext.vsx_20230626&nbsp;<em>(<span style="color:#f1c40f">NEW!</span>)&nbsp;</em>&mdash; the AAVSO International Variable Star Index, v2023-06-26</p>
+	</li>
+</ul>
+
+<p>To aid in constructing your <a href="http://skymapper.anu.edu.au/tap/">ADQL queries</a>, you can browse the column metadata of all these tables <a href="http://skymapper.anu.edu.au/table-browser/">here</a>.</p>
+
+<p>&nbsp;</p>
+
+<h2><a name="Coverage">Sky Coverage and Data Quality</a><a class="back-to-top" href="#">^ Back to top</a></h2>
+
+<p>DR4 covers&nbsp;a total area of over <span style="background-color:null">26,000</span> deg<sup>2</sup> (see coverage maps per filter below).</p>
+<!--
+<p><img alt="" src="/media/mce_filebrowser/2017/06/05/dr1_coverage_fields.png" style="width:1000px" /></p>
+-->
+
+<p><span style="background-color:null"><img alt="" src="/media/mce_filebrowser/2023/12/08/dr4_imcountubyfield.png" style="width:600px" /><img alt="" src="/media/mce_filebrowser/2023/12/08/dr4_imcountvbyfield.png" style="width:600px" /></span></p>
+
+<p><span style="background-color:null"><img alt="" src="/media/mce_filebrowser/2023/12/08/dr4_imcountgbyfield.png" style="width:600px" /><img alt="" src="/media/mce_filebrowser/2023/12/08/dr4_imcountrbyfield.png" style="width:600px" /></span></p>
+
+<p><span style="background-color:null"><img alt="" src="/media/mce_filebrowser/2023/12/08/dr4_imcountibyfield.png" style="width:600px" /><img alt="" src="/media/mce_filebrowser/2023/12/08/dr4_imcountzbyfield.png" style="width:600px" /></span></p>
+
+<p>The 417,223&nbsp;images in DR4&nbsp;are comprised of&nbsp;47% Shallow Survey (SS) and&nbsp;29% Main Survey (MS) frames, and, for the first time, incorporates repeat visits to eight CALSPEC standard star fields (11%) as well as images from the SkyMapper Transient Survey (SMT; 8%; <a href="https://ui.adsabs.harvard.edu/abs/2017PASA...34...30S/abstract">Scalzo et al. 2017</a>) and non-survey images collected for smaller science programs (5%).</p>
+
+<p>The maximum photometric zeropoint (the magnitude equivalent to one detected count in the image) is shown in each of the 6 sky maps below (in which darker colours are deeper images). The typical 5-sigma detection limits are 7-7.5 magnitudes brighter than the indicated zeropoint.</p>
+
+<p><img alt="" src="/media/mce_filebrowser/2023/06/13/dr4_zp_u.png" style="width:600px" /><img alt="" src="/media/mce_filebrowser/2023/06/13/dr4_zp_v.png" style="width:600px" /></p>
+
+<p><img alt="" src="/media/mce_filebrowser/2023/06/13/dr4_zp_g.png" style="width:600px" /><img alt="" src="/media/mce_filebrowser/2023/06/13/dr4_zp_r.png" style="width:600px" /></p>
+
+<p><img alt="" src="/media/mce_filebrowser/2023/06/13/dr4_zp_i.png" style="width:600px" /><img alt="" src="/media/mce_filebrowser/2023/06/13/dr4_zp_z.png" style="width:600px" /></p>
+
+<p>To indicate the imaging depth, the logarithmic number counts of sources with &lt; 5% errors are <span style="background-color:null">shown in the figure below,</span> with the bimodal distributions principally reflecting the Shallow Survey and Main Survey components.</p>
+
+<p><img alt="" src="/media/mce_filebrowser/2023/11/22/phot_histemag0p2declt0.png" style="width:480px" /></p>
+
+<p>Median seeing in DR4 is<span style="background-color:null"> (3.3&quot;, 3.1&quot;, 2.9&quot;, 2.6&quot;, 2.6&quot;, 2.5&quot;) for (</span><em><span style="background-color:null">u, v, g, r, i, z</span></em><span style="background-color:null">), and is typically slightly better in </span><em><span style="background-color:null">Main Survey</span></em><span style="background-color:null">&nbsp;images than in the&nbsp;</span><em><span style="background-color:null">Shallow Survey</span></em><span style="background-color:null">. We have included images with a PSF FWHM of up to 5&quot; and an elongation of up to 1.4.</span></p>
+
+<p>All source detections in the photometry table include the Source Extractor flags, complemented by additional flags from our data processing in a higher bit range:</p>
+
+<p>From Source Extractor:</p>
+
+<table border="1">
+	<tbody>
+		<tr>
+			<th><strong>Flag Bit</strong></th>
+			<th><strong>Meaning</strong></th>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>The object has neighbors, bright and close enough to significantly bias the photometry, or bad pixels (more than 10% of the integrated area affected).</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>The object was originally blended with another one.</td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>At least one pixel of the object is saturated (or very close to).</td>
+		</tr>
+		<tr>
+			<td>8</td>
+			<td>The object is truncated (too close to an image boundary).</td>
+		</tr>
+		<tr>
+			<td>16</td>
+			<td>Object&#39;s aperture data are incomplete or corrupted.</td>
+		</tr>
+		<tr>
+			<td>32</td>
+			<td>Object&#39;s isophotal data are incomplete or corrupted.</td>
+		</tr>
+		<tr>
+			<td>64</td>
+			<td>A memory overflow occurred during deblending.</td>
+		</tr>
+		<tr>
+			<td>128</td>
+			<td>A memory overflow occurred during extraction.</td>
+		</tr>
+	</tbody>
+</table>
+
+<p><span style="background-color:null">Our post-processing adds the following flags, as needed:</span></p>
+
+<ul>
+	<li><span style="color:null">Bit value 256: set&nbsp;for potentially over-split objects, where an&nbsp;image contains&nbsp;multiple detections&nbsp;associated to the same object_id.</span></li>
+	<li>Bit value 512: set for very faint detections that we consider dubious and a potential source of error. Our approach makes sure that very faint detections in the Shallow Survey or Standard Field observations are ignored for the benefit of letting the Main Survey or other deep observations&nbsp;define their distilled properties, while faint detections in deep images&nbsp;are still included into the master table.</li>
+	<li>Bit value 1024:&nbsp;set for source detections that appear much more concentrated than PSFs and with small minor axis extent,&nbsp;as they may be affected by uncorrected cosmic rays or transient hot pixels.</li>
+	<li>Bit value 2048: set for source detections that are close to bright stars in the ATLAS Refcat2 catalogue, based on a search radius, in degrees, of
+	<pre>
+log10 (radius) &lt; -0.2 * m,</pre>
+	where <em>m</em> is the PS1-to-SkyMapper transformed magnitude in the band in question, down to limits of (4, 5, 8.5, 8.5, 6, 5) for (<em>u, v, g, r, i, z</em>). These are usually affected by scattered light from the bright star, and have either compromised photometry or are spurious sources.</li>
+	<li><span style="background-color:null">Bit value 4096: objects have no single detection without aperture-correction issues.</span></li>
+	<li><span style="background-color:null">Bit value 8192: set for sources in the mosaic corners, where the WCS solution tends to become poorly constrained and offsets compared to&nbsp;<em>Gaia</em>&nbsp;DR3 positions typically exceed 1 pixel (0.5&quot;). This region constitutes approximately 0.59% of the field of view (0.65% of pixels, after excluding CCD gaps).</span></li>
+	<li><span style="background-color:null">Bit value 16384:&nbsp;objects that were never detected on any image other than Standard field images; these objects are typically extended and of low surface brightness so that their centroid positions are not well constrained in some of the shallowest Standard field images and thus show up as separate objects not matched properly to the correct astrophysical object.</span></li>
+</ul>
+
+<p><span style="color:null">Only detections with flags&lt;4 and nimaflags&lt;5 are used for distilling photometry into the master table, and hence&nbsp;the averaged magnitudes exclude all measurements with bad flags (flags&gt;=4 or nimaflags&gt;=5). When all detections of an object have bad flags in a passband, then </span>the magnitude errors are nulled to indicate that the magnitudes need to be taken with a grain of salt.</p>
+
+<p><span style="color:null">However, all detections with bad flags or those close to bright stars can still be found in the photometry table.</span></p>
+
+<h2><a name="Access">Data Access</a><a class="back-to-top" href="#">^ Back to top</a></h2>
+
+<p><strong>Main Page:</strong> <a href="http://skymapper.anu.edu.au/how-to-access/">How To Access</a></p>
+
+<p>DR4 images and catalogues can be accessed via the tools on this website (see <a href="http://skymapper.anu.edu.au/how-to-access/">How To Access</a>), which are being developed as part of the Australian <a href="http://www.asvo.org.au/">All-Sky Virtual Observatory</a>. The <a href="http://skymapper.anu.edu.au/tap">TAP</a> (Table Access Protocol), <a href="http://skymapper.anu.edu.au/image-cutout">SIAP</a> (Simple Image Access Protocol), and <a href="http://skymapper.anu.edu.au/cone-search">Cone Search</a> services can also be accessed through Virtual Observatory-aware software tools like <a href="http://www.star.bris.ac.uk/~mbt/topcat/">TOPCAT</a> and <a href="http://aladin.u-strasbg.fr/">Aladin</a>.&nbsp;</p>
+
+<p>For TAP queries,<span style="background-color:null"> some definitions and constraints worth considering </span>when making selections from the&nbsp;dr4.master&nbsp;catalogue include:</p>
+
+<ul>
+	<li><strong>flags = 0</strong> - no Source Extractor warnings about saturation, close neighbours, edge-of-CCD effects, etc.,&nbsp;<em>in any image, ever</em></li>
+	<li><strong>nimaflags = 0</strong> -&nbsp;isophotal aperture clean of&nbsp;bad pixels, saturation, cross-talk, cosmic rays&nbsp;<em>for all detections in the dataset for that source</em></li>
+	<li><strong>ngood &gt; 1</strong> - source well-measured in multiple images (either in the same filter or different filters)</li>
+	<li><strong>x_flags = 0,&nbsp;x_nimaflags = 0, x_ngood &gt; 1</strong> - if only concerned with filter&nbsp;x</li>
+	<li><strong>For selecting a very clean sample</strong>, one might require that every measurement in every filter&nbsp;was free of Source Extractor warnings or bad pixels:
+	<ul>
+		<li>flags=0 and nimaflags=0</li>
+	</ul>
+	</li>
+	<li><strong>For selecting a more complete sample</strong>, one might only require that there was at least one good (flags&lt;4 and nimaflags&lt;5) photometric data point in the filter in question:
+	<ul>
+		<li><em>F</em>_ngood&gt;0 for <em>F</em>&nbsp;in (<em>u,v,g,r,i,z)</em></li>
+	</ul>
+	</li>
+	<li><strong>To avoid biased photometry due to neighbours</strong>, one can check the distances to the nearest 2&nbsp;Gaia D3&nbsp;sources (gaia_dr3_dist1 and _dist2, which show&nbsp;values up to 15arcsec), the distances to the next 3&nbsp;closest SkyMapper DR4&nbsp;sources (self_id1, _id2, and _id3), which <em>saturate</em>&nbsp;at 15arcsec), or the flags_psf column (with the bits being set to indicate whether a neighbour is expected to bias the photometry by &gt;1% in each band; bits:&nbsp;1=z, 2=i, 4=r, 8=g, 16=v, 32=u)</li>
+</ul>
+
+<h2><a name="Caveats">Caveats and Known Issues</a><a class="back-to-top" href="#">^ Back to top</a></h2>
+
+<p>For an up-to-date list of known issues and their prospects for resolution, please see the&nbsp;<a href="http://skymapper.anu.edu.au/data-release/#issues">Known Issues</a>&nbsp;section at the bottom of this page.&nbsp;There are several important issues with DR4 data to be aware of:</p>
+
+<ul>
+	<li>
+	<p>A very small number of&nbsp;objects do not have their detections correctly merged into a single astrophysical object and thus appear twice in the master table, with non-identical positions; often one of the master objects has almost all the detections, and the other has very few.</p>
+	</li>
+	<li>
+	<p>No illumination correction has been applied.</p>
+	</li>
+	<li>
+	<p>Fringe correction is applied to i- and z-band images, but some r-band images show weak fringing effects.</p>
+	</li>
+	<li>
+	<p>The u-band has a ~1% red leak at 700-750 nm wavelength. The relative throughput of the leak is airmass-dependent and can seemingly increase the u-flux of red objects towards higher airmass.&nbsp;</p>
+	</li>
+	<li>
+	<p>Photometry is affected by a spatially-varying PSF across the field-of-view, and the PSF shows trefoil in the corners and generally significant wings.&nbsp;</p>
+	</li>
+	<li>
+	<p>PSF magnitudes are derived from a series of nested annuli that are&nbsp;calibrated per image and per CCD by bright stars and is fit as a function of the image x,y coordinates. Sources with neighbours of equal brightness will have their PSF magnitudes biased by &gt;1% if those neighbours are separated by &lt;5 arcsec. Brighter&nbsp;neighbours have effects even at larger separation, up to&nbsp;15&quot; distance. The column FLAGS_PSF and the DR4 paper give more&nbsp;details.</p>
+	</li>
+	<li>
+	<p>Extended-source photometry has not been optimised in DR4.&nbsp;As of DR4, we are providing PSF loss-corrected 5&rdquo; aperture magnitudes ({f}_APC05) and their errors (e_{f}_APC05); colours formed between these are much less noisy than colours formed from two Petrosian magnitudes.</p>
+	</li>
+	<li>
+	<p>The photometric zeropoints have been newly derived by anchoring to bright stars having&nbsp;<em>Gaia</em>&nbsp;DR3 low-resolution spectroscopy. This provides a significantly more homogeneous photometric calibration across the sky, especially for&nbsp;<em>u</em>&nbsp;and&nbsp;<em>v</em>.</p>
+	</li>
+</ul>
+
+<p><!-- the&nbsp;<a href="http://www-star.fnal.gov/Southern_ugriz/New/index.html">SDSS Southern Standards</a>&nbsp;by comparing their measured photometry with a prediction based on our photometry and colour terms discussed below. After subtracting the&nbsp;0.03 mag&nbsp;zero-point offset in SDSS u&#39; reported by&nbsp;<a href="http://adsabs.harvard.edu/abs/2010PASP..122.1437P">Pickles &amp; Depagne (2010)</a>,&nbsp;we find that our photometry is on average 1.0+/-0.1% brighter than the SDSS Southern Standards photometry in all six bands. Among the comparison stars we find an rms scatter between the measured and predicted SDSS photometry and of 3.5% in the bands&nbsp;gr, 5% in&nbsp;uiz&nbsp;and 8% in the narrower&nbsp;v-band.</p>
+--></p>
+
+<h2><a name="Detectors">SkyMapper Detectors</a><a class="back-to-top" href="#">^ Back to top</a></h2>
+
+<p>The SkyMapper mosaic camera contains 32 CCDs of 4096 x 2048 pixels with a plate scale of ~0.50 arcsec/pixel. There are small gaps between the individual CCDs and the resulting field-of view is 2.37 deg x 2.39 deg. The mosaic fill factor is 91% of a 5.68&nbsp;deg<sup>2</sup>&nbsp;field-of-view.&nbsp;Each SkyMapper image is split into its 32 constituent CCDs, which are presented as separate files to the image cutout service.</p>
+
+<p><img alt="" src="/media/mce_filebrowser/2016/05/04/detector.png" style="width:1000px" /></p>
+
+<h2><a name="Filters">SkyMapper Filters</a><a class="back-to-top" href="#">^ Back to top</a></h2>
+
+<p>The SkyMapper filter curves (with atmosphere) are shown below. We have tabulated colour transformations between SkyMapper and other standard filters, as well as predicted star colours and reddening corrections -- they can be found <a href="http://skymapper.anu.edu.au/filter-transformations/">on the page here</a>.</p>
+
+<p><img alt="" src="/media/mce_filebrowser/2023/12/07/filters3.png" style="width:1000px" /></p>
+
+<p>Note that the u-band filter (ultraviolet) is shortward of the Hydrogen Balmer break, while the v-band (violet) is placed between the Balmer break and the Ca H&amp;K 4000AA-break. The u-filter also has a red leak, which needs an airmass-dependent correction. The two lines shown in the figure below are effective transmission curves including atmosphere for airmasses 1 and 2. The third (inset) panel shows the difference between the apparent u-magnitudes observed at airmass 1 and airmass 2 as a function of star colour. The redder the star the brighter it appears in u-band as it is observed closer to the horizon, because calibration stars get fainter, while the red leak keeps the flux bright. Additional information on the filter set can be found in <a href="http://adsabs.harvard.edu/abs/2011PASP..123..789B">Bessell et al. (2011)</a>.</p>
+
+<p><img alt="" src="/media/mce_filebrowser/2017/06/05/sm_uleak.png" style="width:600px" /></p>
+
+<h2><a name="WCS">World Coordinate System</a><a class="back-to-top" href="#">^ Back to top</a></h2>
+
+<p>Reduced SkyMapper images provided through this website and the SIAP service have been registered onto the sky using the <a href="http://iraf.noao.edu/projects/ccdmosaic/tpv.html">TPV</a> World Coordinate System (RA---TPV, DEC--TPV). TPV builds on the standard TAN projection by adding a general polynomial distortion suitable for wide-field cameras which is described in a set of additional PVi_m keywords. A typical TPV header is reproduced below:</p>
+
+<table class="bordered">
+	<tbody>
+		<tr>
+			<th>Typical TPV FITS header</th>
+		</tr>
+		<tr>
+			<td>
+			<pre>
+WCSAXES =                    2 / WCS dimensionality                             
+CTYPE1  = &#39;RA---TPV&#39;           / WCS projection type for this axis              
+CTYPE2  = &#39;DEC--TPV&#39;           / WCS projection type for this axis              
+LONPOLE =                180.0 / WCS coordinate rotation: longitude             
+LATPOLE =                  0.0 / WCS coordinate rotation: latitude              
+CRVAL1  =        276.914401980 / RA of reference point                          
+CRVAL2  =         -9.384011927 / DEC of reference point                         
+CRPIX1  =         -2.900864031 / X reference pixel                              
+CRPIX2  =        -63.233494932 / Y reference pixel                              
+CUNIT1  = &#39;deg     &#39;           / X pixel scale units                            
+CUNIT2  = &#39;deg     &#39;           / Y pixel scale units                            
+CD1_1   =         -0.000138209 / WCS transformation matrix                      
+CD1_2   =         -0.000000195 / WCS transformation matrix                      
+CD2_1   =          0.000000225 / WCS transformation matrix                      
+CD2_2   =         -0.000138246 / WCS transformation matrix                      
+RADESYS = &#39;ICRS    &#39;           / WCS reference frame                            
+PV1_0   =          0.000042557 / WCS projection distortion parameter            
+PV1_1   =          1.000461443 / WCS projection distortion parameter            
+PV1_2   =          0.000190561 / WCS projection distortion parameter            
+PV1_3   =         -0.000000012 / WCS projection distortion parameter            
+PV1_4   =          0.001420356 / WCS projection distortion parameter            
+PV1_5   =          0.000230202 / WCS projection distortion parameter            
+PV1_6   =          0.000277876 / WCS projection distortion parameter            
+PV1_7   =          0.000002261 / WCS projection distortion parameter            
+PV1_8   =          0.000006422 / WCS projection distortion parameter            
+PV1_9   =          0.000001831 / WCS projection distortion parameter            
+PV1_10  =          0.000000521 / WCS projection distortion parameter            
+PV1_11  =         -0.000000298 / WCS projection distortion parameter            
+PV2_0   =          0.000071788 / WCS projection distortion parameter            
+PV2_1   =          1.000381476 / WCS projection distortion parameter            
+PV2_2   =          0.000493742 / WCS projection distortion parameter            
+PV2_3   =          0.000000007 / WCS projection distortion parameter            
+PV2_4   =          0.000440372 / WCS projection distortion parameter            
+PV2_5   =          0.000927121 / WCS projection distortion parameter            
+PV2_6   =          0.000817100 / WCS projection distortion parameter            
+PV2_7   =         -0.000000338 / WCS projection distortion parameter            
+PV2_8   =         -0.000001059 / WCS projection distortion parameter            
+PV2_9   =         -0.000001035 / WCS projection distortion parameter            
+PV2_10  =         -0.000004152 / WCS projection distortion parameter            
+PV2_11  =         -0.000000226 / WCS projection distortion parameter            &nbsp;</pre>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>As TPV is a relatively recent WCS parameterisation you may need to update older WCS libraries and software for best results. We have confirmed that TPV is supported by the following libraries and tools:</p>
+
+<table class="bordered" style="text-align:center">
+	<thead>
+		<tr>
+			<th>IRAF</th>
+			<th>wcstools</th>
+			<th>wcslib</th>
+			<th>AST</th>
+			<th>ds9</th>
+			<th>AstroPy</th>
+			<th>Astromatic</th>
+			<th>CDS Aladin</th>
+			<th>IPAC Montage</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>2.16+</td>
+			<td>3.8.4+</td>
+			<td>5.0+</td>
+			<td>5.7.3+</td>
+			<td>7.0+</td>
+			<td>1.1+</td>
+			<td>3/2014 onwards</td>
+			<td>9+</td>
+			<td>4.0+</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>Note: older versions of Montage&nbsp;(&lt;=3.3) include wcstools v3.8.1 so this library must be updated to 3.8.4+ prior to compiling in order to support TPV.&nbsp;</p>
+
+<h2><a name="Astrometric">Astrometric Quality</a><a class="back-to-top" href="#">^ Back to top</a></h2>
+
+<p>The astrometry for DR4 is based upon the <em>Gaia</em> DR2 astrometric catalogue (<a href="https://ui.adsabs.harvard.edu/abs/2022arXiv220605681G">Gaia Collaboration 2022</a>). In a change from previous DRs, the WCS solutions were determined for each mosaic image, rather than CCD-by-CCD. The new solutions are more robust for sparse frames (especially shallow exposures in&nbsp;<em>u</em>&nbsp;and <em>v</em>), but tend to show systematic deviations in the extreme corners of the mosaic. Photometry from such regions has been prevented to contributing to the mean positions recorded in the&nbsp;<span style="font-family:Courier New,Courier,monospace">dr4.master</span>&nbsp;table. <span style="background-color:null">The median offset is 0.13&nbsp;arcsec.&nbsp;The sky distribution of the median Gaia offsets per deg</span><sup><span style="background-color:null">2</span></sup><span style="background-color:null">, on a scale of 0 (white) to 0.5 arcsec (black)&nbsp;is shown below.</span></p>
+
+<p><img alt="" src="/media/mce_filebrowser/2023/11/22/dr4_gaia_offset_median.png" style="width:600px" /></p>
+
+<h2><a name="Photometric">Photometric Quality</a><a class="back-to-top" href="#">^ Back to top</a></h2>
+
+<p>The new photometric zeropoint catalogue is anchored to&nbsp;<em>Gaia</em>&nbsp;low-resolution spectroscopy, which significantly improves the uniformity and precision of the calibration in&nbsp;<em>u-</em>&nbsp;and&nbsp;<em>v</em>-band compared to previous data releases.</p>
+
+<p>The sky maps below show the median changes between DR4 and DR2 photometry.</p>
+
+<p><img alt="" src="/media/mce_filebrowser/2023/12/08/dr4_dr2delta_umedian0p25.png" style="width:600px" /><img alt="" src="/media/mce_filebrowser/2023/12/08/dr4_dr2delta_vmedian0p25.png" style="width:600px" /></p>
+
+<p><img alt="" src="/media/mce_filebrowser/2023/12/08/dr4_dr2delta_gmedian0p1.png" style="width:600px" /><img alt="" src="/media/mce_filebrowser/2023/12/08/dr4_dr2delta_rmedian0p1.png" style="width:600px" /></p>
+
+<p><img alt="" src="/media/mce_filebrowser/2023/12/08/dr4_dr2delta_imedian0p1.png" style="width:600px" /><img alt="" src="/media/mce_filebrowser/2023/12/08/dr4_dr2delta_zmedian0p1.png" style="width:600px" /></p>
+
+<p>&nbsp;</p>
+
+<p><span style="background-color:null">Comparison with synthetic photometry of&nbsp;CALSPEC standard stars shows agreement across a range of colours that is typically better than 0.02 mag. The&nbsp;slight residual trends in <em>u</em>- and <em>v</em>-band may be due to small (1-5 nm) shifts in the filter bandpass relative to the expected filter curves.</span></p>
+
+<p><img alt="" src="/media/mce_filebrowser/2024/05/22/calspec_dr4_mike.png" style="width:640px" /></p>
+
+<p>The internal reproducibility of SkyMapper PSF photometry of isolated bright sources is on <span style="background-color:null">the order of 1%.</span></p>
+
+<p>&nbsp;</p>
+
+<a name='issues'></a><h1>Known Issues <span class='one-em hint'>| DR4</span><a href="#" class="back-to-top">^ Back to top</a></h1>
+
+<p class='hint'>Click on the table headings to sort the table based on that value.</p>
+<table class='dataissues'>
+    <thead><tr>
+        <th>Issue &#8597;</th>
+        <th>First affected release &#8597;</th>
+        <th>Resolved in &#8597;</th>
+        <th>Last modified &#8597;</th>
+    </tr></thead>
+    <tbody>
+    
+    <tr class='notified'>
+        <td><a href='/known-issues/10/'>Extended-source photometry</a></td>
+        <td><a href='/data-release/edr/'>EDR</a></td>
+        <td>&mdash;</td>
+        <td>Jul 13 2023, 19:26 AEST</td>
+    </tr>
+    
+    <tr class='resolved'>
+        <td><a href='/known-issues/14/'>Incorrect photometry when merging child objects</a></td>
+        <td><a href='/data-release/dr1/'>DR1.1</a></td>
+        <td><a href='/data-release/dr4/'>DR4</a>
+            </td>
+        <td>Jul 13 2023, 19:25 AEST</td>
+    </tr>
+    
+    <tr class='notified'>
+        <td><a href='/known-issues/4/'>Spatially varying PSF affecting photometry</a></td>
+        <td><a href='/data-release/edr/'>EDR</a></td>
+        <td>&mdash;</td>
+        <td>Jun 05 2017, 15:55 AEST</td>
+    </tr>
+    
+    <tr class='for-info'>
+        <td><a href='/known-issues/6/'>ZIP file downloads in Safari (for info)</a></td>
+        <td><a href='/data-release/edr/'>EDR</a></td>
+        <td>&mdash;</td>
+        <td>May 02 2016, 12:21 AEST</td>
+    </tr>
+    </tbody>
+</table>
+
+
+
+		</div>
+		<div class="clearboth"></div>
+		<div id='footer'><p>
+			The use of all SkyMapper data is governed by the <a href='/policies/'>policies</a> outlined on this website. Please review them prior to downloading or publishing data.<br/>
+			Copyright &copy; 2026 <a href='https://rsaa.anu.edu.au/'>Research School of Astronomy and Astrophysics</a>, <a href='https://www.anu.edu.au/'>The Australian National University</a>. Development funded by <a href='http://astronomyaustralia.org.au/'>Astronomy Australia Ltd.</a> as part of the <a href='http://www.asvo.org.au/'>All-Sky Virtual Observatory</a> and <a href='https://odc.org.au/'>Optical Data Centre</a>. Hosted by <a href='http://nci.org.au/'>National Computational Infrastructure</a>.<br />
+			Powered by <a href='https://www.djangoproject.com' target='_blank'>Django</a> and <a href="https://www.cherrypy.org" target="_blank">CherryPy</a>.</p></div>
+	</div>
+
+
+</body>
+
+</html>

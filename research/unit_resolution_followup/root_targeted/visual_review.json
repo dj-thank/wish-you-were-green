@@ -1,0 +1,22 @@
+{
+  "figure": "original_pixel_context.png",
+  "figure_sha256": "5de964907b436b7b5e8a14ad25013a50dab5e2c5a9267b8008c93a0d09332d34",
+  "status": "actually_viewed",
+  "reviewer": "root",
+  "rows_actually_viewed": [
+    6462,
+    6652,
+    6951,
+    7993,
+    8040
+  ],
+  "recorded_utc_date": "2026-10-20",
+  "observations": {
+    "6462": "Native positive-IVAR narrow emission peaks survive beyond sky windows. The published AM CVn counterpart is retained as explanatory context; neither DQ: nor automatic QSO is a new physical inference.",
+    "6652": "Large signed narrow excursions at 557.7 and 589 nm are AND-flagged. No long positive-IVAR gap; an apparent broad change near 600 nm is not removed or assigned uniquely to a camera error.",
+    "6951": "The native continuum level changes over about 590\u2013610 nm while all visible samples have positive IVAR. Strong sky-window outliers and low S/N remain. Broad structure is retained; DAQ is an existing catalogue label.",
+    "7993": "Native mean slope changes near 590\u2013600 nm, with strong flagged narrow sky excursions but no long IVAR gap. Existing DQA label and automatic QSO mismatch are retained separately.",
+    "8040": "Low-S/N native spectrum has broad structure around 570\u2013590 nm and a recovery near 600 nm, with flagged sky pixels. Positive IVAR alone cannot attribute this shape to a physical process or instrument error."
+  },
+  "limits": "Figure is a native flux/mask diagnostic, not a spectrum reclassification model. All values, including negative samples, are displayed. The full visible-window S/N in this figure differs from the contact-sheet 4000\u20137500-A reference interval."
+}

@@ -1,0 +1,1 @@
+SELECT CAST(s.specObjID AS varchar(32)) AS specobjid, s.plate,s.mjd,s.fiberID,s.run2d,s.ra,s.dec,s.sciencePrimary,CAST(s.bestObjID AS varchar(32)) AS bestobjid,n.distance FROM dbo.fGetNearbySpecObjAllEq(200.80308333333332,-1.490425,0.5) n JOIN SpecObjAll s ON s.specObjID=n.specObjID

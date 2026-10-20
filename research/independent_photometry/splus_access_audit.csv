@@ -1,0 +1,51 @@
+source_id,survey,query_status,returned_catalogue_rows,adopted_measurements,result_interpretation,error_text,raw_path,raw_sha256
+1078624858218235776,SPLUS_DR3_public_SkyMapper_mirror,ERROR,,0,Catalogue query failed; source presence and flux limits are unknown.,"Unable to interpret query 'Unknown column ""ra"" ! [l.1 c.68 - l.1 c.70]
+Unknown column ""dec"" ! [l.1 c.71 - l.1 c.74]'",research/independent_photometry/raw/splus_dr3_1078624858218235776.csv,01bdc0fdb7756e5e06e5713ae1cb024441de1d431fa65439f8a23d02a9fdbb68
+1099452803904038272,SPLUS_DR3_public_SkyMapper_mirror,ERROR,,0,Catalogue query failed; source presence and flux limits are unknown.,"Unable to interpret query 'Unknown column ""ra"" ! [l.1 c.68 - l.1 c.70]
+Unknown column ""dec"" ! [l.1 c.71 - l.1 c.74]'",research/independent_photometry/raw/splus_dr3_1099452803904038272.csv,01bdc0fdb7756e5e06e5713ae1cb024441de1d431fa65439f8a23d02a9fdbb68
+1182083542272959232,SPLUS_DR3_public_SkyMapper_mirror,ERROR,,0,Catalogue query failed; source presence and flux limits are unknown.,"Unable to interpret query 'Unknown column ""ra"" ! [l.1 c.68 - l.1 c.70]
+Unknown column ""dec"" ! [l.1 c.71 - l.1 c.74]'",research/independent_photometry/raw/splus_dr3_1182083542272959232.csv,01bdc0fdb7756e5e06e5713ae1cb024441de1d431fa65439f8a23d02a9fdbb68
+1323443938325221376,SPLUS_DR3_public_SkyMapper_mirror,ERROR,,0,Catalogue query failed; source presence and flux limits are unknown.,"Unable to interpret query 'Unknown column ""ra"" ! [l.1 c.68 - l.1 c.70]
+Unknown column ""dec"" ! [l.1 c.71 - l.1 c.74]'",research/independent_photometry/raw/splus_dr3_1323443938325221376.csv,01bdc0fdb7756e5e06e5713ae1cb024441de1d431fa65439f8a23d02a9fdbb68
+1496016553207149952,SPLUS_DR3_public_SkyMapper_mirror,ERROR,,0,Catalogue query failed; source presence and flux limits are unknown.,"Unable to interpret query 'Unknown column ""ra"" ! [l.1 c.68 - l.1 c.70]
+Unknown column ""dec"" ! [l.1 c.71 - l.1 c.74]'",research/independent_photometry/raw/splus_dr3_1496016553207149952.csv,01bdc0fdb7756e5e06e5713ae1cb024441de1d431fa65439f8a23d02a9fdbb68
+1679189040001914880,SPLUS_DR3_public_SkyMapper_mirror,ERROR,,0,Catalogue query failed; source presence and flux limits are unknown.,"Unable to interpret query 'Unknown column ""ra"" ! [l.1 c.68 - l.1 c.70]
+Unknown column ""dec"" ! [l.1 c.71 - l.1 c.74]'",research/independent_photometry/raw/splus_dr3_1679189040001914880.csv,01bdc0fdb7756e5e06e5713ae1cb024441de1d431fa65439f8a23d02a9fdbb68
+1691957732959636608,SPLUS_DR3_public_SkyMapper_mirror,ERROR,,0,Catalogue query failed; source presence and flux limits are unknown.,"Unable to interpret query 'Unknown column ""ra"" ! [l.1 c.68 - l.1 c.70]
+Unknown column ""dec"" ! [l.1 c.71 - l.1 c.74]'",research/independent_photometry/raw/splus_dr3_1691957732959636608.csv,01bdc0fdb7756e5e06e5713ae1cb024441de1d431fa65439f8a23d02a9fdbb68
+2119909923600264960,SPLUS_DR3_public_SkyMapper_mirror,ERROR,,0,Catalogue query failed; source presence and flux limits are unknown.,"Unable to interpret query 'Unknown column ""ra"" ! [l.1 c.68 - l.1 c.70]
+Unknown column ""dec"" ! [l.1 c.71 - l.1 c.74]'",research/independent_photometry/raw/splus_dr3_2119909923600264960.csv,01bdc0fdb7756e5e06e5713ae1cb024441de1d431fa65439f8a23d02a9fdbb68
+2453225705329412480,SPLUS_DR3_public_SkyMapper_mirror,ERROR,,0,Catalogue query failed; source presence and flux limits are unknown.,"Unable to interpret query 'Unknown column ""ra"" ! [l.1 c.68 - l.1 c.70]
+Unknown column ""dec"" ! [l.1 c.71 - l.1 c.74]'",research/independent_photometry/raw/splus_dr3_2453225705329412480.csv,01bdc0fdb7756e5e06e5713ae1cb024441de1d431fa65439f8a23d02a9fdbb68
+2482684508055379584,SPLUS_DR3_public_SkyMapper_mirror,ERROR,,0,Catalogue query failed; source presence and flux limits are unknown.,"Unable to interpret query 'Unknown column ""ra"" ! [l.1 c.68 - l.1 c.70]
+Unknown column ""dec"" ! [l.1 c.71 - l.1 c.74]'",research/independent_photometry/raw/splus_dr3_2482684508055379584.csv,01bdc0fdb7756e5e06e5713ae1cb024441de1d431fa65439f8a23d02a9fdbb68
+2513256394506328832,SPLUS_DR3_public_SkyMapper_mirror,ERROR,,0,Catalogue query failed; source presence and flux limits are unknown.,"Unable to interpret query 'Unknown column ""ra"" ! [l.1 c.68 - l.1 c.70]
+Unknown column ""dec"" ! [l.1 c.71 - l.1 c.74]'",research/independent_photometry/raw/splus_dr3_2513256394506328832.csv,01bdc0fdb7756e5e06e5713ae1cb024441de1d431fa65439f8a23d02a9fdbb68
+2739231150982741760,SPLUS_DR3_public_SkyMapper_mirror,ERROR,,0,Catalogue query failed; source presence and flux limits are unknown.,"Unable to interpret query 'Unknown column ""ra"" ! [l.1 c.68 - l.1 c.70]
+Unknown column ""dec"" ! [l.1 c.71 - l.1 c.74]'",research/independent_photometry/raw/splus_dr3_2739231150982741760.csv,01bdc0fdb7756e5e06e5713ae1cb024441de1d431fa65439f8a23d02a9fdbb68
+3204436719718449280,SPLUS_DR3_public_SkyMapper_mirror,ERROR,,0,Catalogue query failed; source presence and flux limits are unknown.,"Unable to interpret query 'Unknown column ""ra"" ! [l.1 c.68 - l.1 c.70]
+Unknown column ""dec"" ! [l.1 c.71 - l.1 c.74]'",research/independent_photometry/raw/splus_dr3_3204436719718449280.csv,01bdc0fdb7756e5e06e5713ae1cb024441de1d431fa65439f8a23d02a9fdbb68
+3638333660492606976,SPLUS_DR3_public_SkyMapper_mirror,ERROR,,0,Catalogue query failed; source presence and flux limits are unknown.,"Unable to interpret query 'Unknown column ""ra"" ! [l.1 c.68 - l.1 c.70]
+Unknown column ""dec"" ! [l.1 c.71 - l.1 c.74]'",research/independent_photometry/raw/splus_dr3_3638333660492606976.csv,01bdc0fdb7756e5e06e5713ae1cb024441de1d431fa65439f8a23d02a9fdbb68
+3705179706854089856,SPLUS_DR3_public_SkyMapper_mirror,ERROR,,0,Catalogue query failed; source presence and flux limits are unknown.,"Unable to interpret query 'Unknown column ""ra"" ! [l.1 c.68 - l.1 c.70]
+Unknown column ""dec"" ! [l.1 c.71 - l.1 c.74]'",research/independent_photometry/raw/splus_dr3_3705179706854089856.csv,01bdc0fdb7756e5e06e5713ae1cb024441de1d431fa65439f8a23d02a9fdbb68
+3711047662972690688,SPLUS_DR3_public_SkyMapper_mirror,ERROR,,0,Catalogue query failed; source presence and flux limits are unknown.,"Unable to interpret query 'Unknown column ""ra"" ! [l.1 c.68 - l.1 c.70]
+Unknown column ""dec"" ! [l.1 c.71 - l.1 c.74]'",research/independent_photometry/raw/splus_dr3_3711047662972690688.csv,01bdc0fdb7756e5e06e5713ae1cb024441de1d431fa65439f8a23d02a9fdbb68
+3713218786120541824,SPLUS_DR3_public_SkyMapper_mirror,ERROR,,0,Catalogue query failed; source presence and flux limits are unknown.,"Unable to interpret query 'Unknown column ""ra"" ! [l.1 c.68 - l.1 c.70]
+Unknown column ""dec"" ! [l.1 c.71 - l.1 c.74]'",research/independent_photometry/raw/splus_dr3_3713218786120541824.csv,01bdc0fdb7756e5e06e5713ae1cb024441de1d431fa65439f8a23d02a9fdbb68
+3782527364866017664,SPLUS_DR3_public_SkyMapper_mirror,ERROR,,0,Catalogue query failed; source presence and flux limits are unknown.,"Unable to interpret query 'Unknown column ""ra"" ! [l.1 c.68 - l.1 c.70]
+Unknown column ""dec"" ! [l.1 c.71 - l.1 c.74]'",research/independent_photometry/raw/splus_dr3_3782527364866017664.csv,01bdc0fdb7756e5e06e5713ae1cb024441de1d431fa65439f8a23d02a9fdbb68
+4445170067643613312,SPLUS_DR3_public_SkyMapper_mirror,ERROR,,0,Catalogue query failed; source presence and flux limits are unknown.,"Unable to interpret query 'Unknown column ""ra"" ! [l.1 c.68 - l.1 c.70]
+Unknown column ""dec"" ! [l.1 c.71 - l.1 c.74]'",research/independent_photometry/raw/splus_dr3_4445170067643613312.csv,01bdc0fdb7756e5e06e5713ae1cb024441de1d431fa65439f8a23d02a9fdbb68
+4545191991882663936,SPLUS_DR3_public_SkyMapper_mirror,ERROR,,0,Catalogue query failed; source presence and flux limits are unknown.,"Unable to interpret query 'Unknown column ""ra"" ! [l.1 c.68 - l.1 c.70]
+Unknown column ""dec"" ! [l.1 c.71 - l.1 c.74]'",research/independent_photometry/raw/splus_dr3_4545191991882663936.csv,01bdc0fdb7756e5e06e5713ae1cb024441de1d431fa65439f8a23d02a9fdbb68
+4545912820537587328,SPLUS_DR3_public_SkyMapper_mirror,ERROR,,0,Catalogue query failed; source presence and flux limits are unknown.,"Unable to interpret query 'Unknown column ""ra"" ! [l.1 c.68 - l.1 c.70]
+Unknown column ""dec"" ! [l.1 c.71 - l.1 c.74]'",research/independent_photometry/raw/splus_dr3_4545912820537587328.csv,01bdc0fdb7756e5e06e5713ae1cb024441de1d431fa65439f8a23d02a9fdbb68
+4555293235271174016,SPLUS_DR3_public_SkyMapper_mirror,ERROR,,0,Catalogue query failed; source presence and flux limits are unknown.,"Unable to interpret query 'Unknown column ""ra"" ! [l.1 c.68 - l.1 c.70]
+Unknown column ""dec"" ! [l.1 c.71 - l.1 c.74]'",research/independent_photometry/raw/splus_dr3_4555293235271174016.csv,01bdc0fdb7756e5e06e5713ae1cb024441de1d431fa65439f8a23d02a9fdbb68
+761677269868775040,SPLUS_DR3_public_SkyMapper_mirror,ERROR,,0,Catalogue query failed; source presence and flux limits are unknown.,"Unable to interpret query 'Unknown column ""ra"" ! [l.1 c.68 - l.1 c.70]
+Unknown column ""dec"" ! [l.1 c.71 - l.1 c.74]'",research/independent_photometry/raw/splus_dr3_761677269868775040.csv,01bdc0fdb7756e5e06e5713ae1cb024441de1d431fa65439f8a23d02a9fdbb68
+818833831355548928,SPLUS_DR3_public_SkyMapper_mirror,ERROR,,0,Catalogue query failed; source presence and flux limits are unknown.,"Unable to interpret query 'Unknown column ""ra"" ! [l.1 c.68 - l.1 c.70]
+Unknown column ""dec"" ! [l.1 c.71 - l.1 c.74]'",research/independent_photometry/raw/splus_dr3_818833831355548928.csv,01bdc0fdb7756e5e06e5713ae1cb024441de1d431fa65439f8a23d02a9fdbb68
+913810126798863232,SPLUS_DR3_public_SkyMapper_mirror,ERROR,,0,Catalogue query failed; source presence and flux limits are unknown.,"Unable to interpret query 'Unknown column ""ra"" ! [l.1 c.68 - l.1 c.70]
+Unknown column ""dec"" ! [l.1 c.71 - l.1 c.74]'",research/independent_photometry/raw/splus_dr3_913810126798863232.csv,01bdc0fdb7756e5e06e5713ae1cb024441de1d431fa65439f8a23d02a9fdbb68
