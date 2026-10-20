@@ -1,0 +1,142 @@
+
+
+<!DOCTYPE html>
+
+<head>
+	<meta charset='utf-8'>
+	<title>SkyMapper Southern Sky Survey</title>
+
+	
+	
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" type="text/css" href='/static/sm_asvo/fonts.css' />
+	<link rel='stylesheet' type='text/css' href='/static/sm_asvo/master.css' />
+
+	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<!-- Custom page scripts -->
+	<script type='text/javascript' src='/static/sm_asvo/master.js'></script>
+	<script type='text/javascript' src="https://cdn.rawgit.com/leafo/sticky-kit/v1.1.2/jquery.sticky-kit.min.js"></script>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+	<link rel="icon" type="image/ico" href='/static/sm_asvo/img/favicon.ico' />
+
+	<!-- Add OG properties (required for FB login) -->
+	<meta property="og:title" content="SkyMapper Southern Sky Survey" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://skymapper.anu.edu.au/cite-and-acknowledge/" />
+	<meta property="og:image" content="https://skymapper.anu.edu.au/static/sm_asvo/img/skymapper_logo1-200x198_3.jpg" />
+	<meta property="og:description" content="Access to and information about the SkyMapper Southern Sky Survey" />
+	<meta property="fb:app_id" content="968590116638493" />
+
+	
+	
+
+	<!-- GOOGLE FONTS -->
+	<!--<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">-->
+	<!--<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css' />-->
+	<!--<link href='https://fonts.googleapis.com/css?family=Carrois+Gothic' rel='stylesheet' type='text/css'>-->
+
+	
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-100583569-1', 'auto');
+	  ga('send', 'pageview');
+
+	  $( document ).ready(function () {
+		$('#linkbar').stick_in_parent();
+	  })
+
+	</script>
+	
+
+	
+
+</head>
+
+<body>
+	<div id='wrapper'>
+		<div id="userwarn"><a href="/accounts/login/?next=/cite-and-acknowledge/">Log-in</a> to SkyMapper</div>
+		<div id='banner'>
+			<!--<div class="trans-black">-->
+			<h1><a href='/'><strong>SkyMapper</strong> | Southern Sky Survey</a></h1>
+			<span class='vahelper'></span><a href='https://www.anu.edu.au/'><img src='/static/sm_asvo/img/2x_anu_logo_small_over.png' id='anu' /></a>
+			<!--</div>-->
+		</div>
+		<!-- <div class='bg-college' style='width: 100%; height: 7px; border: 0; margin: 0; padding: 0;'></div> -->
+		<ul id='linkbar'>
+				<li class='menuitem mi-icon'><a href='/'><i class="material-icons md-light">&#xE88A;&nbsp;</i>Home</a></li>
+				<li class='menuitem mi-icon'><a href='/about-skymapper/'><i class="material-icons md-light">&#xE838;&nbsp;</i>About SkyMapper</a></li>
+				<li class='menuitem mi-icon'><a href='/purchase-time/' style="background-color: darkred;"><i class="material-icons md-light">shopping_cart&nbsp;</i>Purchase Time</a></li>
+				<li class='menuitem mi-icon'><a href='/how-to-cite/'><i class="material-icons md-light">book&nbsp;</i>Cite &amp; Acknowledge</a></li>
+				<li class='menuitem mi-icon'><a href='/news/'><i class="material-icons md-light">keyboard&nbsp;</i>Latest News</a></li>
+				<li class='menuitem mi-icon-inactive'><a><i class="material-icons md-light">&#xE88F;&nbsp;</i>Survey Information<span style='float:right;padding-right:5px;'>&mdash;&mdash;&mdash;&mdash;</span></a></li>
+				<li class='menuitem'><a href="/data-release/">Data Releases</a></li>
+				<li class='menuitem'><a href='/surveys/'>Survey Progress</a></li>
+				<li class='menuitem'><a href='/publications/'>View Publications</a></li>
+				<li class='menuitem'><a href='/publications/statistics/'>Publication Statistics</a></li>
+			<li class='menuitem mi-icon-inactive'><a><i class="material-icons md-light">&#xE8B6;&nbsp;</i>Data Access<span style='float:right;padding-right:5px;'>&mdash;&mdash;&mdash;&mdash;</span></a></li>
+				<li class='menuitem'><a href='/how-to-access/'>How To Access</a></li>
+				<li class='menuitem'><a href='/object-viewer/'>Object Viewer</a></li>
+				<li class='menuitem'><a href='/cone-search/'>Cone Search</a></li>
+				<li class='menuitem'><a href='/image-cutout/'>Image Cutouts</a></li>
+				<li class='menuitem'><a href='/tap/'>Full Catalogue Search</a></li>
+				<li class='menuitem'><a href='/table-browser/'>Table Metadata</a></li>
+				<li class='menuitem mi-icon'><a href='/sky-viewer/'><i class="material-icons md-light">&#xE30B;</i> Sky Viewer</span></a></li>
+<!--				<li class='menuitem mi-icon-inactive'><a><i class="material-icons md-light">&#xE02F;&nbsp;</i>Publications</a></li>-->
+<!--				<li class='menuitem mi-icon'><a href='/science-projects/'><i class="material-icons md-light">error_outline&nbsp;</i>Protected Science</a></li>-->
+				<li class='menuitem mi-icon'><a href='/skymapper-board/'><i class="material-icons md-light">work&nbsp;</i>SkyMapper Board</a></li>
+				<li class='menuitem mi-icon'><a href='/media-gallery/'><i class="material-icons md-light">&#xE251;&nbsp;</i>Media Gallery</a></li>
+				<li class='menuitem mi-icon'><a href='/forum/'><i class="material-icons md-light">&#xE0BF;&nbsp;</i>User Forum</a></li>
+			</ul>
+			<ul id='linkmenu'>
+				<li id='menubutton'><a href='#'>&#8694; Menu</a></li>
+				<li class='menuitem'><i class="material-icons"></i><a href='/'>Home</a></li>
+				<li class='menuitem'><i class="material-icons"></i><a href='/about-skymapper/'>About SkyMapper</a></li>
+				<li class='menuitem'><i class="material-icons"></i><a href='/purchase-time/' style="background-color: darkred;">Purchase Time</a></li>
+				<li class='menuitem'><a href='/how-to-cite/'>Cite &amp; Acknowledge</a></li>
+				<li class='menuitem'><a href='/news/'>Latest News</a></li>
+				<li class='menuitem'><a href='/data-release/'>Data Releases</a></li>
+				<li class='menuitem'><a href='/surveys/'>Survey Progress</a></li>
+				<li class='menuitem'><a href='/publications/'>View Publications</a></li>
+				<li class='menuitem'><a href='/publications/statistics/'>Publication Statistics</a></li>
+				<li class='menuitem'><a href='/how-to-access/'>How to Access</a></li>
+				<li class='menuitem'><a href='/object-viewer/'>Object Viewer</a></li>
+				<li class='menuitem'><a href='/cone-search/'>Cone Search</a></li>
+				<li class='menuitem'><a href='/image-cutout/'>Image Cutouts</a></li>
+				<li class='menuitem'><a href='/tap/'>Full Catalogue Search</a></li>
+				<li class='menuitem'><a href='/table-browser/'>Table Metadata</a></li>
+				<li class='menuitem'><a href='/sky-viewer/'>Sky Viewer</a></li>
+				<!-- <li class='menuitem'><a href='/science-projects/'>Protected Science</a></li> -->
+				<li class='menuitem'><a href='/skymapper-board/'>SkyMapper Board</a></li>
+				<li class='menuitem'><a href='/media-gallery/'>Media Gallery</a></li>
+				<li class='menuitem'><a href='/forum/'>User Forum</a></li>
+			</ul>
+		<!-- </div> -->
+
+		<div id='content'>
+		<p></p>
+		
+
+<h2>404 - Page Not Found</h2>
+
+<p>Oops! We can't seem to find the page you're looking for.</p>
+
+
+		</div>
+		<div class="clearboth"></div>
+		<div id='footer'><p>
+			The use of all SkyMapper data is governed by the <a href='/policies/'>policies</a> outlined on this website. Please review them prior to downloading or publishing data.<br/>
+			Copyright &copy; 2026 <a href='https://rsaa.anu.edu.au/'>Research School of Astronomy and Astrophysics</a>, <a href='https://www.anu.edu.au/'>The Australian National University</a>. Development funded by <a href='http://astronomyaustralia.org.au/'>Astronomy Australia Ltd.</a> as part of the <a href='http://www.asvo.org.au/'>All-Sky Virtual Observatory</a> and <a href='https://odc.org.au/'>Optical Data Centre</a>. Hosted by <a href='http://nci.org.au/'>National Computational Infrastructure</a>.<br />
+			Powered by <a href='https://www.djangoproject.com' target='_blank'>Django</a> and <a href="https://www.cherrypy.org" target="_blank">CherryPy</a>.</p></div>
+	</div>
+
+
+</body>
+
+</html>

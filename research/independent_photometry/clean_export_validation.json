@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "performed_utc": "2026-10-20T00:11:17.283759+00:00",
+  "tracked_base_commit": "70f0d592d880ead69b5b6623e3c4ceec4affcd43",
+  "export_method": "git archive HEAD plus the durable new research/independent_photometry files; no ignored raw caches or bytecode",
+  "execution_cwd": "outside exported repository",
+  "network": "socket connect/connect_ex/create_connection blocked",
+  "summary": {
+    "fixed_candidates": 25,
+    "slots": 450,
+    "strict_measurements": 52,
+    "sources_with_strict_measurements": 14,
+    "catalogue_rows_checked": 33,
+    "proper_motion_independent_max_difference_arcsec": 3.1099122388411615e-07,
+    "skymapper_exposures_checked": 110,
+    "original_input_hashes_checked": 407,
+    "regenerated_products": 11,
+    "published_classifications_checked": 3,
+    "splus_failed_queries_distinguished_from_nondetections": 25,
+    "status": "PASS"
+  },
+  "verified_files": 421,
+  "verifier_sha256": "866b1dbc60f39d4be855de3cb7604cdd63047b78c927dea4068c139a98a5268b",
+  "source_manifest_sha256": "d29672678992cf0517fc59aad777ca328ce652fbac7a5d476feb67afba33c640",
+  "figure_qa": {
+    "path": "research/independent_photometry/coverage.png",
+    "sha256": "e7ed9a399f0acf7de7fb6e787dbb771957cac6353d4e8342fdc812255b8f82c7",
+    "method": "Actual view_image at original resolution",
+    "findings": "All 25 coordinate labels and 18 filter labels, survey boundary, three-state legend and total counts are legible; no clipping or overlap observed."
+  }
+}

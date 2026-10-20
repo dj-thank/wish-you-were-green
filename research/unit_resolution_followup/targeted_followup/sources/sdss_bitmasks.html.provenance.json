@@ -1,0 +1,10 @@
+{
+  "url": "https://www.sdss4.org/dr17/algorithms/bitmasks/",
+  "final_url": "https://www.sdss4.org/dr17/algorithms/bitmasks/",
+  "retrieved_utc": "2026-10-20T00:18:18.105488+00:00",
+  "http_status": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "bytes": 246837,
+  "sha256": "169e39b3cc87375c0d59ec8b07ec1a24f2f54f7b0262daca38c9cfe8a285816f",
+  "file": "sources/sdss_bitmasks.html"
+}

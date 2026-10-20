@@ -1,0 +1,8 @@
+comparison,state,delta_uv,SDSS_duv,DESI_duv,SDSS_green,DESI_green,SDSS_coverage_gate,DESI_coverage_gate,duv,coverage_gate,largest_visible_gap_A
+different_instruments_SDSS_DESI,raw,0.00538818243031,0.0271199130092,0.0238167988386,False,False,True,True,,,
+different_instruments_SDSS_DESI,existing_gri_policy,0.00493876390961,0.0226647687958,0.0232289234674,False,False,True,True,,,
+different_instruments_SDSS_DESI,PS1_gri_sensitivity,0.00448614257866,0.0230955361947,0.0234818533385,False,False,True,True,,,
+same_observation_two_representations,raw,8.26743035773e-07,,,,,,,,,
+same_observation_two_representations,existing_gri_policy,7.4231136787e-07,,,,,,,,,
+native_mask_sensitivity,exclude_AND_flagged,0.000130886264387,,,,,,,0.0225478594861,True,18.9951151462
+native_mask_sensitivity,exclude_OR_flagged,0.0536063317433,,,,,,,-0.00338404586909,False,989.323598836

@@ -1,0 +1,13 @@
+{
+  "url": "https://archive.cefca.es/catalogues/jplus-dr4/adql_help_enum",
+  "query_parameters": {
+    "db": "J-PLUS-DR4",
+    "name": "jplus"
+  },
+  "final_url": "https://archive.cefca.es/catalogues/jplus-dr4/adql_help_enum?db=J-PLUS-DR4&name=jplus",
+  "retrieved_utc": "2026-10-19T23:34:40.649502+00:00",
+  "http_status": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "size_bytes": 1737,
+  "sha256": "ec89d267365d980ffec4a17c1946948545e66f3fc22176fa3baf43b0381d6f98"
+}

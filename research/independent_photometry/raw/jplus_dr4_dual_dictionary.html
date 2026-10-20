@@ -1,0 +1,567 @@
+<div class="help">
+<h2>Table <span style="text-decoration: underline;">jplus.</span><span style="text-decoration: underline;">MagABDualObj</span></h2>
+<p>Table that contains the main parameters of the astronomical objects detected in the images. The object detection and aperture definition is performed in a reference band ('rSDSS') and the measurements are done in each filter using SExtractor (Dual Mode). Array columns (type[]) contains measures for each filter (NULL if the image in the filter is not available). Enumeration 'jplus' can be used to refer filter positions in the array. Magnitude data is adjusted by the image Zero Point and is in magnitude AB units.</p>
+<h3 class="subtitle">Columns</h3>
+
+<table class="table table-striped table-hover table-condensed" style="margin-top: 30px;">
+	<thead>
+	    <tr>
+	    	<th>Name</th>
+	    	<th>Type</th>
+	    	<th>Units</th>
+	    	<th>UCD</th>
+	    	<th>Description</th>
+	    </tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>TILE_ID</td>
+			<td style="font-family: 'Courier New';">int</td>
+			<td></td>
+			<td>meta.id;obs.image;meta.main</td>
+			<td style="width:55%;">Identifier of the Tile image where the object was detected</td>
+		</tr>
+  <tr>
+			<td>NUMBER</td>
+			<td style="font-family: 'Courier New';">int</td>
+			<td></td>
+			<td>meta.id;meta.main</td>
+			<td style="width:55%;">Number identifier assigned by Sextractor for the object in the image</td>
+		</tr>
+  <tr>
+			<td>ALPHA_J2000</td>
+			<td style="font-family: 'Courier New';">double</td>
+			<td>deg</td>
+			<td>pos.eq.ra;meta.main</td>
+			<td style="width:55%;">Right ascension in equatorial coordinates</td>
+		</tr>
+  <tr>
+			<td>DELTA_J2000</td>
+			<td style="font-family: 'Courier New';">double</td>
+			<td>deg</td>
+			<td>pos.eq.dec;meta.main</td>
+			<td style="width:55%;">Declination in equatorial coordinates</td>
+		</tr>
+  <tr>
+			<td>hpix11</td>
+			<td style="font-family: 'Courier New';">int</td>
+			<td></td>
+			<td>pos.healpix</td>
+			<td style="width:55%;">Healpix index ORDER 11 (NESTED schema) of object position</td>
+		</tr>
+  <tr>
+			<td>X_IMAGE</td>
+			<td style="font-family: 'Courier New';">float</td>
+			<td>pixel</td>
+			<td>pos.cartesian.x</td>
+			<td style="width:55%;">X pixel coordinate (Sextractor's XWIN_IMAGE)</td>
+		</tr>
+  <tr>
+			<td>Y_IMAGE</td>
+			<td style="font-family: 'Courier New';">float</td>
+			<td>pixel</td>
+			<td>pos.cartesian.y</td>
+			<td style="width:55%;">Y pixel coordinate (Sextractor's YWIN_IMAGE)</td>
+		</tr>
+  <tr>
+			<td>R_EFF</td>
+			<td style="font-family: 'Courier New';">float</td>
+			<td>pixel</td>
+			<td>phys.size.radius</td>
+			<td style="width:55%;">Radius enclosing a specified fraction of the flux</td>
+		</tr>
+  <tr>
+			<td>FWHM_WORLD</td>
+			<td style="font-family: 'Courier New';">float</td>
+			<td>deg</td>
+			<td>phys.angSize</td>
+			<td style="width:55%;">FWHM assuming a Gaussian core</td>
+		</tr>
+  <tr>
+			<td>A_WORLD</td>
+			<td style="font-family: 'Courier New';">float</td>
+			<td>deg</td>
+			<td>phys.angSize.smajAxis</td>
+			<td style="width:55%;">Profile RMS along major axis (world units)</td>
+		</tr>
+  <tr>
+			<td>B_WORLD</td>
+			<td style="font-family: 'Courier New';">float</td>
+			<td>deg</td>
+			<td>phys.angSize.sminAxis</td>
+			<td style="width:55%;">Profile RMS along minor axis (world units)</td>
+		</tr>
+  <tr>
+			<td>THETA_J2000</td>
+			<td style="font-family: 'Courier New';">float</td>
+			<td>deg</td>
+			<td>pos.posAng</td>
+			<td style="width:55%;">Position angle (east of north) (J2000)</td>
+		</tr>
+  <tr>
+			<td>ISOAREA_WORLD</td>
+			<td style="font-family: 'Courier New';">float</td>
+			<td>deg**2</td>
+			<td>phys.angArea</td>
+			<td style="width:55%;">Isophotal area above Analysis threshold</td>
+		</tr>
+  <tr>
+			<td>CLASS_STAR</td>
+			<td style="font-family: 'Courier New';">float</td>
+			<td></td>
+			<td>src.class.starGalaxy</td>
+			<td style="width:55%;">SExtractor 'stellarity' (1 = star; 0 = galaxy)</td>
+		</tr>
+  <tr>
+			<td>MAG_AUTO</td>
+			<td style="font-family: 'Courier New';">float[]</td>
+			<td>mag</td>
+			<td>phot.mag</td>
+			<td style="width:55%;">Magnitude vector within a Kron-like elliptical aperture</td>
+		</tr>
+  <tr>
+			<td>MAG_ISO</td>
+			<td style="font-family: 'Courier New';">float[]</td>
+			<td>mag</td>
+			<td>phot.mag</td>
+			<td style="width:55%;">Isophotal magnitude vector</td>
+		</tr>
+  <tr>
+			<td>MAG_PETRO</td>
+			<td style="font-family: 'Courier New';">float[]</td>
+			<td>mag</td>
+			<td>phot.mag</td>
+			<td style="width:55%;">Magnitude vector within a Petrosian-like elliptical aperture</td>
+		</tr>
+  <tr>
+			<td>MU_MAX</td>
+			<td style="font-family: 'Courier New';">float[]</td>
+			<td>mag/arcsec**2</td>
+			<td>phot.mag</td>
+			<td style="width:55%;">Peak surface brightness above background</td>
+		</tr>
+  <tr>
+			<td>PETRO_RADIUS</td>
+			<td style="font-family: 'Courier New';">float</td>
+			<td></td>
+			<td>phys.size.radius</td>
+			<td style="width:55%;">Petrosian aperture in units of A or B</td>
+		</tr>
+  <tr>
+			<td>KRON_RADIUS</td>
+			<td style="font-family: 'Courier New';">float</td>
+			<td></td>
+			<td>phys.size.radius</td>
+			<td style="width:55%;">Kron radius in units of A or B</td>
+		</tr>
+  <tr>
+			<td>MAG_APER_0_8</td>
+			<td style="font-family: 'Courier New';">float[]</td>
+			<td>mag</td>
+			<td>phot.mag</td>
+			<td style="width:55%;">Magnitude vector within fixed circular aperture: 0.8"</td>
+		</tr>
+  <tr>
+			<td>MAG_APER_1_0</td>
+			<td style="font-family: 'Courier New';">float[]</td>
+			<td>mag</td>
+			<td>phot.mag</td>
+			<td style="width:55%;">Magnitude vector within fixed circular aperture: 1.0"</td>
+		</tr>
+  <tr>
+			<td>MAG_APER_1_2</td>
+			<td style="font-family: 'Courier New';">float[]</td>
+			<td>mag</td>
+			<td>phot.mag</td>
+			<td style="width:55%;">Magnitude vector within fixed circular aperture: 1.2"</td>
+		</tr>
+  <tr>
+			<td>MAG_APER_1_5</td>
+			<td style="font-family: 'Courier New';">float[]</td>
+			<td>mag</td>
+			<td>phot.mag</td>
+			<td style="width:55%;">Magnitude vector within fixed circular aperture: 1.5"</td>
+		</tr>
+  <tr>
+			<td>MAG_APER_2_0</td>
+			<td style="font-family: 'Courier New';">float[]</td>
+			<td>mag</td>
+			<td>phot.mag</td>
+			<td style="width:55%;">Magnitude vector within fixed circular aperture: 2.0"</td>
+		</tr>
+  <tr>
+			<td>MAG_APER_3_0</td>
+			<td style="font-family: 'Courier New';">float[]</td>
+			<td>mag</td>
+			<td>phot.mag</td>
+			<td style="width:55%;">Magnitude vector within fixed circular aperture: 3.0"</td>
+		</tr>
+  <tr>
+			<td>MAG_APER_4_0</td>
+			<td style="font-family: 'Courier New';">float[]</td>
+			<td>mag</td>
+			<td>phot.mag</td>
+			<td style="width:55%;">Magnitude vector within fixed circular aperture: 4.0"</td>
+		</tr>
+  <tr>
+			<td>MAG_APER_6_0</td>
+			<td style="font-family: 'Courier New';">float[]</td>
+			<td>mag</td>
+			<td>phot.mag</td>
+			<td style="width:55%;">Magnitude vector within fixed circular aperture: 6.0"</td>
+		</tr>
+  <tr>
+			<td>MAG_ERR_AUTO</td>
+			<td style="font-family: 'Courier New';">float[]</td>
+			<td></td>
+			<td>stat.error;phot.mag</td>
+			<td style="width:55%;">Error vector for AUTO magnitude.</td>
+		</tr>
+  <tr>
+			<td>MAG_ERR_ISO</td>
+			<td style="font-family: 'Courier New';">float[]</td>
+			<td></td>
+			<td>stat.error;phot.mag</td>
+			<td style="width:55%;">Error vector for isophotal magnitude.</td>
+		</tr>
+  <tr>
+			<td>MAG_ERR_PETRO</td>
+			<td style="font-family: 'Courier New';">float[]</td>
+			<td></td>
+			<td>stat.error;phot.mag</td>
+			<td style="width:55%;">Error vector for PETROsian magnitude.</td>
+		</tr>
+  <tr>
+			<td>MAG_ERR_APER_0_8</td>
+			<td style="font-family: 'Courier New';">float[]</td>
+			<td></td>
+			<td>stat.error;phot.mag</td>
+			<td style="width:55%;">Error vector for aperture magnitude: 0.8".</td>
+		</tr>
+  <tr>
+			<td>MAG_ERR_APER_1_0</td>
+			<td style="font-family: 'Courier New';">float[]</td>
+			<td></td>
+			<td>stat.error;phot.mag</td>
+			<td style="width:55%;">Error vector for aperture magnitude: 1.0".</td>
+		</tr>
+  <tr>
+			<td>MAG_ERR_APER_1_2</td>
+			<td style="font-family: 'Courier New';">float[]</td>
+			<td></td>
+			<td>stat.error;phot.mag</td>
+			<td style="width:55%;">Error vector for aperture magnitude: 1.2".</td>
+		</tr>
+  <tr>
+			<td>MAG_ERR_APER_1_5</td>
+			<td style="font-family: 'Courier New';">float[]</td>
+			<td></td>
+			<td>stat.error;phot.mag</td>
+			<td style="width:55%;">Error vector for aperture magnitude: 1.5".</td>
+		</tr>
+  <tr>
+			<td>MAG_ERR_APER_2_0</td>
+			<td style="font-family: 'Courier New';">float[]</td>
+			<td></td>
+			<td>stat.error;phot.mag</td>
+			<td style="width:55%;">Error vector for aperture magnitude: 2.0".</td>
+		</tr>
+  <tr>
+			<td>MAG_ERR_APER_3_0</td>
+			<td style="font-family: 'Courier New';">float[]</td>
+			<td></td>
+			<td>stat.error;phot.mag</td>
+			<td style="width:55%;">Error vector for aperture magnitude: 3.0".</td>
+		</tr>
+  <tr>
+			<td>MAG_ERR_APER_4_0</td>
+			<td style="font-family: 'Courier New';">float[]</td>
+			<td></td>
+			<td>stat.error;phot.mag</td>
+			<td style="width:55%;">Error vector for aperture magnitude: 4.0".</td>
+		</tr>
+  <tr>
+			<td>MAG_ERR_APER_6_0</td>
+			<td style="font-family: 'Courier New';">float[]</td>
+			<td></td>
+			<td>stat.error;phot.mag</td>
+			<td style="width:55%;">Error vector for aperture magnitude: 6.0".</td>
+		</tr>
+  <tr>
+			<td>FLAGS</td>
+			<td style="font-family: 'Courier New';">int[]</td>
+			<td></td>
+			<td>meta.code</td>
+			<td style="width:55%;">Sextractor FLAGS. Values <a href="#flags">here</a>.</td>
+		</tr>
+  <tr>
+			<td>NORM_WMAP_VAL</td>
+			<td style="font-family: 'Courier New';">float[]</td>
+			<td></td>
+			<td></td>
+			<td style="width:55%;">Value of the normalized weight map at the position of the object. A value of 1 indicate that the source is in the area with highest effective exposure.</td>
+		</tr>
+  <tr>
+			<td>MASK_FLAGS</td>
+			<td style="font-family: 'Courier New';">int[]</td>
+			<td></td>
+			<td></td>
+			<td style="width:55%;">Masks flags. Values <a href="#masks">here</a>.</td>
+		</tr>
+  <tr>
+			<td>VAR_FLAGS</td>
+			<td style="font-family: 'Courier New';">short</td>
+			<td></td>
+			<td></td>
+			<td style="width:55%;">Variability related flags. Values <a href="#var_masks">here</a>.</td>
+		</tr>
+  <tr>
+			<td>SINGLE_DETECT</td>
+			<td style="font-family: 'Courier New';">int[]</td>
+			<td></td>
+			<td></td>
+			<td style="width:55%;">Identification of the same source in the single mode catalogue of the filter. 0 is used if the source is not detected in single mode.</td>
+		</tr>
+  <tr>
+			<td>MAG_APER_COR_1_5</td>
+			<td style="font-family: 'Courier New';">float[]</td>
+			<td>mag</td>
+			<td>phot.mag</td>
+			<td style="width:55%;">Magnitude vector within corrected aperture: 1.5"</td>
+		</tr>
+  <tr>
+			<td>MAG_ERR_APER_COR_1_5</td>
+			<td style="font-family: 'Courier New';">float[]</td>
+			<td></td>
+			<td>stat.error;phot.mag</td>
+			<td style="width:55%;">Error vector for aperture corrected magnitude: 1.5".</td>
+		</tr>
+  <tr>
+			<td>MAG_APER_COR_3_0</td>
+			<td style="font-family: 'Courier New';">float[]</td>
+			<td>mag</td>
+			<td>phot.mag</td>
+			<td style="width:55%;">Magnitude vector within corrected aperture: 3.0"</td>
+		</tr>
+  <tr>
+			<td>MAG_ERR_APER_COR_3_0</td>
+			<td style="font-family: 'Courier New';">float[]</td>
+			<td></td>
+			<td>stat.error;phot.mag</td>
+			<td style="width:55%;">Error vector for aperture corrected magnitude: 3.0".</td>
+		</tr>
+  <tr>
+			<td>MAG_APER_COR_6_0</td>
+			<td style="font-family: 'Courier New';">float[]</td>
+			<td>mag</td>
+			<td>phot.mag</td>
+			<td style="width:55%;">Magnitude vector within corrected aperture: 6.0"</td>
+		</tr>
+  <tr>
+			<td>MAG_ERR_APER_COR_6_0</td>
+			<td style="font-family: 'Courier New';">float[]</td>
+			<td></td>
+			<td>stat.error;phot.mag</td>
+			<td style="width:55%;">Error vector for aperture corrected magnitude: 6.0".</td>
+		</tr>
+	</tbody>
+</table>
+
+<h3 class="subtitle">Indexes</h3>
+<table class="table table-striped table-hover table-condensed" style="margin-top: 30px;">
+	<thead>
+		<tr>
+			<th></th>
+			<th>Column name</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>1</td>
+			<td>TILE_ID</td>
+			<td style="width:70%;">Identifier of the Tile image where the object was detected</td>
+		</tr>
+  <tr>
+			<td>2</td>
+			<td>NUMBER</td>
+			<td style="width:70%;">Number identifier assigned by Sextractor for the object in the image</td>
+		</tr>
+	</tbody> 
+</table>
+
+<h3 class="subtitle">Healpix Indexes</h3>
+<table class="table table-striped table-hover table-condensed" style="margin-top: 30px;">
+	<thead>
+	    <tr>
+			<th>Column name</th>
+			<th>Healpix ORDER</th>
+			<th>RA column</th>
+			<th>DEC column</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>hpix11</td><td>11</td>
+			<td>ALPHA_J2000</td><td>DELTA_J2000</td>
+		</tr>
+	</tbody> 
+</table>
+
+<h3 class="subtitle">Foreign Keys</h3>
+<table class="table table-striped table-hover table-condensed" style="margin-top: 30px;">
+	<thead>
+	    <tr>
+			<th>Table target</th>
+			<th>Links</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>jplus.TileImage</td>
+			<td>
+				
+				  tile_id->tile_id, 
+							
+			</td>
+		</tr>
+	</tbody> 
+</table>
+
+<div>
+    <a name="flags"></a>
+	<h3 class="subtitle">Flags Values</h3>
+	<p>Several flags are comprised in the field flags as a sum of powers of 2 coded in decimal. For example, an object close to an image border may have FLAGS = 16, or perhaps FLAGS = 8 + 16 + 32 = 56.</p>
+	<table class="table table-striped table-hover table-condensed" style="margin-top: 30px;">
+		<thead>
+		    <tr>
+				<!-- <th style="width:5%;">Bit</th>-->
+				<th style="width:5%;">Value</th>
+				<th style="width:20%;">Name</th>
+				<th style="width:80%;">Description</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<!-- <td>0</td>-->
+				<td>1</td>
+				<td>close neighbors</td>
+				<td>The object has neighbors, bright and close enough to significantly bias the photometry, or bad pixels (more than 10% of the integrated area affected)</td>
+			</tr>
+   <tr>
+				<!-- <td>1</td>-->
+				<td>2</td>
+				<td>blending</td>
+				<td>The object was originally blended with another one</td>
+			</tr>
+   <tr>
+				<!-- <td>2</td>-->
+				<td>4</td>
+				<td>saturation</td>
+				<td>At least one pixel of the object is saturated (or very close to).</td>
+			</tr>
+   <tr>
+				<!-- <td>3</td>-->
+				<td>8</td>
+				<td>truncated</td>
+				<td>The object is truncated (to close to an image boundary)</td>
+			</tr>
+   <tr>
+				<!-- <td>4</td>-->
+				<td>16</td>
+				<td>aperture incompleted</td>
+				<td>Object's aperture data are incomplete or corrupted</td>
+			</tr>
+   <tr>
+				<!-- <td>5</td>-->
+				<td>32</td>
+				<td>isophotal incompleted</td>
+				<td>Object's isophotal data are incomplete or corrupted</td>
+			</tr>
+   <tr>
+				<!-- <td>6</td>-->
+				<td>64</td>
+				<td>memory overflow deblending</td>
+				<td>A memory overflow occurred during deblending</td>
+			</tr>
+   <tr>
+				<!-- <td>7</td>-->
+				<td>128</td>
+				<td>memory overflow extraction</td>
+				<td>A memory overflow occurred during extraction</td>
+			</tr>
+		</tbody> 
+	</table>
+</div>
+<div>
+    <a name="masks"></a>
+	<h3 class="subtitle">Masks Flags Values</h3>
+	<p>Several mask flags are comprised in the field mask_flags as a sum of powers of 2 coded in decimal.</p>
+	<table class="table table-striped table-hover table-condensed" style="margin-top: 30px;">
+		<thead>
+		    <tr>
+				<!-- <th style="width:5%;">Bit</th>-->
+				<th style="width:5%;">Value</th>
+				<th style="width:20%;">Name</th>
+				<th style="width:80%;">Description</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<!-- <td></td>-->
+				<td>0</td>
+				<td>not masked</td>
+				<td>Not inside a mask</td>
+			</tr>
+   <tr>
+				<!-- <td>0</td>-->
+				<td>1</td>
+				<td>window</td>
+				<td>Object is outside the window frame</td>
+			</tr>
+   <tr>
+				<!-- <td>1</td>-->
+				<td>2</td>
+				<td>bright star</td>
+				<td>Object is bright star or near one</td>
+			</tr>
+   <tr>
+				<!-- <td>2</td>-->
+				<td>4</td>
+				<td>artifact</td>
+				<td>Object masked due to nearby artifact</td>
+			</tr>
+		</tbody> 
+	</table>
+</div>
+<div>
+    <a name="var_masks"></a>
+	<h3 class="subtitle">Variability Flags Values</h3>
+	<p>Several variability flags are comprised in the field var_flags as a sum of powers of 2 coded in decimal.</p>
+	<table class="table table-striped table-hover table-condensed" style="margin-top: 30px;">
+		<thead>
+		    <tr>
+				<!-- <th style="width:5%;">Bit</th>-->
+				<th style="width:5%;">Value</th>
+				<th style="width:20%;">Name</th>
+				<th style="width:80%;">Description</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<!-- <td></td>-->
+				<td>0</td>
+				<td>not variability</td>
+				<td>No known variability</td>
+			</tr>
+   <tr>
+				<!-- <td>0</td>-->
+				<td>1</td>
+				<td>known variable</td>
+				<td>The object might be a known variable. More information is stored in the DualObjVariable table, which indicates which known variable it corresponds to.</td>
+			</tr>
+		</tbody> 
+	</table>
+</div>
+
+</div>

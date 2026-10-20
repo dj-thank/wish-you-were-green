@@ -1,0 +1,27 @@
+{
+  "name": "ztf_dr24_J0429_tight_ids",
+  "endpoint": "https://irsa.ipac.caltech.edu/TAP/sync",
+  "parameters": {
+    "REQUEST": "doQuery",
+    "LANG": "ADQL",
+    "FORMAT": "csv",
+    "QUERY": "SELECT TOP 15 oid,ra,dec,fid,field,ccdid,qid,medianmag,ngoodobsrel FROM ztf_objects_dr24 WHERE CONTAINS(POINT('ICRS',ra,dec),CIRCLE('ICRS',67.43628526183,-3.90650606101,0.00277778))=1"
+  },
+  "request_url": "https://irsa.ipac.caltech.edu/TAP/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=SELECT+TOP+15+oid%2Cra%2Cdec%2Cfid%2Cfield%2Cccdid%2Cqid%2Cmedianmag%2Cngoodobsrel+FROM+ztf_objects_dr24+WHERE+CONTAINS%28POINT%28%27ICRS%27%2Cra%2Cdec%29%2CCIRCLE%28%27ICRS%27%2C67.43628526183%2C-3.90650606101%2C0.00277778%29%29%3D1",
+  "resolved_url": "https://irsa.ipac.caltech.edu/TAP/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=SELECT+TOP+15+oid%2Cra%2Cdec%2Cfid%2Cfield%2Cccdid%2Cqid%2Cmedianmag%2Cngoodobsrel+FROM+ztf_objects_dr24+WHERE+CONTAINS%28POINT%28%27ICRS%27%2Cra%2Cdec%29%2CCIRCLE%28%27ICRS%27%2C67.43628526183%2C-3.90650606101%2C0.00277778%29%29%3D1",
+  "status": 200,
+  "headers": {
+    "Server": "nginx",
+    "Date": "Sun, 18 Oct 2026 15:57:06 GMT",
+    "Content-Type": "text/csv",
+    "Content-Length": "971",
+    "Connection": "close",
+    "Server-Timing": "main;dur=18238.419, prepare_internal;dur=1.921, generate_adql;dur=0.009, query_delegate;dur=18229.835, oversee_sync;dur=18223.518, submit_sync;dur=3.047, spinoff_queued;dur=7767.138, spinoff_running;dur=10445.081, TAP_main;dur=8209.931, query_execute;dur=8149.960, database_query;dur=8149.494",
+    "Set-Cookie": "anonymous=3d/8d/27f53a269fab2595faf65550ef14"
+  },
+  "query_started_utc": "2026-10-18T15:56:47.671621+00:00",
+  "retrieved_utc": "2026-10-18T15:57:06.350383+00:00",
+  "relative_path": "raw/ztf_dr24_J0429_tight_ids.csv",
+  "bytes": 971,
+  "sha256": "5e7c054b53e71108b035c052893bd7e8112ceb71bd20623e05852d4342d26a4c"
+}

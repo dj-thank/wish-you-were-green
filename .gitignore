@@ -44,6 +44,11 @@ Thumbs.db
 /novelty/primary_papers/*.pdf
 /novelty/primary_papers/DESI_DR1_*.csv.gz
 
+# New literature retrieval caches; cited extracts and public numerical tables
+# are retained separately. Complete paper source bundles are not redistributed.
+/research/literature/sources/*_source.tar
+/research/literature/sources/*_ms.tex
+
 # Full reacquisition writes into the following directories.
 # Every currently curated file is explicitly exempted; do not remove these exemptions.
 # When adding a reviewed source file, add its exact exemption with the data change.
@@ -213,3 +218,4 @@ Thumbs.db
 !/sdss/arrays/spec-7409-56809-0560.npz
 !/sdss/arrays/spec-8183-57375-0688.npz
 !/sdss/arrays/spec-8197-57064-0660.npz
+/research/**/*_run.log

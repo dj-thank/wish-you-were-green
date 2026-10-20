@@ -40,10 +40,14 @@ def anchors(rec):
     return result
 
 def get_arrays(rec):
-    data=np.load(c.data_path(rec['parsed_path']));w=data['wavelength_angstrom'];f=data['flux_original']
+    data=np.load(c.data_path(rec['parsed_path']));w=data['wavelength_angstrom']
+    f=data['flux_original'] if 'flux_original' in data else data['flux_flam']
     iv=None
     if 'sigma' in data:
         s=data['sigma'];iv=np.divide(1,s**2,out=np.zeros_like(s),where=np.isfinite(s)&(s>0))
+    elif 'ivar' in data:iv=data['ivar']
+    from flux_conventions import as_flux_lambda
+    f,iv,_=as_flux_lambda(w,f,iv,rec)
     return w,f,iv
 
 def geometry(w):
@@ -103,17 +107,23 @@ def mc(w,fc,ivc,system,err,n=6000,mask_sky=True):
         out.update({f'{name}_mc_{lab}':float(v) for lab,v in zip(['p025','p16','median','p84','p975'],q)})
     return out,values
 
-def validate(ids):
+def validate(ids, outdir=None):
     manifest=load_json(ROOT/'mwdd/manifest_enriched.json')
     recs=[r for r in manifest if r.get('source_id') in ids and r.get('parsed_path') and r['kind'] in ['DESI','Gaia_XP','SDSS']]
     rows=[];stress=[];saved=[]
-    outdir=ROOT/'results/candidates';outdir.mkdir(exist_ok=True)
+    outdir=Path(outdir) if outdir is not None else ROOT/'results/validated_screen/candidates'
+    outdir.mkdir(parents=True,exist_ok=True)
     for rec in recs:
-        w,f,iv=get_arrays(rec)
-        if w.min()>3800 or w.max()<8000:continue
         label=ids[rec['source_id']]
         common={'candidate':label,'source_id':rec['source_id'],'wdid':rec['wdid'],'kind':rec['kind'],
                 'source_url':rec['source_url'],'raw_sha256':rec['sha256'],'parsed_path':rec['parsed_path']}
+        try:
+            w,f,iv=get_arrays(rec)
+        except ValueError as exc:
+            rows.append({**common,'status':'input_not_validated','error':str(exc)})
+            print('INPUT NOT VALIDATED',label,rec['kind'],str(exc),flush=True)
+            continue
+        if w.min()>3800 or w.max()<8000:continue
         raw=c.integrate_colour(w,f,iv,mask_sky=rec['kind']!='Gaia_XP')
         rows.append({**common,'cal_system':'none','photometry_source':'none',**raw})
         for system,obs,err,phot_src in anchors(rec):

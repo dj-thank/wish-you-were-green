@@ -1,0 +1,1159 @@
+{
+  "created_utc": "2026-10-19T10:25:45.611157+00:00",
+  "entities": 2007,
+  "records": 4370,
+  "pages": 126,
+  "plotted_records": 3041,
+  "entities_with_plotted_spectra": 1684,
+  "plot_status_counts": {
+    "plotted_verified_flambda": 3041,
+    "withheld_unverified_flux_units": 1305,
+    "withheld_current_eligibility_gate": 23,
+    "withheld_processing_error": 1
+  },
+  "largest_reproduction_uv_difference": 7.006154321106669e-13,
+  "binning": "20 Angstrom arithmetic means for display only; numerical colours use unbinned signed pixels.",
+  "pixel_range": "Every cleaned native visible flux pixel lies inside its displayed bin min/max stroke and vertical plot limits.",
+  "uncertainty": "Supplied independent-pixel error only. Gaia XP export covariance, calibration uncertainty and shared observation dependence are not reconstructed here.",
+  "input_sha256": {
+    "research/outlier_audit/review_queue.csv": "2a8adbb7f1bfc5e9778dafcd3211cdf26f49940da1123aeedf8f15ab94ffd075",
+    "research/outlier_audit/contact_sheet_index.csv": "476b5847bb9f8cec83b88a7e2282bea35a198574b9929a314ba84a26b072e445",
+    "research/precision/flux_units/corrected_record_screen.csv.gz": "2c894ee7af8d1c3a5f62ba19c6921265b4bef5de9f84291394d441642b984746"
+  },
+  "pages_manifest": [
+    {
+      "page": 1,
+      "path": "spectrum_contact_sheets/page_001.png",
+      "sha256": "4ea034f2e4d2f1a05973b3766d87b8f712728e665786a4e4b25ec3d5139e9024",
+      "entity_count": 16,
+      "first_followup_index": 0,
+      "last_followup_index": 15,
+      "review_assignment": "first_half"
+    },
+    {
+      "page": 2,
+      "path": "spectrum_contact_sheets/page_002.png",
+      "sha256": "1651cc5ef6494fb71826eadc9b8424612587f748f3b29b6506a524b5bebbb3e7",
+      "entity_count": 16,
+      "first_followup_index": 16,
+      "last_followup_index": 31,
+      "review_assignment": "first_half"
+    },
+    {
+      "page": 3,
+      "path": "spectrum_contact_sheets/page_003.png",
+      "sha256": "de39fb57149b96188df41f35ec67f326cab4f1456060aa4ebb28b45849b88a8b",
+      "entity_count": 16,
+      "first_followup_index": 32,
+      "last_followup_index": 47,
+      "review_assignment": "first_half"
+    },
+    {
+      "page": 4,
+      "path": "spectrum_contact_sheets/page_004.png",
+      "sha256": "7e26981880534c66c865037e6d38bb967512356dcd4a6534fb999ce1d2b94847",
+      "entity_count": 16,
+      "first_followup_index": 48,
+      "last_followup_index": 63,
+      "review_assignment": "first_half"
+    },
+    {
+      "page": 5,
+      "path": "spectrum_contact_sheets/page_005.png",
+      "sha256": "10f8347b3a7ac031d3c14c203dfdadc4a226faf9aaada60715b741532753b363",
+      "entity_count": 16,
+      "first_followup_index": 64,
+      "last_followup_index": 79,
+      "review_assignment": "first_half"
+    },
+    {
+      "page": 6,
+      "path": "spectrum_contact_sheets/page_006.png",
+      "sha256": "7f4df7aee02f49eb5648b058882b9d852452577953c6fefcad9d7ec500fcfa9e",
+      "entity_count": 16,
+      "first_followup_index": 80,
+      "last_followup_index": 95,
+      "review_assignment": "first_half"
+    },
+    {
+      "page": 7,
+      "path": "spectrum_contact_sheets/page_007.png",
+      "sha256": "d177c4cd43f2b4de680aa30e661bc435ee355d6fd123748ae812ad334a181a7d",
+      "entity_count": 16,
+      "first_followup_index": 96,
+      "last_followup_index": 111,
+      "review_assignment": "first_half"
+    },
+    {
+      "page": 8,
+      "path": "spectrum_contact_sheets/page_008.png",
+      "sha256": "2c4e16466a6d4188fe2856b7622c18096bfe3c952d9e407b4dd07162403f4473",
+      "entity_count": 16,
+      "first_followup_index": 112,
+      "last_followup_index": 127,
+      "review_assignment": "first_half"
+    },
+    {
+      "page": 9,
+      "path": "spectrum_contact_sheets/page_009.png",
+      "sha256": "505cad56e3cf0d8e6ed4812000631d79fa01b86dca1d017ff76c1eb43d9c2b87",
+      "entity_count": 16,
+      "first_followup_index": 128,
+      "last_followup_index": 143,
+      "review_assignment": "first_half"
+    },
+    {
+      "page": 10,
+      "path": "spectrum_contact_sheets/page_010.png",
+      "sha256": "69b890c655288ea6f2fc1c1ed6922e460cfd9d0a1b2554c8400d10f16e8be7d3",
+      "entity_count": 16,
+      "first_followup_index": 144,
+      "last_followup_index": 159,
+      "review_assignment": "first_half"
+    },
+    {
+      "page": 11,
+      "path": "spectrum_contact_sheets/page_011.png",
+      "sha256": "734dfb7421d3c9a903068fd7f16a47a81f18af85ec517af42d9ca51ed83c2489",
+      "entity_count": 16,
+      "first_followup_index": 160,
+      "last_followup_index": 175,
+      "review_assignment": "first_half"
+    },
+    {
+      "page": 12,
+      "path": "spectrum_contact_sheets/page_012.png",
+      "sha256": "3287ee89848fb39097dd73b53fae65ed352dd8cf496cefc6e767395ebdcdde0f",
+      "entity_count": 16,
+      "first_followup_index": 176,
+      "last_followup_index": 191,
+      "review_assignment": "first_half"
+    },
+    {
+      "page": 13,
+      "path": "spectrum_contact_sheets/page_013.png",
+      "sha256": "673c522b45adf2c3b826e3ae6ac7388d3c6c6e160e0292c671a7e6525d78fcf0",
+      "entity_count": 16,
+      "first_followup_index": 192,
+      "last_followup_index": 207,
+      "review_assignment": "first_half"
+    },
+    {
+      "page": 14,
+      "path": "spectrum_contact_sheets/page_014.png",
+      "sha256": "89af1291ad456937814291196c7b034e585f6ce42383c8abae5841bbdc65ca62",
+      "entity_count": 16,
+      "first_followup_index": 208,
+      "last_followup_index": 223,
+      "review_assignment": "first_half"
+    },
+    {
+      "page": 15,
+      "path": "spectrum_contact_sheets/page_015.png",
+      "sha256": "9da96c645e0711ea3cbe8c1d703bb2945378dd74d762406185fc601f2b157057",
+      "entity_count": 16,
+      "first_followup_index": 224,
+      "last_followup_index": 239,
+      "review_assignment": "first_half"
+    },
+    {
+      "page": 16,
+      "path": "spectrum_contact_sheets/page_016.png",
+      "sha256": "e2f330429edeca68f13c2280394e5f27d158809c7fd2a31d65f48dfb8515c176",
+      "entity_count": 16,
+      "first_followup_index": 240,
+      "last_followup_index": 255,
+      "review_assignment": "first_half"
+    },
+    {
+      "page": 17,
+      "path": "spectrum_contact_sheets/page_017.png",
+      "sha256": "7792b7b48b606ca610c0814e4eabdd845df97cdc0c5a00abd7ad7c23be0a1ee6",
+      "entity_count": 16,
+      "first_followup_index": 256,
+      "last_followup_index": 271,
+      "review_assignment": "first_half"
+    },
+    {
+      "page": 18,
+      "path": "spectrum_contact_sheets/page_018.png",
+      "sha256": "7cbea233a4c69df6d4e85cb60cf4def167b898f7c74f2a75c1fa1222e7984d2d",
+      "entity_count": 16,
+      "first_followup_index": 272,
+      "last_followup_index": 287,
+      "review_assignment": "first_half"
+    },
+    {
+      "page": 19,
+      "path": "spectrum_contact_sheets/page_019.png",
+      "sha256": "a80391ad0277557325d838f80f7576041374a3e28bafaec37511c7c65f75885b",
+      "entity_count": 16,
+      "first_followup_index": 288,
+      "last_followup_index": 303,
+      "review_assignment": "first_half"
+    },
+    {
+      "page": 20,
+      "path": "spectrum_contact_sheets/page_020.png",
+      "sha256": "f60088db196acb56c309bb46fe9e2bc9e6c9fc2749c136d12a0fa30a16e3585b",
+      "entity_count": 16,
+      "first_followup_index": 304,
+      "last_followup_index": 319,
+      "review_assignment": "first_half"
+    },
+    {
+      "page": 21,
+      "path": "spectrum_contact_sheets/page_021.png",
+      "sha256": "f613d1b6babbfa51d040e9ddcd7c5cee5ef16dd9e6ac20847c5f018ce0895f8f",
+      "entity_count": 16,
+      "first_followup_index": 320,
+      "last_followup_index": 335,
+      "review_assignment": "first_half"
+    },
+    {
+      "page": 22,
+      "path": "spectrum_contact_sheets/page_022.png",
+      "sha256": "d74fba89f4abb6cbf04b7a6d5a0883faa882dfac7ba3ea4fe37cea53435bb862",
+      "entity_count": 16,
+      "first_followup_index": 336,
+      "last_followup_index": 351,
+      "review_assignment": "first_half"
+    },
+    {
+      "page": 23,
+      "path": "spectrum_contact_sheets/page_023.png",
+      "sha256": "d7209d3319706463b21a3f1958632fdf2f09229b60c4c369c209b34069ea50a1",
+      "entity_count": 16,
+      "first_followup_index": 352,
+      "last_followup_index": 367,
+      "review_assignment": "first_half"
+    },
+    {
+      "page": 24,
+      "path": "spectrum_contact_sheets/page_024.png",
+      "sha256": "7cd1210bfea8ed990ba9962c43b83b9739303365289a5ab55d96a54b36da809b",
+      "entity_count": 16,
+      "first_followup_index": 368,
+      "last_followup_index": 383,
+      "review_assignment": "first_half"
+    },
+    {
+      "page": 25,
+      "path": "spectrum_contact_sheets/page_025.png",
+      "sha256": "f152f366db4e28bd576c58d39264a7e5bd020486114b90bc20ae54d37d4ac74b",
+      "entity_count": 16,
+      "first_followup_index": 384,
+      "last_followup_index": 399,
+      "review_assignment": "first_half"
+    },
+    {
+      "page": 26,
+      "path": "spectrum_contact_sheets/page_026.png",
+      "sha256": "36eaebacffcd5cc20da9a3272261f147505bb4c30985cdab26835d53ac3cfb3f",
+      "entity_count": 16,
+      "first_followup_index": 400,
+      "last_followup_index": 415,
+      "review_assignment": "first_half"
+    },
+    {
+      "page": 27,
+      "path": "spectrum_contact_sheets/page_027.png",
+      "sha256": "71aaa8f4ab64efa9451c41ce860b6324d857b6ef5c62d44f7e90d06937002646",
+      "entity_count": 16,
+      "first_followup_index": 416,
+      "last_followup_index": 431,
+      "review_assignment": "first_half"
+    },
+    {
+      "page": 28,
+      "path": "spectrum_contact_sheets/page_028.png",
+      "sha256": "1cc259e012ebafb2b30fbd6a7fed0d8f13f92f51c717615828398b822bd0be2d",
+      "entity_count": 16,
+      "first_followup_index": 432,
+      "last_followup_index": 447,
+      "review_assignment": "first_half"
+    },
+    {
+      "page": 29,
+      "path": "spectrum_contact_sheets/page_029.png",
+      "sha256": "5114f515637a29538450148fed4c949f0f8afee5cd0219a8de86fffdfaeb9b4c",
+      "entity_count": 16,
+      "first_followup_index": 448,
+      "last_followup_index": 463,
+      "review_assignment": "first_half"
+    },
+    {
+      "page": 30,
+      "path": "spectrum_contact_sheets/page_030.png",
+      "sha256": "f378955a6a924c578a1737d960f5661c7631a6233ff2db01b3ede969b58353bd",
+      "entity_count": 16,
+      "first_followup_index": 464,
+      "last_followup_index": 479,
+      "review_assignment": "first_half"
+    },
+    {
+      "page": 31,
+      "path": "spectrum_contact_sheets/page_031.png",
+      "sha256": "cb3f5231aebfd3ccbc4e42ca607968109e4f4256d3045009403aeb2d32dede96",
+      "entity_count": 16,
+      "first_followup_index": 480,
+      "last_followup_index": 495,
+      "review_assignment": "first_half"
+    },
+    {
+      "page": 32,
+      "path": "spectrum_contact_sheets/page_032.png",
+      "sha256": "880a93f802b99ccfa424127b11706a79de5e161fa33e81ede6676767cdaa3c67",
+      "entity_count": 16,
+      "first_followup_index": 496,
+      "last_followup_index": 511,
+      "review_assignment": "first_half"
+    },
+    {
+      "page": 33,
+      "path": "spectrum_contact_sheets/page_033.png",
+      "sha256": "1a8b3f40cbdeea6f8a781e192f28e734fb6d49e57dd2d8213a8baf8a33c9f8d6",
+      "entity_count": 16,
+      "first_followup_index": 512,
+      "last_followup_index": 527,
+      "review_assignment": "first_half"
+    },
+    {
+      "page": 34,
+      "path": "spectrum_contact_sheets/page_034.png",
+      "sha256": "7323fe1a79ab972f3be51ceff1c9e254af8c5f0d14f842fd17e6bfb93738d753",
+      "entity_count": 16,
+      "first_followup_index": 528,
+      "last_followup_index": 543,
+      "review_assignment": "first_half"
+    },
+    {
+      "page": 35,
+      "path": "spectrum_contact_sheets/page_035.png",
+      "sha256": "570f0481cfd3e8778917f5e186b1602249fb8eff7f562ee2562ce8f76d06edf3",
+      "entity_count": 16,
+      "first_followup_index": 544,
+      "last_followup_index": 559,
+      "review_assignment": "first_half"
+    },
+    {
+      "page": 36,
+      "path": "spectrum_contact_sheets/page_036.png",
+      "sha256": "5a5225887d986bc411ec8e6d62b9e123e47215a3c6c1622c6d42c249a18cbdcc",
+      "entity_count": 16,
+      "first_followup_index": 560,
+      "last_followup_index": 575,
+      "review_assignment": "first_half"
+    },
+    {
+      "page": 37,
+      "path": "spectrum_contact_sheets/page_037.png",
+      "sha256": "7d34439ef4de2980998d31642893cfd1896fba4570f7c7495ea784e986462b86",
+      "entity_count": 16,
+      "first_followup_index": 576,
+      "last_followup_index": 591,
+      "review_assignment": "first_half"
+    },
+    {
+      "page": 38,
+      "path": "spectrum_contact_sheets/page_038.png",
+      "sha256": "5fd0e130826e2b448031b8b1f7f24ade08754880ef1d14cbdc910427393dc4a5",
+      "entity_count": 16,
+      "first_followup_index": 592,
+      "last_followup_index": 607,
+      "review_assignment": "first_half"
+    },
+    {
+      "page": 39,
+      "path": "spectrum_contact_sheets/page_039.png",
+      "sha256": "cbbffe18f6fe7e0193dacc2851cd4220f87b316c569dad7ac65b8f99ec31777a",
+      "entity_count": 16,
+      "first_followup_index": 608,
+      "last_followup_index": 623,
+      "review_assignment": "first_half"
+    },
+    {
+      "page": 40,
+      "path": "spectrum_contact_sheets/page_040.png",
+      "sha256": "9ebc17450948499822c966708d4f987ed45bd6ed278a194dd78dcfe4cef8d44e",
+      "entity_count": 16,
+      "first_followup_index": 624,
+      "last_followup_index": 639,
+      "review_assignment": "first_half"
+    },
+    {
+      "page": 41,
+      "path": "spectrum_contact_sheets/page_041.png",
+      "sha256": "d0a0b88713f2b0d8907b4c1367874665d4cad9a0b2bffc0ea1d440d3ae82a9d0",
+      "entity_count": 16,
+      "first_followup_index": 640,
+      "last_followup_index": 655,
+      "review_assignment": "first_half"
+    },
+    {
+      "page": 42,
+      "path": "spectrum_contact_sheets/page_042.png",
+      "sha256": "1ac5e571f050dfd82a592667571086a951c561cd7c5ac4904fdcc8af16c6b795",
+      "entity_count": 16,
+      "first_followup_index": 656,
+      "last_followup_index": 671,
+      "review_assignment": "first_half"
+    },
+    {
+      "page": 43,
+      "path": "spectrum_contact_sheets/page_043.png",
+      "sha256": "e09ac6739c76abce1f9bc17b04f70df4f0a09dcf61b183d1228a01ce2a7e34bb",
+      "entity_count": 16,
+      "first_followup_index": 672,
+      "last_followup_index": 687,
+      "review_assignment": "first_half"
+    },
+    {
+      "page": 44,
+      "path": "spectrum_contact_sheets/page_044.png",
+      "sha256": "e255122e7795bc65f97d0be716c8257e59e9bfc263cc33729e6fa28b0c2e52f7",
+      "entity_count": 16,
+      "first_followup_index": 688,
+      "last_followup_index": 703,
+      "review_assignment": "first_half"
+    },
+    {
+      "page": 45,
+      "path": "spectrum_contact_sheets/page_045.png",
+      "sha256": "8036ef0bd374f792d100f0e4b10987b9b4977615ee85c1bc16af6927b9b0fea8",
+      "entity_count": 16,
+      "first_followup_index": 704,
+      "last_followup_index": 719,
+      "review_assignment": "first_half"
+    },
+    {
+      "page": 46,
+      "path": "spectrum_contact_sheets/page_046.png",
+      "sha256": "32936efabd323011caab0617376329f0ea0303e4d75416d6b81c5b621c0833f9",
+      "entity_count": 16,
+      "first_followup_index": 720,
+      "last_followup_index": 735,
+      "review_assignment": "first_half"
+    },
+    {
+      "page": 47,
+      "path": "spectrum_contact_sheets/page_047.png",
+      "sha256": "d1b1c459c444f6520a1924687daeb06dd5c1fd4a181b1b35ac9e4f3eaf9c4dba",
+      "entity_count": 16,
+      "first_followup_index": 736,
+      "last_followup_index": 751,
+      "review_assignment": "first_half"
+    },
+    {
+      "page": 48,
+      "path": "spectrum_contact_sheets/page_048.png",
+      "sha256": "2037f0e95a08449874b7f4ce0d1447a8e93e47908186c2c2201d579643c456b4",
+      "entity_count": 16,
+      "first_followup_index": 752,
+      "last_followup_index": 767,
+      "review_assignment": "first_half"
+    },
+    {
+      "page": 49,
+      "path": "spectrum_contact_sheets/page_049.png",
+      "sha256": "f5f3c4b48eb7b28997c64190820591d574c5c9f464fb451179c9a3d6c1091d1e",
+      "entity_count": 16,
+      "first_followup_index": 768,
+      "last_followup_index": 783,
+      "review_assignment": "first_half"
+    },
+    {
+      "page": 50,
+      "path": "spectrum_contact_sheets/page_050.png",
+      "sha256": "e7d18643a152e16a56251b86f27160626371e69a18bb18c6aa9a4359b5f8d732",
+      "entity_count": 16,
+      "first_followup_index": 784,
+      "last_followup_index": 799,
+      "review_assignment": "first_half"
+    },
+    {
+      "page": 51,
+      "path": "spectrum_contact_sheets/page_051.png",
+      "sha256": "c7541f391af3251ca6bc62c9e681768fd652fe1bc9f3932800ada6887b64e2e7",
+      "entity_count": 16,
+      "first_followup_index": 800,
+      "last_followup_index": 815,
+      "review_assignment": "first_half"
+    },
+    {
+      "page": 52,
+      "path": "spectrum_contact_sheets/page_052.png",
+      "sha256": "a562f82b8a5cc67128213227348920317316009911ddec030c483c723cdff71a",
+      "entity_count": 16,
+      "first_followup_index": 816,
+      "last_followup_index": 831,
+      "review_assignment": "first_half"
+    },
+    {
+      "page": 53,
+      "path": "spectrum_contact_sheets/page_053.png",
+      "sha256": "c7bb60204b38263a7f206c1e6e2bcc034dfac080f4e1d9c7e8e5b81345f3d6e2",
+      "entity_count": 16,
+      "first_followup_index": 832,
+      "last_followup_index": 847,
+      "review_assignment": "first_half"
+    },
+    {
+      "page": 54,
+      "path": "spectrum_contact_sheets/page_054.png",
+      "sha256": "41a8fa742841f9f11d7816352bde4783df5db18dca1b905204300a49cbe955f4",
+      "entity_count": 16,
+      "first_followup_index": 848,
+      "last_followup_index": 863,
+      "review_assignment": "first_half"
+    },
+    {
+      "page": 55,
+      "path": "spectrum_contact_sheets/page_055.png",
+      "sha256": "63f41b2d055660d2149106bf36f7316a757871d62dc0a662e17fd51619fbb802",
+      "entity_count": 16,
+      "first_followup_index": 864,
+      "last_followup_index": 879,
+      "review_assignment": "first_half"
+    },
+    {
+      "page": 56,
+      "path": "spectrum_contact_sheets/page_056.png",
+      "sha256": "6046ddc042fc3f24b69e07a55e597886228d6b6ca31369d775b0199a8011b2c1",
+      "entity_count": 16,
+      "first_followup_index": 880,
+      "last_followup_index": 895,
+      "review_assignment": "first_half"
+    },
+    {
+      "page": 57,
+      "path": "spectrum_contact_sheets/page_057.png",
+      "sha256": "f36369aec311ca9b0973dc4b85723e8b098ced110f89618059e5a7ece8fddeb8",
+      "entity_count": 16,
+      "first_followup_index": 896,
+      "last_followup_index": 911,
+      "review_assignment": "first_half"
+    },
+    {
+      "page": 58,
+      "path": "spectrum_contact_sheets/page_058.png",
+      "sha256": "75d3896d8b3be80f95b1944612428ec0ccafac8ecaf6a49ef67dc46f5b6ba9be",
+      "entity_count": 16,
+      "first_followup_index": 912,
+      "last_followup_index": 927,
+      "review_assignment": "first_half"
+    },
+    {
+      "page": 59,
+      "path": "spectrum_contact_sheets/page_059.png",
+      "sha256": "565375ee741b3d5cf27b7f86d443df258653f2adb72ecccd7748c557a2d86b05",
+      "entity_count": 16,
+      "first_followup_index": 928,
+      "last_followup_index": 943,
+      "review_assignment": "first_half"
+    },
+    {
+      "page": 60,
+      "path": "spectrum_contact_sheets/page_060.png",
+      "sha256": "c1e475a42748fa1afc8bf4190dab4e627165b025fb6eddc0e4ac5c185e41cb08",
+      "entity_count": 16,
+      "first_followup_index": 944,
+      "last_followup_index": 959,
+      "review_assignment": "first_half"
+    },
+    {
+      "page": 61,
+      "path": "spectrum_contact_sheets/page_061.png",
+      "sha256": "257051a531755b6bb458ec3625d40c7bb8ff7065bf107a3a8a72a9a85d0025ee",
+      "entity_count": 16,
+      "first_followup_index": 960,
+      "last_followup_index": 975,
+      "review_assignment": "first_half"
+    },
+    {
+      "page": 62,
+      "path": "spectrum_contact_sheets/page_062.png",
+      "sha256": "2e581451cefa961d9623e70b1c370ef443973cce6a8918e1f5d301b41f085fa2",
+      "entity_count": 16,
+      "first_followup_index": 976,
+      "last_followup_index": 991,
+      "review_assignment": "first_half"
+    },
+    {
+      "page": 63,
+      "path": "spectrum_contact_sheets/page_063.png",
+      "sha256": "828e2d9d13350f3465a5c24d36270ef077d42a471f4d4e505bea0d858d7c22c0",
+      "entity_count": 16,
+      "first_followup_index": 992,
+      "last_followup_index": 1007,
+      "review_assignment": "first_half"
+    },
+    {
+      "page": 64,
+      "path": "spectrum_contact_sheets/page_064.png",
+      "sha256": "086c2174bece11c3cb9e4c13ec7b4eb4aa688212ed5aa55c24112191ba4b743e",
+      "entity_count": 16,
+      "first_followup_index": 1008,
+      "last_followup_index": 1023,
+      "review_assignment": "second_half"
+    },
+    {
+      "page": 65,
+      "path": "spectrum_contact_sheets/page_065.png",
+      "sha256": "22ed46bf5829ab2486394501fc2fcf5b504a391ad7a124580637ca7a7a319df5",
+      "entity_count": 16,
+      "first_followup_index": 1024,
+      "last_followup_index": 1039,
+      "review_assignment": "second_half"
+    },
+    {
+      "page": 66,
+      "path": "spectrum_contact_sheets/page_066.png",
+      "sha256": "fbc12f780ecc6b44f2375ec7e4bfe1eb3aea63c5a7d95482e73970381bff07b4",
+      "entity_count": 16,
+      "first_followup_index": 1040,
+      "last_followup_index": 1055,
+      "review_assignment": "second_half"
+    },
+    {
+      "page": 67,
+      "path": "spectrum_contact_sheets/page_067.png",
+      "sha256": "bacfa22ca43976e82eec068bbb5bfe293751a32b69e5051ea3e0f0a41fdb7e42",
+      "entity_count": 16,
+      "first_followup_index": 1056,
+      "last_followup_index": 1071,
+      "review_assignment": "second_half"
+    },
+    {
+      "page": 68,
+      "path": "spectrum_contact_sheets/page_068.png",
+      "sha256": "ac6a77457c12554a0857ef4582858606a200763b217f8c3e2ed928bb964f5683",
+      "entity_count": 16,
+      "first_followup_index": 1072,
+      "last_followup_index": 1087,
+      "review_assignment": "second_half"
+    },
+    {
+      "page": 69,
+      "path": "spectrum_contact_sheets/page_069.png",
+      "sha256": "c91f06a78703d8d2faa154e75ee8e7fe07ead0c8fb381032dc09a9847e3dc164",
+      "entity_count": 16,
+      "first_followup_index": 1088,
+      "last_followup_index": 1103,
+      "review_assignment": "second_half"
+    },
+    {
+      "page": 70,
+      "path": "spectrum_contact_sheets/page_070.png",
+      "sha256": "19fef2c1af788cf8fa99da4234917177aafece6e13f569b611091ca7245b3442",
+      "entity_count": 16,
+      "first_followup_index": 1104,
+      "last_followup_index": 1119,
+      "review_assignment": "second_half"
+    },
+    {
+      "page": 71,
+      "path": "spectrum_contact_sheets/page_071.png",
+      "sha256": "1674a728844baff497cf3dda3751d4c7e6609d9379f7d342ec0832c5e1b8b7b3",
+      "entity_count": 16,
+      "first_followup_index": 1120,
+      "last_followup_index": 1135,
+      "review_assignment": "second_half"
+    },
+    {
+      "page": 72,
+      "path": "spectrum_contact_sheets/page_072.png",
+      "sha256": "8828524fe00a9f4987e9a3a883e1c8aa73ca4349a1b5242732eb3aebb494c485",
+      "entity_count": 16,
+      "first_followup_index": 1136,
+      "last_followup_index": 1151,
+      "review_assignment": "second_half"
+    },
+    {
+      "page": 73,
+      "path": "spectrum_contact_sheets/page_073.png",
+      "sha256": "cf36a36978885db6d06fb76f6651f43e3bfea61a963b667a2cb61a5c4c6dca0b",
+      "entity_count": 16,
+      "first_followup_index": 1152,
+      "last_followup_index": 1167,
+      "review_assignment": "second_half"
+    },
+    {
+      "page": 74,
+      "path": "spectrum_contact_sheets/page_074.png",
+      "sha256": "ffcf8c10fe4a78e7481738d97a876b598e1548a22dd5483291f13b1eb0e05033",
+      "entity_count": 16,
+      "first_followup_index": 1168,
+      "last_followup_index": 1183,
+      "review_assignment": "second_half"
+    },
+    {
+      "page": 75,
+      "path": "spectrum_contact_sheets/page_075.png",
+      "sha256": "bedac0913cefda527bcc7db308160c72c0d168c1dce11d8a7e2a5bfa6c60dfdd",
+      "entity_count": 16,
+      "first_followup_index": 1184,
+      "last_followup_index": 1199,
+      "review_assignment": "second_half"
+    },
+    {
+      "page": 76,
+      "path": "spectrum_contact_sheets/page_076.png",
+      "sha256": "088e0de57430a5b340cb457fc0314e2494f37cc37871870c7e630460cebb18d4",
+      "entity_count": 16,
+      "first_followup_index": 1200,
+      "last_followup_index": 1215,
+      "review_assignment": "second_half"
+    },
+    {
+      "page": 77,
+      "path": "spectrum_contact_sheets/page_077.png",
+      "sha256": "34cbd9ee64877089e70f14cf18b1132804070a46e38d43b619d2a2956709fc76",
+      "entity_count": 16,
+      "first_followup_index": 1216,
+      "last_followup_index": 1231,
+      "review_assignment": "second_half"
+    },
+    {
+      "page": 78,
+      "path": "spectrum_contact_sheets/page_078.png",
+      "sha256": "1116894c9695370b4c26b7ad505b74dd8999bb60221e90c3be151aed671f2c3c",
+      "entity_count": 16,
+      "first_followup_index": 1232,
+      "last_followup_index": 1247,
+      "review_assignment": "second_half"
+    },
+    {
+      "page": 79,
+      "path": "spectrum_contact_sheets/page_079.png",
+      "sha256": "24283e63eb6728109eea541a9ff7b0a307c9edc64ebec5eeb52a31372071f7b2",
+      "entity_count": 16,
+      "first_followup_index": 1248,
+      "last_followup_index": 1263,
+      "review_assignment": "second_half"
+    },
+    {
+      "page": 80,
+      "path": "spectrum_contact_sheets/page_080.png",
+      "sha256": "bfef0eab811d4168fbe5972dfa55421c0a11ec52598eee10d0b142c83b2662e3",
+      "entity_count": 16,
+      "first_followup_index": 1264,
+      "last_followup_index": 1279,
+      "review_assignment": "second_half"
+    },
+    {
+      "page": 81,
+      "path": "spectrum_contact_sheets/page_081.png",
+      "sha256": "cb3a1a978997eedd44a72c29c7450068e2556f880ba612c0890bed24147f3566",
+      "entity_count": 16,
+      "first_followup_index": 1280,
+      "last_followup_index": 1295,
+      "review_assignment": "second_half"
+    },
+    {
+      "page": 82,
+      "path": "spectrum_contact_sheets/page_082.png",
+      "sha256": "bd232270893f593a87cd058e4d4d89e1d5ff2600bbcce149f68ef7f124fdac7a",
+      "entity_count": 16,
+      "first_followup_index": 1296,
+      "last_followup_index": 1311,
+      "review_assignment": "second_half"
+    },
+    {
+      "page": 83,
+      "path": "spectrum_contact_sheets/page_083.png",
+      "sha256": "7e97ff7d49bb2ea71195d5405024e416e7d6418cf818bc6c9151d1e2f165fc56",
+      "entity_count": 16,
+      "first_followup_index": 1312,
+      "last_followup_index": 1327,
+      "review_assignment": "second_half"
+    },
+    {
+      "page": 84,
+      "path": "spectrum_contact_sheets/page_084.png",
+      "sha256": "a14be0fde2d9cc81fdaf1b0d0c52bd98b1d9101a083c8f707805885950894510",
+      "entity_count": 16,
+      "first_followup_index": 1328,
+      "last_followup_index": 1343,
+      "review_assignment": "second_half"
+    },
+    {
+      "page": 85,
+      "path": "spectrum_contact_sheets/page_085.png",
+      "sha256": "24c552d84c7b4152903c5a6c7f65a615daa9df902d75dead7194931e1797391f",
+      "entity_count": 16,
+      "first_followup_index": 1344,
+      "last_followup_index": 1359,
+      "review_assignment": "second_half"
+    },
+    {
+      "page": 86,
+      "path": "spectrum_contact_sheets/page_086.png",
+      "sha256": "842005d0bd9801a514c53010170d7cc1538d52dcb71122fe42d654dc5892ca2b",
+      "entity_count": 16,
+      "first_followup_index": 1360,
+      "last_followup_index": 1375,
+      "review_assignment": "second_half"
+    },
+    {
+      "page": 87,
+      "path": "spectrum_contact_sheets/page_087.png",
+      "sha256": "c21d63f663d4fc9ecf1c7ade427d1582f2387265a2f32f7395c0419a0ee4c4e7",
+      "entity_count": 16,
+      "first_followup_index": 1376,
+      "last_followup_index": 1391,
+      "review_assignment": "second_half"
+    },
+    {
+      "page": 88,
+      "path": "spectrum_contact_sheets/page_088.png",
+      "sha256": "f3a6add31dd2bfdd50bc103bd1089f1faca8e704d6c41b1ffddfc29953a06729",
+      "entity_count": 16,
+      "first_followup_index": 1392,
+      "last_followup_index": 1407,
+      "review_assignment": "second_half"
+    },
+    {
+      "page": 89,
+      "path": "spectrum_contact_sheets/page_089.png",
+      "sha256": "0c1839cb299d55a2033128bb211c35763f42ba44237b812a97562325661bfecf",
+      "entity_count": 16,
+      "first_followup_index": 1408,
+      "last_followup_index": 1423,
+      "review_assignment": "second_half"
+    },
+    {
+      "page": 90,
+      "path": "spectrum_contact_sheets/page_090.png",
+      "sha256": "82e5ee610708d57f6d8fefefb9d5d7c790cd77cd73292386943847dd19f28c2c",
+      "entity_count": 16,
+      "first_followup_index": 1424,
+      "last_followup_index": 1439,
+      "review_assignment": "second_half"
+    },
+    {
+      "page": 91,
+      "path": "spectrum_contact_sheets/page_091.png",
+      "sha256": "540378755afc0d02f03bfaa067ff536e73acda9ed2294a76d4eee66a29ae9303",
+      "entity_count": 16,
+      "first_followup_index": 1440,
+      "last_followup_index": 1455,
+      "review_assignment": "second_half"
+    },
+    {
+      "page": 92,
+      "path": "spectrum_contact_sheets/page_092.png",
+      "sha256": "1556a3ea8703994422f019fc1b9426f64bcd3bdfdac2a16ad630b3f7670bcfe5",
+      "entity_count": 16,
+      "first_followup_index": 1456,
+      "last_followup_index": 1471,
+      "review_assignment": "second_half"
+    },
+    {
+      "page": 93,
+      "path": "spectrum_contact_sheets/page_093.png",
+      "sha256": "5e54b2b8ad253f3eb6216320bfac73e8c27277f840ec5b571bfc1a93f01b97f9",
+      "entity_count": 16,
+      "first_followup_index": 1472,
+      "last_followup_index": 1487,
+      "review_assignment": "second_half"
+    },
+    {
+      "page": 94,
+      "path": "spectrum_contact_sheets/page_094.png",
+      "sha256": "5b19b38e8e2579e5f40f4797ce43e310f5c218c782840aeb4aa6126bb3be2115",
+      "entity_count": 16,
+      "first_followup_index": 1488,
+      "last_followup_index": 1503,
+      "review_assignment": "second_half"
+    },
+    {
+      "page": 95,
+      "path": "spectrum_contact_sheets/page_095.png",
+      "sha256": "ec4756428365506246599f326348d9122209db0c84ed9c875d25134a7b8eb779",
+      "entity_count": 16,
+      "first_followup_index": 1504,
+      "last_followup_index": 1519,
+      "review_assignment": "second_half"
+    },
+    {
+      "page": 96,
+      "path": "spectrum_contact_sheets/page_096.png",
+      "sha256": "df4c8e8cd6876e316c899280ee4dcb21e13e8ef1b17ba605c976608b10b7e0e0",
+      "entity_count": 16,
+      "first_followup_index": 1520,
+      "last_followup_index": 1535,
+      "review_assignment": "second_half"
+    },
+    {
+      "page": 97,
+      "path": "spectrum_contact_sheets/page_097.png",
+      "sha256": "01a0376508a52565316439fae994485f42a22dd73ad24a7c62bedc8c0a5ef0b4",
+      "entity_count": 16,
+      "first_followup_index": 1536,
+      "last_followup_index": 1551,
+      "review_assignment": "second_half"
+    },
+    {
+      "page": 98,
+      "path": "spectrum_contact_sheets/page_098.png",
+      "sha256": "20b786e35704ac4ee1ecb7dd5f36ef126ac4c182c6a4412af1a5d2fb087cec4c",
+      "entity_count": 16,
+      "first_followup_index": 1552,
+      "last_followup_index": 1567,
+      "review_assignment": "second_half"
+    },
+    {
+      "page": 99,
+      "path": "spectrum_contact_sheets/page_099.png",
+      "sha256": "41f1152008e00a2d0fe35a969dc5743ccd537befb4caa72612323682d73a3953",
+      "entity_count": 16,
+      "first_followup_index": 1568,
+      "last_followup_index": 1583,
+      "review_assignment": "second_half"
+    },
+    {
+      "page": 100,
+      "path": "spectrum_contact_sheets/page_100.png",
+      "sha256": "e9adcc6e852a4500879c42fd7d8c5f30cf000656fa0b2bf4d57ecc6befd19d18",
+      "entity_count": 16,
+      "first_followup_index": 1584,
+      "last_followup_index": 1599,
+      "review_assignment": "second_half"
+    },
+    {
+      "page": 101,
+      "path": "spectrum_contact_sheets/page_101.png",
+      "sha256": "84a7b1e1609f421c5e5fb60c86203f7d11288b640927b0c2f181781ea49ae11c",
+      "entity_count": 16,
+      "first_followup_index": 1600,
+      "last_followup_index": 1615,
+      "review_assignment": "second_half"
+    },
+    {
+      "page": 102,
+      "path": "spectrum_contact_sheets/page_102.png",
+      "sha256": "e9ff3f22471ad18e92c5f18288dac5bb7b18a48ec521220ea3df39e6556244d7",
+      "entity_count": 16,
+      "first_followup_index": 1616,
+      "last_followup_index": 1631,
+      "review_assignment": "second_half"
+    },
+    {
+      "page": 103,
+      "path": "spectrum_contact_sheets/page_103.png",
+      "sha256": "4fd621dc3b94c27131015a4b9df8fc347d049a8f9a65ad588117faffa6c2ad6e",
+      "entity_count": 16,
+      "first_followup_index": 1632,
+      "last_followup_index": 1647,
+      "review_assignment": "second_half"
+    },
+    {
+      "page": 104,
+      "path": "spectrum_contact_sheets/page_104.png",
+      "sha256": "613c29013ad61b0ba102b867612d6522774a37b7794e52fde0677b352a15face",
+      "entity_count": 16,
+      "first_followup_index": 1648,
+      "last_followup_index": 1663,
+      "review_assignment": "second_half"
+    },
+    {
+      "page": 105,
+      "path": "spectrum_contact_sheets/page_105.png",
+      "sha256": "ea7bff87c70895485ac09fde04db66a2abb05934f53a0c298fb36a181fb9baaa",
+      "entity_count": 16,
+      "first_followup_index": 1664,
+      "last_followup_index": 1679,
+      "review_assignment": "second_half"
+    },
+    {
+      "page": 106,
+      "path": "spectrum_contact_sheets/page_106.png",
+      "sha256": "29957e7a6b29e67ba4ea8f93ac60a766e633075cb0e8d7f971b68eeb8650e953",
+      "entity_count": 16,
+      "first_followup_index": 1680,
+      "last_followup_index": 1695,
+      "review_assignment": "second_half"
+    },
+    {
+      "page": 107,
+      "path": "spectrum_contact_sheets/page_107.png",
+      "sha256": "87aa7d7940498b94c895316e2060bbcc85768e9b37f2ade03e948cc93d02336a",
+      "entity_count": 16,
+      "first_followup_index": 1696,
+      "last_followup_index": 1711,
+      "review_assignment": "second_half"
+    },
+    {
+      "page": 108,
+      "path": "spectrum_contact_sheets/page_108.png",
+      "sha256": "cfbe69f3f25481dc32780a78def33ddcd6139061590210993e0441562f8b1ffb",
+      "entity_count": 16,
+      "first_followup_index": 1712,
+      "last_followup_index": 1727,
+      "review_assignment": "second_half"
+    },
+    {
+      "page": 109,
+      "path": "spectrum_contact_sheets/page_109.png",
+      "sha256": "d93cb7aca956cb4ffeef68e27e91042375ee35669abe69aee01ddd1e6fd428a5",
+      "entity_count": 16,
+      "first_followup_index": 1728,
+      "last_followup_index": 1743,
+      "review_assignment": "second_half"
+    },
+    {
+      "page": 110,
+      "path": "spectrum_contact_sheets/page_110.png",
+      "sha256": "d394a2a1d1ffacdae26e6ca53c65f2e051969219ff7f3b70d8664112839d4137",
+      "entity_count": 16,
+      "first_followup_index": 1744,
+      "last_followup_index": 1759,
+      "review_assignment": "second_half"
+    },
+    {
+      "page": 111,
+      "path": "spectrum_contact_sheets/page_111.png",
+      "sha256": "450a7333a8e13fa2a0d4b3ce3073997b2129b872c52a7ef8ec24dc22d3bdc543",
+      "entity_count": 16,
+      "first_followup_index": 1760,
+      "last_followup_index": 1775,
+      "review_assignment": "second_half"
+    },
+    {
+      "page": 112,
+      "path": "spectrum_contact_sheets/page_112.png",
+      "sha256": "735e804e65d516447d113a3ce2f28bef4acb25dd9a3b7cb621352c4e73713013",
+      "entity_count": 16,
+      "first_followup_index": 1776,
+      "last_followup_index": 1791,
+      "review_assignment": "second_half"
+    },
+    {
+      "page": 113,
+      "path": "spectrum_contact_sheets/page_113.png",
+      "sha256": "a12027f4212fe72bb751ce4e675e97177c3092b2616deaabb3fa16b16badea0d",
+      "entity_count": 16,
+      "first_followup_index": 1792,
+      "last_followup_index": 1807,
+      "review_assignment": "second_half"
+    },
+    {
+      "page": 114,
+      "path": "spectrum_contact_sheets/page_114.png",
+      "sha256": "3d1ee2ae7870b284d190a730faf3506758dbb38fb580e5c68d801a8d0e6d3c6a",
+      "entity_count": 16,
+      "first_followup_index": 1808,
+      "last_followup_index": 1823,
+      "review_assignment": "second_half"
+    },
+    {
+      "page": 115,
+      "path": "spectrum_contact_sheets/page_115.png",
+      "sha256": "73313cf90f685a3648833783b6db8243b40c9868b8cfbc41c27fa58c536943d9",
+      "entity_count": 16,
+      "first_followup_index": 1824,
+      "last_followup_index": 1839,
+      "review_assignment": "second_half"
+    },
+    {
+      "page": 116,
+      "path": "spectrum_contact_sheets/page_116.png",
+      "sha256": "14c1451b2e9cfc728527ca39d3b769e79fa66c065075c72b632198fc7851f82b",
+      "entity_count": 16,
+      "first_followup_index": 1840,
+      "last_followup_index": 1855,
+      "review_assignment": "second_half"
+    },
+    {
+      "page": 117,
+      "path": "spectrum_contact_sheets/page_117.png",
+      "sha256": "b9e9a8ec1a4f288510471f656e066dcea9331137983e2c3b7d03e2a0660e9c41",
+      "entity_count": 16,
+      "first_followup_index": 1856,
+      "last_followup_index": 1871,
+      "review_assignment": "second_half"
+    },
+    {
+      "page": 118,
+      "path": "spectrum_contact_sheets/page_118.png",
+      "sha256": "9739e61f1455540040ae91bc5e85b5b28ed8bff62f4dc6c8472b10fe865e3fab",
+      "entity_count": 16,
+      "first_followup_index": 1872,
+      "last_followup_index": 1887,
+      "review_assignment": "second_half"
+    },
+    {
+      "page": 119,
+      "path": "spectrum_contact_sheets/page_119.png",
+      "sha256": "4e4bbb8a4e9fe960e942943a5524e62f46af14160890c3946f7cc5b1bc8afa16",
+      "entity_count": 16,
+      "first_followup_index": 1888,
+      "last_followup_index": 1903,
+      "review_assignment": "second_half"
+    },
+    {
+      "page": 120,
+      "path": "spectrum_contact_sheets/page_120.png",
+      "sha256": "d6085bc71f8ab0c05a871a6d7dbb45bf38cf05f832a250984aabe7dde16a3f90",
+      "entity_count": 16,
+      "first_followup_index": 1904,
+      "last_followup_index": 1919,
+      "review_assignment": "second_half"
+    },
+    {
+      "page": 121,
+      "path": "spectrum_contact_sheets/page_121.png",
+      "sha256": "170070bc7fba87a80c471f082e02d2b4df05f2fc4cf17571dd4585e70179eac2",
+      "entity_count": 16,
+      "first_followup_index": 1920,
+      "last_followup_index": 1935,
+      "review_assignment": "second_half"
+    },
+    {
+      "page": 122,
+      "path": "spectrum_contact_sheets/page_122.png",
+      "sha256": "0220d98c436899d00226e31d7e57185a81967ffafc699ebb78f1ebadae422fa2",
+      "entity_count": 16,
+      "first_followup_index": 1936,
+      "last_followup_index": 1951,
+      "review_assignment": "second_half"
+    },
+    {
+      "page": 123,
+      "path": "spectrum_contact_sheets/page_123.png",
+      "sha256": "9b09b0029b68cb87583017384ea9695ea4e7b94670b73611b7b1093b4cc9bd14",
+      "entity_count": 16,
+      "first_followup_index": 1952,
+      "last_followup_index": 1967,
+      "review_assignment": "second_half"
+    },
+    {
+      "page": 124,
+      "path": "spectrum_contact_sheets/page_124.png",
+      "sha256": "a822657adeeb70719351eeb3ad7aaef91ab3b64b4466e1db9feab6ea4acb3a7e",
+      "entity_count": 16,
+      "first_followup_index": 1968,
+      "last_followup_index": 1983,
+      "review_assignment": "second_half"
+    },
+    {
+      "page": 125,
+      "path": "spectrum_contact_sheets/page_125.png",
+      "sha256": "470a288961e9ea38c399e9230bf5316a0a990c00b7d720ebaf4139fabffcd631",
+      "entity_count": 16,
+      "first_followup_index": 1984,
+      "last_followup_index": 1999,
+      "review_assignment": "second_half"
+    },
+    {
+      "page": 126,
+      "path": "spectrum_contact_sheets/page_126.png",
+      "sha256": "72b8226f7ee2f2beb5cc7092cabe29c4c109bb24409a58ea81faf2e98beaef2a",
+      "entity_count": 7,
+      "first_followup_index": 2000,
+      "last_followup_index": 2006,
+      "review_assignment": "second_half"
+    }
+  ]
+}

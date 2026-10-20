@@ -1,0 +1,66 @@
+{
+  "selection": "Published source named by the three MWDD pages; bounded coordinates. Chandra proposal is retained as conflicting historical context, not a new physical classification.",
+  "sources": [
+    {
+      "url": "https://heasarc.gsfc.nasa.gov/xamin/vo/tap/sync?REQUEST=doQuery&LANG=ADQL&QUERY=SELECT+%2A+FROM+sdssdr7wd+WHERE%0A++++%28ra+BETWEEN+282.66+AND+282.68+AND+dec+BETWEEN+20.00+AND+20.03%29+OR%0A++++%28ra+BETWEEN+11.355+AND+11.375+AND+dec+BETWEEN+14.627+AND+14.648%29+OR%0A++++%28ra+BETWEEN+83.963+AND+83.983+AND+dec+BETWEEN+-0.678+AND+-0.658%29",
+      "final_url": "https://heasarc.gsfc.nasa.gov/xamin/vo/tap/sync?REQUEST=doQuery&LANG=ADQL&QUERY=SELECT+%2A+FROM+sdssdr7wd+WHERE%0A++++%28ra+BETWEEN+282.66+AND+282.68+AND+dec+BETWEEN+20.00+AND+20.03%29+OR%0A++++%28ra+BETWEEN+11.355+AND+11.375+AND+dec+BETWEEN+14.627+AND+14.648%29+OR%0A++++%28ra+BETWEEN+83.963+AND+83.983+AND+dec+BETWEEN+-0.678+AND+-0.658%29",
+      "retrieved_utc": "2026-10-20T00:18:55.727538+00:00",
+      "http_status": 200,
+      "content_type": "text/xml",
+      "bytes": 9742,
+      "sha256": "49530cff2027c0c564dbb062968cad092a3ab11f3466b9c8f933e44852e6dfbe",
+      "file": "sources/kleinman_catalogue.xml"
+    },
+    {
+      "url": "https://heasarc.gsfc.nasa.gov/w3browse/all/sdssdr7wd.html",
+      "final_url": "https://heasarc.gsfc.nasa.gov/w3browse/all/sdssdr7wd.html",
+      "retrieved_utc": "2026-10-20T00:18:18.104672+00:00",
+      "http_status": 200,
+      "content_type": "text/html; charset=ISO-8859-1",
+      "bytes": 17666,
+      "sha256": "1faee8e79cdc5757c8d8006ecd3df4932415447a1ac3519c0254bf101cc60ca3",
+      "file": "sources/kleinman_catalogue_definition.html"
+    },
+    {
+      "url": "https://cxc.harvard.edu/target_lists/cycle7/abstracts_cycle7.html",
+      "final_url": "https://cxc.harvard.edu/target_lists/cycle7/abstracts_cycle7.html",
+      "retrieved_utc": "2026-10-20T00:18:18.105160+00:00",
+      "http_status": 200,
+      "content_type": "text/html",
+      "bytes": 200120,
+      "sha256": "10a423e9735d8713a6cea5c9dd63de762f05083bc009788c560994a2ca666e7a",
+      "file": "sources/chandra_cycle7.html"
+    },
+    {
+      "url": "https://www.sdss4.org/dr17/algorithms/bitmasks/",
+      "final_url": "https://www.sdss4.org/dr17/algorithms/bitmasks/",
+      "retrieved_utc": "2026-10-20T00:18:18.105488+00:00",
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 246837,
+      "sha256": "169e39b3cc87375c0d59ec8b07ec1a24f2f54f7b0262daca38c9cfe8a285816f",
+      "file": "sources/sdss_bitmasks.html"
+    },
+    {
+      "url": "https://gea.esac.esa.int/tap-server/tap/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=SELECT+%2A+FROM+gaiadr3.vari_classifier_result+WHERE+source_id+IN+%284518692348609283712%2C2780975896637670528%2C3217759570831525120%29",
+      "final_url": "https://gea.esac.esa.int/tap-server/tap/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=SELECT+%2A+FROM+gaiadr3.vari_classifier_result+WHERE+source_id+IN+%284518692348609283712%2C2780975896637670528%2C3217759570831525120%29",
+      "retrieved_utc": "2026-10-20T00:20:11.341959+00:00",
+      "http_status": 200,
+      "content_type": "text/csv",
+      "bytes": 138,
+      "sha256": "f87adbe8a5a18e795f720f854732fca1013f34bac880c6ac1167d481f26cea58",
+      "file": "sources/gaia_variability.csv"
+    },
+    {
+      "url": "https://heasarc.gsfc.nasa.gov/xamin/vo/tap/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=SELECT+%2A+FROM+sdssdr7wd+WHERE%0A++++%28ra+BETWEEN+282.66+AND+282.68+AND+dec+BETWEEN+20.00+AND+20.03%29+OR%0A++++%28ra+BETWEEN+11.355+AND+11.375+AND+dec+BETWEEN+14.627+AND+14.648%29+OR%0A++++%28ra+BETWEEN+83.963+AND+83.983+AND+dec+BETWEEN+-0.678+AND+-0.658%29",
+      "final_url": "https://heasarc.gsfc.nasa.gov/xamin/vo/tap/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=SELECT+%2A+FROM+sdssdr7wd+WHERE%0A++++%28ra+BETWEEN+282.66+AND+282.68+AND+dec+BETWEEN+20.00+AND+20.03%29+OR%0A++++%28ra+BETWEEN+11.355+AND+11.375+AND+dec+BETWEEN+14.627+AND+14.648%29+OR%0A++++%28ra+BETWEEN+83.963+AND+83.983+AND+dec+BETWEEN+-0.678+AND+-0.658%29",
+      "retrieved_utc": "2026-10-20T00:18:18.103970+00:00",
+      "http_status": 200,
+      "content_type": "text/xml;charset=ISO-8859-1",
+      "bytes": 385,
+      "sha256": "c9f7a0afceb727882b7e0ddf865ecc9ae9fab32ad658c5ef21ea8d7e44127603",
+      "file": "sources/kleinman_catalogue.csv",
+      "data_status": "Saved initial VOTable error response: unsupported requested CSV format; not a catalogue nondetection. Retried using server default VOTable."
+    }
+  ]
+}

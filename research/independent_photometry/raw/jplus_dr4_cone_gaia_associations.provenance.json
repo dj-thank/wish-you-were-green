@@ -1,0 +1,16 @@
+{
+  "url": "https://archive.cefca.es/catalogues/vo/tap/jplus-dr4/sync",
+  "query_parameters": {
+    "REQUEST": "doQuery",
+    "LANG": "ADQL",
+    "FORMAT": "csv",
+    "MAXREC": "10000",
+    "QUERY": "SELECT * FROM jplus.xmatch_gaia_dr3 WHERE (tile_id=202447 AND number=19243) OR (tile_id=202447 AND number=19361) OR (tile_id=189546 AND number=11669) OR (tile_id=189546 AND number=11702) OR (tile_id=189546 AND number=11756) OR (tile_id=203756 AND number=17880) OR (tile_id=203756 AND number=17825) OR (tile_id=203756 AND number=17914) OR (tile_id=195416 AND number=23209) OR (tile_id=195416 AND number=23343) OR (tile_id=204954 AND number=27368) OR (tile_id=204954 AND number=27425) OR (tile_id=204954 AND number=27480) OR (tile_id=204954 AND number=27502) OR (tile_id=204954 AND number=27541) OR (tile_id=204954 AND number=27574) OR (tile_id=214636 AND number=21326) OR (tile_id=190232 AND number=15354) OR (tile_id=190232 AND number=15370) OR (tile_id=194779 AND number=16873)"
+  },
+  "final_url": "https://archive.cefca.es/catalogues/vo/tap/jplus-dr4/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&MAXREC=10000&QUERY=SELECT+%2A+FROM+jplus.xmatch_gaia_dr3+WHERE+%28tile_id%3D202447+AND+number%3D19243%29+OR+%28tile_id%3D202447+AND+number%3D19361%29+OR+%28tile_id%3D189546+AND+number%3D11669%29+OR+%28tile_id%3D189546+AND+number%3D11702%29+OR+%28tile_id%3D189546+AND+number%3D11756%29+OR+%28tile_id%3D203756+AND+number%3D17880%29+OR+%28tile_id%3D203756+AND+number%3D17825%29+OR+%28tile_id%3D203756+AND+number%3D17914%29+OR+%28tile_id%3D195416+AND+number%3D23209%29+OR+%28tile_id%3D195416+AND+number%3D23343%29+OR+%28tile_id%3D204954+AND+number%3D27368%29+OR+%28tile_id%3D204954+AND+number%3D27425%29+OR+%28tile_id%3D204954+AND+number%3D27480%29+OR+%28tile_id%3D204954+AND+number%3D27502%29+OR+%28tile_id%3D204954+AND+number%3D27541%29+OR+%28tile_id%3D204954+AND+number%3D27574%29+OR+%28tile_id%3D214636+AND+number%3D21326%29+OR+%28tile_id%3D190232+AND+number%3D15354%29+OR+%28tile_id%3D190232+AND+number%3D15370%29+OR+%28tile_id%3D194779+AND+number%3D16873%29",
+  "retrieved_utc": "2026-10-19T23:40:41.259131+00:00",
+  "http_status": 200,
+  "content_type": "text/csv; charset=UTF-8",
+  "size_bytes": 3189,
+  "sha256": "088176c30328e3e47aa7c52d7abcc1e2c2ed0265effabbdaade4f3a5122de693"
+}

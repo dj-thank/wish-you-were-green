@@ -1,0 +1,94 @@
+[
+  {
+    "row_index": 9122,
+    "source_id": "1038076351151065088",
+    "original_fits_path": "sdss/raw/spec-5708-56605-0705.fits",
+    "original_fits_sha256": "950917288533703a067162db7c83aca9aabb62d6f715cdea5fafb56a23d07d76",
+    "original_fits_url": "https://data.sdss.org/sas/dr17/eboss/spectro/redux/v5_13_2/spectra/lite/5708/spec-5708-56605-0705.fits",
+    "lossless_original_path": "spec-5708-56605-0705.fits.gz",
+    "lossless_original_sha256": "cc7dbb23f5fa4299f16f2707448b08916e10a63e003463403ad0e7429c869e6e",
+    "header": {
+      "PLUG_RA": 134.89765,
+      "PLUG_DEC": 60.269597,
+      "RA": 135.310571,
+      "DEC": 59.199568,
+      "MJD": 56605,
+      "PLATEID": 5708,
+      "FIBERID": 705,
+      "RUN2D": "v5_13_2",
+      "RUN1D": null,
+      "SPECOBJID": null,
+      "OBJTYPE": null,
+      "VACUUM": true
+    }
+  },
+  {
+    "row_index": 9399,
+    "source_id": "1311674353544358912",
+    "original_fits_path": "sdss/raw/spec-5201-55832-0412.fits",
+    "original_fits_sha256": "77aa42e2de2ca3f084551ad063f9d936ba297e0292c4017b169811d53b1598f1",
+    "original_fits_url": "https://data.sdss.org/sas/dr17/eboss/spectro/redux/v5_13_2/spectra/lite/5201/spec-5201-55832-0412.fits",
+    "lossless_original_path": "spec-5201-55832-0412.fits.gz",
+    "lossless_original_sha256": "0ed02562ffd70b9f4d7ec7ec73208a981d542ca576fc23e19b987ae783d17cd0",
+    "header": {
+      "PLUG_RA": 248.94366,
+      "PLUG_DEC": 28.726518,
+      "RA": 249.652505,
+      "DEC": 29.816811,
+      "MJD": 55832,
+      "PLATEID": 5201,
+      "FIBERID": 412,
+      "RUN2D": "v5_13_2",
+      "RUN1D": null,
+      "SPECOBJID": null,
+      "OBJTYPE": null,
+      "VACUUM": true
+    }
+  },
+  {
+    "row_index": 8781,
+    "source_id": "2586182156053386240",
+    "original_fits_path": "sdss/raw/spec-4661-55614-0318.fits",
+    "original_fits_sha256": "d1853867e15fe54aac27a457251b9be3bc577c31616361ff598b7079ff7ae657",
+    "original_fits_url": "https://data.sdss.org/sas/dr17/eboss/spectro/redux/v5_13_2/spectra/lite/4661/spec-4661-55614-0318.fits",
+    "lossless_original_path": "spec-4661-55614-0318.fits.gz",
+    "lossless_original_sha256": "f324a22865212210aac1b2f05075a690a34a42294f9ef8c8e14d6246d4c102e8",
+    "header": {
+      "PLUG_RA": 23.76713799999999,
+      "PLUG_DEC": 13.044564,
+      "RA": 24.1658,
+      "DEC": 13.773681,
+      "MJD": 55614,
+      "PLATEID": 4661,
+      "FIBERID": 318,
+      "RUN2D": "v5_13_2",
+      "RUN1D": null,
+      "SPECOBJID": null,
+      "OBJTYPE": null,
+      "VACUUM": true
+    }
+  },
+  {
+    "row_index": 9079,
+    "source_id": "1025033665052512000",
+    "original_fits_path": "sdss/raw/spec-7445-56720-0047.fits",
+    "original_fits_sha256": "dea03b50426498fa7d9a01a0135f5087b97d6ec934b48a9c8fe7832aa243780f",
+    "original_fits_url": "https://data.sdss.org/sas/dr17/eboss/spectro/redux/v5_13_2/spectra/lite/7445/spec-7445-56720-0047.fits",
+    "lossless_original_path": "spec-7445-56720-0047.fits.gz",
+    "lossless_original_sha256": "dca0220984d01e9dadc624164833328dbefd91b5e4eaacacbe8f75f39286248b",
+    "header": {
+      "PLUG_RA": 143.55124,
+      "PLUG_DEC": 56.542451,
+      "RA": 141.792548,
+      "DEC": 57.372033,
+      "MJD": 56720,
+      "PLATEID": 7445,
+      "FIBERID": 47,
+      "RUN2D": "v5_13_2",
+      "RUN1D": null,
+      "SPECOBJID": null,
+      "OBJTYPE": null,
+      "VACUUM": true
+    }
+  }
+]

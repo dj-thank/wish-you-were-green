@@ -1,0 +1,152 @@
+{
+  "summary": {
+    "scope": "pilot",
+    "selected_mwdd_records": 1,
+    "reference_pairs_assessed": 1,
+    "conventions": {
+      "flambda": 1
+    },
+    "dispositions": {
+      "resolved_strict_native_identity": 1
+    },
+    "newly_verified_previous_unavailable_entities": 0,
+    "existing_registry_modified": false,
+    "thresholds": {
+      "comparison_window_A": [
+        3600.0,
+        8300.0
+      ],
+      "nearest_native_wavelength_tolerance_A": 0.02,
+      "minimum_wavelength_grid_match_fraction": 0.99,
+      "minimum_finite_fraction_of_grid_matches": 0.99,
+      "minimum_comparison_samples": 1000,
+      "minimum_comparison_span_A": 3500.0,
+      "relative_residual_reference_floor_fraction": 0.1,
+      "maximum_fractional_shape_residual": 0.0001,
+      "maximum_absolute_shape_residual_per_median_abs_reference": 0.0001
+    },
+    "input_sha256": {
+      "research/unit_resolution_followup/retrieval_pilot.json": "4791db4c25e3e90e35485af0090bc84210de393df1ad4ec014f3492870c2e556",
+      "research/unit_resolution_followup/catalogue_observations.json": "4772d9409871ce072ea99dfc745e5d78084a3ae1588510071034a8c82e59a671",
+      "research/unit_resolution_followup/unresolved_universe.csv": "80a4f9491205a897a4c45425bba74b547f9d3116071377daef242831529becb2",
+      "research/precision/flux_convention_evidence.json": "00aef84a2e81fad091c68b372fbe83fe67e7648c979f6cf4c45725f103fe9fdb"
+    },
+    "script_sha256": "00eea00a9c924c9cdbaf23fec67e4ebaa38ca8269fb87cdc97e06e40b00aecf3"
+  },
+  "records": [
+    {
+      "mwdd_row_index": 13,
+      "mwdd_sha256": "438152e144c9297cb7d723c4fe59e7ddd16f489e8a8b0412ec90f27d59982901",
+      "entity_id": "gaia:3638333660492606976",
+      "source_id": "3638333660492606976",
+      "name": "Gaia DR2 3638333660492606976",
+      "convention": "flambda",
+      "previous_convention": "unresolved",
+      "reference_pairs_assessed": 1,
+      "candidate_references": 1,
+      "accepted_reference_pairs": 1,
+      "previously_unavailable_panel": false,
+      "disposition": "resolved_strict_native_identity",
+      "external_reference_id": "sdss_dr17_v5_13_2_4049_55591_0832",
+      "direct_sha256": "80b67ebde02a62ed818c1ea17435b3657a5e8e424b0c7c742dfeea5770dbab29",
+      "direct_row_index": null,
+      "astrophysical_association_note": "Spectrum representation identity only; positional catalogue association and physical class are not established by this unit test.",
+      "selected_identity_evidence": {
+        "mwdd_row_index": 13,
+        "mwdd_sha256": "438152e144c9297cb7d723c4fe59e7ddd16f489e8a8b0412ec90f27d59982901",
+        "direct_row_index": null,
+        "direct_sha256": "80b67ebde02a62ed818c1ea17435b3657a5e8e424b0c7c742dfeea5770dbab29",
+        "entity_id": "gaia:3638333660492606976",
+        "name": "Gaia DR2 3638333660492606976",
+        "mwdd_source_url": "https://www.montrealwhitedwarfdatabase.org/WDs/Gaia%20DR2%203638333660492606976/spect.Gaia%20DR2%203638333660492606976.sdss.txt",
+        "direct_source_url": "https://data.sdss.org/sas/dr17/eboss/spectro/redux/v5_13_2/spectra/lite/4049/spec-4049-55591-0832.fits",
+        "mwdd_raw_header": "wdid:Gaia DR2 3638333660492606976,resolution:nan,source:sdss,wavelength_min: 3586.74,wavelength_max: 10401.59",
+        "direct_fits_header": {
+          "BUNIT": "1E-17 erg/cm^2/s/Ang",
+          "PLATEID": 4049,
+          "MJD": 55591,
+          "FIBERID": 832,
+          "RUN2D": "v5_13_2",
+          "PLUG_RA": 200.80318,
+          "PLUG_DEC": -1.4899599,
+          "VACUUM": true
+        },
+        "raw_sha256_verified": true,
+        "convention": "flambda",
+        "wave_grid_match_fraction": 1.0,
+        "finite_grid_fraction": 1.0,
+        "comparison_samples": 3507,
+        "all_finite_matched_samples": 3627,
+        "wave_span_A": 4695.790000000001,
+        "wave_max_matched_difference_A": 0.0056011389915511245,
+        "ratio_log_wavelength_slope": 9.113490893873426e-08,
+        "flambda_constant_scale": 0.9999999957970018,
+        "flambda_median_fractional_shape_residual": 6.330376567387219e-07,
+        "flambda_p95_fractional_shape_residual": 3.4604894710410504e-06,
+        "flambda_max_fractional_shape_residual": 5.034400427761376e-06,
+        "flambda_max_absolute_residual_per_median_reference": 5.87719242332483e-06,
+        "flambda_accepted": true,
+        "fnu_constant_scale": 98088639428.05823,
+        "fnu_median_fractional_shape_residual": 0.38425335591547627,
+        "fnu_p95_fractional_shape_residual": 1.1704119620104279,
+        "fnu_max_fractional_shape_residual": 1.3572263590279547,
+        "fnu_max_absolute_residual_per_median_reference": 9.678900432471782,
+        "fnu_accepted": false,
+        "reason": "Native sample identity under exactly one spectral-density convention",
+        "reference_index": 0,
+        "external_reference_id": "sdss_dr17_v5_13_2_4049_55591_0832",
+        "direct_index_note": "New reference; not a row of the frozen 9902-record input",
+        "cone_distance_arcsec": 1.7101179805539422
+      }
+    }
+  ],
+  "pair_evidence": [
+    {
+      "mwdd_row_index": 13,
+      "mwdd_sha256": "438152e144c9297cb7d723c4fe59e7ddd16f489e8a8b0412ec90f27d59982901",
+      "direct_row_index": null,
+      "direct_sha256": "80b67ebde02a62ed818c1ea17435b3657a5e8e424b0c7c742dfeea5770dbab29",
+      "entity_id": "gaia:3638333660492606976",
+      "name": "Gaia DR2 3638333660492606976",
+      "mwdd_source_url": "https://www.montrealwhitedwarfdatabase.org/WDs/Gaia%20DR2%203638333660492606976/spect.Gaia%20DR2%203638333660492606976.sdss.txt",
+      "direct_source_url": "https://data.sdss.org/sas/dr17/eboss/spectro/redux/v5_13_2/spectra/lite/4049/spec-4049-55591-0832.fits",
+      "mwdd_raw_header": "wdid:Gaia DR2 3638333660492606976,resolution:nan,source:sdss,wavelength_min: 3586.74,wavelength_max: 10401.59",
+      "direct_fits_header": {
+        "BUNIT": "1E-17 erg/cm^2/s/Ang",
+        "PLATEID": 4049,
+        "MJD": 55591,
+        "FIBERID": 832,
+        "RUN2D": "v5_13_2",
+        "PLUG_RA": 200.80318,
+        "PLUG_DEC": -1.4899599,
+        "VACUUM": true
+      },
+      "raw_sha256_verified": true,
+      "convention": "flambda",
+      "wave_grid_match_fraction": 1.0,
+      "finite_grid_fraction": 1.0,
+      "comparison_samples": 3507,
+      "all_finite_matched_samples": 3627,
+      "wave_span_A": 4695.790000000001,
+      "wave_max_matched_difference_A": 0.0056011389915511245,
+      "ratio_log_wavelength_slope": 9.113490893873426e-08,
+      "flambda_constant_scale": 0.9999999957970018,
+      "flambda_median_fractional_shape_residual": 6.330376567387219e-07,
+      "flambda_p95_fractional_shape_residual": 3.4604894710410504e-06,
+      "flambda_max_fractional_shape_residual": 5.034400427761376e-06,
+      "flambda_max_absolute_residual_per_median_reference": 5.87719242332483e-06,
+      "flambda_accepted": true,
+      "fnu_constant_scale": 98088639428.05823,
+      "fnu_median_fractional_shape_residual": 0.38425335591547627,
+      "fnu_p95_fractional_shape_residual": 1.1704119620104279,
+      "fnu_max_fractional_shape_residual": 1.3572263590279547,
+      "fnu_max_absolute_residual_per_median_reference": 9.678900432471782,
+      "fnu_accepted": false,
+      "reason": "Native sample identity under exactly one spectral-density convention",
+      "reference_index": 0,
+      "external_reference_id": "sdss_dr17_v5_13_2_4049_55591_0832",
+      "direct_index_note": "New reference; not a row of the frozen 9902-record input",
+      "cone_distance_arcsec": 1.7101179805539422
+    }
+  ]
+}

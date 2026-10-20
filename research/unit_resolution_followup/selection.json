@@ -1,0 +1,16 @@
+{
+  "selected_from_frozen_unresolved_records": 1579,
+  "prior_no_reference_records": 1286,
+  "prior_nonidentity_reference_records": 293,
+  "previously_unavailable_entities": 300,
+  "priority_raw_records": 302,
+  "cone_radius_arcmin": 0.5,
+  "method": "All SpecObjAll observations within 30 arcsec of the retained input coordinates; no sciencePrimary, spectral-class or colour filter. Candidate enumeration only: native-pixel identity will be required separately.",
+  "limits": "Finite search radius and retained-coordinate epochs can miss high-proper-motion observations. A positional hit does not validate the astrophysical association, original archive label or spectral-density units.",
+  "input_sha256": {
+    "research/precision/flux_convention_evidence.json": "00aef84a2e81fad091c68b372fbe83fe67e7648c979f6cf4c45725f103fe9fdb",
+    "results/screen_input_mwdd.json.gz": "b37732619b1e077d978d7ddae2ee6d367ddb9485b13298afed4e43bd25e5e129",
+    "research/outlier_followup/contact_sheet_index.csv": "fff13b5a2afcfd213dfbae5dbbe43df5c436d2628e59490c6ce10007227aa0f8"
+  },
+  "script_sha256": "20c352dc9f28eb1836273ada364dcf99744e74a1610b937409568dbc12c6bf7f"
+}

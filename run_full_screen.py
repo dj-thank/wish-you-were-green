@@ -1,10 +1,15 @@
-"""Run the frozen two-archive colour screen. No network access is required."""
+"""Run the unit-aware two-archive screen into a separate output directory.
+
+Frozen inputs are used exactly. Raw downloads are a separate explicit command.
+The legacy option exists only to reproduce the known-flawed historical screen.
+"""
 from pathlib import Path
 import os
 os.environ.setdefault('OPENBLAS_NUM_THREADS','1')
 os.environ.setdefault('OMP_NUM_THREADS','1')
 from project_io import load_json
-import json, time
+import argparse, json, time
+from functools import partial
 from concurrent.futures import ProcessPoolExecutor
 import numpy as np
 import pandas as pd
@@ -49,41 +54,45 @@ def sdss_records(mw):
                     'mwdd_match_sep_arcsec':float(sep.arcsec[j]),'archive_origin':'SDSS_DR17_direct'})
     return out
 
-def run(records,label):
+def run(records,label,output_dir=None,legacy_unverified_units=False):
+    output_dir=Path(output_dir) if output_dir is not None else ROOT/'results/validated_screen'
+    output_dir.mkdir(parents=True,exist_ok=True)
     start=time.time();rows=[]
     with ProcessPoolExecutor(max_workers=4) as pool:
-        for i,(r,result) in enumerate(zip(records,pool.map(analyze_record,records,chunksize=8)),1):
+        for i,(r,result) in enumerate(zip(records,pool.map(partial(analyze_record,legacy_unverified_units=legacy_unverified_units),records,chunksize=8)),1):
             result['archive_origin']=r.get('archive_origin','MWDD')
             rows.append(result)
             if i%500==0:print(label,i,'/',len(records),'elapsed_s',round(time.time()-start),flush=True)
     t=pd.DataFrame(rows)
-    t=annotate(t)
-    t.to_csv(ROOT/'results'/f'{label}_screen_annotated.csv',index=False)
-    t.to_csv(ROOT/'results'/f'{label}_screen.csv',index=False)
-    summarize(t).to_csv(ROOT/'results'/f'{label}_object_candidates.csv',index=False)
+    t=annotate(t,legacy_unverified_units=legacy_unverified_units)
+    t.to_csv(output_dir/f'{label}_screen_annotated.csv',index=False)
+    t.to_csv(output_dir/f'{label}_screen.csv',index=False)
+    summarize(t).to_csv(output_dir/f'{label}_object_candidates.csv',index=False)
     print(label,'DONE',len(t),'records',t.wdid.nunique(),'identifiers',round(time.time()-start),'s',flush=True)
     return t
 
 if __name__=='__main__':
-    mw=mwdd_records()
-    ss=sdss_records(mw)
-    # Freeze inputs independently of any subsequent database update.
-    (ROOT/'results/screen_input_mwdd.json').write_text(json.dumps(mw,ensure_ascii=False,indent=2))
-    (ROOT/'results/screen_input_sdss.json').write_text(json.dumps(ss,ensure_ascii=False,indent=2))
-    tables=[run(mw,'mwdd'),run(ss,'sdss')]
+    parser=argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--output-dir',type=Path,default=ROOT/'results/validated_screen')
+    parser.add_argument('--legacy-reproduction',action='store_true',help='Reproduce historical mixed-unit assumptions; not valid current discovery evidence')
+    args=parser.parse_args()
+    destination=args.output_dir.resolve()
+    if destination==(ROOT/'results').resolve():
+        parser.error('Choose a separate output directory; frozen research inputs/results must be preserved')
+    destination.mkdir(parents=True,exist_ok=True)
+    mw=load_json(ROOT/'results/screen_input_mwdd.json')
+    ss=load_json(ROOT/'results/screen_input_sdss.json')
+    tables=[run(mw,'mwdd',destination,args.legacy_reproduction),run(ss,'sdss',destination,args.legacy_reproduction)]
     combined=pd.concat(tables,ignore_index=True)
-    combined.to_csv(ROOT/'results/all_spectra_screen.csv',index=False)
-    summ=summarize(combined)
-    summ.to_csv(ROOT/'results/all_object_candidates.csv',index=False)
-    summary={'input_mwdd_spectra':len(mw),'input_mwdd_identifiers':len(set(r['wdid'] for r in mw)),
-             'input_sdss_spectra':len(ss),'input_sdss_identifiers':len(set(r['wdid'] for r in ss)),
-             'combined_spectrum_records':len(combined),'combined_identifiers_after_5arcsec_match':combined.wdid.nunique(),
+    combined.to_csv(destination/'all_spectra_screen.csv.gz',index=False,compression={'method':'gzip','mtime':0})
+    summarize(combined).to_csv(destination/'all_object_candidates.csv',index=False)
+    summary={'input_mwdd_spectra':len(mw),'input_sdss_spectra':len(ss),
+             'combined_spectrum_records':len(combined),
              'screen_eligible_records':int(combined.usable_screen.sum()),
-             'not_in_hollands2026_identifiers_eligible':len(summ),
-             'known_hollands_matched_records':int(combined.known_hollands_colour.sum()),
-             'calibrated_records':int(combined.calibrated.fillna(False).sum()),
-             'verified_source_format_records':int(combined.source_format_screen_ok.sum()),
-             'screen_definition':'SDSS/DESI/GaiaXP F_lambda source convention; CMF coverage>99.5%, wavelength gap<150A; valid gri tilt if available. This is not a quality-assured discovery catalogue.',
-             'id_count_caution':'5 arcsec cross-match may leave high-proper-motion duplicates; SDSS and MWDD may contain the same SDSS observation.'}
-    (ROOT/'results/screen_summary.json').write_text(json.dumps(summary,indent=2))
+             'status_counts':combined.status.value_counts().to_dict(),
+             'legacy_reproduction_only':args.legacy_reproduction,
+             'flux_convention_policy':'Require source-format evidence; mixed MWDD SDSS requires raw-SHA native-pixel matching. F_nu is converted before integration and recalibration.',
+             'identity_caution':'Frozen epoch-unpropagated 5 arcsec assignments are retained, not newly validated identities. Repeated archives are not independent observations.',
+             'screen_caution':'Exploratory colour eligibility, not global discovery significance or complete systematic-error control.'}
+    (destination/'screen_summary.json').write_text(json.dumps(summary,indent=2)+'\n')
     print(json.dumps(summary,indent=2),flush=True)

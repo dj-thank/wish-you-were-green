@@ -1,0 +1,13 @@
+{
+  "python_syntax_files": 6,
+  "target_epoch_rows": 2473,
+  "target_accepted_rows": 2327,
+  "accepted_duplicate_exposure_keys": 0,
+  "gaia_shortlist_rows": 27,
+  "j1323_linear_propagation_vs_astropy_arcsec": 2.566612240257175e-07,
+  "astropy_check_limitation": "Zero radial velocity; comparison validates proper-motion units and short-baseline approximation, not annual parallax or ZTF astrometric systematics.",
+  "figures_visually_reviewed": [
+    "results/ztf_primary_lightcurves.png",
+    "results/J1323_offset_event_review.png"
+  ]
+}

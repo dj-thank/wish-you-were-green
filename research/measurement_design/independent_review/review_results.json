@@ -1,0 +1,743 @@
+{
+  "status": "PASS",
+  "review_version": "independent_assembly_with_dual_bound_reporting_v2",
+  "scope": "Six predeclared J0429 cases: 400/800 A, 5% budget, 0.005 guard, measured PS1 griz boxes, JPLUS all ten covered bands / those ten plus PS1 / ideal XYZ. Feasible G-R branches only. Full branch census and infeasibility replay remain in the production verifier.",
+  "independence": "Shared frozen target loader, cleaned pixels, spline knots, response tables, SciPy and speclite. Separate matrix assembly, direct CIE trapezoidal quadrature, fresh synthetic flux integration, saved primal/dual checks and a newly solved dual-simplex LP on saved outer grids. This is a code/numerical review, not independent astronomical data or a separately developed atmosphere model.",
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1"
+  },
+  "summary": {
+    "declared_cases_replayed": 6,
+    "separate_continuous_spectra_checked": 12,
+    "largest_primal_residual": 7.006225460903792e-11,
+    "largest_dual_stationarity": 1.2184439004622738e-11,
+    "largest_absolute_duality_gap": 2.0702333076993984e-12,
+    "dual_reporting_fix_checked": true,
+    "numerical_zeros_suppressed_as_precision_requirements": true
+  },
+  "review_findings": [
+    "No sign error found in the two colour blocks, exact magnitude-to-flux PS1 boxes, free-coefficient duals or nonnegative distance bound.",
+    "The continuous coefficient-hull inner witness retains the original finite-grid outer dual lower bound; inner-space failure is not used to declare full-space infeasibility.",
+    "The earlier reporting review requested separate dual-lower and witness-upper half-widths. Current branch and summary fields use the lower side for the sufficient numerical separation condition, with zero at or below CHECK_TOL.",
+    "Guard 0.005 uses a fixed baseline linear-RGB scale. It is not a visual discrimination threshold or posterior probability.",
+    "A zero minimum supplies one common flux vector admitting both strict colours; it does not say that every future measurement is ambiguous.",
+    "The dual and continuous-bound residual tolerances are numerical checks, not interval-arithmetic certificates. Per-band boxes are declared hard constraints, not a calibrated simultaneous confidence region."
+  ],
+  "reviewed_file_sha256": {
+    "research/measurement_design/design_full.json": "7ebce807c18b9f975717c650fa223e71c2bc8223bd88b843ff75cbaa0ac23b49",
+    "research/measurement_design/DESIGN.md": "c32825b4b56789c9db4f268108cd3cc7d03fe4a5ef5e74240f34327b444eff32",
+    "research/measurement_design/profiles.py": "6ffd1e440370605354b03dbacb86a5825a801ce9363073b3f3db355466965990",
+    "research/measurement_design/fetch_profiles.py": "e72ad037ffdca5472134555243160ba462961af5e9d596e00f46561724470995",
+    "research/measurement_design/coupled_colour_sets.py": "e420559aff8a5f18ba03966cc80c50edd1e8e9ec30686c600c81ea51b9dbfbc4",
+    "research/measurement_design/run_design.py": "69a30d2405138b6c5e9dc930a01c8d7b9b2186fda4dd775ec9bef0aa5d3faaef",
+    "research/measurement_design/profile_manifest.json": "9c83b69d7f6615d24abc797f6c68ab762af4c35443be876671b581ec9ede09ea",
+    "colour_pipeline.py": "f11ddec97d2437cdbb32a8080e66a1a6a58b16be3807f5b6403fca4e45aa3994",
+    "research/calibration_followup/photometric_feasibility.py": "c4e5e3f9333c612697c2b55ecb97059c5cba0867f731470907234a8a527ffd3d",
+    "research/precision/photometric_nullspace.py": "4061f45958530b61011fe3fbdf415be7c51ec22a760c5db8f7fcb7afe7513c70",
+    "research/precision/candidate_recalibration/heldout_z.py": "9091d8788cdc1ebbc696397da844a01d9242ba2b8ef2c351a35de75d1b1a5db7",
+    "reference/CIE_xyz_1931_2deg.csv": "fa663e3535a7e0763a745993a1f0a192eb0275ac46ad2d1befd7626841e713c1",
+    "requirements-core.txt": "3e320fae538eb6b79fd53eeb90f49ed2b3c2adece7156c99689e067ef20f4406",
+    "research/precision/candidate_recalibration/derivative_manifest.json": "616fe0c42d9e54db5162213d49660b2274f517c13040c44e081adc364616a5d3",
+    "research/precision/candidate_recalibration/standardized_colours.csv": "ff398fe0f5a30fea7b76e11dd96f48e4007613a2471af7e746a545c9b77f5952",
+    "research/measurement_design/independent_review/run_review.py": "a5d25590716483bd6d5d3f40c2f09fd5832f67fd15dd2e2502044f1ad77b4e5a",
+    "research/precision/candidate_recalibration/3204436719718449280_DESI_PS1.npz": "fba9c03d1cfd3b7fd16c758bf0b21de9be8696da8796928f8e8b86fab50f6fda",
+    "research/measurement_design/sources/SkyMapper_SkyMapper.g.xml": "d0a542657876c7e5ffb0904a5ff163746dc424abe40f0f8dcdc870db8ab2acdc",
+    "research/measurement_design/sources/SkyMapper_SkyMapper.r.xml": "10e5fa0b4ae2c63a3d208ba15c51f8a23ae64efde7f675892f844f3734c99b87",
+    "research/measurement_design/sources/SkyMapper_SkyMapper.i.xml": "a196a0ced9cfd23998591e749736cbaa5da205ec1fe33dde5f23c12800ae04d8",
+    "research/measurement_design/sources/OAJ_JPLUS.J0378.xml": "1ea690e00cea2e75be91c0832d59184cdc0a8ea592e9d265cd48b6aef49d7435",
+    "research/measurement_design/sources/OAJ_JPLUS.J0395.xml": "8da62bbf668bfda95ccfcfac584f797a4824167b6be6a5a7c7611d8bc742f6ac",
+    "research/measurement_design/sources/OAJ_JPLUS.J0410.xml": "0e5c6189a7a47232df1f95eee5364ec689063a16f368cb0e03d9626b9b83c456",
+    "research/measurement_design/sources/OAJ_JPLUS.J0430.xml": "9150c972510a882878da0bd573ed29ddf5dc916790f5f8def57c951add933372",
+    "research/measurement_design/sources/OAJ_JPLUS.gSDSS.xml": "507b9a1060417c44cad70e59baf792a9eacaab7cf24dd94623ac08d889b42089",
+    "research/measurement_design/sources/OAJ_JPLUS.J0515.xml": "f2c251333bbd9ded6539d41adf187af4a10fb58028c8b331c69743522d5c695d",
+    "research/measurement_design/sources/OAJ_JPLUS.rSDSS.xml": "c7378811895ccd37c4866e61d27104e754566f2c19c60fe901a585d2294a6e8e",
+    "research/measurement_design/sources/OAJ_JPLUS.J0660.xml": "c5829e2027ccdbd243b23d2b2661cf327d673339c3328c35d26de0de03a53263",
+    "research/measurement_design/sources/OAJ_JPLUS.iSDSS.xml": "9a13af72e16e32db84abd7c889b684e3a881e9193d583407e6b4a55dacfddb73",
+    "research/measurement_design/sources/OAJ_JPLUS.J0861.xml": "235d9513d32efcd2979f1fee52ef87e13bbafc5b77435ef0698ce948d3e00a99",
+    "research/measurement_design/certificates/full_0034.npz": "9dcacbc6d80d8457ad4c896ff64408c78c31e323372f441c3d688e13ec9be39b",
+    "research/measurement_design/certificates/full_0040.npz": "da0b5a243c10f8a08ebd43d06912989cc4c17650f3c3657f189b821dd963a96c",
+    "research/measurement_design/certificates/full_0044.npz": "65b1113a96f2baf1f2e2af30e7f15001a7422c4a45cf4143e1cc3dfd34ac411d",
+    "research/measurement_design/certificates/full_0126.npz": "c5bd711ba0fbb66ed54e2403b9b09d799f002f2f1909128b070b56644551d58a",
+    "research/measurement_design/certificates/full_0132.npz": "00ce609293d810498585cc65c17fa1f8f16d5f13b2f245b25751f386ee7471e7",
+    "research/measurement_design/certificates/full_0136.npz": "f47678d35bfef6a99e72321cf8eb9ccb776a87147aaf6d43278357805b5837c1"
+  },
+  "response_metadata": {
+    "PS1": [
+      {
+        "name": "panstarrs-g",
+        "file_sha256": "b2c8c489c82008cc8f2a7960acd2c51b75dfa05578b14ead7f8b2f9cda4d8cd1",
+        "wavelength_response_sha256_little_endian_float64": "44e417a66367211f6ead11b8fdd77f2e4121fe1e6e098146a31007580f99f93b",
+        "minimum_A": 3889.999999999999,
+        "maximum_A": 5669.999999999999,
+        "source": "Tonry et al. 2012, ApJ 750, 99; distributed with speclite",
+        "source_url": "https://doi.org/10.1088/0004-637X/750/2/99"
+      },
+      {
+        "name": "panstarrs-r",
+        "file_sha256": "e088e0d1b065e8154c29d206bd6d6eeb90f179ae2d933e522966fadba5bfb7b0",
+        "wavelength_response_sha256_little_endian_float64": "194696146f7dd555ffec3debb05b6b39e63c9d9d3f55ff49064c75377ecaf490",
+        "minimum_A": 5279.999999999999,
+        "maximum_A": 7139.999999999999,
+        "source": "Tonry et al. 2012, ApJ 750, 99; distributed with speclite",
+        "source_url": "https://doi.org/10.1088/0004-637X/750/2/99"
+      },
+      {
+        "name": "panstarrs-i",
+        "file_sha256": "3fc445dcda1ec47a7e0b34cb6b6a0efa961e94db91670050b6de27f219a20650",
+        "wavelength_response_sha256_little_endian_float64": "479747a3ef757cebeb6cedfbd6872e4afda1ce7a7cae3ec0a4945b47a4d61ee6",
+        "minimum_A": 6639.999999999999,
+        "maximum_A": 8439.999999999998,
+        "source": "Tonry et al. 2012, ApJ 750, 99; distributed with speclite",
+        "source_url": "https://doi.org/10.1088/0004-637X/750/2/99"
+      },
+      {
+        "name": "panstarrs-z",
+        "file_sha256": "2e452150d6ede964bed13d1da79b5f31facd7739d0bb2bbeeb720d1b757d3b35",
+        "wavelength_response_sha256_little_endian_float64": "debbe090db47d05e62d7684e4e575b7a41a9a77b383988bb00241c59788f545e",
+        "minimum_A": 7839.999999999998,
+        "maximum_A": 9519.999999999998,
+        "source": "Tonry et al. 2012, ApJ 750, 99; distributed with speclite",
+        "source_url": "https://doi.org/10.1088/0004-637X/750/2/99"
+      }
+    ],
+    "additional": [
+      {
+        "filter_id": "SkyMapper/SkyMapper.g",
+        "speclite_name": "additional-SkyMapper_SkyMapper_g",
+        "raw_path": "research/measurement_design/sources/SkyMapper_SkyMapper.g.xml",
+        "raw_sha256": "d0a542657876c7e5ffb0904a5ff163746dc424abe40f0f8dcdc870db8ab2acdc",
+        "source_url": "https://svo2.cab.inta-csic.es/theory/fps/fps.php?ID=SkyMapper%2FSkyMapper.g",
+        "source_retrieved_utc": "2026-10-19T23:24:51.994455+00:00",
+        "detector_type": "photon_counting",
+        "wavelength_unit": "Angstrom",
+        "profile_reference": "http://adsabs.harvard.edu/abs/2011PASP..123..789B",
+        "description": "SkyMapper g normalized passband",
+        "raw_sample_count": 55,
+        "retained_raw_sample_count": 55,
+        "endpoint_closure_width_A": 1.0,
+        "added_zero_endpoints": [],
+        "minimum_A": 4000.0,
+        "maximum_A": 6700.0,
+        "effective_wavelength_A": 5148.05804496499,
+        "numeric_sha256": "6add03ddd3007cf4efdbe824cddd334e2fe9f7ed45ae926fa7920990f3ed67fa"
+      },
+      {
+        "filter_id": "SkyMapper/SkyMapper.r",
+        "speclite_name": "additional-SkyMapper_SkyMapper_r",
+        "raw_path": "research/measurement_design/sources/SkyMapper_SkyMapper.r.xml",
+        "raw_sha256": "10e5fa0b4ae2c63a3d208ba15c51f8a23ae64efde7f675892f844f3734c99b87",
+        "source_url": "https://svo2.cab.inta-csic.es/theory/fps/fps.php?ID=SkyMapper%2FSkyMapper.r",
+        "source_retrieved_utc": "2026-10-19T23:24:51.794829+00:00",
+        "detector_type": "photon_counting",
+        "wavelength_unit": "Angstrom",
+        "profile_reference": "http://adsabs.harvard.edu/abs/2011PASP..123..789B",
+        "description": "SkyMapper r normalized passband",
+        "raw_sample_count": 51,
+        "retained_raw_sample_count": 51,
+        "endpoint_closure_width_A": 1.0,
+        "added_zero_endpoints": [],
+        "minimum_A": 4800.0,
+        "maximum_A": 7300.0,
+        "effective_wavelength_A": 6194.571315405375,
+        "numeric_sha256": "86db89d9e1c8c7ebdb1f20225e00e3d131dc372a38517cfbce6cde1c27084c9e"
+      },
+      {
+        "filter_id": "SkyMapper/SkyMapper.i",
+        "speclite_name": "additional-SkyMapper_SkyMapper_i",
+        "raw_path": "research/measurement_design/sources/SkyMapper_SkyMapper.i.xml",
+        "raw_sha256": "a196a0ced9cfd23998591e749736cbaa5da205ec1fe33dde5f23c12800ae04d8",
+        "source_url": "https://svo2.cab.inta-csic.es/theory/fps/fps.php?ID=SkyMapper%2FSkyMapper.i",
+        "source_retrieved_utc": "2026-10-19T23:24:51.587535+00:00",
+        "detector_type": "photon_counting",
+        "wavelength_unit": "Angstrom",
+        "profile_reference": "http://adsabs.harvard.edu/abs/2011PASP..123..789B",
+        "description": "SkyMapper i normalized passband",
+        "raw_sample_count": 41,
+        "retained_raw_sample_count": 41,
+        "endpoint_closure_width_A": 1.0,
+        "added_zero_endpoints": [],
+        "minimum_A": 6800.0,
+        "maximum_A": 8800.0,
+        "effective_wavelength_A": 7799.164392641306,
+        "numeric_sha256": "fdc05bb51b02115edf9aa4a2fbccf8fe3949ab441427b6f4fd6fb21d3edfb5b4"
+      },
+      {
+        "filter_id": "OAJ/JPLUS.J0378",
+        "speclite_name": "additional-OAJ_JPLUS_J0378",
+        "raw_path": "research/measurement_design/sources/OAJ_JPLUS.J0378.xml",
+        "raw_sha256": "1ea690e00cea2e75be91c0832d59184cdc0a8ea592e9d265cd48b6aef49d7435",
+        "source_url": "https://svo2.cab.inta-csic.es/theory/fps/fps.php?ID=OAJ%2FJPLUS.J0378",
+        "source_retrieved_utc": "2026-10-19T23:24:52.033804+00:00",
+        "detector_type": "photon_counting",
+        "wavelength_unit": "Angstrom",
+        "profile_reference": "http://www.j-plus.es/survey/instrumentation",
+        "description": "J-PLUS  g J0378  (full transmission)",
+        "raw_sample_count": 271,
+        "retained_raw_sample_count": 271,
+        "endpoint_closure_width_A": 1.0,
+        "added_zero_endpoints": [
+          [
+            3648.0,
+            0.0
+          ],
+          [
+            3920.0,
+            0.0
+          ]
+        ],
+        "minimum_A": 3648.0,
+        "maximum_A": 3920.0,
+        "effective_wavelength_A": 3783.2083250013247,
+        "numeric_sha256": "f474ad1b5b01ad50a8878d0ef8291c8cc40e20789508cec876de988400289b9a"
+      },
+      {
+        "filter_id": "OAJ/JPLUS.J0395",
+        "speclite_name": "additional-OAJ_JPLUS_J0395",
+        "raw_path": "research/measurement_design/sources/OAJ_JPLUS.J0395.xml",
+        "raw_sha256": "8da62bbf668bfda95ccfcfac584f797a4824167b6be6a5a7c7611d8bc742f6ac",
+        "source_url": "https://svo2.cab.inta-csic.es/theory/fps/fps.php?ID=OAJ%2FJPLUS.J0395",
+        "source_retrieved_utc": "2026-10-19T23:24:52.197824+00:00",
+        "detector_type": "photon_counting",
+        "wavelength_unit": "Angstrom",
+        "profile_reference": "http://www.j-plus.es/survey/instrumentation",
+        "description": "J-PLUS  g J0395  (full transmission)",
+        "raw_sample_count": 176,
+        "retained_raw_sample_count": 176,
+        "endpoint_closure_width_A": 1.0,
+        "added_zero_endpoints": [
+          [
+            3852.0,
+            0.0
+          ],
+          [
+            4029.0,
+            0.0
+          ]
+        ],
+        "minimum_A": 3852.0,
+        "maximum_A": 4029.0,
+        "effective_wavelength_A": 3939.7181023561798,
+        "numeric_sha256": "527153a1d428000d0aa19c6f0de0d8e1db38e1fa475f86aa3a1a502216ee7f0f"
+      },
+      {
+        "filter_id": "OAJ/JPLUS.J0410",
+        "speclite_name": "additional-OAJ_JPLUS_J0410",
+        "raw_path": "research/measurement_design/sources/OAJ_JPLUS.J0410.xml",
+        "raw_sha256": "0e5c6189a7a47232df1f95eee5364ec689063a16f368cb0e03d9626b9b83c456",
+        "source_url": "https://svo2.cab.inta-csic.es/theory/fps/fps.php?ID=OAJ%2FJPLUS.J0410",
+        "source_retrieved_utc": "2026-10-19T23:24:52.127812+00:00",
+        "detector_type": "photon_counting",
+        "wavelength_unit": "Angstrom",
+        "profile_reference": "http://www.j-plus.es/survey/instrumentation",
+        "description": "J-PLUS  g J0410  (full transmission)",
+        "raw_sample_count": 349,
+        "retained_raw_sample_count": 349,
+        "endpoint_closure_width_A": 1.0,
+        "added_zero_endpoints": [
+          [
+            3939.0,
+            0.0
+          ],
+          [
+            4289.0,
+            0.0
+          ]
+        ],
+        "minimum_A": 3939.0,
+        "maximum_A": 4289.0,
+        "effective_wavelength_A": 4109.441765913193,
+        "numeric_sha256": "88295e33e31d6d4b09d89ab6793a229246733cb00734c6967919a6168060b3af"
+      },
+      {
+        "filter_id": "OAJ/JPLUS.J0430",
+        "speclite_name": "additional-OAJ_JPLUS_J0430",
+        "raw_path": "research/measurement_design/sources/OAJ_JPLUS.J0430.xml",
+        "raw_sha256": "9150c972510a882878da0bd573ed29ddf5dc916790f5f8def57c951add933372",
+        "source_url": "https://svo2.cab.inta-csic.es/theory/fps/fps.php?ID=OAJ%2FJPLUS.J0430",
+        "source_retrieved_utc": "2026-10-19T23:24:52.377979+00:00",
+        "detector_type": "photon_counting",
+        "wavelength_unit": "Angstrom",
+        "profile_reference": "http://www.j-plus.es/survey/instrumentation",
+        "description": "J-PLUS  g J0430  (full transmission)",
+        "raw_sample_count": 356,
+        "retained_raw_sample_count": 356,
+        "endpoint_closure_width_A": 1.0,
+        "added_zero_endpoints": [
+          [
+            4134.0,
+            0.0
+          ],
+          [
+            4491.0,
+            0.0
+          ]
+        ],
+        "minimum_A": 4134.0,
+        "maximum_A": 4491.0,
+        "effective_wavelength_A": 4304.549538252378,
+        "numeric_sha256": "74a0c558192452485ad9ab08d0d72ad3ce5d4072b7a983b0af4194206d039739"
+      },
+      {
+        "filter_id": "OAJ/JPLUS.gSDSS",
+        "speclite_name": "additional-OAJ_JPLUS_gSDSS",
+        "raw_path": "research/measurement_design/sources/OAJ_JPLUS.gSDSS.xml",
+        "raw_sha256": "507b9a1060417c44cad70e59baf792a9eacaab7cf24dd94623ac08d889b42089",
+        "source_url": "https://svo2.cab.inta-csic.es/theory/fps/fps.php?ID=OAJ%2FJPLUS.gSDSS",
+        "source_retrieved_utc": "2026-10-19T23:24:52.302863+00:00",
+        "detector_type": "photon_counting",
+        "wavelength_unit": "Angstrom",
+        "profile_reference": "http://www.j-plus.es/survey/instrumentation",
+        "description": "J-PLUS  g SDSS-like  (full transmission)",
+        "raw_sample_count": 1787,
+        "retained_raw_sample_count": 1787,
+        "endpoint_closure_width_A": 1.0,
+        "added_zero_endpoints": [
+          [
+            3860.0,
+            0.0
+          ],
+          [
+            5648.0,
+            0.0
+          ]
+        ],
+        "minimum_A": 3860.0,
+        "maximum_A": 5648.0,
+        "effective_wavelength_A": 4849.263815448544,
+        "numeric_sha256": "b6c77b091d9fd99b4c9c1c9b067c075621d2e938189762ef1efa6d3bc10386c5"
+      },
+      {
+        "filter_id": "OAJ/JPLUS.J0515",
+        "speclite_name": "additional-OAJ_JPLUS_J0515",
+        "raw_path": "research/measurement_design/sources/OAJ_JPLUS.J0515.xml",
+        "raw_sha256": "f2c251333bbd9ded6539d41adf187af4a10fb58028c8b331c69743522d5c695d",
+        "source_url": "https://svo2.cab.inta-csic.es/theory/fps/fps.php?ID=OAJ%2FJPLUS.J0515",
+        "source_retrieved_utc": "2026-10-19T23:24:52.385204+00:00",
+        "detector_type": "photon_counting",
+        "wavelength_unit": "Angstrom",
+        "profile_reference": "http://www.j-plus.es/survey/instrumentation",
+        "description": "J-PLUS  g J0515  (full transmission)",
+        "raw_sample_count": 306,
+        "retained_raw_sample_count": 306,
+        "endpoint_closure_width_A": 1.0,
+        "added_zero_endpoints": [
+          [
+            4992.0,
+            0.0
+          ],
+          [
+            5299.0,
+            0.0
+          ]
+        ],
+        "minimum_A": 4992.0,
+        "maximum_A": 5299.0,
+        "effective_wavelength_A": 5141.962503234963,
+        "numeric_sha256": "27ed579c7a04c4932d286aaf08b8dcb35ac4e41bf262595de5a9e0dcca7961a0"
+      },
+      {
+        "filter_id": "OAJ/JPLUS.rSDSS",
+        "speclite_name": "additional-OAJ_JPLUS_rSDSS",
+        "raw_path": "research/measurement_design/sources/OAJ_JPLUS.rSDSS.xml",
+        "raw_sha256": "c7378811895ccd37c4866e61d27104e754566f2c19c60fe901a585d2294a6e8e",
+        "source_url": "https://svo2.cab.inta-csic.es/theory/fps/fps.php?ID=OAJ%2FJPLUS.rSDSS",
+        "source_retrieved_utc": "2026-10-19T23:24:52.471368+00:00",
+        "detector_type": "photon_counting",
+        "wavelength_unit": "Angstrom",
+        "profile_reference": "http://www.j-plus.es/survey/instrumentation",
+        "description": "J-PLUS  r SDSS-like  (full transmission)",
+        "raw_sample_count": 1866,
+        "retained_raw_sample_count": 1866,
+        "endpoint_closure_width_A": 1.0,
+        "added_zero_endpoints": [
+          [
+            5315.0,
+            0.0
+          ],
+          [
+            7182.0,
+            0.0
+          ]
+        ],
+        "minimum_A": 5315.0,
+        "maximum_A": 7182.0,
+        "effective_wavelength_A": 6302.0855068335995,
+        "numeric_sha256": "6e649958896607f22ce9d42f8666b5fccd98f1282321738ccf6016ca7e0f3b31"
+      },
+      {
+        "filter_id": "OAJ/JPLUS.J0660",
+        "speclite_name": "additional-OAJ_JPLUS_J0660",
+        "raw_path": "research/measurement_design/sources/OAJ_JPLUS.J0660.xml",
+        "raw_sha256": "c5829e2027ccdbd243b23d2b2661cf327d673339c3328c35d26de0de03a53263",
+        "source_url": "https://svo2.cab.inta-csic.es/theory/fps/fps.php?ID=OAJ%2FJPLUS.J0660",
+        "source_retrieved_utc": "2026-10-19T23:24:52.552648+00:00",
+        "detector_type": "photon_counting",
+        "wavelength_unit": "Angstrom",
+        "profile_reference": "http://www.j-plus.es/survey/instrumentation",
+        "description": "J-PLUS  g J0660  (full transmission)",
+        "raw_sample_count": 252,
+        "retained_raw_sample_count": 252,
+        "endpoint_closure_width_A": 1.0,
+        "added_zero_endpoints": [
+          [
+            6487.0,
+            0.0
+          ],
+          [
+            6740.0,
+            0.0
+          ]
+        ],
+        "minimum_A": 6487.0,
+        "maximum_A": 6740.0,
+        "effective_wavelength_A": 6604.334843890502,
+        "numeric_sha256": "d02eca9946d3fe87c2307d289b3288e0835c02c576bfdde6ef230afd95f7bca3"
+      },
+      {
+        "filter_id": "OAJ/JPLUS.iSDSS",
+        "speclite_name": "additional-OAJ_JPLUS_iSDSS",
+        "raw_path": "research/measurement_design/sources/OAJ_JPLUS.iSDSS.xml",
+        "raw_sha256": "9a13af72e16e32db84abd7c889b684e3a881e9193d583407e6b4a55dacfddb73",
+        "source_url": "https://svo2.cab.inta-csic.es/theory/fps/fps.php?ID=OAJ%2FJPLUS.iSDSS",
+        "source_retrieved_utc": "2026-10-19T23:24:52.821569+00:00",
+        "detector_type": "photon_counting",
+        "wavelength_unit": "Angstrom",
+        "profile_reference": "http://www.j-plus.es/survey/instrumentation",
+        "description": "J-PLUS  i SDSS-like  (full transmission)",
+        "raw_sample_count": 2114,
+        "retained_raw_sample_count": 2114,
+        "endpoint_closure_width_A": 1.0,
+        "added_zero_endpoints": [
+          [
+            6609.0,
+            0.0
+          ],
+          [
+            8724.0,
+            0.0
+          ]
+        ],
+        "minimum_A": 6609.0,
+        "maximum_A": 8724.0,
+        "effective_wavelength_A": 7694.364039356176,
+        "numeric_sha256": "eb9c8692c2a810d57921b12d7fb0b28e10ff18d269f37261392643583b929810"
+      },
+      {
+        "filter_id": "OAJ/JPLUS.J0861",
+        "speclite_name": "additional-OAJ_JPLUS_J0861",
+        "raw_path": "research/measurement_design/sources/OAJ_JPLUS.J0861.xml",
+        "raw_sha256": "235d9513d32efcd2979f1fee52ef87e13bbafc5b77435ef0698ce948d3e00a99",
+        "source_url": "https://svo2.cab.inta-csic.es/theory/fps/fps.php?ID=OAJ%2FJPLUS.J0861",
+        "source_retrieved_utc": "2026-10-19T23:24:52.651091+00:00",
+        "detector_type": "photon_counting",
+        "wavelength_unit": "Angstrom",
+        "profile_reference": "http://www.j-plus.es/survey/instrumentation",
+        "description": "J-PLUS  g J0861  (full transmission)",
+        "raw_sample_count": 666,
+        "retained_raw_sample_count": 666,
+        "endpoint_closure_width_A": 1.0,
+        "added_zero_endpoints": [
+          [
+            8288.0,
+            0.0
+          ],
+          [
+            8955.0,
+            0.0
+          ]
+        ],
+        "minimum_A": 8288.0,
+        "maximum_A": 8955.0,
+        "effective_wavelength_A": 8613.100166891674,
+        "numeric_sha256": "ef943786b979b67101ee470091296d6298203894a4dbf098afdda7d2e4ab5fe3"
+      }
+    ]
+  },
+  "checks": [
+    {
+      "spacing_A": 400,
+      "proposal": "JPLUS_all_covered",
+      "proposed_labels": [
+        "OAJ/JPLUS.J0378",
+        "OAJ/JPLUS.J0395",
+        "OAJ/JPLUS.J0410",
+        "OAJ/JPLUS.J0430",
+        "OAJ/JPLUS.gSDSS",
+        "OAJ/JPLUS.J0515",
+        "OAJ/JPLUS.rSDSS",
+        "OAJ/JPLUS.J0660",
+        "OAJ/JPLUS.iSDSS",
+        "OAJ/JPLUS.J0861"
+      ],
+      "branch": "G-R",
+      "fresh_outer_lp_objective": 0.0,
+      "saved_objective": 0.0,
+      "independent_dual_objective": 0.0,
+      "direct_witness_distance": 6.661338147750939e-16,
+      "dual_lower_bound_half_width": 0.0,
+      "witness_upper_bound_half_width": 3.3306690738754696e-16,
+      "sufficient_half_width_at_check_tolerance": 0.0,
+      "numerically_separated_at_check_tolerance": false,
+      "primal_residual": 1.7007228958476617e-14,
+      "dual_stationarity": 0.0,
+      "duality_gap": 0.0,
+      "witnesses": [
+        {
+          "role": "green",
+          "continuous_supremum": 0.05000000000000059,
+          "maximum_box_violation_mag": 0.0,
+          "channels": [
+            0.004999999999988624,
+            0.22978723534747947
+          ]
+        },
+        {
+          "role": "G-R",
+          "continuous_supremum": 0.05,
+          "maximum_box_violation_mag": 1.6774776012695725e-15,
+          "channels": [
+            -0.005000000000013424,
+            0.22971100482559387
+          ]
+        }
+      ]
+    },
+    {
+      "spacing_A": 400,
+      "proposal": "PS1_plus_JPLUS_all",
+      "proposed_labels": [
+        "PS1/g",
+        "PS1/r",
+        "PS1/i",
+        "PS1/z",
+        "OAJ/JPLUS.J0378",
+        "OAJ/JPLUS.J0395",
+        "OAJ/JPLUS.J0410",
+        "OAJ/JPLUS.J0430",
+        "OAJ/JPLUS.gSDSS",
+        "OAJ/JPLUS.J0515",
+        "OAJ/JPLUS.rSDSS",
+        "OAJ/JPLUS.J0660",
+        "OAJ/JPLUS.iSDSS",
+        "OAJ/JPLUS.J0861"
+      ],
+      "branch": "G-R",
+      "fresh_outer_lp_objective": 0.0,
+      "saved_objective": 0.0,
+      "independent_dual_objective": 0.0,
+      "direct_witness_distance": 1.0326628441248431e-11,
+      "dual_lower_bound_half_width": 0.0,
+      "witness_upper_bound_half_width": 5.1633142206242155e-12,
+      "sufficient_half_width_at_check_tolerance": 0.0,
+      "numerically_separated_at_check_tolerance": false,
+      "primal_residual": 7.006225460903792e-11,
+      "dual_stationarity": 0.0,
+      "duality_gap": 0.0,
+      "witnesses": [
+        {
+          "role": "green",
+          "continuous_supremum": 0.05000000082721391,
+          "maximum_box_violation_mag": 2.2602144114647338e-11,
+          "channels": [
+            0.004999999999985998,
+            0.23616362653097536
+          ]
+        },
+        {
+          "role": "G-R",
+          "continuous_supremum": 0.050000000054629117,
+          "maximum_box_violation_mag": 3.4063198442457754e-11,
+          "channels": [
+            -0.0050000000000137166,
+            0.22793169589750897
+          ]
+        }
+      ]
+    },
+    {
+      "spacing_A": 400,
+      "proposal": "ideal_XYZ",
+      "proposed_labels": [
+        "ideal_X",
+        "ideal_Y",
+        "ideal_Z"
+      ],
+      "branch": "G-R",
+      "fresh_outer_lp_objective": 0.001349300853148193,
+      "saved_objective": 0.0013493008551408578,
+      "independent_dual_objective": 0.0013493008530706244,
+      "direct_witness_distance": 0.001349300875576942,
+      "dual_lower_bound_half_width": 0.0006746504265353122,
+      "witness_upper_bound_half_width": 0.000674650437788471,
+      "sufficient_half_width_at_check_tolerance": 0.0006746504265353122,
+      "numerically_separated_at_check_tolerance": true,
+      "primal_residual": 2.0430731759168985e-11,
+      "dual_stationarity": 1.2184439004622738e-11,
+      "duality_gap": 2.0702333076993984e-12,
+      "witnesses": [
+        {
+          "role": "green",
+          "continuous_supremum": 0.05000000000000001,
+          "maximum_box_violation_mag": 1.6774776012695725e-15,
+          "channels": [
+            0.005000000000017217,
+            0.23293467820013422
+          ]
+        },
+        {
+          "role": "G-R",
+          "continuous_supremum": 0.05,
+          "maximum_box_violation_mag": 1.6774776012695725e-15,
+          "channels": [
+            -0.0050000000000246575,
+            0.23013919111602102
+          ]
+        }
+      ]
+    },
+    {
+      "spacing_A": 800,
+      "proposal": "JPLUS_all_covered",
+      "proposed_labels": [
+        "OAJ/JPLUS.J0378",
+        "OAJ/JPLUS.J0395",
+        "OAJ/JPLUS.J0410",
+        "OAJ/JPLUS.J0430",
+        "OAJ/JPLUS.gSDSS",
+        "OAJ/JPLUS.J0515",
+        "OAJ/JPLUS.rSDSS",
+        "OAJ/JPLUS.J0660",
+        "OAJ/JPLUS.iSDSS",
+        "OAJ/JPLUS.J0861"
+      ],
+      "branch": "G-R",
+      "fresh_outer_lp_objective": 0.0025928294898269247,
+      "saved_objective": 0.0025928294898279027,
+      "independent_dual_objective": 0.002592829489827888,
+      "direct_witness_distance": 0.0025928294898280857,
+      "dual_lower_bound_half_width": 0.001296414744913944,
+      "witness_upper_bound_half_width": 0.0012964147449140428,
+      "sufficient_half_width_at_check_tolerance": 0.001296414744913944,
+      "numerically_separated_at_check_tolerance": true,
+      "primal_residual": 1.2373504998386409e-12,
+      "dual_stationarity": 7.87422828718978e-15,
+      "duality_gap": 1.474514954580286e-17,
+      "witnesses": [
+        {
+          "role": "green",
+          "continuous_supremum": 0.05000000164791562,
+          "maximum_box_violation_mag": 0.0,
+          "channels": [
+            0.004999999999990521,
+            0.2384003178976119
+          ]
+        },
+        {
+          "role": "G-R",
+          "continuous_supremum": 0.050000001249728025,
+          "maximum_box_violation_mag": 1.3746798838143448e-12,
+          "channels": [
+            -0.005000000000005109,
+            0.23767857005421
+          ]
+        }
+      ]
+    },
+    {
+      "spacing_A": 800,
+      "proposal": "PS1_plus_JPLUS_all",
+      "proposed_labels": [
+        "PS1/g",
+        "PS1/r",
+        "PS1/i",
+        "PS1/z",
+        "OAJ/JPLUS.J0378",
+        "OAJ/JPLUS.J0395",
+        "OAJ/JPLUS.J0410",
+        "OAJ/JPLUS.J0430",
+        "OAJ/JPLUS.gSDSS",
+        "OAJ/JPLUS.J0515",
+        "OAJ/JPLUS.rSDSS",
+        "OAJ/JPLUS.J0660",
+        "OAJ/JPLUS.iSDSS",
+        "OAJ/JPLUS.J0861"
+      ],
+      "branch": "G-R",
+      "fresh_outer_lp_objective": 0.003028430482610375,
+      "saved_objective": 0.003028430482611265,
+      "independent_dual_objective": 0.0030284304826111823,
+      "direct_witness_distance": 0.003028430482611588,
+      "dual_lower_bound_half_width": 0.0015142152413055911,
+      "witness_upper_bound_half_width": 0.001514215241305794,
+      "sufficient_half_width_at_check_tolerance": 0.0015142152413055911,
+      "numerically_separated_at_check_tolerance": true,
+      "primal_residual": 1.0294369523489166e-12,
+      "dual_stationarity": 3.263155158451858e-12,
+      "duality_gap": 8.283304597789254e-17,
+      "witnesses": [
+        {
+          "role": "green",
+          "continuous_supremum": 0.05000000159040736,
+          "maximum_box_violation_mag": 0.0,
+          "channels": [
+            0.005000000000007443,
+            0.24111514178039747
+          ]
+        },
+        {
+          "role": "G-R",
+          "continuous_supremum": 0.05000000124226436,
+          "maximum_box_violation_mag": 1.1437534946923122e-12,
+          "channels": [
+            -0.004999999999996064,
+            0.2391612023140333
+          ]
+        }
+      ]
+    },
+    {
+      "spacing_A": 800,
+      "proposal": "ideal_XYZ",
+      "proposed_labels": [
+        "ideal_X",
+        "ideal_Y",
+        "ideal_Z"
+      ],
+      "branch": "G-R",
+      "fresh_outer_lp_objective": 0.0013493008563592909,
+      "saved_objective": 0.0013493008563593056,
+      "independent_dual_objective": 0.001349300856359304,
+      "direct_witness_distance": 0.001349300856361313,
+      "dual_lower_bound_half_width": 0.000674650428179652,
+      "witness_upper_bound_half_width": 0.0006746504281806565,
+      "sufficient_half_width_at_check_tolerance": 0.000674650428179652,
+      "numerically_separated_at_check_tolerance": true,
+      "primal_residual": 4.937224934442597e-11,
+      "dual_stationarity": 1.4363510381087963e-15,
+      "duality_gap": 1.5178830414797062e-18,
+      "witnesses": [
+        {
+          "role": "green",
+          "continuous_supremum": 0.050000001257640994,
+          "maximum_box_violation_mag": 1.6774776012695725e-15,
+          "channels": [
+            0.004999999999978558,
+            0.2346068730392654
+          ]
+        },
+        {
+          "role": "G-R",
+          "continuous_supremum": 0.05000000108973309,
+          "maximum_box_violation_mag": 1.6774776012695725e-15,
+          "channels": [
+            -0.005000000000009631,
+            0.2318113859356608
+          ]
+        }
+      ]
+    }
+  ],
+  "completed_utc": "2026-10-20T00:18:20.920407+00:00"
+}

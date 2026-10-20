@@ -1,0 +1,1106 @@
+{
+  "status": "PASS",
+  "selection": "Root-requested actual visual flags at pages 27/2, 30/9 and 29/13; no population sampling claim.",
+  "records": [
+    {
+      "row_index": 7607,
+      "entity_id": "gaia:4518692348609283712",
+      "source_id": "4518692348609283712",
+      "name": "SDSS J185040.71+200056.2",
+      "reference_id": "sdss_dr17_26_2833_54650_0374",
+      "MWDD_source_url": "https://www.montrealwhitedwarfdatabase.org/WDs/SDSS%20J185040.71%2B200056.2/spect.SDSS%20J185040.71%2B200056.2.sdss.txt",
+      "MWDD_raw_sha256": "90cf6215d4ea0702171b1d91b8927c94071a1a13099b8f20049d677aee17dfcc",
+      "reference_source_url": "https://data.sdss.org/sas/dr17/sdss/spectro/redux/26/spectra/lite/2833/spec-2833-54650-0374.fits",
+      "reference_raw_sha256": "dc2575b3e1546376fc6ce314f06935169f3d505fdc397e904e861cc1b5ed5c10",
+      "header": {
+        "BUNIT": "1E-17 erg/cm^2/s/Ang",
+        "PLATEID": 2833,
+        "MJD": 54650,
+        "FIBERID": 374,
+        "RUN2D": null,
+        "PLUG_RA": 282.66962,
+        "PLUG_DEC": 20.015609,
+        "VACUUM": true
+      },
+      "automatic_SDSS_quality": {
+        "CLASS": "STAR",
+        "SUBCLASS": "WD",
+        "Z": -0.0003865776816383004,
+        "ZWARNING": 0,
+        "SN_MEDIAN_ALL": 15.943562507629395,
+        "PLATEQUALITY": "good",
+        "SPECOBJID": "   3189777318436431872"
+      },
+      "MWDD_frozen_class": "DAZH",
+      "MWDD_frozen_temperature_K_metadata_only": 13722.0,
+      "MWDD_live_source_columns": {
+        "Spectral type": {
+          "Simbad": "DAZH",
+          "Kleinman et al. 2013": "DAZH"
+        },
+        "Effective temperature": {
+          "Kleinman et al. 2013": "13722.0 (2342)"
+        },
+        "log(g)": {
+          "Kleinman et al. 2013": "5.80 (0.2)"
+        }
+      },
+      "native_identity": {
+        "MWDD_input_convention": "fnu",
+        "direct_convention": "flambda",
+        "maximum_wavelength_difference_A": 1.8189894035458565e-12,
+        "wavelength_independent_scale": 0.9999998599030997,
+        "maximum_fractional_shape_error_after_scale": 4.440892098500626e-16,
+        "same_observation_not_independent_confirmation": true
+      },
+      "native_visible_quality": {
+        "pixels": 3373,
+        "nonpositive_ivar_pixels": 0,
+        "negative_flux_pixels": 7,
+        "positive_ivar_median_pixel_snr": 16.7015952581825,
+        "AND_nonzero_pixels": 41,
+        "OR_nonzero_pixels": 487,
+        "AND_bits": [
+          {
+            "bit": 16,
+            "name": "NEARBADPIXEL",
+            "pixels": 1
+          },
+          {
+            "bit": 23,
+            "name": "BRIGHTSKY",
+            "pixels": 40
+          }
+        ],
+        "OR_bits": [
+          {
+            "bit": 16,
+            "name": "NEARBADPIXEL",
+            "pixels": 97
+          },
+          {
+            "bit": 17,
+            "name": "LOWFLAT",
+            "pixels": 6
+          },
+          {
+            "bit": 18,
+            "name": "FULLREJECT",
+            "pixels": 8
+          },
+          {
+            "bit": 19,
+            "name": "PARTIALREJECT",
+            "pixels": 8
+          },
+          {
+            "bit": 20,
+            "name": "SCATTEREDLIGHT",
+            "pixels": 44
+          },
+          {
+            "bit": 23,
+            "name": "BRIGHTSKY",
+            "pixels": 190
+          },
+          {
+            "bit": 25,
+            "name": "COMBINEREJ",
+            "pixels": 193
+          },
+          {
+            "bit": 27,
+            "name": "BADSKYCHI",
+            "pixels": 13
+          }
+        ]
+      },
+      "windows": [
+        {
+          "visual_region": "first resolved blue depression",
+          "lower_A": 3890,
+          "upper_A": 4020,
+          "native_pixels": 143,
+          "positive_ivar_pixels": 143,
+          "AND_zero_positive_ivar_pixels": 143,
+          "AND_bits": [],
+          "OR_bits": [
+            {
+              "bit": 20,
+              "name": "SCATTEREDLIGHT",
+              "pixels": 6
+            },
+            {
+              "bit": 25,
+              "name": "COMBINEREJ",
+              "pixels": 8
+            }
+          ],
+          "minimum_10A_mean_bin_centre_A": 3965.0,
+          "minimum_10A_mean_over_normalization": 0.7549833043978618,
+          "maximum_10A_mean_bin_centre_A": 3995.0,
+          "maximum_10A_mean_over_normalization": 1.2440392078843912,
+          "locator_limit": "Predeclared visual window and 10 A arithmetic means; not a fitted transition centre, equivalent width, line identification, or statistical detection."
+        },
+        {
+          "visual_region": "second resolved blue depression",
+          "lower_A": 4020,
+          "upper_A": 4200,
+          "native_pixels": 190,
+          "positive_ivar_pixels": 190,
+          "AND_zero_positive_ivar_pixels": 190,
+          "AND_bits": [],
+          "OR_bits": [
+            {
+              "bit": 20,
+              "name": "SCATTEREDLIGHT",
+              "pixels": 2
+            },
+            {
+              "bit": 25,
+              "name": "COMBINEREJ",
+              "pixels": 16
+            }
+          ],
+          "minimum_10A_mean_bin_centre_A": 4105.0,
+          "minimum_10A_mean_over_normalization": 0.46440459781235827,
+          "maximum_10A_mean_bin_centre_A": 4195.0,
+          "maximum_10A_mean_over_normalization": 1.2895789533475963,
+          "locator_limit": "Predeclared visual window and 10 A arithmetic means; not a fitted transition centre, equivalent width, line identification, or statistical detection."
+        },
+        {
+          "visual_region": "third resolved blue depression",
+          "lower_A": 4200,
+          "upper_A": 4500,
+          "native_pixels": 300,
+          "positive_ivar_pixels": 300,
+          "AND_zero_positive_ivar_pixels": 299,
+          "AND_bits": [
+            {
+              "bit": 16,
+              "name": "NEARBADPIXEL",
+              "pixels": 1
+            }
+          ],
+          "OR_bits": [
+            {
+              "bit": 16,
+              "name": "NEARBADPIXEL",
+              "pixels": 5
+            },
+            {
+              "bit": 25,
+              "name": "COMBINEREJ",
+              "pixels": 12
+            }
+          ],
+          "minimum_10A_mean_bin_centre_A": 4345.0,
+          "minimum_10A_mean_over_normalization": 0.5610608256135464,
+          "maximum_10A_mean_bin_centre_A": 4215.0,
+          "maximum_10A_mean_over_normalization": 1.2915463338663242,
+          "locator_limit": "Predeclared visual window and 10 A arithmetic means; not a fitted transition centre, equivalent width, line identification, or statistical detection."
+        },
+        {
+          "visual_region": "fourth resolved blue depression",
+          "lower_A": 4700,
+          "upper_A": 5050,
+          "native_pixels": 312,
+          "positive_ivar_pixels": 312,
+          "AND_zero_positive_ivar_pixels": 312,
+          "AND_bits": [],
+          "OR_bits": [
+            {
+              "bit": 16,
+              "name": "NEARBADPIXEL",
+              "pixels": 6
+            },
+            {
+              "bit": 18,
+              "name": "FULLREJECT",
+              "pixels": 6
+            },
+            {
+              "bit": 19,
+              "name": "PARTIALREJECT",
+              "pixels": 6
+            },
+            {
+              "bit": 20,
+              "name": "SCATTEREDLIGHT",
+              "pixels": 6
+            },
+            {
+              "bit": 25,
+              "name": "COMBINEREJ",
+              "pixels": 7
+            }
+          ],
+          "minimum_10A_mean_bin_centre_A": 4865.0,
+          "minimum_10A_mean_over_normalization": 0.5666694070873153,
+          "maximum_10A_mean_bin_centre_A": 4725.0,
+          "maximum_10A_mean_over_normalization": 1.189428345743986,
+          "locator_limit": "Predeclared visual window and 10 A arithmetic means; not a fitted transition centre, equivalent width, line identification, or statistical detection."
+        },
+        {
+          "visual_region": "middle-red depression",
+          "lower_A": 5750,
+          "upper_A": 6040,
+          "native_pixels": 214,
+          "positive_ivar_pixels": 214,
+          "AND_zero_positive_ivar_pixels": 214,
+          "AND_bits": [],
+          "OR_bits": [
+            {
+              "bit": 16,
+              "name": "NEARBADPIXEL",
+              "pixels": 45
+            },
+            {
+              "bit": 17,
+              "name": "LOWFLAT",
+              "pixels": 6
+            },
+            {
+              "bit": 20,
+              "name": "SCATTEREDLIGHT",
+              "pixels": 6
+            },
+            {
+              "bit": 23,
+              "name": "BRIGHTSKY",
+              "pixels": 9
+            },
+            {
+              "bit": 25,
+              "name": "COMBINEREJ",
+              "pixels": 87
+            }
+          ],
+          "minimum_10A_mean_bin_centre_A": 5895.0,
+          "minimum_10A_mean_over_normalization": 0.1324781596858626,
+          "maximum_10A_mean_bin_centre_A": 5755.0,
+          "maximum_10A_mean_over_normalization": 0.9590459648358939,
+          "locator_limit": "Predeclared visual window and 10 A arithmetic means; not a fitted transition centre, equivalent width, line identification, or statistical detection."
+        },
+        {
+          "visual_region": "red depression",
+          "lower_A": 6400,
+          "upper_A": 6710,
+          "native_pixels": 206,
+          "positive_ivar_pixels": 206,
+          "AND_zero_positive_ivar_pixels": 206,
+          "AND_bits": [],
+          "OR_bits": [
+            {
+              "bit": 25,
+              "name": "COMBINEREJ",
+              "pixels": 8
+            }
+          ],
+          "minimum_10A_mean_bin_centre_A": 6565.0,
+          "minimum_10A_mean_over_normalization": 0.40485975311417677,
+          "maximum_10A_mean_bin_centre_A": 6435.0,
+          "maximum_10A_mean_over_normalization": 0.7715477176224086,
+          "locator_limit": "Predeclared visual window and 10 A arithmetic means; not a fitted transition centre, equivalent width, line identification, or statistical detection."
+        }
+      ],
+      "window_revision": {
+        "initial_coarse_visual_windows_A": [
+          [
+            3950,
+            4300
+          ],
+          [
+            4400,
+            4850
+          ],
+          [
+            5480,
+            5970
+          ],
+          [
+            6090,
+            6550
+          ]
+        ],
+        "reason": "After actual native-figure inspection, the initial approximate visual windows were replaced with intervals bracketing the resolved depressions near 397/410/434/486/589/656 nm. The initial approximate wavelengths are not line identifications or native peak measurements."
+      },
+      "automatic_SDSS_ZWARNING_decoded": [],
+      "Kleinman2013_published_rows_within_2arcsec": [
+        {
+          "name": "SDSS J185040.71+200056.2",
+          "plate_number": 2833,
+          "spectrum_date": 54650,
+          "fiber_number": 374,
+          "ra": 282.66962,
+          "dec": 20.015609,
+          "spect_type": "DAZH",
+          "autofit_spect_type": "CH:DA3.7_5.8",
+          "autofit_eff_temp": 13722,
+          "autofit_log_g": 5.8,
+          "autofit_red_chisquared": 1.949,
+          "unique_flag": "uniq",
+          "separation_from_MWDD_coordinate_arcsec": 0.15466250207014545,
+          "same_plate_mjd_fiber_as_selected_reference": true
+        }
+      ],
+      "Gaia_DR3": {
+        "source_id": "4518692348609283712",
+        "ra": 282.6695726535369,
+        "dec": 20.015582807132624,
+        "ref_epoch": 2016.0,
+        "parallax": 0.137750509298034,
+        "parallax_error": 0.17590089,
+        "pmra": -1.815940434014511,
+        "pmdec": -4.616300472132829,
+        "ruwe": 1.0223007,
+        "phot_g_mean_mag": 18.754045,
+        "bp_rp": 0.67977905,
+        "phot_variable_flag": "NOT_AVAILABLE",
+        "duplicated_source": false,
+        "non_single_star": 0,
+        "has_xp_continuous": false,
+        "ipd_frac_multi_peak": 0
+      },
+      "Gaia_existing_variability_classification": [],
+      "association_point_check": {
+        "approximate_epoch_jyear_from_nominal_coadd_MJD": 2008.5023956194386,
+        "proper_motion_propagated_Gaia_ra_deg": 282.66957667865665,
+        "proper_motion_propagated_Gaia_dec_deg": 20.015592421353357,
+        "separation_from_PLUG_arcsec": 0.15822501722119822,
+        "limits": "Nominal coadd MJD point estimate; not constituent exposure epochs, covariance likelihood, annual-parallax or radial-velocity correction. No low-S/N or negative parallax is inverted."
+      },
+      "Gaia_neighbours_within_15arcsec_at_reference_epoch": [
+        {
+          "source_id": "4518692352904706048",
+          "separation_at_2016_arcsec": 2.939106559281021,
+          "G_mag": 21.065191,
+          "G_flux_ratio_to_target": 0.11899853094662834
+        },
+        {
+          "source_id": "4518692348618689920",
+          "separation_at_2016_arcsec": 3.132794979555142,
+          "G_mag": 20.925453,
+          "G_flux_ratio_to_target": 0.13534331201805178
+        },
+        {
+          "source_id": "4518691974946219136",
+          "separation_at_2016_arcsec": 8.936313660716618,
+          "G_mag": 20.828032,
+          "G_flux_ratio_to_target": 0.1480489051342007
+        },
+        {
+          "source_id": "4518691970652150528",
+          "separation_at_2016_arcsec": 9.002089035672348,
+          "G_mag": 19.671518,
+          "G_flux_ratio_to_target": 0.42954710857477507
+        },
+        {
+          "source_id": "4518692348618727040",
+          "separation_at_2016_arcsec": 10.129836355166807,
+          "G_mag": 21.008524,
+          "G_flux_ratio_to_target": 0.12537426499783527
+        },
+        {
+          "source_id": "4518692043667061888",
+          "separation_at_2016_arcsec": 12.117183851552547,
+          "G_mag": 20.751125,
+          "G_flux_ratio_to_target": 0.158916137183135
+        },
+        {
+          "source_id": "4518692352903346048",
+          "separation_at_2016_arcsec": 12.888211996379406,
+          "G_mag": 20.56437,
+          "G_flux_ratio_to_target": 0.18874262897761332
+        },
+        {
+          "source_id": "4518692039381015808",
+          "separation_at_2016_arcsec": 13.377436669711368,
+          "G_mag": 19.810553,
+          "G_flux_ratio_to_target": 0.3779173233538766
+        },
+        {
+          "source_id": "4518692043667061760",
+          "separation_at_2016_arcsec": 13.590427971310815,
+          "G_mag": 20.952578,
+          "G_flux_ratio_to_target": 0.1320039114151024
+        },
+        {
+          "source_id": "4518692039371647616",
+          "separation_at_2016_arcsec": 13.942974461552886,
+          "G_mag": 19.08272,
+          "G_flux_ratio_to_target": 0.7388052960928396
+        },
+        {
+          "source_id": "4518692352916673792",
+          "separation_at_2016_arcsec": 14.593540760093935,
+          "G_mag": 17.409355,
+          "G_flux_ratio_to_target": 3.450452077721061
+        }
+      ]
+    },
+    {
+      "row_index": 8019,
+      "entity_id": "gaia:2780975896637670528",
+      "source_id": "2780975896637670528",
+      "name": "[VV2006] J004527.7+143815",
+      "reference_id": "sdss_dr17_26_0419_51879_0104",
+      "MWDD_source_url": "https://www.montrealwhitedwarfdatabase.org/WDs/%5BVV2006%5D%20J004527.7%2B143815/spect.%5BVV2006%5D%20J004527.7%2B143815.sdss.txt",
+      "MWDD_raw_sha256": "bb74b1782fe2c103b15bd3525584cfd26ca02709021612d4e911a02a262fbe61",
+      "reference_source_url": "https://data.sdss.org/sas/dr17/sdss/spectro/redux/26/spectra/lite/0419/spec-0419-51879-0104.fits",
+      "reference_raw_sha256": "2823fde65d88e2679ffdb6475e0a418bfb7f96dd68b2ab9e9d17984a4b257909",
+      "header": {
+        "BUNIT": "1E-17 erg/cm^2/s/Ang",
+        "PLATEID": 419,
+        "MJD": 51879,
+        "FIBERID": 104,
+        "RUN2D": null,
+        "PLUG_RA": 11.365366,
+        "PLUG_DEC": 14.637831,
+        "VACUUM": true
+      },
+      "automatic_SDSS_quality": {
+        "CLASS": "QSO",
+        "SUBCLASS": "BROADLINE",
+        "Z": 1.8723671436309814,
+        "ZWARNING": 80,
+        "SN_MEDIAN_ALL": 29.778894424438477,
+        "PLATEQUALITY": "good",
+        "SPECOBJID": "    471780679793797120"
+      },
+      "MWDD_frozen_class": "DZ",
+      "MWDD_frozen_temperature_K_metadata_only": 23886.0,
+      "MWDD_live_source_columns": {
+        "Spectral type": {
+          "Kleinman et al. 2013": "DZ"
+        },
+        "Effective temperature": {
+          "Kleinman et al. 2013": "23886.0 (215)"
+        },
+        "log(g)": {
+          "Kleinman et al. 2013": "7.72 (0.04)"
+        }
+      },
+      "native_identity": {
+        "MWDD_input_convention": "fnu",
+        "direct_convention": "flambda",
+        "maximum_wavelength_difference_A": 1.8189894035458565e-12,
+        "wavelength_independent_scale": 0.9999998599030996,
+        "maximum_fractional_shape_error_after_scale": 4.440892098500626e-16,
+        "same_observation_not_independent_confirmation": true
+      },
+      "native_visible_quality": {
+        "pixels": 3393,
+        "nonpositive_ivar_pixels": 1,
+        "negative_flux_pixels": 0,
+        "positive_ivar_median_pixel_snr": 30.356296487064586,
+        "AND_nonzero_pixels": 94,
+        "OR_nonzero_pixels": 246,
+        "AND_bits": [
+          {
+            "bit": 16,
+            "name": "NEARBADPIXEL",
+            "pixels": 49
+          },
+          {
+            "bit": 23,
+            "name": "BRIGHTSKY",
+            "pixels": 45
+          }
+        ],
+        "OR_bits": [
+          {
+            "bit": 16,
+            "name": "NEARBADPIXEL",
+            "pixels": 71
+          },
+          {
+            "bit": 17,
+            "name": "LOWFLAT",
+            "pixels": 5
+          },
+          {
+            "bit": 20,
+            "name": "SCATTEREDLIGHT",
+            "pixels": 5
+          },
+          {
+            "bit": 23,
+            "name": "BRIGHTSKY",
+            "pixels": 125
+          },
+          {
+            "bit": 25,
+            "name": "COMBINEREJ",
+            "pixels": 44
+          },
+          {
+            "bit": 26,
+            "name": "BADFLUXFACTOR",
+            "pixels": 3
+          },
+          {
+            "bit": 27,
+            "name": "BADSKYCHI",
+            "pixels": 15
+          }
+        ]
+      },
+      "windows": [
+        {
+          "visual_region": "first blue depression",
+          "lower_A": 3800,
+          "upper_A": 4120,
+          "native_pixels": 351,
+          "positive_ivar_pixels": 350,
+          "AND_zero_positive_ivar_pixels": 350,
+          "AND_bits": [],
+          "OR_bits": [
+            {
+              "bit": 16,
+              "name": "NEARBADPIXEL",
+              "pixels": 3
+            }
+          ],
+          "minimum_10A_mean_bin_centre_A": 3995.0,
+          "minimum_10A_mean_over_normalization": 0.29568772429147117,
+          "maximum_10A_mean_bin_centre_A": 3895.0,
+          "maximum_10A_mean_over_normalization": 1.6896969972524685,
+          "locator_limit": "Predeclared visual window and 10 A arithmetic means; not a fitted transition centre, equivalent width, line identification, or statistical detection."
+        },
+        {
+          "visual_region": "second blue depression",
+          "lower_A": 4250,
+          "upper_A": 4550,
+          "native_pixels": 297,
+          "positive_ivar_pixels": 297,
+          "AND_zero_positive_ivar_pixels": 297,
+          "AND_bits": [],
+          "OR_bits": [
+            {
+              "bit": 25,
+              "name": "COMBINEREJ",
+              "pixels": 13
+            }
+          ],
+          "minimum_10A_mean_bin_centre_A": 4435.0,
+          "minimum_10A_mean_over_normalization": 0.10146366988162578,
+          "maximum_10A_mean_bin_centre_A": 4255.0,
+          "maximum_10A_mean_over_normalization": 1.2228044596966683,
+          "locator_limit": "Predeclared visual window and 10 A arithmetic means; not a fitted transition centre, equivalent width, line identification, or statistical detection."
+        },
+        {
+          "visual_region": "blue local rise",
+          "lower_A": 3860,
+          "upper_A": 3930,
+          "native_pixels": 78,
+          "positive_ivar_pixels": 78,
+          "AND_zero_positive_ivar_pixels": 78,
+          "AND_bits": [],
+          "OR_bits": [],
+          "minimum_10A_mean_bin_centre_A": 3925.0,
+          "minimum_10A_mean_over_normalization": 1.1666040209633812,
+          "maximum_10A_mean_bin_centre_A": 3895.0,
+          "maximum_10A_mean_over_normalization": 1.6896969972524685,
+          "locator_limit": "Predeclared visual window and 10 A arithmetic means; not a fitted transition centre, equivalent width, line identification, or statistical detection."
+        },
+        {
+          "visual_region": "second local rise",
+          "lower_A": 4150,
+          "upper_A": 4260,
+          "native_pixels": 114,
+          "positive_ivar_pixels": 114,
+          "AND_zero_positive_ivar_pixels": 114,
+          "AND_bits": [],
+          "OR_bits": [
+            {
+              "bit": 25,
+              "name": "COMBINEREJ",
+              "pixels": 2
+            }
+          ],
+          "minimum_10A_mean_bin_centre_A": 4155.0,
+          "minimum_10A_mean_over_normalization": 1.1892391253326058,
+          "maximum_10A_mean_bin_centre_A": 4185.0,
+          "maximum_10A_mean_over_normalization": 1.576360266173102,
+          "locator_limit": "Predeclared visual window and 10 A arithmetic means; not a fitted transition centre, equivalent width, line identification, or statistical detection."
+        },
+        {
+          "visual_region": "third local rise",
+          "lower_A": 4590,
+          "upper_A": 4740,
+          "native_pixels": 139,
+          "positive_ivar_pixels": 139,
+          "AND_zero_positive_ivar_pixels": 139,
+          "AND_bits": [],
+          "OR_bits": [],
+          "minimum_10A_mean_bin_centre_A": 4735.0,
+          "minimum_10A_mean_over_normalization": 1.0199585622712068,
+          "maximum_10A_mean_bin_centre_A": 4625.0,
+          "maximum_10A_mean_over_normalization": 1.6052026902832766,
+          "locator_limit": "Predeclared visual window and 10 A arithmetic means; not a fitted transition centre, equivalent width, line identification, or statistical detection."
+        },
+        {
+          "visual_region": "middle local rise",
+          "lower_A": 5510,
+          "upper_A": 5810,
+          "native_pixels": 230,
+          "positive_ivar_pixels": 230,
+          "AND_zero_positive_ivar_pixels": 226,
+          "AND_bits": [
+            {
+              "bit": 23,
+              "name": "BRIGHTSKY",
+              "pixels": 4
+            }
+          ],
+          "OR_bits": [
+            {
+              "bit": 16,
+              "name": "NEARBADPIXEL",
+              "pixels": 6
+            },
+            {
+              "bit": 23,
+              "name": "BRIGHTSKY",
+              "pixels": 7
+            },
+            {
+              "bit": 26,
+              "name": "BADFLUXFACTOR",
+              "pixels": 3
+            },
+            {
+              "bit": 27,
+              "name": "BADSKYCHI",
+              "pixels": 2
+            }
+          ],
+          "minimum_10A_mean_bin_centre_A": 5785.0,
+          "minimum_10A_mean_over_normalization": 1.0130828107158334,
+          "maximum_10A_mean_bin_centre_A": 5665.0,
+          "maximum_10A_mean_over_normalization": 1.3696905936608232,
+          "locator_limit": "Predeclared visual window and 10 A arithmetic means; not a fitted transition centre, equivalent width, line identification, or statistical detection."
+        }
+      ],
+      "automatic_SDSS_ZWARNING_decoded": [
+        "MANY_OUTLIERS",
+        "NEGATIVE_EMISSION"
+      ],
+      "Kleinman2013_published_rows_within_2arcsec": [
+        {
+          "name": "SDSS J004527.69+143816.2",
+          "plate_number": 419,
+          "spectrum_date": 51868,
+          "fiber_number": 106,
+          "ra": 11.365366,
+          "dec": 14.637831,
+          "spect_type": "DZ",
+          "autofit_spect_type": "CH:DB1.9_8.1",
+          "autofit_eff_temp": 26209,
+          "autofit_log_g": 8.08,
+          "autofit_red_chisquared": 30.449,
+          "unique_flag": "dup-0143a",
+          "separation_from_MWDD_coordinate_arcsec": 0.060376161315560374,
+          "same_plate_mjd_fiber_as_selected_reference": false
+        },
+        {
+          "name": "SDSS J004527.69+143816.2",
+          "plate_number": 419,
+          "spectrum_date": 51812,
+          "fiber_number": 105,
+          "ra": 11.365366,
+          "dec": 14.637831,
+          "spect_type": "DZ",
+          "autofit_spect_type": "CH:DB2.1_7.7",
+          "autofit_eff_temp": 23886,
+          "autofit_log_g": 7.72,
+          "autofit_red_chisquared": 27.539,
+          "unique_flag": "dup-0143",
+          "separation_from_MWDD_coordinate_arcsec": 0.060376161315560374,
+          "same_plate_mjd_fiber_as_selected_reference": false
+        }
+      ],
+      "Gaia_DR3": {
+        "source_id": "2780975896637670528",
+        "ra": 11.365366372388872,
+        "dec": 14.637815528727568,
+        "ref_epoch": 2016.0,
+        "parallax": -0.0260210555961271,
+        "parallax_error": 0.08660222,
+        "pmra": -0.1138192600556455,
+        "pmdec": -0.0441408914409799,
+        "ruwe": 1.0288434,
+        "phot_g_mean_mag": 17.420298,
+        "bp_rp": 1.0933666,
+        "phot_variable_flag": "VARIABLE",
+        "duplicated_source": false,
+        "non_single_star": 0,
+        "has_xp_continuous": true,
+        "ipd_frac_multi_peak": 0
+      },
+      "Gaia_existing_variability_classification": [
+        {
+          "solution_id": 375316653866487564,
+          "source_id": "2780975896637670528",
+          "classifier_name": "nTransits:5+",
+          "best_class_name": "AGN",
+          "best_class_score": 0.37219465
+        }
+      ],
+      "association_point_check": {
+        "approximate_epoch_jyear_from_nominal_coadd_MJD": 2000.9158110882956,
+        "proper_motion_propagated_Gaia_ra_deg": 11.365366865296032,
+        "proper_motion_propagated_Gaia_dec_deg": 14.63781571368022,
+        "separation_from_PLUG_arcsec": 0.05511322460475504,
+        "limits": "Nominal coadd MJD point estimate; not constituent exposure epochs, covariance likelihood, annual-parallax or radial-velocity correction. No low-S/N or negative parallax is inverted."
+      },
+      "Gaia_neighbours_within_15arcsec_at_reference_epoch": []
+    },
+    {
+      "row_index": 7930,
+      "entity_id": "gaia:3217759570831525120",
+      "source_id": "3217759570831525120",
+      "name": "SDSS J053553.56-004003.9",
+      "reference_id": "sdss_dr17_26_2072_53430_0060",
+      "MWDD_source_url": "https://www.montrealwhitedwarfdatabase.org/WDs/SDSS%20J053553.56-004003.9/spect.SDSS%20J053553.56-004003.9.sdss.txt",
+      "MWDD_raw_sha256": "0b9ef954310c8153a973023326181795e4049e00134b22a87500654cf260578d",
+      "reference_source_url": "https://data.sdss.org/sas/dr17/sdss/spectro/redux/26/spectra/lite/2072/spec-2072-53430-0060.fits",
+      "reference_raw_sha256": "7c8c58346c93ef65b11700eb9b748da4689bb7cfd198ef7db90d78a6c1ebeb51",
+      "header": {
+        "BUNIT": "1E-17 erg/cm^2/s/Ang",
+        "PLATEID": 2072,
+        "MJD": 53430,
+        "FIBERID": 60,
+        "RUN2D": null,
+        "PLUG_RA": 83.973157,
+        "PLUG_DEC": -0.667758,
+        "VACUUM": true
+      },
+      "automatic_SDSS_quality": {
+        "CLASS": "STAR",
+        "SUBCLASS": "L9",
+        "Z": 0.0005579516873694956,
+        "ZWARNING": 12,
+        "SN_MEDIAN_ALL": 11.436488151550293,
+        "PLATEQUALITY": "good",
+        "SPECOBJID": "   2332881157198211072"
+      },
+      "MWDD_frozen_class": "DBZAe",
+      "MWDD_frozen_temperature_K_metadata_only": 18126.0,
+      "MWDD_live_source_columns": {
+        "Spectral type": {
+          "Simbad": "DBZAe",
+          "Kleinman et al. 2013": "DBZAE:",
+          "Vincent et al. 2023": "DB"
+        },
+        "Effective temperature": {
+          "Genest-Beaulieu & Bergeron 2019 (spectroscopic)": "18126.0",
+          "Genest-Beaulieu & Bergeron 2019 (photometric)": "11988.0",
+          "Kleinman et al. 2013": "13592.0 (433)"
+        },
+        "log(g)": {
+          "Genest-Beaulieu & Bergeron 2019 (spectroscopic)": "9.29",
+          "Genest-Beaulieu & Bergeron 2019 (photometric)": "8.61",
+          "Kleinman et al. 2013": "9.22 (0.3)"
+        }
+      },
+      "native_identity": {
+        "MWDD_input_convention": "fnu",
+        "direct_convention": "flambda",
+        "maximum_wavelength_difference_A": 1.8189894035458565e-12,
+        "wavelength_independent_scale": 0.9999998599030997,
+        "maximum_fractional_shape_error_after_scale": 4.440892098500626e-16,
+        "same_observation_not_independent_confirmation": true
+      },
+      "native_visible_quality": {
+        "pixels": 3393,
+        "nonpositive_ivar_pixels": 0,
+        "negative_flux_pixels": 1,
+        "positive_ivar_median_pixel_snr": 11.89008520803551,
+        "AND_nonzero_pixels": 113,
+        "OR_nonzero_pixels": 767,
+        "AND_bits": [
+          {
+            "bit": 16,
+            "name": "NEARBADPIXEL",
+            "pixels": 2
+          },
+          {
+            "bit": 23,
+            "name": "BRIGHTSKY",
+            "pixels": 105
+          },
+          {
+            "bit": 27,
+            "name": "BADSKYCHI",
+            "pixels": 6
+          }
+        ],
+        "OR_bits": [
+          {
+            "bit": 16,
+            "name": "NEARBADPIXEL",
+            "pixels": 121
+          },
+          {
+            "bit": 17,
+            "name": "LOWFLAT",
+            "pixels": 5
+          },
+          {
+            "bit": 18,
+            "name": "FULLREJECT",
+            "pixels": 18
+          },
+          {
+            "bit": 19,
+            "name": "PARTIALREJECT",
+            "pixels": 18
+          },
+          {
+            "bit": 20,
+            "name": "SCATTEREDLIGHT",
+            "pixels": 39
+          },
+          {
+            "bit": 23,
+            "name": "BRIGHTSKY",
+            "pixels": 434
+          },
+          {
+            "bit": 25,
+            "name": "COMBINEREJ",
+            "pixels": 223
+          },
+          {
+            "bit": 26,
+            "name": "BADFLUXFACTOR",
+            "pixels": 2
+          },
+          {
+            "bit": 27,
+            "name": "BADSKYCHI",
+            "pixels": 43
+          }
+        ]
+      },
+      "windows": [
+        {
+          "visual_region": "narrow red peak",
+          "lower_A": 6540,
+          "upper_A": 6600,
+          "native_pixels": 40,
+          "positive_ivar_pixels": 40,
+          "AND_zero_positive_ivar_pixels": 37,
+          "AND_bits": [
+            {
+              "bit": 27,
+              "name": "BADSKYCHI",
+              "pixels": 3
+            }
+          ],
+          "OR_bits": [
+            {
+              "bit": 23,
+              "name": "BRIGHTSKY",
+              "pixels": 9
+            },
+            {
+              "bit": 27,
+              "name": "BADSKYCHI",
+              "pixels": 15
+            }
+          ],
+          "minimum_10A_mean_bin_centre_A": 6575.0,
+          "minimum_10A_mean_over_normalization": 0.5191945758142293,
+          "maximum_10A_mean_bin_centre_A": 6565.0,
+          "maximum_10A_mean_over_normalization": 1.4583524037144258,
+          "locator_limit": "Predeclared visual window and 10 A arithmetic means; not a fitted transition centre, equivalent width, line identification, or statistical detection."
+        }
+      ],
+      "automatic_SDSS_ZWARNING_decoded": [
+        "SMALL_DELTA_CHI2",
+        "NEGATIVE_MODEL"
+      ],
+      "Kleinman2013_published_rows_within_2arcsec": [
+        {
+          "name": "SDSS J053553.56-004003.9",
+          "plate_number": 2072,
+          "spectrum_date": 53430,
+          "fiber_number": 60,
+          "ra": 83.973157,
+          "dec": -0.667758,
+          "spect_type": "DBZAE:",
+          "autofit_spect_type": "DB3.7_9.2",
+          "autofit_eff_temp": 13592,
+          "autofit_log_g": 9.22,
+          "autofit_red_chisquared": 1.042,
+          "unique_flag": "uniq",
+          "separation_from_MWDD_coordinate_arcsec": 0.4146514690269343,
+          "same_plate_mjd_fiber_as_selected_reference": true
+        }
+      ],
+      "Gaia_DR3": {
+        "source_id": "3217759570831525120",
+        "ra": 83.97319097549114,
+        "dec": -0.667862080450499,
+        "ref_epoch": 2016.0,
+        "parallax": 3.097735213659324,
+        "parallax_error": 0.3184783,
+        "pmra": 9.77329098576626,
+        "pmdec": -23.1607438544808,
+        "ruwe": 1.0209632,
+        "phot_g_mean_mag": 19.486265,
+        "bp_rp": -0.017742157,
+        "phot_variable_flag": "NOT_AVAILABLE",
+        "duplicated_source": false,
+        "non_single_star": 0,
+        "has_xp_continuous": false,
+        "ipd_frac_multi_peak": 0
+      },
+      "Gaia_existing_variability_classification": [],
+      "association_point_check": {
+        "approximate_epoch_jyear_from_nominal_coadd_MJD": 2005.1622176591375,
+        "proper_motion_propagated_Gaia_ra_deg": 83.97316155104761,
+        "proper_motion_propagated_Gaia_dec_deg": -0.6677923551447359,
+        "separation_from_PLUG_arcsec": 0.12475883966049332,
+        "limits": "Nominal coadd MJD point estimate; not constituent exposure epochs, covariance likelihood, annual-parallax or radial-velocity correction. No low-S/N or negative parallax is inverted."
+      },
+      "Gaia_neighbours_within_15arcsec_at_reference_epoch": [
+        {
+          "source_id": "3217759678207340416",
+          "separation_at_2016_arcsec": 14.82952695198255,
+          "G_mag": 15.998731,
+          "G_flux_ratio_to_target": 24.832108662168142
+        }
+      ],
+      "narrow_peak_native_check": {
+        "predeclared_search_window_A": [
+          6540,
+          6600
+        ],
+        "maximum_native_pixel_A": 6565.987948227702,
+        "peak_flux_Flambda": 1.7382240295410159e-16,
+        "peak_supplied_flux_error": 1.839090533156692e-17,
+        "peak_AND_mask": 134217728,
+        "peak_OR_mask": 134217728,
+        "local_continuum_linear_fit_sidebands_A": [
+          [
+            6500,
+            6535
+          ],
+          [
+            6595,
+            6630
+          ]
+        ],
+        "contiguous_pixels_above_half_peak_excess": 2,
+        "contiguous_half_excess_pixel_centres_A": [
+          6564.474194976903,
+          6565.987948227702
+        ],
+        "half_excess_cluster_AND_bits": [
+          {
+            "bit": 27,
+            "name": "BADSKYCHI",
+            "pixels": 2
+          }
+        ],
+        "half_excess_cluster_OR_bits": [
+          {
+            "bit": 27,
+            "name": "BADSKYCHI",
+            "pixels": 2
+          }
+        ],
+        "limits": "A native-pixel morphology check retaining the line. Pixel-centre span is not a deconvolved FWHM; no fitted atomic identification, aperture-origin determination or new emission discovery."
+      }
+    }
+  ],
+  "verified_source_sha256": {
+    "research/unit_resolution_followup/targeted_followup/context_manifest.json": "6412a8a3d437900582c7a427f2b66f0283c80c9a746d5fbd152538212d9702c0",
+    "research/unit_resolution_followup/targeted_followup/sources/mwdd_7607.html": "7638f11c46ba957b220e6e664170689a5c4de871b4f6e07e1e67649a017809e2",
+    "research/unit_resolution_followup/targeted_followup/sources/mwdd_7607.html.provenance.json": "b85f228ccebe1b7dcece7e6903eeb54fb93f475f9fcd957293cddc789a71ce76",
+    "research/unit_resolution_followup/targeted_followup/sources/mwdd_8019.html": "07899d2025b7e1200cc265837316a4dc3bca86401cc1a155acd29d09344ab96f",
+    "research/unit_resolution_followup/targeted_followup/sources/mwdd_8019.html.provenance.json": "32d3abbb909d9ba9e8ffc1fe42986db9bb429603de1fc064d9d7c5a8626d1a16",
+    "research/unit_resolution_followup/targeted_followup/sources/mwdd_7930.html": "5a683cc6ff00c43b801e4d8e702340fa84af1eca2cd9e43d0e0c6d9a8e483cb9",
+    "research/unit_resolution_followup/targeted_followup/sources/mwdd_7930.html.provenance.json": "7aaa2fa6138795a2c9ef59281803baecb72c51b0e07c83513bfb587e66326c0a",
+    "research/unit_resolution_followup/targeted_followup/sources/gaia_context.csv": "23ddbf294b78cd20f06f2a79a2f2fb0d3dbbe6a01704552e73fd0aee99dfcdaf",
+    "research/unit_resolution_followup/targeted_followup/sources/gaia_context.csv.provenance.json": "be7d76cccf594f22c13b589c6a68228fef562a74efdf485ddc52b7763c879595",
+    "research/unit_resolution_followup/targeted_followup/specialist_manifest.json": "3a348b12cc5b8a437e18bae3aa5fdca46a28dc78ed0a4d53d23540b9de5b8201",
+    "research/unit_resolution_followup/targeted_followup/sources/kleinman_catalogue.xml": "49530cff2027c0c564dbb062968cad092a3ab11f3466b9c8f933e44852e6dfbe",
+    "research/unit_resolution_followup/targeted_followup/sources/kleinman_catalogue.xml.provenance.json": "5c5c50d6ed5cd5c6377cb065944626ca35f3e432e795c2d19b4e27ba19381383",
+    "research/unit_resolution_followup/targeted_followup/sources/kleinman_catalogue_definition.html": "1faee8e79cdc5757c8d8006ecd3df4932415447a1ac3519c0254bf101cc60ca3",
+    "research/unit_resolution_followup/targeted_followup/sources/kleinman_catalogue_definition.html.provenance.json": "77ce88209fb2ce9dc7bd7a56bb0c42110c88df49895ec828484b67c51414e659",
+    "research/unit_resolution_followup/targeted_followup/sources/chandra_cycle7.html": "10a423e9735d8713a6cea5c9dd63de762f05083bc009788c560994a2ca666e7a",
+    "research/unit_resolution_followup/targeted_followup/sources/chandra_cycle7.html.provenance.json": "d92dcd1245fcdeda35ff0ce172d0f6d75eccdc5ab7e2b373e7b1ba178241a0da",
+    "research/unit_resolution_followup/targeted_followup/sources/sdss_bitmasks.html": "169e39b3cc87375c0d59ec8b07ec1a24f2f54f7b0262daca38c9cfe8a285816f",
+    "research/unit_resolution_followup/targeted_followup/sources/sdss_bitmasks.html.provenance.json": "2d18b7a39d3219ed9cda8943aded982db4f09562b5613be7e8df0eb18db0461d",
+    "research/unit_resolution_followup/targeted_followup/sources/gaia_variability.csv": "f87adbe8a5a18e795f720f854732fca1013f34bac880c6ac1167d481f26cea58",
+    "research/unit_resolution_followup/targeted_followup/sources/gaia_variability.csv.provenance.json": "a7f57550169fc0cff07a0b9c321b6b9c2b68f19b8656f4d36a6acaa3000f3b85",
+    "research/unit_resolution_followup/targeted_followup/sources/kleinman_catalogue.csv": "c9f7a0afceb727882b7e0ddf865ecc9ae9fab32ad658c5ef21ea8d7e44127603",
+    "research/unit_resolution_followup/targeted_followup/sources/kleinman_catalogue.csv.provenance.json": "c3c079b343bed26175ba6ad16bf4d52a839ffbaa6d03c59de119dbdd69974c1f",
+    "research/unit_resolution_followup/overlay_registry.json": "c8d8f6960092d8cbe3a6f76f64bca07fbde2726680b33ea21de6a54537630865",
+    "research/unit_resolution_followup/compact_manifest.json": "7741636f106edfe7d89cbc22b35cdba5ab981fb96c071e916dfbf6fd8ce4bad4",
+    "research/unit_resolution_followup/compact/wavelength_dictionary.npy.gz": "e73cf5a63007644fff0f0a3f018e4526499f6d9a7bafacd098a4cdf404f7f6e4",
+    "mwdd/manifest_enriched.json.gz": "3b428d69fbe86cf63995dbcd71d2e1b6a38e1ecb3986ca9effb984a38e98609f",
+    "research/unit_resolution_followup/compact_inputs.py": "084df209a76fe24ec0ffaa7865a19e61ed41d38925b703371fddcd298b3a1a0a",
+    "research/unit_resolution_followup/fetch_and_identify.py": "00eea00a9c924c9cdbaf23fec67e4ebaa38ca8269fb87cdc97e06e40b00aecf3",
+    "research/unit_resolution_followup/targeted_followup/analyse.py": "7f37a62cec112b93ddfb254bb343001532fb5117f697f0001092a5b47754d2fa",
+    "research/unit_resolution_followup/targeted_followup/fetch_context.py": "34e32c2a97b2ea4753e5c1a4efbf4a4a939fb4e04e17cd25696f74a34c698106",
+    "research/unit_resolution_followup/targeted_followup/fetch_specialist.py": "65a95f702a85d2867c7636784a74c405c3b986281ab0d5c0854bb2096fff2403",
+    "research/unit_resolution_followup/targeted_followup/gaia_query.adql": "ac8c2b35fd4f8d21b45f4ef7608c419846358514e0032850c3bfd7ef5f88fb24",
+    "research/unit_resolution_followup/targeted_followup/gaia_variability_query.adql": "540ef60253fbcfc0b6c79255adc50dcbd48c15f4c6bd8bbe1b04f87d5f661810",
+    "research/unit_resolution_followup/targeted_followup/kleinman_query.adql": "7aa2f3a2049efab2074cba9b7c7798a1e4f540218ee4e960e8fd4d7e5103e358",
+    "research/unit_resolution_followup/compact/identity_arrays_017.npz": "bae2413f5636c00c5bdb7a64c96b0e97248c44ab5a33783d0a45d2cd1fbb5521",
+    "research/unit_resolution_followup/compact/identity_arrays_027.npz": "3e6a96f45184d5294c3909ddaa89830aa007350b5a750216b0c9fdcd8b3aff44",
+    "research/unit_resolution_followup/compact/identity_arrays_018.npz": "076a419ae38c2f6240f855cf5153cef586331496cedca6f3fd3c05f08e2c901c",
+    "research/unit_resolution_followup/compact/identity_arrays_021.npz": "70a3ef3633c0a3e2f8cd339c3582aafa54b6d1e591180c238fe6e1fce4b2b6bf",
+    "research/unit_resolution_followup/compact/identity_arrays_025.npz": "4c43dd205877bc29285d7054471d3cca9c999165df70affd7758ab1972a995c6"
+  },
+  "mask_definitions": {
+    "SPPIXMASK": {
+      "0": "NOPLUG",
+      "1": "BADTRACE",
+      "2": "BADFLAT",
+      "3": "BADARC",
+      "4": "MANYBADCOLUMNS",
+      "5": "MANYREJECTED",
+      "6": "LARGESHIFT",
+      "7": "BADSKYFIBER",
+      "8": "NEARWHOPPER",
+      "9": "WHOPPER",
+      "10": "SMEARIMAGE",
+      "11": "SMEARHIGHSN",
+      "12": "SMEARMEDSN",
+      "16": "NEARBADPIXEL",
+      "17": "LOWFLAT",
+      "18": "FULLREJECT",
+      "19": "PARTIALREJECT",
+      "20": "SCATTEREDLIGHT",
+      "21": "CROSSTALK",
+      "22": "NOSKY",
+      "23": "BRIGHTSKY",
+      "24": "NODATA",
+      "25": "COMBINEREJ",
+      "26": "BADFLUXFACTOR",
+      "27": "BADSKYCHI",
+      "28": "REDMONSTER"
+    },
+    "ZWARNING": {
+      "0": "SKY",
+      "1": "LITTLE_COVERAGE",
+      "2": "SMALL_DELTA_CHI2",
+      "3": "NEGATIVE_MODEL",
+      "4": "MANY_OUTLIERS",
+      "5": "Z_FITLIMIT",
+      "6": "NEGATIVE_EMISSION",
+      "7": "UNPLUGGED",
+      "8": "BAD_TARGET",
+      "9": "NODATA"
+    }
+  },
+  "limits": "Original signed F_lambda shapes and native masks retained. Generic classifiers, manual catalogue labels and Gaia classification scores are evidence with separate provenance, not infallible truth or posterior probabilities. No physical-looking feature is removed or reassigned automatically.",
+  "created_utc": "2026-10-20T00:25:58.308337+00:00"
+}

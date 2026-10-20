@@ -1,0 +1,12 @@
+{
+  "name": "ztf_ztf_dr24_J0429-0354",
+  "endpoint": "https://irsa.ipac.caltech.edu/cgi-bin/ZTF/nph_light_curves",
+  "parameters": {
+    "POS": "CIRCLE 67.43628526183 -3.90650606101 0.002777777777777778",
+    "COLLECTION": "ztf_dr24",
+    "FORMAT": "csv"
+  },
+  "request_url": "https://irsa.ipac.caltech.edu/cgi-bin/ZTF/nph_light_curves?POS=CIRCLE+67.43628526183+-3.90650606101+0.002777777777777778&COLLECTION=ztf_dr24&FORMAT=csv",
+  "attempted_utc": "2026-10-18T15:54:05.963821+00:00",
+  "error": "TimeoutError('The read operation timed out')"
+}

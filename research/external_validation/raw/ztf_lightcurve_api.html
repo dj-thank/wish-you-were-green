@@ -1,0 +1,585 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <link rel="stylesheet" type="text/css" media="screen,projection,print" href="/applications/Atlas/atlas.css" />
+    <link rel="stylesheet" type="text/css" media="screen,projection,print" href="/datasets.css" />
+    <style>
+      table, th, td {
+      border: 1px solid black;
+      }
+      </style>
+</head>
+<body>
+<title>IRSA - ZTF Lightcurve Queries</title>
+
+<link rel="stylesheet" type="text/css" media="screen,projection" href="/style.css" />
+<link rel="stylesheet" type="text/css" media="print" href="/print_style.css" />
+<link rel="stylesheet" type="text/css" media="screen,projection" href="/ui.css" />
+<script type="text/javascript" src="/ui_verbose.js"></script>
+
+<!--[if lt IE 7]>
+<style type="text/css" media="screen, projection">
+#irsa-menu li
+{
+float: left;
+height: 1%;
+}
+#irsa-menu a
+{
+height: 1%;
+}
+</style>
+<![endif]-->
+</head>
+<body >
+
+<div id="irsa-banner"   style= "min-width:768px; min-height:95px"></div>
+<script type="text/javascript" language='javascript' src='/frontpage/frontpage.nocache.js'> </script>
+
+
+
+<span class="Atlas">
+<div id="content">
+<!--   #include virtual="/include/sysnotice.html"  -->
+
+
+<div class="webpage">
+
+<h1>ZTF Lightcurve Queries</h1>
+</div>
+
+<h3>Overview</h3>
+
+<p>
+IRSA provides access to the ZTF collection of lightcurve data through
+an application program interface (API). Search, restriction, and
+formatting parameters are specified in an HTTP URL. The output is a
+table in the requested format containing lightcurve data
+satisfying the search constraints.
+</p>
+
+<p>
+<b>Important Note:</b> If you plan to access a large number of ZTF
+lightcurves (more than about 1000), please see
+the <a href="https://caltech-ipac.github.io/irsa-tutorials/ztf-lightcurves/">ZTF
+Light Curves (HATS)</a> Python notebook tutorial, which demonstrates
+how to get ZTF lightcurves directly from the HATS Catalog.  This
+method is performant for large-scale jobs and highly parallelized
+workflows and is recommended over the ZTF-LC-API in such
+cases. Please contact the
+<a href="https://irsa.ipac.caltech.edu/docs/help_desk.html" target="_blank">IRSA Help Desk</a>
+with any questions.
+</p>
+
+<p>
+The <a href="#accesscontrol">Access Control</a> section provides instructions and examples for accessing proprietary ZTF data.
+</p>
+<p>
+
+<h3>Query</h3>
+
+<p>
+	An IRSA ZTF-LC-API query returns a table (by default, a
+	 <a href="http://www.ivoa.net/Documents/VOTable/">VOTable</a>)
+	containing lightcurve data corresponding to a set of ZTF objects
+	and perhaps satisfying additional constraints.  The query must
+	specify, directly or indirectly, a set of ZTF objects for which
+	lightcurve data is requested.  In addition, it may specify the
+	collection of ZTF lightcurve data files from which lightcurve data
+	is to be retrieved, and it may indicate that only lightcurve data
+	meeting certain restrictions is requested.  Finally, the query may
+	specify the format of the output.
+</p>
+<p>
+   IRSA ZTF-LC-API queries take the form of HTTP URLs whose parameters
+   express the relevant requirements and constraints.
+</p>
+<table class="ds_table" style="width:100%">
+<tr>
+<th>Parameter Purpose</th>
+<th>Parameter Name</th>
+</tr>
+
+<tr>
+<td>Specify ZTF objects by their identifiers</td>
+<td>ID</td>
+</tr>
+
+<tr>
+<td>Specify ZTF objects by position and other constraints</td>
+<td>POS or CIRCLE, BAND, BANDNAME, NOBS_MIN, MAG</td>
+</tr>
+
+<tr>
+<td>Restrict lightcurve data</td>
+<td>TIME, BAD_CATFLAGS_MASK</td>
+</tr>
+
+<tr>
+<td>Specify collection of ZTF lightcurve files</td>
+<td>COLLECTION</td>
+</tr>
+
+<tr>
+<td>Specify format of output table</td>
+<td>FORMAT</td>
+</tr>
+
+</table>
+
+<br />
+These parameters are described individually below.
+<br />
+
+<h4>Behind the scenes</h4>
+<p>
+Typically there are multiple lightcurves for a given source position.
+Lightcurves are tagged in the ZTF lightcurve files by object
+identifier.  As mentioned above, lightcurves corresponding to specific
+identifiers may be retrieved using the ZTF-LC-API via the ID
+parameter.  Alternatively, this API also supports the retrieval of all
+lightcurves meeting positional and other constraints.  When such
+constraints are supplied, a preliminary TAP query extracts the
+identifiers of all objects meeting those constraints from the ZTF
+objects table.  Lightcurves corresponding to these identifiers are
+then retrieved from the ZTF lightcurve collection.
+</p>
+
+
+<h4>Sample queries</h4>
+  <ul>
+    <li>Obtain the available g-band lightcurves within 5 arcsec of a
+      source position:
+      <p>
+        <a href="https://irsa.ipac.caltech.edu/cgi-bin/ZTF/nph_light_curves?POS=CIRCLE 298.0025 29.87147 0.0014&BANDNAME=g">
+        https://irsa.ipac.caltech.edu/cgi-bin/ZTF/nph_light_curves?POS=CIRCLE 298.0025 29.87147 0.0014&BANDNAME=g</a>
+      </p>
+    </li>
+    <li>Perhaps two of the lightcurves in the previous response are of
+      particular interest.  Retrieve just these, filtering out bad
+      data using a bit mask:
+      <p>
+        <a href="https://irsa.ipac.caltech.edu/cgi-bin/ZTF/nph_light_curves?ID=686103400034440&ID=686103400106565&BAD_CATFLAGS_MASK=32768">
+        https://irsa.ipac.caltech.edu/cgi-bin/ZTF/nph_light_curves?ID=686103400034440&ID=686103400106565&BAD_CATFLAGS_MASK=32768</a>
+      </p>
+    </li>
+    <li>Obtain the available lightcurves within 5 arcsec of a source
+    position which satisfy constraints on magnitude, band, and number of
+    observations; further restrict lightcurve data based on time of
+    observation; specify format of output table.
+      <p>
+       <a href="https://irsa.ipac.caltech.edu/cgi-bin/ZTF/nph_light_curves?POS=CIRCLE 298.0 29.87 0.01&MAG=16.9 17.7&BAND=4.30e-7 5.70e-7&NOBS_MIN=5&TIME=55197.3 58329&FORMAT=ipac_table">
+       https://irsa.ipac.caltech.edu/cgi-bin/ZTF/nph_light_curves?POS=CIRCLE 298.0 29.87 0.01&MAG=16.9 17.7&BAND=4.30e-7 5.70e-7&NOBS_MIN=5&TIME=55197.3 58329&FORMAT=ipac_table</a>
+      </p>
+    </li>
+  </ul>
+<br/>
+
+
+<h3>Query Parameters</h3>
+
+      <p>
+   IRSA ZTF-LC-API queries are expressed as URLs.  Names of supported
+    query parameters and syntax of their values follow guidelines from
+    <a href="http://www.ivoa.net/documents/SIA/20151223/REC-SIA-2.0-20151223.pdf">
+    the VO spec for SIA2</a>, which are compatible with DALI and
+    DataLink.  In particular, elements of multi-element parameter
+    values are separated by a single space.  Ranges are represented by
+    space-separated lower and upper bounds.  Unrestricted lower
+    (resp. upper) bounds are represented by the values -Inf
+    (resp. Inf).
+    </p>
+    <p>
+    <ul>
+      <li>The complete list
+	    of parameters supported by IRSA's ZTF-LC-API implementation is
+
+        <ul>
+          <li>ID</li>
+          <li>CIRCLE</li>
+          <li>POS</li>
+          <li>BAND</li>
+          <li>BANDNAME</li>
+          <li>MAG</li>
+          <li>NUM_OBS</li>
+          <li>TIME</li>
+          <li>BAD_CATFLAGS_MASK</li>
+          <li>COLLECTION</li>
+          <li>FORMAT</li>
+        </ul>
+      </li>
+
+      <li>Parameter names are case-insensitive.</li>
+
+        <li>Every ZTF-LC-API query must contain exactly one of the
+          following:
+          <ul>
+            <li>a single instance of the POS parameter</li>
+            <li>a single instance of the CIRCLE parameter</li>
+            <li>one or more instances of the ID parameter</li>
+          </ul>
+        </li>
+
+      <li>Parameters BAND, BANDNAME, NOBS_MIN, and MAG are compatible
+      with POS and CIRCLE but not with ID.</li>
+
+      <li>Parameters BAND, BANDNAME, MAG, and ID may appear more than once
+      in a query; multiple values of a given parameter are OR'd together to
+      create the associated constraint.</li>
+
+      <li>Parameters CIRCLE, POS, BAND, MAG, and TIME accept
+      or require values consisting of more than one element; these
+      elements must be separated by a single space.</li>
+
+
+<h4>Parameter descriptions</h4>
+
+      <table class="ds_table" style="width:100%">
+      <tr>
+      <th>Parameter Name</th>
+      <th>Parameter Description</th>
+      </tr>
+
+      <tr>
+        <a name="ID"></a>
+        <td><span class="param">ID</span></td>
+        <td>
+          <p>
+            The <span class="param">ID</span> parameter
+            value is the identifier of a ZTF object.
+          </p>
+          <p>Example:</p>
+          <ul>
+            <li class="param">ID=686103400067717</li>
+          </ul>
+        </td>
+      </tr>
+
+      <tr>
+        <a name="CIRCLE"></a>
+        <td><span class="param">CIRCLE</span></td>
+        <td>
+          <p>
+            The <span class="param">CIRCLE</span> parameter value
+            consists of 3 elements, all measured in degrees: RA (right
+            ascension), DEC (declination), and RADIUS, in that
+            order. RA and DEC are assumed to be in the ICRS system.
+            As with other multi-element values, the elements must be
+            separated by a single space.  This parameter restricts ZTF
+            objects of interest to the circle of radius RADIUS with
+            center determined by RA and DEC.
+          </p>
+          <p>
+            In accordance with the standard, the valid range of RA is
+            [0,180] and of DEC is [-90,90].  For performance reasons,
+            the valid range of RADIUS is limited to (0,0.1667].
+          </p>
+          <p>Example:</p>
+          <ul>
+            <li class="param">CIRCLE=-164.7 -5.8 0.1</li>
+          </ul>
+       </td>
+     </tr>
+
+    <tr>
+        <a name="POS"></a>
+        <td><span class="param">POS</span></td>
+        <td>
+          <p>
+            The <span class="param">POS</span> parameter
+            value must consist of a shape described by
+            ICRS coordinates in decimal degrees. It
+            identifies the shape which contains ZTF objects
+            of interest.  The only shape currently supported
+            is CIRCLE.   The three following elements of the value
+            correspond to RA, DEC, and RADIUS respectively; see the
+            description of CIRCLE above.
+          </p>
+          <p>Example:</p>
+          <ul>
+            <li class="param">POS=circle -164.7 -5.8 0.1</li>
+          </ul>
+        </td>
+      </tr>
+
+      <tr>
+        <a name="BAND"></a>
+        <td><span class="param">BAND</span></td>
+        <td>
+          <p>
+            The <span class="param">BAND</span> parameter defines the
+            wavelength interval, measured in meters, to be searched
+            for data.  This interval is unbounded by default. If
+            (semi-)bounded, the interval includes the bounding
+            value(s). A BAND constraint is satisfied if the interval
+            intersects the wavelength coverage of the observation.
+          </p>
+          <p>Examples:</p>
+          <ul>
+            <li>Retrieve only data in the wavelength range 410nm&mdash;550nm:
+              <p>
+                <span class="param">BAND=4.10e-7 5.50e-7</span>
+              </p>
+            </li>
+            <li>Retrieve data with wavelength no less than 1.4 micron:
+              <p>
+                <span class="param">BAND=1.4e-6 Inf</span>
+              </p>
+            </li>
+            <li>Retrieve data with wavelength no more than 1.4 micron:
+              <p>
+                <span class="param">BAND=0 1.4e-6</span>
+              </p>
+            </li>
+            <li>Retrieve data that includes 2.2 micron:
+              <p>
+                <span class="param">BAND=2.2e-6</span>
+              </p>
+            </li>
+          </ul>
+        </td>
+      </tr>
+
+      <tr>
+        <a name="BANDNAME"></a>
+        <td><span class="param">BANDNAME</span></td>
+        <td>
+          <p>
+            The <span class="param">BANDNAME</span> parameter
+            identifies by filter-id the wavelength interval(s) to be
+            searched for data.  Possible values are "g", "r", and "i",
+            respectively equivalent to "1", "2" and "3", and
+            comma-separated combinations thereof.
+            </p><p>
+            Implemented as a
+            filter on the "fid" column of the ZTF objects table.
+          </p>
+          <p>Examples:</p>
+          <ul>
+            <li>Find only G-band data, which covers the wavelength range 410nm&mdash;550nm:
+              <p>
+                <span class="param">BANDNAME=g</span>
+              </p>
+            </li>
+            <li>Find only G-band and I-band data, which cover the
+            wavelength ranges 410nm&mdash;550nm and 700nm&mdash;900nm respectively:
+              <p>
+                <span class="param">BANDNAME=g,i</span>
+              </p>
+            </li>
+          </ul>
+        </td>
+      </tr>
+
+      <tr>
+        <a name="MAG"></a>
+        <td><span class="param">MAG</span></td>
+        <td>
+          <p>
+            The <span class="param">MAG</span> parameter specifies a
+            range in which the magnitude of ZTF objects of interest
+            must lie.
+            </p><p>
+            Implemented as a filter on the "medianmag"
+            column of the ZTF objects table.</p>
+          <p>Examples:</p>
+          <ul>
+            <li class="param">MAG=17.0 17.7</li>
+          </ul>
+        </td>
+      </tr>
+
+      <tr>
+        <a name="NUM_OBS"></a>
+        <td><span class="param">NUM_OBS</span></td>
+        <td>
+          <p>
+            The <span class="param">NUM_OBS</span> parameter specifies
+            the minimum number of observation epochs required of any
+            ZTF object of interest.
+          </p><p>
+            Implemented as a filter on the
+            "nobs" column of the ZTF objects table.</p>
+          <p>Examples:</p>
+          <ul>
+            <li class="param">NUM_OBS=5</li>
+          </ul>
+        </td>
+      </tr>
+
+      <tr>
+        <a name="TIME"></a>
+        <td><span class="param">TIME</span></td>
+        <td>
+          <p>
+            The <span class="param">TIME</span> parameter specifies
+            the date-time range for which lightcurve data is to be
+            retrieved.  The range is unlimited by default. Range
+            endpoint(s) are interpreted as Modified Julian Dates
+            (MJD).
+            </p><p>
+            Implemented as a filter on the "mjd" field in the
+            ZTF lightcurve collection.
+          </p>
+
+          <p>Examples:</p>
+          <ul>
+            <li>Retrieve only data in the MJD range 55555.5&mdash;555678.9:
+              <p>
+                <span class="param">TIME=55555.5 55678.9</span>
+              </p>
+            </li>
+            <li> Retrieve only data from at or before the MJD time 55555.5:
+              <p>
+                <span class="param">TIME=-Inf 55555.5</span>
+              </p>
+            </li>
+            <li> Retrieve only data from the MJD instant 55555.5:
+              <p>
+                <span class="param">TIME=55555.5</span>
+              </p>
+            </li>
+          </ul>
+        </td>
+      </tr>
+
+      <tr>
+        <a name="BAD_CATFLAGS_MASK"></a>
+        <td><span class="param">BAD_CATFLAGS_MASK</span></td>
+        <td>
+          <p>
+            The <span class="param">BAD_CATFLAGS_MASK</span> parameter
+            specifies a bitmask used to exclude lightcurve points
+            with at least one of the indicated catflag bits set.  (See
+            e.g. Section 10.3
+            of <a href="http://web.ipac.caltech.edu/staff/fmasci/ztf/ztf_pipelines_deliverables.pdf">
+            The ZTF Science Data System Explanatory Supplement</a> for
+            a description of these bits.)
+            </p><p>
+            Implemented as a filter on the "catflags" field in the
+            ZTF lightcurve collection.
+          </p>
+          <p>Examples:</p>
+          <ul>
+            <li>Exclude any lightcurve point whose
+            catflag value indicates at least one of the data issues
+            associated to bits 0-3.
+              <p>
+                <span class="param">BAD_CATFLAGS_MASK=15</span>
+              </p>
+            </li>
+          </ul>
+        </td>
+      </tr>
+
+      <tr>
+        <a name="COLLECTION"></a>
+        <td><span class="param">COLLECTION</span></td>
+        <td>
+          <p>
+            The <span class="param">COLLECTION</span> parameter
+            identifies the set of ZTF lightcurve files from which
+            data will be returned, as well as the associated ZTF
+            objects table.  The default collection corresponds to the
+            most recent public release.  Currently supported values
+            are "ztf" (login required) and "ztf_drN" where N can go back to include the last 5 versions.
+            But the most recent release is preferred, so for the general user, COLLECTION need not be set.
+          </p>
+          <p>Examples:</p>
+          <ul>
+            <li class="param">COLLECTION=ztf_dr18</li>
+          </ul>
+        </td>
+      </tr>
+
+      <tr>
+        <a name="FORMAT"></a>
+        <td><span class="param">FORMAT</span></td>
+        <td>
+          <p>
+            The <span class="param">FORMAT</span> parameter indicates
+            the desired format of the output table.  Possible values
+            are VOTABLE (the default), IPAC_TABLE, HTML, CSV, and TSV
+            (case-insensitive).
+          <p>Examples:</p>
+          <ul>
+            <li class="param">FORMAT=VOTABLE</li>
+          </ul>
+        </td>
+      </tr>
+    </table>
+
+<a name="accesscontrol"></a>
+<h3>Access Control (only for non-public data)</h3>
+
+<p>The ZTF collection contains both proprietary and public (currently dr18)
+data. Access to proprietary data requires a password. General
+instructions for using the IRSA API's with a password are
+provided <a href = "api_access.html">here</a>; the following examples
+should suffice for ZTF-LC-API.</p>
+
+<p>Examples:</p>
+
+<ol>
+
+<li>Use curl to access proprietary data:
+<code>
+curl --user myemail@astronomy.edu:mypassword -o out.tbl "https://irsa.ipac.caltech.edu/cgi-bin/ZTF/nph_light_curves?ID=686103400067717"
+</code>
+</li><br />
+
+<li>Use wget to access proprietary data:
+<code>
+wget --auth-no-challenge --user=myemail@astronomy.edu --password=mypassword -O out.tbl "https://irsa.ipac.caltech.edu/cgi-bin/ZTF/nph_light_curves?ID=686103400067717"
+
+</code>
+</li><br />
+
+<li>Use curl with cookies and $USER and $PASS variables to access proprietary data:
+<code>
+curl -c cookies.txt "https://irsa.ipac.caltech.edu/account/signon/login.do?josso_cmd=login&josso_username=$USER&josso_password=$PASS" 
+</code><br /><br />
+<code>
+curl -b cookies.txt -o out.tbl "https://irsa.ipac.caltech.edu/cgi-bin/ZTF/nph_light_curves?ID=686103400067717"
+</code><br /><br />
+<code>
+curl -c cookies.txt "https://irsa.ipac.caltech.edu/account/signon/logout.do"
+</code>
+</li><br />
+
+<li>Use wget with cookies and $USER and $PASS variables to access proprietary data:
+<code>
+wget --save-cookies=cookies.txt -O /dev/null "https://irsa.ipac.caltech.edu/account/signon/login.do?josso_cmd=login&josso_username=$USER&josso_password=$PASS"
+</code><br /><br />
+<code>
+wget --load-cookies=cookies.txt -O out.tbl "https://irsa.ipac.caltech.edu/cgi-bin/ZTF/nph_light_curves?ID=686103400067717"
+</code><br /><br />
+<code>
+wget --save-cookies=cookies.txt -O /dev/null "https://irsa.ipac.caltech.edu/account/signon/logout.do"
+</code>
+
+</li>
+</ol>
+
+<p>NOTE: Currently the cookie file issued using the last two examples above will be valid for 1 week, after which a new cookie file must be obtained.  If requests are issued via a browser session that the user has logged into, note that login sessions will expire after 2 hours of inactivity, up to a maximum of 1 week.
+</p>
+
+<h3>Getting Help</h3>
+<p>
+	If you've run into a problem, think you've found a bug, or simply have questions, please contact
+	<a href="https://irsa.ipac.caltech.edu/docs/help_desk.html">IRSA User Support</a>.
+</p>
+
+</div> <!-- end .webpage -->
+
+
+</div> <!-- end #content -->
+<div id="irsa-footer" style="position:absolute;left:0;right:0;margin-top:20px">
+<iframe src="/frontpage/footer.html" width="100%" frameborder=0 scrolling=0 seamless=1/>
+</div>  <!-- end #irsa-footer -->
+
+</body>
+</html>
+
+</body>

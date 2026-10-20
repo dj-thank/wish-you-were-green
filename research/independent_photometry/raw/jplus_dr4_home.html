@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<meta charset="utf-8">
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<meta content="Tamara Civera (CEFCA);Javier Hernandez (CEFCA)" name="author">
+<meta content="Centro de Estudios de Física del Cosmos de Aragón (CEFCA)" name="copyright">
+<link href="https://archive.cefca.es/catalogues/static/icon/favicons/jplus_favicon.ico" rel="icon">
+<title>J-PLUS-DR4 - Data Access Services</title>
+<link rel="stylesheet" href="https://archive.cefca.es/catalogues/static/components/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://archive.cefca.es/catalogues/static/components/bootstrap/3.3.6/css/dashboard.min.css">
+<link rel="stylesheet" href="https://archive.cefca.es/catalogues/static/css/style.min.css">
+<link rel="stylesheet" href="https://archive.cefca.es/catalogues/static/components/verticalResponsiveMenu/vertical-responsive-menu.min.css">
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+	<script src="https://archive.cefca.es/catalogues/static/components/html5shiv/3.7.3/html5shiv.min.js"></script>
+	<script src="https://archive.cefca.es/catalogues/static/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+<link rel="stylesheet" href="https://archive.cefca.es/catalogues/static/components/cookieconsent/v2.9.2/css/cookieconsent.min.css">
+<link rel="stylesheet" href="https://archive.cefca.es/catalogues/static/css/themes/jplus.min.css">
+
+
+<script async type="text/plain" data-cookiecategory="analytics" src="https://www.googletagmanager.com/gtag/js?id=G-VCNXY6FLZ5"></script>
+<script type="text/plain" data-cookiecategory="analytics">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VCNXY6FLZ5');
+</script>
+<style>
+.data_access_intro {
+	text-indent: 20px;
+	margin: 20px 0 30px 0;
+	text-align: justify;
+}
+.notAvailable {
+	color: #8a9baa;
+}
+</style>
+</head>
+
+<body>
+  
+<nav class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>          
+			<button id="footer_button" type="button" class="navbar-toggle collapsed hidden" data-toggle="collapse" data-target="#footer-body">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>          
+			<span id="toggleMenu" class="toggle_menu toggle_menu_up">
+				<i class="glyphicon glyphicon-chevron-down"></i>
+			</span>
+			<a class="navbar-brand" href="https://www.j-plus.es/datareleases/data_release_dr4">
+				<img style="height:100%;" alt="Catalogue Logo" src="https://archive.cefca.es/catalogues/static/img/logos/jplus.png" />
+			</a>
+			
+		</div>
+		<div id="navbar" class="navbar-collapse collapse">
+			<ul class="nav navbar-nav">
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Services <span class="caret"></span></a>
+					<ul class="dropdown-menu" role="menu">
+					    <li><a href="https://archive.cefca.es/catalogues/jplus-dr4"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> Information about J-PLUS-DR4 Services</a></li>
+					    <li class="divider"></li>	        
+						<li><a href="https://archive.cefca.es/catalogues/jplus-dr4/navigator.html">Sky Navigator</a></li>
+						<li><a href="https://archive.cefca.es/catalogues/jplus-dr4/object_list.html">Object List Search</a></li>		        	
+						
+						
+						<li><a href="https://archive.cefca.es/catalogues/jplus-dr4/cone_search.html">Cone Search</a></li>
+						<li><a href="https://archive.cefca.es/catalogues/jplus-dr4/coverage_map.html">Coverage Map</a></li>
+						<li>
+						   
+						   <a href="https://archive.cefca.es/hips_jplus_DR4/mocs/jplus_dr4_coverage_order15.fits">Multi-Order Coverage Map (MOC)</a>
+						</li>
+						
+						
+						
+						
+						
+						<li class="divider"></li>
+						<li><a href="https://archive.cefca.es/catalogues/jplus-dr4/vo_services.html">V.O. Services</a></li>
+						
+						
+						
+					</ul>
+				</li>
+			</ul>
+			
+			<ul class="nav navbar-nav navbar-right">
+			    <li class="nav-icon-img">   
+					<a class="simple icon" href="https://archive.cefca.es/catalogues/jplus-dr4" title="Information about J-PLUS-DR4 Services" target="_blank">
+						<i class="glyphicon glyphicon-info-sign"></i>
+						<span>Information about J-PLUS-DR4 Services</span>
+					</a>
+				</li>
+				<li class="nav-icon-img">   
+					<a class="simple icon" href="https://archive.cefca.es/doc/manuals/catalogues_portal_users_manual.pdf" title="Data Access Manual" target="_blank">
+						<i class="glyphicon glyphicon-question-sign"></i>
+						<span>Data Access Manual</span>
+					</a>
+				</li>
+				
+				<li class="nav-icon-img">   
+					<a class="simple icon" href="https://archive.cefca.es/catalogues" title="Home - Projects list" target="_blank">
+						<i class="glyphicon glyphicon-home"></i>
+						<span>Home - Projects list</span>
+					</a>
+				</li>
+				<li class="nav-icon-img">   
+					<a class="simple icon" href="https://www.j-plus.es/contact" title="Contact" target="_blank">
+						<i class="glyphicon glyphicon-envelope"></i>
+						<span>Contact</span>
+					</a>
+				</li>
+				
+				
+				<li class="nav-icon-img">
+				    <a class="simple icon" href="https://archive.cefca.es/catalogues/register" title="Register">
+						<i class="glyphicon glyphicon-user" style="left: -2px;"></i><i class="glyphicon glyphicon-plus" style="font-size: 0.7em; position: absolute; right: 3px; top: 16px;"></i>
+						<span>Register</span>
+					</a>
+				</li>
+				<li class="nav-icon-img">				   			                   		
+					<a class="simple icon" href="https://archive.cefca.es/catalogues/login" title="Login">
+						<i class="glyphicon glyphicon-log-in"></i>
+						<span>Login</span>
+					</a>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+</nav>
+
+  <div class="wrapper_all">
+    <div class="row title" style="text-align:center">
+	  <div class="col-sm-12">			    	
+		<h2>J-PLUS-DR4 - Data Access Services</h2>
+	  </div>
+	</div>
+	<!-- Maintenance alarm -->
+	<div class="alert alert-warning" style="margin-top:0px; margin-bottom: 40px;text-indent:0;display:none" id="alert-warning-message-container">
+        <p><b><span class="glyphicon glyphicon-warning-sign" aria-hidden="true" style="color:#ff7200;padding-right:7px;font-size;font-size: 1.2em;"> </span><span id="alert-warning-message-text"></span></b></p>
+    </div>
+	<div class="data_access_intro">
+		<p>J-PLUS DR4 Data Release (November, 2025) provides access to the combined scientific images in 12 filters covering a total area of ~ 5000 square degrees. J-PLUS-DR4 is based on images collected from November 2015 to February 2025 by the JAST80 telescope. It includes two types of data: images and single and dual catalogue data (parameters measured from images, such as photometry or morphology data). Single catalogues are the ones where the detection and photometry had been done on each image independently. While, dual catalogues are the catalogues where the detection and photometry had been done using as reference image the r-SDSS image.</p> <p>J-PLUS web site offers dual catalogues data through several different online data access tools, each suited to a particular need. The table below gives a short description of each of tool indicating when you might use each one, based on what information you know already and what information you want to find out. Click on the name of a tool to access to it. Single catalogue data is also available but, currently, only through VO services.</p>
+	    
+	</div>
+	<div>
+		<table class="table table-hover table-condensed serviceTable" style="margin: 30px 0;text-indent: 0;">
+		   <thead>
+			  <tr>
+				<th style="width:30%">Tool</th>
+				<th style="width:35%">What it Does</th>
+				<th style="width:35%">Use it when...</th>
+			  </tr>
+		   </thead>
+		   <tbody>
+			  <tr>
+			     <td><a title="Go to Sky Navigator" href="https://archive.cefca.es/catalogues/jplus-dr4/navigator.html" target="_blank">Sky Navigator</a></td>
+			     <td>Lets you navigate through the sky by panning and zooming. When you click on an object, you get a summary of it and you have options to see its photospectrum, explore it or search it in other catalogues.</td>
+			     <td>You are looking through the sky for objects to study.</td>
+			  </tr>
+			  <tr>
+			     <td><a title="Go to Object List Search" href="https://archive.cefca.es/catalogues/jplus-dr4/object_list.html" target="_blank">Object List Search</a></td>
+			     <td>Lets you upload a list of sky positions, object names or objects identifiers, then returns a list of objects near those positions. Displays a summary, photospectra and thumbnail images for the list of objects.</td>
+			     <td>You want to quickly scan through a list of objects or you have a list of sky objects from another astronomical database and you want to find all objects near each of your objects.	You want to create a report of a list of objects.</td>
+			  </tr>
+			  <tr>
+			     <td>
+			     	
+			     	<span class="notAvailable">Image Search</span>
+			     </td>
+			     <td>Lets you search and download coadded images by position or name. Lets you see a preview for each image.
+			     	<span class="notAvailable">This service is only available if you have logged in.</span> 
+			     </td>
+			     <td>You want to look at or download a coadded image.</td>
+			  </tr>
+			  <tr>
+			     <td>
+			     	
+			     	<span class="notAvailable">Reduced Individual Image Search</span>
+			     </td>
+			     <td><!-- <b style="color:#ff5400;">New!</b>-->Lets you search and download reduced individual images by position, astronomical night or name. Lets you see a preview for each image.
+			     	<span class="notAvailable">This service is only available if you have logged in.</span> 
+			     </td>
+			     <td>You want to look at or download a reduced individual image.</td>
+			  </tr>
+			  <tr>
+			     <td><a title="Go to Cone Search" href="https://archive.cefca.es/catalogues/jplus-dr4/cone_search.html" target="_blank">Cone Search</a></td>
+			     <td>Lets you search the database for objects near a certain sky position and with certain brightnesses.</td>
+			     <td>You want to find objects in one part of the sky.</td>
+			  </tr>
+			  <tr>
+			     <td><a title="Go to Coverage Map" href="https://archive.cefca.es/catalogues/jplus-dr4/coverage_map.html" target="_blank">Coverage Map</a></td>
+			     <td>Lets you display the sky area covered by the data release.</td>
+			     <td>You want to know the fields covered by the data release. These fields are linked to see them quickly in the sky navigator tool.</td>
+			  </tr>
+			  <tr>
+			     <td>
+			        
+			        <a title="Download Multi-Order Coverage Map (MOC) as fits" href="https://archive.cefca.es/hips_jplus_DR4/mocs/jplus_dr4_coverage_order15.fits" target="_blank">Multi-Order Coverage Map (MOC)</a>
+			     </td>
+			     <td>Lets you download the Multi-Order Coverage map (MOC) which describes the area covered by the data release (fits file) (order 15). <span>You can download other MOC files in the <a href="https://archive.cefca.es/catalogues/jplus-dr4/coverage_map.html">Coverage Map service</span>.</td>
+			     <td>You want to download the MOC file to compute very fast data set operations (unions, intersections,...) or query data (sources, images,...) of other data releases only inside this data release area using external tools like VizieR, Aladin or Topcat.</td>
+			  </tr>
+			  <tr>
+			     <td>
+			     	
+			     	<span class="notAvailable">Custom Statistical Maps</span>
+			     </td>			     
+			     <td>Lets you generate statistical maps based on different parameters for the area covered by the data release. <span class="notAvailable">This service is only available if you have logged in.</span></td>
+			     <td>You want to generate a custom statistical map based on a parameter, like FWHM, of the fields covered by the data release.</td>
+			  </tr>
+			  
+		      
+			  <tr>
+			     <td>
+			     	<a title="Go to V.O. Services" href="https://archive.cefca.es/catalogues/jplus-dr4/vo_services.html" target="_blank">V.O. Services</a>
+			     </td>
+			     <td>Lets you access to images and objects data through Virtual Observatory (V.O.) protocols using <a href="http://www.ivoa.net/astronomers/applications.html" title="Virtual Observatory information about compatible applications" target="_blank">V.O. compatible applications</a>. V.O. services offered are
+			     <span>Simple Cone Search (SCS), </span><span>Table Access Protocol (TAP), </span>
+			     <span>Simple Image Access Protocol (SIAP) </span><span>and Simple Spectral Access Protocol (SSAP)</span>.
+			     </td>
+			     <td>You want to use a V.O. compatible application to access catalogue data or images and you want to know the URL of the service.			     	
+			     </td>
+			  </tr>
+			  <tr>
+			     <td>
+			     	
+			     	<span class="notAvailable">V.O. Asynchronous Queries (ADQL)</span>
+			     </td>
+			     <td>Lets you search the database for all objects that meet any criteria you can think of, then returns whatever object data you request. Database queries are in Astronomical Data Query Language (ADQL), which is basically a standardised version of SQL (<a href="https://archive.cefca.es/catalogues/jplus-dr4/help_adql.html" title="Go to ADQL help and examples" target="_blank">ADQL help and examples</a>).
+			     	<span class="notAvailable">This service is only available if you have logged in.</span>
+			     </td>
+			     <td>You want to answer a specific astronomical research question.</td>
+			  </tr>
+			  <tr>
+			     <td>
+			     	
+			     	<span class="notAvailable">Direct Download Services</span>
+			     </td>
+			     <td>Lets you build the URL for different services for images or objects data download.
+			         <span class="notAvailable">This service is only available if you have logged in.</span>
+			     </td>
+			     <td>You want to download images or objects data from the command line or from your own scripts and you want to know how to build the URL of the service.			     	
+			     </td>
+			  </tr>
+			  			  
+		   </tbody>
+		</table>
+	</div>
+	<div class="data_access_intro" style="font-style:italic">
+		Please send bug reports, questions and comments to <a href="mailto:j-plus@cefca.es">j-plus@cefca.es</a>. In case you encounter a problem, please include as much information as possible so we can reproduce it (such as URL, time, operating system, browser, ...).
+		
+	</div>
+  </div>
+  <footer class="copyright">
+      <div>Copyright © 2015-2026 Javalambre Photometric Local Universe Survey. All Rights Reserved.<span style='margin: 0 5px;'> - </span> <a href='#' title='Show how to cite J-PLUS-DR4' onclick='showInfoMessage("How to cite J-PLUS-DR4", "<div class=\"dialog_title\">Acknowledging J-PLUS-DR4 in publications:</div><div>Please include the following in any published material that makes use of J-PLUS-DR4:</div><div class=\"reference\">\"Based on observations made with the JAST80 telescope for the J-PLUS project at the Observatorio Astrofísico de Javalambre, in Teruel, owned, managed and operated by the Centro de Estudios de Física del Cosmos de Aragón.\"</div><div class=\"dialog_title dialog_title2\">Referencing J-PLUS-DR4 in publications:</div><div>If your research benefits from the use of J-PLUS-DR4, we would appreciate if you could include the following reference in your publication:</div><div class=\"reference\">\"Based on observations made with the JAST80 telescope for the J-PLUS project at the Observatorio Astrofísico de Javalambre, in Teruel, owned, managed and operated by the Centro de Estudios de Física del Cosmos de Aragón.\"</div>", "footer-modal", howtociteFormat);return false;'>How to cite J-PLUS-DR4</a><span style='margin: 0 5px;'> - </span> <a href='https://www.j-plus.es/datareleases/acknowledgements' target='_blank' title='J-PLUS-DR4 Acknowledgements'>Acknowledgements</a><span style='margin: 0 5px;'> - </span> <a href='#' title='Show version information' onclick='showInfoMessage("Current version v1.36", "<div class=\"dialog_title\"><div class=\"divider\"></div><div class=\"version_title\">Version v1.36 (2026/03/18)</div>New Features and Enhancements:</div><div><ul><li>VO TAP: Improved handling of empty query results in FITS outputs.</li><li>VO Asynchronous queries: Improved handling of empty query results in FITS outputs.</li><li>Resolved an issue with object name resolution across different portal services.</li></ul></div><div class=\"dialog_title\"><div class=\"divider\"></div><div class=\"version_title\">Version v1.35 (2025/11/13)</div>New Features and Enhancements:</div><div><ul><li>VO TAP: In some DRs, certain tables will only be visible if the user is logged in and has the necessary permissions to access them.</li></ul></div><div class=\"dialog_title\"><div class=\"divider\"></div><div class=\"version_title\">Version v1.34 (2025/09/30)</div>New Features and Enhancements:</div><div><ul><li>Coverage map: Order of the MOC file that describes the DR footprint displayed.</li><li>VO SIAP v2: Now, only datalink url is returned instead of returning the fits file and the datalink url.</li><li>VO Datalink: Improvement in the presentation of data within the datalinks. Now, when viewed in the browser, they are displayed in a more visually appealing and structured way.</li><li>VO Asynchronous queries: Names of the columns related with times changed.</li></ul></div><div class=\"dialog_title\"><div class=\"divider\"></div><div class=\"version_title\">Version v1.33 (2024/11/27)</div>New Features and Enhancements:</div><div><ul><li>VO TAP: Added new ADQL functions arr_contains and arr_contains_null.</li></ul></div><div class=\"dialog_title\"><div class=\"divider\"></div><div class=\"version_title\">Version v1.32 (2024/10/30)</div>New Features and Enhancements:</div><div><ul><li>VO TAP: Solved bug in CSV and VOTABLE format when an array value had a null value. Now, a Nan value is returned.</li><li>Custom Statistical Maps: Solved bug when the map was exported in FITS or CSV format (the served returned internal error).</li></ul></div><div class=\"dialog_title\"><div class=\"divider\"></div><div class=\"version_title\">Version v1.31 (2024/09/24)</div>New Features and Enhancements:</div><div><ul><li>Coverage map: It is possible to display it using an ecliptic coordinate system.</li></ul></div><div class=\"dialog_title\"><div class=\"divider\"></div><div class=\"version_title\">Version v1.30 (2024/08/28)</div>New Features and Enhancements:</div><div><ul><li>Sky navigator: If the data release contains objects incomplete (not observed in all filters), there is an option to mark them with a grey square.</li><li>Object explorer: Solved Images fits cutouts bug due to FoV selected was not correctly read</li><li>Object explorer: In PNG images visualization, if the object has not been observed in that filter, the frame is not displayed.</li><li>Object explorer: Now, it is possible to select the FoV of the images cutouts using a text field instead of the slider.</li><li>Object list search: Now, it is possible to select the FoV of the images cutouts using a text field instead of the slider.</li><li>Direct Download Services: Solved bug with weight parameter at fits image cutout service.</li></ul></div><div class=\"dialog_title\"><div class=\"divider\"></div><div class=\"version_title\">Version v1.29 (2023/11/22)</div>New Features and Enhancements:</div><div><ul><li>Sky navigator: New tab called Options to change visualization options.</li><li>Coverage map: If there are additional footprints offered, added button to download their MOC file.</li></ul></div><div class=\"dialog_title\"><div class=\"divider\"></div><div class=\"version_title\">Version v1.28 (2023/09/14)</div>New Features and Enhancements:</div><div><ul><li>Reduced Individual Image Search: Solved problem to resolve objects coordinates in searches using the object name.</li><li>Image Search: Solved problem to resolve objects coordinates in searches using the object name.</li><li>Cone search: Solved problem to resolve objects coordinates in searches using the object name.</li><li>VO TAP: Changed some ADQL functions names (go to ADQL help to see changes). Note: your previous queries with old names are still supported.</li><li>VO TAP: Added new array functions: arr_dot, arr_avg, arr_sum, arr_map, arr_count.</li><li>VO TAP: Added math operations functionality for array columns (+, -, / and *).</li><li>VO TAP: Added slices functionality for array columns.</li><li>VO TAP: Added bitwise operations functionality (&, |, ~).</li><li>VO Publishing registry: Added ADQL functions information.</li><li>VO Publishing registry: Added capabilities descriptions.</li><li>VO Publishing registry: Added spatial, temporal and spectral coverage information.</li><li>VO Publishing registry: Improved subjects information.</li></ul></div><div class=\"dialog_title\"><div class=\"divider\"></div><div class=\"version_title\">Version v1.27 (2023/05/02)</div>New Features and Enhancements:</div><div><ul><li>Sky navigator: SDSS button searches the object in DR18 instead of DR14</li><li>Object explorer: SDSS button searches the object in DR18 instead of DR14</li><li>VO TAP: Changed datetime columns representation in VOTABLE format (OBSERVATION_DATE columns). Previously it was represented as long types in format yyyymmddhhMMss, now as string types in format yyyy-mm-ddThh:MM:ss.</li><li>VO TAP: In synchronous mode it is also possible to use FITS, CSV and TSV formats in addition to VOTABLE format (default one).</li><li>VO TAP: In asynchronous mode it is also possible to use VOTABLE BINARY 2 format.</li><li>VO TAP: New TAP UPLOAD functionality available.</li><li>VO TAP: New functions to work with time columns.</li><li>VO TAP: Beta support for ADQL 2.1 (new ADQL functionalities).</li><li>VO TAP: ARC_DISTANCE function replaced by DISTANCE function.</li><li>VO SIAP2: SIAP2 service url has changed.</li><li>Coverage map: It is possible to display or hide the complete survey footprint.</li><li>VO Publishing registry: Added information about TAP tables, instrument and telescope.</li><li>Cookies management has changed to be consistent with new laws.</li></ul></div><div class=\"dialog_title\"><div class=\"divider\"></div><div class=\"version_title\">Version v1.26 (2021/12/15)</div>New Features and Enhancements:</div><div><ul><li>VO TAP: Improved units and UCDs notation.</li></ul></div><div class=\"dialog_title\"><div class=\"divider\"></div><div class=\"version_title\">Version v1.25 (2021/08/12)</div>New Features and Enhancements:</div><div><ul><li>VO TAP: Solved bug with pyvo library in async mode.</li></ul></div><div class=\"dialog_title\"><div class=\"divider\"></div><div class=\"version_title\">Version v1.24 (2021/03/22)</div>New Features and Enhancements:</div><div><ul><li>VO TAP: Added OFFSET clause which specifies the number of rows to skip before starting to return rows from the query.</li></ul></div><div class=\"dialog_title\"><div class=\"divider\"></div><div class=\"version_title\">Version v1.23 (2021/02/25)</div>New Features and Enhancements:</div><div><ul><li>Reduced Individual Image Search: Added new service, in data releases that support it, to download reduced individual images fits catalogues.</li><li>Direct Download Services: In data releases that support it, added the urls to download reduced individual images fits catalogues.</li></ul></div><div class=\"dialog_title\"><div class=\"divider\"></div><div class=\"version_title\">Version v1.22 (2021/01/22)</div>New Features and Enhancements:</div><div><ul><li>VO TAP: In data releases that support it, added TAP_SCHEMA tables with information about the different schemas, tables and columns offered through TAP service.</li><li>VO TAP: In votable format, array columns that contain data measured in the different filters return as arraysize the number of filters instead of *.</li><li>VO TAP: In votable format, if there are array columns in the results, filters information is returned as parameters of the table.</li><li>VO Asynchronous queries: In help, added information about tables foreign keys.</li><li>VO Asynchronous queries: In help, added new tables category called VO services with the list of tables related with VO protocols and their information.</li><li>VO SIAP: Changed url to access SIAP v2.</li><li>VO: All votable tables updated to version 1.3 in all VO services.</li></ul></div><div class=\"dialog_title\"><div class=\"divider\"></div><div class=\"version_title\">Version v1.21 (2020/10/20)</div>New Features and Enhancements:</div><div><ul><li>Custom Statistical Maps: In data releases that support it, added new service that allows to build custom statistical maps of different properties of the images.</li></ul></div><div class=\"dialog_title\"><div class=\"divider\"></div><div class=\"version_title\">Version v1.20 (2020/06/03)</div>New Features and Enhancements:</div><div><ul><li>Reduced Individual Image Search: Added new service, in data releases that support it, to search and download reduced individual images.</li><li>Object explorer: In data releases that support it and if the object has photoZ, added button to download a fits file with the PDF.</li><li>Object explorer: In data releases that support it, added button to directly search the reduced individual images with the object coordinates.</li><li>Image search: In data releases that support it, added a new action to directly search and download reduced individual images used to compose the tile image.</li><li>Image search: Added possibility to change the limit of images to search.</li><li>Image search: In search by position added possibility to select a set of filters instead of only one filter.</li><li>Image search: In the results table added pagination.</li><li>Direct Download Services: In data releases that support it, added the urls to download fits and graphic reduced individual images.</li><li>Direct Download Services: In data releases that support it, added the url to download PhotoZ PDF of the object indicated.</li></ul></div><div class=\"dialog_title\"><div class=\"divider\"></div><div class=\"version_title\">Version v1.19 (2019/12/18)</div>New Features and Enhancements:</div><div><ul><li>Direct Download Services: Added new service that lets you build the url for different services for images or objects data download.</li></ul></div><div class=\"dialog_title\"><div class=\"divider\"></div><div class=\"version_title\">Version v1.18 (2019/11/06)</div>New Features and Enhancements:</div><div><ul><li>Sky navigator: Solved bug that consisted of sometimes catalogue objects disappeared intermittently.</li><li>Sky navigator: In new data releases, catalogue is progressive and objects are displayed depending their magnitude and the zoom level.</li><li>Object explorer: If psf files are available, it is possible to download the object PSF file in the filters selected.</li><li>VO TAP: Solved bug in VOTABLE format when there is a string column with the &lt; or &gt; characters.</li><li>HiPS catalogue: Url changed and now offers all metadata IVOA recommendation files.</li></ul></div><div class=\"dialog_title\"><div class=\"divider\"></div><div class=\"version_title\">Version v1.17 (2019/07/31)</div>New Features and Enhancements:</div><div><ul><li>Image search: If possible, psf files download for the images is available.</li></ul></div><div class=\"dialog_title\"><div class=\"divider\"></div><div class=\"version_title\">Version v1.16 (2019/05/16)</div>New Features and Enhancements:</div><div><ul><li>Sky navigator: If photoZ have been calculated for the catalogue, the filter \"PhotoZ\" on \"Data filtering\" is displayed and working.</li><li>Sky navigator: If photoZ have been calculated for the catalogue, on each object tooltip the value of the PhotoZ is displayed.</li><li>Object explorer: Object images FoV minimum and maximum values extended.</li><li>Object explorer: Object images are not directly loaded when \"Object Images\" tab is open. They are loaded when \"Load png cutouts\" or \"Apply\" button are clicked.</li><li>Object explorer: It is possible to indicate for which filters object images are going to be loaded, selecting the filters on the column \"Imgs\" of left table \"Filters to show\" before clicking \"Load png cutouts\" button.</li><li>Object explorer: At fits and weight cutouts, it is possible to indicate the FoV used and the filters for which cutouts are going to be generated. This options are displayed after clicking on the button \"Download fits cutouts\" or the button \"Download weight cutouts\".</li><li>Object explorer: When png cutouts, fits cutouts or weight cutouts are loaded or generated a progress bar is displayed indicating the status of the action.</li><li>Object list search: Added on the top of the table information about the number of objects displayed.</li><li>Object list search: On search, when an object just found was already on the table it is not loaded again, so, now, on the table there are not objects duplicated.</li><li>Object list search: When a search is performed, a progress bar is displayed indicating the status of the search.</li><li>Cone search: If photoZ have been calculated for the catalogue, the option \"PhotoZ\" on \"Cone Search Options\" is displayed and working.</li><li>Cone search: If photoZ have been calculated for the catalogue, on each object the value of the PhotoZ is displayed.</li><li>VO TAP: Solved bug in FITs format when there is an array column empty or not depending the object, normally at LEFT JOIN queries.</li></ul></div><div class=\"dialog_title\"><div class=\"divider\"></div><div class=\"version_title\">Version v1.15 (2019/01/29)</div>New Features and Enhancements:</div><div><ul><li>Sky navigator: Added button to search the object in the CDS database.</li><li>Sky navigator: Added functionality to visualize the pseudospectra in fluxes f(nu) and f(λ) or magnitudes AB.</li><li>Object explorer: Added button to search the object in the CDS.</li><li>Object explorer: Added button the search the object using a cone search in other catalogues of the CEFCA archive.</li><li>Object explorer: Changed cross identification functionality where SIMBAD and other CEFCA catalogues cross identification has been added.</li><li>MOC file: Now, it can be also directly downloaded from the services menu and the services list.</li><li>Image search: Added information about the number of images combined and the observation dates of them.</li><li>Home page: User interface improved and added in the top menu a link to go to it.</li></ul></div><div class=\"dialog_title\"><div class=\"divider\"></div><div class=\"version_title\">Version v1.14 (2018/09/12)</div>New Features and Enhancements:</div><div><ul><li>Sky navigator: Added option to show or hide error bars in pseudospectra.</li><li>Object explorer: Added option to show or hide error bars in pseudospectra.</li><li>Object explorer: Added functionality to zoom each pseudospectra by double clicking it.</li><li>Object explorer: Added functionality to download weight images cutouts of the object.</li><li>Object list: Added functionality to zoom each pseudospectra by double clicking it.</li><li>Object list: Added functionality to download weight images of the selected objects.</li><li>Object list: Added functionality to download weight images cutouts of the selected objects.</li><li>Coverage map: Added functionality to display or hide polaris and vega.</li><li>ASCII catalogues: Added functionality to obtain the MD5 of the catalogue file.</li></ul></div><div class=\"dialog_title\"><div class=\"divider\"></div><div class=\"version_title\">Version v1.13 (2018/07/05)</div>New Features and Enhancements:</div><div><ul><li>Object explorer: If PhotoZ is available in the release, photoZ data of the object obtained using different methods is displayed.</li><li>Object list: If PhotoZ is available in the release, photoZ data of the object obtained using different methods can be selected to be displayed.</li></ul></div><div class=\"dialog_title\"><div class=\"divider\"></div><div class=\"version_title\">Version v1.12 (2018/07/02)</div>New Features and Enhancements:</div><div><ul><li>Image search: If objects have photoz, photoz files download for the image in the reference filter is available.</li></ul></div><div class=\"dialog_title\"><div class=\"divider\"></div><div class=\"version_title\">Version v1.11 (2018/06/01)</div>New Features and Enhancements:</div><div><ul><li>Object explorer: In the tables near the filter name a square with the filter color representation is displayed.</li><li>Object list: Solved bug with surveys images list that displayed some surveys names twice.</li></ul></div><div class=\"dialog_title\"><div class=\"divider\"></div><div class=\"version_title\">Version v1.10 (2018/05/11)</div>New Features and Enhancements:</div><div><ul><li>Sky navigator: Photospectra visible in navigator full view.</li><li>Object explorer: Flux apertures to display in pseudospectra configurable.</li><li>Object explorer: In cross match GAIA-DR1 catalogue changed by GAIA-DR2 catalogue.</li><li>Object explorer: Object RA-DEC coordinates added in the page title.</li><li>VO Asynchronous queries: Solved the bug that historical queries had a bug in the month.</li><li>Object list: Solved bug with file importation that displayed that not object was found when objects where found.</li></ul></div><div class=\"dialog_title\"><div class=\"divider\"></div><div class=\"version_title\">Version v1.9 (2018/02/22)</div>New Features and Enhancements:</div><div><ul><li>VO TAP: Datetime columns are now represented as big integers in format: yyyymmddhhMMss.</li><li>VO TAP: Solved bug in FITs format when there are two or more columns with the same name.</li><li>VO TAP: Solved bug in FITs format when there are arrays columns with different length.</li></ul></div><div class=\"dialog_title\"><div class=\"divider\"></div><div class=\"version_title\">Version v1.8 (2017/12/20)</div>New Features and Enhancements:</div><div><ul><li>Sky navigator: Added button to activate/deactivate quickly catalogue objects markers.</li><li>Sky navigator: If catalogue has objects masks active, objects inside a mask are drawn with a yellow triangle.</li><li>Object explorer: If catalogue has data about masks flags and norm_wmap_val, values of these fields are displayed.</li><li>Object list: If catalogue has data about masks flags and norm_wmap_val, fields are listed to be displayed.</li></ul></div><div class=\"dialog_title\"><div class=\"divider\"></div><div class=\"version_title\">Version v1.7 (2017/09/22)</div>New Features and Enhancements:</div><div><ul><li>ADQL help and examples: Added new section with most used tables</li></ul></div><div class=\"dialog_title\"><div class=\"divider\"></div><div class=\"version_title\">Version v1.6 (2017/09/13)</div>New Features and Enhancements:</div><div><ul><li>Image search: Added service to download, if available, image masks.</li><li>Image search: Scripts menu items ordered by service instead of by file type.</li><li>VO Asynchronous queries: Datetime columns are now represented in ISO 8601 format.</li><li>VO TAP:  Datetime columns are now represented in ISO 8601 format.</li></ul></div><div class=\"dialog_title\"><div class=\"divider\"></div><div class=\"version_title\">Version v1.5 (2017/09/06)</div>New Features and Enhancements:</div><div><ul><li>Object explorer: In photospectrum, wide filters are represented as a square.</li><li>Object explorer: In photospectrum, error bars are displayed although the error is small.</li><li>Sky navigator: In photospectrum, wide filters are represented as a square.</li><li>Sky navigator: In photospectrum, error bars are displayed although the error is small.</li><li>Object list search: In photospectrum, wide filters are represented as a square.</li><li>Object list search: In photospectrum, error bars are displayed although the error is small.</li></ul></div><div class=\"dialog_title\"><div class=\"divider\"></div><div class=\"version_title\">Version v1.4 (2017/07/17)</div>New Features and Enhancements:</div><div><ul><li>Image search: Added service to download, if available, reduction process information in a CSV file.</li><li>Image search: Added service to download, if available, information about the raw images that compose the image in a CSV file.</li></ul></div><div class=\"dialog_title\"><div class=\"divider\"></div><div class=\"version_title\">Version v1.3 (2017/04/28)</div>New Features and Enhancements:</div><div><ul><li>VO Asynchronous queries and TAP: In TSV and CSV output files a line at the begin of the file with the query executed has been added (the line starts by \"#\"). In FITS output files the query executed has been added in the header.</li></ul></div><div class=\"dialog_title\"><div class=\"divider\"></div><div class=\"version_title\">Version v1.2 (2017/03/16)</div>New Features and Enhancements:</div><div><ul><li>Object explorer: Isoarea_world is in arcsec<sup>2</sup> instead of degrees<sup>2</sup>.</li><li>Sky navigator: In search, position format introduced by user is not changed. In previous versions, if the user introduced position in degrees, automatically the position was changed to sexadecimal format.</li><li>Sky navigator: In search, added clear button.</li><li>Sky navigator: In search, it is possible to resolve coordinates by catalogue object name: \"ImageId-Number\". Accepted formats are \"ImageId-Number\" and \"ImageId Number\". E.g.: \"1954-11128\" or \"1954 11128\".</li><li>Sky navigator: In search, if user copies coordinates in RA or DEC field, and the coordinates are in decimal format (e.g. 193.969 30.879) or hexadecimal format (e.g. 12:55:52.78 30:52:47.87), they are automatically separated in each field.</li><li>Sky navigator: In data filtering, added clear button.</li><li>Object list search: Searches with format \"ImageId-Number\" (without spaces) are also allowed.</li><li>Object list search: Isoarea_world is in arcsec<sup>2</sup> instead of degrees<sup>2</sup>.</li><li>Image search: In search, added clear button.</li><li>Image search: In search, it is possible to resolve coordinates by catalogue object name: \"ImageId-Number\". Accepted formats are \"ImageId-Number\" and \"ImageId Number\". E.g.: \"1954-11128\" or \"1954 11128\".</li><li>Image search: In search, if user copies coordinates in RA or DEC field, and the coordinates are in decimal format (e.g. 193.969 30.879) or hexadecimal format (e.g. 12:55:52.78 30:52:47.87), they are automatically separated in each field.</li><li>Cone search: In search, added clear button.</li><li>Cone search: In search, it is possible to resolve coordinates by catalogue object name: \"ImageId-Number\". Accepted formats are \"ImageId-Number\" and \"ImageId Number\". E.g.: \"1954-11128\" or \"1954 11128\".</li><li>Cone search: In search, if user copies coordinates in RA or DEC field, and the coordinates are in decimal format (e.g. 193.969 30.879) or hexadecimal format (e.g. 12:55:52.78 30:52:47.87), they are automatically separated in each field.</li></ul></div><div class=\"dialog_title\"><div class=\"divider\"></div><div class=\"version_title\">Version v1.1 (2017/01/25)</div>New Features and Enhancements:</div><div><ul><li>Object explorer: In photospectrum values out of the range (10,26) (AB magnitudes) are not displayed.</li><li>Object explorer: In photospectrum error bars out of the range (10,26) (AB magnitudes) are displayed with an arrow.</li><li>Object explorer: In photometry magnitudes with error and their errors are displayed with the value 99.</li><li>Object explorer: In morphology section only petro radius and kron radius in reference filter are shown.</li><li>Sky navigator: In photospectrum values out of the range (10,26) (AB magnitudes) are not displayed.</li><li>Sky navigator: In photospectrum error bars out of the range (10,26) (AB magnitudes) are displayed with an arrow.</li><li>Object list search: In photospectrum values out of the range (10,26) (AB magnitudes) are not displayed.</li><li>Object list search: In photospectrum error bars out of the range (10,26) (AB magnitudes) are displayed without the final horizontal line.</li><li>Object list search: Magnitudes with error and their errors are displayed with the value 99.</li><li>Object list search: Option to set all images to the selected FoV</li><li>Cone search: In magnitude table magnitudes with error and their errors are displayed with the value 99.</li><li>VO Asynchronous queries: Petro radius and kron radius in dual mode tables changed to float type instead of float array type.</li><li>VO Asynchronous queries: Result visualization bug when a column was an expression solved.</li><li>VO TAP: Petro radius and kron radius in dual mode tables changed to float type instead of float array type.</li></ul></div><div class=\"dialog_title\"><div class=\"divider\"></div><div class=\"version_title\">Version v1.0 (2016/12/07)</div>New Features and Enhancements:</div><div><ul><li>Manual can be downloaded by clicking on the ? button on the top.</li><li>Object explorer: SDSS search button works with DR12 instead of DR9.</li><li>Object explorer: If one or more of the images where the object appears have problems, a warning symbol is displayed in the button Images Search.</li><li>Sky navigator: SDSS search button works with DR12 instead of DR9.</li><li>Sky navigator: Added, in data filtering, a new field to select the galaxy/star threshold.</li><li>Sky navigator: When the image is exported, the coordinates and FoV are displayed in the image.</li><li>Object list search: Added information about coordinates and FoV in objects images downloaded.</li><li>Object list search: Added button to clear the search.</li><li>Image search: If an image has a problem, a warning symbol is displayed near the image ID. Clicking on it, more information about the problem is shown.</li><li>VO Asynchronous queries: Added functionality to visualize job results.</li><li>VO Asynchronous queries and TAP service: Added new enumeration called jplus_img_flag with the different image problems.</li><li>VO Asynchronous queries and TAP service: Added new table called TileImageFlag that contains the same data as TileImage table and if an image has a problem, the problem code and comment.</li></ul></div>", "footer-modal");return false;'>v1.36</a><div style='margin-top: 6px;'>Developed and maintained by Tamara Civera (CEFCA)</div></div>
+  </footer>
+  <script src="https://archive.cefca.es/catalogues/static/components/jquery/1.12.0/jquery.min.js"></script>
+<script src="https://archive.cefca.es/catalogues/static/components/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="https://archive.cefca.es/catalogues/static/components/verticalResponsiveMenu/vertical-responsive-menu.min.js"></script>
+
+
+
+<script type="text/javascript" src="https://archive.cefca.es/catalogues/static/components/bootstrapdialog/1.35.1/js/bootstrap-dialog.min.js" charset="utf-8"></script>
+<script type="text/javascript" src="https://archive.cefca.es/catalogues/static/js/dialog.min.js" charset="utf-8"></script>
+<script defer src="https://archive.cefca.es/catalogues/static/components/cookieconsent/v2.9.2/js/cookieconsent.min.js"></script>
+<script defer src="https://archive.cefca.es/catalogues/static/components/cookieconsent/owncookieconsent.min.js"></script>
+<script defer type="text/javascript">
+    var SITE_URL = "archive.cefca.es";
+    var COOKIES_URL = "None";
+    if (COOKIES_URL == "None") {
+    	COOKIES_URL = null;
+    }
+    var GOOGLE_ANALYTICS = "True";
+    if (GOOGLE_ANALYTICS == "True") {
+    	GOOGLE_ANALYTICS = true;
+    } else {
+    	GOOGLE_ANALYTICS = false;
+    }
+    var CAPTCHA = false;
+    var registration = "True";
+    if (registration == "True") {
+	    CAPTCHA = true;
+    }
+	window.addEventListener('load', function () {
+    	createCookieConsent(SITE_URL, COOKIES_URL, GOOGLE_ANALYTICS, CAPTCHA, false, true, null, true, 'cloud', 'https://archive.cefca.es/catalogues/static/' + 'components');
+    });
+</script>
+  <script type="text/javascript" src="https://archive.cefca.es/catalogues/static/js/warning_notification.min.js"></script>
+  <script type="text/javascript">
+        var WARNING_SERVICE_URL = "https://archive.cefca.es/catalogues/warning_message";
+  </script>
+  <script type="text/javascript">
+	  $(document).ready(function() {
+	      showHideWarningMessage(WARNING_SERVICE_URL);
+	  });
+  </script>
+</body>
+</html>

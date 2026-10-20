@@ -1,0 +1,16 @@
+{
+  "url": "https://archive.cefca.es/catalogues/vo/tap/jplus-dr4/sync",
+  "query_parameters": {
+    "REQUEST": "doQuery",
+    "LANG": "ADQL",
+    "FORMAT": "csv",
+    "QUERY": "SELECT TOP 1000 * FROM jplus.MagABDualObj WHERE CONTAINS(POINT('ICRS',alpha_j2000,delta_j2000),CIRCLE('ICRS',167.203164066138,34.426476284041,0.004166666666667))=1",
+    "MAXREC": "10000"
+  },
+  "final_url": "https://archive.cefca.es/catalogues/vo/tap/jplus-dr4/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=SELECT+TOP+1000+%2A+FROM+jplus.MagABDualObj+WHERE+CONTAINS%28POINT%28%27ICRS%27%2Calpha_j2000%2Cdelta_j2000%29%2CCIRCLE%28%27ICRS%27%2C167.203164066138%2C34.426476284041%2C0.004166666666667%29%29%3D1&MAXREC=10000",
+  "retrieved_utc": "2026-10-19T23:25:36.235817+00:00",
+  "http_status": 200,
+  "content_type": "text/csv; charset=UTF-8",
+  "size_bytes": 6994,
+  "sha256": "d11a15f25b779b182111b038fa0c2e92b5b0370cfd9cf6e108bb1e494fcbb022"
+}

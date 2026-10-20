@@ -1,0 +1,16 @@
+{
+  "url": "https://api.skymapper.nci.org.au/public/tap/sync",
+  "query_parameters": {
+    "REQUEST": "doQuery",
+    "LANG": "ADQL",
+    "FORMAT": "csv",
+    "MAXREC": "10000",
+    "QUERY": "SELECT TOP 500 column_name,table_name,description,unit FROM TAP_SCHEMA.columns WHERE table_name LIKE '%splus%'"
+  },
+  "final_url": "https://api.skymapper.nci.org.au/public/tap/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&MAXREC=10000&QUERY=SELECT+TOP+500+column_name%2Ctable_name%2Cdescription%2Cunit+FROM+TAP_SCHEMA.columns+WHERE+table_name+LIKE+%27%25splus%25%27",
+  "retrieved_utc": "2026-10-19T23:54:41.563421+00:00",
+  "http_status": 200,
+  "content_type": "text/csv;header=present;charset=ISO-8859-1",
+  "size_bytes": 41,
+  "sha256": "1882dee67ba119d67f8cca7e5c6a155fbbc451f462ab246a8dc790e8577a64d2"
+}

@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<VOTABLE version="1.3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.ivoa.net/xml/VOTable/v1.3" xmlns:stc="http://www.ivoa.net/xml/STC/v1.30" >
+<RESOURCE name="CASDA TAP Result" type='results'>
+<INFO name="QUERY_STATUS" value="ERROR">Unable to interpret query &apos;Unknown column &quot;s.&quot;RA&quot;&quot; ! [l.1 c.49 - l.1 c.55]
+Unknown column &quot;s.&quot;DEC&quot;&quot; ! [l.1 c.86 - l.1 c.93]&apos;</INFO>
+</RESOURCE>
+</VOTABLE>

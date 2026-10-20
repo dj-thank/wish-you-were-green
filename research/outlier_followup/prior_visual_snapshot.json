@@ -1,0 +1,116 @@
+{
+  "baseline_commit": "211ad4593fdd5d7fb09a8fed16cde6d3d6b9d6e6",
+  "scope": "The 22 historical contact sheets for 337 previously reviewed entities, checked byte-for-byte against the starting Git commit. Preserved historical displays are not relabelled as corrected current F_lambda.",
+  "pages": [
+    {
+      "path": "research/outlier_audit/spectrum_contact_sheets/page_01.png",
+      "sha256": "2aaf58ba6574ebc282e56489d627602f7d1da86faf61ad58b04f6ab6712b73f5",
+      "bytes": 637849
+    },
+    {
+      "path": "research/outlier_audit/spectrum_contact_sheets/page_02.png",
+      "sha256": "069f29d11ab434788c9f2e8cc6bdbc8a6be859b9555156a35f79d4917cb251a4",
+      "bytes": 709014
+    },
+    {
+      "path": "research/outlier_audit/spectrum_contact_sheets/page_03.png",
+      "sha256": "cfb960e3c637e2fd79be1cdd939dfdf1eac85d752b11229ed3c3aa069fabbc1b",
+      "bytes": 626986
+    },
+    {
+      "path": "research/outlier_audit/spectrum_contact_sheets/page_04.png",
+      "sha256": "3a05c06f89893a8e387892c35c61553a94b00f7feb50c82555263910e22341d5",
+      "bytes": 644589
+    },
+    {
+      "path": "research/outlier_audit/spectrum_contact_sheets/page_05.png",
+      "sha256": "791e22b85da2bf8b59a52dfc5bc26f637f3cb7700fbc13534b7353004828f079",
+      "bytes": 649601
+    },
+    {
+      "path": "research/outlier_audit/spectrum_contact_sheets/page_06.png",
+      "sha256": "2065f0ac49968ec2c0f4ce57d67f110edf456f091a7906a19973890fdb95abc6",
+      "bytes": 570398
+    },
+    {
+      "path": "research/outlier_audit/spectrum_contact_sheets/page_07.png",
+      "sha256": "5abe5d83eafea69c1559ea51d47e85c89f8ff627d91bd15116a891cf42024560",
+      "bytes": 554359
+    },
+    {
+      "path": "research/outlier_audit/spectrum_contact_sheets/page_08.png",
+      "sha256": "9bf49b3fe71ce27cbcfb69c69a7743eca11e2a4ce026cd82039478dd12217bde",
+      "bytes": 636126
+    },
+    {
+      "path": "research/outlier_audit/spectrum_contact_sheets/page_09.png",
+      "sha256": "6f4112d945336390f7ef7cc9727c8359b1fe8826b604e9191cdc1948ae2367db",
+      "bytes": 552511
+    },
+    {
+      "path": "research/outlier_audit/spectrum_contact_sheets/page_10.png",
+      "sha256": "240c13f60be46ccc1cd011b1ea18ecb76a3a7ba03d4f5baf104420e3d7e57271",
+      "bytes": 582113
+    },
+    {
+      "path": "research/outlier_audit/spectrum_contact_sheets/page_11.png",
+      "sha256": "dc49ad7d2478c9ffea75226609b738c8500b662d9ae0e9867608900f0c9f8971",
+      "bytes": 571950
+    },
+    {
+      "path": "research/outlier_audit/spectrum_contact_sheets/page_12.png",
+      "sha256": "7aaa30235142c069d740c437ed02f2082070087283afd0dd6843f2723c25b80b",
+      "bytes": 561288
+    },
+    {
+      "path": "research/outlier_audit/spectrum_contact_sheets/page_13.png",
+      "sha256": "15846c9976b0dcb34880543f39f0c8ca92cecf8e3627b15f62de4e8d2150d9c7",
+      "bytes": 649656
+    },
+    {
+      "path": "research/outlier_audit/spectrum_contact_sheets/page_14.png",
+      "sha256": "f7cb8245efbe154b3e3f7bccb63d2dc5839f5f4ae685bb1c04bd3e0d9a99e2f5",
+      "bytes": 542044
+    },
+    {
+      "path": "research/outlier_audit/spectrum_contact_sheets/page_15.png",
+      "sha256": "a7c1bec520c9c1172885a184ac502187896ce52ce4737775b10e5a397684ae24",
+      "bytes": 627812
+    },
+    {
+      "path": "research/outlier_audit/spectrum_contact_sheets/page_16.png",
+      "sha256": "4c856a775eb0883f8799d7ab3a31605e36d66a9232f395f108e6fcef43c40c95",
+      "bytes": 588821
+    },
+    {
+      "path": "research/outlier_audit/spectrum_contact_sheets/page_17.png",
+      "sha256": "f100d873cc8cd783ba8a6583e8c625198e0e83aac25a4239616821b41036cd9f",
+      "bytes": 553681
+    },
+    {
+      "path": "research/outlier_audit/spectrum_contact_sheets/page_18.png",
+      "sha256": "a9310bc4866f774c77a6114ce69f2d8ae12200bd20af32f33d02d0c2443bd330",
+      "bytes": 562608
+    },
+    {
+      "path": "research/outlier_audit/spectrum_contact_sheets/page_19.png",
+      "sha256": "d684052960283503a55c11446fd05158ff63a85e9e6f163fcbddc169835e5bdb",
+      "bytes": 627244
+    },
+    {
+      "path": "research/outlier_audit/spectrum_contact_sheets/page_20.png",
+      "sha256": "dba1327b028e6395a605cfdaf99143da88b1049dad70d2c03f1f55097bfe033c",
+      "bytes": 508864
+    },
+    {
+      "path": "research/outlier_audit/spectrum_contact_sheets/page_21.png",
+      "sha256": "e9c1e555457208d0f96665e5dd7b0dae00278315f597bbca7163e03d10dbe5dc",
+      "bytes": 560398
+    },
+    {
+      "path": "research/outlier_audit/spectrum_contact_sheets/page_22.png",
+      "sha256": "ee190b0baeb592fc4d2801d7eac395292cd479feb708d58bf6e5c70e25c3a8bb",
+      "bytes": 89062
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "selection": "Two broad blue-shape disagreements flagged by actual first-part visual review: page59 panel3 and panel5. This is a descriptive follow-up, not a significance test.",
+  "normalization": "Current verified F_lambda with stored accepted calibration if available, independently divided by median 5200\u20135500 A; arithmetic means of the 20 A display bins in named intervals. This is not independent synthetic photometry or a fit.",
+  "limits": "No XP coefficient covariance, calibration covariance, field-source modelling, epoch astrometric propagation, or variability inference. Colour reproduction matches the current snapshot; curves with the same archive observation remain dependent.",
+  "records": [
+    {
+      "row_index": 4268,
+      "entity_id": "gaia:3646912496889350784",
+      "source_url": "https://www.montrealwhitedwarfdatabase.org/WDs/SDSS%20J141005.73-023500.2/spect.SDSS%20J141005.73-023500.2.DESI_2022-04-04_085727.txt",
+      "raw_sha256": "0451d464a1e87bbf1ad05bcacaf7dcaf2e6b93cece68b0e5f46dc28c6a6955fc",
+      "kind": "DESI",
+      "calibrated": true,
+      "unit_input_convention": "flambda",
+      "current_recomputed_delta_uv": 3.6440610643076565e-13,
+      "relative_Flambda_20A_display_bin_means": {
+        "400_450_nm": 1.46584271143563,
+        "450_500_nm": 1.2212211066191012,
+        "520_550_nm": 0.9993827742205862,
+        "650_750_nm": 0.5495014410709873
+      }
+    },
+    {
+      "row_index": 9667,
+      "entity_id": "gaia:3646912496889350784",
+      "source_url": "https://data.sdss.org/sas/dr17/eboss/spectro/redux/v5_13_2/spectra/lite/4038/spec-4038-55363-0023.fits",
+      "raw_sha256": "4dac0ed34ceab4a02f5fb4623cd07ab97893daa528d281ab1a4a18b0f2dfd75a",
+      "kind": "SDSS",
+      "calibrated": true,
+      "unit_input_convention": "flambda",
+      "current_recomputed_delta_uv": 4.0501916653890704e-13,
+      "relative_Flambda_20A_display_bin_means": {
+        "400_450_nm": 1.4702318778717964,
+        "450_500_nm": 1.2039482808836985,
+        "520_550_nm": 0.9987470974310217,
+        "650_750_nm": 0.5383430815739956
+      },
+      "original_sdss_header": {
+        "MJD": 55363,
+        "PLATEID": 4038,
+        "FIBERID": 23,
+        "PLUG_RA": 212.5239,
+        "PLUG_DEC": -2.5835637
+      }
+    },
+    {
+      "row_index": 9677,
+      "entity_id": "gaia:3646912496889350784",
+      "source_url": "https://data.sdss.org/sas/dr17/eboss/spectro/redux/v5_13_2/spectra/lite/4035/spec-4035-55383-0436.fits",
+      "raw_sha256": "8e199ba35d0066ac6591cd39d68c495735e8d599df27a798774dd8694c5b2fa8",
+      "kind": "SDSS",
+      "calibrated": true,
+      "unit_input_convention": "flambda",
+      "current_recomputed_delta_uv": 3.5162340673788e-13,
+      "relative_Flambda_20A_display_bin_means": {
+        "400_450_nm": 1.2670834912700888,
+        "450_500_nm": 1.157603142617086,
+        "520_550_nm": 1.0009342898448448,
+        "650_750_nm": 0.52674818398059
+      },
+      "original_sdss_header": {
+        "MJD": 55383,
+        "PLATEID": 4035,
+        "FIBERID": 436,
+        "PLUG_RA": 212.5239,
+        "PLUG_DEC": -2.5835637
+      }
+    },
+    {
+      "row_index": 5451,
+      "entity_id": "gaia:3647680024725171968",
+      "source_url": "https://www.montrealwhitedwarfdatabase.org/WDs/WD%201411-009/spect.WD%201411-009.DESI_2021-05-08_201507.txt",
+      "raw_sha256": "6dff0415168bdeecacaa6e0e0a2191e268f22e6a3066fb3a92ee0dbaf3a5cd01",
+      "kind": "DESI",
+      "calibrated": true,
+      "unit_input_convention": "flambda",
+      "current_recomputed_delta_uv": 7.996955019430551e-14,
+      "relative_Flambda_20A_display_bin_means": {
+        "400_450_nm": 1.572101155128187,
+        "450_500_nm": 1.2830717438147412,
+        "520_550_nm": 0.997447038524144,
+        "650_750_nm": 0.518080145246116
+      }
+    },
+    {
+      "row_index": 5450,
+      "entity_id": "gaia:3647680024725171968",
+      "source_url": "https://www.montrealwhitedwarfdatabase.org/WDs/WD%201411-009/spect.WD%201411-009.XP.txt",
+      "raw_sha256": "366d2d222dc2d3b4d8b328d0951f61714cf5455d66df02201227182a93a3c9b1",
+      "kind": "Gaia_XP",
+      "calibrated": true,
+      "unit_input_convention": "flambda",
+      "current_recomputed_delta_uv": 2.541868056062859e-13,
+      "relative_Flambda_20A_display_bin_means": {
+        "400_450_nm": 1.5692772840057112,
+        "450_500_nm": 1.2474268564771556,
+        "520_550_nm": 0.9947340058385044,
+        "650_750_nm": 0.5187841132937483
+      }
+    },
+    {
+      "row_index": 8510,
+      "entity_id": "gaia:3647680024725171968",
+      "source_url": "https://data.sdss.org/sas/dr17/eboss/spectro/redux/v5_13_2/spectra/lite/4035/spec-4035-55383-0874.fits",
+      "raw_sha256": "73ca03dfc78d238b5a1f3fc239630942a6b56f9479700922499bbd88c6756b94",
+      "kind": "SDSS",
+      "calibrated": true,
+      "unit_input_convention": "flambda",
+      "current_recomputed_delta_uv": 5.016417425091317e-13,
+      "relative_Flambda_20A_display_bin_means": {
+        "400_450_nm": 1.1918173705658826,
+        "450_500_nm": 1.1767964502327635,
+        "520_550_nm": 0.9991062363119955,
+        "650_750_nm": 0.47942042490650555
+      },
+      "original_sdss_header": {
+        "MJD": 55383,
+        "PLATEID": 4035,
+        "FIBERID": 874,
+        "PLUG_RA": 213.6103000000001,
+        "PLUG_DEC": -1.2318564
+      }
+    }
+  ]
+}

@@ -1,0 +1,218 @@
+{
+  "format_version": 1,
+  "compression": "gzip; compression level 9; empty filename; mtime 0; original bytes unchanged",
+  "purpose": "Preserve the 19 raw inputs referenced by the PS1 derivatives that were previously available only in an ignored local MWDD cache. The historical derivative manifest remains unchanged.",
+  "derivative_manifest_path": "research/precision/candidate_recalibration/derivative_manifest.json",
+  "derivative_manifest_sha256": "616fe0c42d9e54db5162213d49660b2274f517c13040c44e081adc364616a5d3",
+  "records": [
+    {
+      "source_id": "761677269868775040",
+      "original_path": "mwdd/spectra/049dffd50d3ac70a8fccce15.csv",
+      "original_sha256": "5e73082109e0ae01c8d0f0330c7549fd77aeb23b684dbd87b6c2c12606b10875",
+      "original_size_bytes": 614454,
+      "snapshot_path": "049dffd50d3ac70a8fccce15.csv.gz",
+      "snapshot_sha256": "37089ff502c356fe6f6f007dc506e2db051150c895915e896ea3b70b99b762c1",
+      "snapshot_size_bytes": 207039,
+      "source_url": "https://www.montrealwhitedwarfdatabase.org/WDs/Gaia%20DR2%20761677269868775040/spect.Gaia%20DR2%20761677269868775040.DESI_2022-02-22_074321.txt",
+      "retrieved_utc": "2026-10-18T00:44:07.837634+00:00"
+    },
+    {
+      "source_id": "4545191991882663936",
+      "original_path": "mwdd/spectra/0da9e68d9bc2045c52b5ee74.csv",
+      "original_sha256": "68587952e66c5fa1cca98f561a7238dc8d074f86ed2dbcada8720dbbdc588b57",
+      "original_size_bytes": 614641,
+      "snapshot_path": "0da9e68d9bc2045c52b5ee74.csv.gz",
+      "snapshot_sha256": "5daa8ae00f49e34be03ab995bf5aff5fd2221ba70c57f33c2cb026efef6acf89",
+      "snapshot_size_bytes": 214555,
+      "source_url": "https://www.montrealwhitedwarfdatabase.org/WDs/Gaia%20DR2%204545191991882663936/spect.Gaia%20DR2%204545191991882663936.DESI_2021-06-14_073844.txt",
+      "retrieved_utc": "2026-10-18T00:40:11.826423+00:00"
+    },
+    {
+      "source_id": "3705179706854089856",
+      "original_path": "mwdd/spectra/12b6e42ace3eb898266a4ccc.csv",
+      "original_sha256": "a10ac4ea6af698dbba2898b31a1a820a0aa634679abc6c4242256c752a7a9a0a",
+      "original_size_bytes": 614513,
+      "snapshot_path": "12b6e42ace3eb898266a4ccc.csv.gz",
+      "snapshot_sha256": "7975332fad351391f1d16adeda448783534e67683a4fc6646b5c6fc4fcc90db1",
+      "snapshot_size_bytes": 213410,
+      "source_url": "https://www.montrealwhitedwarfdatabase.org/WDs/Gaia%20DR3%203705179706854089856/spect.Gaia%20DR3%203705179706854089856.DESI_2022-05-19_041533.txt",
+      "retrieved_utc": "2026-10-18T00:45:15.681486+00:00"
+    },
+    {
+      "source_id": "2739231150982741760",
+      "original_path": "mwdd/spectra/3b817948984958bf10ef62d3.csv",
+      "original_sha256": "1d6b9802bb95de0887ae30e429a50285ada006e4618a5fe9fb664519dcf8377d",
+      "original_size_bytes": 614885,
+      "snapshot_path": "3b817948984958bf10ef62d3.csv.gz",
+      "snapshot_sha256": "ac267433d2341837cb14297dd036e9c49994ad871e5dc07ea7bf936520746438",
+      "snapshot_size_bytes": 206789,
+      "source_url": "https://www.montrealwhitedwarfdatabase.org/WDs/Gaia%20DR2%202739231150982741760/spect.Gaia%20DR2%202739231150982741760.DESI_2021-12-16_033823.txt",
+      "retrieved_utc": "2026-10-18T00:45:36.809750+00:00"
+    },
+    {
+      "source_id": "2482684508055379584",
+      "original_path": "mwdd/spectra/65370ff73f946c4f86b1b384.csv",
+      "original_sha256": "73550c34ff12383a958acefed28ab1c40e740cd7f7cb44cb6a0f8f371fb87143",
+      "original_size_bytes": 614874,
+      "snapshot_path": "65370ff73f946c4f86b1b384.csv.gz",
+      "snapshot_sha256": "17ea9c61e144929374ffc2efc220125ad789b822dfa9adabee126f8412ef399f",
+      "snapshot_size_bytes": 209680,
+      "source_url": "https://www.montrealwhitedwarfdatabase.org/WDs/Gaia%20DR3%202482684508055379584/spect.Gaia%20DR3%202482684508055379584.DESI_2021-11-02_180500.txt",
+      "retrieved_utc": "2026-10-18T00:41:54.434144+00:00"
+    },
+    {
+      "source_id": "2453225705329412480",
+      "original_path": "mwdd/spectra/80cc60eae7ab14e3f5bce030.csv",
+      "original_sha256": "517367544445b8b8a11129cf383238aa09084ce6e480726f542f4b70ada5e0f2",
+      "original_size_bytes": 612989,
+      "snapshot_path": "80cc60eae7ab14e3f5bce030.csv.gz",
+      "snapshot_sha256": "c86a153a48eb13cc5276b90a0666eadf3012b62ef2b6f59c719fd050d5ebddee",
+      "snapshot_size_bytes": 210939,
+      "source_url": "https://www.montrealwhitedwarfdatabase.org/WDs/Gaia%20DR3%202453225705329412480/spect.Gaia%20DR3%202453225705329412480.DESI_2021-10-30_071610.txt",
+      "retrieved_utc": "2026-10-18T00:43:14.985546+00:00"
+    },
+    {
+      "source_id": "1078624858218235776",
+      "original_path": "mwdd/spectra/901c4cc63da0eb6374761ffd.csv",
+      "original_sha256": "2017fdf3d7da6b964fd62fbc10a63ed328238fc7e2f047ab708067fb03245821",
+      "original_size_bytes": 615239,
+      "snapshot_path": "901c4cc63da0eb6374761ffd.csv.gz",
+      "snapshot_sha256": "ac04593ded22ac268c61d7f0aa276656efc4cb692624d55d7812c66cb2198265",
+      "snapshot_size_bytes": 212840,
+      "source_url": "https://www.montrealwhitedwarfdatabase.org/WDs/Gaia%20DR2%201078624858218235776/spect.Gaia%20DR2%201078624858218235776.DESI_2021-02-24_103222.txt",
+      "retrieved_utc": "2026-10-18T00:39:40.329927+00:00"
+    },
+    {
+      "source_id": "3782527364866017664",
+      "original_path": "mwdd/spectra/9374c6e7523ad65e26e93242.csv",
+      "original_sha256": "bb2b688fa6357e786ce570cbac6e36dfe3d0dfe436b6d9b9cc35fa7c9f2b84c4",
+      "original_size_bytes": 613684,
+      "snapshot_path": "9374c6e7523ad65e26e93242.csv.gz",
+      "snapshot_sha256": "269a536c03847582b5bfd99488bfe3f5cface564a7309027b96f5864fddbab8f",
+      "snapshot_size_bytes": 211517,
+      "source_url": "https://www.montrealwhitedwarfdatabase.org/WDs/Gaia%20DR3%203782527364866017664/spect.Gaia%20DR3%203782527364866017664.DESI_2021-12-18_104200.txt",
+      "retrieved_utc": "2026-10-18T00:44:45.222052+00:00"
+    },
+    {
+      "source_id": "4545912820537587328",
+      "original_path": "mwdd/spectra/9445f40905bc5a80689950e9.csv",
+      "original_sha256": "7312a2c887f0a72112c66ebd60b3be38870aa6fcc3f33242888c346787ed2314",
+      "original_size_bytes": 614846,
+      "snapshot_path": "9445f40905bc5a80689950e9.csv.gz",
+      "snapshot_sha256": "8287465df1972748090efe77b0d04c4a4c4b888b6f45049bda8b4b95b6af64e0",
+      "snapshot_size_bytes": 213910,
+      "source_url": "https://www.montrealwhitedwarfdatabase.org/WDs/Gaia%20DR3%204545912820537587328/spect.Gaia%20DR3%204545912820537587328.DESI_2021-06-14_073844.txt",
+      "retrieved_utc": "2026-10-18T00:44:35.038700+00:00"
+    },
+    {
+      "source_id": "1691957732959636608",
+      "original_path": "mwdd/spectra/a0702a3b99606dde0ea7f2ca.csv",
+      "original_sha256": "378e354e9307fe4859ce20205a544e08360b4ecb742c4774434a3e33513bd411",
+      "original_size_bytes": 614960,
+      "snapshot_path": "a0702a3b99606dde0ea7f2ca.csv.gz",
+      "snapshot_sha256": "1a3b762329dd1d7028106e16b5be70f83af958b2a67c72c478b657e5a0c8d7b8",
+      "snapshot_size_bytes": 211398,
+      "source_url": "https://www.montrealwhitedwarfdatabase.org/WDs/Gaia%20DR2%201691957732959636608/spect.Gaia%20DR2%201691957732959636608.DESI_2021-04-24_200749.txt",
+      "retrieved_utc": "2026-10-18T00:38:37.485470+00:00"
+    },
+    {
+      "source_id": "913810126798863232",
+      "original_path": "mwdd/spectra/a38ceb2a4de6c4e4b0cbd297.csv",
+      "original_sha256": "bd0c294c5a303f91ab679275dfca7b4242dd1999d39eeaae957be9fe97237937",
+      "original_size_bytes": 614499,
+      "snapshot_path": "a38ceb2a4de6c4e4b0cbd297.csv.gz",
+      "snapshot_sha256": "b72bc8b00d73622ec1aa6709568515327a8f82ebde85c439c79d2f42eec19fbe",
+      "snapshot_size_bytes": 212778,
+      "source_url": "https://www.montrealwhitedwarfdatabase.org/WDs/Gaia%20DR3%20913810126798863232/spect.Gaia%20DR3%20913810126798863232.DESI_2021-10-23_123245.txt",
+      "retrieved_utc": "2026-10-18T00:39:35.970434+00:00"
+    },
+    {
+      "source_id": "1099452803904038272",
+      "original_path": "mwdd/spectra/a712d1db837bcd7ca5733411.csv",
+      "original_sha256": "733ceb45c4e10c1ff7ebb18589a1a711c7cf936c665fa9d7501892ffa6f6c260",
+      "original_size_bytes": 613409,
+      "snapshot_path": "a712d1db837bcd7ca5733411.csv.gz",
+      "snapshot_sha256": "f93a4b81bb835f8d7bdc22b879c23f9f08983e42fd8c585cc3dfca8da2553060",
+      "snapshot_size_bytes": 209050,
+      "source_url": "https://www.montrealwhitedwarfdatabase.org/WDs/Gaia%20DR3%201099452803904038272/spect.Gaia%20DR3%201099452803904038272.DESI_2021-10-22_084148.txt",
+      "retrieved_utc": "2026-10-18T00:39:22.204810+00:00"
+    },
+    {
+      "source_id": "1323443938325221376",
+      "original_path": "mwdd/spectra/b798b0ce682ef5e4fd9a5522.csv",
+      "original_sha256": "afcdf7415538c9431d0d22c11304622e8e99cedda6ebdad32e4b09d593a84034",
+      "original_size_bytes": 614422,
+      "snapshot_path": "b798b0ce682ef5e4fd9a5522.csv.gz",
+      "snapshot_sha256": "ba0dafc3a9d4b37ff6ee3a95aef4b70376718fd0b9a615ab08db938d2cc88b19",
+      "snapshot_size_bytes": 211857,
+      "source_url": "https://www.montrealwhitedwarfdatabase.org/WDs/Gaia%20DR3%201323443938325221376/spect.Gaia%20DR3%201323443938325221376.DESI_2022-03-22_113930.txt",
+      "retrieved_utc": "2026-10-18T00:44:13.259777+00:00"
+    },
+    {
+      "source_id": "2513256394506328832",
+      "original_path": "mwdd/spectra/d137efbebc911c47f572ea92.csv",
+      "original_sha256": "41d65402aacddc34a84c1e64016d8ea57caf80f6af79d22778367f7af92f025f",
+      "original_size_bytes": 614370,
+      "snapshot_path": "d137efbebc911c47f572ea92.csv.gz",
+      "snapshot_sha256": "1495ea664d8e43c4cd054ef86b76aa3bc9ee68c6c55cc1b216e76d7a70c9d81b",
+      "snapshot_size_bytes": 209745,
+      "source_url": "https://www.montrealwhitedwarfdatabase.org/WDs/Gaia%20DR3%202513256394506328832/spect.Gaia%20DR3%202513256394506328832.DESI_2021-09-28_101346.txt",
+      "retrieved_utc": "2026-10-18T00:47:58.370014+00:00"
+    },
+    {
+      "source_id": "4445170067643613312",
+      "original_path": "mwdd/spectra/d4b0fa6d75d4eb84e9e0d93b.csv",
+      "original_sha256": "10d3eea5234ac49885ae7a5a68fc1a5dd61852261908140e6b5bffd3892a1406",
+      "original_size_bytes": 614352,
+      "snapshot_path": "d4b0fa6d75d4eb84e9e0d93b.csv.gz",
+      "snapshot_sha256": "cee55a6ba26d71bc61b4240e6a133e396cba813164042bd4337a2b8eb287fc50",
+      "snapshot_size_bytes": 209764,
+      "source_url": "https://www.montrealwhitedwarfdatabase.org/WDs/Gaia%20DR3%204445170067643613312/spect.Gaia%20DR3%204445170067643613312.DESI_2022-05-12_090434.txt",
+      "retrieved_utc": "2026-10-18T00:44:38.513842+00:00"
+    },
+    {
+      "source_id": "2119909923600264960",
+      "original_path": "mwdd/spectra/d99eace9c89b3208ad0ff19a.csv",
+      "original_sha256": "3050ac50b314e0bedf6d6543794deb483822dda7e521e31a39610df9b0b38823",
+      "original_size_bytes": 614404,
+      "snapshot_path": "d99eace9c89b3208ad0ff19a.csv.gz",
+      "snapshot_sha256": "5a06b73c96283ae0cc52d243ab5dcaa70ba975411e69ed8d464f87dcb378e655",
+      "snapshot_size_bytes": 213449,
+      "source_url": "https://www.montrealwhitedwarfdatabase.org/WDs/Gaia%20DR3%202119909923600264960/spect.Gaia%20DR3%202119909923600264960.DESI_2021-11-14_024451.txt",
+      "retrieved_utc": "2026-10-18T00:41:32.563786+00:00"
+    },
+    {
+      "source_id": "3713218786120541824",
+      "original_path": "mwdd/spectra/e384c80d3afbe855f3c43268.csv",
+      "original_sha256": "d8f3af1c6e64e16f221ec79e2e38b5333dfe994395494c05cc1142d03fe04494",
+      "original_size_bytes": 613493,
+      "snapshot_path": "e384c80d3afbe855f3c43268.csv.gz",
+      "snapshot_sha256": "ff0d6cc3e81196bf9839e5444ce5407c43728d509125f2e39512cbf92c8cccd6",
+      "snapshot_size_bytes": 200882,
+      "source_url": "https://www.montrealwhitedwarfdatabase.org/WDs/WD%201338%2B027/spect.WD%201338%2B027.DESI_2021-06-03_040601.txt",
+      "retrieved_utc": "2026-10-18T00:43:05.678672+00:00"
+    },
+    {
+      "source_id": "4555293235271174016",
+      "original_path": "mwdd/spectra/f044513059f87d92649cac1f.csv",
+      "original_sha256": "a6a159bc5c081793cf4099bbc24518ef92b4362da594d5539e91d189ad29cb07",
+      "original_size_bytes": 614142,
+      "snapshot_path": "f044513059f87d92649cac1f.csv.gz",
+      "snapshot_sha256": "45bcbabe173fd132d6c767263f6ec22276f8028ec2164171b00ea05b149846b2",
+      "snapshot_size_bytes": 210051,
+      "source_url": "https://www.montrealwhitedwarfdatabase.org/WDs/Gaia%20DR2%204555293235271174016/spect.Gaia%20DR2%204555293235271174016.DESI_2022-06-12_080221.txt",
+      "retrieved_utc": "2026-10-18T00:44:19.534447+00:00"
+    },
+    {
+      "source_id": "1182083542272959232",
+      "original_path": "mwdd/spectra/ffdd72dced9cc5753b1953bc.csv",
+      "original_sha256": "ea835f5ca26f233346babcd9f5209415fee8da31afda0a39a1abbce4a78e738f",
+      "original_size_bytes": 615088,
+      "snapshot_path": "ffdd72dced9cc5753b1953bc.csv.gz",
+      "snapshot_sha256": "363bcc9f4276de98a3e0307bb15ca871d5b990249ecc2c6786e84c5fcb49e7fe",
+      "snapshot_size_bytes": 211096,
+      "source_url": "https://www.montrealwhitedwarfdatabase.org/WDs/Gaia%20DR2%201182083542272959232/spect.Gaia%20DR2%201182083542272959232.DESI_2022-04-20_083103.txt",
+      "retrieved_utc": "2026-10-18T00:39:32.290965+00:00"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "name": "gaia_dr3_extended_fields_batch2",
+  "endpoint": "https://gea.esac.esa.int/tap-server/tap/sync",
+  "parameters": {
+    "REQUEST": "doQuery",
+    "LANG": "ADQL",
+    "FORMAT": "csv",
+    "QUERY": "SELECT source_id,ra,dec,ref_epoch,parallax,parallax_error,pmra,pmdec,pmra_error,pmdec_error,ruwe,astrometric_params_solved,duplicated_source,ipd_frac_multi_peak,ipd_frac_odd_win,phot_bp_rp_excess_factor,phot_g_mean_mag,phot_bp_mean_mag,phot_rp_mean_mag,phot_bp_n_obs,phot_rp_n_obs,phot_bp_n_contaminated_transits,phot_bp_n_blended_transits,phot_rp_n_contaminated_transits,phot_rp_n_blended_transits,phot_variable_flag,has_epoch_photometry,has_xp_continuous,non_single_star FROM gaiadr3.gaia_source WHERE 1=CONTAINS(POINT('ICRS',ra,dec),CIRCLE('ICRS',1.5126954601418308,2.962546104928232,0.002777777777777778)) OR 1=CONTAINS(POINT('ICRS',ra,dec),CIRCLE('ICRS',157.80770360075527,-1.6573008896492452,0.002777777777777778)) OR 1=CONTAINS(POINT('ICRS',ra,dec),CIRCLE('ICRS',256.91219379965986,14.889203633294285,0.002777777777777778)) OR 1=CONTAINS(POINT('ICRS',ra,dec),CIRCLE('ICRS',109.15530538740796,62.28615263222564,0.002777777777777778)) OR 1=CONTAINS(POINT('ICRS',ra,dec),CIRCLE('ICRS',193.97034380874845,67.21207849835115,0.002777777777777778)) OR 1=CONTAINS(POINT('ICRS',ra,dec),CIRCLE('ICRS',194.51120239880103,5.010742767427144,0.002777777777777778)) OR 1=CONTAINS(POINT('ICRS',ra,dec),CIRCLE('ICRS',225.15843896365053,13.716773060678706,0.002777777777777778)) OR 1=CONTAINS(POINT('ICRS',ra,dec),CIRCLE('ICRS',67.43628526183477,-3.9065060610064495,0.002777777777777778))"
+  },
+  "request_url": "https://gea.esac.esa.int/tap-server/tap/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=SELECT+source_id%2Cra%2Cdec%2Cref_epoch%2Cparallax%2Cparallax_error%2Cpmra%2Cpmdec%2Cpmra_error%2Cpmdec_error%2Cruwe%2Castrometric_params_solved%2Cduplicated_source%2Cipd_frac_multi_peak%2Cipd_frac_odd_win%2Cphot_bp_rp_excess_factor%2Cphot_g_mean_mag%2Cphot_bp_mean_mag%2Cphot_rp_mean_mag%2Cphot_bp_n_obs%2Cphot_rp_n_obs%2Cphot_bp_n_contaminated_transits%2Cphot_bp_n_blended_transits%2Cphot_rp_n_contaminated_transits%2Cphot_rp_n_blended_transits%2Cphot_variable_flag%2Chas_epoch_photometry%2Chas_xp_continuous%2Cnon_single_star+FROM+gaiadr3.gaia_source+WHERE+1%3DCONTAINS%28POINT%28%27ICRS%27%2Cra%2Cdec%29%2CCIRCLE%28%27ICRS%27%2C1.5126954601418308%2C2.962546104928232%2C0.002777777777777778%29%29+OR+1%3DCONTAINS%28POINT%28%27ICRS%27%2Cra%2Cdec%29%2CCIRCLE%28%27ICRS%27%2C157.80770360075527%2C-1.6573008896492452%2C0.002777777777777778%29%29+OR+1%3DCONTAINS%28POINT%28%27ICRS%27%2Cra%2Cdec%29%2CCIRCLE%28%27ICRS%27%2C256.91219379965986%2C14.889203633294285%2C0.002777777777777778%29%29+OR+1%3DCONTAINS%28POINT%28%27ICRS%27%2Cra%2Cdec%29%2CCIRCLE%28%27ICRS%27%2C109.15530538740796%2C62.28615263222564%2C0.002777777777777778%29%29+OR+1%3DCONTAINS%28POINT%28%27ICRS%27%2Cra%2Cdec%29%2CCIRCLE%28%27ICRS%27%2C193.97034380874845%2C67.21207849835115%2C0.002777777777777778%29%29+OR+1%3DCONTAINS%28POINT%28%27ICRS%27%2Cra%2Cdec%29%2CCIRCLE%28%27ICRS%27%2C194.51120239880103%2C5.010742767427144%2C0.002777777777777778%29%29+OR+1%3DCONTAINS%28POINT%28%27ICRS%27%2Cra%2Cdec%29%2CCIRCLE%28%27ICRS%27%2C225.15843896365053%2C13.716773060678706%2C0.002777777777777778%29%29+OR+1%3DCONTAINS%28POINT%28%27ICRS%27%2Cra%2Cdec%29%2CCIRCLE%28%27ICRS%27%2C67.43628526183477%2C-3.9065060610064495%2C0.002777777777777778%29%29",
+  "resolved_url": "https://gea.esac.esa.int/tap-server/tap/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=SELECT+source_id%2Cra%2Cdec%2Cref_epoch%2Cparallax%2Cparallax_error%2Cpmra%2Cpmdec%2Cpmra_error%2Cpmdec_error%2Cruwe%2Castrometric_params_solved%2Cduplicated_source%2Cipd_frac_multi_peak%2Cipd_frac_odd_win%2Cphot_bp_rp_excess_factor%2Cphot_g_mean_mag%2Cphot_bp_mean_mag%2Cphot_rp_mean_mag%2Cphot_bp_n_obs%2Cphot_rp_n_obs%2Cphot_bp_n_contaminated_transits%2Cphot_bp_n_blended_transits%2Cphot_rp_n_contaminated_transits%2Cphot_rp_n_blended_transits%2Cphot_variable_flag%2Chas_epoch_photometry%2Chas_xp_continuous%2Cnon_single_star+FROM+gaiadr3.gaia_source+WHERE+1%3DCONTAINS%28POINT%28%27ICRS%27%2Cra%2Cdec%29%2CCIRCLE%28%27ICRS%27%2C1.5126954601418308%2C2.962546104928232%2C0.002777777777777778%29%29+OR+1%3DCONTAINS%28POINT%28%27ICRS%27%2Cra%2Cdec%29%2CCIRCLE%28%27ICRS%27%2C157.80770360075527%2C-1.6573008896492452%2C0.002777777777777778%29%29+OR+1%3DCONTAINS%28POINT%28%27ICRS%27%2Cra%2Cdec%29%2CCIRCLE%28%27ICRS%27%2C256.91219379965986%2C14.889203633294285%2C0.002777777777777778%29%29+OR+1%3DCONTAINS%28POINT%28%27ICRS%27%2Cra%2Cdec%29%2CCIRCLE%28%27ICRS%27%2C109.15530538740796%2C62.28615263222564%2C0.002777777777777778%29%29+OR+1%3DCONTAINS%28POINT%28%27ICRS%27%2Cra%2Cdec%29%2CCIRCLE%28%27ICRS%27%2C193.97034380874845%2C67.21207849835115%2C0.002777777777777778%29%29+OR+1%3DCONTAINS%28POINT%28%27ICRS%27%2Cra%2Cdec%29%2CCIRCLE%28%27ICRS%27%2C194.51120239880103%2C5.010742767427144%2C0.002777777777777778%29%29+OR+1%3DCONTAINS%28POINT%28%27ICRS%27%2Cra%2Cdec%29%2CCIRCLE%28%27ICRS%27%2C225.15843896365053%2C13.716773060678706%2C0.002777777777777778%29%29+OR+1%3DCONTAINS%28POINT%28%27ICRS%27%2Cra%2Cdec%29%2CCIRCLE%28%27ICRS%27%2C67.43628526183477%2C-3.9065060610064495%2C0.002777777777777778%29%29",
+  "status": 200,
+  "headers": {
+    "Date": "Sun, 18 Oct 2026 16:06:19 GMT",
+    "Server": "Apache/2.4.62 (Red Hat Enterprise Linux) OpenSSL/3.5.5 mod_jk/1.2.50",
+    "Set-Cookie": "JSESSIONID=19A8CBC1B6D2AB3A7216945292B184FC; Path=/tap-server; Secure; HttpOnly",
+    "Content-Disposition": "attachment;filename=\"dae1f95f-cb0d-11f1-9670-bc97e148b76b-O-result.csv\"",
+    "X-Content-Type-Options": "nosniff",
+    "X-XSS-Protection": "0",
+    "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+    "Pragma": "no-cache",
+    "Expires": "0",
+    "X-Frame-Options": "SAMEORIGIN",
+    "Connection": "close",
+    "Transfer-Encoding": "chunked",
+    "Content-Type": "text/csv"
+  },
+  "query_started_utc": "2026-10-18T16:06:18.485181+00:00",
+  "retrieved_utc": "2026-10-18T16:06:20.694209+00:00",
+  "relative_path": "raw/gaia_dr3_extended_fields_batch2.csv",
+  "bytes": 2773,
+  "sha256": "241941bca8367be9c759631580798f141503813f2b8c836fcadf9fca5492bd61"
+}

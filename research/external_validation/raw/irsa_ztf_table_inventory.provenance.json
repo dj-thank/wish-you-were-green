@@ -1,0 +1,27 @@
+{
+  "name": "irsa_ztf_table_inventory",
+  "endpoint": "https://irsa.ipac.caltech.edu/TAP/sync",
+  "parameters": {
+    "REQUEST": "doQuery",
+    "LANG": "ADQL",
+    "FORMAT": "csv",
+    "QUERY": "SELECT table_name,description FROM TAP_SCHEMA.tables WHERE table_name LIKE 'ztf_objects_dr%'"
+  },
+  "request_url": "https://irsa.ipac.caltech.edu/TAP/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=SELECT+table_name%2Cdescription+FROM+TAP_SCHEMA.tables+WHERE+table_name+LIKE+%27ztf_objects_dr%25%27",
+  "resolved_url": "https://irsa.ipac.caltech.edu/TAP/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=SELECT+table_name%2Cdescription+FROM+TAP_SCHEMA.tables+WHERE+table_name+LIKE+%27ztf_objects_dr%25%27",
+  "status": 200,
+  "headers": {
+    "Server": "nginx",
+    "Date": "Sun, 18 Oct 2026 15:53:37 GMT",
+    "Content-Type": "text/csv",
+    "Content-Length": "193",
+    "Connection": "close",
+    "Server-Timing": "main;dur=14.426, prepare_internal;dur=1.560, generate_adql;dur=0.008, query_delegate;dur=5.911, query_execute;dur=5.904, database_query;dur=5.887",
+    "Set-Cookie": "anonymous=17/e0/1cbe531096c93f0e4c0894a2a823"
+  },
+  "query_started_utc": "2026-10-18T15:53:36.020810+00:00",
+  "retrieved_utc": "2026-10-18T15:53:37.533017+00:00",
+  "relative_path": "raw/irsa_ztf_table_inventory.csv",
+  "bytes": 193,
+  "sha256": "c46564a869d611f5c830be8d402e045e4fe6978574dabe95f0748d7213d08ea2"
+}

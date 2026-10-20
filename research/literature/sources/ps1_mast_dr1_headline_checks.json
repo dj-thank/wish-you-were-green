@@ -1,0 +1,98 @@
+[
+  {
+    "source_id": "818833831355548928",
+    "url": "https://catalogs.mast.stsci.edu/api/v0.1/panstarrs/dr1/mean.csv?ra=138.402083333&dec=44.5681305556&radius=0.0008333333333333334&columns=%5BobjID%2CraMean%2CdecMean%2CnDetections%2CgMeanPSFMag%2CrMeanPSFMag%2CiMeanPSFMag%2CgMeanPSFMagErr%2CrMeanPSFMagErr%2CiMeanPSFMagErr%5D",
+    "rows": [
+      {
+        "objID": "161481384019222450",
+        "raMean": "138.4020666",
+        "decMean": "44.56813434",
+        "nDetections": "67",
+        "gMeanPSFMag": "20.148000717163086",
+        "rMeanPSFMag": "19.59440040588379",
+        "iMeanPSFMag": "19.286500930786133",
+        "gMeanPSFMagErr": "0.03332599997520447",
+        "rMeanPSFMagErr": "0.011219999752938747",
+        "iMeanPSFMagErr": "0.00851800013333559"
+      }
+    ]
+  },
+  {
+    "source_id": "3204436719718449280",
+    "url": "https://catalogs.mast.stsci.edu/api/v0.1/panstarrs/dr1/mean.csv?ra=67.4362916667&dec=-3.90650555556&radius=0.0008333333333333334&columns=%5BobjID%2CraMean%2CdecMean%2CnDetections%2CgMeanPSFMag%2CrMeanPSFMag%2CiMeanPSFMag%2CgMeanPSFMagErr%2CrMeanPSFMagErr%2CiMeanPSFMagErr%5D",
+    "rows": [
+      {
+        "objID": "103310674355762964",
+        "raMean": "67.43557767",
+        "decMean": "-3.90620367",
+        "nDetections": "1",
+        "gMeanPSFMag": "-999.0",
+        "rMeanPSFMag": "21.14889907836914",
+        "iMeanPSFMag": "-999.0",
+        "gMeanPSFMagErr": "-999.0",
+        "rMeanPSFMagErr": "0.21001499891281128",
+        "iMeanPSFMagErr": "-999.0"
+      },
+      {
+        "objID": "103310674362622776",
+        "raMean": "67.43628598",
+        "decMean": "-3.90647653",
+        "nDetections": "77",
+        "gMeanPSFMag": "19.224700927734375",
+        "rMeanPSFMag": "18.802200317382812",
+        "iMeanPSFMag": "18.786300659179688",
+        "gMeanPSFMagErr": "0.013530000112950802",
+        "rMeanPSFMagErr": "0.0047969999723136425",
+        "iMeanPSFMagErr": "0.007108999881893396"
+      }
+    ]
+  },
+  {
+    "source_id": "3711047662972690688",
+    "url": "https://catalogs.mast.stsci.edu/api/v0.1/panstarrs/dr1/mean.csv?ra=202.427708333&dec=0.559638888889&radius=0.0008333333333333334&columns=%5BobjID%2CraMean%2CdecMean%2CnDetections%2CgMeanPSFMag%2CrMeanPSFMag%2CiMeanPSFMag%2CgMeanPSFMagErr%2CrMeanPSFMagErr%2CiMeanPSFMagErr%5D",
+    "rows": [
+      {
+        "objID": "108672024277852367",
+        "raMean": "202.42772786",
+        "decMean": "0.55967318",
+        "nDetections": "70",
+        "gMeanPSFMag": "20.534700393676758",
+        "rMeanPSFMag": "19.75550079345703",
+        "iMeanPSFMag": "19.560400009155273",
+        "gMeanPSFMagErr": "0.017999999225139618",
+        "rMeanPSFMagErr": "0.013704000040888786",
+        "iMeanPSFMagErr": "0.011574000120162964"
+      }
+    ]
+  },
+  {
+    "source_id": "3638333660492606976",
+    "url": "https://catalogs.mast.stsci.edu/api/v0.1/panstarrs/dr1/mean.csv?ra=200.803083333&dec=-1.490425&radius=0.0008333333333333334&columns=%5BobjID%2CraMean%2CdecMean%2CnDetections%2CgMeanPSFMag%2CrMeanPSFMag%2CiMeanPSFMag%2CgMeanPSFMagErr%2CrMeanPSFMagErr%2CiMeanPSFMagErr%5D",
+    "rows": [
+      {
+        "objID": "106212008031331638",
+        "raMean": "200.80313507",
+        "decMean": "-1.4906829",
+        "nDetections": "1",
+        "gMeanPSFMag": "-999.0",
+        "rMeanPSFMag": "-999.0",
+        "iMeanPSFMag": "18.853700637817383",
+        "gMeanPSFMagErr": "-999.0",
+        "rMeanPSFMagErr": "-999.0",
+        "iMeanPSFMagErr": "0.1665550023317337"
+      },
+      {
+        "objID": "106212008031082171",
+        "raMean": "200.80310757",
+        "decMean": "-1.4903832",
+        "nDetections": "49",
+        "gMeanPSFMag": "20.645700454711914",
+        "rMeanPSFMag": "19.596399307250977",
+        "iMeanPSFMag": "19.37380027770996",
+        "gMeanPSFMagErr": "0.026110000908374786",
+        "rMeanPSFMagErr": "0.014964999631047249",
+        "iMeanPSFMagErr": "0.021517999470233917"
+      }
+    ]
+  }
+]

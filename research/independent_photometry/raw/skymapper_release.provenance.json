@@ -1,0 +1,10 @@
+{
+  "url": "https://skymapper.anu.edu.au/data-release/",
+  "query_parameters": {},
+  "final_url": "https://skymapper.anu.edu.au/data-release/",
+  "retrieved_utc": "2026-10-19T23:32:33.015071+00:00",
+  "http_status": 200,
+  "content_type": "text/html; charset=utf-8",
+  "size_bytes": 43147,
+  "sha256": "422941ae63e2b85d3d56bd0f37c7db0946c47ae82a39fd2c8be1a0ff366d3bd8"
+}

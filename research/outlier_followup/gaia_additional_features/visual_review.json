@@ -1,0 +1,17 @@
+{
+  "reviewer": "ChatGPT-assisted visual inspection, unreviewed",
+  "review_date_utc": "2026-10-19",
+  "figure": "xp_export_windows.png",
+  "figure_sha256": "40cea1bd30e1dc2878fa80d1c2135bb3b9f536c32d34f3bac933ec2e7bf5aec5",
+  "actually_viewed": true,
+  "object_rows_viewed": 5,
+  "panels_viewed": 15,
+  "observations": [
+    {"row_index": 8303, "observation": "The full export and both local windows show broad positive structures near the displayed reference wavelengths. Small adjacent depressions remain; no independent uncertainty is plotted."},
+    {"row_index": 8307, "observation": "The middle-window broad maximum is displaced slightly redward of its reference line; the red-window peak is positive and narrower in displayed wavelength. These are export samples of one correlated XP reconstruction."},
+    {"row_index": 5948, "observation": "The red-window maximum is the strongest normalized red peak among the five displayed rows, with pronounced adjacent troughs. Two unresolved-unit records are withheld from the original contact-sheet comparison."},
+    {"row_index": 8370, "observation": "The broad middle maximum lies redward of its reference line. A separate positive red peak and sizeable repeated red ripples are visible in the full export; one unresolved-unit record is withheld."},
+    {"row_index": 8390, "observation": "The full export contains strong blue structure and visible positive middle/red peaks. The red maximum is slightly redward of the reference line; its catalogue class remains the literal published S label."}
+  ],
+  "limits": "Actually viewed prepared exact-export curves and local windows; no original detector image, native coefficient covariance, period measurement, spectral-line identification, population frequency or new variability detection is established. Pixel positions are discrete reconstruction-grid extrema, not radial velocities."
+}

@@ -1,0 +1,58 @@
+{
+  "newly_resolved_records": 613,
+  "baseline_recipe_eligible": 611,
+  "native_IVAR_support_gate_pass": 601,
+  "baseline_eligible_but_native_IVAR_support_gate_fails": 10,
+  "failed_native_support_row_indices": [
+    113,
+    535,
+    1910,
+    3958,
+    4125,
+    6165,
+    7243,
+    8288,
+    8295,
+    8330
+  ],
+  "native_IVAR_supported_colour_change_ge_0p001": 1,
+  "colour_change_ge_0p001_row_indices": [
+    8342
+  ],
+  "native_IVAR_AND_zero_support_gate_pass": 567,
+  "all_native_visible_samples_correspond_to_finite_MWDD_pixels": true,
+  "native_pixel_correspondence_tolerance_A": 0.02,
+  "default_sky_mask_windows_A": [
+    [
+      5577.34,
+      8
+    ],
+    [
+      5890,
+      6
+    ],
+    [
+      5896,
+      6
+    ],
+    [
+      6300.3,
+      8
+    ],
+    [
+      6363.78,
+      8
+    ]
+  ],
+  "baseline_green_records": 9,
+  "native_IVAR_support_pass_green_records": 9,
+  "interpretation": "A numerical support/error audit of the same observation, not new independent spectra. Positive native IVAR is required for usable original SDSS pixels. Removing all AND flags is an additional stated sensitivity test and is not assumed to be a universal recommended flag policy.",
+  "scope_limits": "The frozen/current recipe counts are retained for comparability. This audit is a separate layer for only the 613 newly resolved MWDD SDSS inputs. It does not certify S/N, calibration, atmospheric interpretation, Gaia association or the quality of all other records.",
+  "statistical_error_limits": "Analytic pixel errors assume diagonal covariance; calibration, resampling covariance and target-centering uncertainty are absent.",
+  "input_sha256": {
+    "research/unit_resolution_followup/overlay_registry.json": "c8d8f6960092d8cbe3a6f76f64bca07fbde2726680b33ea21de6a54537630865",
+    "research/unit_resolution_followup/compact_manifest.json": "7741636f106edfe7d89cbc22b35cdba5ab981fb96c071e916dfbf6fd8ce4bad4",
+    "research/unit_resolution_followup/newly_resolved_record_screen.csv.gz": "09e49dcba050cd63d08af7aa58234b7f93fa86b12085c627f5b9d06313cf77fe"
+  },
+  "output_sha256": "cf44195f85d4422683784a9fc730cefe73185b48c2808fccc94e2abac0460d34"
+}

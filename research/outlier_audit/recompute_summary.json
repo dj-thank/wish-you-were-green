@@ -1,0 +1,12 @@
+{
+  "created_utc": "2026-10-18T16:07:12.985925+00:00",
+  "requested": 4355,
+  "status_counts": {
+    "ok": 4353,
+    "error": 2
+  },
+  "max_frozen_to_recomputed_uv": 7.010275492435006e-13,
+  "sky_mask_shift_gt_0002": 47,
+  "invalid_clipping_shift_gt_0002": 341,
+  "negative_Y_fraction_gt_001": 78
+}

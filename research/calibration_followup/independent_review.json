@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "recorded_utc": "2026-10-19T11:06:19.896437+00:00",
+  "reviewer": "ChatGPT / literature_novelty",
+  "review_kind": "Independent agent code/method review and numerical reconstruction; not external human peer review",
+  "overall_result": "No major mathematical or sign error found in the reviewed constraints and saved successful witnesses; no analysis-code edits made by this reviewer.",
+  "files_sha256_at_review_record": {
+    "research/calibration_followup/feasibility_results.json": "b7a78389a1803fe0c4aecf10a22811e1433d19899707315ebe918bb7840f8f52",
+    "research/calibration_followup/feasibility_summary.csv": "67a7c80326d4c150fbe9cd0e8412e484e1eb02dcd19bc16ed297cc7cbb64bafa",
+    "research/calibration_followup/photometric_feasibility.py": "c4e5e3f9333c612697c2b55ecb97059c5cba0867f731470907234a8a527ffd3d",
+    "research/calibration_followup/contrasting_witnesses.py": "931195a92b6c89e942d5d5eaa65d5850c5b85fbfa973899848c263f4a9bcc2d6",
+    "research/calibration_followup/contrasting_witnesses.json": "2b47d0c131184ef04e44ff8b62dc9d5ad9ae738ae4bc78c2089c27d53d2c4cdf",
+    "research/calibration_followup/J0429_contrasting_griz_witnesses.npz": "76dbeb25d968c0ec739eea82591ba82ce1b3dd6efc4cefb6f98aaaca60a8dff0",
+    "scripts/verify_research_followup.py": "06cd6650f77384779ede632de09840a83c6fc41378e0a14892c47807a43feeb1",
+    "research/precision/photometric_nullspace.py": "4061f45958530b61011fe3fbdf415be7c51ec22a760c5db8f7fcb7afe7513c70"
+  },
+  "original_analysis_recorded_code_sha256": {
+    "research/calibration_followup/photometric_feasibility.py": "c4e5e3f9333c612697c2b55ecb97059c5cba0867f731470907234a8a527ffd3d",
+    "colour_pipeline.py": "f11ddec97d2437cdbb32a8080e66a1a6a58b16be3807f5b6403fca4e45aa3994",
+    "research/precision/photometric_nullspace.py": "4061f45958530b61011fe3fbdf415be7c51ec22a760c5db8f7fcb7afe7513c70",
+    "research/precision/candidate_recalibration/heldout_z.py": "9091d8788cdc1ebbc696397da844a01d9242ba2b8ef2c351a35de75d1b1a5db7"
+  },
+  "completed_checks": [
+    {
+      "topic": "Magnitude error box to linear flux bounds",
+      "finding": "m +/- k*sigma maps to [10**(-0.4*(m+k*sigma)), 10**(-0.4*(m-k*sigma))]. Dividing by positive baseline band flux preserves inequality directions. The implementation applies the lower-flux bound to the fainter magnitude and the upper-flux bound to the brighter magnitude."
+    },
+    {
+      "topic": "Colour regions and boundary",
+      "finding": "Green closure is the intersection G>=R and G>=B in unclipped linear channels. Its non-green alternative is the union G<=R OR G<=B, computed as two separate LPs and the smaller feasible minimum. Ties lie in both closed sets and do not establish strict green dominance. The separate J0429 contrasting witnesses were verified with strict positive/negative channel margins."
+    },
+    {
+      "topic": "Positive multiplier and integrated XYZ",
+      "finding": "Continuous multiplier positivity and positive integrated XYZ constraints have the correct signs. The original signed spectral pixels are retained; positive multipliers and positive XYZ do not imply a noiseless everywhere-positive physical spectrum."
+    },
+    {
+      "topic": "Continuous supremum",
+      "finding": "Cubic spline derivative roots plus all knots and domain endpoints check the continuous extrema. The LP cutting-plane closure is compared against that continuous maximum. A separate 0.5 Angstrom grid check of every successful saved spline agreed to floating-point precision; that dense grid is an additional check, not the proof of a continuous supremum."
+    },
+    {
+      "topic": "Direct reintegration and fixed cohort",
+      "finding": "The existing verification.calibration() routine was executed separately during review: all 1772 successful witnesses passed fresh speclite photometry and direct observer-table XYZ integration, with 3450 nested constraints checked. The 450 scenarios cover exactly 25 fixed available initial-candidate objects, with the same two unavailable source IDs retained."
+    },
+    {
+      "topic": "Adding measured z",
+      "finding": "Adding z correctly tightens the feasible photometry set. Once z is imposed in the griz constraints, it is no longer held out for those witnesses. Shared PS1 calibration, quoted-error treatment, and noncontemporaneous photometry prevent interpreting the error boxes as independent confidence regions."
+    }
+  ],
+  "independent_dense_grid_recheck": {
+    "successful_splines_checked": 1772,
+    "bounded_infeasible_solutions_retained": 28,
+    "grid_step_angstrom": 0.5,
+    "method": "For each saved spline, evaluate a separate 0.5-Angstrom grid including the final endpoint; compare with absolute maximum over scipy PPoly derivative roots, knots and endpoints.",
+    "maximum_positive_dense_grid_excess_over_analytic_supremum": 3.469446951953614e-18,
+    "maximum_absolute_LP_objective_to_continuous_supremum_gap": 1.9911586008475313e-09,
+    "maximum_absolute_reconstructed_to_stored_supremum_difference": 0.0,
+    "all_continuous_multipliers_above_0p05_with_numeric_tolerance": true
+  },
+  "previous_direct_reintegration_review": {
+    "successful_witnesses": 1772,
+    "bounded_infeasibilities": 28,
+    "nested_constraints": 3450,
+    "maximum_photometry_box_violation_mag": 2.634468643236687e-09,
+    "provenance": "Value recorded from the previously completed independent execution of Verification.calibration(); no new photometry integration was substituted by the dense-grid-only recheck in this record."
+  },
+  "limits": [
+    "The 28 bounded infeasibilities and reported minima are numerical LP solver results. No independent exact-arithmetic optimum or Farkas infeasibility certificate was constructed.",
+    "Spline knot spacings of 400, 800 and 1600 Angstrom are explicit perturbation-family assumptions, not measured calibration correlation lengths.",
+    "Feasible smooth distortions show what the adopted photometric constraints permit; they are not measurements of the actual calibration error or atmospheric spectra.",
+    "The fixed candidate cohort is selected and small. These tests do not provide an occurrence rate, discovery significance, chemical abundance fit or new independent observation."
+  ]
+}

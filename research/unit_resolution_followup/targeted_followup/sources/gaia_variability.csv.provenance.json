@@ -1,0 +1,10 @@
+{
+  "url": "https://gea.esac.esa.int/tap-server/tap/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=SELECT+%2A+FROM+gaiadr3.vari_classifier_result+WHERE+source_id+IN+%284518692348609283712%2C2780975896637670528%2C3217759570831525120%29",
+  "final_url": "https://gea.esac.esa.int/tap-server/tap/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=SELECT+%2A+FROM+gaiadr3.vari_classifier_result+WHERE+source_id+IN+%284518692348609283712%2C2780975896637670528%2C3217759570831525120%29",
+  "retrieved_utc": "2026-10-20T00:20:11.341959+00:00",
+  "http_status": 200,
+  "content_type": "text/csv",
+  "bytes": 138,
+  "sha256": "f87adbe8a5a18e795f720f854732fca1013f34bac880c6ac1167d481f26cea58",
+  "file": "sources/gaia_variability.csv"
+}

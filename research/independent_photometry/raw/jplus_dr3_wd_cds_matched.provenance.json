@@ -1,0 +1,16 @@
+{
+  "url": "https://tapvizier.cds.unistra.fr/TAPVizieR/tap/sync",
+  "query_parameters": {
+    "REQUEST": "doQuery",
+    "LANG": "ADQL",
+    "FORMAT": "csv",
+    "MAXREC": "10000",
+    "QUERY": "SELECT * FROM \"J/A+A/701/A273/catalog\" WHERE (TileID=93348 AND Number=28367) OR (TileID=97688 AND Number=11439) OR (TileID=98793 AND Number=6309)"
+  },
+  "final_url": "https://tapvizier.cds.unistra.fr/TAPVizieR/tap/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&MAXREC=10000&QUERY=SELECT+%2A+FROM+%22J%2FA%2BA%2F701%2FA273%2Fcatalog%22+WHERE+%28TileID%3D93348+AND+Number%3D28367%29+OR+%28TileID%3D97688+AND+Number%3D11439%29+OR+%28TileID%3D98793+AND+Number%3D6309%29",
+  "retrieved_utc": "2026-10-19T23:46:00.286747+00:00",
+  "http_status": 200,
+  "content_type": "text/csv;charset=UTF-8",
+  "size_bytes": 1000,
+  "sha256": "82b54492598e6deed651c0eaac7a9c9dcda614412a040d73fa5dda5fee51a063"
+}

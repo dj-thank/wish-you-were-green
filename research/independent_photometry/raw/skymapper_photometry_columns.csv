@@ -1,0 +1,87 @@
+column_name,description,unit,datatype
+ccd,CCD on which the object was detected (1-32),,SMALLINT
+e_flux_ap10,Error in 10 arcsec aperture flux,ct,REAL
+e_mag_apc10,Error in 10 arcsec aperture magnitude,mag,REAL
+flux_ap15,Total counts within 15 arcsec diameter aperture centred on object,ct,REAL
+e_flux_ap15,Error in 15 arcsec aperture flux,ct,REAL
+e_mag_apr15,Error in 15 arcsec aperture magnitude,mag,REAL
+flux_ap20,Total counts within 20 arcsec diameter aperture centred on object,ct,REAL
+e_flux_ap20,Error in 20 arcsec aperture flux,ct,REAL
+e_mag_apr20,Error in 20 arcsec aperture magnitude,mag,REAL
+flux_ap30,Total counts within 30 arcsec diameter aperture centred on object,ct,REAL
+e_flux_ap30,Error in 30 arcsec aperture flux,ct,REAL
+e_mag_apr30,Error in 30 arcsec aperture magnitude,mag,REAL
+use_in_clipped,Flag indicating whether this observation was used in computing the clipped mean magnitudes in the master table,,SMALLINT
+img_qual,Quality level of this image from 1=best to 3=worst,,SMALLINT
+a,Length of object semi-major axis in pixels,pix,REAL
+b,Length of object semi-minor axis in pixels,pix,REAL
+background,Mean background level in counts,ct,REAL
+chi2_psf,Reduced Chi-squared of PSF fit,,REAL
+class_star,Source Extractor stellarity index (between 0=not star and 1=star),,REAL
+decl_img,ICRS Declination of the object on this image,deg,DOUBLE
+e_a,Error in semi-major axis,pix,REAL
+e_b,Error in semi-minor axis,pix,REAL
+e_flux_ap02,Error in 2 arcsec aperture flux,ct,REAL
+e_flux_ap03,Error in 3 arcsec aperture flux,ct,REAL
+e_flux_ap04,Error in 4 arcsec aperture flux,ct,REAL
+e_flux_ap05,Error in 5 arcsec aperture flux,ct,REAL
+e_flux_ap06,Error in 6 arcsec aperture flux,ct,REAL
+e_flux_ap08,Error in 8 arcsec aperture flux,ct,REAL
+e_flux_kron,Error in Kron flux,ct,REAL
+e_flux_petro,Error in Petrosian flux,ct,REAL
+e_flux_psf,Error in PSF counts,ct,REAL
+elong,Object elongation (a/b),,REAL
+e_mag_apc02,Error in 2 arcsec aperture magnitude,mag,REAL
+e_mag_apc03,Error in 3 arcsec aperture magnitude,mag,REAL
+e_mag_apc04,Error in 4 arcsec aperture magnitude,mag,REAL
+e_mag_apc05,Error in 5 arcsec aperture magnitude,mag,REAL
+e_mag_apc06,Error in 6 arcsec aperture magnitude,mag,REAL
+e_mag_apc08,Error in 8 arcsec aperture magnitude,mag,REAL
+e_mag_kron,Error in Kron magnitude,mag,REAL
+e_mag_petro,Error in Petrosian magnitude,mag,REAL
+e_mag_psf,Error in PSF magnitude,mag,REAL
+e_pa,Error in position angle,deg,REAL
+filter,"SkyMapper photometric filter (u, v, g, r, i, z)",,CHAR
+flags,Flags raised by Source Extractor,,SMALLINT
+flux_ap02,Total counts within 2 arcsec diameter aperture centred on object,ct,REAL
+flux_ap03,Total counts within 3 arcsec diameter aperture centred on object,ct,REAL
+flux_ap04,Total counts within 4 arcsec diameter aperture centred on object,ct,REAL
+flux_ap05,Total counts within 5 arcsec diameter aperture centred on object,ct,REAL
+flux_ap06,Total counts within 6 arcsec diameter aperture centred on object,ct,REAL
+flux_ap08,Total counts within 8 arcsec diameter aperture centred on object,ct,REAL
+flux_ap10,Total counts within 10 arcsec diameter aperture centred on object,ct,REAL
+flux_kron,Total counts within Kron ellipse,ct,REAL
+flux_max,Peak count above background of the brightest object pixel,ct,REAL
+flux_petro,Total counts within Petrosian ellipse,ct,REAL
+flux_psf,Total counts under PSF fit,ct,REAL
+fwhm,Object full width at half maximum on detector,pix,REAL
+imaflags,"OR-combined flagged pixel types within isophotal radius from bad, saturated, and crosstalk pixel mask",,INTEGER
+image_id,Unique image ID as used by the Science Data Pipeline,,BIGINT
+mag_apc02,"ZP-corrected magnitude within 2 arcsec diameter aperture, corrected for PSF losses",mag,REAL
+mag_apc03,"ZP-corrected magnitude within 3 arcsec diameter aperture, corrected for PSF losses",mag,REAL
+mag_apc04,"ZP-corrected magnitude within 4 arcsec diameter aperture, corrected for PSF losses",mag,REAL
+mag_apc05,"ZP-corrected magnitude within 5 arcsec diameter aperture, corrected for PSF losses",mag,REAL
+mag_apc06,"ZP-corrected magnitude within 6 arcsec diameter aperture, corrected for PSF losses",mag,REAL
+mag_apc08,"ZP-corrected magnitude within 8 arcsec diameter aperture, corrected for PSF losses",mag,REAL
+mag_apc10,"ZP-corrected magnitude within 10 arcsec diameter aperture, corrected for PSF losses",mag,REAL
+mag_apr15,"ZP-corrected magnitude within 15 arcsec diameter aperture, NOT corrected for PSF losses",mag,REAL
+mag_apr20,"ZP-corrected magnitude within 20 arcsec diameter aperture, NOT corrected for PSF losses",mag,REAL
+mag_apr30,"ZP-corrected magnitude within 30 arcsec diameter aperture, NOT corrected for PSF losses",mag,REAL
+mag_kron,ZP-corrected Kron magnitude,mag,REAL
+mag_petro,ZP-corrected Petrosian magnitude,mag,REAL
+mag_psf,ZP-corrected PSF magnitude,mag,REAL
+mu_max,ZP-corrected peak surface brightness of object above background,ABmag/arcsec2,REAL
+nimaflags,"Number of flagged pixels from bad, saturated, and crosstalk pixel mask",,INTEGER
+object_id,Global object ID in master table associated with this observation.,,BIGINT
+object_id_local,"Object ID in this (image,CCD) tuple. Not globally unique.",,BIGINT
+pa,"Object ellipse position angle on sky (E of N, -90..+90 deg)",deg,REAL
+radius_frac20,Radius of circular aperture enclosing 20 per cent of total (Kron) flux,pix,REAL
+radius_frac50,Radius of circular aperture enclosing 50 per cent of total (Kron) flux (i.e. half-light radius),pix,REAL
+radius_frac90,Radius of circular aperture enclosing 90 per cent of total (Kron) flux,pix,REAL
+radius_kron,Radius of Kron ellipse in units of a and b,,REAL
+radius_petro,Radius of Petrosian ellipse in units of a and b,,REAL
+ra_img,ICRS Right Ascension of the object on this image,deg,DOUBLE
+x_img,CCD x-pixel coordinate of the object on this image,pix,REAL
+x_mosaic,Mosaic x-pixel coordinate of the object on this image,pix,REAL
+y_img,CCD y-pixel coordinate of the object on this image,pix,REAL
+y_mosaic,Mosaic y-pixel coordinate of the object on this image,pix,REAL

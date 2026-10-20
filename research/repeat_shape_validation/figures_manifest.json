@@ -1,0 +1,76 @@
+{
+  "input_sha256": {
+    "analysis_results.json": "95362d97e8642b440e4184ffb9718b12979d0f9347de5d039f974cbaeaa49588",
+    "sdss_context.json": "e5d7af398140252d16cc45fb0a50255054c726ffad2defe909997b32a2707a8d",
+    "make_figures.py": "42862c692b5258996a2ff1ca66be24ae79cbc21303b5fc445c7674e6a83e348a"
+  },
+  "figures": [
+    {
+      "stem": "desi_2482684508055379584",
+      "kind": "four-panel observation/shape/photometry comparison",
+      "pair_ids": [
+        "desi_2482684508055379584"
+      ],
+      "png_sha256": "4840388f4f065523a190325303f9508b1bffa52ed3cfe3b64f9c6c7fd0e65928",
+      "svg_sha256": "1a259f9c3c5497772513a30ffe73e0d670d8f70b85c5bcee6600988b5c8273a0"
+    },
+    {
+      "stem": "desi_1078624858218235776",
+      "kind": "four-panel observation/shape/photometry comparison",
+      "pair_ids": [
+        "desi_1078624858218235776"
+      ],
+      "png_sha256": "8e1c6e77d6cee093fc0bb69fa2bf4001aec911d8ebac440f529329d61832ad6b",
+      "svg_sha256": "46688ed7ecea0c8667008b7c0b4b4bd84ef484e7d2244e52c0281de7679bc9f4"
+    },
+    {
+      "stem": "desi_1691957732959636608",
+      "kind": "four-panel observation/shape/photometry comparison",
+      "pair_ids": [
+        "desi_1691957732959636608"
+      ],
+      "png_sha256": "656db347173bc07d4dcfb33db9e1118cdfc7e0c5de4a2f9ddac52ac959e0bbfe",
+      "svg_sha256": "7a953e01188eb343e4e363e45447ba450f4241dc6547b1988d095599627bf5e1"
+    },
+    {
+      "stem": "desi_3711047662972690688",
+      "kind": "four-panel observation/shape/photometry comparison",
+      "pair_ids": [
+        "desi_3711047662972690688"
+      ],
+      "png_sha256": "e28e3b66196275f5776c6552f8f378d3d1f77ad0decb2776779509de0be6ef7e",
+      "svg_sha256": "51c9a6c25354fc56d0e6656ee1332a5217da95557b3387b7712a1a93c9534503"
+    },
+    {
+      "stem": "sdss_3646912496889350784",
+      "kind": "four-panel observation/shape/photometry comparison",
+      "pair_ids": [
+        "sdss_3646912496889350784"
+      ],
+      "png_sha256": "03aa98916dcef74fc14289d2b7a0beb1b15d6f9082ac4e5e50c71334b1814425",
+      "svg_sha256": "ae0ff81929283ea9fa0c72af4744ba45b1a89e75698ceaa7c7b95b4395442ec6"
+    },
+    {
+      "stem": "repeat_shape_summary",
+      "kind": "five-pair RMS and synthetic-photometry-null comparison",
+      "pair_ids": [
+        "desi_2482684508055379584",
+        "desi_1078624858218235776",
+        "desi_1691957732959636608",
+        "desi_3711047662972690688",
+        "sdss_3646912496889350784"
+      ],
+      "png_sha256": "43bd2db466f3704965aeab97f33ec633565eb79e8a67e8b327e96e86883336d3",
+      "svg_sha256": "92d70674aadb51d274a46da7dbc2a8c1fb75d63ab00867b636eb8fd8eaf8a3e6"
+    },
+    {
+      "stem": "sdss_exposure_conditions",
+      "kind": "18 original exposure-header conditions",
+      "pair_ids": [
+        "sdss_3646912496889350784"
+      ],
+      "png_sha256": "38601991923e8a6928d3309d278827970fd923e94a2e5628924137c3d6429beb",
+      "svg_sha256": "29a71a80972f991b4af1cbf00d9216fc119dfbc708af80c57324e48bbde113b0"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "url": "https://gea.esac.esa.int/data-server/data?ID=Gaia+DR3+4545191991882663936&RETRIEVAL_TYPE=XP_CONTINUOUS&LINKING_PARAMETER=SOURCE_ID&FORMAT=CSV",
+  "final_url": "https://gea.esac.esa.int/data-server/data?ID=Gaia+DR3+4545191991882663936&RETRIEVAL_TYPE=XP_CONTINUOUS&LINKING_PARAMETER=SOURCE_ID&FORMAT=CSV",
+  "http_status": 200,
+  "content_type": "text/csv",
+  "retrieved_utc": "2026-10-18T16:18:41.462002+00:00",
+  "bytes": 44144,
+  "sha256": "2bcf7354dba4c4376dbdaa672b2192e9ab4f1d245ec97b7bb8bf7799fd99b783"
+}

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VOTABLE version="1.4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ivoa.net/xml/VOTable/v1.4 http://www.ivoa.net/xml/VOTable/v1.4" xmlns="http://www.ivoa.net/xml/VOTable/v1.4">
+	<RESOURCE type="results">
+		<INFO name="standardID" value="ivo://ivoa.net/std/DataLink#links-1.0"/>
+		<INFO name="QUERY_STATUS" value="OK" />
+		<INFO name="JOBID" value="75b8c1a9-cb0f-11f1-9f46-005056a04b55-ODL"><![CDATA[75b8c1a9-cb0f-11f1-9f46-005056a04b55-ODL]]></INFO>
+		<INFO name="JOBNAME" value=""><![CDATA[Datalink job for user anonymous]]></INFO>
+		<TABLE>
+		<FIELD name="ID" ucd="meta.id;meta.main" datatype="char" arraysize="*"/>
+		<FIELD name="linking_parameter" ucd="meta.id.assoc" datatype="char" arraysize="*"/>
+		<FIELD name="access_url" ucd="meta.ref.url" datatype="char" arraysize="*"/>
+		<FIELD name="service_def" ucd="meta.ref" datatype="char" arraysize="*"/>
+		<FIELD name="error_message" ucd="meta.code.error" datatype="char" arraysize="*"/>
+		<FIELD name="semantics" ucd="meta.code" datatype="char" arraysize="*"/>
+		<FIELD name="description" ucd="meta.note" datatype="char" arraysize="*"/>
+		<FIELD name="content_type" ucd="meta.code.mime" datatype="char" arraysize="*"/>
+		<FIELD name="content_length" ucd="phys.size;meta.file" datatype="long" unit="byte"/>
+		<DATA>
+		<TABLEDATA>
+		<TR>
+		<TD>Gaia DR3 2739231150982741760</TD>
+		<TD>SOURCE_ID</TD>
+		<TD><![CDATA[https://gea.esac.esa.int/data-server/data?ID=Gaia+DR3+2739231150982741760&RETRIEVAL_TYPE=XP_CONTINUOUS&LINKING_PARAMETER=SOURCE_ID]]></TD>
+		<TD></TD>
+		<TD></TD>
+		<TD>#this</TD>
+		<TD><![CDATA[XP mean continuous spectra, source Gaia DR3 2739231150982741760, linking_parameter SOURCE_ID]]></TD>
+		<TD>application/x-votable+xml</TD>
+		<TD></TD>
+		</TR>
+		</TABLEDATA>
+		</DATA>
+		</TABLE>
+	</RESOURCE>
+</VOTABLE>

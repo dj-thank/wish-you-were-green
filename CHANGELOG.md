@@ -2,7 +2,56 @@
 
 This log records changes to the research, its interpretation and the reproducible package. A software or documentation release is not a peer-review or discovery-certification milestone.
 
-## 0.1.0 — 2026-10-18
+## Research follow-up — 2026-10-20
+
+Research revision remains **0.2.0 plus this dated follow-up**; no new release tag is implied. [English report](research/FOLLOWUP_2026-10-20.en.md) · [日本語](research/FOLLOWUP_2026-10-20.ja.md).
+
+- Matched original SDSS observations for **613 additional unresolved MWDD exports**, bringing the 2,232-file convention inventory to **327 Fν / 939 Fλ / 966 unresolved**. All 613 records received actual individual viewing across 39 sheets. Of 115 previously unavailable review entities whose units were resolved, 112 recovered supported colour calculations.
+- Applied the additional native-pixel support audit to those 613 records: **601 usable / 12 colour-withheld**, including ten additional gap/support exclusions and two previously ineligible records. The current scoped science view contains **8,074 eligible records / 419 strong records / 324 entity keys** within the unchanged 9,902-record / 6,003-key inventory. The earlier 7,473 eligible values are retained outside the new support-audit scope. The **8,084 / 421 / 325** old-gate compatibility outputs remain historical comparison products, not the adopted current selection.
+- Established J1323−0129's Fλ convention by strict matching to the same original SDSS observation. Recovered qualitative positive-Duv support, while retaining low native S/N 2.36 and an approximately 1.138″ epoch-corrected PLUG separation as barriers to precision independent corroboration. Native Gaia XP remains unavailable. This updates the 18 October unit-status withdrawal without presenting the low-quality spectrum as a precise replication.
+- Retrieved actual SkyMapper DR4 and J-PLUS DR4 photometry for the fixed25 cohort: **450 band slots / 52 strict-quality measurements / 46 fully covered passbands / 14 targets**. Retained individual SkyMapper detections, original fluxes, exposure epochs, proper-motion matches, flags, masks, alternate apertures and failed S-PLUS queries. Rejected misleading nearby-object associations. Kept shared Gaia/BEST, WD-locus and PS1-r calibration information explicit; no independence is inferred solely from a new survey name.
+- Executed **165 observed-photometry scenarios / 660 optimization branches**, plus **276 prospective-band cases and 8 endpoint-closure cases / 568 branches**. At 800 Å spacing, adding SkyMapper r/i to PS1 griz raises J0429's photometry-only minimum to 4.92%, with strict green/red-order minima of approximately 5.0103% / 4.9236%. A 0.02 mag allowance removes that narrow distinction. For J0429, PS1 griz plus ten covered J-PLUS bands (14 total) still admit numerically indistinguishable opposite-order spectra at 400 Å spacing and a 5% shape budget. These are explicitly conditional existence/separation results, not measured calibration errors or an impossibility theorem.
+- Compared wavelength-dependent shapes in four DESI repeat pairs and one disjoint SDSS coadd pair. The SDSS inputs contain **18 physical exposures over five nights**; their two nominal MJD labels do not mean two single-night observations. Preserved missing Z-arm support, shared-photometry dependence, signed pixels, normalization covariance and unresolved instrumental/astrophysical causes.
+- Connected the unusual emission-line record for **SDSS J113732.32+405458.3 (row 6462)** to its published AM CVn identification in [Carter et al. (2014)](https://doi.org/10.1093/mnras/stu142). It is not a newly discovered DQ, quasar or AM CVn system.
+- Added reproducible raw photometry and selected filter-response evidence, bibliography and provider attribution. Losslessly packaged all **474 original SDSS SQL/response/provenance files** from 79 successful and 79 initial failed query attempts; failures remain failures, not empty catalogues. Added the offline `scripts/verify_research_oct20.py` integration command. The photometry and query-bundle checks pass in separate exports without ignored raw caches or network access; verification cannot substitute for a physical interpretation or a new visual inspection.
+
+**日本語：** 単位を追加確定した613記録を全件実見し、元画素の支持が不足する12記録を保留しました。現行の限定監査集計は**適格8,074・強外れ419記録／324キー**です。別撮像の測光を実際に取得し、全25候補・450枠の採否と、品質採用52測定・全域被覆46測定を保存しました。J0429の色順序は、追加測光の誤差箱や許す形状変化に依存することを具体的な解で示しています。J1323の単位はFλと確定しましたが、低S/N・PLUG位置とのずれが残るため、高精度な独立支持は保留です。5夜・18実露出のSDSS反復例、既報AM CVnの照合、原データからのオフライン再現も追加しました。研究版は0.2.0のまま、過去の結果を日付付きで保持しています。
+
+## Research follow-up — 2026-10-19
+
+- Traced two large apparent spectral differences to different calibration branches applied to proven duplicate SDSS observations. Their current Δuv values of 0.01360 and 0.01517 fall to 6.16×10⁻⁷ and 1.45×10⁻⁶ under a shared existing correction. Replayed the acceptance threshold and missing-PS1 fallback decisions, preserving unresolved photometric identities and independent-instrument residuals. Added an explicit common-processing comparison without overwriting the frozen screen.
+
+- Completed actual individual viewing records for the remaining 2,007 historical review entities across 126 sheets: 1,684 with current eligible spectra and 323 explicitly unavailable. The earlier 337 / 22 sheets remain preserved. All 4,370 records retain a disposition, including 1,305 unresolved-unit records, 23 coverage/gap exclusions and one existing error. Retrieved and checked all 3,041 needed original hashes and reproduced their current colours.
+- Added full-range/zoom pairs for 30 display-compressed entities, three native-grid peak checks with nine explicit interpolation sensitivities, four original-SDSS-fibre/Gaia epoch comparisons, and source-backed feature/classification checks. Corrected two imprecise visual wavelength estimates using original samples; retained production masks and historical results. Five newly queried XP feature cases are all already catalogued Gaia variables, not new variability discoveries.
+- Executed 450 observed-photometry configurations and 1,800 linear programmes for all 25 available initial candidates. Directly re-integrated all 1,772 feasible witnesses, retained 28 bounded infeasibilities, and checked 3,450 nested constraints. Constructed strict opposite green/red channel-order witnesses for J0429 inside the same observed griz boxes with about 4.25% maximum shape changes. Fourteen of 25 fail a 2% griz budget under the specified 800 Å / one-quoted-error model. These are conditional feasibility results, not measured calibration errors or confidence limits.
+- Retrieved the 2021-header Montréal pure-H/He photometric tables and executed 720 control-template fits using 25 candidates and 47 quality-selected controls, reserving z/y for prediction. Matched all 25 published DZ/DQ fit pages by Gaia ID and diagnosed their coarse vector-curve residuals. Retained limits from old model versions, fitted observations, relative-Fnu plotted curves, incomplete wavelength coverage and absent native composition-specific models.
+- Added dated Japanese/English reports and an offline follow-up verifier to CI. The verifier uses committed compact evidence, independently checks numerical predictions, and validates image/individual-record provenance; it cannot repeat a visual inspection or certify a physical discovery.
+
+**日本語:** 残り2007対象の個別確認を完了し、原画素・誤差・位置・既知変光まで追確認しました。実測測光を拘束した色判定の限界と公開モデルによる予測を実計算し、[10月19日追加報告](research/FOLLOWUP_2026-10-19.ja.md)にまとめました。確認不可323対象と単位保留を残し、新しい元素量や固有変光を確定したとはしていません。
+
+## 0.2.0 — 2026-10-18
+
+### Corrected flux interpretation and research status
+
+- Corrected a substantive input-unit error: comparison with original SDSS pixels identifies 149 MWDD-hosted SDSS records as proportional to Fnu and 504 as Flambda. Another 1,579 remain unresolved; they are retained for audit and excluded from the current physical-colour screen. Evidence requires matching wavelength grids and the expected wavelength-squared transformation, not a continuum-slope guess.
+- Recalculated all 3,629 SDSS records. The corrected screen has **7,473 eligible records, 395 strong-outlier records and 308 strong-outlier entity keys**. The earlier 9,023 eligible records and 337 strong-outlier entity keys describe the historical audit, not the current sample. Entity keys are catalogue identifiers, not a guarantee that every physical star has been uniquely resolved.
+- **Withdrew independent SDSS colour corroboration for WD J1323−0129.** Its archived SDSS flux convention is unresolved; the target remains a DESI colour candidate and has no available native Gaia XP spectrum in this retrieval. It was not one of the 149 positively identified Fnu records.
+- Preserved the version 0.1 headline tables, original report bodies and notebook numerical outputs. Prominent banners distinguish those snapshots from the current [research report](research/README.md), [corrected screen](research/precision/flux_units/corrected_colour_plane.png) and [initial-27 follow-up table](research/candidate27_followup.md). Small changes in the current four DESI estimates reflect standardized photometric inputs and uncertainty definitions, not measured stellar evolution.
+
+### Additional work executed
+
+- Audited all 9,902 original records and 2,344 review entity keys; checked 4,355 recovered raw-file hashes and reproduced 4,353 historical colour calculations. Recorded two pre-existing invalid-XYZ cases. Inspected all 337 historical strong-outlier objects across 22 spectrum contact sheets, retaining object-level notes and raw evidence.
+- Reconstructed native Gaia XP coefficients for 26 of the initial 27 candidates, preserving full and recommended truncated bases, their shared provenance and formal coefficient-noise intervals. Added 12 photometric anchors and recalibrated 25 DESI candidates; 10 of 25 have absolute held-out z residuals above 0.05 mag, a diagnostic rather than a complete significance test.
+- Calculated exact-gri-preserving calibration perturbations, numerical integration and wavelength-mask sensitivity, with explicit limits on interpreting these stress tests as real error distributions. Integrated the initial 27 into one follow-up table without pooling a discovery probability or declaring confirmed candidates.
+- Retrieved seven additional public DESI exposures for four targets. Three targets have six usable additional-night colour measurements; the additional J1329+0033 exposure lacks usable Z-arm pixels for a full colour estimate. Analysed 2,473 ZTF measurements and 4,646 control measurements without establishing new intrinsic variability. Retained the J1323−0129 positional outlier in the raw data and documented its epoch-corrected rejection.
+- Examined Gaia neighbours and source quality, prior atmosphere analyses, and PEWDD source joins. Three suspicious PEWDD cases were checked against original papers; the broader 236-row designation-coordinate discrepancy group remains quarantined, not collectively declared to contain incorrect Gaia identifiers.
+- Added bilingual research reports, a research-extension notebook, auditable figures and tables, test coverage for flux interpretation and numerical invariants, and an offline extension verifier. The core test command now discovers all `test_*.py` files; the extension verifier complements the preserved compact-result verifier.
+
+### Scientific status
+
+This remains an unreviewed, ChatGPT-assisted investigation led by project initiator and maintainer Shota Moriwaki. The most concrete new result is a verified correction and its consequences for candidate evidence. Formal and conditional intervals omit material systematic effects; selection bias and global false-discovery rates are not yet quantified. The reports separate work actually executed from proposed atmospheric fits and future observing tests.
+
+## 0.1.0 — 2026-10-18 (historical snapshot)
 
 ### Initial research package
 
@@ -28,7 +77,21 @@ This is an exploratory, unreviewed public-data analysis with ChatGPT assistance.
 
 ## 日本語
 
-### 0.1.0 — 2026年10月18日
+### 0.2.0 — 2026年10月18日
+
+**入力フラックスの単位解釈に実際の誤りを確認し、修正しました。** 原SDSSの同一波長画素との比較から、MWDD経由SDSSの149記録をFnu、504記録をFlambdaと確認しました。残る1,579記録は未確定として保存し、現在の物理的な色の判定から除外しています。見た目の傾きだけでは分類せず、波長グリッドの一致と波長の2乗に対応する変換を確認しています。
+
+SDSS全3,629記録を再計算し、修正後は**適格7,473記録、強外れ395記録・308天体キー**になりました。旧9,023適格記録・337強外れ天体キーは過去の監査対象数です。天体キーはカタログ上の識別単位であり、全ての実天体の同定が完全に解決したことを意味しません。**WD J1323−0129はSDSSの単位を確定できないため、独立したSDSSによる色の裏付けを撤回しました。** DESIの色候補としては残りますが、今回の取得では元Gaia XPがありません。このSDSS記録をFnu確定149件に含めてはいません。
+
+元の9,902記録を台帳化し、要確認2,344天体キーを整理しました。回収した原ファイル4,355件のハッシュを照合し、4,353件の旧色計算を再現、既存のXYZ不正2件を記録しました。旧強外れ337天体は22枚のスペクトル一覧を全て目視確認し、個別の注意点を残しています。初期27候補のうち26天体について元Gaia XP共分散を伝播し、DESIは新たな測光アンカー12件を加えて25天体を再校正しました。フィットに使わないzバンドの残差は25件中10件で絶対値0.05等級を超え、これは追加の校正診断として記録しています。
+
+g・r・iを厳密に保存する校正変形、積分・波長マスクへの感度を実際に計算しました。公開DESIの追加7露出・4対象を取得し、3対象の6夜分の有効な色を比較しました。J1329+0033の追加露出はZアームの有効画素がなく、全可視域の独立した色を主張していません。ZTFの対象2,473測定と対照4,646測定から新たな固有変光を確立してはいません。J1323−0129の外れ測光点は固有運動を考慮した位置基準で除外し、生データと画像を保持しました。Gaiaの近傍・品質、先行大気解析、PEWDDの結合整合性も検証しました。PEWDDの疑わしい3例は原論文で確認しましたが、広い座標不一致群236行を一律に誤IDと断定してはいません。
+
+日英の[現行研究報告](research/README.ja.md)、追加ノートブック、修正済み図、初期27候補の総合表、単位解釈・数値不変条件のテスト、追加研究のオフライン検証を追加しました。旧v0.1の数値ファイル、レポート本文、元ノートブックの数値出力は保存し、冒頭に保存版の表示を加えました。現在の代表4天体の小さな数値差は測光入力と誤差定義を統一した結果であり、星の変化の検出ではありません。
+
+研究の発起人・管理者はShota Moriwakiです。本版はChatGPTを利用した未査読研究であり、発見の確定や完全な誤差評価を意味しません。新たに実行した検証と、今後必要な大気モデルのフィット・観測の提案を分けています。選択バイアスと全探索の偽発見率は未評価です。
+
+### 0.1.0 — 2026年10月18日（保存版）
 
 公開データ9,902スペクトル記録の再解析をまとめた初版です。追加の淡い黄緑色候補2天体、ピンク色候補1天体、通常の黒体から外れた黄色候補1天体を報告し、DESIの条件付き区間、Gaia共分散、対照54観測、混入推定、先行研究の照合を記録しました。天体自体や既存の大気の物理機構を新発見として扱ってはいません。
 

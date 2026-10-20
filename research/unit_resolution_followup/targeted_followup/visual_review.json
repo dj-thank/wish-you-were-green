@@ -1,0 +1,31 @@
+{
+  "completed_utc": "2026-10-20T00:30:48.570594+00:00",
+  "reviewer": "external_validation; ChatGPT-assisted actual visual inspection",
+  "actually_viewed_final_PNGs": 3,
+  "records": [
+    {
+      "row_index": 7607,
+      "figure": "native_row_7607.png",
+      "sha256": "d40b61bdea1830d7fd2c5c5e1c8804705572b32f841282cadc2c4380c164e43e",
+      "actually_viewed": true,
+      "observation": "Actually inspected the final full-range and both native zoom panels. Several blue depressions remain across many positive-IVAR, AND-zero samples. The large 5577 A native excursion is orange-flagged and preserved in the full panel; the lower right continuum zoom is explicitly labelled. The initial coarse wavelength windows were revised after this native inspection. No Zeeman or atomic identification assigned.",
+      "limits": "This is a display/native-pixel review, not an atmospheric classification, independent observation, noise likelihood or proof of feature origin. SVG generated from the same figure was not independently rendered."
+    },
+    {
+      "row_index": 8019,
+      "figure": "native_row_8019.png",
+      "sha256": "893f3e9d1abd1d8b20fa0cbe363e6c3da7f23887dd6ebd9f9012188dc584dcb6",
+      "actually_viewed": true,
+      "observation": "Actually inspected all three final panels at original detail, including labels and footnote. Deep blue troughs and intervening rises remain under both positive-IVAR and AND-zero means and are visibly supported by many native samples with errors. Orange flags affect isolated/red regions without explaining the broad blue shape. The figure retains DZ only as catalogue metadata; the separate original-source record documents conflicting AGN/QSO evidence.",
+      "limits": "This is a display/native-pixel review, not an atmospheric classification, independent observation, noise likelihood or proof of feature origin. SVG generated from the same figure was not independently rendered."
+    },
+    {
+      "row_index": 7930,
+      "figure": "native_row_7930.png",
+      "sha256": "df228f17655f16101166a74620a48122d2705268fa2bd8d6e259510582ae3ae3",
+      "actually_viewed": true,
+      "observation": "Actually inspected both final panels, including the native red peak zoom and footer. The peak centre consists of two orange-flagged high samples and adjacent lower samples; excluding nonzero AND reduces but does not erase all nearby structure. The original peak, negative values elsewhere and pixel error bars are retained. The exact native wavelength and BADSKYCHI attribution come from source-array follow-up, not from visual estimation.",
+      "limits": "This is a display/native-pixel review, not an atmospheric classification, independent observation, noise likelihood or proof of feature origin. SVG generated from the same figure was not independently rendered."
+    }
+  ]
+}

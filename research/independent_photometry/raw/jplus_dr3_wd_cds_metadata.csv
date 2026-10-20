@@ -1,0 +1,2 @@
+recno,TileID,Number,RAJ2000,DEJ2000,rmag,e_rmag,psel,pH,TeffH,e_TeffH,loggH,e_loggH,plxH,e_plxH,MassH,e_MassH,VH,TeffHe,e_TeffHe,loggHe,e_loggHe,plxHe,e_plxHe,MassHe,e_MassHe,VHe,pca,EWJ0395,e_EWJ0395,TeffCa,e_TeffCa,loggCa,e_loggCa,plxCa,e_plxCa,MassCa,e_MassCa,chi2,UMAP1,UMAP2,Typeout
+10804,99046,1535,42.6339,2.6774,19.33,0.04,1.0,1.0,11527.0,1020.0,7.88,0.21,3.01,0.33,0.544,0.106,2.8148894E7,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.027,2.38,20.37,11510.0,1043.0,7.88,0.21,3.01,0.34,0.544,0.109,5.48,8.57,0.0,0

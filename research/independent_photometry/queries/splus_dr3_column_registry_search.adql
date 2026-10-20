@@ -1,0 +1,1 @@
+SELECT TOP 500 column_name,table_name,description,unit FROM TAP_SCHEMA.columns WHERE table_name LIKE '%splus%'

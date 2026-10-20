@@ -1,0 +1,72 @@
+{
+  "gaia_source_id": "3711047662972690688",
+  "desi_targetid": "39627800201661952",
+  "retrieval_date_utc": "2026-10-18",
+  "archive_product": "DESI DR1 iron calibrated exposure cframe",
+  "files": [
+    {
+      "arm": "b",
+      "url": "https://data.desi.lbl.gov/public/dr1/spectro/redux/iron/exposures/20220311/00125840/cframe-b2-00125840.fits.gz",
+      "downloaded_bytes": 66629996,
+      "sha256": "1b82364aaea3b9eabe37bb41cb6e493a73ff7f0c4a9aeafdfaf576fb4c76a557",
+      "fiber_map_row_0based": 225,
+      "targetid": "39627800201661952",
+      "fiber": 1225,
+      "NIGHT": "20220311",
+      "EXPID": 125840,
+      "DATE-OBS": "2022-03-12T09:52:42.992194048",
+      "EXPTIME": 1067.197,
+      "BUNIT": "10**-17 erg/(s cm2 Angstrom)",
+      "wavelength_min_A": 3600.0,
+      "wavelength_max_A": 5800.0000000005,
+      "pixels": 2751,
+      "masked_pixels": 0
+    },
+    {
+      "arm": "r",
+      "url": "https://data.desi.lbl.gov/public/dr1/spectro/redux/iron/exposures/20220311/00125840/cframe-r2-00125840.fits.gz",
+      "downloaded_bytes": 57621268,
+      "sha256": "cdfb13ec7dc49edc61e7f0dfe1755677798dcc7a2f4e873b9d0f9c01fd219aa5",
+      "fiber_map_row_0based": 225,
+      "targetid": "39627800201661952",
+      "fiber": 1225,
+      "NIGHT": "20220311",
+      "EXPID": 125840,
+      "DATE-OBS": "2022-03-12T09:52:42.992194048",
+      "EXPTIME": 1067.197,
+      "BUNIT": "10**-17 erg/(s cm2 Angstrom)",
+      "wavelength_min_A": 5760.0,
+      "wavelength_max_A": 7620.000000000423,
+      "pixels": 2326,
+      "masked_pixels": 21
+    },
+    {
+      "arm": "z",
+      "url": "https://data.desi.lbl.gov/public/dr1/spectro/redux/iron/exposures/20220311/00125840/cframe-z2-00125840.fits.gz",
+      "downloaded_bytes": 71537004,
+      "sha256": "6cb9b559d4410508ee0d1e44a6d8e3818f65f79282e9dc0de0d22ef02a2cc052",
+      "fiber_map_row_0based": 225,
+      "targetid": "39627800201661952",
+      "fiber": 1225,
+      "NIGHT": "20220311",
+      "EXPID": 125840,
+      "DATE-OBS": "2022-03-12T09:52:42.992194048",
+      "EXPTIME": 1067.197,
+      "BUNIT": "10**-17 erg/(s cm2 Angstrom)",
+      "wavelength_min_A": 7520.0,
+      "wavelength_max_A": 9824.000000000524,
+      "pixels": 2881,
+      "masked_pixels": 2881
+    }
+  ],
+  "selected_rows_path": "sources/j1329_desi_20220311_rows.npz",
+  "selected_rows_sha256": "a8b60055c2fc39dd8d8a3145778dfbbbf9459b18a3e944ffe03f728f0817c192",
+  "data_model": "https://desidatamodel.readthedocs.io/en/latest/DESI_SPECTRO_REDUX/SPECPROD/exposures/NIGHT/EXPID/cframe-CAMERA-EXPID.html",
+  "provenance_table": "novelty/swan2026_candidate_audit.json",
+  "cautions": [
+    "This is a new observing night for the repository but uses the same DESI instrument.",
+    "The full-camera source files are not duplicated in git; retrieve their recorded URLs and verify hashes to re-extract.",
+    "Resolution matrices are included as instrumental line-spread information, not a pixel covariance matrix.",
+    "Flux is F_lambda in units of 1e-17 erg s^-1 cm^-2 Angstrom^-1; common scale cancels from chromaticity."
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "request_url": "https://data.sdss.org/sas/dr17/eboss/spectro/redux/v5_13_2/4038/spCFrame-b1-00116672.fits",
+  "resolved_url": "https://data.sdss.org/sas/dr17/eboss/spectro/redux/v5_13_2/4038/spCFrame-b1-00116672.fits",
+  "http_status": 206,
+  "content_type": "application/octet-stream",
+  "content_range": "bytes 0-65535/82753920",
+  "content_length_header": "65536",
+  "http_date": "Mon, 19 Oct 2026 23:32:40 GMT",
+  "started_utc": "2026-10-19T23:32:39.859672+00:00",
+  "retrieved_utc": "2026-10-19T23:32:40.193186+00:00",
+  "saved_bytes": 65536,
+  "sha256": "11b8a94a86814ae39fd04ec82cd6ac6e5c311a2779a035ee05b7d79115aab679",
+  "requested_byte_limit": 65536
+}

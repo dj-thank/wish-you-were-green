@@ -1,0 +1,25 @@
+{
+  "name": "ztf_dr24_oid_1749210400005797",
+  "endpoint": "https://irsa.ipac.caltech.edu/cgi-bin/ZTF/nph_light_curves",
+  "parameters": {
+    "ID": "1749210400005797",
+    "COLLECTION": "ztf_dr24",
+    "FORMAT": "csv"
+  },
+  "request_url": "https://irsa.ipac.caltech.edu/cgi-bin/ZTF/nph_light_curves?ID=1749210400005797&COLLECTION=ztf_dr24&FORMAT=csv",
+  "resolved_url": "https://irsa.ipac.caltech.edu/cgi-bin/ZTF/nph_light_curves?ID=1749210400005797&COLLECTION=ztf_dr24&FORMAT=csv",
+  "status": 200,
+  "headers": {
+    "Server": "nginx",
+    "Date": "Sun, 18 Oct 2026 16:01:23 GMT",
+    "Content-Type": "text/csv",
+    "Transfer-Encoding": "chunked",
+    "Connection": "close",
+    "Set-Cookie": "anonymous=15/d4/09aed04fd528a602cc1a3830db82; Max-Age=864000; Path=/; Version=1"
+  },
+  "query_started_utc": "2026-10-18T16:01:23.172603+00:00",
+  "retrieved_utc": "2026-10-18T16:01:23.883954+00:00",
+  "relative_path": "raw/ztf_dr24_oid_1749210400005797.csv",
+  "bytes": 16714,
+  "sha256": "d571c3acddbf614012987d305a935b8f842d581655ec02edcd28ca06dc76b454"
+}

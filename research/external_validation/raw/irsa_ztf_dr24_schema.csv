@@ -1,0 +1,71 @@
+column_name,datatype,description
+cntr,long,Unique row identifier
+oid,long,Unique object identifier
+ra,double,Object Right Ascension
+dec,double,Object Declination
+htm20,long,HTM20 index for object
+field,int,Field identifier
+ccdid,short,CCD identifier (1-16)
+qid,short,Quadrant (1-4)
+fid,short,Filter identifier (1 = zg; 2 = zr; 3 = zi)
+filtercode,char,"Filter code (zg, zr, zi)"
+x,double,Unit sphere position x-coordinate
+y,double,Unit sphere position y-coordinate
+z,double,Unit sphere position z-coordinate
+ngoodobs,int,Number of epochal detections that were not flagged or masked due to bad pixels
+ngoodobsrel,int,Number of epochal detections in this release not associated with bad pixels
+nobs,int,Total number of epochal detections (observation epochs) in the lightcurve
+nobsrel,int,Total number of epochal detections that are in this release
+refchi,float,Ratio of observed to expected pixel-to-pixel scatter of the image profile
+refmag,float,Object magnitude from reference image if detected (not transient)
+refmagerr,float,Error in refMag
+refsharp,float,Measure of the difference between observed and expected angular sizes
+refsnr,float,"From the reference image catalog, signal-to-noise ratio"
+astrometricrms,double,"Root Mean Squared deviation in epochal positions relative to object RA,Dec"
+chisq,float,Chi-square metric using nobs detections
+con,float,Fraction of nobs where three consecutive epochs are > 2x RMS from median mag + 1
+lineartrend,float,Slope from linear fit to nobs detections
+magrms,float,Root Mean Squared deviation over nobs magnitudes
+maxmag,float,Maximum magnitude over nobs detections
+maxslope,float,Maximum pairwise slope over all consecutive nobs detections
+meanmag,float,Mean magnitude over nobs detections
+medianabsdev,float,Median absolute deviation in magnitudes over nobs detections
+medianmag,float,Median magnitude over nobs detections
+medmagerr,float,Median of magerr values over nobs detections
+minmag,float,Minimum magnitude over nobs detections
+nabovemeanbystd_1,int,Number of lightcurve points that are 1 standard deviation above the mean mag
+nabovemeanbystd_3,int,Number of lightcurve points that are 3 standard deviations above the mean mag
+nabovemeanbystd_5,int,Number of lightcurve points that are 5 standard deviations above the mean mag
+nbelowmeanbystd_1,int,Number of lightcurve points that are 1 standard deviation below the mean mag
+nbelowmeanbystd_3,int,Number of lightcurve points that are 3 standard deviations below the mean mag
+nbelowmeanbystd_5,int,Number of lightcurve points that are 5 standard deviations below the mean mag
+nconsecabovemeanbystd_1,int,Number of consecutive points that are 1 standard deviation above the mean mag
+nconsecabovemeanbystd_3,int,Number of consecutive points that are 3 standard deviations above the mean mag
+nconsecabovemeanbystd_5,int,Number of consecutive points that are 5 standard deviations above the mean mag
+nconsecbelowmeanbystd_1,int,Number of consecutive points that are 1 standard deviation below the mean mag
+nconsecbelowmeanbystd_3,int,Number of consecutive points that are 3 standard deviations below the mean mag
+nconsecbelowmeanbystd_5,int,Number of consecutive points that are 5 standard deviations below the mean mag
+nconsecfrommeanbystd_1,int,Number of consec. points that are 1 standard deviation above or below mean mag
+nconsecfrommeanbystd_3,int,Number of consec. points that are 3 standard deviations above or below mean mag
+nconsecfrommeanbystd_5,int,Number of consec. points that are 5 standard deviations above or below mean mag
+nmedianbufferrange,int,Number of points more than 20% of the LC amplitude from the weighted mean mag
+npairposslope,int,Number of positive slopes between consecutive pairwise lightcurve points
+percentiles_05,float,5th percentile in magnitude over nobs
+percentiles_10,float,10th percentile in magnitude over nobs
+percentiles_175,float,17.5 percentile in magnitude over nobs
+percentiles_25,float,25th percentile in magnitude over nobs
+percentiles_325,float,32.5 percentile in magnitude over nobs
+percentiles_40,float,40th percentile in magnitude over nobs
+percentiles_60,float,60th percentile in magnitude over nobs
+percentiles_675,float,67.5 percentile in magnitude over nobs
+percentiles_75,float,75th percentile in magnitude over nobs
+percentiles_825,float,82.5 percentile in magnitude over nobs
+percentiles_90,float,90th percentile in magnitude over nobs
+percentiles_95,float,95th percentile in magnitude over nobs
+skewness,float,Skew (third moment) in lightcurve magnitudes over nobs
+smallkurtosis,float,Small sample Kurtosis (fourth moment) in lightcurve magnitudes over nobs
+stetsonj,float,Stetson-J statistic for this filter only; measures degree of autocorrelation
+stetsonk,float,Stetson-K statistic; proportional to the kurtosis of the magnitude distribution
+vonneumannratio,float,Von Neumann Ratio statistic over nobs; measure of epoch-to-epoch variability
+weightedmagrms,float,Root Mean Square magnitude over nobs using inverse-variance weighting
+weightedmeanmag,float,Inverse-variance weighted mean magnitude over nobs

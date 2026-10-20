@@ -1,0 +1,13 @@
+{
+  "name": "ztf_dr24_local_objects_J0429-0354",
+  "endpoint": "https://irsa.ipac.caltech.edu/TAP/sync",
+  "parameters": {
+    "REQUEST": "doQuery",
+    "LANG": "ADQL",
+    "FORMAT": "csv",
+    "QUERY": "SELECT TOP 300 oid,ra,dec,field,ccdid,qid,fid,filtercode,refmag,refmagerr,refchi,refsharp,refsnr,ngoodobsrel,nobsrel,medianmag,medmagerr,magrms,chisq,astrometricrms,DISTANCE(POINT('ICRS',ra,dec),POINT('ICRS',67.43628526183,-3.90650606101))*3600 AS distance_arcsec FROM ztf_objects_dr24 WHERE 1=CONTAINS(POINT('ICRS',ra,dec),CIRCLE('ICRS',67.43628526183,-3.90650606101,0.05)) AND fid IN (1,2) AND medianmag BETWEEN 18 AND 21.5 ORDER BY distance_arcsec"
+  },
+  "request_url": "https://irsa.ipac.caltech.edu/TAP/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=SELECT+TOP+300+oid%2Cra%2Cdec%2Cfield%2Cccdid%2Cqid%2Cfid%2Cfiltercode%2Crefmag%2Crefmagerr%2Crefchi%2Crefsharp%2Crefsnr%2Cngoodobsrel%2Cnobsrel%2Cmedianmag%2Cmedmagerr%2Cmagrms%2Cchisq%2Castrometricrms%2CDISTANCE%28POINT%28%27ICRS%27%2Cra%2Cdec%29%2CPOINT%28%27ICRS%27%2C67.43628526183%2C-3.90650606101%29%29%2A3600+AS+distance_arcsec+FROM+ztf_objects_dr24+WHERE+1%3DCONTAINS%28POINT%28%27ICRS%27%2Cra%2Cdec%29%2CCIRCLE%28%27ICRS%27%2C67.43628526183%2C-3.90650606101%2C0.05%29%29+AND+fid+IN+%281%2C2%29+AND+medianmag+BETWEEN+18+AND+21.5+ORDER+BY+distance_arcsec",
+  "attempted_utc": "2026-10-18T15:55:49.791564+00:00",
+  "error": "RuntimeError('Service returned an XML/HTML diagnostic instead of CSV: <?xml version=\"1.0\" encoding=\"utf-8\"?>\\n<VOTABLE version=\"1.3\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns=\"http://www.ivoa.net/xml/VOTable/v1.3\" xsi:schemaLocation=\"http://www.ivoa.net/xml/VOTable/v1.3 http://www.ivoa.net/xml/VOTable/v1.3\">\\n  <DESCRIPTION>Caltech/IPAC-IRSA IVOA Table')"
+}

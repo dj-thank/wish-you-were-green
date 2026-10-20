@@ -1,0 +1,13 @@
+{
+  "url": "https://archive.cefca.es/catalogues/jplus-dr4/adql_help_enum",
+  "query_parameters": {
+    "db": "J-PLUS-DR4",
+    "name": "calibration_method"
+  },
+  "final_url": "https://archive.cefca.es/catalogues/jplus-dr4/adql_help_enum?db=J-PLUS-DR4&name=calibration_method",
+  "retrieved_utc": "2026-10-19T23:34:41.348921+00:00",
+  "http_status": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "size_bytes": 764,
+  "sha256": "b4423acb4c4e0be580e020be439ab3a4a2a0a69cb0ac67b132bb560bb266b8cd"
+}

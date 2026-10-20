@@ -1,0 +1,91 @@
+{
+  "created_utc": "2026-10-19T10:12:48.343998+00:00",
+  "requests": [
+    {
+      "request_url": "https://www.montrealwhitedwarfdatabase.org/WDs/SDSS%20J110644.27%2B673708.6/spect.SDSS%20J110644.27%2B673708.6.DESI_2022-05-09_031112.txt",
+      "query_started_utc": "2026-10-19T10:12:46.204525+00:00",
+      "expected_frozen_sha256": "0cc5e7bc4cbdf8c19e2b2e969e02aecf9fa0387e3298456343d4b20fa3b5f3af",
+      "status": 200,
+      "resolved_url": "https://www.montrealwhitedwarfdatabase.org/WDs/SDSS%20J110644.27%2B673708.6/spect.SDSS%20J110644.27%2B673708.6.DESI_2022-05-09_031112.txt",
+      "content_type": "text/plain; charset=UTF-8",
+      "http_date": "Mon, 19 Oct 2026 10:12:46 GMT",
+      "retrieved_utc": "2026-10-19T10:12:47.134537+00:00",
+      "bytes": 615254,
+      "sha256": "0cc5e7bc4cbdf8c19e2b2e969e02aecf9fa0387e3298456343d4b20fa3b5f3af",
+      "saved_path": "research/outlier_followup/targeted_diagnostics/raw/row_1250.txt",
+      "result": "ok"
+    },
+    {
+      "request_url": "https://www.montrealwhitedwarfdatabase.org/WDs/Gaia%20DR3%202163612727665972096/spect.Gaia%20DR3%202163612727665972096.XP.txt",
+      "query_started_utc": "2026-10-19T10:12:46.205293+00:00",
+      "expected_frozen_sha256": "5f0e90fc558f679a7f91b2312dc0cdc6d0d6b10a605be2c0fb710ce294b91371",
+      "status": 200,
+      "resolved_url": "https://www.montrealwhitedwarfdatabase.org/WDs/Gaia%20DR3%202163612727665972096/spect.Gaia%20DR3%202163612727665972096.XP.txt",
+      "content_type": "text/plain; charset=UTF-8",
+      "http_date": "Mon, 19 Oct 2026 10:12:46 GMT",
+      "retrieved_utc": "2026-10-19T10:12:46.963505+00:00",
+      "bytes": 7371,
+      "sha256": "5f0e90fc558f679a7f91b2312dc0cdc6d0d6b10a605be2c0fb710ce294b91371",
+      "saved_path": "research/outlier_followup/targeted_diagnostics/raw/row_2714.txt",
+      "result": "ok"
+    },
+    {
+      "request_url": "https://www.montrealwhitedwarfdatabase.org/WDs/Gaia%20DR3%202002597083798483200/spect.Gaia%20DR3%202002597083798483200.XP.txt",
+      "query_started_utc": "2026-10-19T10:12:46.212081+00:00",
+      "expected_frozen_sha256": "92e6863ba3134be99435dd613430eafb4f9168b8197320975e73e665a3fb5409",
+      "status": 200,
+      "resolved_url": "https://www.montrealwhitedwarfdatabase.org/WDs/Gaia%20DR3%202002597083798483200/spect.Gaia%20DR3%202002597083798483200.XP.txt",
+      "content_type": "text/plain; charset=UTF-8",
+      "http_date": "Mon, 19 Oct 2026 10:12:46 GMT",
+      "retrieved_utc": "2026-10-19T10:12:46.780018+00:00",
+      "bytes": 7380,
+      "sha256": "92e6863ba3134be99435dd613430eafb4f9168b8197320975e73e665a3fb5409",
+      "saved_path": "research/outlier_followup/targeted_diagnostics/raw/row_2930.txt",
+      "result": "ok"
+    },
+    {
+      "request_url": "https://www.montrealwhitedwarfdatabase.org/WDs/Gaia%20DR3%203688869246424920448/spect.Gaia%20DR3%203688869246424920448.DESI_2022-02-12_104117.txt",
+      "query_started_utc": "2026-10-19T10:12:46.212595+00:00",
+      "expected_frozen_sha256": "1c221fc47414b2ce9a82f0766b54db4ad44d5b6e98d3fbf1701e4b06a013bdce",
+      "status": 200,
+      "resolved_url": "https://www.montrealwhitedwarfdatabase.org/WDs/Gaia%20DR3%203688869246424920448/spect.Gaia%20DR3%203688869246424920448.DESI_2022-02-12_104117.txt",
+      "content_type": "text/plain; charset=UTF-8",
+      "http_date": "Mon, 19 Oct 2026 10:12:46 GMT",
+      "retrieved_utc": "2026-10-19T10:12:47.170986+00:00",
+      "bytes": 615012,
+      "sha256": "1c221fc47414b2ce9a82f0766b54db4ad44d5b6e98d3fbf1701e4b06a013bdce",
+      "saved_path": "research/outlier_followup/targeted_diagnostics/raw/row_3004.txt",
+      "result": "ok"
+    },
+    {
+      "request_url": "https://www.montrealwhitedwarfdatabase.org/WDs/Gaia%20DR3%205078976609103251456/spect.Gaia%20DR3%205078976609103251456.XP.txt",
+      "query_started_utc": "2026-10-19T10:12:46.780686+00:00",
+      "expected_frozen_sha256": "67a842fd256a3ec814ec522c921953a60224005ca8726091a06276ee38c0d010",
+      "status": 200,
+      "resolved_url": "https://www.montrealwhitedwarfdatabase.org/WDs/Gaia%20DR3%205078976609103251456/spect.Gaia%20DR3%205078976609103251456.XP.txt",
+      "content_type": "text/plain; charset=UTF-8",
+      "http_date": "Mon, 19 Oct 2026 10:12:47 GMT",
+      "retrieved_utc": "2026-10-19T10:12:47.054992+00:00",
+      "bytes": 7375,
+      "sha256": "67a842fd256a3ec814ec522c921953a60224005ca8726091a06276ee38c0d010",
+      "saved_path": "research/outlier_followup/targeted_diagnostics/raw/row_8376.txt",
+      "result": "ok"
+    },
+    {
+      "request_url": "https://gea.esac.esa.int/tap-server/tap/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=SELECT+g.source_id%2Cg.ra%2Cg.dec%2Cg.ref_epoch%2Cg.pmra%2Cg.pmdec%2Cg.phot_g_mean_mag%2Cg.bp_rp%2Cg.ruwe%2Cg.phot_variable_flag%2Cg.has_xp_continuous%2Cv.classifier_name%2Cv.best_class_name%2Cv.best_class_score+FROM+gaiadr3.gaia_source+AS+g+LEFT+OUTER+JOIN+gaiadr3.vari_classifier_result+AS+v+ON+g.source_id%3Dv.source_id+WHERE+g.source_id+IN+%281060188315963488640%2C3688869246424920448%2C2629980411471669632%2C2802900781266410112%2C4573582236809330432%2C2163612727665972096%2C2002597083798483200%2C5078976609103251456%2C1245262790370992256%29+ORDER+BY+g.source_id",
+      "query_started_utc": "2026-10-19T10:12:46.964459+00:00",
+      "expected_frozen_sha256": null,
+      "status": 200,
+      "resolved_url": "https://gea.esac.esa.int/tap-server/tap/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=SELECT+g.source_id%2Cg.ra%2Cg.dec%2Cg.ref_epoch%2Cg.pmra%2Cg.pmdec%2Cg.phot_g_mean_mag%2Cg.bp_rp%2Cg.ruwe%2Cg.phot_variable_flag%2Cg.has_xp_continuous%2Cv.classifier_name%2Cv.best_class_name%2Cv.best_class_score+FROM+gaiadr3.gaia_source+AS+g+LEFT+OUTER+JOIN+gaiadr3.vari_classifier_result+AS+v+ON+g.source_id%3Dv.source_id+WHERE+g.source_id+IN+%281060188315963488640%2C3688869246424920448%2C2629980411471669632%2C2802900781266410112%2C4573582236809330432%2C2163612727665972096%2C2002597083798483200%2C5078976609103251456%2C1245262790370992256%29+ORDER+BY+g.source_id",
+      "content_type": "text/csv",
+      "http_date": "Mon, 19 Oct 2026 10:12:47 GMT",
+      "retrieved_utc": "2026-10-19T10:12:48.341047+00:00",
+      "bytes": 1580,
+      "sha256": "c0381c490aaba85e1035cd99de228b0e271be60471e76deb6e6b6f5ec190ae83",
+      "saved_path": "research/outlier_followup/targeted_diagnostics/raw/gaia_feature_review.csv",
+      "result": "ok"
+    }
+  ],
+  "code_sha256": "8daa9cee09ff20137a32e5d9e163c9ef46e69017c6e21d4e4251ae6c69cd178c",
+  "input_table_sha256": "2c894ee7af8d1c3a5f62ba19c6921265b4bef5de9f84291394d441642b984746"
+}

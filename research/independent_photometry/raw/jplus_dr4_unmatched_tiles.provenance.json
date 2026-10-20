@@ -1,0 +1,16 @@
+{
+  "url": "https://archive.cefca.es/catalogues/vo/tap/jplus-dr4/sync",
+  "query_parameters": {
+    "REQUEST": "doQuery",
+    "LANG": "ADQL",
+    "FORMAT": "csv",
+    "MAXREC": "10000",
+    "QUERY": "SELECT * FROM jplus.TileImage WHERE ref_tile_id IN (190232)"
+  },
+  "final_url": "https://archive.cefca.es/catalogues/vo/tap/jplus-dr4/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&MAXREC=10000&QUERY=SELECT+%2A+FROM+jplus.TileImage+WHERE+ref_tile_id+IN+%28190232%29",
+  "retrieved_utc": "2026-10-19T23:40:41.043371+00:00",
+  "http_status": 200,
+  "content_type": "text/csv; charset=UTF-8",
+  "size_bytes": 5015,
+  "sha256": "ad9ad620c3cbf8877d3a9a1b17d95e47694dbbfaa7144bfcefec62b9989c0979"
+}

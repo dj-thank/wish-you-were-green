@@ -1,0 +1,3797 @@
+{
+  "created_utc": "2026-10-19T23:58:37.272366+00:00",
+  "design_version": "coupled_strict_sets_v1",
+  "scope": "conditional spline minimax design; proposed additional fluxes are not measurements",
+  "tag": "closure10",
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "speclite": "1.0.0"
+  },
+  "input_and_code_hashes": {
+    "research/measurement_design/DESIGN.md": "c32825b4b56789c9db4f268108cd3cc7d03fe4a5ef5e74240f34327b444eff32",
+    "research/measurement_design/profiles.py": "6ffd1e440370605354b03dbacb86a5825a801ce9363073b3f3db355466965990",
+    "research/measurement_design/fetch_profiles.py": "e72ad037ffdca5472134555243160ba462961af5e9d596e00f46561724470995",
+    "research/measurement_design/coupled_colour_sets.py": "e420559aff8a5f18ba03966cc80c50edd1e8e9ec30686c600c81ea51b9dbfbc4",
+    "research/measurement_design/run_design.py": "69a30d2405138b6c5e9dc930a01c8d7b9b2186fda4dd775ec9bef0aa5d3faaef",
+    "research/measurement_design/profile_manifest.json": "9c83b69d7f6615d24abc797f6c68ab762af4c35443be876671b581ec9ede09ea",
+    "colour_pipeline.py": "f11ddec97d2437cdbb32a8080e66a1a6a58b16be3807f5b6403fca4e45aa3994",
+    "research/calibration_followup/photometric_feasibility.py": "c4e5e3f9333c612697c2b55ecb97059c5cba0867f731470907234a8a527ffd3d",
+    "research/precision/photometric_nullspace.py": "4061f45958530b61011fe3fbdf415be7c51ec22a760c5db8f7fcb7afe7513c70",
+    "research/precision/candidate_recalibration/heldout_z.py": "9091d8788cdc1ebbc696397da844a01d9242ba2b8ef2c351a35de75d1b1a5db7"
+  },
+  "cohort": {
+    "3204436719718449280": {
+      "source_id": "3204436719718449280",
+      "names": "Gaia DR2 3204436719718449280",
+      "WDJname": "WDJ042944.71-035422.00",
+      "input_path": "research/precision/candidate_recalibration/3204436719718449280_DESI_PS1.npz",
+      "input_sha256": "fba9c03d1cfd3b7fd16c758bf0b21de9be8696da8796928f8e8b86fab50f6fda",
+      "raw_spectrum_sha256": "623d0bafb7aa178b9ea858f5539e375a58d9e26339e840293e130dc42abf1cb1",
+      "raw_spectrum_url": "https://www.montrealwhitedwarfdatabase.org/WDs/Gaia%20DR2%203204436719718449280/spect.Gaia%20DR2%203204436719718449280.DESI_2022-02-19_022934.txt",
+      "photometry_row_sha256": "f3dbba6cc3f45c774e0ff0095c2c403222087b08c902d3627175f32e58163089",
+      "observed_mag_griz": [
+        19.224700927734375,
+        18.802200317382812,
+        18.786300659179688,
+        18.8439998626709
+      ],
+      "quoted_error_mag_griz": [
+        0.01680029789779892,
+        0.01109233979774703,
+        0.012264175498416073,
+        0.013862179076708338
+      ],
+      "cleaned_baseline_mag_griz": [
+        19.21860721371681,
+        18.814601650265423,
+        18.77442932135841,
+        18.783017736939737
+      ],
+      "original_pixels": 7781,
+      "retained_pixels": 7678,
+      "retained_negative_pixels": 168,
+      "largest_gap_A": 19.200000000004366,
+      "minimum_A": 3600.0,
+      "maximum_A": 9824.000000000524,
+      "nominal_metrics": {
+        "x": 0.3284455517217097,
+        "y": 0.36353024635247994,
+        "u1960": 0.19592688415221962,
+        "v1960": 0.3252838168589923,
+        "r_linear": 0.9350611152807056,
+        "g_linear": 1.0,
+        "b_linear": 0.7163520248237978,
+        "r": 248,
+        "g": 255,
+        "b": 220,
+        "hex": "#F8FFDC",
+        "in_srgb_gamut": true,
+        "green_dominant": true,
+        "green_channel_margin": 0.06493888471929443,
+        "duv": 0.012809293918292004,
+        "distance_planck_uv": 0.012809293918292004,
+        "nearest_planck_temperature_K": 5657.102845783533,
+        "nearest_planck_u": 0.20566746561449134,
+        "nearest_planck_v": 0.3169652182112608,
+        "nearest_is_RJ_limit": false,
+        "wave_min_A": 3600.0,
+        "wave_max_A": 9824.000000000524,
+        "coverage_eligible": true,
+        "cmf_min_coverage": 0.9999995149836055,
+        "n_visible_pixels": 5777,
+        "visible_negative_fraction": 0.02648433442963476,
+        "largest_visible_gap_A": 19.200000000004138
+      },
+      "PS1_filter_metadata": [
+        {
+          "name": "panstarrs-g",
+          "file_sha256": "b2c8c489c82008cc8f2a7960acd2c51b75dfa05578b14ead7f8b2f9cda4d8cd1",
+          "wavelength_response_sha256_little_endian_float64": "44e417a66367211f6ead11b8fdd77f2e4121fe1e6e098146a31007580f99f93b",
+          "minimum_A": 3889.999999999999,
+          "maximum_A": 5669.999999999999,
+          "source": "Tonry et al. 2012, ApJ 750, 99; distributed with speclite",
+          "source_url": "https://doi.org/10.1088/0004-637X/750/2/99"
+        },
+        {
+          "name": "panstarrs-r",
+          "file_sha256": "e088e0d1b065e8154c29d206bd6d6eeb90f179ae2d933e522966fadba5bfb7b0",
+          "wavelength_response_sha256_little_endian_float64": "194696146f7dd555ffec3debb05b6b39e63c9d9d3f55ff49064c75377ecaf490",
+          "minimum_A": 5279.999999999999,
+          "maximum_A": 7139.999999999999,
+          "source": "Tonry et al. 2012, ApJ 750, 99; distributed with speclite",
+          "source_url": "https://doi.org/10.1088/0004-637X/750/2/99"
+        },
+        {
+          "name": "panstarrs-i",
+          "file_sha256": "3fc445dcda1ec47a7e0b34cb6b6a0efa961e94db91670050b6de27f219a20650",
+          "wavelength_response_sha256_little_endian_float64": "479747a3ef757cebeb6cedfbd6872e4afda1ce7a7cae3ec0a4945b47a4d61ee6",
+          "minimum_A": 6639.999999999999,
+          "maximum_A": 8439.999999999998,
+          "source": "Tonry et al. 2012, ApJ 750, 99; distributed with speclite",
+          "source_url": "https://doi.org/10.1088/0004-637X/750/2/99"
+        },
+        {
+          "name": "panstarrs-z",
+          "file_sha256": "2e452150d6ede964bed13d1da79b5f31facd7739d0bb2bbeeb720d1b757d3b35",
+          "wavelength_response_sha256_little_endian_float64": "debbe090db47d05e62d7684e4e575b7a41a9a77b383988bb00241c59788f545e",
+          "minimum_A": 7839.999999999998,
+          "maximum_A": 9519.999999999998,
+          "source": "Tonry et al. 2012, ApJ 750, 99; distributed with speclite",
+          "source_url": "https://doi.org/10.1088/0004-637X/750/2/99"
+        }
+      ],
+      "additional_filter_metadata": [
+        {
+          "filter_id": "SkyMapper/SkyMapper.g",
+          "speclite_name": "additional-SkyMapper_SkyMapper_g",
+          "raw_path": "research/measurement_design/sources/SkyMapper_SkyMapper.g.xml",
+          "raw_sha256": "d0a542657876c7e5ffb0904a5ff163746dc424abe40f0f8dcdc870db8ab2acdc",
+          "source_url": "https://svo2.cab.inta-csic.es/theory/fps/fps.php?ID=SkyMapper%2FSkyMapper.g",
+          "source_retrieved_utc": "2026-10-19T23:24:51.994455+00:00",
+          "detector_type": "photon_counting",
+          "wavelength_unit": "Angstrom",
+          "profile_reference": "http://adsabs.harvard.edu/abs/2011PASP..123..789B",
+          "description": "SkyMapper g normalized passband",
+          "raw_sample_count": 55,
+          "retained_raw_sample_count": 55,
+          "endpoint_closure_width_A": 10.0,
+          "added_zero_endpoints": [],
+          "minimum_A": 4000.0,
+          "maximum_A": 6700.0,
+          "effective_wavelength_A": 5148.05804496499,
+          "numeric_sha256": "6add03ddd3007cf4efdbe824cddd334e2fe9f7ed45ae926fa7920990f3ed67fa"
+        },
+        {
+          "filter_id": "SkyMapper/SkyMapper.r",
+          "speclite_name": "additional-SkyMapper_SkyMapper_r",
+          "raw_path": "research/measurement_design/sources/SkyMapper_SkyMapper.r.xml",
+          "raw_sha256": "10e5fa0b4ae2c63a3d208ba15c51f8a23ae64efde7f675892f844f3734c99b87",
+          "source_url": "https://svo2.cab.inta-csic.es/theory/fps/fps.php?ID=SkyMapper%2FSkyMapper.r",
+          "source_retrieved_utc": "2026-10-19T23:24:51.794829+00:00",
+          "detector_type": "photon_counting",
+          "wavelength_unit": "Angstrom",
+          "profile_reference": "http://adsabs.harvard.edu/abs/2011PASP..123..789B",
+          "description": "SkyMapper r normalized passband",
+          "raw_sample_count": 51,
+          "retained_raw_sample_count": 51,
+          "endpoint_closure_width_A": 10.0,
+          "added_zero_endpoints": [],
+          "minimum_A": 4800.0,
+          "maximum_A": 7300.0,
+          "effective_wavelength_A": 6194.571315405375,
+          "numeric_sha256": "86db89d9e1c8c7ebdb1f20225e00e3d131dc372a38517cfbce6cde1c27084c9e"
+        },
+        {
+          "filter_id": "SkyMapper/SkyMapper.i",
+          "speclite_name": "additional-SkyMapper_SkyMapper_i",
+          "raw_path": "research/measurement_design/sources/SkyMapper_SkyMapper.i.xml",
+          "raw_sha256": "a196a0ced9cfd23998591e749736cbaa5da205ec1fe33dde5f23c12800ae04d8",
+          "source_url": "https://svo2.cab.inta-csic.es/theory/fps/fps.php?ID=SkyMapper%2FSkyMapper.i",
+          "source_retrieved_utc": "2026-10-19T23:24:51.587535+00:00",
+          "detector_type": "photon_counting",
+          "wavelength_unit": "Angstrom",
+          "profile_reference": "http://adsabs.harvard.edu/abs/2011PASP..123..789B",
+          "description": "SkyMapper i normalized passband",
+          "raw_sample_count": 41,
+          "retained_raw_sample_count": 41,
+          "endpoint_closure_width_A": 10.0,
+          "added_zero_endpoints": [],
+          "minimum_A": 6800.0,
+          "maximum_A": 8800.0,
+          "effective_wavelength_A": 7799.164392641306,
+          "numeric_sha256": "fdc05bb51b02115edf9aa4a2fbccf8fe3949ab441427b6f4fd6fb21d3edfb5b4"
+        },
+        {
+          "filter_id": "OAJ/JPLUS.J0378",
+          "speclite_name": "additional-OAJ_JPLUS_J0378",
+          "raw_path": "research/measurement_design/sources/OAJ_JPLUS.J0378.xml",
+          "raw_sha256": "1ea690e00cea2e75be91c0832d59184cdc0a8ea592e9d265cd48b6aef49d7435",
+          "source_url": "https://svo2.cab.inta-csic.es/theory/fps/fps.php?ID=OAJ%2FJPLUS.J0378",
+          "source_retrieved_utc": "2026-10-19T23:24:52.033804+00:00",
+          "detector_type": "photon_counting",
+          "wavelength_unit": "Angstrom",
+          "profile_reference": "http://www.j-plus.es/survey/instrumentation",
+          "description": "J-PLUS  g J0378  (full transmission)",
+          "raw_sample_count": 271,
+          "retained_raw_sample_count": 271,
+          "endpoint_closure_width_A": 10.0,
+          "added_zero_endpoints": [
+            [
+              3639.0,
+              0.0
+            ],
+            [
+              3929.0,
+              0.0
+            ]
+          ],
+          "minimum_A": 3639.0,
+          "maximum_A": 3929.0,
+          "effective_wavelength_A": 3783.212157891343,
+          "numeric_sha256": "645ac39cf3d4c2fd23e9d2a351ddb1fd1f8a0d4870ac56c69cdbb5724550bc07"
+        },
+        {
+          "filter_id": "OAJ/JPLUS.J0395",
+          "speclite_name": "additional-OAJ_JPLUS_J0395",
+          "raw_path": "research/measurement_design/sources/OAJ_JPLUS.J0395.xml",
+          "raw_sha256": "8da62bbf668bfda95ccfcfac584f797a4824167b6be6a5a7c7611d8bc742f6ac",
+          "source_url": "https://svo2.cab.inta-csic.es/theory/fps/fps.php?ID=OAJ%2FJPLUS.J0395",
+          "source_retrieved_utc": "2026-10-19T23:24:52.197824+00:00",
+          "detector_type": "photon_counting",
+          "wavelength_unit": "Angstrom",
+          "profile_reference": "http://www.j-plus.es/survey/instrumentation",
+          "description": "J-PLUS  g J0395  (full transmission)",
+          "raw_sample_count": 176,
+          "retained_raw_sample_count": 176,
+          "endpoint_closure_width_A": 10.0,
+          "added_zero_endpoints": [
+            [
+              3843.0,
+              0.0
+            ],
+            [
+              4038.0,
+              0.0
+            ]
+          ],
+          "minimum_A": 3843.0,
+          "maximum_A": 4038.0,
+          "effective_wavelength_A": 3939.719554530538,
+          "numeric_sha256": "6da960b504a5dded7ad0041a8a5b04f849a3f7bca23371388e8abdaccfa52415"
+        },
+        {
+          "filter_id": "OAJ/JPLUS.J0410",
+          "speclite_name": "additional-OAJ_JPLUS_J0410",
+          "raw_path": "research/measurement_design/sources/OAJ_JPLUS.J0410.xml",
+          "raw_sha256": "0e5c6189a7a47232df1f95eee5364ec689063a16f368cb0e03d9626b9b83c456",
+          "source_url": "https://svo2.cab.inta-csic.es/theory/fps/fps.php?ID=OAJ%2FJPLUS.J0410",
+          "source_retrieved_utc": "2026-10-19T23:24:52.127812+00:00",
+          "detector_type": "photon_counting",
+          "wavelength_unit": "Angstrom",
+          "profile_reference": "http://www.j-plus.es/survey/instrumentation",
+          "description": "J-PLUS  g J0410  (full transmission)",
+          "raw_sample_count": 349,
+          "retained_raw_sample_count": 349,
+          "endpoint_closure_width_A": 10.0,
+          "added_zero_endpoints": [
+            [
+              3930.0,
+              0.0
+            ],
+            [
+              4298.0,
+              0.0
+            ]
+          ],
+          "minimum_A": 3930.0,
+          "maximum_A": 4298.0,
+          "effective_wavelength_A": 4109.443360079033,
+          "numeric_sha256": "492a6924ba7aeb3519c54c39af1ffb270f9311259e721ddd3daa44b65abe25ba"
+        },
+        {
+          "filter_id": "OAJ/JPLUS.J0430",
+          "speclite_name": "additional-OAJ_JPLUS_J0430",
+          "raw_path": "research/measurement_design/sources/OAJ_JPLUS.J0430.xml",
+          "raw_sha256": "9150c972510a882878da0bd573ed29ddf5dc916790f5f8def57c951add933372",
+          "source_url": "https://svo2.cab.inta-csic.es/theory/fps/fps.php?ID=OAJ%2FJPLUS.J0430",
+          "source_retrieved_utc": "2026-10-19T23:24:52.377979+00:00",
+          "detector_type": "photon_counting",
+          "wavelength_unit": "Angstrom",
+          "profile_reference": "http://www.j-plus.es/survey/instrumentation",
+          "description": "J-PLUS  g J0430  (full transmission)",
+          "raw_sample_count": 356,
+          "retained_raw_sample_count": 356,
+          "endpoint_closure_width_A": 10.0,
+          "added_zero_endpoints": [
+            [
+              4125.0,
+              0.0
+            ],
+            [
+              4500.0,
+              0.0
+            ]
+          ],
+          "minimum_A": 4125.0,
+          "maximum_A": 4500.0,
+          "effective_wavelength_A": 4304.55118076551,
+          "numeric_sha256": "f162b40c4e424c127394b8cbc71ac2427cb6489ffb42e32338f0fdb33279d32b"
+        },
+        {
+          "filter_id": "OAJ/JPLUS.gSDSS",
+          "speclite_name": "additional-OAJ_JPLUS_gSDSS",
+          "raw_path": "research/measurement_design/sources/OAJ_JPLUS.gSDSS.xml",
+          "raw_sha256": "507b9a1060417c44cad70e59baf792a9eacaab7cf24dd94623ac08d889b42089",
+          "source_url": "https://svo2.cab.inta-csic.es/theory/fps/fps.php?ID=OAJ%2FJPLUS.gSDSS",
+          "source_retrieved_utc": "2026-10-19T23:24:52.302863+00:00",
+          "detector_type": "photon_counting",
+          "wavelength_unit": "Angstrom",
+          "profile_reference": "http://www.j-plus.es/survey/instrumentation",
+          "description": "J-PLUS  g SDSS-like  (full transmission)",
+          "raw_sample_count": 1787,
+          "retained_raw_sample_count": 1787,
+          "endpoint_closure_width_A": 10.0,
+          "added_zero_endpoints": [
+            [
+              3851.0,
+              0.0
+            ],
+            [
+              5657.0,
+              0.0
+            ]
+          ],
+          "minimum_A": 3851.0,
+          "maximum_A": 5657.0,
+          "effective_wavelength_A": 4849.265895614118,
+          "numeric_sha256": "87a8da7eb059905a466c48bdec36cd71e8fad5429927268468f7570a6c9a6959"
+        },
+        {
+          "filter_id": "OAJ/JPLUS.J0515",
+          "speclite_name": "additional-OAJ_JPLUS_J0515",
+          "raw_path": "research/measurement_design/sources/OAJ_JPLUS.J0515.xml",
+          "raw_sha256": "f2c251333bbd9ded6539d41adf187af4a10fb58028c8b331c69743522d5c695d",
+          "source_url": "https://svo2.cab.inta-csic.es/theory/fps/fps.php?ID=OAJ%2FJPLUS.J0515",
+          "source_retrieved_utc": "2026-10-19T23:24:52.385204+00:00",
+          "detector_type": "photon_counting",
+          "wavelength_unit": "Angstrom",
+          "profile_reference": "http://www.j-plus.es/survey/instrumentation",
+          "description": "J-PLUS  g J0515  (full transmission)",
+          "raw_sample_count": 306,
+          "retained_raw_sample_count": 306,
+          "endpoint_closure_width_A": 10.0,
+          "added_zero_endpoints": [
+            [
+              4983.0,
+              0.0
+            ],
+            [
+              5308.0,
+              0.0
+            ]
+          ],
+          "minimum_A": 4983.0,
+          "maximum_A": 5308.0,
+          "effective_wavelength_A": 5141.962888364187,
+          "numeric_sha256": "ffa75adc3e28997b1d646a4b58fba7d2156764ac130986b61ca9cd8ba5f6dab8"
+        },
+        {
+          "filter_id": "OAJ/JPLUS.rSDSS",
+          "speclite_name": "additional-OAJ_JPLUS_rSDSS",
+          "raw_path": "research/measurement_design/sources/OAJ_JPLUS.rSDSS.xml",
+          "raw_sha256": "c7378811895ccd37c4866e61d27104e754566f2c19c60fe901a585d2294a6e8e",
+          "source_url": "https://svo2.cab.inta-csic.es/theory/fps/fps.php?ID=OAJ%2FJPLUS.rSDSS",
+          "source_retrieved_utc": "2026-10-19T23:24:52.471368+00:00",
+          "detector_type": "photon_counting",
+          "wavelength_unit": "Angstrom",
+          "profile_reference": "http://www.j-plus.es/survey/instrumentation",
+          "description": "J-PLUS  r SDSS-like  (full transmission)",
+          "raw_sample_count": 1866,
+          "retained_raw_sample_count": 1866,
+          "endpoint_closure_width_A": 10.0,
+          "added_zero_endpoints": [
+            [
+              5306.0,
+              0.0
+            ],
+            [
+              7191.0,
+              0.0
+            ]
+          ],
+          "minimum_A": 5306.0,
+          "maximum_A": 7191.0,
+          "effective_wavelength_A": 6302.086042064016,
+          "numeric_sha256": "f711e13253566aca7d67fd0c170358cfb758f7dc732ea6e4c30856cf6db896a3"
+        },
+        {
+          "filter_id": "OAJ/JPLUS.J0660",
+          "speclite_name": "additional-OAJ_JPLUS_J0660",
+          "raw_path": "research/measurement_design/sources/OAJ_JPLUS.J0660.xml",
+          "raw_sha256": "c5829e2027ccdbd243b23d2b2661cf327d673339c3328c35d26de0de03a53263",
+          "source_url": "https://svo2.cab.inta-csic.es/theory/fps/fps.php?ID=OAJ%2FJPLUS.J0660",
+          "source_retrieved_utc": "2026-10-19T23:24:52.552648+00:00",
+          "detector_type": "photon_counting",
+          "wavelength_unit": "Angstrom",
+          "profile_reference": "http://www.j-plus.es/survey/instrumentation",
+          "description": "J-PLUS  g J0660  (full transmission)",
+          "raw_sample_count": 252,
+          "retained_raw_sample_count": 252,
+          "endpoint_closure_width_A": 10.0,
+          "added_zero_endpoints": [
+            [
+              6478.0,
+              0.0
+            ],
+            [
+              6749.0,
+              0.0
+            ]
+          ],
+          "minimum_A": 6478.0,
+          "maximum_A": 6749.0,
+          "effective_wavelength_A": 6604.335555972871,
+          "numeric_sha256": "48e7637ce67f035e9e00a81663ae2eaf85c78af103153236339f9e412242df9d"
+        },
+        {
+          "filter_id": "OAJ/JPLUS.iSDSS",
+          "speclite_name": "additional-OAJ_JPLUS_iSDSS",
+          "raw_path": "research/measurement_design/sources/OAJ_JPLUS.iSDSS.xml",
+          "raw_sha256": "9a13af72e16e32db84abd7c889b684e3a881e9193d583407e6b4a55dacfddb73",
+          "source_url": "https://svo2.cab.inta-csic.es/theory/fps/fps.php?ID=OAJ%2FJPLUS.iSDSS",
+          "source_retrieved_utc": "2026-10-19T23:24:52.821569+00:00",
+          "detector_type": "photon_counting",
+          "wavelength_unit": "Angstrom",
+          "profile_reference": "http://www.j-plus.es/survey/instrumentation",
+          "description": "J-PLUS  i SDSS-like  (full transmission)",
+          "raw_sample_count": 2114,
+          "retained_raw_sample_count": 2114,
+          "endpoint_closure_width_A": 10.0,
+          "added_zero_endpoints": [
+            [
+              6600.0,
+              0.0
+            ],
+            [
+              8733.0,
+              0.0
+            ]
+          ],
+          "minimum_A": 6600.0,
+          "maximum_A": 8733.0,
+          "effective_wavelength_A": 7694.364175090557,
+          "numeric_sha256": "d6fc98cdfb3f096891ed4f432c3a1474b29131a13d8e882bd525d2b60a8568ac"
+        },
+        {
+          "filter_id": "OAJ/JPLUS.J0861",
+          "speclite_name": "additional-OAJ_JPLUS_J0861",
+          "raw_path": "research/measurement_design/sources/OAJ_JPLUS.J0861.xml",
+          "raw_sha256": "235d9513d32efcd2979f1fee52ef87e13bbafc5b77435ef0698ce948d3e00a99",
+          "source_url": "https://svo2.cab.inta-csic.es/theory/fps/fps.php?ID=OAJ%2FJPLUS.J0861",
+          "source_retrieved_utc": "2026-10-19T23:24:52.651091+00:00",
+          "detector_type": "photon_counting",
+          "wavelength_unit": "Angstrom",
+          "profile_reference": "http://www.j-plus.es/survey/instrumentation",
+          "description": "J-PLUS  g J0861  (full transmission)",
+          "raw_sample_count": 666,
+          "retained_raw_sample_count": 666,
+          "endpoint_closure_width_A": 10.0,
+          "added_zero_endpoints": [
+            [
+              8279.0,
+              0.0
+            ],
+            [
+              8964.0,
+              0.0
+            ]
+          ],
+          "minimum_A": 8279.0,
+          "maximum_A": 8964.0,
+          "effective_wavelength_A": 8613.099836410658,
+          "numeric_sha256": "26f7446f6dbb522ad4f29c7660607c169e694e51d7a6c2cbb0fa91da0d1de7c9"
+        }
+      ],
+      "excluded_filters": [
+        {
+          "filter_id": "SkyMapper/SkyMapper.u",
+          "speclite_name": "additional-SkyMapper_SkyMapper_u",
+          "raw_path": "research/measurement_design/sources/SkyMapper_SkyMapper.u.xml",
+          "raw_sha256": "711165ae42cc6c5567e1f19332da5e480b1725bf6cbad7872abf91268797f913",
+          "source_url": "https://svo2.cab.inta-csic.es/theory/fps/fps.php?ID=SkyMapper%2FSkyMapper.u",
+          "source_retrieved_utc": "2026-10-19T23:24:51.390760+00:00",
+          "detector_type": "photon_counting",
+          "wavelength_unit": "Angstrom",
+          "profile_reference": "http://adsabs.harvard.edu/abs/2011PASP..123..789B",
+          "description": "SkyMapper u normalized passband",
+          "raw_sample_count": 19,
+          "retained_raw_sample_count": 19,
+          "endpoint_closure_width_A": 10.0,
+          "added_zero_endpoints": [],
+          "minimum_A": 3000.0,
+          "maximum_A": 3900.0,
+          "effective_wavelength_A": 3503.06218952271,
+          "numeric_sha256": "7b17c202e937bf22632c1ff8bd1f5de218823bad5e4e83cef07976fca006b594",
+          "reason": "full_tabulated_passband_and_closure_not_bracketed_by_observed_spectrum",
+          "observed_minimum_A": 3600.0,
+          "observed_maximum_A": 9824.000000000524
+        },
+        {
+          "filter_id": "SkyMapper/SkyMapper.v",
+          "speclite_name": "additional-SkyMapper_SkyMapper_v",
+          "raw_path": "research/measurement_design/sources/SkyMapper_SkyMapper.v.xml",
+          "raw_sha256": "0255b36b1f5f77921151dd438dfef29be40b7200af3aa3dd81cb13f991d95129",
+          "source_url": "https://svo2.cab.inta-csic.es/theory/fps/fps.php?ID=SkyMapper%2FSkyMapper.v",
+          "source_retrieved_utc": "2026-10-19T23:24:51.193969+00:00",
+          "detector_type": "photon_counting",
+          "wavelength_unit": "Angstrom",
+          "profile_reference": "http://adsabs.harvard.edu/abs/2011PASP..123..789B",
+          "description": "SkyMapper v normalized passband",
+          "raw_sample_count": 16,
+          "retained_raw_sample_count": 16,
+          "endpoint_closure_width_A": 10.0,
+          "added_zero_endpoints": [],
+          "minimum_A": 3500.0,
+          "maximum_A": 4250.0,
+          "effective_wavelength_A": 3841.2986707806735,
+          "numeric_sha256": "b1c39c781eb826dbee761c2d3c81485a6e512d03e3a9a7b5a70252287748c3f7",
+          "reason": "full_tabulated_passband_and_closure_not_bracketed_by_observed_spectrum",
+          "observed_minimum_A": 3600.0,
+          "observed_maximum_A": 9824.000000000524
+        },
+        {
+          "filter_id": "SkyMapper/SkyMapper.z",
+          "speclite_name": "additional-SkyMapper_SkyMapper_z",
+          "raw_path": "research/measurement_design/sources/SkyMapper_SkyMapper.z.xml",
+          "raw_sha256": "ae29e593aec616a077c9d69a79ceb69ee4b31b4d4b0ffcaad5dfa5b6fb9645e8",
+          "source_url": "https://svo2.cab.inta-csic.es/theory/fps/fps.php?ID=SkyMapper%2FSkyMapper.z",
+          "source_retrieved_utc": "2026-10-19T23:24:51.786581+00:00",
+          "detector_type": "photon_counting",
+          "wavelength_unit": "Angstrom",
+          "profile_reference": "http://adsabs.harvard.edu/abs/2011PASP..123..789B",
+          "description": "SkyMapper z normalized passband",
+          "raw_sample_count": 51,
+          "retained_raw_sample_count": 51,
+          "endpoint_closure_width_A": 10.0,
+          "added_zero_endpoints": [],
+          "minimum_A": 8100.0,
+          "maximum_A": 10700.0,
+          "effective_wavelength_A": 9194.216229749103,
+          "numeric_sha256": "4a2e648038543ccf01e386c3689edd8835b7bd214278bce98406d4d17787e1ed",
+          "reason": "full_tabulated_passband_and_closure_not_bracketed_by_observed_spectrum",
+          "observed_minimum_A": 3600.0,
+          "observed_maximum_A": 9824.000000000524
+        },
+        {
+          "filter_id": "OAJ/JPLUS.uJAVA",
+          "speclite_name": "additional-OAJ_JPLUS_uJAVA",
+          "raw_path": "research/measurement_design/sources/OAJ_JPLUS.uJAVA.xml",
+          "raw_sha256": "121d12d22b1b6fe8b9e999c9363a222d90bec057f3afcad878ef30562e890e70",
+          "source_url": "https://svo2.cab.inta-csic.es/theory/fps/fps.php?ID=OAJ%2FJPLUS.uJAVA",
+          "source_retrieved_utc": "2026-10-19T23:24:51.863581+00:00",
+          "detector_type": "photon_counting",
+          "wavelength_unit": "Angstrom",
+          "profile_reference": "http://www.j-plus.es/survey/instrumentation",
+          "description": "J-PLUS u (full transmission)",
+          "raw_sample_count": 760,
+          "retained_raw_sample_count": 760,
+          "endpoint_closure_width_A": 10.0,
+          "added_zero_endpoints": [
+            [
+              3126.0,
+              0.0
+            ],
+            [
+              3905.0,
+              0.0
+            ]
+          ],
+          "minimum_A": 3126.0,
+          "maximum_A": 3905.0,
+          "effective_wavelength_A": 3542.0121058393283,
+          "numeric_sha256": "f3c011d85566d18068bd5b86f025377fc2d5e87c7464db980b9ba38e3354aafd",
+          "reason": "full_tabulated_passband_and_closure_not_bracketed_by_observed_spectrum",
+          "observed_minimum_A": 3600.0,
+          "observed_maximum_A": 9824.000000000524
+        },
+        {
+          "filter_id": "OAJ/JPLUS.zSDSS",
+          "speclite_name": "additional-OAJ_JPLUS_zSDSS",
+          "raw_path": "research/measurement_design/sources/OAJ_JPLUS.zSDSS.xml",
+          "raw_sha256": "75d6d34a9c4cd86d719cb4e0a4972e04ea5e1cdc93f5ce5b327845f6dfa63e36",
+          "source_url": "https://svo2.cab.inta-csic.es/theory/fps/fps.php?ID=OAJ%2FJPLUS.zSDSS",
+          "source_retrieved_utc": "2026-10-19T23:24:52.744467+00:00",
+          "detector_type": "photon_counting",
+          "wavelength_unit": "Angstrom",
+          "profile_reference": "http://www.j-plus.es/survey/instrumentation",
+          "description": "J-PLUS  z SDSS-like  (full transmission)",
+          "raw_sample_count": 3358,
+          "retained_raw_sample_count": 3358,
+          "endpoint_closure_width_A": 10.0,
+          "added_zero_endpoints": [
+            [
+              7630.0,
+              0.0
+            ],
+            [
+              11007.0,
+              0.0
+            ]
+          ],
+          "minimum_A": 7630.0,
+          "maximum_A": 11007.0,
+          "effective_wavelength_A": 9010.997202385146,
+          "numeric_sha256": "0d2b6fdebbe720538066b6225d7ad6b3b780de15a1d82d311ce26cfe35973a81",
+          "reason": "full_tabulated_passband_and_closure_not_bracketed_by_observed_spectrum",
+          "observed_minimum_A": 3600.0,
+          "observed_maximum_A": 9824.000000000524
+        }
+      ],
+      "all_filter_labels": [
+        "PS1/g",
+        "PS1/r",
+        "PS1/i",
+        "PS1/z",
+        "SkyMapper/SkyMapper.g",
+        "SkyMapper/SkyMapper.r",
+        "SkyMapper/SkyMapper.i",
+        "OAJ/JPLUS.J0378",
+        "OAJ/JPLUS.J0395",
+        "OAJ/JPLUS.J0410",
+        "OAJ/JPLUS.J0430",
+        "OAJ/JPLUS.gSDSS",
+        "OAJ/JPLUS.J0515",
+        "OAJ/JPLUS.rSDSS",
+        "OAJ/JPLUS.J0660",
+        "OAJ/JPLUS.iSDSS",
+        "OAJ/JPLUS.J0861"
+      ],
+      "all_baseline_flux_maggies": [
+        2.053795105400859e-08,
+        2.979609428731023e-08,
+        3.091920163411212e-08,
+        3.067558863869396e-08,
+        2.3087426528797617e-08,
+        2.9580982955571563e-08,
+        3.105311647881905e-08,
+        4.358532319454588e-09,
+        1.4935044543549817e-09,
+        4.715450123694811e-09,
+        9.067337948604964e-09,
+        1.9213666349870124e-08,
+        2.5554780594734048e-08,
+        2.982666529991243e-08,
+        3.069498830383299e-08,
+        3.097495787094103e-08,
+        2.956771705153033e-08
+      ],
+      "all_baseline_mag": [
+        19.21860721371681,
+        18.814601650265423,
+        18.77442932135841,
+        18.783017736939737,
+        19.091561184016076,
+        18.822468496986428,
+        18.769737019182674,
+        20.90164932319846,
+        22.064483694452605,
+        20.81619211102488,
+        20.10630049346464,
+        19.290974388003402,
+        18.981319608519595,
+        18.813488247989618,
+        18.782331319423314,
+        18.772473189089215,
+        18.82295551606026
+      ]
+    }
+  },
+  "results": [
+    {
+      "source_id": "3204436719718449280",
+      "WDJname": "WDJ042944.71-035422.00",
+      "spacing_A": 800,
+      "relative_shape_budget": 0.05,
+      "normalized_guard": 0.005,
+      "closure_width_A": 10.0,
+      "proposal": {
+        "name": "JPLUS_narrow_covered",
+        "kind": "survey",
+        "indices": [
+          7,
+          8,
+          9,
+          10,
+          12,
+          14,
+          16
+        ]
+      },
+      "proposed_labels": [
+        "OAJ/JPLUS.J0378",
+        "OAJ/JPLUS.J0395",
+        "OAJ/JPLUS.J0410",
+        "OAJ/JPLUS.J0430",
+        "OAJ/JPLUS.J0515",
+        "OAJ/JPLUS.J0660",
+        "OAJ/JPLUS.J0861"
+      ],
+      "branches": [
+        {
+          "success": true,
+          "opposite_branch": "G-R",
+          "relative_shape_budget": 0.05,
+          "normalized_guard": 0.005,
+          "n_spline_coefficients": 11,
+          "n_proposed_bands": 7,
+          "status": "feasible_pair",
+          "solver_status": 0,
+          "witness_strategy": "analytic_extrema_cuts",
+          "solver_attempts": [
+            {
+              "stage": "outer_finite_grid",
+              "method": "highs",
+              "presolve": true,
+              "status": 0,
+              "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+            },
+            {
+              "stage": "optional_continuous_inner_witness",
+              "method": "highs",
+              "presolve": true,
+              "status": 2,
+              "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)"
+            },
+            {
+              "stage": "outer_finite_grid",
+              "method": "highs",
+              "presolve": true,
+              "status": 0,
+              "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+            }
+          ],
+          "minimum_max_baseline_relative_flux_separation": 3.602369374229038e-05,
+          "finite_grid_dual_objective": 3.602369374230383e-05,
+          "continuous_witness_separation": 3.6023693742448515e-05,
+          "uniform_error_half_width_from_dual_lower_bound": 1.8011846871151914e-05,
+          "uniform_error_half_width_from_witness_upper_bound": 1.8011846871224257e-05,
+          "numerically_separated_at_check_tolerance": true,
+          "extrema_iterations": 2,
+          "green_continuous_supremum": 0.05000000001516472,
+          "opposite_continuous_supremum": 0.050000000015279544,
+          "maximum_budget_violation": 1.527954152091837e-11,
+          "primal_violation": 1.2592704656810838e-13,
+          "dual_stationarity": 4.741417126580715e-14,
+          "duality_gap": -1.345088320239829e-17,
+          "wrong_dual_sign": 0.0,
+          "independent_operator_replay_error": 2.220446049250313e-16,
+          "green": {
+            "PS1_synthetic_griz_mag": [
+              19.241501225632174,
+              18.809148701226817,
+              18.77403648369778,
+              18.83013768359419
+            ],
+            "PS1_box_violation_mag": 0.0,
+            "normalized_channel_differences": {
+              "G-R": 0.004999999999987426,
+              "G-B": 0.2193634446860194
+            },
+            "colour_guard_violation": 1.2574143115617886e-14,
+            "xyz": [
+              9.336947745444481e-15,
+              1.0114463299195288e-14,
+              8.959241460261562e-15
+            ],
+            "metrics": {
+              "x": 0.32864249576223903,
+              "y": 0.35600953893791654,
+              "u1960": 0.19873074398547202,
+              "v1960": 0.3229194707837272,
+              "r_linear": 0.994749125245558,
+              "g_linear": 1.0,
+              "b_linear": 0.7696300052495718,
+              "r": 254,
+              "g": 255,
+              "b": 227,
+              "hex": "#FEFFE3",
+              "in_srgb_gamut": true,
+              "green_dominant": true,
+              "green_channel_margin": 0.00525087475444197,
+              "duv": 0.00914173017843051,
+              "distance_planck_uv": 0.00914173017843051,
+              "nearest_planck_temperature_K": 5657.102845783533,
+              "nearest_planck_u": 0.20566746561449134,
+              "nearest_planck_v": 0.3169652182112608,
+              "nearest_is_RJ_limit": false,
+              "wave_min_A": 3600.0,
+              "wave_max_A": 9824.000000000524,
+              "coverage_eligible": true,
+              "cmf_min_coverage": 0.9999995149836055,
+              "n_visible_pixels": 5777,
+              "visible_negative_fraction": 0.02648433442963476,
+              "largest_visible_gap_A": 19.200000000004138
+            }
+          },
+          "opposite": {
+            "PS1_synthetic_griz_mag": [
+              19.240834335795654,
+              18.802083987208253,
+              18.7985648346628,
+              18.83013768359419
+            ],
+            "PS1_box_violation_mag": 0.0,
+            "normalized_channel_differences": {
+              "G-R": -0.005000000000011789,
+              "G-B": 0.22591009810214113
+            },
+            "colour_guard_violation": 0.0,
+            "xyz": [
+              9.4207047027748e-15,
+              1.0186989497242847e-14,
+              8.95354891761816e-15
+            ],
+            "metrics": {
+              "x": 0.3298422503521132,
+              "y": 0.3566717826421446,
+              "u1960": 0.19928910742253267,
+              "v1960": 0.32324907344196996,
+              "r_linear": 1.0,
+              "g_linear": 0.9948039807594412,
+              "b_linear": 0.7600373374849431,
+              "r": 255,
+              "g": 254,
+              "b": 226,
+              "hex": "#FFFEE2",
+              "in_srgb_gamut": true,
+              "green_dominant": false,
+              "green_channel_margin": -0.005196019240558791,
+              "duv": 0.008935006387809674,
+              "distance_planck_uv": 0.008935006387809674,
+              "nearest_planck_temperature_K": 5608.459724336814,
+              "nearest_planck_u": 0.20603355818016486,
+              "nearest_planck_v": 0.31738846569805174,
+              "nearest_is_RJ_limit": false,
+              "wave_min_A": 3600.0,
+              "wave_max_A": 9824.000000000524,
+              "coverage_eligible": true,
+              "cmf_min_coverage": 0.9999995149836055,
+              "n_visible_pixels": 5777,
+              "visible_negative_fraction": 0.02648433442963476,
+              "largest_visible_gap_A": 19.200000000004138
+            }
+          },
+          "proposed_green_flux_over_baseline": [
+            1.0074304056543864,
+            1.0379107335528366,
+            1.0490923499107103,
+            1.041401597605949,
+            0.9580040140510161,
+            1.0432897768861162,
+            0.9556858328612641
+          ],
+          "proposed_opposite_flux_over_baseline": [
+            1.0074664293481288,
+            1.0378747098590941,
+            1.0491283736044525,
+            1.0413655739122067,
+            0.9580400377447584,
+            1.0433258005798585,
+            0.9557218565550061
+          ],
+          "proposed_green_minus_opposite_mag": [
+            3.8823058183447695e-05,
+            -3.768426901091172e-05,
+            3.728132897612664e-05,
+            -3.755794604785609e-05,
+            4.082602223386439e-05,
+            3.748867683280766e-05,
+            4.092505094130909e-05
+          ],
+          "constraint_blocks": [
+            {
+              "name": "green_upper_spline",
+              "start": 0,
+              "stop": 786
+            },
+            {
+              "name": "green_lower_spline",
+              "start": 786,
+              "stop": 1572
+            },
+            {
+              "name": "green_upper_PS1",
+              "start": 1572,
+              "stop": 1576
+            },
+            {
+              "name": "green_lower_PS1",
+              "start": 1576,
+              "stop": 1580
+            },
+            {
+              "name": "green_positive_XYZ",
+              "start": 1580,
+              "stop": 1583
+            },
+            {
+              "name": "green_G-R",
+              "start": 1583,
+              "stop": 1584
+            },
+            {
+              "name": "green_G-B",
+              "start": 1584,
+              "stop": 1585
+            },
+            {
+              "name": "opposite_upper_spline",
+              "start": 1585,
+              "stop": 2372
+            },
+            {
+              "name": "opposite_lower_spline",
+              "start": 2372,
+              "stop": 3159
+            },
+            {
+              "name": "opposite_upper_PS1",
+              "start": 3159,
+              "stop": 3163
+            },
+            {
+              "name": "opposite_lower_PS1",
+              "start": 3163,
+              "stop": 3167
+            },
+            {
+              "name": "opposite_positive_XYZ",
+              "start": 3167,
+              "stop": 3170
+            },
+            {
+              "name": "opposite_G-R",
+              "start": 3170,
+              "stop": 3171
+            },
+            {
+              "name": "proposed_positive_difference",
+              "start": 3171,
+              "stop": 3178
+            },
+            {
+              "name": "proposed_negative_difference",
+              "start": 3178,
+              "stop": 3185
+            }
+          ],
+          "source_id": "3204436719718449280",
+          "spacing_A": 800,
+          "closure_width_A": 10.0,
+          "proposal": {
+            "name": "JPLUS_narrow_covered",
+            "kind": "survey",
+            "indices": [
+              7,
+              8,
+              9,
+              10,
+              12,
+              14,
+              16
+            ]
+          },
+          "proposed_labels": [
+            "OAJ/JPLUS.J0378",
+            "OAJ/JPLUS.J0395",
+            "OAJ/JPLUS.J0410",
+            "OAJ/JPLUS.J0430",
+            "OAJ/JPLUS.J0515",
+            "OAJ/JPLUS.J0660",
+            "OAJ/JPLUS.J0861"
+          ],
+          "certificate_path": "research/measurement_design/certificates/closure10_0000.npz",
+          "certificate_sha256": "603e2fe6b93a7ceafe1c5a6ed6b8a5c1690b5321cff13ffd1662e3f972ef20f0"
+        },
+        {
+          "success": false,
+          "opposite_branch": "G-B",
+          "relative_shape_budget": 0.05,
+          "normalized_guard": 0.005,
+          "n_spline_coefficients": 11,
+          "n_proposed_bands": 7,
+          "status": "no_opposite_pair_in_this_bounded_space",
+          "solver_status": 2,
+          "solver_message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+          "extrema_iterations": 1,
+          "solver_attempts": [
+            {
+              "stage": "outer_finite_grid",
+              "method": "highs",
+              "presolve": true,
+              "status": 2,
+              "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)"
+            }
+          ],
+          "source_id": "3204436719718449280",
+          "spacing_A": 800,
+          "closure_width_A": 10.0,
+          "proposal": {
+            "name": "JPLUS_narrow_covered",
+            "kind": "survey",
+            "indices": [
+              7,
+              8,
+              9,
+              10,
+              12,
+              14,
+              16
+            ]
+          },
+          "proposed_labels": [
+            "OAJ/JPLUS.J0378",
+            "OAJ/JPLUS.J0395",
+            "OAJ/JPLUS.J0410",
+            "OAJ/JPLUS.J0430",
+            "OAJ/JPLUS.J0515",
+            "OAJ/JPLUS.J0660",
+            "OAJ/JPLUS.J0861"
+          ]
+        }
+      ],
+      "both_strict_classes_feasible": true,
+      "minimum_max_baseline_relative_flux_separation": 3.602369374229038e-05,
+      "active_opposite_branch": "G-R",
+      "separation_error_half_width": 1.8011846871151914e-05,
+      "separation_error_half_width_witness_upper_bound": 1.8011846871224257e-05
+    },
+    {
+      "source_id": "3204436719718449280",
+      "WDJname": "WDJ042944.71-035422.00",
+      "spacing_A": 800,
+      "relative_shape_budget": 0.05,
+      "normalized_guard": 0.005,
+      "closure_width_A": 10.0,
+      "proposal": {
+        "name": "JPLUS_all_covered",
+        "kind": "survey",
+        "indices": [
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16
+        ]
+      },
+      "proposed_labels": [
+        "OAJ/JPLUS.J0378",
+        "OAJ/JPLUS.J0395",
+        "OAJ/JPLUS.J0410",
+        "OAJ/JPLUS.J0430",
+        "OAJ/JPLUS.gSDSS",
+        "OAJ/JPLUS.J0515",
+        "OAJ/JPLUS.rSDSS",
+        "OAJ/JPLUS.J0660",
+        "OAJ/JPLUS.iSDSS",
+        "OAJ/JPLUS.J0861"
+      ],
+      "branches": [
+        {
+          "success": true,
+          "opposite_branch": "G-R",
+          "relative_shape_budget": 0.05,
+          "normalized_guard": 0.005,
+          "n_spline_coefficients": 11,
+          "n_proposed_bands": 10,
+          "status": "feasible_pair",
+          "solver_status": 0,
+          "witness_strategy": "analytic_extrema_cuts",
+          "solver_attempts": [
+            {
+              "stage": "outer_finite_grid",
+              "method": "highs",
+              "presolve": true,
+              "status": 0,
+              "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+            },
+            {
+              "stage": "optional_continuous_inner_witness",
+              "method": "highs",
+              "presolve": true,
+              "status": 2,
+              "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)"
+            },
+            {
+              "stage": "outer_finite_grid",
+              "method": "highs",
+              "presolve": true,
+              "status": 0,
+              "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+            },
+            {
+              "stage": "outer_finite_grid",
+              "method": "highs",
+              "presolve": true,
+              "status": 0,
+              "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+            },
+            {
+              "stage": "outer_finite_grid",
+              "method": "highs",
+              "presolve": true,
+              "status": 0,
+              "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+            },
+            {
+              "stage": "outer_finite_grid",
+              "method": "highs",
+              "presolve": true,
+              "status": 0,
+              "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+            },
+            {
+              "stage": "outer_finite_grid",
+              "method": "highs",
+              "presolve": true,
+              "status": 0,
+              "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+            }
+          ],
+          "minimum_max_baseline_relative_flux_separation": 0.0025927884747621397,
+          "finite_grid_dual_objective": 0.0025927884747621623,
+          "continuous_witness_separation": 0.0025927884747624086,
+          "uniform_error_half_width_from_dual_lower_bound": 0.0012963942373810811,
+          "uniform_error_half_width_from_witness_upper_bound": 0.0012963942373812043,
+          "numerically_separated_at_check_tolerance": true,
+          "extrema_iterations": 6,
+          "green_continuous_supremum": 0.05000000164791556,
+          "opposite_continuous_supremum": 0.05000000124972724,
+          "maximum_budget_violation": 1.6479155540150003e-09,
+          "primal_violation": 1.2373574387325448e-12,
+          "dual_stationarity": 7.874008915660323e-15,
+          "duality_gap": -2.2551405187698492e-17,
+          "wrong_dual_sign": 0.0,
+          "independent_operator_replay_error": 2.220446049250313e-16,
+          "green": {
+            "PS1_synthetic_griz_mag": [
+              19.218464323592606,
+              18.794885204097973,
+              18.792669073959612,
+              18.83013768359419
+            ],
+            "PS1_box_violation_mag": 0.0,
+            "normalized_channel_differences": {
+              "G-R": 0.004999999999999827,
+              "G-B": 0.2384002540709662
+            },
+            "colour_guard_violation": 1.734723475976807e-16,
+            "xyz": [
+              9.605704440755552e-15,
+              1.0421450586598276e-14,
+              9.11408972345565e-15
+            ],
+            "metrics": {
+              "x": 0.32962574258221167,
+              "y": 0.3576185806650826,
+              "u1960": 0.1988041132146513,
+              "v1960": 0.3235307605585689,
+              "r_linear": 0.994908269621894,
+              "g_linear": 1.0,
+              "b_linear": 0.7572260368397304,
+              "r": 254,
+              "g": 255,
+              "b": 226,
+              "hex": "#FEFFE2",
+              "in_srgb_gamut": true,
+              "green_dominant": true,
+              "green_channel_margin": 0.005091730378105952,
+              "duv": 0.009485863514014281,
+              "distance_planck_uv": 0.009485863514014281,
+              "nearest_planck_temperature_K": 5616.537767664749,
+              "nearest_planck_u": 0.20597218109387574,
+              "nearest_planck_v": 0.31731783777735406,
+              "nearest_is_RJ_limit": false,
+              "wave_min_A": 3600.0,
+              "wave_max_A": 9824.000000000524,
+              "coverage_eligible": true,
+              "cmf_min_coverage": 0.9999995149836055,
+              "n_visible_pixels": 5777,
+              "visible_negative_fraction": 0.02648433442963476,
+              "largest_visible_gap_A": 19.200000000004138
+            }
+          },
+          "opposite": {
+            "PS1_synthetic_griz_mag": [
+              19.218206880099995,
+              18.791107977585064,
+              18.79856483467948,
+              18.83013768359419
+            ],
+            "PS1_box_violation_mag": 1.3746798838143448e-12,
+            "normalized_channel_differences": {
+              "G-R": -0.0050000000000107675,
+              "G-B": 0.2376785921783066
+            },
+            "colour_guard_violation": 0.0,
+            "xyz": [
+              9.663881066856279e-15,
+              1.0457812148522411e-14,
+              9.137545752453756e-15
+            ],
+            "metrics": {
+              "x": 0.3302847718452531,
+              "y": 0.3574191440870937,
+              "u1960": 0.1993131210624195,
+              "v1960": 0.3235313790163216,
+              "r_linear": 1.0,
+              "g_linear": 0.9949401341629645,
+              "b_linear": 0.7544157764119392,
+              "r": 255,
+              "g": 254,
+              "b": 225,
+              "hex": "#FFFEE1",
+              "in_srgb_gamut": true,
+              "green_dominant": false,
+              "green_channel_margin": -0.005059865837035549,
+              "duv": 0.009102411886346681,
+              "distance_planck_uv": 0.009102411886346681,
+              "nearest_planck_temperature_K": 5592.338475957958,
+              "nearest_planck_u": 0.2061567486224342,
+              "nearest_planck_v": 0.3175298238871478,
+              "nearest_is_RJ_limit": false,
+              "wave_min_A": 3600.0,
+              "wave_max_A": 9824.000000000524,
+              "coverage_eligible": true,
+              "cmf_min_coverage": 0.9999995149836055,
+              "n_visible_pixels": 5777,
+              "visible_negative_fraction": 0.02648433442963476,
+              "largest_visible_gap_A": 19.200000000004138
+            }
+          },
+          "proposed_green_flux_over_baseline": [
+            0.9655642345167452,
+            0.9541521632303485,
+            0.984480564847895,
+            1.0261940622236525,
+            1.0005606331609402,
+            0.9774451693249298,
+            1.0178070700125148,
+            1.0216599565266187,
+            0.9786212133923365,
+            0.955321206633959
+          ],
+          "proposed_opposite_flux_over_baseline": [
+            0.9681570229915074,
+            0.9515593747555864,
+            0.9831087563365872,
+            1.0287868506984148,
+            1.0008251203825884,
+            0.9748523808501673,
+            1.0203998584872769,
+            1.0190671680518566,
+            0.9760284249175742,
+            0.9571107771495224
+          ],
+          "proposed_green_minus_opposite_mag": [
+            0.00291157372801907,
+            -0.0029543674361824216,
+            -0.0015139565884179677,
+            0.002739768330125087,
+            0.0002869645228587687,
+            -0.002883869800618232,
+            0.0027623160312557258,
+            -0.0027589047052423146,
+            -0.0028803995501093605,
+            0.0020319698512827724
+          ],
+          "constraint_blocks": [
+            {
+              "name": "green_upper_spline",
+              "start": 0,
+              "stop": 815
+            },
+            {
+              "name": "green_lower_spline",
+              "start": 815,
+              "stop": 1630
+            },
+            {
+              "name": "green_upper_PS1",
+              "start": 1630,
+              "stop": 1634
+            },
+            {
+              "name": "green_lower_PS1",
+              "start": 1634,
+              "stop": 1638
+            },
+            {
+              "name": "green_positive_XYZ",
+              "start": 1638,
+              "stop": 1641
+            },
+            {
+              "name": "green_G-R",
+              "start": 1641,
+              "stop": 1642
+            },
+            {
+              "name": "green_G-B",
+              "start": 1642,
+              "stop": 1643
+            },
+            {
+              "name": "opposite_upper_spline",
+              "start": 1643,
+              "stop": 2453
+            },
+            {
+              "name": "opposite_lower_spline",
+              "start": 2453,
+              "stop": 3263
+            },
+            {
+              "name": "opposite_upper_PS1",
+              "start": 3263,
+              "stop": 3267
+            },
+            {
+              "name": "opposite_lower_PS1",
+              "start": 3267,
+              "stop": 3271
+            },
+            {
+              "name": "opposite_positive_XYZ",
+              "start": 3271,
+              "stop": 3274
+            },
+            {
+              "name": "opposite_G-R",
+              "start": 3274,
+              "stop": 3275
+            },
+            {
+              "name": "proposed_positive_difference",
+              "start": 3275,
+              "stop": 3285
+            },
+            {
+              "name": "proposed_negative_difference",
+              "start": 3285,
+              "stop": 3295
+            }
+          ],
+          "source_id": "3204436719718449280",
+          "spacing_A": 800,
+          "closure_width_A": 10.0,
+          "proposal": {
+            "name": "JPLUS_all_covered",
+            "kind": "survey",
+            "indices": [
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16
+            ]
+          },
+          "proposed_labels": [
+            "OAJ/JPLUS.J0378",
+            "OAJ/JPLUS.J0395",
+            "OAJ/JPLUS.J0410",
+            "OAJ/JPLUS.J0430",
+            "OAJ/JPLUS.gSDSS",
+            "OAJ/JPLUS.J0515",
+            "OAJ/JPLUS.rSDSS",
+            "OAJ/JPLUS.J0660",
+            "OAJ/JPLUS.iSDSS",
+            "OAJ/JPLUS.J0861"
+          ],
+          "certificate_path": "research/measurement_design/certificates/closure10_0002.npz",
+          "certificate_sha256": "fd0d14ca95455108e41f8c855be45bc2f95070b86eab586285333509d28005cb"
+        },
+        {
+          "success": false,
+          "opposite_branch": "G-B",
+          "relative_shape_budget": 0.05,
+          "normalized_guard": 0.005,
+          "n_spline_coefficients": 11,
+          "n_proposed_bands": 10,
+          "status": "no_opposite_pair_in_this_bounded_space",
+          "solver_status": 2,
+          "solver_message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+          "extrema_iterations": 1,
+          "solver_attempts": [
+            {
+              "stage": "outer_finite_grid",
+              "method": "highs",
+              "presolve": true,
+              "status": 2,
+              "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)"
+            }
+          ],
+          "source_id": "3204436719718449280",
+          "spacing_A": 800,
+          "closure_width_A": 10.0,
+          "proposal": {
+            "name": "JPLUS_all_covered",
+            "kind": "survey",
+            "indices": [
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16
+            ]
+          },
+          "proposed_labels": [
+            "OAJ/JPLUS.J0378",
+            "OAJ/JPLUS.J0395",
+            "OAJ/JPLUS.J0410",
+            "OAJ/JPLUS.J0430",
+            "OAJ/JPLUS.gSDSS",
+            "OAJ/JPLUS.J0515",
+            "OAJ/JPLUS.rSDSS",
+            "OAJ/JPLUS.J0660",
+            "OAJ/JPLUS.iSDSS",
+            "OAJ/JPLUS.J0861"
+          ]
+        }
+      ],
+      "both_strict_classes_feasible": true,
+      "minimum_max_baseline_relative_flux_separation": 0.0025927884747621397,
+      "active_opposite_branch": "G-R",
+      "separation_error_half_width": 0.0012963942373810811,
+      "separation_error_half_width_witness_upper_bound": 0.0012963942373812043
+    },
+    {
+      "source_id": "3204436719718449280",
+      "WDJname": "WDJ042944.71-035422.00",
+      "spacing_A": 800,
+      "relative_shape_budget": 0.05,
+      "normalized_guard": 0.005,
+      "closure_width_A": 10.0,
+      "proposal": {
+        "name": "PS1_plus_JPLUS_all",
+        "kind": "survey",
+        "indices": [
+          0,
+          1,
+          2,
+          3,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16
+        ]
+      },
+      "proposed_labels": [
+        "PS1/g",
+        "PS1/r",
+        "PS1/i",
+        "PS1/z",
+        "OAJ/JPLUS.J0378",
+        "OAJ/JPLUS.J0395",
+        "OAJ/JPLUS.J0410",
+        "OAJ/JPLUS.J0430",
+        "OAJ/JPLUS.gSDSS",
+        "OAJ/JPLUS.J0515",
+        "OAJ/JPLUS.rSDSS",
+        "OAJ/JPLUS.J0660",
+        "OAJ/JPLUS.iSDSS",
+        "OAJ/JPLUS.J0861"
+      ],
+      "branches": [
+        {
+          "success": true,
+          "opposite_branch": "G-R",
+          "relative_shape_budget": 0.05,
+          "normalized_guard": 0.005,
+          "n_spline_coefficients": 11,
+          "n_proposed_bands": 14,
+          "status": "feasible_pair",
+          "solver_status": 0,
+          "witness_strategy": "analytic_extrema_cuts",
+          "solver_attempts": [
+            {
+              "stage": "outer_finite_grid",
+              "method": "highs",
+              "presolve": true,
+              "status": 0,
+              "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+            },
+            {
+              "stage": "optional_continuous_inner_witness",
+              "method": "highs",
+              "presolve": true,
+              "status": 2,
+              "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)"
+            },
+            {
+              "stage": "outer_finite_grid",
+              "method": "highs",
+              "presolve": true,
+              "status": 0,
+              "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+            },
+            {
+              "stage": "outer_finite_grid",
+              "method": "highs",
+              "presolve": true,
+              "status": 0,
+              "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+            },
+            {
+              "stage": "outer_finite_grid",
+              "method": "highs",
+              "presolve": true,
+              "status": 0,
+              "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+            },
+            {
+              "stage": "outer_finite_grid",
+              "method": "highs",
+              "presolve": true,
+              "status": 0,
+              "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+            },
+            {
+              "stage": "outer_finite_grid",
+              "method": "highs",
+              "presolve": true,
+              "status": 0,
+              "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+            }
+          ],
+          "minimum_max_baseline_relative_flux_separation": 0.0030284143045228233,
+          "finite_grid_dual_objective": 0.0030284143045227474,
+          "continuous_witness_separation": 0.003028414304524274,
+          "uniform_error_half_width_from_dual_lower_bound": 0.0015142071522613737,
+          "uniform_error_half_width_from_witness_upper_bound": 0.001514207152262137,
+          "numerically_separated_at_check_tolerance": true,
+          "extrema_iterations": 6,
+          "green_continuous_supremum": 0.05000000159040736,
+          "opposite_continuous_supremum": 0.05000000124226452,
+          "maximum_budget_violation": 1.5904073544237285e-09,
+          "primal_violation": 1.0294334829019647e-12,
+          "dual_stationarity": 3.263121151248192e-12,
+          "duality_gap": 7.589415207398531e-17,
+          "wrong_dual_sign": 0.0,
+          "independent_operator_replay_error": 2.220446049250313e-16,
+          "green": {
+            "PS1_synthetic_griz_mag": [
+              19.21803919524896,
+              18.794330429687104,
+              18.795208059277194,
+              18.83013768359419
+            ],
+            "PS1_box_violation_mag": 0.0,
+            "normalized_channel_differences": {
+              "G-R": 0.004999999999996325,
+              "G-B": 0.24111512004233437
+            },
+            "colour_guard_violation": 3.675011683856866e-15,
+            "xyz": [
+              9.62046749483989e-15,
+              1.0440438373849483e-14,
+              9.109170244193485e-15
+            ],
+            "metrics": {
+              "x": 0.3298060470466529,
+              "y": 0.35791604839997315,
+              "u1960": 0.19881666029997924,
+              "v1960": 0.3236432778349685,
+              "r_linear": 0.9949183698204649,
+              "g_linear": 1.0,
+              "b_linear": 0.754948425849946,
+              "r": 254,
+              "g": 255,
+              "b": 225,
+              "hex": "#FEFFE1",
+              "in_srgb_gamut": true,
+              "green_dominant": true,
+              "green_channel_margin": 0.005081630179535113,
+              "duv": 0.009550198421035492,
+              "distance_planck_uv": 0.009550198421035492,
+              "nearest_planck_temperature_K": 5608.459724336814,
+              "nearest_planck_u": 0.20603355818016486,
+              "nearest_planck_v": 0.31738846569805174,
+              "nearest_is_RJ_limit": false,
+              "wave_min_A": 3600.0,
+              "wave_max_A": 9824.000000000524,
+              "coverage_eligible": true,
+              "cmf_min_coverage": 0.9999995149836055,
+              "n_visible_pixels": 5777,
+              "visible_negative_fraction": 0.02648433442963476,
+              "largest_visible_gap_A": 19.200000000004138
+            }
+          },
+          "opposite": {
+            "PS1_synthetic_griz_mag": [
+              19.217846356044994,
+              18.791107977585064,
+              18.798564834679247,
+              18.83013768359419
+            ],
+            "PS1_box_violation_mag": 1.1437534946923122e-12,
+            "normalized_channel_differences": {
+              "G-R": -0.005000000000000993,
+              "G-B": 0.23916119765353688
+            },
+            "colour_guard_violation": 0.0,
+            "xyz": [
+              9.674282300892895e-15,
+              1.0470642366464827e-14,
+              9.13753947629016e-15
+            ],
+            "metrics": {
+              "x": 0.33037801236380904,
+              "y": 0.3575738132931746,
+              "u1960": 0.1993191841361454,
+              "v1960": 0.3235898791695133,
+              "r_linear": 1.0,
+              "g_linear": 0.9949467485415464,
+              "b_linear": 0.7532384143719464,
+              "r": 255,
+              "g": 254,
+              "b": 225,
+              "hex": "#FFFEE1",
+              "in_srgb_gamut": true,
+              "green_dominant": false,
+              "green_channel_margin": -0.005053251458453589,
+              "duv": 0.009136380115752855,
+              "distance_planck_uv": 0.009136380115752855,
+              "nearest_planck_temperature_K": 5584.295237510717,
+              "nearest_planck_u": 0.20621856254932164,
+              "nearest_planck_v": 0.3176005537374365,
+              "nearest_is_RJ_limit": false,
+              "wave_min_A": 3600.0,
+              "wave_max_A": 9824.000000000524,
+              "coverage_eligible": true,
+              "cmf_min_coverage": 0.9999995149836055,
+              "n_visible_pixels": 5777,
+              "visible_negative_fraction": 0.02648433442963476,
+              "largest_visible_gap_A": 19.200000000004138
+            }
+          },
+          "proposed_green_flux_over_baseline": [
+            1.0005233012169772,
+            1.0188458674135676,
+            0.9810440425358666,
+            0.9575291881353433,
+            0.9651125319225772,
+            0.9545946002281352,
+            0.9847760815866596,
+            1.0258187081169394,
+            1.0009288090934543,
+            0.9781539360600587,
+            1.0180487218454903,
+            1.0194170876458766,
+            0.9766610170034934,
+            0.9554013342631615
+          ],
+          "proposed_opposite_flux_over_baseline": [
+            1.00070102141394,
+            1.0218742817180904,
+            0.9780156282456398,
+            0.9575291881353433,
+            0.9681409462271001,
+            0.951566185923611,
+            0.9831580836281502,
+            1.0288471224214624,
+            1.0011449091817506,
+            0.9751255217555359,
+            1.0202190581271633,
+            1.016388673341356,
+            0.9761211765811305,
+            0.956839729099377
+          ],
+          "proposed_green_minus_opposite_mag": [
+            0.00019283920396578126,
+            0.003222452102041569,
+            -0.003356775402055448,
+            -0.0,
+            0.0034015836827332043,
+            -0.0034499312375075642,
+            -0.0017853436254798832,
+            0.003200580245799538,
+            0.00023438466674252818,
+            -0.003366708921151553,
+            0.0023121727098110167,
+            -0.003230231038539077,
+            -0.0006002966518313561,
+            0.0016333899264933313
+          ],
+          "constraint_blocks": [
+            {
+              "name": "green_upper_spline",
+              "start": 0,
+              "stop": 815
+            },
+            {
+              "name": "green_lower_spline",
+              "start": 815,
+              "stop": 1630
+            },
+            {
+              "name": "green_upper_PS1",
+              "start": 1630,
+              "stop": 1634
+            },
+            {
+              "name": "green_lower_PS1",
+              "start": 1634,
+              "stop": 1638
+            },
+            {
+              "name": "green_positive_XYZ",
+              "start": 1638,
+              "stop": 1641
+            },
+            {
+              "name": "green_G-R",
+              "start": 1641,
+              "stop": 1642
+            },
+            {
+              "name": "green_G-B",
+              "start": 1642,
+              "stop": 1643
+            },
+            {
+              "name": "opposite_upper_spline",
+              "start": 1643,
+              "stop": 2453
+            },
+            {
+              "name": "opposite_lower_spline",
+              "start": 2453,
+              "stop": 3263
+            },
+            {
+              "name": "opposite_upper_PS1",
+              "start": 3263,
+              "stop": 3267
+            },
+            {
+              "name": "opposite_lower_PS1",
+              "start": 3267,
+              "stop": 3271
+            },
+            {
+              "name": "opposite_positive_XYZ",
+              "start": 3271,
+              "stop": 3274
+            },
+            {
+              "name": "opposite_G-R",
+              "start": 3274,
+              "stop": 3275
+            },
+            {
+              "name": "proposed_positive_difference",
+              "start": 3275,
+              "stop": 3289
+            },
+            {
+              "name": "proposed_negative_difference",
+              "start": 3289,
+              "stop": 3303
+            }
+          ],
+          "source_id": "3204436719718449280",
+          "spacing_A": 800,
+          "closure_width_A": 10.0,
+          "proposal": {
+            "name": "PS1_plus_JPLUS_all",
+            "kind": "survey",
+            "indices": [
+              0,
+              1,
+              2,
+              3,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16
+            ]
+          },
+          "proposed_labels": [
+            "PS1/g",
+            "PS1/r",
+            "PS1/i",
+            "PS1/z",
+            "OAJ/JPLUS.J0378",
+            "OAJ/JPLUS.J0395",
+            "OAJ/JPLUS.J0410",
+            "OAJ/JPLUS.J0430",
+            "OAJ/JPLUS.gSDSS",
+            "OAJ/JPLUS.J0515",
+            "OAJ/JPLUS.rSDSS",
+            "OAJ/JPLUS.J0660",
+            "OAJ/JPLUS.iSDSS",
+            "OAJ/JPLUS.J0861"
+          ],
+          "certificate_path": "research/measurement_design/certificates/closure10_0004.npz",
+          "certificate_sha256": "e300be7929436cf8c8e807dcfdcc2c9029d2433e6990d776a91704fe91cc1538"
+        },
+        {
+          "success": false,
+          "opposite_branch": "G-B",
+          "relative_shape_budget": 0.05,
+          "normalized_guard": 0.005,
+          "n_spline_coefficients": 11,
+          "n_proposed_bands": 14,
+          "status": "no_opposite_pair_in_this_bounded_space",
+          "solver_status": 2,
+          "solver_message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+          "extrema_iterations": 1,
+          "solver_attempts": [
+            {
+              "stage": "outer_finite_grid",
+              "method": "highs",
+              "presolve": true,
+              "status": 2,
+              "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)"
+            }
+          ],
+          "source_id": "3204436719718449280",
+          "spacing_A": 800,
+          "closure_width_A": 10.0,
+          "proposal": {
+            "name": "PS1_plus_JPLUS_all",
+            "kind": "survey",
+            "indices": [
+              0,
+              1,
+              2,
+              3,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16
+            ]
+          },
+          "proposed_labels": [
+            "PS1/g",
+            "PS1/r",
+            "PS1/i",
+            "PS1/z",
+            "OAJ/JPLUS.J0378",
+            "OAJ/JPLUS.J0395",
+            "OAJ/JPLUS.J0410",
+            "OAJ/JPLUS.J0430",
+            "OAJ/JPLUS.gSDSS",
+            "OAJ/JPLUS.J0515",
+            "OAJ/JPLUS.rSDSS",
+            "OAJ/JPLUS.J0660",
+            "OAJ/JPLUS.iSDSS",
+            "OAJ/JPLUS.J0861"
+          ]
+        }
+      ],
+      "both_strict_classes_feasible": true,
+      "minimum_max_baseline_relative_flux_separation": 0.0030284143045228233,
+      "active_opposite_branch": "G-R",
+      "separation_error_half_width": 0.0015142071522613737,
+      "separation_error_half_width_witness_upper_bound": 0.001514207152262137
+    },
+    {
+      "source_id": "3204436719718449280",
+      "WDJname": "WDJ042944.71-035422.00",
+      "spacing_A": 800,
+      "relative_shape_budget": 0.05,
+      "normalized_guard": 0.005,
+      "closure_width_A": 10.0,
+      "proposal": {
+        "name": "ideal_XYZ",
+        "kind": "ideal_XYZ",
+        "indices": []
+      },
+      "proposed_labels": [
+        "ideal_X",
+        "ideal_Y",
+        "ideal_Z"
+      ],
+      "branches": [
+        {
+          "success": true,
+          "opposite_branch": "G-R",
+          "relative_shape_budget": 0.05,
+          "normalized_guard": 0.005,
+          "n_spline_coefficients": 11,
+          "n_proposed_bands": 3,
+          "status": "feasible_pair",
+          "solver_status": 0,
+          "witness_strategy": "analytic_extrema_cuts",
+          "solver_attempts": [
+            {
+              "stage": "outer_finite_grid",
+              "method": "highs",
+              "presolve": true,
+              "status": 0,
+              "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+            },
+            {
+              "stage": "optional_continuous_inner_witness",
+              "method": "highs",
+              "presolve": true,
+              "status": 2,
+              "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)"
+            },
+            {
+              "stage": "outer_finite_grid",
+              "method": "highs",
+              "presolve": true,
+              "status": 0,
+              "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+            },
+            {
+              "stage": "outer_finite_grid",
+              "method": "highs",
+              "presolve": true,
+              "status": 0,
+              "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+            },
+            {
+              "stage": "outer_finite_grid",
+              "method": "highs",
+              "presolve": true,
+              "status": 0,
+              "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+            },
+            {
+              "stage": "outer_finite_grid",
+              "method": "highs",
+              "presolve": true,
+              "status": 0,
+              "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+            },
+            {
+              "stage": "outer_finite_grid",
+              "method": "highs",
+              "presolve": true,
+              "status": 0,
+              "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+            },
+            {
+              "stage": "outer_finite_grid",
+              "method": "highs",
+              "presolve": true,
+              "status": 0,
+              "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+            },
+            {
+              "stage": "outer_finite_grid",
+              "method": "highs",
+              "presolve": true,
+              "status": 0,
+              "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+            }
+          ],
+          "minimum_max_baseline_relative_flux_separation": 0.0013493008563593056,
+          "finite_grid_dual_objective": 0.001349300856359304,
+          "continuous_witness_separation": 0.0013493008563596476,
+          "uniform_error_half_width_from_dual_lower_bound": 0.000674650428179652,
+          "uniform_error_half_width_from_witness_upper_bound": 0.0006746504281798238,
+          "numerically_separated_at_check_tolerance": true,
+          "extrema_iterations": 8,
+          "green_continuous_supremum": 0.050000001257640994,
+          "opposite_continuous_supremum": 0.05000000108973309,
+          "maximum_budget_violation": 1.2576409913478415e-09,
+          "primal_violation": 4.937224934442597e-11,
+          "dual_stationarity": 2.7755575615628914e-17,
+          "duality_gap": 1.5178830414797062e-18,
+          "wrong_dual_sign": 0.0,
+          "independent_operator_replay_error": 3.1086244689504383e-15,
+          "green": {
+            "PS1_synthetic_griz_mag": [
+              19.236405413084114,
+              18.81329265718056,
+              18.789855418579158,
+              18.83013768359419
+            ],
+            "PS1_box_violation_mag": 1.6774776012695725e-15,
+            "normalized_channel_differences": {
+              "G-R": 0.004999999999980715,
+              "G-B": 0.23460687303926295
+            },
+            "colour_guard_violation": 1.9284920882434164e-14,
+            "xyz": [
+              9.461624168957715e-15,
+              1.0265037145714687e-14,
+              8.979500457977269e-15
+            ],
+            "metrics": {
+              "x": 0.3296025516714134,
+              "y": 0.35759002638572507,
+              "u1960": 0.19879900696026895,
+              "v1960": 0.3235193801620562,
+              "r_linear": 0.994830686674399,
+              "g_linear": 1.0,
+              "b_linear": 0.757448712983176,
+              "r": 254,
+              "g": 255,
+              "b": 226,
+              "hex": "#FEFFE2",
+              "in_srgb_gamut": true,
+              "green_dominant": true,
+              "green_channel_margin": 0.005169313325600999,
+              "duv": 0.00948227583970763,
+              "distance_planck_uv": 0.00948227583970763,
+              "nearest_planck_temperature_K": 5616.537767664749,
+              "nearest_planck_u": 0.20597218109387574,
+              "nearest_planck_v": 0.31731783777735406,
+              "nearest_is_RJ_limit": false,
+              "wave_min_A": 3600.0,
+              "wave_max_A": 9824.000000000524,
+              "coverage_eligible": true,
+              "cmf_min_coverage": 0.9999995149836055,
+              "n_visible_pixels": 5777,
+              "visible_negative_fraction": 0.02648433442963476,
+              "largest_visible_gap_A": 19.200000000004138
+            }
+          },
+          "opposite": {
+            "PS1_synthetic_griz_mag": [
+              19.241501225632174,
+              18.81329265718056,
+              18.77403648369129,
+              18.83013768359419
+            ],
+            "PS1_box_violation_mag": 1.6774776012695725e-15,
+            "normalized_channel_differences": {
+              "G-R": -0.005000000000013831,
+              "G-B": 0.23181138593566145
+            },
+            "colour_guard_violation": 0.0,
+            "xyz": [
+              9.47435516936616e-15,
+              1.025094621438515e-14,
+              8.9675610171172e-15
+            ],
+            "metrics": {
+              "x": 0.3301990243078494,
+              "y": 0.3572646768791831,
+              "u1960": 0.19931195559823617,
+              "v1960": 0.32347364546680707,
+              "r_linear": 1.0,
+              "g_linear": 0.9948379919183424,
+              "b_linear": 0.7555155423949791,
+              "r": 255,
+              "g": 254,
+              "b": 225,
+              "hex": "#FFFEE1",
+              "in_srgb_gamut": true,
+              "green_dominant": false,
+              "green_channel_margin": -0.005162008081657565,
+              "duv": 0.009065329917599977,
+              "distance_planck_uv": 0.009065329917599977,
+              "nearest_planck_temperature_K": 5592.338475957958,
+              "nearest_planck_u": 0.2061567486224342,
+              "nearest_planck_v": 0.3175298238871478,
+              "nearest_is_RJ_limit": false,
+              "wave_min_A": 3600.0,
+              "wave_max_A": 9824.000000000524,
+              "coverage_eligible": true,
+              "cmf_min_coverage": 0.9999995149836055,
+              "n_visible_pixels": 5777,
+              "visible_negative_fraction": 0.02648433442963476,
+              "largest_visible_gap_A": 19.200000000004138
+            }
+          },
+          "proposed_green_flux_over_baseline": [
+            1.0027945317823848,
+            0.982945916586968,
+            1.0147918817664967
+          ],
+          "proposed_opposite_flux_over_baseline": [
+            1.0041438326387424,
+            0.9815966157306084,
+            1.013442580910137
+          ],
+          "proposed_green_minus_opposite_mag": [
+            0.0014599202821171079,
+            -0.0014914261179087686,
+            -0.0014445913763308708
+          ],
+          "constraint_blocks": [
+            {
+              "name": "green_upper_spline",
+              "start": 0,
+              "stop": 829
+            },
+            {
+              "name": "green_lower_spline",
+              "start": 829,
+              "stop": 1658
+            },
+            {
+              "name": "green_upper_PS1",
+              "start": 1658,
+              "stop": 1662
+            },
+            {
+              "name": "green_lower_PS1",
+              "start": 1662,
+              "stop": 1666
+            },
+            {
+              "name": "green_positive_XYZ",
+              "start": 1666,
+              "stop": 1669
+            },
+            {
+              "name": "green_G-R",
+              "start": 1669,
+              "stop": 1670
+            },
+            {
+              "name": "green_G-B",
+              "start": 1670,
+              "stop": 1671
+            },
+            {
+              "name": "opposite_upper_spline",
+              "start": 1671,
+              "stop": 2475
+            },
+            {
+              "name": "opposite_lower_spline",
+              "start": 2475,
+              "stop": 3279
+            },
+            {
+              "name": "opposite_upper_PS1",
+              "start": 3279,
+              "stop": 3283
+            },
+            {
+              "name": "opposite_lower_PS1",
+              "start": 3283,
+              "stop": 3287
+            },
+            {
+              "name": "opposite_positive_XYZ",
+              "start": 3287,
+              "stop": 3290
+            },
+            {
+              "name": "opposite_G-R",
+              "start": 3290,
+              "stop": 3291
+            },
+            {
+              "name": "proposed_positive_difference",
+              "start": 3291,
+              "stop": 3294
+            },
+            {
+              "name": "proposed_negative_difference",
+              "start": 3294,
+              "stop": 3297
+            }
+          ],
+          "source_id": "3204436719718449280",
+          "spacing_A": 800,
+          "closure_width_A": 10.0,
+          "proposal": {
+            "name": "ideal_XYZ",
+            "kind": "ideal_XYZ",
+            "indices": []
+          },
+          "proposed_labels": [
+            "ideal_X",
+            "ideal_Y",
+            "ideal_Z"
+          ],
+          "certificate_path": "research/measurement_design/certificates/closure10_0006.npz",
+          "certificate_sha256": "f47678d35bfef6a99e72321cf8eb9ccb776a87147aaf6d43278357805b5837c1"
+        },
+        {
+          "success": false,
+          "opposite_branch": "G-B",
+          "relative_shape_budget": 0.05,
+          "normalized_guard": 0.005,
+          "n_spline_coefficients": 11,
+          "n_proposed_bands": 3,
+          "status": "no_opposite_pair_in_this_bounded_space",
+          "solver_status": 2,
+          "solver_message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+          "extrema_iterations": 1,
+          "solver_attempts": [
+            {
+              "stage": "outer_finite_grid",
+              "method": "highs",
+              "presolve": true,
+              "status": 2,
+              "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)"
+            }
+          ],
+          "source_id": "3204436719718449280",
+          "spacing_A": 800,
+          "closure_width_A": 10.0,
+          "proposal": {
+            "name": "ideal_XYZ",
+            "kind": "ideal_XYZ",
+            "indices": []
+          },
+          "proposed_labels": [
+            "ideal_X",
+            "ideal_Y",
+            "ideal_Z"
+          ]
+        }
+      ],
+      "both_strict_classes_feasible": true,
+      "minimum_max_baseline_relative_flux_separation": 0.0013493008563593056,
+      "active_opposite_branch": "G-R",
+      "separation_error_half_width": 0.000674650428179652,
+      "separation_error_half_width_witness_upper_bound": 0.0006746504281798238
+    },
+    {
+      "source_id": "3204436719718449280",
+      "WDJname": "WDJ042944.71-035422.00",
+      "spacing_A": 800,
+      "relative_shape_budget": 0.1,
+      "normalized_guard": 0.005,
+      "closure_width_A": 10.0,
+      "proposal": {
+        "name": "JPLUS_narrow_covered",
+        "kind": "survey",
+        "indices": [
+          7,
+          8,
+          9,
+          10,
+          12,
+          14,
+          16
+        ]
+      },
+      "proposed_labels": [
+        "OAJ/JPLUS.J0378",
+        "OAJ/JPLUS.J0395",
+        "OAJ/JPLUS.J0410",
+        "OAJ/JPLUS.J0430",
+        "OAJ/JPLUS.J0515",
+        "OAJ/JPLUS.J0660",
+        "OAJ/JPLUS.J0861"
+      ],
+      "branches": [
+        {
+          "success": true,
+          "opposite_branch": "G-R",
+          "relative_shape_budget": 0.1,
+          "normalized_guard": 0.005,
+          "n_spline_coefficients": 11,
+          "n_proposed_bands": 7,
+          "status": "feasible_pair",
+          "solver_status": 0,
+          "witness_strategy": "analytic_extrema_cuts",
+          "solver_attempts": [
+            {
+              "stage": "outer_finite_grid",
+              "method": "highs",
+              "presolve": true,
+              "status": 0,
+              "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+            },
+            {
+              "stage": "optional_continuous_inner_witness",
+              "method": "highs",
+              "presolve": true,
+              "status": 2,
+              "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)"
+            },
+            {
+              "stage": "outer_finite_grid",
+              "method": "highs",
+              "presolve": true,
+              "status": 0,
+              "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+            },
+            {
+              "stage": "outer_finite_grid",
+              "method": "highs",
+              "presolve": true,
+              "status": 0,
+              "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+            },
+            {
+              "stage": "outer_finite_grid",
+              "method": "highs",
+              "presolve": true,
+              "status": 0,
+              "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+            },
+            {
+              "stage": "outer_finite_grid",
+              "method": "highs",
+              "presolve": true,
+              "status": 0,
+              "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+            },
+            {
+              "stage": "outer_finite_grid",
+              "method": "highs",
+              "presolve": true,
+              "status": 0,
+              "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+            },
+            {
+              "stage": "outer_finite_grid",
+              "method": "highs",
+              "presolve": true,
+              "status": 0,
+              "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+            }
+          ],
+          "minimum_max_baseline_relative_flux_separation": 2.653856911645729e-05,
+          "finite_grid_dual_objective": 2.6538569116451552e-05,
+          "continuous_witness_separation": 2.6538569116496546e-05,
+          "uniform_error_half_width_from_dual_lower_bound": 1.3269284558225776e-05,
+          "uniform_error_half_width_from_witness_upper_bound": 1.3269284558248273e-05,
+          "numerically_separated_at_check_tolerance": true,
+          "extrema_iterations": 7,
+          "green_continuous_supremum": 0.10000000150945038,
+          "opposite_continuous_supremum": 0.10000000040876036,
+          "maximum_budget_violation": 1.5094503702517414e-09,
+          "primal_violation": 2.5185409313621676e-13,
+          "dual_stationarity": 4.5282399024859564e-14,
+          "duality_gap": 5.739495250595139e-18,
+          "wrong_dual_sign": 0.0,
+          "independent_operator_replay_error": 3.3306690738754696e-16,
+          "green": {
+            "PS1_synthetic_griz_mag": [
+              19.208388574194714,
+              18.796397166616487,
+              18.77403648373103,
+              18.83013768359419
+            ],
+            "PS1_box_violation_mag": 0.0,
+            "normalized_channel_differences": {
+              "G-R": 0.005000000000005516,
+              "G-B": 0.24681488540382165
+            },
+            "colour_guard_violation": 0.0,
+            "xyz": [
+              9.751619079950556e-15,
+              1.0585676390073329e-14,
+              9.213611116193749e-15
+            ],
+            "metrics": {
+              "x": 0.32999390565224324,
+              "y": 0.3582183294170212,
+              "u1960": 0.19883246946576616,
+              "v1960": 0.32375795655275064,
+              "r_linear": 0.9949888668635486,
+              "g_linear": 1.0,
+              "b_linear": 0.752635549836966,
+              "r": 254,
+              "g": 255,
+              "b": 225,
+              "hex": "#FEFFE1",
+              "in_srgb_gamut": true,
+              "green_dominant": true,
+              "green_channel_margin": 0.005011133136451407,
+              "duv": 0.009613571865420967,
+              "distance_planck_uv": 0.009613571865420967,
+              "nearest_planck_temperature_K": 5600.393299337943,
+              "nearest_planck_u": 0.20609508059457288,
+              "nearest_planck_v": 0.3174591278042176,
+              "nearest_is_RJ_limit": false,
+              "wave_min_A": 3600.0,
+              "wave_max_A": 9824.000000000524,
+              "coverage_eligible": true,
+              "cmf_min_coverage": 0.9999995149836055,
+              "n_visible_pixels": 5777,
+              "visible_negative_fraction": 0.02648433442963476,
+              "largest_visible_gap_A": 19.200000000004138
+            }
+          },
+          "opposite": {
+            "PS1_synthetic_griz_mag": [
+              19.207900629836576,
+              18.791107977585064,
+              18.79856483462502,
+              18.843844193025483
+            ],
+            "PS1_box_violation_mag": 1.6774776012695725e-15,
+            "normalized_channel_differences": {
+              "G-R": -0.005000000000009455,
+              "G-B": 0.25185888298397635
+            },
+            "colour_guard_violation": 0.0,
+            "xyz": [
+              9.82614538282659e-15,
+              1.0646578397865259e-14,
+              9.209427476984194e-15
+            ],
+            "metrics": {
+              "x": 0.3310455936136189,
+              "y": 0.3586862119743416,
+              "u1960": 0.1993607038254657,
+              "v1960": 0.32400945844557444,
+              "r_linear": 1.0,
+              "g_linear": 0.9950330193480945,
+              "b_linear": 0.7448373795901825,
+              "r": 255,
+              "g": 254,
+              "b": 224,
+              "hex": "#FFFEE0",
+              "in_srgb_gamut": true,
+              "green_dominant": false,
+              "green_channel_margin": -0.004966980651905484,
+              "duv": 0.009381750810891468,
+              "distance_planck_uv": 0.009381750810891468,
+              "nearest_planck_temperature_K": 5560.234865263708,
+              "nearest_planck_u": 0.2064048825834511,
+              "nearest_planck_v": 0.31781294378786484,
+              "nearest_is_RJ_limit": false,
+              "wave_min_A": 3600.0,
+              "wave_max_A": 9824.000000000524,
+              "coverage_eligible": true,
+              "cmf_min_coverage": 0.9999995149836055,
+              "n_visible_pixels": 5777,
+              "visible_negative_fraction": 0.02648433442963476,
+              "largest_visible_gap_A": 19.200000000004138
+            }
+          },
+          "proposed_green_flux_over_baseline": [
+            0.9429725337018465,
+            0.9014464644052508,
+            0.9446664006414055,
+            1.0196898386246207,
+            0.9813543391368474,
+            0.9805007989386766,
+            0.9401908060852091
+          ],
+          "proposed_opposite_flux_over_baseline": [
+            0.9429990722709629,
+            0.9014199258361344,
+            0.944692939210522,
+            1.0196633000555042,
+            0.9813808777059639,
+            0.980527337507793,
+            0.9402173446543253
+          ],
+          "proposed_green_minus_opposite_mag": [
+            3.055601179018802e-05,
+            -3.196452656733027e-05,
+            3.050122304035059e-05,
+            -2.8257867426022074e-05,
+            2.936095003215808e-05,
+            2.9386508819905388e-05,
+            3.064641610117783e-05
+          ],
+          "constraint_blocks": [
+            {
+              "name": "green_upper_spline",
+              "start": 0,
+              "stop": 834
+            },
+            {
+              "name": "green_lower_spline",
+              "start": 834,
+              "stop": 1668
+            },
+            {
+              "name": "green_upper_PS1",
+              "start": 1668,
+              "stop": 1672
+            },
+            {
+              "name": "green_lower_PS1",
+              "start": 1672,
+              "stop": 1676
+            },
+            {
+              "name": "green_positive_XYZ",
+              "start": 1676,
+              "stop": 1679
+            },
+            {
+              "name": "green_G-R",
+              "start": 1679,
+              "stop": 1680
+            },
+            {
+              "name": "green_G-B",
+              "start": 1680,
+              "stop": 1681
+            },
+            {
+              "name": "opposite_upper_spline",
+              "start": 1681,
+              "stop": 2501
+            },
+            {
+              "name": "opposite_lower_spline",
+              "start": 2501,
+              "stop": 3321
+            },
+            {
+              "name": "opposite_upper_PS1",
+              "start": 3321,
+              "stop": 3325
+            },
+            {
+              "name": "opposite_lower_PS1",
+              "start": 3325,
+              "stop": 3329
+            },
+            {
+              "name": "opposite_positive_XYZ",
+              "start": 3329,
+              "stop": 3332
+            },
+            {
+              "name": "opposite_G-R",
+              "start": 3332,
+              "stop": 3333
+            },
+            {
+              "name": "proposed_positive_difference",
+              "start": 3333,
+              "stop": 3340
+            },
+            {
+              "name": "proposed_negative_difference",
+              "start": 3340,
+              "stop": 3347
+            }
+          ],
+          "source_id": "3204436719718449280",
+          "spacing_A": 800,
+          "closure_width_A": 10.0,
+          "proposal": {
+            "name": "JPLUS_narrow_covered",
+            "kind": "survey",
+            "indices": [
+              7,
+              8,
+              9,
+              10,
+              12,
+              14,
+              16
+            ]
+          },
+          "proposed_labels": [
+            "OAJ/JPLUS.J0378",
+            "OAJ/JPLUS.J0395",
+            "OAJ/JPLUS.J0410",
+            "OAJ/JPLUS.J0430",
+            "OAJ/JPLUS.J0515",
+            "OAJ/JPLUS.J0660",
+            "OAJ/JPLUS.J0861"
+          ],
+          "certificate_path": "research/measurement_design/certificates/closure10_0008.npz",
+          "certificate_sha256": "5594cb2bf66db420705d67e73c84dd860f6bbe386342e7d94fa8f99c530dc21b"
+        },
+        {
+          "success": false,
+          "opposite_branch": "G-B",
+          "relative_shape_budget": 0.1,
+          "normalized_guard": 0.005,
+          "n_spline_coefficients": 11,
+          "n_proposed_bands": 7,
+          "status": "no_opposite_pair_in_this_bounded_space",
+          "solver_status": 2,
+          "solver_message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+          "extrema_iterations": 1,
+          "solver_attempts": [
+            {
+              "stage": "outer_finite_grid",
+              "method": "highs",
+              "presolve": true,
+              "status": 2,
+              "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)"
+            }
+          ],
+          "source_id": "3204436719718449280",
+          "spacing_A": 800,
+          "closure_width_A": 10.0,
+          "proposal": {
+            "name": "JPLUS_narrow_covered",
+            "kind": "survey",
+            "indices": [
+              7,
+              8,
+              9,
+              10,
+              12,
+              14,
+              16
+            ]
+          },
+          "proposed_labels": [
+            "OAJ/JPLUS.J0378",
+            "OAJ/JPLUS.J0395",
+            "OAJ/JPLUS.J0410",
+            "OAJ/JPLUS.J0430",
+            "OAJ/JPLUS.J0515",
+            "OAJ/JPLUS.J0660",
+            "OAJ/JPLUS.J0861"
+          ]
+        }
+      ],
+      "both_strict_classes_feasible": true,
+      "minimum_max_baseline_relative_flux_separation": 2.653856911645729e-05,
+      "active_opposite_branch": "G-R",
+      "separation_error_half_width": 1.3269284558225776e-05,
+      "separation_error_half_width_witness_upper_bound": 1.3269284558248273e-05
+    },
+    {
+      "source_id": "3204436719718449280",
+      "WDJname": "WDJ042944.71-035422.00",
+      "spacing_A": 800,
+      "relative_shape_budget": 0.1,
+      "normalized_guard": 0.005,
+      "closure_width_A": 10.0,
+      "proposal": {
+        "name": "JPLUS_all_covered",
+        "kind": "survey",
+        "indices": [
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16
+        ]
+      },
+      "proposed_labels": [
+        "OAJ/JPLUS.J0378",
+        "OAJ/JPLUS.J0395",
+        "OAJ/JPLUS.J0410",
+        "OAJ/JPLUS.J0430",
+        "OAJ/JPLUS.gSDSS",
+        "OAJ/JPLUS.J0515",
+        "OAJ/JPLUS.rSDSS",
+        "OAJ/JPLUS.J0660",
+        "OAJ/JPLUS.iSDSS",
+        "OAJ/JPLUS.J0861"
+      ],
+      "branches": [
+        {
+          "success": true,
+          "opposite_branch": "G-R",
+          "relative_shape_budget": 0.1,
+          "normalized_guard": 0.005,
+          "n_spline_coefficients": 11,
+          "n_proposed_bands": 10,
+          "status": "feasible_pair",
+          "solver_status": 0,
+          "witness_strategy": "analytic_extrema_cuts",
+          "solver_attempts": [
+            {
+              "stage": "outer_finite_grid",
+              "method": "highs",
+              "presolve": true,
+              "status": 0,
+              "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+            },
+            {
+              "stage": "optional_continuous_inner_witness",
+              "method": "highs",
+              "presolve": true,
+              "status": 2,
+              "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)"
+            },
+            {
+              "stage": "outer_finite_grid",
+              "method": "highs",
+              "presolve": true,
+              "status": 0,
+              "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+            },
+            {
+              "stage": "outer_finite_grid",
+              "method": "highs",
+              "presolve": true,
+              "status": 0,
+              "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+            },
+            {
+              "stage": "outer_finite_grid",
+              "method": "highs",
+              "presolve": true,
+              "status": 0,
+              "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+            },
+            {
+              "stage": "outer_finite_grid",
+              "method": "highs",
+              "presolve": true,
+              "status": 0,
+              "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+            },
+            {
+              "stage": "outer_finite_grid",
+              "method": "highs",
+              "presolve": true,
+              "status": 0,
+              "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+            }
+          ],
+          "minimum_max_baseline_relative_flux_separation": 0.0011398062707199787,
+          "finite_grid_dual_objective": 0.0011398062707200195,
+          "continuous_witness_separation": 0.0011398062707201895,
+          "uniform_error_half_width_from_dual_lower_bound": 0.0005699031353600097,
+          "uniform_error_half_width_from_witness_upper_bound": 0.0005699031353600947,
+          "numerically_separated_at_check_tolerance": true,
+          "extrema_iterations": 6,
+          "green_continuous_supremum": 0.10000000000025186,
+          "opposite_continuous_supremum": 0.10000000129498887,
+          "maximum_budget_violation": 1.2949888661406561e-09,
+          "primal_violation": 1.8624546349599314e-12,
+          "dual_stationarity": 5.614737709215546e-15,
+          "duality_gap": -4.0766001685454967e-17,
+          "wrong_dual_sign": 0.0,
+          "independent_operator_replay_error": 2.220446049250313e-16,
+          "green": {
+            "PS1_synthetic_griz_mag": [
+              19.208205798991365,
+              18.794932840036672,
+              18.78219638290809,
+              18.83013768359419
+            ],
+            "PS1_box_violation_mag": 0.0,
+            "normalized_channel_differences": {
+              "G-R": 0.004999999999983049,
+              "G-B": 0.2601223910408202
+            },
+            "colour_guard_violation": 1.695085044550737e-14,
+            "xyz": [
+              9.807731728568881e-15,
+              1.0661651006715656e-14,
+              9.170874568185064e-15
+            ],
+            "metrics": {
+              "x": 0.3308922600823987,
+              "y": 0.3597017022341312,
+              "u1960": 0.19889428345854152,
+              "v1960": 0.32431679864705665,
+              "r_linear": 0.9950286561320845,
+              "g_linear": 1.0,
+              "b_linear": 0.7413684292774592,
+              "r": 254,
+              "g": 255,
+              "b": 223,
+              "hex": "#FEFFDF",
+              "in_srgb_gamut": true,
+              "green_dominant": true,
+              "green_channel_margin": 0.004971343867915534,
+              "duv": 0.00993500550939083,
+              "distance_planck_uv": 0.00993500550939083,
+              "nearest_planck_temperature_K": 5568.243448789809,
+              "nearest_planck_u": 0.20634262924366126,
+              "nearest_planck_v": 0.3177421138989554,
+              "nearest_is_RJ_limit": false,
+              "wave_min_A": 3600.0,
+              "wave_max_A": 9824.000000000524,
+              "coverage_eligible": true,
+              "cmf_min_coverage": 0.9999995149836055,
+              "n_visible_pixels": 5777,
+              "visible_negative_fraction": 0.02648433442963476,
+              "largest_visible_gap_A": 19.200000000004138
+            }
+          },
+          "opposite": {
+            "PS1_synthetic_griz_mag": [
+              19.207900629836576,
+              18.791107977585064,
+              18.798564834625022,
+              18.842184266909275
+            ],
+            "PS1_box_violation_mag": 1.6774776012695725e-15,
+            "normalized_channel_differences": {
+              "G-R": -0.005000000000014269,
+              "G-B": 0.26192158749987504
+            },
+            "colour_guard_violation": 0.0,
+            "xyz": [
+              9.8707011378113e-15,
+              1.0706263821380385e-14,
+              9.179546719875801e-15
+            ],
+            "metrics": {
+              "x": 0.33171566762494353,
+              "y": 0.3597956621008037,
+              "u1960": 0.19940478177279775,
+              "v1960": 0.32442683216185453,
+              "r_linear": 1.0,
+              "g_linear": 0.9950636456220138,
+              "b_linear": 0.7364760905939312,
+              "r": 255,
+              "g": 254,
+              "b": 223,
+              "hex": "#FFFEDF",
+              "in_srgb_gamut": true,
+              "green_dominant": false,
+              "green_channel_margin": -0.0049363543779862296,
+              "duv": 0.00962491842018452,
+              "distance_planck_uv": 0.00962491842018452,
+              "nearest_planck_temperature_K": 5536.278159010003,
+              "nearest_planck_u": 0.2065925260122734,
+              "nearest_planck_v": 0.31802563013855517,
+              "nearest_is_RJ_limit": false,
+              "wave_min_A": 3600.0,
+              "wave_max_A": 9824.000000000524,
+              "coverage_eligible": true,
+              "cmf_min_coverage": 0.9999995149836055,
+              "n_visible_pixels": 5777,
+              "visible_negative_fraction": 0.02648433442963476,
+              "largest_visible_gap_A": 19.200000000004138
+            }
+          },
+          "proposed_green_flux_over_baseline": [
+            0.9423939399614478,
+            0.9025243869578086,
+            0.9436845625830428,
+            1.0153045287289582,
+            1.00926278152914,
+            0.9833298155658341,
+            1.0152936797927052,
+            0.9689623464249774,
+            0.9822649336517746,
+            0.9401474912822849
+          ],
+          "proposed_opposite_flux_over_baseline": [
+            0.9435337462321679,
+            0.9013845806870886,
+            0.9431081573780308,
+            1.0164443349996781,
+            1.009547839063506,
+            0.982190009295114,
+            1.0164334860634252,
+            0.9678225401542574,
+            0.9811251273810544,
+            0.9412872975530044
+          ],
+          "proposed_green_minus_opposite_mag": [
+            0.001312382329680503,
+            -0.0013720527159821558,
+            -0.0006633733663910402,
+            0.0012181909747293602,
+            0.0003066134925189395,
+            -0.001259238454478036,
+            0.0012182039844279432,
+            -0.0012779210391136993,
+            -0.0012606043986004224,
+            0.0013155163211304415
+          ],
+          "constraint_blocks": [
+            {
+              "name": "green_upper_spline",
+              "start": 0,
+              "stop": 825
+            },
+            {
+              "name": "green_lower_spline",
+              "start": 825,
+              "stop": 1650
+            },
+            {
+              "name": "green_upper_PS1",
+              "start": 1650,
+              "stop": 1654
+            },
+            {
+              "name": "green_lower_PS1",
+              "start": 1654,
+              "stop": 1658
+            },
+            {
+              "name": "green_positive_XYZ",
+              "start": 1658,
+              "stop": 1661
+            },
+            {
+              "name": "green_G-R",
+              "start": 1661,
+              "stop": 1662
+            },
+            {
+              "name": "green_G-B",
+              "start": 1662,
+              "stop": 1663
+            },
+            {
+              "name": "opposite_upper_spline",
+              "start": 1663,
+              "stop": 2475
+            },
+            {
+              "name": "opposite_lower_spline",
+              "start": 2475,
+              "stop": 3287
+            },
+            {
+              "name": "opposite_upper_PS1",
+              "start": 3287,
+              "stop": 3291
+            },
+            {
+              "name": "opposite_lower_PS1",
+              "start": 3291,
+              "stop": 3295
+            },
+            {
+              "name": "opposite_positive_XYZ",
+              "start": 3295,
+              "stop": 3298
+            },
+            {
+              "name": "opposite_G-R",
+              "start": 3298,
+              "stop": 3299
+            },
+            {
+              "name": "proposed_positive_difference",
+              "start": 3299,
+              "stop": 3309
+            },
+            {
+              "name": "proposed_negative_difference",
+              "start": 3309,
+              "stop": 3319
+            }
+          ],
+          "source_id": "3204436719718449280",
+          "spacing_A": 800,
+          "closure_width_A": 10.0,
+          "proposal": {
+            "name": "JPLUS_all_covered",
+            "kind": "survey",
+            "indices": [
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16
+            ]
+          },
+          "proposed_labels": [
+            "OAJ/JPLUS.J0378",
+            "OAJ/JPLUS.J0395",
+            "OAJ/JPLUS.J0410",
+            "OAJ/JPLUS.J0430",
+            "OAJ/JPLUS.gSDSS",
+            "OAJ/JPLUS.J0515",
+            "OAJ/JPLUS.rSDSS",
+            "OAJ/JPLUS.J0660",
+            "OAJ/JPLUS.iSDSS",
+            "OAJ/JPLUS.J0861"
+          ],
+          "certificate_path": "research/measurement_design/certificates/closure10_0010.npz",
+          "certificate_sha256": "420b10cee786725083489b539c96f3fb5f2f5d5101e1d994926cea1319ce694a"
+        },
+        {
+          "success": false,
+          "opposite_branch": "G-B",
+          "relative_shape_budget": 0.1,
+          "normalized_guard": 0.005,
+          "n_spline_coefficients": 11,
+          "n_proposed_bands": 10,
+          "status": "no_opposite_pair_in_this_bounded_space",
+          "solver_status": 2,
+          "solver_message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+          "extrema_iterations": 1,
+          "solver_attempts": [
+            {
+              "stage": "outer_finite_grid",
+              "method": "highs",
+              "presolve": true,
+              "status": 2,
+              "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)"
+            }
+          ],
+          "source_id": "3204436719718449280",
+          "spacing_A": 800,
+          "closure_width_A": 10.0,
+          "proposal": {
+            "name": "JPLUS_all_covered",
+            "kind": "survey",
+            "indices": [
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16
+            ]
+          },
+          "proposed_labels": [
+            "OAJ/JPLUS.J0378",
+            "OAJ/JPLUS.J0395",
+            "OAJ/JPLUS.J0410",
+            "OAJ/JPLUS.J0430",
+            "OAJ/JPLUS.gSDSS",
+            "OAJ/JPLUS.J0515",
+            "OAJ/JPLUS.rSDSS",
+            "OAJ/JPLUS.J0660",
+            "OAJ/JPLUS.iSDSS",
+            "OAJ/JPLUS.J0861"
+          ]
+        }
+      ],
+      "both_strict_classes_feasible": true,
+      "minimum_max_baseline_relative_flux_separation": 0.0011398062707199787,
+      "active_opposite_branch": "G-R",
+      "separation_error_half_width": 0.0005699031353600097,
+      "separation_error_half_width_witness_upper_bound": 0.0005699031353600947
+    },
+    {
+      "source_id": "3204436719718449280",
+      "WDJname": "WDJ042944.71-035422.00",
+      "spacing_A": 800,
+      "relative_shape_budget": 0.1,
+      "normalized_guard": 0.005,
+      "closure_width_A": 10.0,
+      "proposal": {
+        "name": "PS1_plus_JPLUS_all",
+        "kind": "survey",
+        "indices": [
+          0,
+          1,
+          2,
+          3,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16
+        ]
+      },
+      "proposed_labels": [
+        "PS1/g",
+        "PS1/r",
+        "PS1/i",
+        "PS1/z",
+        "OAJ/JPLUS.J0378",
+        "OAJ/JPLUS.J0395",
+        "OAJ/JPLUS.J0410",
+        "OAJ/JPLUS.J0430",
+        "OAJ/JPLUS.gSDSS",
+        "OAJ/JPLUS.J0515",
+        "OAJ/JPLUS.rSDSS",
+        "OAJ/JPLUS.J0660",
+        "OAJ/JPLUS.iSDSS",
+        "OAJ/JPLUS.J0861"
+      ],
+      "branches": [
+        {
+          "success": true,
+          "opposite_branch": "G-R",
+          "relative_shape_budget": 0.1,
+          "normalized_guard": 0.005,
+          "n_spline_coefficients": 11,
+          "n_proposed_bands": 14,
+          "status": "feasible_pair",
+          "solver_status": 0,
+          "witness_strategy": "analytic_extrema_cuts",
+          "solver_attempts": [
+            {
+              "stage": "outer_finite_grid",
+              "method": "highs",
+              "presolve": true,
+              "status": 0,
+              "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+            },
+            {
+              "stage": "optional_continuous_inner_witness",
+              "method": "highs",
+              "presolve": true,
+              "status": 2,
+              "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)"
+            },
+            {
+              "stage": "outer_finite_grid",
+              "method": "highs",
+              "presolve": true,
+              "status": 0,
+              "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+            },
+            {
+              "stage": "outer_finite_grid",
+              "method": "highs",
+              "presolve": true,
+              "status": 0,
+              "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+            },
+            {
+              "stage": "outer_finite_grid",
+              "method": "highs",
+              "presolve": true,
+              "status": 0,
+              "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+            },
+            {
+              "stage": "outer_finite_grid",
+              "method": "highs",
+              "presolve": true,
+              "status": 0,
+              "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+            }
+          ],
+          "minimum_max_baseline_relative_flux_separation": 0.0028041943492999937,
+          "finite_grid_dual_objective": 0.0028041943493000016,
+          "continuous_witness_separation": 0.0028041943493002375,
+          "uniform_error_half_width_from_dual_lower_bound": 0.0014020971746500008,
+          "uniform_error_half_width_from_witness_upper_bound": 0.0014020971746501187,
+          "numerically_separated_at_check_tolerance": true,
+          "extrema_iterations": 5,
+          "green_continuous_supremum": 0.10000000092416705,
+          "opposite_continuous_supremum": 0.10000000057165023,
+          "maximum_budget_violation": 9.241670484438913e-10,
+          "primal_violation": 2.5185409313621676e-13,
+          "dual_stationarity": 1.2511572200801168e-11,
+          "duality_gap": -7.806255641895632e-18,
+          "wrong_dual_sign": 0.0,
+          "independent_operator_replay_error": 2.220446049250313e-16,
+          "green": {
+            "PS1_synthetic_griz_mag": [
+              19.241501225632174,
+              18.81329265718056,
+              18.77403648372239,
+              18.833322006621337
+            ],
+            "PS1_box_violation_mag": 1.6774776012695725e-15,
+            "normalized_channel_differences": {
+              "G-R": 0.0049999999999970545,
+              "G-B": 0.2292691242951996
+            },
+            "colour_guard_violation": 2.9455604622086184e-15,
+            "xyz": [
+              9.38963790652012e-15,
+              1.01825069360726e-14,
+              8.939944840572083e-15
+            ],
+            "metrics": {
+              "x": 0.3293212812831572,
+              "y": 0.3571294510231898,
+              "u1960": 0.19877815697337833,
+              "v1960": 0.3233447310117766,
+              "r_linear": 0.9947874823096864,
+              "g_linear": 1.0,
+              "b_linear": 0.7609861267535725,
+              "r": 254,
+              "g": 255,
+              "b": 226,
+              "hex": "#FEFFE2",
+              "in_srgb_gamut": true,
+              "green_dominant": true,
+              "green_channel_margin": 0.005212517690313612,
+              "duv": 0.009383698432817014,
+              "distance_planck_uv": 0.009383698432817014,
+              "nearest_planck_temperature_K": 5632.728776268934,
+              "nearest_planck_u": 0.205849861765531,
+              "nearest_planck_v": 0.31717668532365967,
+              "nearest_is_RJ_limit": false,
+              "wave_min_A": 3600.0,
+              "wave_max_A": 9824.000000000524,
+              "coverage_eligible": true,
+              "cmf_min_coverage": 0.9999995149836055,
+              "n_visible_pixels": 5777,
+              "visible_negative_fraction": 0.02648433442963476,
+              "largest_visible_gap_A": 19.200000000004138
+            }
+          },
+          "opposite": {
+            "PS1_synthetic_griz_mag": [
+              19.241319190519405,
+              18.810255960940225,
+              18.777084271318667,
+              18.83013768359419
+            ],
+            "PS1_box_violation_mag": 0.0,
+            "normalized_channel_differences": {
+              "G-R": -0.005000000000017478,
+              "G-B": 0.2274867625603128
+            },
+            "colour_guard_violation": 0.0,
+            "xyz": [
+              9.442857356875867e-15,
+              1.021230294529718e-14,
+              8.966251954840643e-15
+            ],
+            "metrics": {
+              "x": 0.32992283092396635,
+              "y": 0.35680639563111183,
+              "u1960": 0.19929401801575788,
+              "v1960": 0.3233000579555173,
+              "r_linear": 1.0,
+              "g_linear": 0.994817201286811,
+              "b_linear": 0.7590135812346069,
+              "r": 255,
+              "g": 254,
+              "b": 226,
+              "hex": "#FFFEE2",
+              "in_srgb_gamut": true,
+              "green_dominant": false,
+              "green_channel_margin": -0.005182798713189052,
+              "duv": 0.008964838238706915,
+              "distance_planck_uv": 0.008964838238706915,
+              "nearest_planck_temperature_K": 5608.459724336814,
+              "nearest_planck_u": 0.20603355818016486,
+              "nearest_planck_v": 0.31738846569805174,
+              "nearest_is_RJ_limit": false,
+              "wave_min_A": 3600.0,
+              "wave_max_A": 9824.000000000524,
+              "coverage_eligible": true,
+              "cmf_min_coverage": 0.9999995149836055,
+              "n_visible_pixels": 5777,
+              "visible_negative_fraction": 0.02648433442963476,
+              "largest_visible_gap_A": 19.200000000004138
+            }
+          },
+          "proposed_green_flux_over_baseline": [
+            0.9791345945640412,
+            1.0012063542462268,
+            1.0003618822974734,
+            0.9547249937860433,
+            0.9550470721706911,
+            0.9929080284451333,
+            1.020736876884538,
+            1.0303652124476415,
+            0.9803916912996155,
+            0.9569601233826129,
+            1.0028301551157552,
+            1.0160568167914492,
+            0.9911594663237493,
+            0.9501985019492651
+          ],
+          "proposed_opposite_flux_over_baseline": [
+            0.9792987705563632,
+            1.0040105485955269,
+            0.9975576880283825,
+            0.9575291881353433,
+            0.957851266519991,
+            0.9901038340958331,
+            1.0192381040110243,
+            1.0331694067969415,
+            0.9805917056534387,
+            0.9541559290333129,
+            1.0043871004442018,
+            1.0132526224421492,
+            0.9939636606730491,
+            0.9473943075999649
+          ],
+          "proposed_green_minus_opposite_mag": [
+            0.00018203511276752244,
+            0.0030366962403374966,
+            -0.003047787596277089,
+            0.0031843230271468574,
+            0.0031832507243843735,
+            -0.0030707000973327556,
+            -0.0015953845311985587,
+            0.0029508758185775507,
+            0.0002214835949224704,
+            -0.003186219394030341,
+            0.0016843540441555246,
+            -0.0030006436763660976,
+            0.0030674342703865248,
+            -0.0032089260995911122
+          ],
+          "constraint_blocks": [
+            {
+              "name": "green_upper_spline",
+              "start": 0,
+              "stop": 808
+            },
+            {
+              "name": "green_lower_spline",
+              "start": 808,
+              "stop": 1616
+            },
+            {
+              "name": "green_upper_PS1",
+              "start": 1616,
+              "stop": 1620
+            },
+            {
+              "name": "green_lower_PS1",
+              "start": 1620,
+              "stop": 1624
+            },
+            {
+              "name": "green_positive_XYZ",
+              "start": 1624,
+              "stop": 1627
+            },
+            {
+              "name": "green_G-R",
+              "start": 1627,
+              "stop": 1628
+            },
+            {
+              "name": "green_G-B",
+              "start": 1628,
+              "stop": 1629
+            },
+            {
+              "name": "opposite_upper_spline",
+              "start": 1629,
+              "stop": 2426
+            },
+            {
+              "name": "opposite_lower_spline",
+              "start": 2426,
+              "stop": 3223
+            },
+            {
+              "name": "opposite_upper_PS1",
+              "start": 3223,
+              "stop": 3227
+            },
+            {
+              "name": "opposite_lower_PS1",
+              "start": 3227,
+              "stop": 3231
+            },
+            {
+              "name": "opposite_positive_XYZ",
+              "start": 3231,
+              "stop": 3234
+            },
+            {
+              "name": "opposite_G-R",
+              "start": 3234,
+              "stop": 3235
+            },
+            {
+              "name": "proposed_positive_difference",
+              "start": 3235,
+              "stop": 3249
+            },
+            {
+              "name": "proposed_negative_difference",
+              "start": 3249,
+              "stop": 3263
+            }
+          ],
+          "source_id": "3204436719718449280",
+          "spacing_A": 800,
+          "closure_width_A": 10.0,
+          "proposal": {
+            "name": "PS1_plus_JPLUS_all",
+            "kind": "survey",
+            "indices": [
+              0,
+              1,
+              2,
+              3,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16
+            ]
+          },
+          "proposed_labels": [
+            "PS1/g",
+            "PS1/r",
+            "PS1/i",
+            "PS1/z",
+            "OAJ/JPLUS.J0378",
+            "OAJ/JPLUS.J0395",
+            "OAJ/JPLUS.J0410",
+            "OAJ/JPLUS.J0430",
+            "OAJ/JPLUS.gSDSS",
+            "OAJ/JPLUS.J0515",
+            "OAJ/JPLUS.rSDSS",
+            "OAJ/JPLUS.J0660",
+            "OAJ/JPLUS.iSDSS",
+            "OAJ/JPLUS.J0861"
+          ],
+          "certificate_path": "research/measurement_design/certificates/closure10_0012.npz",
+          "certificate_sha256": "68f8fb8841dda1f0f5961031c306f5b4cb83410990ffb565c7dcece88ab73787"
+        },
+        {
+          "success": false,
+          "opposite_branch": "G-B",
+          "relative_shape_budget": 0.1,
+          "normalized_guard": 0.005,
+          "n_spline_coefficients": 11,
+          "n_proposed_bands": 14,
+          "status": "no_opposite_pair_in_this_bounded_space",
+          "solver_status": 2,
+          "solver_message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+          "extrema_iterations": 1,
+          "solver_attempts": [
+            {
+              "stage": "outer_finite_grid",
+              "method": "highs",
+              "presolve": true,
+              "status": 2,
+              "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)"
+            }
+          ],
+          "source_id": "3204436719718449280",
+          "spacing_A": 800,
+          "closure_width_A": 10.0,
+          "proposal": {
+            "name": "PS1_plus_JPLUS_all",
+            "kind": "survey",
+            "indices": [
+              0,
+              1,
+              2,
+              3,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16
+            ]
+          },
+          "proposed_labels": [
+            "PS1/g",
+            "PS1/r",
+            "PS1/i",
+            "PS1/z",
+            "OAJ/JPLUS.J0378",
+            "OAJ/JPLUS.J0395",
+            "OAJ/JPLUS.J0410",
+            "OAJ/JPLUS.J0430",
+            "OAJ/JPLUS.gSDSS",
+            "OAJ/JPLUS.J0515",
+            "OAJ/JPLUS.rSDSS",
+            "OAJ/JPLUS.J0660",
+            "OAJ/JPLUS.iSDSS",
+            "OAJ/JPLUS.J0861"
+          ]
+        }
+      ],
+      "both_strict_classes_feasible": true,
+      "minimum_max_baseline_relative_flux_separation": 0.0028041943492999937,
+      "active_opposite_branch": "G-R",
+      "separation_error_half_width": 0.0014020971746500008,
+      "separation_error_half_width_witness_upper_bound": 0.0014020971746501187
+    },
+    {
+      "source_id": "3204436719718449280",
+      "WDJname": "WDJ042944.71-035422.00",
+      "spacing_A": 800,
+      "relative_shape_budget": 0.1,
+      "normalized_guard": 0.005,
+      "closure_width_A": 10.0,
+      "proposal": {
+        "name": "ideal_XYZ",
+        "kind": "ideal_XYZ",
+        "indices": []
+      },
+      "proposed_labels": [
+        "ideal_X",
+        "ideal_Y",
+        "ideal_Z"
+      ],
+      "branches": [
+        {
+          "success": true,
+          "opposite_branch": "G-R",
+          "relative_shape_budget": 0.1,
+          "normalized_guard": 0.005,
+          "n_spline_coefficients": 11,
+          "n_proposed_bands": 3,
+          "status": "feasible_pair",
+          "solver_status": 0,
+          "witness_strategy": "analytic_extrema_cuts",
+          "solver_attempts": [
+            {
+              "stage": "outer_finite_grid",
+              "method": "highs",
+              "presolve": true,
+              "status": 0,
+              "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+            }
+          ],
+          "minimum_max_baseline_relative_flux_separation": 0.0013493008563593058,
+          "finite_grid_dual_objective": 0.0013493008563592959,
+          "continuous_witness_separation": 0.001349300856361757,
+          "uniform_error_half_width_from_dual_lower_bound": 0.0006746504281796479,
+          "uniform_error_half_width_from_witness_upper_bound": 0.0006746504281808785,
+          "numerically_separated_at_check_tolerance": true,
+          "extrema_iterations": 1,
+          "green_continuous_supremum": 0.10000000000025186,
+          "opposite_continuous_supremum": 0.10000000000025186,
+          "maximum_budget_violation": 2.5185409313621676e-13,
+          "primal_violation": 2.5185409313621676e-13,
+          "dual_stationarity": 8.326672684688674e-17,
+          "duality_gap": 9.974659986866641e-18,
+          "wrong_dual_sign": 7.494099626179052e-16,
+          "independent_operator_replay_error": 2.6645352591003757e-15,
+          "green": {
+            "PS1_synthetic_griz_mag": [
+              19.241501225632174,
+              18.81329265718056,
+              18.798564834678103,
+              18.83013768359419
+            ],
+            "PS1_box_violation_mag": 1.6774776012695725e-15,
+            "normalized_channel_differences": {
+              "G-R": 0.004999999999991073,
+              "G-B": 0.2657670853193504
+            },
+            "colour_guard_violation": 8.92688700737665e-15,
+            "xyz": [
+              9.544052156224384e-15,
+              1.039142270152579e-14,
+              8.82332470045159e-15
+            ],
+            "metrics": {
+              "x": 0.33186545693290254,
+              "y": 0.361330196710601,
+              "u1960": 0.19895320453786627,
+              "v1960": 0.32492595582073247,
+              "r_linear": 0.9949041071155678,
+              "g_linear": 1.0,
+              "b_linear": 0.7291358802004831,
+              "r": 254,
+              "g": 255,
+              "b": 222,
+              "hex": "#FEFFDE",
+              "in_srgb_gamut": true,
+              "green_dominant": true,
+              "green_channel_margin": 0.00509589288443224,
+              "duv": 0.010293860925673888,
+              "distance_planck_uv": 0.010293860925673888,
+              "nearest_planck_temperature_K": 5528.31554989136,
+              "nearest_planck_u": 0.20665536924833527,
+              "nearest_planck_v": 0.31809659043806904,
+              "nearest_is_RJ_limit": false,
+              "wave_min_A": 3600.0,
+              "wave_max_A": 9824.000000000524,
+              "coverage_eligible": true,
+              "cmf_min_coverage": 0.9999995149836055,
+              "n_visible_pixels": 5777,
+              "visible_negative_fraction": 0.02648433442963476,
+              "largest_visible_gap_A": 19.200000000004138
+            }
+          },
+          "opposite": {
+            "PS1_synthetic_griz_mag": [
+              19.241501225632174,
+              18.79549119061609,
+              18.774355491062458,
+              18.83013768359419
+            ],
+            "PS1_box_violation_mag": 0.0,
+            "normalized_channel_differences": {
+              "G-R": -0.0050000000000154365,
+              "G-B": 0.2629715982157429
+            },
+            "colour_guard_violation": 0.0,
+            "xyz": [
+              9.556783156632841e-15,
+              1.0377331770196229e-14,
+              8.811385259591525e-15
+            ],
+            "metrics": {
+              "x": 0.3324618842829347,
+              "y": 0.3610071733974729,
+              "u1960": 0.19946230117984975,
+              "v1960": 0.3248823020882568,
+              "r_linear": 1.0,
+              "g_linear": 0.9949112064610027,
+              "b_linear": 0.7272695724738178,
+              "r": 255,
+              "g": 254,
+              "b": 222,
+              "hex": "#FFFEDE",
+              "in_srgb_gamut": true,
+              "green_dominant": false,
+              "green_channel_margin": -0.005088793538997272,
+              "duv": 0.009884367278368954,
+              "distance_planck_uv": 0.009884367278368954,
+              "nearest_planck_temperature_K": 5504.496370501309,
+              "nearest_planck_u": 0.20684478926025857,
+              "nearest_planck_v": 0.3183096628743403,
+              "nearest_is_RJ_limit": false,
+              "wave_min_A": 3600.0,
+              "wave_max_A": 9824.000000000524,
+              "coverage_eligible": true,
+              "cmf_min_coverage": 0.9999995149836055,
+              "n_visible_pixels": 5777,
+              "visible_negative_fraction": 0.02648433442963476,
+              "largest_visible_gap_A": 19.200000000004138
+            }
+          },
+          "proposed_green_flux_over_baseline": [
+            1.011530699423458,
+            0.9950481782969471,
+            0.9971421370387712
+          ],
+          "proposed_opposite_flux_over_baseline": [
+            1.0128800002798168,
+            0.9936988774405854,
+            0.9957928361824122
+          ],
+          "proposed_green_minus_opposite_mag": [
+            0.001447319961320998,
+            -0.0014732743527370242,
+            -0.0014701784397261946
+          ],
+          "constraint_blocks": [
+            {
+              "name": "green_upper_spline",
+              "start": 0,
+              "stop": 780
+            },
+            {
+              "name": "green_lower_spline",
+              "start": 780,
+              "stop": 1560
+            },
+            {
+              "name": "green_upper_PS1",
+              "start": 1560,
+              "stop": 1564
+            },
+            {
+              "name": "green_lower_PS1",
+              "start": 1564,
+              "stop": 1568
+            },
+            {
+              "name": "green_positive_XYZ",
+              "start": 1568,
+              "stop": 1571
+            },
+            {
+              "name": "green_G-R",
+              "start": 1571,
+              "stop": 1572
+            },
+            {
+              "name": "green_G-B",
+              "start": 1572,
+              "stop": 1573
+            },
+            {
+              "name": "opposite_upper_spline",
+              "start": 1573,
+              "stop": 2353
+            },
+            {
+              "name": "opposite_lower_spline",
+              "start": 2353,
+              "stop": 3133
+            },
+            {
+              "name": "opposite_upper_PS1",
+              "start": 3133,
+              "stop": 3137
+            },
+            {
+              "name": "opposite_lower_PS1",
+              "start": 3137,
+              "stop": 3141
+            },
+            {
+              "name": "opposite_positive_XYZ",
+              "start": 3141,
+              "stop": 3144
+            },
+            {
+              "name": "opposite_G-R",
+              "start": 3144,
+              "stop": 3145
+            },
+            {
+              "name": "proposed_positive_difference",
+              "start": 3145,
+              "stop": 3148
+            },
+            {
+              "name": "proposed_negative_difference",
+              "start": 3148,
+              "stop": 3151
+            }
+          ],
+          "source_id": "3204436719718449280",
+          "spacing_A": 800,
+          "closure_width_A": 10.0,
+          "proposal": {
+            "name": "ideal_XYZ",
+            "kind": "ideal_XYZ",
+            "indices": []
+          },
+          "proposed_labels": [
+            "ideal_X",
+            "ideal_Y",
+            "ideal_Z"
+          ],
+          "certificate_path": "research/measurement_design/certificates/closure10_0014.npz",
+          "certificate_sha256": "2c5e5dd52b982328c7f7be9973b79fe68924b6e97697b304cd2241564b4d8015"
+        },
+        {
+          "success": false,
+          "opposite_branch": "G-B",
+          "relative_shape_budget": 0.1,
+          "normalized_guard": 0.005,
+          "n_spline_coefficients": 11,
+          "n_proposed_bands": 3,
+          "status": "no_opposite_pair_in_this_bounded_space",
+          "solver_status": 2,
+          "solver_message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+          "extrema_iterations": 1,
+          "solver_attempts": [
+            {
+              "stage": "outer_finite_grid",
+              "method": "highs",
+              "presolve": true,
+              "status": 2,
+              "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)"
+            }
+          ],
+          "source_id": "3204436719718449280",
+          "spacing_A": 800,
+          "closure_width_A": 10.0,
+          "proposal": {
+            "name": "ideal_XYZ",
+            "kind": "ideal_XYZ",
+            "indices": []
+          },
+          "proposed_labels": [
+            "ideal_X",
+            "ideal_Y",
+            "ideal_Z"
+          ]
+        }
+      ],
+      "both_strict_classes_feasible": true,
+      "minimum_max_baseline_relative_flux_separation": 0.0013493008563593058,
+      "active_opposite_branch": "G-R",
+      "separation_error_half_width": 0.0006746504281796479,
+      "separation_error_half_width_witness_upper_bound": 0.0006746504281808785
+    }
+  ]
+}

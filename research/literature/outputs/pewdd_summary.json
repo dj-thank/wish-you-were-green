@@ -1,0 +1,103 @@
+{
+  "source": {
+    "requested_url": "https://raw.githubusercontent.com/jamietwilliams/PEWDD/023dba3176ac367c6cf2b5968847a80d79e3c594/PEWDD.csv",
+    "resolved_url": "https://raw.githubusercontent.com/jamietwilliams/PEWDD/023dba3176ac367c6cf2b5968847a80d79e3c594/PEWDD.csv",
+    "repository_commit": "023dba3176ac367c6cf2b5968847a80d79e3c594",
+    "repository_commit_date_utc": "2026-03-27T15:09:37Z",
+    "retrieval_date_utc": "2026-10-18",
+    "path": "sources/pewdd_023dba3.csv.gz",
+    "uncompressed_bytes": 1594728,
+    "uncompressed_sha256": "ed65260aa5b130198468ae8e482794868119f7f0e754cd53fbb5dd7d8baf83d3",
+    "compressed_sha256": "1501ec84ab235bd3e92e04d6e22289651b8483f216408807afd217c96731877e",
+    "rows": 3475,
+    "field_count": 206,
+    "paper_url": "https://www.aanda.org/articles/aa/full_html/2024/11/aa50509-24/aa50509-24.html",
+    "documentation_url": "https://pewdd-tutorial.readthedocs.io/en/latest/usage.html",
+    "cautions": [
+      "This exact repository snapshot is dated March 2026; not all subsequent abundance papers are included.",
+      "One star can have multiple rows for papers or atmosphere assumptions; retain them.",
+      "An abundance uncertainty of -1 denotes an upper limit, not a detection.",
+      "Atmospheric number ratios are not accreted-body compositions without diffusion and accretion-phase modelling.",
+      "The upstream data retain their terms; the project code licence does not relicense this snapshot."
+    ]
+  },
+  "census_path": "research/outlier_audit/object_audit.csv",
+  "ranking_sha256": "7c2ea8569a9b149d6607e6c6d5d6a5d18e249bd025e4b3b589dbc5703c4087ca",
+  "ranking_rows": 6003,
+  "ranking_unique_nonempty_ids": 5318,
+  "pewdd_rows": 3475,
+  "pewdd_unique_dr3_ids": 1367,
+  "pewdd_unparsed_designation_rows": 505,
+  "matched_ranking_rows": 1107,
+  "matched_unique_ids": 1107,
+  "matched_measurement_rows_with_ranking_aliases": 2547,
+  "unique_matched_pewdd_rows": 2547,
+  "unique_ids_with_na_ca_same_paper_detections": 30,
+  "source_rows_with_gross_name_coordinate_disagreement": 236,
+  "candidate27_count": 27,
+  "candidate27_with_exact_pewdd_id_match": 0,
+  "unmatched_rows_with_positional_hint_under_30arcsec": 246,
+  "headline_candidates": [
+    {
+      "candidate": "J0913+4434",
+      "source_id": "818833831355548928",
+      "exact_id_rows": 0,
+      "papers": [],
+      "nearest_hints": [
+        {
+          "star": "SDSS J094431.28-003933.7",
+          "separation_arcsec": 5060.122393342655
+        }
+      ],
+      "interpretation": "No entry in this March 2026 snapshot; this is not evidence that no prior abundance analysis exists."
+    },
+    {
+      "candidate": "J0429-0354",
+      "source_id": "3204436719718449280",
+      "exact_id_rows": 0,
+      "papers": [],
+      "nearest_hints": [
+        {
+          "star": "Gaia DR3 3253852143823041792",
+          "separation_arcsec": 11594.086480404025
+        }
+      ],
+      "interpretation": "No entry in this March 2026 snapshot; this is not evidence that no prior abundance analysis exists."
+    },
+    {
+      "candidate": "J1329+0033",
+      "source_id": "3711047662972690688",
+      "exact_id_rows": 0,
+      "papers": [],
+      "nearest_hints": [
+        {
+          "star": "SDSS J132005.53+020419.0",
+          "separation_arcsec": 10224.373649898242
+        }
+      ],
+      "interpretation": "No entry in this March 2026 snapshot; this is not evidence that no prior abundance analysis exists."
+    },
+    {
+      "candidate": "J1323-0129",
+      "source_id": "3638333660492606976",
+      "exact_id_rows": 0,
+      "papers": [],
+      "nearest_hints": [
+        {
+          "star": "SDSS J132144.04-023751.4",
+          "separation_arcsec": 4315.828892962657
+        }
+      ],
+      "interpretation": "No entry in this March 2026 snapshot; this is not evidence that no prior abundance analysis exists."
+    }
+  ],
+  "cautions": [
+    "The source ranking falls back from Gaia EDR3 to DR2 IDs for some objects; confirm release lineage before treating all exact numerical associations as final.",
+    "Coordinate-only hints have not been accepted as associations because catalogues can use different epochs and high proper motion.",
+    "Rows whose full J-coordinate name differs from the tabulated position by over 600 arcsec are flagged for identity review. This is not a corrected identification; such associations must not enter chemical inference until resolved.",
+    "Individual papers and alternate models remain separate rows. Do not treat them as independent stars or average their abundances without an error model.",
+    "Reported detections follow the PEWDD uncertainty convention; fixed CI-chondritic abundance ratios in an original paper must still be audited individually.",
+    "The original exploration and heterogeneous abundance coverage do not support population prevalence or an uncorrected global significance.",
+    "This script supplies a follow-up measurement inventory, not a fitted chemical-origin or causal-colour result."
+  ]
+}

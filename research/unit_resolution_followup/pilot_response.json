@@ -1,0 +1,27 @@
+[
+  {
+    "TableName": "Table1",
+    "Rows": [
+      {
+        "specobjid": "4558997515027109888",
+        "plate": 4049,
+        "mjd": 55591,
+        "fiberID": 832,
+        "run2d": "v5_13_2",
+        "ra": 200.80318,
+        "dec": -1.4899599,
+        "sciencePrimary": 1,
+        "bestobjid": "1237655495978386088",
+        "distance": 0.0285019663384889
+      }
+    ]
+  },
+  {
+    "TableName": "SqlQuery",
+    "Rows": [
+      {
+        "query": "SELECT CAST(s.specObjID AS varchar(32)) AS specobjid, s.plate,s.mjd,s.fiberID,s.run2d,s.ra,s.dec,s.sciencePrimary,CAST(s.bestObjID AS varchar(32)) AS bestobjid,n.distance FROM dbo.fGetNearbySpecObjAllEq(200.80308333333332,-1.490425,0.5) n JOIN SpecObjAll s ON s.specObjID=n.specObjID"
+      }
+    ]
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "url": "https://api.skymapper.nci.org.au/public/tap/sync",
+  "query_parameters": {
+    "REQUEST": "doQuery",
+    "LANG": "ADQL",
+    "FORMAT": "csv",
+    "MAXREC": "10000",
+    "QUERY": "SELECT TOP 1000 * FROM ext.splus_dr3 AS s WHERE s.\"ra\" BETWEEN 67.432108891577 AND 67.440461632093 AND s.\"dec\" BETWEEN -3.910672727673 AND -3.902339394340"
+  },
+  "final_url": "https://api.skymapper.nci.org.au/public/tap/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&MAXREC=10000&QUERY=SELECT+TOP+1000+%2A+FROM+ext.splus_dr3+AS+s+WHERE+s.%22ra%22+BETWEEN+67.432108891577+AND+67.440461632093+AND+s.%22dec%22+BETWEEN+-3.910672727673+AND+-3.902339394340",
+  "retrieved_utc": "2026-10-19T23:54:10.068862+00:00",
+  "http_status": 200,
+  "content_type": "application/x-votable+xml;charset=ISO-8859-1",
+  "size_bytes": 495,
+  "sha256": "51ac413efdfe4a7930165b45f766b83b6d4db45435b97e3e5b75e034ecae7fb2"
+}

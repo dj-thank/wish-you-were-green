@@ -1,0 +1,42 @@
+{
+  "row_index": 6462,
+  "source_id": "767756877680612864",
+  "preserved_catalogue_spectype": "DQ:",
+  "context_status": "known_AM_CVn_literature_counterpart_supported_by_position_and_native_helium_emission",
+  "published_name": "SDSS J113732.32+405458.3",
+  "published_class": "AM CVn binary",
+  "reference": {
+    "authors": "Carter et al.",
+    "year": 2014,
+    "title": "Two new AM Canum Venaticorum binaries from the Sloan Digital Sky Survey III",
+    "doi": "10.1093/mnras/stu142",
+    "url": "https://academic.oup.com/mnras/article/439/3/2848/1104429",
+    "accessed_utc_date": "2026-10-20",
+    "locator": "Section 3.1 and Figure 2; Table 3 gives SDSS J1137 subspectrum HJD values."
+  },
+  "published_coordinate_name_ra_deg": 174.38466666666665,
+  "published_coordinate_name_dec_deg": 40.91619444444444,
+  "original_PLUG_ra_deg": 174.38476,
+  "original_PLUG_dec_deg": 40.916116,
+  "published_name_to_PLUG_separation_arcsec": 0.3797596211673032,
+  "original_SDSS_plate_MJD_fibre": [
+    4655,
+    55620,
+    930
+  ],
+  "observed_native_peak_wavelengths_vacuum_A": [
+    3888.66,
+    4026.24,
+    4473.01,
+    4922.66,
+    5016.49,
+    5877.6,
+    6680.36,
+    7066.43
+  ],
+  "peak_estimator": "Local maxima inspected in the native array; rounded two-decimal sample locations, not fitted centroids or radial velocities.",
+  "interpretation": "Published helium-emission binary context explains why these positive native features must be retained. The positional and spectral agreement supports this literature counterpart; neither the tentative MWDD DQ: label nor automated SDSS QSO z=0.076256 is adopted as a new physical classification. This source is not a clean single photospheric DQ-opacity control.",
+  "limits": "No new binary discovery, orbital measurement, source-association probability, or population contamination fraction. No blanket line removal. Original catalogue labels and numerical colour remain traceable.",
+  "native_reference": "https://data.sdss.org/sas/dr17/eboss/spectro/redux/v5_13_2/spectra/lite/4655/spec-4655-55620-0930.fits",
+  "native_reference_original_sha256": "1ff9c6af290424f827a699ec26d6a02ab1417bc58a437f6803c9dae108b8721c"
+}

@@ -1,0 +1,790 @@
+{
+  "created_utc": "2026-10-19T10:18:10.928636+00:00",
+  "code_sha256": "fd67d86d4cf5224116a72530c1cbdabf66582d5da6f056eb039418fe99b715a0",
+  "input_table_sha256": "2c894ee7af8d1c3a5f62ba19c6921265b4bef5de9f84291394d441642b984746",
+  "records": [
+    {
+      "row_index": 1250,
+      "source_id": "1060188315963488640",
+      "kind": "DESI",
+      "wdid": "SDSS J110644.27+673708.6",
+      "source_url": "https://www.montrealwhitedwarfdatabase.org/WDs/SDSS%20J110644.27%2B673708.6/spect.SDSS%20J110644.27%2B673708.6.DESI_2022-05-09_031112.txt",
+      "raw_sha256": "0cc5e7bc4cbdf8c19e2b2e969e02aecf9fa0387e3298456343d4b20fa3b5f3af",
+      "flux_convention": "flambda",
+      "columns": [
+        "wavelength",
+        "flux",
+        "sigma",
+        "flag"
+      ],
+      "samples": 7781,
+      "visible_samples": 5875,
+      "visible_negative_samples": 347,
+      "largest_visible_step_A": 0.8000000000010914,
+      "normalization_median_5200_5500": 4.683241844177246,
+      "current_stored_Duv": 0.00549863326264,
+      "current_calibrated": "True",
+      "raw_spectrum_not_recalibrated_here": true,
+      "predeclared_feature_windows": [
+        {
+          "window_center_A": 4861,
+          "halfwidth_A": 80,
+          "finite_samples": 200,
+          "maximum_A": 4846.400000000283,
+          "maximum_flux_over_anchor": 2.1516186477177044,
+          "minimum_A": 4800.800000000273,
+          "minimum_flux_over_anchor": 0.5125229726303699
+        },
+        {
+          "window_center_A": 5577,
+          "halfwidth_A": 30,
+          "finite_samples": 75,
+          "maximum_A": 5579.20000000045,
+          "maximum_flux_over_anchor": 2.222972121281234,
+          "minimum_A": 5578.40000000045,
+          "minimum_flux_over_anchor": 0.12073284345418761
+        },
+        {
+          "window_center_A": 6563,
+          "halfwidth_A": 100,
+          "finite_samples": 250,
+          "maximum_A": 6478.400000000163,
+          "maximum_flux_over_anchor": 1.103849525580183,
+          "minimum_A": 6516.000000000172,
+          "minimum_flux_over_anchor": 0.3285319305562202
+        },
+        {
+          "window_center_A": 5890,
+          "halfwidth_A": 80,
+          "finite_samples": 200,
+          "maximum_A": 5810.4000000000115,
+          "maximum_flux_over_anchor": 2.112665822936892,
+          "minimum_A": 5816.800000000013,
+          "minimum_flux_over_anchor": -1.103651388234144
+        }
+      ],
+      "visible_nonpositive_error_samples": 0,
+      "visible_median_pixel_snr": 4.150447537137667,
+      "export_flag_values_counts": {
+        "1": 5875
+      },
+      "export_flag_semantics": "Not assumed to equal native DESI camera MASK; retained, not used to reject samples.",
+      "raw_mask_sensitivity": {
+        "definition": "Current F_lambda export before PS1 recalibration; compare retaining all signed finite samples with named window removal. No error distribution is inferred.",
+        "all_samples_duv": 0.004907226799112367,
+        "standard_five_sky_windows_duv": 0.004587933183576293,
+        "only_5577_34_pm8A_removed_duv": 0.004685191057325464,
+        "standard_windows_delta_uv": 0.0004074297822648935,
+        "only_5577_window_delta_uv": 0.00022213931495733918
+      },
+      "native_window_samples": [
+        {
+          "wavelength_A": 5565.600000000447,
+          "flux": 6.5030927658081055,
+          "sigma": 1.036310090618765
+        },
+        {
+          "wavelength_A": 5566.400000000447,
+          "flux": 5.748786449432373,
+          "sigma": 1.0387014300920259
+        },
+        {
+          "wavelength_A": 5567.200000000447,
+          "flux": 5.026712894439697,
+          "sigma": 1.0074488274147282
+        },
+        {
+          "wavelength_A": 5568.0000000004475,
+          "flux": 3.976144313812256,
+          "sigma": 1.0390076928545497
+        },
+        {
+          "wavelength_A": 5568.800000000448,
+          "flux": 3.622800827026367,
+          "sigma": 1.0366558409694993
+        },
+        {
+          "wavelength_A": 5569.600000000448,
+          "flux": 3.847226858139038,
+          "sigma": 1.0000851263012362
+        },
+        {
+          "wavelength_A": 5570.400000000448,
+          "flux": 4.774521827697754,
+          "sigma": 1.0662269791888128
+        },
+        {
+          "wavelength_A": 5571.200000000448,
+          "flux": 4.921545028686523,
+          "sigma": 0.9925043115319473
+        },
+        {
+          "wavelength_A": 5572.000000000448,
+          "flux": 4.417789936065674,
+          "sigma": 1.038676382392137
+        },
+        {
+          "wavelength_A": 5572.800000000449,
+          "flux": 7.0366740226745605,
+          "sigma": 1.0150882613412695
+        },
+        {
+          "wavelength_A": 5573.600000000449,
+          "flux": 4.893430709838867,
+          "sigma": 0.9944305685249528
+        },
+        {
+          "wavelength_A": 5574.400000000449,
+          "flux": 3.216439962387085,
+          "sigma": 1.0043564651964898
+        },
+        {
+          "wavelength_A": 5575.200000000449,
+          "flux": 5.857540130615234,
+          "sigma": 1.0814501945561905
+        },
+        {
+          "wavelength_A": 5576.000000000449,
+          "flux": 5.700566291809082,
+          "sigma": 1.035869436440576
+        },
+        {
+          "wavelength_A": 5576.8000000004495,
+          "flux": 5.064207553863525,
+          "sigma": 1.5294902961429488
+        },
+        {
+          "wavelength_A": 5577.60000000045,
+          "flux": 7.447020053863525,
+          "sigma": 5.000784414040192
+        },
+        {
+          "wavelength_A": 5578.40000000045,
+          "flux": 0.5654211044311523,
+          "sigma": 4.771148414601061
+        },
+        {
+          "wavelength_A": 5579.20000000045,
+          "flux": 10.41071605682373,
+          "sigma": 4.388720176658463
+        },
+        {
+          "wavelength_A": 5580.00000000045,
+          "flux": 8.16606616973877,
+          "sigma": 2.146105986888252
+        },
+        {
+          "wavelength_A": 5580.80000000045,
+          "flux": 6.147470951080322,
+          "sigma": 1.1488971228693954
+        },
+        {
+          "wavelength_A": 5581.600000000451,
+          "flux": 5.266119003295898,
+          "sigma": 1.075755892821075
+        },
+        {
+          "wavelength_A": 5582.400000000451,
+          "flux": 4.310730457305908,
+          "sigma": 1.0689059758272652
+        },
+        {
+          "wavelength_A": 5583.200000000451,
+          "flux": 4.985825061798096,
+          "sigma": 1.0302466823259668
+        },
+        {
+          "wavelength_A": 5584.000000000451,
+          "flux": 5.924180030822754,
+          "sigma": 1.0605553483525965
+        },
+        {
+          "wavelength_A": 5584.800000000451,
+          "flux": 5.047575950622559,
+          "sigma": 1.0163429409560503
+        },
+        {
+          "wavelength_A": 5585.6000000004515,
+          "flux": 5.385521411895752,
+          "sigma": 1.0188263547046745
+        },
+        {
+          "wavelength_A": 5586.400000000452,
+          "flux": 5.176766395568848,
+          "sigma": 1.012287021037428
+        },
+        {
+          "wavelength_A": 5587.200000000452,
+          "flux": 4.898837566375732,
+          "sigma": 1.0025483894687635
+        },
+        {
+          "wavelength_A": 5588.000000000452,
+          "flux": 4.866036415100098,
+          "sigma": 0.9708434177174293
+        },
+        {
+          "wavelength_A": 5588.800000000452,
+          "flux": 3.0376856327056885,
+          "sigma": 0.9414657164621267
+        }
+      ]
+    },
+    {
+      "row_index": 2714,
+      "source_id": "2163612727665972096",
+      "kind": "Gaia_XP",
+      "wdid": "Gaia DR3 2163612727665972096",
+      "source_url": "https://www.montrealwhitedwarfdatabase.org/WDs/Gaia%20DR3%202163612727665972096/spect.Gaia%20DR3%202163612727665972096.XP.txt",
+      "raw_sha256": "5f0e90fc558f679a7f91b2312dc0cdc6d0d6b10a605be2c0fb710ce294b91371",
+      "flux_convention": "flambda",
+      "columns": [
+        "wavelength",
+        "flux"
+      ],
+      "samples": 361,
+      "visible_samples": 259,
+      "visible_negative_samples": 0,
+      "largest_visible_step_A": 26.570000000001528,
+      "normalization_median_5200_5500": 2.30532e-18,
+      "current_stored_Duv": -0.0101558059021,
+      "current_calibrated": "False",
+      "raw_spectrum_not_recalibrated_here": true,
+      "predeclared_feature_windows": [
+        {
+          "window_center_A": 4861,
+          "halfwidth_A": 80,
+          "finite_samples": 10,
+          "maximum_A": 4853.69,
+          "maximum_flux_over_anchor": 2.422774278625093,
+          "minimum_A": 4932.35,
+          "minimum_flux_over_anchor": 1.5385412871098159
+        },
+        {
+          "window_center_A": 5577,
+          "halfwidth_A": 30,
+          "finite_samples": 3,
+          "maximum_A": 5591.27,
+          "maximum_flux_over_anchor": 1.0438377318550136,
+          "minimum_A": 5555.43,
+          "minimum_flux_over_anchor": 0.9689891208161991
+        },
+        {
+          "window_center_A": 6563,
+          "halfwidth_A": 100,
+          "finite_samples": 9,
+          "maximum_A": 6566.39,
+          "maximum_flux_over_anchor": 2.695669147884025,
+          "minimum_A": 6482.48,
+          "minimum_flux_over_anchor": 0.8915378342269186
+        },
+        {
+          "window_center_A": 5890,
+          "halfwidth_A": 80,
+          "finite_samples": 9,
+          "maximum_A": 5962.62,
+          "maximum_flux_over_anchor": 1.0281783006263774,
+          "minimum_A": 5811.21,
+          "minimum_flux_over_anchor": 0.8640969583398401
+        }
+      ]
+    },
+    {
+      "row_index": 2930,
+      "source_id": "2002597083798483200",
+      "kind": "Gaia_XP",
+      "wdid": "Gaia DR3 2002597083798483200",
+      "source_url": "https://www.montrealwhitedwarfdatabase.org/WDs/Gaia%20DR3%202002597083798483200/spect.Gaia%20DR3%202002597083798483200.XP.txt",
+      "raw_sha256": "92e6863ba3134be99435dd613430eafb4f9168b8197320975e73e665a3fb5409",
+      "flux_convention": "flambda",
+      "columns": [
+        "wavelength",
+        "flux"
+      ],
+      "samples": 361,
+      "visible_samples": 259,
+      "visible_negative_samples": 0,
+      "largest_visible_step_A": 26.570000000001528,
+      "normalization_median_5200_5500": 9.66484e-19,
+      "current_stored_Duv": -0.0100007903313,
+      "current_calibrated": "False",
+      "raw_spectrum_not_recalibrated_here": true,
+      "predeclared_feature_windows": [
+        {
+          "window_center_A": 4861,
+          "halfwidth_A": 80,
+          "finite_samples": 10,
+          "maximum_A": 4838.11,
+          "maximum_flux_over_anchor": 2.0360088734009048,
+          "minimum_A": 4932.35,
+          "minimum_flux_over_anchor": 1.1844479577520166
+        },
+        {
+          "window_center_A": 5577,
+          "halfwidth_A": 30,
+          "finite_samples": 3,
+          "maximum_A": 5591.27,
+          "maximum_flux_over_anchor": 0.9532263338037671,
+          "minimum_A": 5555.43,
+          "minimum_flux_over_anchor": 0.7777293778272584
+        },
+        {
+          "window_center_A": 6563,
+          "halfwidth_A": 100,
+          "finite_samples": 9,
+          "maximum_A": 6587.53,
+          "maximum_flux_over_anchor": 3.197714602621461,
+          "minimum_A": 6482.48,
+          "minimum_flux_over_anchor": 0.43376920880221503
+        },
+        {
+          "window_center_A": 5890,
+          "halfwidth_A": 80,
+          "finite_samples": 9,
+          "maximum_A": 5962.62,
+          "maximum_flux_over_anchor": 0.86359629336854,
+          "minimum_A": 5848.7,
+          "minimum_flux_over_anchor": 0.5542119683305673
+        }
+      ]
+    },
+    {
+      "row_index": 3004,
+      "source_id": "3688869246424920448",
+      "kind": "DESI",
+      "wdid": "Gaia DR3 3688869246424920448",
+      "source_url": "https://www.montrealwhitedwarfdatabase.org/WDs/Gaia%20DR3%203688869246424920448/spect.Gaia%20DR3%203688869246424920448.DESI_2022-02-12_104117.txt",
+      "raw_sha256": "1c221fc47414b2ce9a82f0766b54db4ad44d5b6e98d3fbf1701e4b06a013bdce",
+      "flux_convention": "flambda",
+      "columns": [
+        "wavelength",
+        "flux",
+        "sigma",
+        "flag"
+      ],
+      "samples": 7781,
+      "visible_samples": 5875,
+      "visible_negative_samples": 96,
+      "largest_visible_step_A": 0.8000000000010914,
+      "normalization_median_5200_5500": 2.79642391204834,
+      "current_stored_Duv": 0.00259340065737,
+      "current_calibrated": "False",
+      "raw_spectrum_not_recalibrated_here": true,
+      "predeclared_feature_windows": [
+        {
+          "window_center_A": 4861,
+          "halfwidth_A": 80,
+          "finite_samples": 200,
+          "maximum_A": 4904.0000000002965,
+          "maximum_flux_over_anchor": 1.6716483139472824,
+          "minimum_A": 4819.200000000277,
+          "minimum_flux_over_anchor": 0.7192641826466453
+        },
+        {
+          "window_center_A": 5577,
+          "halfwidth_A": 30,
+          "finite_samples": 75,
+          "maximum_A": 5579.20000000045,
+          "maximum_flux_over_anchor": 3.0660032882452906,
+          "minimum_A": 5580.00000000045,
+          "minimum_flux_over_anchor": -0.31264975634859493
+        },
+        {
+          "window_center_A": 6563,
+          "halfwidth_A": 100,
+          "finite_samples": 250,
+          "maximum_A": 6489.600000000166,
+          "maximum_flux_over_anchor": 0.8548062537364486,
+          "minimum_A": 6606.400000000192,
+          "minimum_flux_over_anchor": 0.19894666252651963
+        },
+        {
+          "window_center_A": 5890,
+          "halfwidth_A": 80,
+          "finite_samples": 200,
+          "maximum_A": 5846.40000000002,
+          "maximum_flux_over_anchor": 1.583565491908468,
+          "minimum_A": 5891.20000000003,
+          "minimum_flux_over_anchor": -0.08788158028457883
+        }
+      ],
+      "visible_nonpositive_error_samples": 0,
+      "visible_median_pixel_snr": 5.304215119999697,
+      "export_flag_values_counts": {
+        "1": 5875
+      },
+      "export_flag_semantics": "Not assumed to equal native DESI camera MASK; retained, not used to reject samples.",
+      "raw_mask_sensitivity": {
+        "definition": "Current F_lambda export before PS1 recalibration; compare retaining all signed finite samples with named window removal. No error distribution is inferred.",
+        "all_samples_duv": 0.0027335172052874125,
+        "standard_five_sky_windows_duv": 0.0025934006573690707,
+        "only_5577_34_pm8A_removed_duv": 0.0026852234390384415,
+        "standard_windows_delta_uv": 0.00015050334591835702,
+        "only_5577_window_delta_uv": 6.011797483091505e-05
+      },
+      "native_window_samples": [
+        {
+          "wavelength_A": 5565.600000000447,
+          "flux": 3.0554866790771484,
+          "sigma": 0.43484932873658544
+        },
+        {
+          "wavelength_A": 5566.400000000447,
+          "flux": 3.120144844055176,
+          "sigma": 0.43646238119003716
+        },
+        {
+          "wavelength_A": 5567.200000000447,
+          "flux": 2.393937826156616,
+          "sigma": 0.4314031639795433
+        },
+        {
+          "wavelength_A": 5568.0000000004475,
+          "flux": 2.1997978687286377,
+          "sigma": 0.4312215051977801
+        },
+        {
+          "wavelength_A": 5568.800000000448,
+          "flux": 2.869791030883789,
+          "sigma": 0.4312207787175035
+        },
+        {
+          "wavelength_A": 5569.600000000448,
+          "flux": 2.648751735687256,
+          "sigma": 0.4247208916955041
+        },
+        {
+          "wavelength_A": 5570.400000000448,
+          "flux": 2.465263843536377,
+          "sigma": 0.43412998447974993
+        },
+        {
+          "wavelength_A": 5571.200000000448,
+          "flux": 2.8121225833892822,
+          "sigma": 0.4246557689934714
+        },
+        {
+          "wavelength_A": 5572.000000000448,
+          "flux": 1.9659137725830078,
+          "sigma": 0.41544977008569106
+        },
+        {
+          "wavelength_A": 5572.800000000449,
+          "flux": 2.37294340133667,
+          "sigma": 0.42995204218155897
+        },
+        {
+          "wavelength_A": 5573.600000000449,
+          "flux": 2.511556625366211,
+          "sigma": 0.4310112087355268
+        },
+        {
+          "wavelength_A": 5574.400000000449,
+          "flux": 2.4111030101776123,
+          "sigma": 0.41735307991041015
+        },
+        {
+          "wavelength_A": 5575.200000000449,
+          "flux": 2.697330951690674,
+          "sigma": 0.41736446756033807
+        },
+        {
+          "wavelength_A": 5576.000000000449,
+          "flux": 2.263662576675415,
+          "sigma": 0.43027971394937936
+        },
+        {
+          "wavelength_A": 5576.8000000004495,
+          "flux": 2.583693027496338,
+          "sigma": 0.4641492349954727
+        },
+        {
+          "wavelength_A": 5577.60000000045,
+          "flux": 2.063802480697632,
+          "sigma": 0.6887328413110327
+        },
+        {
+          "wavelength_A": 5578.40000000045,
+          "flux": 2.029179334640503,
+          "sigma": 2.164563092317397
+        },
+        {
+          "wavelength_A": 5579.20000000045,
+          "flux": 8.573844909667969,
+          "sigma": 2.3208999569302198
+        },
+        {
+          "wavelength_A": 5580.00000000045,
+          "flux": -0.8743012547492981,
+          "sigma": 1.9510965696929004
+        },
+        {
+          "wavelength_A": 5580.80000000045,
+          "flux": 3.727917194366455,
+          "sigma": 0.8650206078445228
+        },
+        {
+          "wavelength_A": 5581.600000000451,
+          "flux": 1.9784431457519531,
+          "sigma": 0.4596525782130514
+        },
+        {
+          "wavelength_A": 5582.400000000451,
+          "flux": 2.4575908184051514,
+          "sigma": 0.4458480929871633
+        },
+        {
+          "wavelength_A": 5583.200000000451,
+          "flux": 2.883997917175293,
+          "sigma": 0.4340855339374608
+        },
+        {
+          "wavelength_A": 5584.000000000451,
+          "flux": 2.5324368476867676,
+          "sigma": 0.4226048040145587
+        },
+        {
+          "wavelength_A": 5584.800000000451,
+          "flux": 2.3713600635528564,
+          "sigma": 0.41696925359684417
+        },
+        {
+          "wavelength_A": 5585.6000000004515,
+          "flux": 2.0991249084472656,
+          "sigma": 0.428754522016404
+        },
+        {
+          "wavelength_A": 5586.400000000452,
+          "flux": 2.0711283683776855,
+          "sigma": 0.4260507805474571
+        },
+        {
+          "wavelength_A": 5587.200000000452,
+          "flux": 2.5424129962921143,
+          "sigma": 0.4142272469598235
+        },
+        {
+          "wavelength_A": 5588.000000000452,
+          "flux": 2.541140556335449,
+          "sigma": 0.41456378890470824
+        },
+        {
+          "wavelength_A": 5588.800000000452,
+          "flux": 2.7829911708831787,
+          "sigma": 0.40858645907979024
+        }
+      ]
+    },
+    {
+      "row_index": 8376,
+      "source_id": "5078976609103251456",
+      "kind": "Gaia_XP",
+      "wdid": "Gaia DR3 5078976609103251456",
+      "source_url": "https://www.montrealwhitedwarfdatabase.org/WDs/Gaia%20DR3%205078976609103251456/spect.Gaia%20DR3%205078976609103251456.XP.txt",
+      "raw_sha256": "67a842fd256a3ec814ec522c921953a60224005ca8726091a06276ee38c0d010",
+      "flux_convention": "flambda",
+      "columns": [
+        "wavelength",
+        "flux"
+      ],
+      "samples": 361,
+      "visible_samples": 259,
+      "visible_negative_samples": 0,
+      "largest_visible_step_A": 26.570000000001528,
+      "normalization_median_5200_5500": 3.7518e-18,
+      "current_stored_Duv": -0.0104603776979,
+      "current_calibrated": "False",
+      "raw_spectrum_not_recalibrated_here": true,
+      "predeclared_feature_windows": [
+        {
+          "window_center_A": 4861,
+          "halfwidth_A": 80,
+          "finite_samples": 10,
+          "maximum_A": 4885.01,
+          "maximum_flux_over_anchor": 2.7478810171117862,
+          "minimum_A": 4791.67,
+          "minimum_flux_over_anchor": 1.669465323311477
+        },
+        {
+          "window_center_A": 5577,
+          "halfwidth_A": 30,
+          "finite_samples": 3,
+          "maximum_A": 5555.43,
+          "maximum_flux_over_anchor": 0.826629884322192,
+          "minimum_A": 5591.27,
+          "minimum_flux_over_anchor": 0.7295831334292872
+        },
+        {
+          "window_center_A": 6563,
+          "halfwidth_A": 100,
+          "finite_samples": 9,
+          "maximum_A": 6587.53,
+          "maximum_flux_over_anchor": 2.8091849245695397,
+          "minimum_A": 6482.48,
+          "minimum_flux_over_anchor": 0.5950716989178527
+        },
+        {
+          "window_center_A": 5890,
+          "halfwidth_A": 80,
+          "finite_samples": 9,
+          "maximum_A": 5848.7,
+          "maximum_flux_over_anchor": 1.0067327682712297,
+          "minimum_A": 5962.62,
+          "minimum_flux_over_anchor": 0.8843035343035343
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "No new formal line detection, equivalent width, or pixel-covariance likelihood.",
+    "Gaia variability classifier shares Gaia observations with XP; not independent photons.",
+    "NOT_AVAILABLE does not establish nonvariability; classifier scores are not posterior probabilities.",
+    "Local continuum normalization is for display only, not an absolute calibration."
+  ],
+  "gaia_official_rows": [
+    {
+      "source_id": "1060188315963488640",
+      "ra": "166.68395309126342",
+      "dec": "67.6190875744254",
+      "ref_epoch": "2016.0",
+      "pmra": "-42.98929372560257",
+      "pmdec": "19.77829003425928",
+      "phot_g_mean_mag": "19.78886",
+      "bp_rp": "0.6355305",
+      "ruwe": "1.032954",
+      "phot_variable_flag": "NOT_AVAILABLE",
+      "has_xp_continuous": "true",
+      "classifier_name": "",
+      "best_class_name": "",
+      "best_class_score": ""
+    },
+    {
+      "source_id": "1245262790370992256",
+      "ra": "211.12232477016175",
+      "dec": "17.399908630673828",
+      "ref_epoch": "2016.0",
+      "pmra": "-25.189289946555284",
+      "pmdec": "16.542096745473927",
+      "phot_g_mean_mag": "17.083405",
+      "bp_rp": "0.39891052",
+      "ruwe": "0.9513137",
+      "phot_variable_flag": "VARIABLE",
+      "has_xp_continuous": "true",
+      "classifier_name": "nTransits:5+",
+      "best_class_name": "CV",
+      "best_class_score": "0.6277259"
+    },
+    {
+      "source_id": "2002597083798483200",
+      "ra": "344.4063535579808",
+      "dec": "54.27206687248386",
+      "ref_epoch": "2016.0",
+      "pmra": "61.97271705118999",
+      "pmdec": "-28.547197970898708",
+      "phot_g_mean_mag": "18.815844",
+      "bp_rp": "0.5829048",
+      "ruwe": "1.1190361",
+      "phot_variable_flag": "NOT_AVAILABLE",
+      "has_xp_continuous": "true",
+      "classifier_name": "",
+      "best_class_name": "",
+      "best_class_score": ""
+    },
+    {
+      "source_id": "2163612727665972096",
+      "ra": "316.01953341202517",
+      "dec": "46.52047892704411",
+      "ref_epoch": "2016.0",
+      "pmra": "6.387180999270591",
+      "pmdec": "-46.211258724538936",
+      "phot_g_mean_mag": "17.704508",
+      "bp_rp": "0.5749283",
+      "ruwe": "0.9900869",
+      "phot_variable_flag": "NOT_AVAILABLE",
+      "has_xp_continuous": "true",
+      "classifier_name": "",
+      "best_class_name": "",
+      "best_class_score": ""
+    },
+    {
+      "source_id": "2629980411471669632",
+      "ra": "337.25992537676655",
+      "dec": "-0.9857603413776405",
+      "ref_epoch": "2016.0",
+      "pmra": "40.221994704463526",
+      "pmdec": "-7.699072162879824",
+      "phot_g_mean_mag": "20.01098",
+      "bp_rp": "0.8167763",
+      "ruwe": "1.0042804",
+      "phot_variable_flag": "NOT_AVAILABLE",
+      "has_xp_continuous": "false",
+      "classifier_name": "",
+      "best_class_name": "",
+      "best_class_score": ""
+    },
+    {
+      "source_id": "2802900781266410112",
+      "ra": "9.801443441243782",
+      "dec": "22.931481590297707",
+      "ref_epoch": "2016.0",
+      "pmra": "-9.126398258777314",
+      "pmdec": "-48.80367906099765",
+      "phot_g_mean_mag": "20.453417",
+      "bp_rp": "0.6167164",
+      "ruwe": "0.9630319",
+      "phot_variable_flag": "NOT_AVAILABLE",
+      "has_xp_continuous": "false",
+      "classifier_name": "",
+      "best_class_name": "",
+      "best_class_score": ""
+    },
+    {
+      "source_id": "3688869246424920448",
+      "ra": "193.32517290261916",
+      "dec": "-0.6922735667867415",
+      "ref_epoch": "2016.0",
+      "pmra": "-121.12168075726345",
+      "pmdec": "-62.27353530733912",
+      "phot_g_mean_mag": "20.46916",
+      "bp_rp": "0.2983799",
+      "ruwe": "0.9297707",
+      "phot_variable_flag": "NOT_AVAILABLE",
+      "has_xp_continuous": "false",
+      "classifier_name": "",
+      "best_class_name": "",
+      "best_class_score": ""
+    },
+    {
+      "source_id": "4573582236809330432",
+      "ra": "259.82404863449625",
+      "dec": "25.694211117972905",
+      "ref_epoch": "2016.0",
+      "pmra": "-4.828780462709742",
+      "pmdec": "3.7790327358603686",
+      "phot_g_mean_mag": "20.866257",
+      "bp_rp": "0.85873795",
+      "ruwe": "0.93233865",
+      "phot_variable_flag": "NOT_AVAILABLE",
+      "has_xp_continuous": "false",
+      "classifier_name": "",
+      "best_class_name": "",
+      "best_class_score": ""
+    },
+    {
+      "source_id": "5078976609103251456",
+      "ra": "43.90872625452659",
+      "dec": "-22.7841796423204",
+      "ref_epoch": "2016.0",
+      "pmra": "43.856943426205106",
+      "pmdec": "-7.712281698877488",
+      "phot_g_mean_mag": "17.160236",
+      "bp_rp": "0.31957245",
+      "ruwe": "1.0263027",
+      "phot_variable_flag": "VARIABLE",
+      "has_xp_continuous": "true",
+      "classifier_name": "nTransits:5+",
+      "best_class_name": "CV",
+      "best_class_score": "0.583544"
+    }
+  ]
+}

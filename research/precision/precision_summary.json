@@ -1,0 +1,135 @@
+{
+  "analysis_date_utc": "2026-10-18",
+  "original_screen_commit": "73287c8ed16d66230381b1e0b9a6d9f75dea086b",
+  "script_sha256": "bc63f1fce048b608950cf905dd99a478de75c38391be80673891404f592bdc9d",
+  "environment": {
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "pandas": "2.2.3",
+    "astropy": "8.0.2",
+    "colour-science": "0.4.7",
+    "speclite": "1.0.0"
+  },
+  "continuous_geometry": {
+    "q_definition": "1000 K / T",
+    "q_interval": [
+      0,
+      1
+    ],
+    "minimizer_xatol": 1e-15,
+    "RJ_endpoint_q_tolerance": 1e-12,
+    "second_radiation_constant_m_K": 0.014387768775039337,
+    "CMF_definition": "same committed CIE 1931 2-degree 360--830 nm, 1 nm table as frozen pipeline",
+    "endpoint_signed_duv": "undefined; blank in CSV, retain unsigned distance and projection_class"
+  },
+  "screen": {
+    "source_file": "results/all_spectra_screen.csv.gz",
+    "source_sha256": "92ccafd605f1bcd469dc997ad946980529aa00dab8bb5bcc2551e0f93375ef28",
+    "input_records": 9902,
+    "evaluated_records": 9868,
+    "nonfinite_or_failed_records_not_projected": 34,
+    "maximum_absolute_distance_change": 3.780230123523224e-05,
+    "median_grid_distance_excess": 6.002107545200787e-08,
+    "projection_class_counts": {
+      "interior": 9685,
+      "rayleigh_jeans_endpoint": 178,
+      "low_temperature_endpoint": 5
+    },
+    "eligible_projection_class_counts": {
+      "interior": 9011,
+      "rayleigh_jeans_endpoint": 12
+    },
+    "interior_sign_changes": 48,
+    "eligible_interior_sign_changes": 47,
+    "maximum_old_abs_duv_with_sign_change": 5.96676347956e-05,
+    "maximum_continuous_abs_duv_with_sign_change": 5.385757085157909e-05,
+    "threshold_crossings": {
+      "0.001": 0,
+      "0.003": 0,
+      "0.005": 0,
+      "0.006": 0,
+      "0.01": 0
+    }
+  },
+  "headline_precision": [
+    {
+      "candidate": "J0913+4434",
+      "source_id": "818833831355548928",
+      "raw_sha256": "ad1fece9a566d7156fbc3e285002654ea8d4c6a297944fe3ce143542fb2fecd1",
+      "source_url": "https://www.montrealwhitedwarfdatabase.org/WDs/Gaia%20DR2%20818833831355548928/spect.Gaia%20DR2%20818833831355548928.DESI_2021-11-01_124231.txt",
+      "photometry_system": "panstarrs",
+      "nominal_duv": 0.019009802306575094,
+      "nominal_hex": "#F1FFC9",
+      "continuous_duv": 0.019009782489562404,
+      "continuous_temperature_K": 5408.21555030565,
+      "grid_distance_excess": 1.9817012690548363e-08,
+      "no_sky_mask_delta_duv": 0.0006058781581577966,
+      "no_sky_mask_uv_displacement": 0.0006268786987997338,
+      "no_sky_mask_hex": "#F0FFC8",
+      "exact_linear_product_duv": 0.019022322942854393,
+      "exact_linear_product_hex": "#F1FFC9",
+      "exact_linear_product_uv_displacement": 1.5174864893094036e-05
+    },
+    {
+      "candidate": "J0429-0354",
+      "source_id": "3204436719718449280",
+      "raw_sha256": "623d0bafb7aa178b9ea858f5539e375a58d9e26339e840293e130dc42abf1cb1",
+      "source_url": "https://www.montrealwhitedwarfdatabase.org/WDs/Gaia%20DR2%203204436719718449280/spect.Gaia%20DR2%203204436719718449280.DESI_2022-02-19_022934.txt",
+      "photometry_system": "panstarrs",
+      "nominal_duv": 0.012809293909821462,
+      "nominal_hex": "#F8FFDC",
+      "continuous_duv": 0.012809223760325889,
+      "continuous_temperature_K": 5660.604038953109,
+      "grid_distance_excess": 7.014949557349048e-08,
+      "no_sky_mask_delta_duv": -0.00019035438834868676,
+      "no_sky_mask_uv_displacement": 0.0002198301812595136,
+      "no_sky_mask_hex": "#F8FFDC",
+      "exact_linear_product_duv": 0.012812914938021442,
+      "exact_linear_product_hex": "#F8FFDC",
+      "exact_linear_product_uv_displacement": 4.223237026455293e-06
+    },
+    {
+      "candidate": "J1329+0033",
+      "source_id": "3711047662972690688",
+      "raw_sha256": "73121a77e0ee43e68a053145c540ee92fd93aa2ab26dadaf4d6b1335c75c0ce4",
+      "source_url": "https://www.montrealwhitedwarfdatabase.org/WDs/Gaia%20DR2%203711047662972690688/spect.Gaia%20DR2%203711047662972690688.DESI_2022-01-28_121455.txt",
+      "photometry_system": "panstarrs",
+      "nominal_duv": -0.02265219560483689,
+      "nominal_hex": "#FFC1CF",
+      "continuous_duv": -0.02265214977844054,
+      "continuous_temperature_K": 4489.93320275394,
+      "grid_distance_excess": 4.5826396347786735e-08,
+      "no_sky_mask_delta_duv": 0.00023251781678781253,
+      "no_sky_mask_uv_displacement": 0.0004774985024970057,
+      "no_sky_mask_hex": "#FFC2D0",
+      "exact_linear_product_duv": -0.022628417057478253,
+      "exact_linear_product_hex": "#FFC1CF",
+      "exact_linear_product_uv_displacement": 2.930198311893703e-05
+    },
+    {
+      "candidate": "J1323-0129",
+      "source_id": "3638333660492606976",
+      "raw_sha256": "664326da25fc723a46f4589e0f542259ecdf02a284331e3c6433bc03fd7361e7",
+      "source_url": "https://www.montrealwhitedwarfdatabase.org/WDs/Gaia%20DR2%203638333660492606976/spect.Gaia%20DR2%203638333660492606976.DESI_2021-06-05_033745.txt",
+      "photometry_system": "panstarrs",
+      "nominal_duv": 0.023481853338514127,
+      "nominal_hex": "#FFE86A",
+      "continuous_duv": 0.023481853201692326,
+      "continuous_temperature_K": 3846.663157000901,
+      "grid_distance_excess": 1.3682180041718617e-10,
+      "no_sky_mask_delta_duv": 0.00035323978126782993,
+      "no_sky_mask_uv_displacement": 0.00046517714480871525,
+      "no_sky_mask_hex": "#FFE96A",
+      "exact_linear_product_duv": 0.023484026419296266,
+      "exact_linear_product_hex": "#FFE96A",
+      "exact_linear_product_uv_displacement": 4.349459418076161e-06
+    }
+  ],
+  "interpretation": [
+    "The original snapshot and representative results are unchanged.",
+    "Numerical differences and synthetic stress tests are not additional observational errors or new detections.",
+    "Rejected-native-support fractions integrate CMFs over masked pixel cells, not unknown missing stellar flux.",
+    "The synthetic 140 A gaps remove available data only to test the screening assumptions.",
+    "Joint-knot integration assumes piecewise-linear flux between remaining samples; it cannot recover missing astrophysical structure."
+  ]
+}

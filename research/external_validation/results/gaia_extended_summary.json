@@ -1,0 +1,19 @@
+{
+  "n_shortlisted_targets": 27,
+  "n_official_source_ids_returned": 27,
+  "n_distinct_gaia_rows_in_cones": 30,
+  "n_with_catalogued_neighbours": 3,
+  "n_with_ruwe_ge1p4": 0,
+  "n_legacy_positional_aliases": 1,
+  "n_with_gaia_variable_flag": 1,
+  "statement": "These are data-quality/identity diagnostics for an exploratory shortlist, not confirmed discoveries or a complete clean sample.",
+  "limitations": [
+    "Gaia DR3 cones miss unresolved companions, uncatalogued galaxies and objects fainter than Gaia's local completeness.",
+    "No Gaia catalogue neighbour does not establish uncontaminated ground-based or XP spectra.",
+    "Blended-transit ratios describe flags; they are not contaminating-flux fractions.",
+    "NOT_AVAILABLE variability status and has_epoch_photometry=false do not establish a constant star.",
+    "RUWE 1.4 is a heuristic audit threshold; the white dwarf's colour anomaly is not confirmed or refuted by it.",
+    "The BP/RP excess factor is retained without cutting on it: unusual white dwarf spectral structure can itself affect this diagnostic.",
+    "Linear epoch propagation ignores parallax and radial-velocity perspective terms."
+  ]
+}

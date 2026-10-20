@@ -1,0 +1,197 @@
+{
+  "source_id": "3711047662972690688",
+  "WDJname": "WDJ132942.69+003336.60",
+  "desi_targetid": "39627800201661952",
+  "NIGHT": "20220127",
+  "EXPID": 120460,
+  "FIBER": 1226,
+  "url": "https://cygnus.astro.warwick.ac.uk/phsdaj/WhiteDwarfs/J1329/WDJ132942.69+003336.60/WDJ132942.69+003336.60_DESI_DR1_spectra.tar.gz",
+  "source_page": "https://cygnus.astro.warwick.ac.uk/phsdaj/WhiteDwarfs/J1329/WDJ132942.69+003336.60/index.html",
+  "retrieved_utc_date": "2026-10-18",
+  "archive_sha256": "9a4e795013e481208622e026e231203cab810d699c9973ebaa5b0f836b4f5b19",
+  "archive_bytes": 324919,
+  "columns": [
+    "vacuum wavelength [A]",
+    "F_lambda [1e-17 erg s^-1 cm^-2 A^-1]",
+    "flux uncertainty",
+    "inverse variance",
+    "original DESI pixel MASK"
+  ],
+  "members_used": [
+    {
+      "member": "WDJ132942.69+003336.60_DESI_DR1_20220127_00120460_1226-b.dat",
+      "sha256": "33a8e966ba2896e0525032c313892fbc869665a3e6166070ebcd88573b23c01d",
+      "rows": 2751,
+      "masked_pixels": 4,
+      "zero_ivar_pixels": 4
+    },
+    {
+      "member": "WDJ132942.69+003336.60_DESI_DR1_20220127_00120460_1226-r.dat",
+      "sha256": "5f3d0527f408193e406482900a15882ba4ec504421a30fda69b90eaf4d99b2ca",
+      "rows": 2326,
+      "masked_pixels": 7,
+      "zero_ivar_pixels": 7
+    },
+    {
+      "member": "WDJ132942.69+003336.60_DESI_DR1_20220127_00120460_1226-z.dat",
+      "sha256": "74985354e0ac795d424a0551e3fa6aece288ceba95ccd4cb37ef303205c0e9d0",
+      "rows": 2881,
+      "masked_pixels": 18,
+      "zero_ivar_pixels": 18
+    },
+    {
+      "member": "WDJ132942.69+003336.60_DESI_DR1_20220311_00125840_1225-b.dat",
+      "sha256": "7f7558b7ff49e838d640ce69824b45dfbc624a004f7cf76e771cf130e9f2537a",
+      "rows": 2751,
+      "masked_pixels": 0,
+      "zero_ivar_pixels": 0
+    },
+    {
+      "member": "WDJ132942.69+003336.60_DESI_DR1_20220311_00125840_1225-r.dat",
+      "sha256": "a7ae0342447f058e84e03b526c5018aa825e15099ee1a71f08877463c9a8daa5",
+      "rows": 2326,
+      "masked_pixels": 21,
+      "zero_ivar_pixels": 21
+    },
+    {
+      "member": "WDJ132942.69+003336.60_DESI_DR1_20220311_00125840_1225-z.dat",
+      "sha256": "4242cfac2f98fdfe8df96dcdb91472bff5aa178362052b8a028aff8a99cb8b8d",
+      "rows": 2881,
+      "masked_pixels": 2881,
+      "zero_ivar_pixels": 2881
+    }
+  ],
+  "selected_rows_path": "sources/j1329_desi_20220127_swan_rows.npz",
+  "selected_rows_sha256": "02b0675ff20d0c3e3776d7b02706f2c9bffd93d08763f4f84d951466910dfad4",
+  "second_epoch_direct_npz_sha256": "a8b60055c2fc39dd8d8a3145778dfbbbf9459b18a3e944ffe03f728f0817c192",
+  "second_epoch_cframe_manifest_sha256": "b312d526cf08332752c428adeb9976acccc74d9af1e36ff282dac83fe52a3d07",
+  "exposure_inventory_sha256": "5c8167bf1c1fe4c7350ec124de315a3883f8afe1ef284d7b15c861126d36dc61",
+  "identity_exposure_rows": [
+    {
+      "source_id": "3711047662972690688",
+      "WDJname": "WDJ132942.69+003336.60",
+      "NIGHT": "20220127",
+      "EXPOSURE": "120460",
+      "FIBER": "1226",
+      "TARGETID": "39627800201661952",
+      "MJD": "59607.5103631",
+      "some_valid_pixels_in_each_arm": "True",
+      "fractionMasked_B": "0.0014540167211922",
+      "fractionMasked_R": "0.0030094582975064",
+      "fractionMasked_Z": "0.00624783061437",
+      "cframe_b_url": "https://data.desi.lbl.gov/public/dr1/spectro/redux/iron/exposures/20220127/00120460/cframe-b2-00120460.fits.gz",
+      "cframe_r_url": "https://data.desi.lbl.gov/public/dr1/spectro/redux/iron/exposures/20220127/00120460/cframe-r2-00120460.fits.gz",
+      "cframe_z_url": "https://data.desi.lbl.gov/public/dr1/spectro/redux/iron/exposures/20220127/00120460/cframe-z2-00120460.fits.gz"
+    },
+    {
+      "source_id": "3711047662972690688",
+      "WDJname": "WDJ132942.69+003336.60",
+      "NIGHT": "20220311",
+      "EXPOSURE": "125840",
+      "FIBER": "1225",
+      "TARGETID": "39627800201661952",
+      "MJD": "59650.41160872",
+      "some_valid_pixels_in_each_arm": "False",
+      "fractionMasked_B": "0.0",
+      "fractionMasked_R": "0.0090283748925193",
+      "fractionMasked_Z": "1.0",
+      "cframe_b_url": "https://data.desi.lbl.gov/public/dr1/spectro/redux/iron/exposures/20220311/00125840/cframe-b2-00125840.fits.gz",
+      "cframe_r_url": "https://data.desi.lbl.gov/public/dr1/spectro/redux/iron/exposures/20220311/00125840/cframe-r2-00125840.fits.gz",
+      "cframe_z_url": "https://data.desi.lbl.gov/public/dr1/spectro/redux/iron/exposures/20220311/00125840/cframe-z2-00125840.fits.gz"
+    }
+  ],
+  "second_epoch_ascii_vs_direct_cframe": [
+    {
+      "arm": "b",
+      "column": "wave_A",
+      "maximum_absolute_difference": 5.002220859751105e-10,
+      "maximum_relative_difference_nonzero": 8.626898557792967e-14,
+      "matches_published_rounding": true
+    },
+    {
+      "arm": "b",
+      "column": "flux",
+      "maximum_absolute_difference": 3.701934814515084e-05,
+      "maximum_relative_difference_nonzero": 4.807858762194448e-06,
+      "matches_published_rounding": true
+    },
+    {
+      "arm": "b",
+      "column": "ivar",
+      "maximum_absolute_difference": 4.999694824148193e-06,
+      "maximum_relative_difference_nonzero": 4.841285238820457e-06,
+      "matches_published_rounding": true
+    },
+    {
+      "arm": "b",
+      "column": "mask",
+      "maximum_absolute_difference": 0.0,
+      "maximum_relative_difference_nonzero": 0.0,
+      "matches_published_rounding": true
+    },
+    {
+      "arm": "r",
+      "column": "wave_A",
+      "maximum_absolute_difference": 4.2291503632441163e-10,
+      "maximum_relative_difference_nonzero": 5.551231706452643e-14,
+      "matches_published_rounding": true
+    },
+    {
+      "arm": "r",
+      "column": "flux",
+      "maximum_absolute_difference": 0.00023425292968681788,
+      "maximum_relative_difference_nonzero": 2.829396158723068e-06,
+      "matches_published_rounding": true
+    },
+    {
+      "arm": "r",
+      "column": "ivar",
+      "maximum_absolute_difference": 1.4311218262008651e-05,
+      "maximum_relative_difference_nonzero": 4.340613806507448e-06,
+      "matches_published_rounding": true
+    },
+    {
+      "arm": "r",
+      "column": "mask",
+      "maximum_absolute_difference": 0.0,
+      "maximum_relative_difference_nonzero": 0.0,
+      "matches_published_rounding": true
+    },
+    {
+      "arm": "z",
+      "column": "wave_A",
+      "maximum_absolute_difference": 5.238689482212067e-10,
+      "maximum_relative_difference_nonzero": 5.336453306792221e-14,
+      "matches_published_rounding": true
+    },
+    {
+      "arm": "z",
+      "column": "flux",
+      "maximum_absolute_difference": 4.289245605448855e-05,
+      "maximum_relative_difference_nonzero": 4.49758728628934e-06,
+      "matches_published_rounding": true
+    },
+    {
+      "arm": "z",
+      "column": "ivar",
+      "maximum_absolute_difference": 0.0,
+      "maximum_relative_difference_nonzero": 0.0,
+      "matches_published_rounding": true
+    },
+    {
+      "arm": "z",
+      "column": "mask",
+      "maximum_absolute_difference": 0.0,
+      "maximum_relative_difference_nonzero": 0.0,
+      "matches_published_rounding": true
+    }
+  ],
+  "comparison_tolerance": "Wavelength/flux/IVAR rtol=6e-6, atol=5e-6; MASK must be identical. ASCII flux/IVAR is rounded compared with binary FITS.",
+  "identity_basis": "Exact WDJname linked by Swan catalogue to Gaia ID; registered NIGHT/EXPID/FIBER match the published exposure inventory.",
+  "cautions": [
+    "Swan's published ASCII rows have rounded flux and IVAR. They are derived from DESI, not a second instrument or an independent spectrum.",
+    "This selected first-night archive includes the original masks, replacing the unverified MWDD flag in the shape comparison only.",
+    "The existing MWDD colour result is kept as a frozen reference; selecting original per-camera masks can change its shape slightly.",
+    "Flux uncertainty is provided by the archive authors from IVAR; the comparison calculation uses IVAR directly."
+  ]
+}

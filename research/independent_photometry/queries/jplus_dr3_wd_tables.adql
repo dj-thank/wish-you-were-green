@@ -1,0 +1,1 @@
+SELECT table_name,description FROM TAP_SCHEMA.tables WHERE table_name LIKE '%White%' OR table_name LIKE '%white%'

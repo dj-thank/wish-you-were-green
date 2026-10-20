@@ -1,0 +1,32 @@
+{
+  "candidate_count": 27,
+  "sdss_records": [
+    {
+      "source_id": "3638333660492606976",
+      "name": "Gaia DR2 3638333660492606976",
+      "row_index": 13,
+      "convention": "unresolved",
+      "direct_row_index": null,
+      "legacy_duv": "0.0226647687958",
+      "legacy_usable_screen": "True"
+    },
+    {
+      "source_id": "1542337839923130624",
+      "name": "PSO J186.4406+47.1036",
+      "row_index": 1612,
+      "convention": "flambda",
+      "direct_row_index": 9539,
+      "legacy_duv": "-0.0246432173496",
+      "legacy_usable_screen": "True"
+    },
+    {
+      "source_id": "1245262790370992256",
+      "name": "Gaia DR3 1245262790370992256",
+      "row_index": 8267,
+      "convention": "unresolved",
+      "direct_row_index": null,
+      "legacy_duv": "-0.011881354005",
+      "legacy_usable_screen": "True"
+    }
+  ]
+}

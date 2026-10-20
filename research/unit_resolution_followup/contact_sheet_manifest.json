@@ -1,0 +1,175 @@
+{
+  "pages": 39,
+  "entities": 613,
+  "newly_resolved_records": 613,
+  "previously_unavailable_entities": 115,
+  "display_bin_width_A": 40,
+  "negative_native_flux_retained": true,
+  "native_range_shown": true,
+  "visual_review_claim": "Image generation is not visual inspection. Only separately authored, SHA-bound reviewer notes count as viewed.",
+  "input_sha256": {
+    "research/unit_resolution_followup/newly_resolved_record_screen.csv.gz": "09e49dcba050cd63d08af7aa58234b7f93fa86b12085c627f5b9d06313cf77fe",
+    "research/unit_resolution_followup/compact_manifest.json": "7741636f106edfe7d89cbc22b35cdba5ab981fb96c071e916dfbf6fd8ce4bad4",
+    "research/unit_resolution_followup/overlay_registry.json": "c8d8f6960092d8cbe3a6f76f64bca07fbde2726680b33ea21de6a54537630865"
+  },
+  "index_sha256": "8083741224c89738d8a5a607a71e4d3c64619b07a2406c24e11bb383b17b82b8",
+  "curves_sha256": "f5ab2c4221b1c1be9ff32b9476aa3f17107d8f0fa329f9004d4f36a52956754c",
+  "files": [
+    {
+      "file": "contact_sheets/page_01.png",
+      "sha256": "72e6293335ac223923c135947477f7ef0723e1f35754be7c8e5ba762625f39ea"
+    },
+    {
+      "file": "contact_sheets/page_02.png",
+      "sha256": "089eb7a00548e5e4406f2726df587e7af9501af868908c03c28ed5a2662b0ea6"
+    },
+    {
+      "file": "contact_sheets/page_03.png",
+      "sha256": "76e52b88021a0dcdd843cd79df58b7dcaa471fd030a49bd7abd78bc9fc3901d5"
+    },
+    {
+      "file": "contact_sheets/page_04.png",
+      "sha256": "6b36cb4eb7d7e27c2bd1223f0c9f138c761354f16a14c33472cb84d243b776a5"
+    },
+    {
+      "file": "contact_sheets/page_05.png",
+      "sha256": "f747df69eca24360778908127a54e1e59e6062873aa9eecfb1ab6853bffb303f"
+    },
+    {
+      "file": "contact_sheets/page_06.png",
+      "sha256": "181d0adef5142f1b7953802204b9b80a3cc2508351a09f9e02cf77b84a432b3e"
+    },
+    {
+      "file": "contact_sheets/page_07.png",
+      "sha256": "bbd34f8e2a06974b51e54833c8a9bb0f338ac1a5dfcc2735cebfc4d116236969"
+    },
+    {
+      "file": "contact_sheets/page_08.png",
+      "sha256": "3344775002ae12ef6345ad631aadbce46d4b2f2103bba8a8a5115a616626a9df"
+    },
+    {
+      "file": "contact_sheets/page_09.png",
+      "sha256": "b0350b310df45bfdb28257178e13cb0b82d807d815c045c90ad5b26acb3976fe"
+    },
+    {
+      "file": "contact_sheets/page_10.png",
+      "sha256": "2604ede51188a96495b689e30a926f20a0804d007777088ebd2df5804bb1acde"
+    },
+    {
+      "file": "contact_sheets/page_11.png",
+      "sha256": "a52ee0c2ae1e00eb23fe0f2dce6ce5bec0f13ff9bda2f0cef125e4e99159f0c1"
+    },
+    {
+      "file": "contact_sheets/page_12.png",
+      "sha256": "83464e4e155c45f0863f29c8a71e259f216a668419f3e828e94dfd4d052cd2d8"
+    },
+    {
+      "file": "contact_sheets/page_13.png",
+      "sha256": "a590039cd06d3c0097ccc93bd121c28c6ae64492fda972df3ce559546cbb8712"
+    },
+    {
+      "file": "contact_sheets/page_14.png",
+      "sha256": "92e3705ec6a30cb850d9aa64e5ac54e2575fdc6a79f4e4eb75c3a5fa842f87e6"
+    },
+    {
+      "file": "contact_sheets/page_15.png",
+      "sha256": "564ae7984858f9da16c646f65ce085fc342156aa5b5956f9805da9f47c7a3cf8"
+    },
+    {
+      "file": "contact_sheets/page_16.png",
+      "sha256": "1d150ec21df7263e7dad64422ddc36e5200971236aef78354ecbcab64ee883d4"
+    },
+    {
+      "file": "contact_sheets/page_17.png",
+      "sha256": "c32f401a9e28e3b7740c8b163661020128e78b0308d8c2c852a8edcaff4e2ad7"
+    },
+    {
+      "file": "contact_sheets/page_18.png",
+      "sha256": "1b3d7f2bb79f4d46dfe487b1e6b5e337efb90118d18509c24330d2cb8eae53d9"
+    },
+    {
+      "file": "contact_sheets/page_19.png",
+      "sha256": "6434103e90048481469928fc66daa76845015d7aedf7716695b426829a454284"
+    },
+    {
+      "file": "contact_sheets/page_20.png",
+      "sha256": "29a58ed6c14d0461393fcdda2e6f504fe53d1a1b40db9239ee735f7bd10f47e2"
+    },
+    {
+      "file": "contact_sheets/page_21.png",
+      "sha256": "2ed5b5140cd234d9575425034d3edfe15bf8f88f50b47ff801f02b86131d27e2"
+    },
+    {
+      "file": "contact_sheets/page_22.png",
+      "sha256": "77de80967f8bad9a25987e7707709e21f98ac11b11ced3d56b3ec3667d62d0d2"
+    },
+    {
+      "file": "contact_sheets/page_23.png",
+      "sha256": "d683c64050ff5b59f90da4184ffc7dbc1a2771f47c53c417c90b6f9006b8b88b"
+    },
+    {
+      "file": "contact_sheets/page_24.png",
+      "sha256": "c6f7ea91cbd26e88df781d9ef54e443fe1cafff2d05badb602595445d9121bad"
+    },
+    {
+      "file": "contact_sheets/page_25.png",
+      "sha256": "5408a315598174fcac9979c1c75d57c12de771975050a9821eeb1715eb2f7bb9"
+    },
+    {
+      "file": "contact_sheets/page_26.png",
+      "sha256": "b8927651ef59873544567b91d9fb3e4e93c533e87db403886639fb4531b3ba0f"
+    },
+    {
+      "file": "contact_sheets/page_27.png",
+      "sha256": "5fd7895b35b7910fbe3f1dcddd73d6cd731bde0398199f6f614cbe07cd18efd7"
+    },
+    {
+      "file": "contact_sheets/page_28.png",
+      "sha256": "87aebac328f91ddbda04a687c9adf3fca5bfde6bc3a809b6a624707fbe819408"
+    },
+    {
+      "file": "contact_sheets/page_29.png",
+      "sha256": "2d21f286694ad84e90a74c2d8681657c8e369ad2a7d86551e5ebab042cf8607c"
+    },
+    {
+      "file": "contact_sheets/page_30.png",
+      "sha256": "90c1aac234cf0ab5cd8ce3766761385589ed06aaa4d37bf622ccf15450b73515"
+    },
+    {
+      "file": "contact_sheets/page_31.png",
+      "sha256": "2e05bc02fa68eabcef1853acc28e56b25711870fcd1eba0c8b6ee73fc2763207"
+    },
+    {
+      "file": "contact_sheets/page_32.png",
+      "sha256": "8ec0706e01a9a260bf90f43c85251d7004c1fe1285a01122e0bbdd6a0653c16a"
+    },
+    {
+      "file": "contact_sheets/page_33.png",
+      "sha256": "9ccbfa89e4d595b97c07cf4c976865d06003b605b12e5e417dc207191e5f3463"
+    },
+    {
+      "file": "contact_sheets/page_34.png",
+      "sha256": "4ff1a2c8cf5c79e03a181bad004035fa1a467806c2009853ed248798cdb19878"
+    },
+    {
+      "file": "contact_sheets/page_35.png",
+      "sha256": "7cf70dae72e6e91f547c616e72d4f17a7bfc582c0e0227cde30dcada98b5d811"
+    },
+    {
+      "file": "contact_sheets/page_36.png",
+      "sha256": "e655aa12c2f9aae62a0a8163295487f898cca79ff63222cc8f24a4f195440575"
+    },
+    {
+      "file": "contact_sheets/page_37.png",
+      "sha256": "f1793283c42a601e2731b0a9f392118a0903c321e1e1bd3071e140c8427022bd"
+    },
+    {
+      "file": "contact_sheets/page_38.png",
+      "sha256": "ed5e01158a73035ca2dbbb34f6ea8ba934a4179a8f95b1b2234b3cbce75bfd7c"
+    },
+    {
+      "file": "contact_sheets/page_39.png",
+      "sha256": "60704c3c7d782e8aeef236649f9371d248eaff61fbbcd4998fa0a7d50ae2cf85"
+    }
+  ]
+}

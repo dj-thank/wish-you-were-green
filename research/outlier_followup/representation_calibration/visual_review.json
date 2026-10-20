@@ -1,0 +1,29 @@
+{
+  "review_date": "2026-10-19",
+  "reviewer": "repro_audit",
+  "image": "same_observation_comparison.png",
+  "sha256": "c546b3b9882488594084f057f7380dd486abe27092ecf41ba23e7b86dc02d790",
+  "actually_opened_and_viewed": true,
+  "panels_viewed": 9,
+  "distinct_same_observation_pairs": 3,
+  "new_independent_objects_counted": 0,
+  "observations": [
+    {
+      "source_id": "1311674353544358912",
+      "panels": [1, 2, 3],
+      "observation": "The raw pair overlaps. The current-state panel separates strongly in blue and red, with the MWDD curve higher in blue and lower in red. Applying the same existing correction makes the pair overlap again. Labels, rows and three column states are visible."
+    },
+    {
+      "source_id": "2586182156053386240",
+      "panels": [4, 5, 6],
+      "observation": "The pair overlaps in all three panels; there is no accepted MWDD correction, so these conditions have the same shape. No plot here addresses the remaining difference from DESI or Gaia XP."
+    },
+    {
+      "source_id": "1025033665052512000",
+      "panels": [7, 8, 9],
+      "observation": "The raw pair overlaps despite the noisy detailed shape. The current-state curves separate broadly outside the normalization anchor, and the shared existing correction restores overlap. The display does not infer a significance for individual peaks."
+    }
+  ],
+  "held_subject_note": "1038076351151065088 has no same-observation MWDD/direct SDSS pair. Its held status is visible in the figure footer; no absent spectrum is claimed to have been inspected in this comparison.",
+  "limits": "20 A display means without a new uncertainty inference. Numerical raw-pixel identity and current colour reproduction are checked by the script, not inferred merely from visual overlap. The earlier 126 images and their individual notes remain unchanged."
+}

@@ -42,3 +42,18 @@ jobs:
       - name: Verify committed spectra, colours, and covariance offline
         working-directory: ${{ runner.temp }}
         run: python "$GITHUB_WORKSPACE/scripts/verify_reproduction.py" --root "$GITHUB_WORKSPACE" --with-controls
+
+      - name: Check physical units and independent numerical invariants
+        run: python -m unittest discover -s tests -p 'test_*.py' -v
+
+      - name: Verify the extended research evidence offline
+        working-directory: ${{ runner.temp }}
+        run: python "$GITHUB_WORKSPACE/scripts/verify_research_extension.py" --root "$GITHUB_WORKSPACE"
+
+      - name: Verify every follow-up record and the new numerical experiments offline
+        working-directory: ${{ runner.temp }}
+        run: python "$GITHUB_WORKSPACE/scripts/verify_research_followup.py" --root "$GITHUB_WORKSPACE"
+
+      - name: Verify native support, new photometry and full colour-set experiments offline
+        working-directory: ${{ runner.temp }}
+        run: python "$GITHUB_WORKSPACE/scripts/verify_research_oct20.py" --root "$GITHUB_WORKSPACE"

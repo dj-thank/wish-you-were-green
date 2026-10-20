@@ -1,0 +1,8 @@
+{
+  "created_utc": "2026-10-18T16:05:56.189980+00:00",
+  "requested_records": 4355,
+  "verified_records": 4355,
+  "failed_records": 0,
+  "raw_bytes_retained_in_ignored_cache": true,
+  "reproduction": "Use audit.py fetch to recover exact public inputs. SHA256 mismatch is a failure, never substituted."
+}

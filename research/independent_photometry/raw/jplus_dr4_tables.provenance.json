@@ -1,0 +1,15 @@
+{
+  "url": "https://archive.cefca.es/catalogues/vo/tap/jplus-dr4/sync",
+  "query_parameters": {
+    "REQUEST": "doQuery",
+    "LANG": "ADQL",
+    "FORMAT": "csv",
+    "QUERY": "SELECT table_name,description FROM TAP_SCHEMA.tables"
+  },
+  "final_url": "https://archive.cefca.es/catalogues/vo/tap/jplus-dr4/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&QUERY=SELECT+table_name%2Cdescription+FROM+TAP_SCHEMA.tables",
+  "retrieved_utc": "2026-10-19T23:22:11.023003+00:00",
+  "http_status": 200,
+  "content_type": "text/csv; charset=UTF-8",
+  "size_bytes": 16519,
+  "sha256": "6ace3ceacdd2a7360fc7c4e8d8cf06d7093d7ea727ce0ff84f4c4b06fc947b67"
+}

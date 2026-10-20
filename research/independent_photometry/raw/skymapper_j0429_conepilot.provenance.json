@@ -1,0 +1,16 @@
+{
+  "url": "https://api.skymapper.nci.org.au/public/cone",
+  "query_parameters": {
+    "CATALOG": "dr4.master",
+    "RA": "67.436285",
+    "DEC": "-3.906506",
+    "SR": "0.004166666666667",
+    "VERB": "3"
+  },
+  "final_url": "https://api.skymapper.nci.org.au/public/cone?CATALOG=dr4.master&RA=67.436285&DEC=-3.906506&SR=0.004166666666667&VERB=3",
+  "retrieved_utc": "2026-10-19T23:22:11.022181+00:00",
+  "http_status": 404,
+  "content_type": "text/html; charset=iso-8859-1",
+  "size_bytes": 196,
+  "sha256": "80c3fe2ae1062abf56456f52518bd670f9ec3917b7f85e152b347ac6b6faf880"
+}

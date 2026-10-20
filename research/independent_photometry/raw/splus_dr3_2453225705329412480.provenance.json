@@ -1,0 +1,16 @@
+{
+  "url": "https://api.skymapper.nci.org.au/public/tap/sync",
+  "query_parameters": {
+    "REQUEST": "doQuery",
+    "LANG": "ADQL",
+    "FORMAT": "csv",
+    "MAXREC": "10000",
+    "QUERY": "SELECT TOP 1000 * FROM ext.splus_dr3 WHERE 1=CONTAINS(POINT('ICRS',ra,dec),CIRCLE('ICRS',26.800166436616863,-13.978845446932713,0.004166666666667))"
+  },
+  "final_url": "https://api.skymapper.nci.org.au/public/tap/sync?REQUEST=doQuery&LANG=ADQL&FORMAT=csv&MAXREC=10000&QUERY=SELECT+TOP+1000+%2A+FROM+ext.splus_dr3+WHERE+1%3DCONTAINS%28POINT%28%27ICRS%27%2Cra%2Cdec%29%2CCIRCLE%28%27ICRS%27%2C26.800166436616863%2C-13.978845446932713%2C0.004166666666667%29%29",
+  "retrieved_utc": "2026-10-19T23:51:36.818195+00:00",
+  "http_status": 200,
+  "content_type": "application/x-votable+xml;charset=ISO-8859-1",
+  "size_bytes": 465,
+  "sha256": "01bdc0fdb7756e5e06e5713ae1cb024441de1d431fa65439f8a23d02a9fdbb68"
+}

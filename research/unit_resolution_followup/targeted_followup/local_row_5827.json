@@ -1,0 +1,204 @@
+{
+  "record": {
+    "row_index": 5827,
+    "entity_id": "gaia:1242828982729309952",
+    "source_id": "1242828982729309952",
+    "name": "Gaia DR3 1242828982729309952",
+    "MWDD_frozen_class": "DZ:",
+    "MWDD_frozen_temperature_K_metadata_only": 8863.0,
+    "reference_id": "sdss_dr17_26_2136_53494_0541",
+    "header": {
+      "BUNIT": "1E-17 erg/cm^2/s/Ang",
+      "PLATEID": 2136,
+      "MJD": 53494,
+      "FIBERID": 541,
+      "RUN2D": null,
+      "PLUG_RA": 218.93345,
+      "PLUG_DEC": 23.610765,
+      "VACUUM": true
+    },
+    "MWDD_source_url": "https://www.montrealwhitedwarfdatabase.org/WDs/Gaia%20DR3%201242828982729309952/spect.Gaia%20DR3%201242828982729309952.sdss.txt",
+    "MWDD_raw_sha256": "2af9bbe2afee8c2e7a32054cd1646bd569bdbb34b7c3b0650fdba99b3bd6a3f4",
+    "reference_source_url": "https://data.sdss.org/sas/dr17/sdss/spectro/redux/26/spectra/lite/2136/spec-2136-53494-0541.fits",
+    "reference_raw_sha256": "3e7e029fa0f444a6fe725ee79e606539227eea878921d14acc0408d55d08127c",
+    "automatic_SDSS_quality": {
+      "CLASS": "STAR",
+      "SUBCLASS": "CV",
+      "Z": 8.554499072488397e-05,
+      "ZWARNING": 0,
+      "SN_MEDIAN_ALL": 18.718486785888672,
+      "PLATEQUALITY": "good",
+      "SPECOBJID": "   2405070968583120896"
+    },
+    "automatic_SDSS_ZWARNING_decoded": [],
+    "native_identity": {
+      "MWDD_input_convention": "flambda",
+      "direct_convention": "flambda",
+      "matched_visible_pixels": 3380,
+      "maximum_wavelength_difference_A": 0.0056011389915511245,
+      "wavelength_independent_scale": 0.9999999870988022,
+      "maximum_fractional_shape_error_after_scale": 4.851685720508314e-06,
+      "same_observation_not_independent_confirmation": true
+    },
+    "native_visible_quality": {
+      "pixels": 3380,
+      "nonpositive_ivar_pixels": 0,
+      "negative_flux_pixels": 0,
+      "positive_ivar_median_pixel_snr": 19.04194337673647,
+      "AND_nonzero_pixels": 104,
+      "OR_nonzero_pixels": 356
+    },
+    "windows": [
+      {
+        "label": "first blue window",
+        "bounds_A": [
+          3900,
+          4200
+        ],
+        "native_pixels": 322,
+        "positive_ivar_pixels": 322,
+        "AND_zero_positive_ivar_pixels": 322,
+        "maximum_native_pixel_A": 3902.114517110986,
+        "minimum_native_pixel_A": 4103.93004517776,
+        "maximum_flux_Flambda": 4.609128952026368e-16,
+        "maximum_AND_mask": 0,
+        "maximum_OR_mask": 0,
+        "AND_bits": [],
+        "OR_bits": [
+          {
+            "bit": 25,
+            "name": "COMBINEREJ",
+            "pixels": 3
+          }
+        ]
+      },
+      {
+        "label": "second blue window",
+        "bounds_A": [
+          4200,
+          4510
+        ],
+        "native_pixels": 309,
+        "positive_ivar_pixels": 309,
+        "AND_zero_positive_ivar_pixels": 309,
+        "maximum_native_pixel_A": 4212.113219019673,
+        "minimum_native_pixel_A": 4374.212694455303,
+        "maximum_flux_Flambda": 4.1843730926513676e-16,
+        "maximum_AND_mask": 0,
+        "maximum_OR_mask": 0,
+        "AND_bits": [],
+        "OR_bits": [
+          {
+            "bit": 25,
+            "name": "COMBINEREJ",
+            "pixels": 6
+          }
+        ]
+      },
+      {
+        "label": "middle window",
+        "bounds_A": [
+          4700,
+          5060
+        ],
+        "native_pixels": 321,
+        "positive_ivar_pixels": 321,
+        "AND_zero_positive_ivar_pixels": 321,
+        "maximum_native_pixel_A": 4874.16319937798,
+        "minimum_native_pixel_A": 4916.997434470299,
+        "maximum_flux_Flambda": 3.6533172607421876e-16,
+        "maximum_AND_mask": 0,
+        "maximum_OR_mask": 0,
+        "AND_bits": [],
+        "OR_bits": [
+          {
+            "bit": 25,
+            "name": "COMBINEREJ",
+            "pixels": 2
+          }
+        ]
+      },
+      {
+        "label": "red visual peak window",
+        "bounds_A": [
+          6400,
+          6800
+        ],
+        "native_pixels": 264,
+        "positive_ivar_pixels": 264,
+        "AND_zero_positive_ivar_pixels": 264,
+        "maximum_native_pixel_A": 6550.884091980847,
+        "minimum_native_pixel_A": 6792.036594637226,
+        "maximum_flux_Flambda": 3.3843338012695315e-16,
+        "maximum_AND_mask": 0,
+        "maximum_OR_mask": 0,
+        "AND_bits": [],
+        "OR_bits": [
+          {
+            "bit": 25,
+            "name": "COMBINEREJ",
+            "pixels": 14
+          }
+        ]
+      }
+    ],
+    "red_peak_native_check": {
+      "predeclared_search_window_A": [
+        6400,
+        6800
+      ],
+      "maximum_native_pixel_A": 6550.884091980847,
+      "peak_flux_Flambda": 3.3843338012695315e-16,
+      "peak_supplied_flux_error": 9.647094487846705e-18,
+      "peak_AND_mask": 0,
+      "peak_OR_mask": 0,
+      "local_continuum_linear_fit_sidebands_A": [
+        [
+          6400,
+          6470
+        ],
+        [
+          6700,
+          6800
+        ]
+      ],
+      "contiguous_pixels_above_half_peak_excess": 10,
+      "contiguous_half_excess_pixel_centres_A": [
+        6544.855875175392,
+        6558.433472365191
+      ],
+      "half_excess_cluster_AND_bits": [],
+      "half_excess_cluster_OR_bits": [
+        {
+          "bit": 25,
+          "name": "COMBINEREJ",
+          "pixels": 2
+        }
+      ]
+    },
+    "limits": "Local-only follow-up of a purposively selected visual flag. Frozen MWDD DZ: and generic SDSS STAR/CV labels are preserved as separate catalogue evidence, without new physical classification or an atomic line identification. A half-excess pixel cluster is a descriptive, sideband-dependent morphology measure, not deconvolved FWHM, line significance, or a variability result. No fresh literature, Gaia, neighbour or proper-motion association check was performed for this additional target; source-array identity is not an independent positional or physical confirmation."
+  },
+  "verified_source_sha256": {
+    "research/unit_resolution_followup/overlay_registry.json": "c8d8f6960092d8cbe3a6f76f64bca07fbde2726680b33ea21de6a54537630865",
+    "research/unit_resolution_followup/compact_manifest.json": "7741636f106edfe7d89cbc22b35cdba5ab981fb96c071e916dfbf6fd8ce4bad4",
+    "mwdd/manifest_enriched.json.gz": "3b428d69fbe86cf63995dbcd71d2e1b6a38e1ecb3986ca9effb984a38e98609f",
+    "research/unit_resolution_followup/compact/wavelength_dictionary.npy.gz": "e73cf5a63007644fff0f0a3f018e4526499f6d9a7bafacd098a4cdf404f7f6e4",
+    "research/unit_resolution_followup/compact/identity_arrays_014.npz": "bea266a7784fb0ba930927ab3201bc34ce4603d644545725cf121c137cdc7bd4",
+    "research/unit_resolution_followup/compact/identity_arrays_025.npz": "4c43dd205877bc29285d7054471d3cca9c999165df70affd7758ab1972a995c6",
+    "research/unit_resolution_followup/targeted_followup/sources/sdss_bitmasks.html": "169e39b3cc87375c0d59ec8b07ec1a24f2f54f7b0262daca38c9cfe8a285816f",
+    "research/unit_resolution_followup/targeted_followup/local_row_5827.py": "72985cdc29f8e8248ae818f8de83ad988eee55f47976c3cb21735461e824f0f5",
+    "research/unit_resolution_followup/targeted_followup/analyse.py": "7f37a62cec112b93ddfb254bb343001532fb5117f697f0001092a5b47754d2fa",
+    "research/unit_resolution_followup/compact_inputs.py": "084df209a76fe24ec0ffaa7865a19e61ed41d38925b703371fddcd298b3a1a0a",
+    "research/unit_resolution_followup/fetch_and_identify.py": "00eea00a9c924c9cdbaf23fec67e4ebaa38ca8269fb87cdc97e06e40b00aecf3",
+    "research/precision/flux_convention_audit.py": "eab1c3740e6f3179f45a2472f3c200f6bc589adc8a025db8ccb01618d6c11799",
+    "project_io.py": "b6ecabe8c5c8f5e911ba11ce9a114e2c7c36f4224ddeb1ae5713917d10ecdecf",
+    "requirements-core.txt": "3e320fae538eb6b79fd53eeb90f49ed2b3c2adece7156c99689e067ef20f4406"
+  },
+  "created_utc": "2026-10-20T00:37:58.147340+00:00",
+  "figure": {
+    "png": "native_row_5827.png",
+    "png_sha256": "dbad521a69aaa789cfff8ff738d705cc46d179542e927e82ddb660ea50f0140d",
+    "svg": "native_row_5827.svg",
+    "svg_sha256": "fc4a8d940fe13cca23cda629983500cf3fe1a2786f6e1638dfca1f3352e64fb5"
+  }
+}

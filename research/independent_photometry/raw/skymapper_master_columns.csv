@@ -1,0 +1,122 @@
+column_name,description,unit,datatype
+dej2000,Mean ICRS Declination of the object,deg,DOUBLE
+e_dej2000,RMS variation around the mean Declination in milliarcseconds,mas,INTEGER
+g_flags,Bitwise OR of Source Extractor flags from g-band measurements in photometry table,,SMALLINT
+chi2_psf,Maximum chi-squared from photometry table,,REAL
+e_u_psf,Error in weighted mean u-band PSF magnitude,mag,REAL
+e_u_petro,Error in weighted mean u-band Petrosian magnitude,mag,REAL
+u_apc05,Weighted mean u-band aperture-corrected magnitude from flux in 5 arcsec diameter,mag,REAL
+e_u_apc05,Error in weighted mean u-band aperture-corrected magnitude from flux in 5 arcsec diameter,mag,REAL
+u_mmvar,Magnitude range between minimum and maximum unclipped u-band PSF magnitudes,mag,REAL
+e_v_psf,Error in weighted mean v-band PSF magnitude,mag,REAL
+e_v_petro,Error in weighted mean v-band Petrosian magnitude,mag,REAL
+e_v_apc05,Error in weighted mean v-band aperture-corrected magnitude from flux in 5 arcsec diameter,mag,REAL
+e_g_psf,Error in weighted mean g-band PSF magnitude,mag,REAL
+e_g_petro,Error in weighted mean g-band Petrosian magnitude,mag,REAL
+g_apc05,Weighted mean g-band aperture-corrected magnitude from flux in 5 arcsec diameter,mag,REAL
+e_g_apc05,Error in weighted mean g-band aperture-corrected magnitude from flux in 5 arcsec diameter,mag,REAL
+e_r_psf,Error in weighted mean r-band PSF magnitude,mag,REAL
+e_r_petro,Error in weighted mean r-band Petrosian magnitude,mag,REAL
+e_r_apc05,Error in weighted mean r-band aperture-corrected magnitude from flux in 5 arcsec diameter,mag,REAL
+e_i_psf,Error in weighted mean i-band PSF magnitude,mag,REAL
+i_petro,Weighted mean i-band Petrosian magnitude,mag,REAL
+e_i_petro,Error in weighted mean i-band Petrosian magnitude,mag,REAL
+e_i_apc05,Error in weighted mean i-band aperture-corrected magnitude from flux in 5 arcsec diameter,mag,REAL
+e_z_psf,Error in weighted mean z-band PSF magnitude,mag,REAL
+gaia_dr3_id2,Unique identifier (source_id) of second-closest Gaia DR3 source,,BIGINT
+gaia_dr3_dist2,Distance on sky to second-closest Gaia DR3 source,arcsec,REAL
+cnt_gaia_dr3_15,Number of Gaia DR3 sources within 15 arcsec,,INTEGER
+twomass_key,Unique identifier (pts_key) of closest 2MASS PSC source,,BIGINT
+twomass_dist,Distance on sky to closest 2MASS PSC source,arcsec,REAL
+allwise_cntr,Unique identifier (cntr) of closest AllWISE source,,BIGINT
+allwise_dist,Distance on sky to closest AllWISE source,arcsec,REAL
+catwise_id,Unique identifier (id) of closest CatWISE2020 source,,CHAR
+catwise_dist,Distance on sky to closest CatWISE2020 source,arcsec,REAL
+refcat2_id,Unique identifier (objid) of closest ATLAS Refcat2 source (only useful for this copy of Refcat2),,BIGINT
+refcat2_dist,Distance on sky to closest ATLAS Refcat2 source,arcsec,REAL
+ps1_dr1_id,Unique identifier (objid) of closest Pan-STARRS1 DR1 source,,BIGINT
+ps1_dr1_dist,Distance on sky to closest Pan-STARRS1 DR1 source,arcsec,REAL
+galex_guv_id,Unique identifier (objid) of closest GALEX GUVcat AIS source (Bianchi et al. 2017),,BIGINT
+galex_guv_dist,Distance on sky to closest GALEX GUVcat AIS source,arcsec,REAL
+vhs_dr6_id,Unique identifier (objid) of closest Pan-STARRS1 DR1 source,,BIGINT
+vhs_dr6_dist,Distance on sky to closest Pan-STARRS1 DR1 source,arcsec,REAL
+ls_dr9_id,Unique identifier (unique_id) of closest Legacy Survey DR9 source,,BIGINT
+ls_dr9_dist,Distance on sky to closest Legacy Survey DR9 source,arcsec,REAL
+des_dr2_id,Unique identifier (coadd_object_id) of closest DES DR2 source,,BIGINT
+des_dr2_dist,Distance on sky to closest DES DR2 source,arcsec,REAL
+nsc_dr2_id,Unique identifier (id) of closest NSC DR2 source,,CHAR
+nsc_dr2_dist,Distance on sky to closest NSC DR2 source,arcsec,REAL
+splus_dr3_id,Unique identifier of closest S-PLUS DR3 source,,CHAR
+splus_dr3_dist,Distance on sky to closest S-PLUS DR3 source,arcsec,REAL
+class_star,Maximum stellarity index from photometry table (between 0=no star and 1=star),,REAL
+cnt_self_15,Number of SMSS DR4 sources within 15 arcsec,,REAL
+ebmv_g_err,Error in the E(B-V) from GNILC,mag,REAL
+ebmv_gnilc,E(B-V) from Planck satellite GNILC reddening maps at the ICRS coordinates,mag,REAL
+ebmv_sfd,E(B-V) from Schlegel+1998 extinction maps at the ICRS coordinates,mag,REAL
+e_raj2000,RMS variation around the mean Right Ascension in milliarcseconds,mas,INTEGER
+e_z_apc05,Error in weighted mean z-band aperture-corrected magnitude from flux in 5 arcsec diameter,mag,REAL
+e_z_petro,Error in weighted mean z-band Petrosian magnitude,mag,REAL
+flags,Bitwise OR of Source Extractor flags across all observations,,SMALLINT
+flags_psf,Bitmask indicating whether photometry is likely biased by neighbours at &amp;gt;1%; bits 0-5 correspond to filters z-u,,INTEGER
+gaia_dr3_dist1,Distance on sky to closest Gaia DR3 source,arcsec,REAL
+gaia_dr3_id1,Unique identifier (source_id) of closest Gaia DR3 source,,BIGINT
+glat,Galactic latitude derived from ICRS coordinates. Not to be used as primary astrometric reference.,deg,REAL
+glon,Galactic longitude derived from ICRS coordinates. Not to be used as primary astrometric reference.,deg,REAL
+g_nclip,Number of g-band observations with magnitudes clipped from the final PSF magnitude estimate,,SMALLINT
+g_ngood,Number of g-band observations used,,SMALLINT
+g_nimaflags,Number of flagged pixels from bad or saturated or crosstalk-affected pixels masks from g-band measurements in photometry table,,INTEGER
+g_psf,Weighted mean g-band PSF magnitude,mag,REAL
+i_apc05,Weighted mean i-band aperture-corrected magnitude from flux in 5 arcsec diameter,mag,REAL
+i_flags,Bitwise OR of Source Extractor flags from i-band measurements in photometry table,,SMALLINT
+i_mmvar,Magnitude range between minimum and maximum unclipped i-band PSF magnitudes,mag,REAL
+i_nclip,Number of i-band observations with magnitudes clipped from the final PSF magnitude estimate,,SMALLINT
+i_ngood,Number of i-band observations used,,SMALLINT
+i_nimaflags,Number of flagged pixels from bad or saturated or crosstalk-affected pixels masks from i-band measurements in photometry table,,INTEGER
+i_psf,Weighted mean i-band PSF magnitude,mag,REAL
+mean_epoch,Mean MJD epoch of the observations,d,DOUBLE
+mean_fwhm,Mean FWHM of detections,pix,REAL
+ngood,Number of observations used across all filters,,SMALLINT
+nimaflags,Total number of flagged pixels from bad or saturated or crosstalk-affected pixel masks across all observations,,INTEGER
+object_id,Global unique object ID in the master table.,,BIGINT
+raj2000,Mean ICRS Right Ascension of the object,deg,DOUBLE
+r_flags,Bitwise OR of Source Extractor flags from r-band measurements in photometry table,,SMALLINT
+r_nclip,Number of r-band observations with magnitudes clipped from the final PSF magnitude estimate,,SMALLINT
+r_ngood,Number of r-band observations used,,SMALLINT
+r_nimaflags,Number of flagged pixels from bad or saturated or crosstalk-affected pixels masks from r-band measurements in photometry table,,INTEGER
+r_psf,Weighted mean r-band PSF magnitude,mag,REAL
+self_dist1,Distance on sky to closest SMSS DR4 source,arcsec,REAL
+self_dist2,Distance on sky to second-closest SMSS DR4 source,arcsec,REAL
+self_dist3,Distance on sky to third-closest SMSS DR4 source,arcsec,REAL
+self_id1,Unique identifier (object_id) of closest SMSS DR4 source,,BIGINT
+self_id2,Unique identifier (object_id) of second-closest SMSS DR4 source,,BIGINT
+self_id3,Unique identifier (object_id) of third-closest SMSS DR4 source,,BIGINT
+smss_j,SkyMapper Southern Survey designation of the form SMSS Jhhmmss.ss+/-ddmmss.s derived from mean ICRS coordinates,,CHAR
+u_flags,Bitwise OR of Source Extractor flags from u-band measurements in photometry table,,SMALLINT
+u_nclip,Number of u-band observations with magnitudes clipped from the final PSF magnitude estimate,,SMALLINT
+u_ngood,Number of u-band observations used,,SMALLINT
+u_nimaflags,Number of flagged pixels from bad or saturated or crosstalk-affected pixels masks from u-band measurements in photometry table,,INTEGER
+u_psf,Weighted mean u-band PSF magnitude,mag,REAL
+v_flags,Bitwise OR of Source Extractor flags from v-band measurements in photometry table,,SMALLINT
+v_mmvar,Magnitude range between minimum and maximum unclipped v-band PSF magnitudes,mag,REAL
+v_nclip,Number of v-band observations with magnitudes clipped from the final PSF magnitude estimate,,SMALLINT
+v_ngood,Number of v-band observations used,,SMALLINT
+v_nimaflags,Number of flagged pixels from bad or saturated or crosstalk-affected pixels masks from v-band measurements in photometry table,,INTEGER
+v_psf,Weighted mean v-band PSF magnitude,mag,REAL
+z_apc05,Weighted mean z-band aperture-corrected magnitude from flux in 5 arcsec diameter,mag,REAL
+z_flags,Bitwise OR of Source Extractor flags from z-band measurements in photometry table,,SMALLINT
+z_mmvar,Magnitude range between minimum and maximum unclipped z-band PSF magnitudes,mag,REAL
+z_nclip,Number of z-band observations with magnitudes clipped from the final PSF magnitude estimate,,SMALLINT
+z_ngood,Number of z-band observations used,,SMALLINT
+z_nimaflags,Number of flagged pixels from bad or saturated or crosstalk-affected pixels masks from z-band measurements in photometry table,,INTEGER
+z_petro,Weighted mean z-band Petrosian magnitude,mag,REAL
+z_psf,Weighted mean z-band PSF magnitude,mag,REAL
+u_petro,Weighted mean u-band Petrosian magnitude,mag,REAL
+radius_petro,Mean r-band Petrosian radius,pix,REAL
+g_mmvar,Magnitude range between minimum and maximum unclipped g-band PSF magnitudes,mag,REAL
+r_mmvar,Magnitude range between minimum and maximum unclipped -band PSF magnitudes,mag,REAL
+v_apc05,Weighted mean v-band aperture-corrected magnitude from flux in 5 arcsec diameter,mag,REAL
+r_apc05,Weighted mean r-band aperture-corrected magnitude from flux in 5 arcsec diameter,mag,REAL
+v_petro,Weighted mean v-band Petrosian magnitude,mag,REAL
+g_petro,Weighted mean g-band Petrosian magnitude,mag,REAL
+r_petro,Weighted mean r-band Petrosian magnitude,mag,REAL
+rms_epoch,RMS variation around the mean epoch,d,REAL
